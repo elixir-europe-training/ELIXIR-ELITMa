@@ -4,7 +4,6 @@ permalink: /modules/module2/chapter2
 
 ---
 **Chapter 2.2 Understanding your Node context and organising your NDMS team**
-
 **Objective**: Understand the environment in which your Node operates and organise the team that will guide the development of your data management strategy
 
 ## Why context matters
@@ -26,7 +25,7 @@ Mapping your context does not require great detail. A simple overview is enough 
 - Typical workflows
 
 **Services**:
-- Existing RDM services and tools.
+- Existing RDM services and tools
 - Service owners and users
 
 **Policies and standards**:
