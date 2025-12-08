@@ -8,15 +8,15 @@ permalink: /modules/module2/chapter1
 
 ## Why a NDMS matters
 
-- ELIXIR Nodes bring together many institutions, services and communities. Each group works with data in different ways. Without a shared direction it becomes difficult to coordinate work or explain how the Node supports its researchers. A Node Data Management Strategy (NDMS) helps create this direction and provides clarity
+- ELIXIR Nodes bring together many institutions, services and communities. Each group works with data in different ways. Without a shared direction it becomes difficult to coordinate work or explain how the Node supports its researchers. A NDMS helps create this direction and provides clarity
   
 - It shows what the Node wants to achieve in data management, how its services fit together and where support is still needed. It reduces duplication, improves communication and helps staff understand their roles
   
 - A strategy also supports long-term planning. It helps the Node decide which services to maintain, where to invest effort and how to respond to new demands or opportunities. Funders and national partners often expect this kind of clarity. An NDMS offers a simple way to meet that expectation.
 
-## What a data management strategy is
+## What a NDMS is
 
-- A Node data management strategy is a short, practical document. It outlines the main goals of the Node, the data landscape it serves and the principles that guide its work
+- A NDMS is a short, practical document. It outlines the main goals of the Node, the data landscape it serves and the principles that guide its work
 
 - It brings together information that often exists in many places. It does not replace detailed policies, service descriptions or Data Management Plans. Instead, it connects them
 
@@ -26,7 +26,7 @@ permalink: /modules/module2/chapter1
 
 - The strategy should be light and easy to update. It evolves as the Node grows, new roles appear or priorities shift. It is a living reference document, not a fixed plan.
 
-## How a data management strategy works in practice 
+## How a NDMS works in practice 
 
 - A strategy works by giving people a common reference point. When staff use the same goals and priorities, it becomes easier to make decisions, plan activities and coordinate across institutions
 
@@ -44,7 +44,7 @@ Starting does not require a full plan. Three simple steps help teams move from d
 
 **3. Draft a short outline**: A one-page outline helps create a shared view of the scope. It can change as the group learns more.
 
-## Who is involved in a data management strategy 
+## Who is involved in an NDMS 
 
 A strategy needs input from several perspectives. Together, these roles create a realistic and balanced view of the Node. No single person can capture all parts of the data landscape. A small but diverse team makes the work stronger.
 
