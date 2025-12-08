@@ -19,10 +19,12 @@
     - Consolidate the relevant tools and services in Nodes
     - Refine Node data management strategies for better data stewardship
   delivery:
-    - First course delivered in 2023 in Finland.
-    - Next course scheduled for 19–22 May 2025 in Estonia
+    - First course delivered in 2023 in Finland, with all [training resources](https://tess.elixir-europe.org/materials/elitma-module-data-management-strategy-finland-28-29-june-2023) available via TeSS 
+    - Second course delivered in 2025 in Estonia, contributing to the [Data Stewardship Handbook](https://elixir-europe.github.io/ds-handbook/) and its maturity indicators for [self-assessment](https://elixir-europe.github.io/ds-handbook/maturity-model))
+    - No subsequent course is currently planned. Nodes can work with the NDMS module in a do-it-yourself format, and we welcome interest in collaborating on a possible future edition
   leads:
     - Mijke Jetten (ELIXIR Netherlands)
     - Celia van Gelder (ELIXIR Netherlands)
-    - Fabio Liberante (ELIXIR Hub), in collaboration with the ELIXIR RDM Community
+    - Fabio Liberante (ELIXIR Hub)
+    - In collaboration with the [ELIXIR RDM Community](https://elixir-europe.org/communities/research-data-management)
   url: modules/module2/main
