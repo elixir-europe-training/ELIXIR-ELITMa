@@ -23,7 +23,7 @@ This first frame helps you clarify the purpose and direction of your NDMS. It he
 
 ### A content frame: Elements from the Global Open Research Commons
 
-The second frame draws on the Research Data Alliance (RDA) Global Open Research Commons (GORC) model (read the [article](https://datascience.codata.org/articles/10.5334/dsj-2024-056). It highlights the typical components of a research data ecosystem. These elements help you decide what to include in your NDMS and where you may need more clarity.
+The second frame draws on the Research Data Alliance (RDA) Global Open Research Commons (GORC) model (read the [article](https://datascience.codata.org/articles/10.5334/dsj-2024-056)). It highlights the typical components of a research data ecosystem. These elements help you decide what to include in your NDMS and where you may need more clarity.
 
 - **Governance**: How decisions are made and how responsibilities are shared.
 - **Policies and legal frameworks**: Institutional or national requirements and guidelines.
@@ -36,3 +36,42 @@ The second frame draws on the Research Data Alliance (RDA) Global Open Research 
 
 You do not need to address each topic in equal depth. The list is a guide to help you decide what is relevant for your Node.
 
+## How to choose what matters 
+
+Priorities depend on your context. Start by identifying areas where the Node already has clarity and areas where work is needed. Your strategy should highlight the topics that matter most now, not everything that could be included. Your NDMS may begin with a small set of topics. It can grow as your Node’s needs evolve.
+
+Useful questions include: 
+- Which goals are most important for the next two years?
+- Which services or communities require attention?
+- Which gaps limit daily work?
+- Which constraints need to be addressed or acknowledged?
+- Which activities will have the most impact with limited resources
+
+## Who to involve at this stage 
+
+Different elements require different kinds of expertise. Involve: 
+- data stewards and service leads for technical elements
+- community representatives for domain specific standards
+- coordinators or managers for governance and planning
+- training or support staff for skills and outreach
+- policy or legal experts when relevant
+
+Not all of these people need to join every discussion. Invite them when their input is needed.
+
+## Exercises
+
+**1. Goals and objectives**: Write one long term goal for your NDMS and two short term objectives
+
+**2. Priority topics**: Select three GORC elements that matter most for your Node today. Add one sentence explaining why
+
+**3. Resource and constraint scan**: List the main resources your Node can rely on and the constraints that may limit progress
+
+**4. Simple NDMS outline**: Draft a one page outline for your strategy using any of the elements above
+
+## Examples from Nodes
+
+**Example 1**: Node x focused its NDMS on two main topics: clarity of roles and better support for data standards. This kept the strategy manageable
+
+**Example 2**: Another Node used the GORC elements to review existing services. This revealed that training and community engagement needed more attention
+
+**Example 3**: A Node with limited staff chose to focus on objectives that could be achieved within existing resources. The strategy was short but effective
