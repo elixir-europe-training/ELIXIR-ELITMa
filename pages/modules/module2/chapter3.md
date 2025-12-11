@@ -50,11 +50,11 @@ Useful questions include:
 ## Who to involve at this stage 
 
 Different elements require different kinds of expertise. Involve: 
-- data stewards and service leads for technical elements
-- community representatives for domain specific standards
-- coordinators or managers for governance and planning
-- training or support staff for skills and outreach
-- policy or legal experts when relevant
+- Data stewards and service leads for technical elements
+- Community representatives for domain specific standards
+- Coordinators or managers for governance and planning
+- Training or support staff for skills and outreach
+- Policy or legal experts when relevant
 
 Not all of these people need to join every discussion. Invite them when their input is needed.
 
@@ -72,6 +72,6 @@ Not all of these people need to join every discussion. Invite them when their in
 
 **Example 1**: Node x focused its NDMS on two main topics: clarity of roles and better support for data standards. This kept the strategy manageable
 
-**Example 2**: Another Node used the GORC elements to review existing services. This revealed that training and community engagement needed more attention
+**Example 2**: Node y used the GORC elements to review existing services. This revealed that training and community engagement needed more attention
 
-**Example 3**: A Node with limited staff chose to focus on objectives that could be achieved within existing resources. The strategy was short but effective
+**Example 3**: Node z with limited staff chose to focus on objectives that could be achieved within existing resources. The strategy was short but effective
