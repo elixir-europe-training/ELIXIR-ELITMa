@@ -13,6 +13,8 @@ subitems:
         url: /modules/module2/chapter1
       - title: Chapter 2
         url: /modules/module2/chapter2
+      - title: Chapter 3
+        url: /modules/module2/chapter3
   - title: Contributors
     url: /contributing/contributors
   - title: Network
