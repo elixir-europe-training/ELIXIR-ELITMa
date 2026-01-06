@@ -1,5 +1,5 @@
 ---
-title: 2.3 Why to include in a NMDS
+title: 2.3 What to include in a NMDS
 permalink: /modules/module2/chapter3
 
 ---
