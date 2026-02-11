@@ -1,10 +1,15 @@
 ---
-title: 2.1 Why a Node data management strategy
-permalink: /modules/module2/chapter1
+title: Why a Node data management strategy
+page_id: mod_dm_1
+type: Data Management
+status: in development
+description: Build a shared understanding of why a NDMS matters and what it offers to your Node
+learning_outcomes:
+    - 
 
 ---
-**Chapter 2.1 Why your node needs a Node data management strategy (NDMS)**
-**Objective**: Build a shared understanding of why a NDMS matters and what it offers to your Node
+{% include module-metadata.html %}
+
 
 ## Why a NDMS matters
 
@@ -58,16 +63,12 @@ A strategy needs input from several perspectives. Together, these roles create a
 
 ## Exercises 
 
-**1. Three reasons**: List three reasons why your Node would benefit from a NDMS. Share with a partner 
-
-**2. Risks without a strategy**: Write down three risks that could occur if your Node continues without a NDMS
-
-**3. What exists already**: Identify documents or practices that may feed into a NDMS. Mark which ones are most useful
+1. **Three reasons**: List three reasons why your Node would benefit from a NDMS. Share with a partner 
+2. **Risks without a strategy**: Write down three risks that could occur if your Node continues without a NDMS
+3. **What exists already**: Identify documents or practices that may feed into a NDMS. Mark which ones are most useful
 
 ## Examples from Nodes
 
-**Example 1**: Node x created a brief NDMS to clarify who owns which services. This helped new staff settle in quickly
-
-**Example 2**: Node y used its NDMS to decide which tools to maintain and which partnerships to strengthen
-
-**Example 3**: Node z drafted a simple two page NDMS during a retreat. It became a helpful reference during funding discussions
+- **Example 1**: Node x created a brief NDMS to clarify who owns which services. This helped new staff settle in quickly
+- **Example 2**: Node y used its NDMS to decide which tools to maintain and which partnerships to strengthen
+- **Example 3**: Node z drafted a simple two page NDMS during a retreat. It became a helpful reference during funding discussions

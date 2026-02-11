@@ -1,11 +1,14 @@
 ---
-title: 2.3 What to include in a NMDS
-permalink: /modules/module2/chapter3
-
+title: What to include in a NMDS
+page_id: mod_dm_3
+type: Data Management
+status: in development
+description: Identify the essential elements that belong in a NDMS and understand how to choose what matters most for your Node
+learning_outcomes:
+    - 
 ---
-**Chapter 2.3 What to include in a Node data management strategy (NDMS)**
+{% include module-metadata.html %}
 
-**Objective**: Identify the essential elements that belong in a NDMS and understand how to choose what matters most for your Node
 
 ## Why these elements matter
 
@@ -13,7 +16,7 @@ A NDMS works best when it covers the right topics. It does not need to be long, 
 
 ## What the strategy should cover
 
-### A thinking frame: Goals, Objectives, Resources and Constraints
+### A thinking frame: goals, objectives, resources and constraints
 
 This first frame helps you clarify the purpose and direction of your NDMS. It helps the team stay focused and realistic. You can return to it as you refine your NDMS.
 - **Goals**: Long term ambitions. What your Node wants to improve or strengthen in research data management
@@ -21,7 +24,7 @@ This first frame helps you clarify the purpose and direction of your NDMS. It he
 - **Resources**: People, skills, services, infrastructure and funding needed to make progress.
 - **Constraints**: Limitations and dependencies such as staffing, funding cycles, fragmented structures or external policies.
 
-### A content frame: Elements from the Global Open Research Commons
+### A content frame: elements from the Global Open Research Commons
 
 The second frame draws on the Research Data Alliance (RDA) Global Open Research Commons (GORC) model (read the [article](https://datascience.codata.org/articles/10.5334/dsj-2024-056)). It highlights the typical components of a research data ecosystem. These elements help you decide what to include in your NDMS and where you may need more clarity.
 
@@ -60,18 +63,13 @@ Not all of these people need to join every discussion. Invite them when their in
 
 ## Exercises
 
-**1. Goals and objectives**: Write one long term goal for your NDMS and two short term objectives
-
-**2. Priority topics**: Select three GORC elements that matter most for your Node today. Add one sentence explaining why
-
-**3. Resource and constraint scan**: List the main resources your Node can rely on and the constraints that may limit progress
-
-**4. Simple NDMS outline**: Draft a one page outline for your strategy using any of the elements above
+1. **Goals and objectives**: Write one long term goal for your NDMS and two short term objectives
+2. **Priority topics**: Select three GORC elements that matter most for your Node today. Add one sentence explaining why
+3. **Resource and constraint scan**: List the main resources your Node can rely on and the constraints that may limit progress
+4. **Simple NDMS outline**: Draft a one page outline for your strategy using any of the elements above
 
 ## Examples from Nodes
 
-**Example 1**: Node x focused its NDMS on two main topics: clarity of roles and better support for data standards. This kept the strategy manageable
-
-**Example 2**: Node y used the GORC elements to review existing services. This revealed that training and community engagement needed more attention
-
-**Example 3**: Node z with limited staff chose to focus on objectives that could be achieved within existing resources. The strategy was short but effective
+- **Example 1**: Node x focused its NDMS on two main topics: clarity of roles and better support for data standards. This kept the strategy manageable
+- **Example 2**: Node y used the GORC elements to review existing services. This revealed that training and community engagement needed more attentio
+- **Example 3**: Node z with limited staff chose to focus on objectives that could be achieved within existing resources. The strategy was short but effective

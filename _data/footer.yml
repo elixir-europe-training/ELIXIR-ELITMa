@@ -1,24 +1,25 @@
 copyright: Copyright notice
 extra_line: 
 columns:
-  - type: image
-    image_width: 88px
-    width: 2
-    src: 'assets/img/main_logo_round.png'
-    alt: Jekyll Bootstrap theme logo
+  - type: text
+    width: 6
+    content: |
+      By the Nodes, for the Nodes.\
+      Building ELIXIR management capacity.
   - type: links
-    width: 3
-    children: 
-      - url_text: Home
-        url: /
-  - type: links
-    width: 3
-    children: 
-      - url_text: Example page
-        url: /example_page
-  - type: image
-    image_width: 88px
     width: 2
-    src: 'assets/img/main_logo_round.png'
-    alt: Jekyll Bootstrap theme logo
+    title: MODULES
+    children: 
+      - url_text: Data Management
+        url: /module-data-management
+      - url_text: Communication
+        url: /module-communication
+  - type: links
+    width: 2
+    title: ABOUT
+    children: 
+      - url_text: Find out about the programme
+        url: https://elixir-europe.org/platforms/training/elitma
+      - url_text: See the people behind ELITMa
+        url: /contributors
 

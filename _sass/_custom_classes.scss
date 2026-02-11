@@ -1,98 +1,176 @@
 // Include here all custom classes to add extra styling on top of what the theme and bootstrap variables offer. 
 
 //Example for highlighting the active page in the navigation:
+
 /*-----Top navigation-----*/
 
 .navbar-nav .nav-item > a {
     &.active {
         color: $white;
-        background-color: $primary;
+        background-color: $primary-light;
         border-radius: $border-radius;
     }
 }
 
-// styling for the metroline grid as used by e.g. the contributors page
-.gridlayout {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
-  gap: 1rem;
+/*------Footer------*/
+.footer-title {
+  font-family: "Lato", sans-serif;
+  font-weight: Light;
+  font-size: 13px;
 }
 
-.gridlayout-cell {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+footer .list-unstyled a {
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: none;
 }
 
-// maybe not necessary if not interested in using icons
-.gridlayout-cell .icon {
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+footer .col-6.col-lg-6.d-flex.justify-content-lg-start {
+  color: $white;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 110%;
+
 }
 
+/*------Navbar default -----*/
+header .navbar {
+  box-shadow: none !important;
+  background: $light-background !important;
 
-// Styling for the logos on the logo page
-.logo-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
+  .navbar-brand, .nav-link {
+    color: $primary!important;
+  }
+}
+/* -----Homepage----- */
+
+#home {
+  header .navbar {
+    margin-bottom: 0!important;
+    box-shadow: none !important;
+    background: $light-background !important;
+
+    .navbar-brand, .nav-link {
+      color: $primary!important;
+    }
+  }
 }
 
-.logo-item {
-  width: 185px;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo-item img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  filter: grayscale(100%);
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.logo-item img:hover {
-  transform: scale(1.1);
-  filter: grayscale(0%);
+.visual {
+  background: $light-background;
+  padding: 50px 0;
+  margin-bottom: 50px;
 }
 
 
 
+@media screen and (max-width: 768px) {
+  .unit-lesson-plan {
+    display: block;
+  }
+  .search-nav-item {
+    display: block;
 
-// figure {
-//   text-align: center;
-//   margin: 2em auto;
-// }
-//
-// figure img {
-//   max-width: 100%;
-//   height: auto;
-// }
-//
-// figcaption {
-//   font-size: 0.9em;
-//   color: #666;
-//   margin-top: 0.5em;
-//   text-align: center; /* This ensures the caption itself is centered */
-// }
-
-img.size-small {
-  width: 300px;
+    &:before {
+      display: none;
+    }
+  }
 }
 
-img.size-medium {
-  width: 500px;
+
+// Icon sizing
+
+.h-icon-8 {
+    height: 8em;
+}
+.h-icon-6 {
+    height: 6em;
+}
+.h-icon-5 {
+    height: 5em;
+}
+.h-icon-4 {
+    height: 4em;
 }
 
-img.size-large {
-  width: 100%;
-  max-width: 800px;
+/*-----Section navigation tiles-----*/
+
+.navigation-tiles {
+    .card,
+    .btn {
+        &:hover {
+            box-shadow: $box-shadow;
+        }
+    }
 }
+
+/*------Home-------*/
+.landingpage {
+  h2 {
+    font-weight: 700;
+    font-family: $font-family-theme;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-family: $font-family-theme;
+  }
+
+  /* match the landingpage card behaviour */
+  .card {
+    &:hover {
+      box-shadow: $box-shadow;
+    }
+
+    .card-img-top {
+      width: unset;
+      padding: $card-spacer-x $card-spacer-x 0 $card-spacer-x;
+    }
+  }
+
+  .module-tile {
+    border-radius: 1rem;
+
+    transition: transform 120ms ease, box-shadow 120ms ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $box-shadow;
+    }
+
+  .module-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 999px;
+    background: $light;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .module-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+  }
+
+  .badge {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+  .card-title {
+      font-weight: 600;
+    }
+  }
+
+}
+
+.navigation-tiles {
+  margin-bottom: 100px;
+}
+
+.h-icon-8 { height: 8em; }
+.h-icon-6 { height: 6em; }
+.h-icon-5 { height: 5em; }
+.h-icon-4 { height: 4em; }

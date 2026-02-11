@@ -1,0 +1,7 @@
+title: Data Management Module
+url: data-management
+subitems:
+  - title: Some title
+    url: /chapter1
+status: delivered
+module_icon: /assets/img/icons/icon-module-data-management.svg

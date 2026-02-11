@@ -1,2 +1,44 @@
 // Find out which theme variables you can use to fine tune the styling of your website here: https://github.com/ELIXIR-Belgium/elixir-toolkit-theme/blob/main/_sass/_variables.scss
 // Copy paste theme here and change where necessary .
+
+/*-----General styling-----*/
+$font-family-theme: "Lato", sans-serif;
+
+/*-----Buttons hover style-----*/
+$btn-primary-bg-hover: $secondary;
+$btn-primary-color-hover: $accent-color;
+
+/*-----Top navigation-----*/
+$topnav-bg: $grey-light;
+$topnav-brand-height: 4rem;
+$topnav-title-color: $primary;
+
+/*-----More information tiles-----*/
+$info-card-bg: $light;
+$info-card-color: $dark;
+$info-card-bg-hover: $primary;
+$info-card-color-hover: $white;
+
+/*-----Sidebar-----*/
+
+$sidebar-bg: $light;
+$sidebar-color: $dark;
+$sidebar-bg-active: $primary;
+$sidebar-color-active: $dark;
+
+/*-----Section navigation tiles-----*/
+$nav-card-bg: $light;
+$nav-card-header-bg: $dark;
+$nav-card-header-color: $secondary;
+$nav-card-badge-color: $accent-color;
+$nav-card-badge-bg: $dark;
+
+/*-----Footer-----*/
+$footer-bg: $dark;
+$footer-color: $white;
+$footer-link-color: $white;
+$footer-link-color-hover: $secondary;
+$footer-copyright-bg: #00000033;
+
+/*-----Events & news-----*/
+$news-border-color: $primary;

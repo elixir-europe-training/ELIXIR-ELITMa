@@ -1,24 +1,37 @@
-title: ELITMa
+title: ELITMa – ELIXIR Training Programme in Management
 # This appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-#topnav_title: Website title
+topnav_title: ELITMa
 # Optional: this appears on the top navigation bar next to the main_logo.svg icon
 
-description: "Example of ELIXIR toolkit theme as a remote jekyll theme"
+description: "ELIXIR Training Programme in Management, supporting the planning and delivery of Node activities such as coordination, training, service provision, infrastructure management, events and communication."
 # Metadata description of the website
 
-remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@4.1.0
+remote_theme: ELIXIR-Belgium/elixir-toolkit-theme
 
 url: "https://elixir-europe-training.github.io"
-baseurl: "/ELXIR-ELITMa"
+baseurl: "/ELIXIR-ELITMa"
 
 exclude:
   - README.md
   - vendor
   - Gemfile
 
+sass:
+  style: compressed
+  sourcemap: never
+
+theme_variables:
+  topnav:
+    brand_logo: assets/img/main-logo-horizontal.svg
+    theme: light
+  fonts:
+    - https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap
+
+topnav_banner: 
+# Optional: a banner message to display to users on all pages
+
 defaults:
-# Define here page metadata attributes for all pages at once or on specific directories. More information: https://jekyllrb.com/docs/configuration/front-matter-defaults/
   -
     scope:
       path: ""
@@ -26,41 +39,25 @@ defaults:
     values:
       permalink: /:basename
       layout: "page"
-      sidebar: main
+      search_exclude: false
+  -
+    scope:
+      path: "pages/about"
+    values:
+      sidebar: about
+  -
+    scope:
+      path: "pages/modules/data-management"
+    values:
+      sidebar: module-data-management
+      type_img: /icons/icon-module-data-management.svg
+  -
+    scope:
+      path: "pages/modules/communication"
+    values:
+      sidebar: module-communication
+      type_img: /icons/icon-module-communication.svg
 
-theme_variables: 
-  # git_host: GitHub
-  # back_to_top: true
-  # dev-info-banner: false
-  # privacy_statement_url: /privacy
-  # github_buttons: 
-  #   position: top
-  #   edit_me: true
-  #   open_issue: true
-  #   history: true
-  # datatables:
-  #   searchbuilder: True
-  # headings:
-  #   related-pages: Related pages
-  #   more-information-tiles: More information
-  #   resource-table-all: Tools and resources on this page
-  #   resource-table-all-collapse: false
-  #   affiliation-tiles-page: Affiliations
-  #   contributor-minitiles-page: Contributors
-  # toc:
-  #   min_headings: 2
-  #   headings: 'h2'
-   topnav:
-#     theme: light
-     brand_logo: assets/img/elixir-main.png
-    # github: true
-    # twitter: false
-    # bluesky: false
-    # linkedin: false
-    # fosstodon: false
-  # theme_color: 0d6efd
-  # fonts:
-  #   - url towards a font
 
 plugins:
   - elixir-toolkit-theme-plugins
@@ -70,10 +67,3 @@ plugins:
   - jekyll-github-metadata
   - jemoji
   - webrick
-
-# --- Missing in gitlab: ---
-# github:
-#   repository_url: https://github.com/ELIXIR-Belgium/elixir-toolkit-theme
-#   source:
-#     branch: main
-

@@ -1,6 +1,21 @@
 ## 
 ## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
 subitems:
-- title: Home
-  url: /index
-    
+  - title: Home
+    url: /
+  - title: Modules
+    url: /modules
+    subitems:
+      - title: Node data management strategy
+        url: modules/data-management/
+      - title: Communication
+        url: modules/communication/
+  - title: Events
+    url: /events
+  - title: About
+    url: /about
+    subitems:
+    - title: Contributors
+      url: /contributors
+    - title: News
+      url: /news

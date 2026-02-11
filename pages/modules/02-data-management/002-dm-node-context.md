@@ -1,10 +1,14 @@
 ---
-title: 2.2 Understanding your Node context
-permalink: /modules/module2/chapter2
+title: Understanding your Node context
+page_id: mod_dm_2
+type: Data Management
+status: in development
+description: Understand the environment in which your Node operates and organise the team that will guide the development of your data management strategy
+learning_outcomes:
+    - 
 
 ---
-**Chapter 2.2 Understanding your Node context and organising your NDMS team**
-**Objective**: Understand the environment in which your Node operates and organise the team that will guide the development of your data management strategy
+{% include module-metadata.html %}
 
 ## Why context matters
 
@@ -67,18 +71,16 @@ Start small and expand as needed. Involve people who:
 
 ## Exercises 
 
-**1. Context map**: create a table with governance, data, services, policies, training and sustainability. Add short notes to the table
+1. **Context map**: create a table with governance, data, services, policies, training and sustainability. Add short notes to the table
 
-**2. Team outline**: List people needed for the NDMS team. Mark essential and optional roles
+2. **Team outline**: List people needed for the NDMS team. Mark essential and optional roles
 
-**3. Stakeholder grid**: Place stakeholders in a 2 × 2 grid of influence versus interest
+3. **Stakeholder grid**: Place stakeholders in a 2 × 2 grid of influence versus interest
 
-**4. First meeting**: Draft a brief agenda with three key questions to answer for your Node by your team
+4. **First meeting**: Draft a brief agenda with three key questions to answer for your Node by your team
 
 ## Examples from Nodes 
 
-**Example 1**: Node x created a one page service map. It revealed overlaps and started helpful conversations
-
-**Example 2**: Node y involved its training coordinator early. This linked stewardship and researcher support
-
-**Example 3**: Node z began with two people. After drafting an outline they invited technical experts for focused input
+- **Example 1**: Node x created a one page service map. It revealed overlaps and started helpful conversations
+- **Example 2**: Node y involved its training coordinator early. This linked stewardship and researcher support
+- **Example 3**: Node z began with two people. After drafting an outline they invited technical experts for focused input

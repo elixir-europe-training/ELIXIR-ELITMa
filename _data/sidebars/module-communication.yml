@@ -1,0 +1,11 @@
+title: Communication Module
+title_url: modules/communication
+subitems:
+  - title: Foundations of communication in RIs
+    url: /comms-introduction
+  - title: Understanding your audience
+    url: /comms-audience
+status: under development
+module_icon: /assets/img/icons/icon-module-communication.svg
+
+

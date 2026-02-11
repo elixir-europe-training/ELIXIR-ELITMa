@@ -1,9 +1,0 @@
-{% assign page_id = page.id | strip | downcase %}
-{% assign current_module = null %}
-
-{% for module in site.data.modules %}
-  {% assign module_id = module.id | strip | downcase %}
-  {% if module_id == page_id %}
-    {% assign current_module = module %}
-  {% endif %}
-{% endfor %}

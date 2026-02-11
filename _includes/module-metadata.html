@@ -1,0 +1,82 @@
+{%- comment -%}
+Front matter supported:
+- status
+- status_badge (Bootstrap: success|warning|info|secondary|danger)
+- description
+- learning_outcomes (simple list of strings)
+{%- endcomment -%}
+
+<div class="module-metadata my-4">
+  <nav>
+    <div class="nav nav-tabs" role="tablist">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        data-bs-target="#module-meta-general"
+        type="button"
+        role="tab">
+        General
+      </button>
+
+      <button
+        class="nav-link"
+        data-bs-toggle="tab"
+        data-bs-target="#module-meta-outcomes"
+        type="button"
+        role="tab">
+        Learning outcomes
+      </button>
+    </div>
+  </nav>
+
+  <div class="tab-content border border-top-0 p-3">
+
+    <!-- General tab -->
+    <div class="tab-pane show active" id="module-meta-general" role="tabpanel">
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="small text-muted">Status</div>
+          {%- if page.status -%}
+            <span class="badge bg-{{ page.status_badge | default: 'secondary' }}">
+              {{ page.status }}
+            </span>
+          {%- else -%}
+            <span class="text-muted">Not specified.</span>
+          {%- endif -%}
+        </div>
+
+        <div class="col-md-8">
+          <div class="small text-muted">Description</div>
+          {%- if page.description -%}
+            <p class="mb-0">{{ page.description }}</p>
+          {%- else -%}
+            <span class="text-muted">No description provided.</span>
+          {%- endif -%}
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Learning outcomes tab -->
+    <div class="tab-pane" id="module-meta-outcomes" role="tabpanel">
+      {%- if page.learning_outcomes -%}
+        <p class="mb-3">
+          After completing this module, participants are capable of:
+        </p>
+
+        <ol class="mb-0">
+          {%- for outcome in page.learning_outcomes -%}
+            <li class="mb-2">{{ outcome }}</li>
+          {%- endfor -%}
+        </ol>
+
+      {%- else -%}
+        <span class="text-muted">
+          There are no learning outcomes defined for this module.
+        </span>
+      {%- endif -%}
+    </div>
+
+  </div>
+</div>
