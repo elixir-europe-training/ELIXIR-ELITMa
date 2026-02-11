@@ -1,9 +1,23 @@
-writers:
-  - id: 13
-    firstName: Mijke
-    lastName: Jetten
+# List of contributors
+#
+# reference maintainers/contributors by their name used in contributors metadata section on the pages.
+# Extra metadata that is possible to add:
+# Full Name:
+#    git: github id
+#    email: email adress
+#    orcid: ocrid id
+#    role: the role of the contributor
+#    affiliation: affiliation
+#    image_url: absolute path to image (default image from github)
+
+Mijke Jetten:
+    git: bedroesb
     orcid: 0000-0001-9114-2896
-    affiliation: ELIXIR-NL / Health-RI
-    active: true
-    image: mijke_jetten.png
+    role: editor
+    affiliation: VIB Data Core / ELIXIR-BE
+    image_url: mijke_jetten.png
+Xenia Perez Sitja:
+    affiliation: Earlham Institute / ELIXIR-UK
+    git: sitjart
+    role: Communication Lead
 

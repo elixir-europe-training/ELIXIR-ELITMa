@@ -1,13 +1,48 @@
 /*-----Theme colors-----*/
-$primary:       #3e3e3e; // teal
-$light:         #184a68; // black-ish
-$dark:          #f47d20; // orange
-// ????
-$secondary:     #184a68;
+$primary: #023452;
+$secondary: #037EAB;
+$primary-light: #9bcbdd;
+$light: #EEEEEE;
+$dark: #001F33;
+$white: #ffffff;
+$grey-light: #EEEEEE;
+$accent-color: #F47D20;
 
 
 /*-----Custom values for Bootstrap variables-----*/
+$component-active-bg: $accent-color;
+$dark-text: $dark;
+$light-background: $grey-light;
+$light-text: $grey-light;
+$navbar-light: $grey-light;
+$navbar-hover-color: $grey-light;
+$navbar-active: $secondary;
+$navbar-toggler-border-color: transparent;
+$border-radius: 0.3rem;
+$btn-border-radius-sm: $border-radius;
+$card-border-width: 0;
+$card-bg: transparent;
+$card-cap-bg: $dark;
+$link-color: $accent-color;
+$info: $primary-light;
 $link-decoration: none;
-$navbar-light-hover-color: $primary;
+$body-bg: $white;
+$body-color: $dark;
+$font-family-sans-serif: "Lato", sans-serif;
+$alert-border-width: 0;
+$input-group-addon-bg: $primary;
+$input-bg: $primary;
+$input-border-width: 0;
+$h1-font-size: 1rem * 3.5 !default;
+$h3-font-size: 1rem * 1.5 !default;
+$h4-font-size: 1rem * 1.1 !default;
+$h5-font-size: 1rem !default;
+$h6-font-size: 1rem !default;
 
-// Find out which bootstrap variables you can use to fine tune the styling of your website here: https://github.com/ELIXIR-Belgium/elixir-toolkit-theme/blob/main/_sass/bootstrap/_variables.scss
+// Responsive Variables
+$desktop: 'only screen and (min-width: 1400px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
