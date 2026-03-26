@@ -2,12 +2,15 @@ title: Communication Module
 title_url: modules/communication
 subitems:
   - title: Foundations of communication in RIs
-    url: /comms-introduction
+    url: /001-comms-introduction
   - title: Understanding your audience
-    url: /comms-audience
+    url: /002-comms-audience
+  - title: Collaboration and sharing
+    url: /003-comms-collaboration
   - title: ELIXIR's Comms Ecosystem
-    url: /comms-ecosystem
-status: under development
-module_icon: /assets/img/icons/icon-module-communication.svg
+    url: /004-comms-Ecosystem
+  - title: Writing for Non-Writers
+    url: /005-comms-writing
+  
 
 

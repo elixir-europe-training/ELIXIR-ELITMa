@@ -4,7 +4,7 @@ description: Knowing ELIXIR's channels exist is not the same as knowing when and
 summary: ELIXIR has a range of communication channels and platforms, but knowing they exist is not the same as knowing when and how to use them. This sections maps the ecosystem so you can navigate it confidently, avoid common mistakes, and make the most of what's already available to you.
 audience: [Node Coordinators, Researchers, New ELIXIR Staff]
 page_img: /icons/icon-module-communication.svg
-page_id: comms-ecosystem
+page_id: mod_comm_4
 type: Communication
 time: 15 minutes
 status: under development

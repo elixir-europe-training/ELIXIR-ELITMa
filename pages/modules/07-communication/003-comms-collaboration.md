@@ -5,7 +5,7 @@ summary: One of the most common mistakes in a distributed network is assuming yo
 audience: [Node Coordinators, Node Leadership positions]
 page_img: /icons/icon-module-communication.svg
 time: 10 minutes
-page_id: comms-collaboration
+page_id: mod_comm_3
 type: Communication
 status: ready
 learning_outcomes:

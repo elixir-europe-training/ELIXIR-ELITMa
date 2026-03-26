@@ -1,7 +1,7 @@
 ---
 title: Foundations of communication in research infrastructures
 description: Communication is already happening in your Node – the question is whether it's working. Find out the answer and how to improve it.
-page_id: comms-introduction
+page_id: mod_comm_1
 page_img: /icons/icon-module-communication.svg
 type: Communication
 audience: [Node Coordinators, Project Managers, Communications Officers]
