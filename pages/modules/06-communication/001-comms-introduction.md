@@ -58,7 +58,7 @@ Reflect on a current or recent project.
 - [ ] Are our members aware of current objectives?
 - [ ] Are the channels I'm using actually working?
 
-{% include callout.html type="warning" content="If you didn't clik to two or more, this module is for you – keep going." %}
+{% include callout.html type="warning" content="If you didn't tick three or more, this module is definetely for you – keep going." %}
 
 
 ## Existing resources
