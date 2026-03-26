@@ -1,29 +1,29 @@
-Governance:
-  title: ELIXIR introduction and governance
-  icon: 
+- title: ELIXIR introduction and governance
+  icon: /images/icons/icon-module-governance.svg
+  type: Governance
   id: mod_gov
   description:
   url: modules/governance
   status: to do
   order: 1
 
-Data Management:
-  title: Node data management strategy
+- title: Node data management strategy
   description: An introduction to RDM principles and FAIR data practices
   icon: /images/icons/icon-module-data-management.svg
   id: mod_dm
+  type: Data management
   leads:
   url: modules/data-management
   status: in development
   time: 3 hours
   status_badge:
-  order: 3
+  order: 2
 
-Strategic management:
-  title: Strategic management
+- title: Strategic management
   description: Lightweight tools and frameworks for monitoring and tracking strategic objectives using quantitative and qualitative indicators
   icon: /images/icons/icon-module-strategic-management.svg
   id: mod_sm
+  type: Strategic Management
   leads:
   url: modules/strategic-management
   status: to do
@@ -31,11 +31,11 @@ Strategic management:
   status_badge:
   order: 3
 
-Leading teams:
-  title: Leading teams in ELIXIR
+- title: Leading teams in ELIXIR
   description: Aimed at ELIXIR Node staff and internal project leaders, this module develops leadership and team management skills.
   icon: /images/icons/icon-module-leading-teams.svg
   id: mod_teams
+  type: Leading teams
   leads:
   url: modules/leading-teams
   status: to do
@@ -43,35 +43,35 @@ Leading teams:
   status_badge:
   order: 4
 
-ELSI:
-  title: Legal and ethical issues
+- title: Legal and ethical issues
   description: Equipping participants with practical tools and strategies to navigate ethical, legal and social issues.
   icon: /images/icons/icon-module-elsi.svg
   id: mod_elsi
   leads:
+  type: ELSI
   url: modules/elsi
   status: to do
   time: 
   status_badge:
   order: 5
 
-Communication:
-  title:
+- title: Communication
   icon: /images/icons/icon-module-communication.svg
-  description: Practical tools for communicating your Node's work 
+  description: Practical tools for communicating your Node's work
   url: /modules/communication
   id: mod_comm
   leads:
+  type: Communication
   status: in development
   status_badge: 
   time: 2 hours
   order: 6
 
-Finance:
-  title: Financial management
+- title: Financial management
   description: Theoretical and practical financial management techniques for ELIXIR Nodes
   icon: /images/icons/icon-module-finance.svg
   id: mod_fm
+  type: Finance
   leads:
   url: modules/finance
   status: to do
@@ -79,23 +79,23 @@ Finance:
   status_badge:
   order: 7
 
-Project management:
-  title: Project management
-  description: Promotes project management best practices and provides a flexible, open-access tool adaptable for each Node’s requirements
+- title: Project management
+  description: Promotes project management best practices and provides a flexible, open-access tool adaptable for each Node's requirements
   icon: /images/icons/icon-module-pm.svg
   id: mod_pm
   leads:
+  type: Project Management
   url: modules/project-management
   status: to do
   time: 
   status_badge:
   order: 8
 
-Impact:
-  title: Impact
+- title: Impact
   description: 
   icon: /images/icons/icon-module-impact.svg
   id: mod_impact
+  type: Project management
   leads:
   url: modules/impact
   status: to do
@@ -103,12 +103,12 @@ Impact:
   status_badge:
   order: 9
 
-Carbon footprint:
-  title: Carbon footprint
+- title: Carbon footprint
   description: 
   icon: /images/icons/icon-module-cf.svg
   id: mod_cf
   leads:
+  type: Carbon footprint
   url: modules/carbon-footprint
   status: in development
   time: 

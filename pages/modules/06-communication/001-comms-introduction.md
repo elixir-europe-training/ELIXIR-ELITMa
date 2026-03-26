@@ -9,6 +9,7 @@ time: 15 minutes
 status: ready
 summary: Communication is already happening in your Node – the question is whether it's working. This section helps you understand the difference between internal and external communication, why both matter in a distributed infrastructure like ELIXIR, and how to take stock of where your Node currently stands.
 task_list: true
+sidebar: true
 learning_outcomes:
     - Distinguish between internal and external communication and identify which applies to a given situation in your Node
     - Recognise communication as a shared responsibility across all roles, not just dedicated comms staff

@@ -1,0 +1,40 @@
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-{{ include.col | default: 2 }} g-4 mb-5 navigation-tiles">
+    {%- assign related_pages = site.data.module_types | sort: "order" %}
+    {%- for m in related_pages %}
+    {%- assign current_page = m %}
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+
+                <!-- Top section: icon, title, description -->
+                <div>
+                    {%- if current_page.icon %}
+                    <img src="{{ current_page.icon | relative_url }}" alt="" style="height: 2.5rem; width: auto; object-fit: contain; align-self: flex-start;" class="mb-2">
+                    {%- endif %}
+                    <a class="stretched-link section-title" aria-label="Go to the {{current_page.title}} page" href="{{ current_page.url | relative_url }}">
+                        <b>{{current_page.title}}</b>
+                    </a>
+                    {%- if current_page.description %}
+                    <p class="card-text mb-0 mt-1">{{ current_page.description }}</p>
+                    {%- endif %}
+                </div>
+
+                <!-- Bottom section: chips -->
+                {%- if current_page.time or current_page.status %}
+                <div class="d-flex flex-wrap gap-2 mt-auto pt-3">
+                    {%- if current_page.status %}
+                    <span class="module-chip module-chip--status">{{ current_page.status }}</span>
+                    {%- endif %}
+                    {%- if current_page.time %}
+                    <span class="module-chip module-chip--time">
+                        <i class="fa-solid fa-clock me-1"></i>{{ current_page.time }}
+                    </span>
+                    {%- endif %}
+                </div>
+                {%- endif %}
+
+            </div>
+        </div>
+    </div>
+    {%- endfor %}
+</div>

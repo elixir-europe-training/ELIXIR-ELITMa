@@ -12,4 +12,4 @@ description: >
 ## Explore ELITMa's modules
 A comprehensive introduction to European and global research infrastructures, focusing on ELIXIR’s work and offering practical tools and best practices.
 
-{% include section-navigation-tiles.html type="Module" custom="mod_dm, mod_comm" sort=false col=4 %}
+{% include module-navigation.html col=3 %}

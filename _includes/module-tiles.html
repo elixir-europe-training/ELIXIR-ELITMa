@@ -81,80 +81,75 @@
     {%- endif %}
     <div class="col" data-affiliations="{{affiliations_classes}}">
         <div class="card h-100">
-            <div class="card-body d-flex flex-column">
-                <!-- *** Module type icon from _data/module_types.yml *** -->
-                {%- assign type_data = site.data.module_types[current_page.type] -%}
-                {%- if type_data.icon -%}
-                <img src="{{ type_data.icon | relative_url }}" class="module-type-icon mb-2" alt="{{ current_page.type }} icon">
-                {%- endif -%}
-                <!-- *** End module type icon *** -->
+            <div class="card-body d-flex flex-column ">
 
-                <a class="stretched-link section-title" aria-label="Go to the {{current_page.title}} page" href="{{ current_page.url | relative_url }}">
-                    <b>{{current_page.title}}</b>
-                </a>
-                {%- if current_page.description %}
-                <p class="card-text h-100">{{ current_page.description }}</p>
-                {%- endif %}
-
-                <!-- *** Module chips: time and audience *** -->
-                {%- if current_page.time or current_page.audience %}
-                <div class="d-flex flex-wrap gap-2 mt-auto pt-4">
-
-                  {%- if current_page.time -%}
-                  <span class="module-chip module-chip--time">
-                    <i class="fa-solid fa-clock me-1"></i>{{ current_page.time }}
-                  </span>
-                  {%- endif -%}
-
-                  {%- if current_page.audience -%}
-                  {%- assign audience_list = current_page.audience -%}
-                  {%- assign audience_count = audience_list | size -%}
-                  {%- for group in audience_list limit:2 -%}
-                  <span class="module-chip module-chip--audience">
-                    <i class="fa-solid fa-users me-1"></i>{{ group }}
-                  </span>
-                  {%- endfor -%}
-                  {%- if audience_count > 2 -%}
-                  <span class="module-chip-more">+{{ audience_count | minus: 2 }}</span>
-                  {%- endif -%}
-                  {%- endif -%}
-
-                </div>
-                {%- endif %}
-                <!-- *** End module chips *** -->
-
-                {%- if current_page.affiliations %}
-                {%- assign pageaffil = current_page.affiliations | sort %}
-                {%- assign alllogos = site.data.affiliations %}
-                {%- assign allcountries = site.data.countries %}
-                <div class="d-flex align-items-center flex-wrap gap-2">
-                    <span><b><small>Affiliations:</small></b></span>
-                    {%- for affiliation in pageaffil %}
-                    {%- assign filter_affiliation = alllogos | where: "name", affiliation | first %}
-                    {%- assign country = affiliation | upcase %}
-                    {%- if affiliation.size == 2 %}
-                    {%- assign country_link = site.pages | where:"country_code",country | first %}
-                    {%- if country_link %}
-                    <a role="button" href="{{country_link.url | relative_url}}" data-bs-toggle="tooltip" title="{{allcountries[country]}}" class="btn btn-sm bg-white hover-primary">
-                    {%- else %}
-                    <a role="button" data-bs-toggle="tooltip" title="{{allcountries[country]}}" class="btn btn-sm bg-white hover-primary disabled border-white" aria-disabled="true">
-                        {%- endif %}
-                        <div class="d-block affiliation-img-sm">
-                            <span class="flag-icon flag-icon-{{affiliation | downcase}} shadow-sm"></span>
-                        </div>
+                <!-- Top section: title and description -->
+                <div>
+                    <a class="stretched-link section-title" aria-label="Go to the {{current_page.title}} page" href="{{ current_page.url | relative_url }}">
+                        <b>{{current_page.title}}</b>
                     </a>
-                    {%- elsif filter_affiliation %}
-                    <a role="button" href="{{filter_affiliation.url}}" data-bs-toggle="tooltip" data-bs-original-title="{{affiliation}}" class="btn btn-sm bg-white hover-primary">
-                        {%- if filter_affiliation.image_url %}
-                        <img alt="logo of {{filter_affiliation.name}}" src="{{filter_affiliation.image_url | relative_url }}" class="d-inline affiliation-img-sm">
-                        {%- else %}
-                        {{filter_affiliation.name}}
-                        {%- endif %}
-                    </a>
+                    {%- if current_page.description %}
+                    <p class="card-text mb-0 mt-1">{{ current_page.description }}</p>
                     {%- endif %}
-                    {%- endfor %}
                 </div>
-                {%- endif %}
+
+                <!-- Bottom section: chips and affiliations -->
+                <div class="mt-auto pt-3">
+                    {%- if current_page.time or current_page.audience %}
+                    <div class="d-flex flex-wrap gap-2 mb-2">
+                        {%- if current_page.time %}
+                        <span class="module-chip module-chip--time">
+                            <i class="fa-solid fa-clock me-1"></i>{{ current_page.time }}
+                        </span>
+                        {%- endif %}
+                        {%- if current_page.audience %}
+                        {%- assign audience_list = current_page.audience %}
+                        {%- assign audience_count = audience_list | size %}
+                        {%- for group in audience_list limit:2 %}
+                        <span class="module-chip module-chip--audience">
+                            <i class="fa-solid fa-users me-1"></i>{{ group }}
+                        </span>
+                        {%- endfor %}
+                        {%- if audience_count > 2 %}
+                        <span class="module-chip-more">+{{ audience_count | minus: 2 }}</span>
+                        {%- endif %}
+                        {%- endif %}
+                    </div>
+                    {%- endif %}
+
+                    {%- if current_page.affiliations %}
+                    {%- assign pageaffil = current_page.affiliations | sort %}
+                    {%- assign alllogos = site.data.affiliations %}
+                    {%- assign allcountries = site.data.countries %}
+                    <div class="d-flex align-items-center flex-wrap gap-2">
+                        <span><b><small>Affiliations:</small></b></span>
+                        {%- for affiliation in pageaffil %}
+                        {%- assign filter_affiliation = alllogos | where: "name", affiliation | first %}
+                        {%- assign country = affiliation | upcase %}
+                        {%- if affiliation.size == 2 %}
+                        {%- assign country_link = site.pages | where:"country_code",country | first %}
+                        {%- if country_link %}
+                        <a role="button" href="{{country_link.url | relative_url}}" data-bs-toggle="tooltip" title="{{allcountries[country]}}" class="btn btn-sm bg-white hover-primary">
+                        {%- else %}
+                        <a role="button" data-bs-toggle="tooltip" title="{{allcountries[country]}}" class="btn btn-sm bg-white hover-primary disabled border-white" aria-disabled="true">
+                        {%- endif %}
+                            <div class="d-block affiliation-img-sm">
+                                <span class="flag-icon flag-icon-{{affiliation | downcase}} shadow-sm"></span>
+                            </div>
+                        </a>
+                        {%- elsif filter_affiliation %}
+                        <a role="button" href="{{filter_affiliation.url}}" data-bs-toggle="tooltip" data-bs-original-title="{{affiliation}}" class="btn btn-sm bg-white hover-primary">
+                            {%- if filter_affiliation.image_url %}
+                            <img alt="logo of {{filter_affiliation.name}}" src="{{filter_affiliation.image_url | relative_url }}" class="d-inline affiliation-img-sm">
+                            {%- else %}
+                            {{filter_affiliation.name}}
+                            {%- endif %}
+                        </a>
+                        {%- endif %}
+                        {%- endfor %}
+                    </div>
+                    {%- endif %}
+                </div>
 
             </div>
         </div>
