@@ -7,4 +7,4 @@ permalink: /modules/finance/
 
 Participants will learn theoretical and practical financial management techniques for ELIXIR Nodes, including internal control and risk management.
 
-{% include module-tiles.html type="Finance"}
+{% include module-tiles.html type="Finance" %}

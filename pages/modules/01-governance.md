@@ -7,4 +7,4 @@ permalink: /modules/governance/
 
 This module introduces European and global research infrastructures, including regulatory bodies like ESFRI. It focuses on ELIXIR’s role within this landscape, focusing on the five-year scientific programme’s mission and operations.
 
-{% include modules-tiles.html type="Governance"}
+{% include module-tiles.html type="Governance" %}
