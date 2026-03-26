@@ -1,12 +1,14 @@
 ---
 title: Understanding your Node context
 page_id: mod_dm_2
+page_img: /icons/icon-module-data-management.svg
 type: Data Management
 status: in development
+summary: # what will appear at the top of the page
 description: Understand the environment in which your Node operates and organise the team that will guide the development of your data management strategy
-learning_outcomes:
+audinece : # list the primary ones, not all use [] and separate types with a comma. These appear in the module tiles and metadata at the top
+learning_outcomes: #use tab + dash
     - 
-
 ---
 {% include module-metadata.html %}
 
