@@ -1,26 +1,80 @@
-- name: Test event 2
-  startDate: 2021-11-08
-  endDate: 2021-11-12
-  description: Example Description with [link](about)
-  location: "[Barcelona](test)"
-- name: Test event 1
-  startDate: 2025-06-23
-  startTime: '9:00'
-  endDate: 2025-06-24
-  endTime: 13:30 CET
-  description: The description of this event
-  location: Online
-- name: Test event 3
-  startDate: 2030-06-23
-  startTime: '9:00'
-  endDate: 2030-06-24
-  endTime: 13:30 CET
+- name: Node data management strategy workshop
+  startDate: 2025-05-19
+  endDate: 2025-05-22
+  endTime: 15:00 CET
   description: >
-   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna massa, vestibulum ut leo eget, fermentum molestie mauris. Cras facilisis libero non sodales lobortis. Proin eu ultricies lacus. Sed posuere orci id tincidunt sollicitudin. Phasellus sit amet justo turpis. Vestibulum non volutpat libero. Donec mattis elementum sem nec posuere. Donec vitae libero sed mi faucibus tempus.
-   Talks included<span>:</span>
-      * Curabitur faucibus lectus a sem posuere tempus
-      * [Vivamus et dignissim nulla](/)
-      * Curabitur faucibus lectus a sem posuere tempus
-      * [Vivamus et dignissim nulla](/)
-   Donec sagittis laoreet leo, eu tincidunt nulla pulvinar a. Aenean diam orci, rhoncus et imperdiet eget, sodales eget massa. Pellentesque lobortis egestas consequat.
+    This in-person workshop brought together Node data managers for hands-on exchange, collaborative planning and strategy development. Participants shared practices, tools and experiences to strengthen national data strategies, ensure alignment with ELIXIR's goals and improve cross-Node interoperability.
+      * [Find out more](https://elixir-europe.org/events/elitma-module2-eip-meeting)
+  location: Bari, Italy
+  related_pages:
+    - mod_dm
+- name: SPARKLE Impact & Green - Impact assessment and environmental sustainability workshop
+  startDate: 2024-09-30
+  startTime: 09:00 CET
+  endDate: 2024-09-30
+  endTime: 16:00 CET
+  description: >
+    [Find out more](https://elixir-europe.org/events/sparkle-impact-green-impact-assessment-and-environmental-sustainability-workshop)
+  location: Lisbon, Portugal
+  related_pages:
+    - mod_cf
+    - mod_impact
+- name: Impact and more workshop
+  startDate: 2024-04-08
+  startTime: 13:00 CET
+  endDate: 2024-04-10
+  endTime: 15:00 CET
+  description: >
+    [Find out more](https://elixir-europe.org/events/impact-and-more-workshop)
+  location: Bari, Italy
+  related_pages:
+    - mod_impact
+    - mod_cf
+- name: Node data management strategy workshop
+  startDate: 2023-06-28
+  endDate: 2023-06-29
+  description: >
+    Jetten, M., & Van Gelder, C. (2024). *ELITMa Module "Data Management Strategy"* (Finland 28-29 June 2023). Zenodo. [https://doi.org/10.5281/zenodo.10895080](https://doi.org/10.5281/zenodo.10895080)
+  location: Espoo, Finland
+  related_pages:
+    - mod_dm
+- name: "OATEN-ELITma: Show and tell demos from Nodes sustainability"
+  startDate: 2023-05-16
+  startTime: 10:00 CET
+  endDate: 2023-05-16
+  endTime: 16:00 CEET
   location: Online
+  related_pages:
+    - mod_sm
+    - mod_fm
+- name: "OATEN-ELITma: Financial and project management"
+  startDate: 2023-03-29
+  startTime: 10:30 CET
+  endDate: 2023-03-30
+  endTime: 17:30 CEET
+  description: >
+    Face to face capacity building on how to apply the tools to Node cases.
+  location: Lisbon, Portugal
+  related_pages:
+    - mod_sm
+    - mod_fm
+- name: "OATEN-ELITma: Coaching sessions on Strategic and Financial Management"
+  startDate: 2023-02-07
+  endDate: 2023-02-07
+  startTime: 10:00 CET
+  endTime: 13:00 CET
+  location: Online
+  description: >
+    Two consecutive coaching sessions on both Strategic and Financial Management.
+  related_pages:
+    - mod_sm
+    - mod_fm
+- name: "OATEN-ELITma: Strategic and Financial Management Tools and Project Management Tools"
+  startDate: 2023-01-17
+  endDate: 2023-01-18
+  description: >
+    First workshop of the OATEN-ELITMa programme. Open Access tools for effective management.
+  location: Online
+  related_pages:
+    - mod_sm
+    - mod_fm

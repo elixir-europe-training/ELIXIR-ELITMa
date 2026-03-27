@@ -1,0 +1,48 @@
+<div class="events {{include.event_type}}s">
+  {%- if include.title == true%}
+  <h2>{{include.event_type | replace: "_", " " | capitalize}}s</h2>
+  {%- endif %}
+  {%- if include.related_pages %}
+  {%- assign filtered = site.data.events | where_exp: "event", "event.related_pages contains include.related_pages" %}
+  {%- assign events = filtered | sort: "startDate" | reverse %}
+  {%- else %}
+  {%- assign events = site.data.events | sort: "startDate" | reverse %}
+    {%- endif %}
+  <ul class="list-unstyled mt-3">
+    {%- for event in events %}
+    <li class='{{include.event_type}}' data-start='{{ event.startDate}}'>
+      <span class="title mb-1">{{ event.name | escape }}</span>
+      <p class="text-muted mb-0"><i class="far fa-calendar me-2"></i><time datetime="{{ event.startDate | date: '%e %B, %Y %H:%M' }}">{{ event.startDate | date_to_long_string }} {{event.startTime}}</time>
+        {% if event.endDate or event.endTime %} - <time datetime="{{ event.endDate | date: '%e %B, %Y %H:%M %Z' }}">{{ event.endDate | date_to_long_string }} {{event.endTime}}</time>{% endif %}</p>
+      {%- if event.location %}
+      <i class="fa-solid fa-map-marker-alt me-2 text-muted"></i>
+      <div class="d-inline-block text-muted">{{ event.location | markdownify }}</div>
+      {%- endif %}
+      {%- if event.description %}
+      {%- assign word_count = event.description | split: " " | size %}
+      {%- if include.truncate == true and word_count > 40 %}
+      <p class="mb-0"><a data-bs-toggle="collapse" href="#collapse-{{count}}" role="button" aria-expanded="false" aria-controls="collapse-{{count}}">
+        View description
+      </a>
+      </p>
+      <div class="full-description collapse" id="collapse-{{count}}">
+        {{ event.description | markdownify }}
+      </div>
+      {%- else %}
+      {{ event.description | markdownify }}
+      {%- endif %}
+      {%- endif %}
+    </li>
+    {%- assign count = count | plus: 1 %}
+    {%- endfor %}
+  </ul>
+  {%- if include.caption == true%}
+  {%- assign caption_url = include.caption_url | default: "/events" %}
+  <small>An overview of all our events can be fount on the <a href="{{ caption_url | relative_url}}">events page</a>.</small>
+  {%- endif %}
+</div>
+<script>
+  $(function () {
+    show_{{ include.event_type }}s();
+  });
+</script>
