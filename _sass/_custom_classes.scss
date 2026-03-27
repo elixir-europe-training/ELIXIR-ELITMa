@@ -33,6 +33,10 @@ footer .col-6.col-lg-6.d-flex.justify-content-lg-start {
 
 }
 
+footer {
+  margin-top: 40px;
+}
+
 /*------Navbar default -----*/
 header .navbar {
   box-shadow: none !important;
@@ -58,8 +62,8 @@ header .navbar {
 
 .visual {
   background: $light-background;
-  padding: 50px 0;
-  margin-bottom: 50px;
+  padding: 30px 0;
+  margin-bottom: 0px;
 }
 
 

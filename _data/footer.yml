@@ -10,10 +10,26 @@ columns:
     width: 2
     title: MODULES
     children: 
-      - url_text: Data Management
-        url: /module-data-management
+      - url_text: Intro to ELIXIR & Governance
+        url: modules/governance/
+      - url_text: Node data management strategy
+        url: modules/data-management/
+      - url_text: Strategic management
+        url: modules/strategic-management/
+      - url_text: Leading teams
+        url: modules/leading-teams/
+      - url_text: Legal & ethical
+        url: modules/elsi/
       - url_text: Communication
-        url: /module-communication
+        url: modules/communication/
+      - url_text: Finance
+        url: modules/finance/
+      - url_text: Project management
+        url: modules/project-management/
+      - url_text: Impact
+        url: modules/impact/
+      - url_text: Carbon Footprint
+        url: modules/carbon-footprint/  
   - type: links
     width: 2
     title: ABOUT
