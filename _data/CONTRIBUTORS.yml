@@ -9,13 +9,16 @@
 #    role: the role of the contributor
 #    affiliation: affiliation
 #    image_url: absolute path to image (default image from github)
-
 Mijke Jetten:
-    git: 
-    role: Data Management Lead
+    git: MijkeJetten
+    role: Lead
+    email: m.jetten@dtls.nl
     affiliation: Health-RI / ELIXIR-NL
+    orcid: 0000-0001-9114-2896
 Xenia Perez Sitja:
-    affiliation: Earlham Institute / ELIXIR-UK
     git: sitjart
-    role: Communication Lead
+    orcid: 0000-0002-7166-0183
+    email: xenia.perez-sitja@earlham.ac.uk
+    role: Lead
+    affiliation: Earlham Institute / ELIXIR-UK
 
