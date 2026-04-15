@@ -4,6 +4,7 @@ page_id: mod_dm_1
 type: Data Management
 page_img: /icons/icon-module-data-management.svg
 status: in development
+sidebar: module-data-management
 description: Build a shared understanding of why a NDMS matters and what it offers to your Node
 audience: []
 learning_outcomes:
