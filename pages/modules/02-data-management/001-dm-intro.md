@@ -15,26 +15,30 @@ learning_outcomes:
 ---
 {% include module-metadata.html %}
 
+Developing a shared approach to data management is not always straightforward in a distributed environment like ELIXIR. Responsibilities are spread across roles, services and institutions. A Node data management strategy brings these elements together.
 
 ## Why a NDMS matters
 
-- ELIXIR Nodes bring together many institutions, services and communities. Each group works with data in different ways. Without a shared direction it becomes difficult to coordinate work or explain how the Node supports its researchers. A Node data management strategy helps create this direction and provides clarity
-  
-- It shows what the Node wants to achieve in data management, how its services fit together and where support is still needed. It reduces duplication, improves communication and helps staff understand their roles
-  
-- A strategy also supports long-term planning. It helps the Node decide which services to maintain, where to invest effort and how to respond to new demands or opportunities. Funders and national partners often expect this kind of clarity. A NDMS offers a simple way to meet that expectation
+ELIXIR Nodes bring together many institutions, services and communities. Each group works with data in different ways. Without a shared direction, coordination becomes difficult. A Node data management strategy helps create this direction and provides clarity.
+
+- **Direction and clarity**: A Node data management strategy shows what the Node wants to achieve in data management. It shows how services fit together and where support is still needed.
+- **Efficiency and shared understanding**: It reduces duplication, improves communication and helps staff understand their roles.
+- **Planning and sustainability**: A strategy supports long-term planning. It helps the Node decide which services to maintain, where to invest effort and how to respond to new demands or opportunities.
+
+Funders and national partners often expect this kind of clarity. A Node data management strategy offers a simple way to meet that expectation.
+
+**Note**: Developing a Node data management strategy is not the responsibility of a single role. It requires input from coordination, data stewardship, technical teams and user-facing support to reflect the full data landscape.
 
 ## What a NDMS is
 
-- A Node data management strategy is a short, practical document. It outlines the main goals of the Node, the data landscape it serves and the principles that guide its work
+**Note**: A Node data management strategy is not a complex policy document. It is a simple way to bring clarity to how data is managed across the Node or institution.
 
-- It brings together information that often exists in many places. It does not replace detailed policies, service descriptions or Data Management Plans. Instead, it connects them
-
-- A Node data management strategy shows how the Node supports good data management and FAIR practices. It describes the main services, roles and communities involved
-
-- It also gives staff a shared view of the current situation and future direction
-
-- The strategy should be light and easy to update. It evolves as the Node grows, new roles appear or priorities shift. It is a living reference document, not a fixed plan
+A Node data management strategy can be understood through a few key characteristics:
+- **A short, practical document**: A strategy outlines the main goals of the Node, the data landscape it serves and the principles that guide its work.
+- **A way to connect existing information**: It brings together content that often exists in many places. It does not replace policies, service descriptions or Data Management Plans. It connects them.
+- **Services and roles**: A strategy shows how the Node supports good data management and FAIR practices. It describes the main services, roles and communities involved.
+- **A shared reference point**: It gives staff a common view of the current situation and future direction.
+- **A living document**: The strategy is light and easy to update. It evolves as the Node grows, new roles appear or priorities shift. It is not a fixed plan.
 
 ## A NDMS in practice 
 
