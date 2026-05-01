@@ -1,5 +1,7 @@
 title: About
 title_url: /about
 subitems:
-  title: Contributors
-  url: /contributors
+  - title: Contributors
+    url: /contributors
+  - title: How to use ELITMa
+    url: /how-to-use

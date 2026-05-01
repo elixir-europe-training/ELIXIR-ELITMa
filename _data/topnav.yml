@@ -30,8 +30,8 @@ subitems:
     url: /events
   - title: About
     url: /about
-    subitems:
-    - title: Contributors
-      url: /contributors
-    - title: News
-      url: /news
+    # subitems:
+    # - title: Contributors
+    #   url: /contributors
+    # - title: News
+    #   url: /news
