@@ -7,21 +7,14 @@ type: Data Management
 audience: [Node Coordinators, Data Stewards]
 time: 60 minutes 
 status: in development
-<<<<<<< dw_fixes
 sidebar: module-data-management
 description: A set of core elements to consider when shaping the content of your strategy, including goals, priorities and key RDM topics #very brief
 summary: # if you want a longer description to appear at the top of the page
-audinece : # list the primary ones, not all use [] and separate types with a comma. These appear in the module tiles and metadata at the top
 time: # write how long will it take to read this page
-learning_outcomes: #use tab + dash
-    - 
-=======
-summary: This section helps you decide what to include in your Node data management strategy. You will use the Global Open Research Commons model to structure your Node, select relevant areas and define priorities.
 learning_outcomes:
     - Identify the main elements that could be included in a Node data management strategy
     - Use the Global Open Research Commons (GORC) model to structure your Node context
     - Select priority areas and draft a simple outline for your strategy
->>>>>>> main
 ---
 {% include module-metadata.html %}
 
