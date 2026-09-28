@@ -1,7 +1,7 @@
 ---
 title: Automation and tools for efficient outreach
 description: You don't have time to do everything by hand. A few free tools, set up once, buy back hours every week.
-summary: "Communication work expands to fill all the time you give it. This chapter is about buying that time back: a handful of free tools and tricks - social scheduling, updates delivered to Slack, quick DIY visuals and automated reporting - that you set up once and reuse. It's not a martech course; pick one or two and start there."
+summary: "Communication work expands to fill all the time you give it. This chapter is about buying that time back: a handful of free tools and tricks - social scheduling, updates delivered to Slack and automated reporting - that you set up once and reuse. It's not a martech course; pick one or two and start there."
 audience: [Communications Officers, Project Managers, Node Coordinators]
 page_img: /icons/icon-module-communication.svg
 time: 15 minutes
@@ -14,7 +14,7 @@ task_list: true
 learning_outcomes:
   - Batch and schedule social media instead of posting manually every day
   - Get new training, news, jobs and sign-ups delivered to Slack automatically
-  - Produce simple visuals and animations without a designer or paid software
+  - Find out which tools other Nodes already use, and who to ask
   - Automate reporting so the numbers are ready when you need them
   - Set up a minimal automation toolkit for your Node in about an hour
 ref_to_main_resources:
@@ -27,8 +27,6 @@ ref_to_main_resources:
   - google-apps-script
   - google-analytics
   - ga-setup
-  - svg-maps
-  - adobe-express
 ---
 
 
@@ -112,12 +110,6 @@ Anything that posts to Slack for you holds a key to your workspace, so set it up
 If any of this is unfamiliar, that's the moment to bring in your software engineer or research computing team.
 </details>
 
-## Quick DIY visuals
-You don't need a designer – or paid software – for everyday visuals. (For how to make them *look good* – and how to make an animated GIF in PowerPoint – see [Chapter 8: Graphic design for non-designers](08-comms-design#tools).)
-
-* **Templates** in [Adobe Express](https://www.adobe.com/express/) – build an ELIXIR-branded version once, then reuse it.
-* **Free vector maps** from [amCharts SVG Maps](https://www.amcharts.com/svg-maps/) – editable maps of countries and regions, handy for showing Node locations or event geography in your own brand colours. It can also generate **pixel (dot) maps**, which work especially well for our field – for example plotting data points, samples or sites across geographies.
-
 ## Automated reporting
 If you measure your communications (and you should – it's how you prove impact), don't pull the numbers by hand every month. Set up a [Google Analytics](https://analytics.google.com/) dashboard **once** to track website traffic, then check or share it whenever you need to.
 
@@ -132,7 +124,7 @@ You can put the essentials in place in about an hour. Tick them off as you go:
 
 - [ ] Connect **one** social scheduler (Buffer is the quickest start) and schedule a week of posts.
 - [ ] Subscribe a Slack channel to the **TeSS events feed** for your country, and to **ELIXIR jobs**.
-- [ ] Build **one** ELIXIR-branded template in Adobe Express that you'll reuse.
+- [ ] Add your Node's tools to the **Communication tools used by ELIXIR Nodes** sheet.
 - [ ] Set up a **Google Analytics dashboard** for your main site or pages.
 - [ ] Save all the tool logins somewhere your team can find them – automation only helps if it outlives one person.
 
@@ -142,7 +134,7 @@ Pick **one** tool from this page and actually set it up now – don't read on, d
 
 * If you chose a scheduler: write and schedule three posts for next week.
 * If you chose Slack feeds: subscribe a channel to new TeSS training in your country and to ELIXIR jobs.
-* If you chose Adobe Express: build one reusable ELIXIR-branded template.
+* If you chose TeSS digests: subscribe to a weekly digest of new training in your country, ready for your next newsletter.
 * If you chose Analytics: create a dashboard with the three numbers you care about most.
 
 The goal is to leave this page with one thing genuinely automated, not a list of tools you mean to try later.

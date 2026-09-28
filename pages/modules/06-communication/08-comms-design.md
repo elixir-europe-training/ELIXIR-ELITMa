@@ -18,6 +18,7 @@ learning_outcomes:
   - Assess template or AI output against a simple quality and accessibility checklist
 ref_to_main_resources:
   - adobe-express
+  - svg-maps
   - coolors
   - adobe-color
   - buttonbuddy
@@ -293,6 +294,12 @@ Blurred, you still see the headline and the orange button – exactly what matte
 * **Tone** – "clean and professional, lots of whitespace, not busy"
 
 With templates, resist customising: every change to a good template is a chance to make it worse. Change the words and the image; leave the structure alone. And always check accessibility – contrast, ALT text and never leaving key information trapped inside an image (see [Chapter 5: Accessibility](05-comms-accessibility)).
+</details>
+
+<details markdown="1">
+<summary>Go deeper: free maps for Node locations and data</summary>
+
+[amCharts SVG Maps](https://www.amcharts.com/svg-maps/) has free, editable vector maps of countries and regions – handy for showing Node locations or event geography in the ELIXIR colours. It can also make **pixel (dot) maps**, which suit our field well: plotting data points, samples or sites across a region.
 </details>
 
 <details markdown="1">
