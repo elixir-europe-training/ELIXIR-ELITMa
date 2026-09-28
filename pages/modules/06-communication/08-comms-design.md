@@ -78,10 +78,31 @@ Same event, same information, two results. Look at the left one first – then t
 -->
 
 
-{% include callout.html type="tip" content="The squint test: look at your design and squint until it blurs. The thing that's still readable is what the viewer sees first. If that's not your key message, your hierarchy is wrong - make the important thing bigger, bolder or more isolated." %}
+**The squint test.** Look at your design and squint until it blurs – or step back from the screen. Whatever you can still make out is what people see first. If that isn't your key message, your hierarchy is wrong: make the important thing bigger, bolder or give it more space.
+
+<div class="compare compare--visual compare--stacked" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Nothing survives</p>
+
+<img src="{{ '/images/communication/design/squint-dont.svg' | relative_url }}" alt="The busy yellow flyer, sharp and then blurred. Blurred, it turns into coloured stripes and blocks; nothing is readable and the date and the call to action disappear.">
+
+Blurred, it's just coloured stripes – the date and the sign-up link are lost.
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>The message survives</p>
+
+<img src="{{ '/images/communication/design/squint-do.svg' | relative_url }}" alt="The navy flyer, sharp and then blurred. Blurred, the large white headline and the orange Register now button still stand out, so the key message survives.">
+
+Blurred, you still see the headline and the orange button – exactly what matters.
+</div>
+</div>
 
 ### Getting the details right
-A few specifics, straight from the [CONVERGE "Design made easy for communicators" talk](https://www.youtube.com/watch?v=fFAlT51EPZQ), that fix most problems:
+Most of what follows comes from the CONVERGE workshop series talk *Design made easy for communicators*. It's worth watching in full – it covers colour, fonts and layout with plenty of examples.
+
+{% include video.html youtube="fFAlT51EPZQ" title="Design made easy for communicators (CONVERGE workshop series)" %}
+
+The specifics that fix most problems:
 
 **Colour – pick two, with intention**
 

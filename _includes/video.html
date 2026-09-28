@@ -1,0 +1,19 @@
+{%- comment -%}
+An embedded YouTube video that fits the page width.
+Usage:
+  {% include video.html youtube="fFAlT51EPZQ" title="Design made easy for communicators" caption="Optional line under the video" %}
+  youtube - the video id (the part after v= in the YouTube address)
+  title   - what the video is; read out by screen readers and shown on the link
+  caption - optional
+Uses YouTube's privacy-enhanced domain (no tracking cookies until the viewer
+presses play) and loads lazily. A plain link is always shown as well.
+{%- endcomment -%}
+<figure class="video-embed">
+  <div class="ratio ratio-16x9">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ include.youtube }}" title="{{ include.title | escape }}" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <figcaption>
+    {%- if include.caption %}{{ include.caption }} {% endif -%}
+    <a href="https://www.youtube.com/watch?v={{ include.youtube }}">Watch “{{ include.title }}” on YouTube</a>
+  </figcaption>
+</figure>

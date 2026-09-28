@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" role="img" aria-labelledby="t d">
+  <title id="t">Squint test: the professional flyer</title>
+  <desc id="d">The navy flyer, sharp and then blurred. Blurred, the large white headline and the orange Register now button still stand out, so the key message survives.</desc>
+  <defs><filter id="squint" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="7"/></filter></defs>
+  <style>.cap { font-family: "Open Sans", Lato, Arial, sans-serif; font-size: 18px; font-weight: 700; fill: #4d4848; }</style>
+  <text class="cap" x="0" y="20">As designed</text>
+  <text class="cap" x="470" y="20">Squinting</text>
+  <svg x="0" y="40" width="410" height="510" viewBox="470 36 410 510"><style>
+    .lbl { font-family: "Open Sans", Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; }
+  </style>
+
+  <!-- ================= BEFORE ================= -->
+  
+  <rect x="20" y="36" width="410" height="510" fill="#fff6a8" stroke="#bbbbbb"/>
+  <rect x="20" y="36" width="410" height="54" fill="#e53935"/>
+  <text x="225" y="72" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="26" fill="#ffff00">!!! NEW WEBINAR !!!</text>
+  <text x="225" y="122" text-anchor="middle" font-family="'Comic Sans MS', 'Comic Neue', cursive" font-size="21" fill="#6a1b9a">Introduction to Data Stewardship</text>
+  <text x="225" y="150" text-anchor="middle" font-family="'Times New Roman', serif" font-size="19" fill="#2e7d32">for Life Science Researchers</text>
+  <text x="225" y="178" text-anchor="middle" font-family="'Courier New', monospace" font-size="17" fill="#0277bd">Organised by WP3 / Task 3.2 in the</text>
+  <text x="225" y="200" text-anchor="middle" font-family="'Courier New', monospace" font-size="17" fill="#0277bd">framework of the XYZ-RDM project</text>
+  <text x="225" y="236" text-anchor="middle" font-family="'Comic Sans MS', 'Comic Neue', cursive" font-size="18" fill="#e65100">Date: 14 November, 14:00-15:30 CET</text>
+  <text x="225" y="262" text-anchor="middle" font-family="'Times New Roman', serif" font-size="18" fill="#ad1457">Speakers: Dr A. Smith, Dr B. Jones,</text>
+  <text x="225" y="284" text-anchor="middle" font-family="'Times New Roman', serif" font-size="18" fill="#ad1457">Prof C. Garcia, Dr D. Novak</text>
+  <text x="225" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#4527a0">Topics: FAIR principles, DMPs, metadata,</text>
+  <text x="225" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#4527a0">ontologies, repositories, licences, ELSI,</text>
+  <text x="225" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#4527a0">sustainability and much, much more!!</text>
+  <circle cx="70" cy="420" r="30" fill="#00bcd4"/>
+  <text x="70" y="426" text-anchor="middle" font-family="Impact, sans-serif" font-size="15" fill="#ffffff">FREE!</text>
+  <rect x="120" y="400" width="290" height="40" fill="#8bc34a"/>
+  <text x="265" y="426" text-anchor="middle" font-family="'Comic Sans MS', cursive" font-size="13" fill="#ffffff">Register: bit.ly/xyz-rdm-webinar-2025</text>
+  <text x="225" y="474" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#555555">Questions? Contact info@example.org or</text>
+  <text x="225" y="494" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#555555">visit our website, LinkedIn, Bluesky or X</text>
+  <rect x="40" y="510" width="60" height="26" fill="#bdbdbd"/><rect x="110" y="510" width="60" height="26" fill="#bdbdbd"/>
+  <rect x="180" y="510" width="60" height="26" fill="#bdbdbd"/><rect x="250" y="510" width="60" height="26" fill="#bdbdbd"/>
+  <rect x="320" y="510" width="60" height="26" fill="#bdbdbd"/>
+
+  <!-- ================= AFTER ================= -->
+  
+  <rect x="470" y="36" width="410" height="510" fill="#023452"/>
+  <g font-family="'Open Sans', 'Lato', Arial, sans-serif">
+    <text x="510" y="100" font-size="14" font-weight="700" fill="#f47d20" letter-spacing="2">FREE WEBINAR</text>
+    <text x="510" y="160" font-size="38" font-weight="800" fill="#ffffff">Data</text>
+    <text x="510" y="206" font-size="38" font-weight="800" fill="#ffffff">stewardship,</text>
+    <text x="510" y="252" font-size="38" font-weight="800" fill="#ffffff">made simple</text>
+    <text x="510" y="296" font-size="17" fill="#9bcbdd">What every life scientist needs to know</text>
+    <text x="510" y="320" font-size="17" fill="#9bcbdd">to make their data FAIR.</text>
+    <rect x="510" y="358" width="48" height="4" fill="#f47d20"/>
+    <text x="510" y="396" font-size="20" font-weight="700" fill="#ffffff">14 November · 14:00 CET</text>
+    <text x="510" y="422" font-size="16" fill="#ffffff">90 minutes · online</text>
+    <rect x="510" y="452" width="170" height="44" rx="6" fill="#f47d20"/>
+    <text x="595" y="480" text-anchor="middle" font-size="16" font-weight="700" fill="#001F33">Register now</text>
+    <rect x="770" y="470" width="80" height="44" rx="4" fill="none" stroke="#9bcbdd" stroke-dasharray="4 3"/>
+    <text x="810" y="496" text-anchor="middle" font-size="11" fill="#9bcbdd">logo</text>
+  </g>
+</svg>
+  <g filter="url(#squint)"><svg x="470" y="40" width="410" height="510" viewBox="470 36 410 510"><style>
+    .lbl { font-family: "Open Sans", Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; }
+  </style>
+
+  <!-- ================= BEFORE ================= -->
+  
+  <rect x="20" y="36" width="410" height="510" fill="#fff6a8" stroke="#bbbbbb"/>
+  <rect x="20" y="36" width="410" height="54" fill="#e53935"/>
+  <text x="225" y="72" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="26" fill="#ffff00">!!! NEW WEBINAR !!!</text>
+  <text x="225" y="122" text-anchor="middle" font-family="'Comic Sans MS', 'Comic Neue', cursive" font-size="21" fill="#6a1b9a">Introduction to Data Stewardship</text>
+  <text x="225" y="150" text-anchor="middle" font-family="'Times New Roman', serif" font-size="19" fill="#2e7d32">for Life Science Researchers</text>
+  <text x="225" y="178" text-anchor="middle" font-family="'Courier New', monospace" font-size="17" fill="#0277bd">Organised by WP3 / Task 3.2 in the</text>
+  <text x="225" y="200" text-anchor="middle" font-family="'Courier New', monospace" font-size="17" fill="#0277bd">framework of the XYZ-RDM project</text>
+  <text x="225" y="236" text-anchor="middle" font-family="'Comic Sans MS', 'Comic Neue', cursive" font-size="18" fill="#e65100">Date: 14 November, 14:00-15:30 CET</text>
+  <text x="225" y="262" text-anchor="middle" font-family="'Times New Roman', serif" font-size="18" fill="#ad1457">Speakers: Dr A. Smith, Dr B. Jones,</text>
+  <text x="225" y="284" text-anchor="middle" font-family="'Times New Roman', serif" font-size="18" fill="#ad1457">Prof C. Garcia, Dr D. Novak</text>
+  <text x="225" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#4527a0">Topics: FAIR principles, DMPs, metadata,</text>
+  <text x="225" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#4527a0">ontologies, repositories, licences, ELSI,</text>
+  <text x="225" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#4527a0">sustainability and much, much more!!</text>
+  <circle cx="70" cy="420" r="30" fill="#00bcd4"/>
+  <text x="70" y="426" text-anchor="middle" font-family="Impact, sans-serif" font-size="15" fill="#ffffff">FREE!</text>
+  <rect x="120" y="400" width="290" height="40" fill="#8bc34a"/>
+  <text x="265" y="426" text-anchor="middle" font-family="'Comic Sans MS', cursive" font-size="13" fill="#ffffff">Register: bit.ly/xyz-rdm-webinar-2025</text>
+  <text x="225" y="474" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#555555">Questions? Contact info@example.org or</text>
+  <text x="225" y="494" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#555555">visit our website, LinkedIn, Bluesky or X</text>
+  <rect x="40" y="510" width="60" height="26" fill="#bdbdbd"/><rect x="110" y="510" width="60" height="26" fill="#bdbdbd"/>
+  <rect x="180" y="510" width="60" height="26" fill="#bdbdbd"/><rect x="250" y="510" width="60" height="26" fill="#bdbdbd"/>
+  <rect x="320" y="510" width="60" height="26" fill="#bdbdbd"/>
+
+  <!-- ================= AFTER ================= -->
+  
+  <rect x="470" y="36" width="410" height="510" fill="#023452"/>
+  <g font-family="'Open Sans', 'Lato', Arial, sans-serif">
+    <text x="510" y="100" font-size="14" font-weight="700" fill="#f47d20" letter-spacing="2">FREE WEBINAR</text>
+    <text x="510" y="160" font-size="38" font-weight="800" fill="#ffffff">Data</text>
+    <text x="510" y="206" font-size="38" font-weight="800" fill="#ffffff">stewardship,</text>
+    <text x="510" y="252" font-size="38" font-weight="800" fill="#ffffff">made simple</text>
+    <text x="510" y="296" font-size="17" fill="#9bcbdd">What every life scientist needs to know</text>
+    <text x="510" y="320" font-size="17" fill="#9bcbdd">to make their data FAIR.</text>
+    <rect x="510" y="358" width="48" height="4" fill="#f47d20"/>
+    <text x="510" y="396" font-size="20" font-weight="700" fill="#ffffff">14 November · 14:00 CET</text>
+    <text x="510" y="422" font-size="16" fill="#ffffff">90 minutes · online</text>
+    <rect x="510" y="452" width="170" height="44" rx="6" fill="#f47d20"/>
+    <text x="595" y="480" text-anchor="middle" font-size="16" font-weight="700" fill="#001F33">Register now</text>
+    <rect x="770" y="470" width="80" height="44" rx="4" fill="none" stroke="#9bcbdd" stroke-dasharray="4 3"/>
+    <text x="810" y="496" text-anchor="middle" font-size="11" fill="#9bcbdd">logo</text>
+  </g>
+</svg></g>
+</svg>

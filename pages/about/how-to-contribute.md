@@ -235,6 +235,16 @@ Always write ALT text that says what the image shows, not just what it is. Put i
   <figcaption>Readers who stop early still get the point.</figcaption>
 </figure>
 
+### Video
+
+Embeds a YouTube video at the full width of the text, with a direct link underneath. It uses YouTube's privacy-enhanced mode, so no tracking cookies are set until someone presses play. Use the id from the video's address (the part after `v=`) and a title that says what the video is – screen readers announce it.
+
+```liquid
+{% raw %}{% include video.html youtube="fFAlT51EPZQ" title="Design made easy for communicators (CONVERGE workshop series)" %}{% endraw %}
+```
+
+An optional `caption="..."` adds a line before the link.
+
 ### Download button
 
 For templates and other files in `assets/downloads/`. Say what the file is and its format.
