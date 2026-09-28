@@ -1,10 +1,10 @@
 ---
 title: Automation and tools for efficient outreach
 description: You don't have time to do everything by hand. A few free tools, set up once, buy back hours every week.
-summary: "Communication work expands to fill all the time you give it. This chapter is about buying that time back: a handful of free tools and tricks - social scheduling, quick DIY visuals and automated reporting - that you set up once and reuse. It's not a martech course; pick one or two and start there."
+summary: "Communication work expands to fill all the time you give it. This chapter is about buying that time back: a handful of free tools and tricks - social scheduling, updates delivered to Slack, quick DIY visuals and automated reporting - that you set up once and reuse. It's not a martech course; pick one or two and start there."
 audience: [Communications Officers, Project Managers, Node Coordinators]
 page_img: /icons/icon-module-communication.svg
-time: 10 minutes
+time: 15 minutes
 sidebar: module-communication
 page_id: mod_comm_9
 type: Communication
@@ -13,12 +13,20 @@ status_badge: success
 task_list: true
 learning_outcomes:
   - Batch and schedule social media instead of posting manually every day
+  - Get new training, news, jobs and sign-ups delivered to Slack automatically
   - Produce simple visuals and animations without a designer or paid software
   - Automate reporting so the numbers are ready when you need them
   - Set up a minimal automation toolkit for your Node in about an hour
 ref_to_main_resources:
+  - comms-tools-sheet
   - buffer
+  - slack-rss
+  - tess-feeds
+  - tess-subscribe
+  - zapier
+  - google-apps-script
   - google-analytics
+  - ga-setup
   - svg-maps
   - adobe-express
 ---
@@ -30,6 +38,13 @@ This is not a comprehensive tools course. It's a short set of free options that 
 
 {% include callout.html type="important" content="Automation amplifies whatever you put in. Scheduling a week of weak posts just publishes weak posts faster. Set up the tools, but keep the quality bar where it was." %}
 
+## Start with what other Nodes use
+Before you pick a tool, see what's already working elsewhere. The ELIXIR Communications Group keeps a shared spreadsheet of the tools Nodes use for communications – and which Node uses what – so you can ask someone who has already set it up.
+
+It lists around fifty tools – for graphics, video, newsletters, metrics, websites and project management – with whether each is free, freemium or paid, what it's used for and which Nodes use it. Found a tool that works for you? Add it, so the next Node doesn't start from scratch.
+
+<a href="https://docs.google.com/spreadsheets/d/174WtL6yeIeVR8jIfDtDxvg0SZWDPsGHq9vvEA5SiEPw/edit?gid=0#gid=0" class="btn btn-primary" target="_blank" rel="noopener">Communication tools used by ELIXIR Nodes (Google Sheet)</a>
+
 ## Schedule social media in batches
 The single biggest time saver. Instead of logging in to post every day, write a week or a month of posts in one sitting and schedule them. [Buffer](https://buffer.com/) is simple, free and enough for most Nodes.
 
@@ -37,48 +52,97 @@ Why it helps:
 
 * **Consistency** – your channels stay active even in busy weeks.
 * **Batching** – writing ten posts at once is far faster than ten posts on ten days.
-* **Timing** – schedule for when your audience is actually online.
+* **Timing** – schedule for when your audience is actually online (see below).
 
-{% include callout.html type="warning" content="LinkedIn caveat: schedulers cannot automatically tag (@mention) other accounts on LinkedIn. Tagging is one of the most effective things you can do for reach (see Chapter 6: Writing for non-writers), so for any post where tagging collaborators or other Nodes matters, publish that one natively on LinkedIn and add the tags by hand. Don't let the convenience of scheduling cost you the reach that tagging brings." %}
+{% include callout.html type="warning" content="Two LinkedIn caveats for scheduled posts. Schedulers cannot tag (@mention) other accounts on LinkedIn – and tagging is one of the best things you can do for reach – so publish posts that need tags natively and add the tags by hand. And organic posts with an external link in the text are shown to fewer people: put the link in the first comment instead (see Chapter 6: Writing for non-writers)." %}
 
-{% include callout.html type="note" content="Links cost reach on LinkedIn too: organic posts with an external link in the text are shown to fewer people (see Chapter 6: Writing for non-writers). Check whether your scheduler can add the link as a first comment; if it can't, schedule the post without the link and add the comment by hand once it's live." %}
+**Find your own best times.** Generic "best time to post" guides are a starting point, but trends in your sector and audience matter more – researchers don't keep the same hours as consumer audiences. Treat timing as a small experiment: post the same or similar stories (two course announcements, say) on different days and at different times, and compare how they did (see [Reading your numbers](10-comms-storytelling#reading-your-numbers)). Only change the timing; if the stories differ too much, you won't know what made the difference. After a few rounds you'll know when *your* audience is listening.
 
-{% include callout.html type="tip" content="Coordinate with the Hub's social media calendar where you can (see Chapter 4: ELIXIR communications ecosystem). Posting on the same day as a consortium-wide push, and tagging other Nodes, multiplies reach for the same effort." %}
+Coordinate with the Hub's social media calendar where you can (see [Chapter 4: ELIXIR communications ecosystem](04-comms-ecosystem)). Posting on the same day as a consortium-wide push, and tagging other Nodes, multiplies reach for the same effort.
+
+## Get updates delivered to Slack
+Instead of checking five websites for news, let the information come to you. Most ELIXIR sources publish a feed, and Slack can post each new item into a channel automatically – new training on TeSS, ELIXIR news, new jobs.
+
+### The easy way: RSS feeds
+Slack's [RSS app](https://slack.com/help/articles/218688467-Add-RSS-feeds-to-Slack) posts new items from a feed into any channel. Once your workspace admin has added the app, type this in the channel:
+
+```
+/feed subscribe https://tess.elixir-europe.org/events.rss?country=Belgium
+```
+
+Feeds worth subscribing to:
+
+| What you get | Feed |
+| --- | --- |
+| New training events on TeSS | `https://tess.elixir-europe.org/events.rss` |
+| New training in your country | `https://tess.elixir-europe.org/events.rss?country=Belgium` (use your country) |
+| New training on a topic | `https://tess.elixir-europe.org/events.rss?q=galaxy` (any keyword) |
+| ELIXIR news | `https://elixir-europe.org/feeds/news.xml` |
+| ELIXIR jobs | `https://elixir-europe.org/feeds/jobs.xml` |
+
+TeSS also gives you a calendar feed – `https://tess.elixir-europe.org/events.ics`, with the same filters – that you can add to Outlook or Google Calendar.
+
+{% include quick-check.html question="You want new TeSS training in your country to appear in your team's Slack channel. What's the quickest way?" options="Subscribe the channel to the TeSS RSS feed|Build a Zapier workflow|Write a Google Apps Script" correct="1" explain="TeSS already publishes a feed you can filter by country, so Slack's RSS app does it in one command. Save Zapier and scripts for sources that have no feed." %}
+
+### Feed your newsletter from TeSS
+The same feeds can do the legwork for your newsletter's "upcoming training" section:
+
+* **TeSS email digests** – save a search on TeSS (your country, or a topic) and subscribe to it: TeSS emails you the new events daily, weekly or monthly. See [Subscribing to notifications](https://elixirtess.github.io/docs/search/subscribe/) in the TeSS documentation.
+* **A weekly digest with Zapier** – Zapier's [RSS digest template](https://zapier.com/apps/rss/integrations/slack/14136/post-a-digest-of-rss-items-to-a-slack-direct-message-on-a-daily-weekly-or-monthly-schedule) collects new items from several feeds (TeSS training, ELIXIR news, ELIXIR jobs) and sends you one message a week – your newsletter shortlist, ready when you sit down to write.
+* **Live listings on your website** – the [TeSS widgets](https://github.com/ElixirTeSS/TeSS_widgets) show an always-up-to-date list of TeSS events on your Node's site. See [Code and data for developers](https://elixirtess.github.io/docs/developers/code-data/).
+
+### When there's no feed: Zapier, Make or Google Apps Script
+For anything without a feed – a new sign-up in your Node's registration form, a new row in a shared sheet, a new registration for an event – a small automation can post it to Slack for you:
+
+* **[Zapier](https://zapier.com/) or [Make](https://www.make.com/)** – point and click, no code: pick a trigger ("new form response", "new row", "new item in feed") and an action ("send a Slack message"). Their free plans cover a few simple workflows.
+* **[Google Apps Script](https://developers.google.com/apps-script)** – free and built into Google Forms and Sheets, if you're happy to paste a few lines of code.
+
+Slack receives these messages through an [incoming webhook](https://api.slack.com/messaging/webhooks): a private web address your workspace admin can create for a channel. Treat it like a password.
+
+<details markdown="1">
+<summary>Go deeper: a Google Apps Script that posts new form sign-ups to Slack</summary>
+
+In your Google Form, open **⋮ → Script editor**, paste this, add your webhook address, then add a trigger (**Triggers → Add trigger → On form submit**):
+
+```javascript
+// Posts each new form response to a Slack channel.
+const SLACK_WEBHOOK = 'https://hooks.slack.com/services/…'; // your channel's webhook – keep it private
+
+function onFormSubmit(e) {
+  const answers = e.response.getItemResponses()
+    .map(r => `*${r.getItem().getTitle()}*: ${r.getResponse()}`)
+    .join('\n');
+  UrlFetchApp.fetch(SLACK_WEBHOOK, {
+    method: 'post',
+    contentType: 'application/json',
+    payload: JSON.stringify({ text: `New sign-up:\n${answers}` }),
+  });
+}
+```
+
+Only collect and forward the personal data you need, and tell people in the form that their details will be shared with your team.
+</details>
 
 ## Quick DIY visuals
-You don't need a designer – or paid software – for everyday visuals. (For how to make them *look good*, see [Chapter 8: Graphic design for non-designers](08-comms-design).)
+You don't need a designer – or paid software – for everyday visuals. (For how to make them *look good* – and how to make an animated GIF in PowerPoint – see [Chapter 8: Graphic design for non-designers](08-comms-design#tools).)
 
 * **Templates** in [Adobe Express](https://www.adobe.com/express/) – build an ELIXIR-branded version once, then reuse it.
 * **Free vector maps** from [amCharts SVG Maps](https://www.amcharts.com/svg-maps/) – editable maps of countries and regions, handy for showing Node locations or event geography in your own brand colours. It can also generate **pixel (dot) maps**, which work especially well for our field – for example plotting data points, samples or sites across geographies.
 
-### Animated GIFs in PowerPoint (no AI)
-You can make a smooth, looping GIF in PowerPoint alone – no AI and no video editor. Two things matter:
-
-1. **Keep it native and light.** Animate with PowerPoint's own motion **paths** and shapes rather than importing video or lots of images – otherwise the file becomes too heavy to export well.
-2. **Use Morph, and loop it.** Put each state on its own slide and use the **Morph transition** between them. Crucially, make the **last slide identical to the first** so the loop is seamless, then turn looping on when you export.
-
-Export via *File → Export → Create Animated GIF*.
-
-<!-- TODO (Xenia to add): worked example GIF + step screenshots.
-<img src="{{ '/images/communication/powerpoint-gif-example.gif' | relative_url }}" alt="A short looping GIF built in PowerPoint using motion paths and the Morph transition, where the final slide matches the first for a seamless loop." class="img-fluid my-3">
--->
-
-
-{% include callout.html type="warning" content="Keep animations accessible: GIFs should be short, must not flash rapidly (a seizure risk), and still need ALT text or surrounding context. See Chapter 5: Accessibility." %}
-
-<!-- TODO: link a file listing recommended communication tools (e.g. email/newsletter
-tools, schedulers, design and analytics tools) with notes on cost and what each is for,
-and point to it from here. The previous EmailOctopus/Mailchimp section was removed. -->
-
 ## Automated reporting
 If you measure your communications (and you should – it's how you prove impact), don't pull the numbers by hand every month. Set up a [Google Analytics](https://analytics.google.com/) dashboard **once** to track website traffic, then check or share it whenever you need to.
 
-Set it up to answer the questions you actually care about: which pages get visited, where visitors come from and what they do next – not every metric available.
+To get started, follow Google's guide [Set up Analytics for a website](https://support.google.com/analytics/answer/9304153): you create an account and a property, then add a small tracking code to your site – most website systems (WordPress, Drupal) have a field or plugin for it. Prefer not to use Google? [Matomo](https://matomo.org/) is a free, self-hosted alternative some Nodes already use.
+
+<!-- TODO: add a worked example of a Node's Google Analytics set-up and dashboard (screenshots). -->
+
+Set it up to answer the questions you actually care about: which pages get visited, where visitors come from and what they do next – not every metric available. [Chapter 10](10-comms-storytelling#reading-your-numbers) walks through what to look at, with examples.
 
 ## The one-hour automation starter kit
 You can put the essentials in place in about an hour. Tick them off as you go:
 
 - [ ] Connect **one** social scheduler (Buffer is the quickest start) and schedule a week of posts.
+- [ ] Subscribe a Slack channel to the **TeSS events feed** for your country, and to **ELIXIR jobs**.
 - [ ] Build **one** ELIXIR-branded template in Adobe Express that you'll reuse.
 - [ ] Set up a **Google Analytics dashboard** for your main site or pages.
 - [ ] Save all the tool logins somewhere your team can find them – automation only helps if it outlives one person.
@@ -88,6 +152,7 @@ You can put the essentials in place in about an hour. Tick them off as you go:
 Pick **one** tool from this page and actually set it up now – don't read on, do it.
 
 * If you chose a scheduler: write and schedule three posts for next week.
+* If you chose Slack feeds: subscribe a channel to new TeSS training in your country and to ELIXIR jobs.
 * If you chose Adobe Express: build one reusable ELIXIR-branded template.
 * If you chose Analytics: create a dashboard with the three numbers you care about most.
 

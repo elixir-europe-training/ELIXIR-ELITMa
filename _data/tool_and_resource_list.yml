@@ -109,6 +109,69 @@
   module: mod_comm
 
 
+- id: campaign-url-builder
+  name: Google Campaign URL Builder
+  url: https://ga-dev-tools.google/campaign-url-builder/
+  description: Adds tracking tags to the links you share, so Google Analytics can tell you which channel each visitor came from.
+  category: external_resource
+  module: mod_comm
+
+- id: linkedin-page-analytics
+  name: LinkedIn Page analytics (help)
+  url: https://www.linkedin.com/help/linkedin/answer/a547077
+  description: What LinkedIn's Page analytics show - content, followers and visitors - and where to find them.
+  category: external_resource
+  module: mod_comm
+
+- id: slack-rss
+  name: Slack RSS app
+  url: https://slack.com/help/articles/218688467-Add-RSS-feeds-to-Slack
+  description: Posts new items from any RSS feed - TeSS training, ELIXIR news or jobs - into a Slack channel with one command.
+  category: external_resource
+  module: mod_comm
+
+- id: ga-setup
+  name: Set up Google Analytics for a website
+  url: https://support.google.com/analytics/answer/9304153
+  description: Google's step-by-step guide - create an account and property, then add the tracking code to your site.
+  category: external_resource
+  module: mod_comm
+
+- id: tess-subscribe
+  name: TeSS documentation - Subscribing to notifications
+  url: https://elixirtess.github.io/docs/search/subscribe/
+  description: Get new TeSS training events matching a search by email - daily, weekly or monthly. Handy for newsletters.
+  category: internal_resource
+  module: mod_comm
+
+- id: tess-feeds
+  name: TeSS training events feed
+  url: https://tess.elixir-europe.org/events.rss
+  description: RSS feed of new training events on TeSS; filter by country (?country=) or keyword (?q=). Also available as a calendar feed (events.ics).
+  category: internal_resource
+  module: mod_comm
+
+- id: zapier
+  name: Zapier
+  url: https://zapier.com/
+  description: No-code automation - connect a trigger (new form response, new row, new feed item) to an action such as a Slack message. Make (make.com) is a similar alternative.
+  category: external_resource
+  module: mod_comm
+
+- id: google-apps-script
+  name: Google Apps Script
+  url: https://developers.google.com/apps-script
+  description: Free scripting built into Google Forms and Sheets - for example, post each new form sign-up to Slack.
+  category: external_resource
+  module: mod_comm
+
+- id: comms-tools-sheet
+  name: Communication tools used by ELIXIR Nodes
+  url: https://docs.google.com/spreadsheets/d/174WtL6yeIeVR8jIfDtDxvg0SZWDPsGHq9vvEA5SiEPw/edit?gid=0#gid=0
+  description: The ELIXIR Communications Group's shared spreadsheet of communication tools - cost, what each is for and which Nodes use it.
+  category: internal_resource
+  module: mod_comm
+
 - id: google-analytics
   name: Google Analytics
   url: https://analytics.google.com/

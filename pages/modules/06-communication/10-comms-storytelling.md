@@ -19,6 +19,8 @@ related_pages:
   Real_world_example: [comm-ex-elead]
 ref_to_main_resources:
   - google-analytics
+  - campaign-url-builder
+  - linkedin-page-analytics
   - ri-paths
 ---
 
@@ -99,7 +101,39 @@ You don't need special software – a shared spreadsheet works. Track each activ
 | Policy brief | National funder | Sent + meeting held | Continued funding | Cited in funding discussion |
 | Joint social campaign | Wider community | 3 Nodes posting, 4× reach | Awareness / collaboration | 2 collaboration inquiries |
 
-Use [Google Analytics](https://analytics.google.com/) (set up once – see [Chapter 9: Automation and tools](09-comms-automation)) for the web numbers, and your platforms' built-in analytics for social. Gather a quote or short case study where you can – the ELEAD Impact Report's four personal case studies are a good model for turning numbers into evidence.
+Use [Google Analytics](https://analytics.google.com/) (set up once – see [Chapter 9: Automation and tools](09-comms-automation)) for the web numbers, and your platforms' built-in analytics for social – the [worked examples below](#reading-your-numbers) show what to look at. Gather a quote or short case study where you can – the ELEAD Impact Report's four personal case studies are a good model for turning numbers into evidence.
+
+### Reading your numbers: two worked examples
+{: #reading-your-numbers}
+Numbers only help if you know where to look and what they're telling you. Here's one campaign read two ways. **Scenario:** your Node promotes a two-day training course with a news item on your website, an item in the Weekly Brief and two LinkedIn posts – one from the Node's page, and one reshared by the course lead. *The figures are illustrative.*
+
+#### Google Analytics: where did the registrations come from?
+
+1. **Before you share, tag each link** so Analytics knows where visitors came from. Google's [Campaign URL Builder](https://ga-dev-tools.google/campaign-url-builder/) adds a source (`linkedin`, `weeklybrief`) and a campaign name (`rdm-course-2026`) to the link.
+2. In Google Analytics, open **Reports → Acquisition → Traffic acquisition** and look at visits by source.
+3. Add registrations: if a click on "Register" is set up as a **key event**, add it as a column; otherwise count the registrations in your form by the same sources.
+
+| Source | Visits | Registrations | Conversion |
+| --- | --- | --- | --- |
+| LinkedIn | 420 | 18 | 4% |
+| Weekly Brief | 160 | 24 | 15% |
+| Website news item | 210 | 9 | 4% |
+| Bluesky | 70 | 2 | 3% |
+
+**What it tells you:** LinkedIn brought the most visitors, but the Weekly Brief brought the most registrations – its readers are already part of the network and ready to act. **The story:** "Nearly half our registrations came from the ELIXIR Weekly Brief." For the course page itself, **Reports → Engagement → Pages and screens** shows whether people stayed long enough to read it.
+
+#### LinkedIn: which post actually worked?
+
+On your Node's page, open **Analytics → Content**, or **View analytics** under a single post. Look at impressions, clicks, reactions, comments and reposts. The engagement rate is roughly all of those interactions divided by impressions – the share of people who saw the post and did something.
+
+| Post | Impressions | Clicks | Engagement rate |
+| --- | --- | --- | --- |
+| Node page post, link in the text | 1,100 | 14 | 2.1% |
+| Course lead's reshare with a personal note, link in the first comment | 3,400 | 61 | 4.8% |
+
+**What it tells you:** the personal reshare reached three times as many people and got four times the clicks – the advice in [Chapter 6](06-comms-writing) in numbers. **Analytics → Followers** and **Visitors** also show job functions and industries: check you're reaching researchers, not just other communicators. **The story:** "When our course lead shared the post in their own words, it reached three times as many people."
+
+{% include quick-check.html question="Your funder asks whether the course promotion worked. Which number makes the best case?" options="LinkedIn impressions|Registrations, and where they came from|Your follower count" correct="2" explain="Registrations are the outcome the campaign was for, and knowing their source tells you what to do next time. Impressions and followers are outputs – useful context, not proof." %}
 
 ### The two-minute impact pitch
 When someone asks "what did your Node achieve this year?", you should be able to answer in two minutes:

@@ -295,6 +295,21 @@ Blurred, you still see the headline and the orange button – exactly what matte
 With templates, resist customising: every change to a good template is a chance to make it worse. Change the words and the image; leave the structure alone. And always check accessibility – contrast, ALT text and never leaving key information trapped inside an image (see [Chapter 5: Accessibility](05-comms-accessibility)).
 </details>
 
+<details markdown="1">
+<summary>Go deeper: animated GIFs in PowerPoint (no AI)</summary>
+
+You can make a smooth, looping GIF in PowerPoint alone – no AI and no video editor. Two things matter:
+
+1. **Keep it native and light.** Animate with PowerPoint's own motion **paths** and shapes rather than importing video or lots of images – otherwise the file becomes too heavy to export well.
+2. **Use Morph, and loop it.** Put each state on its own slide and use the **Morph transition** between them. Make the **last slide identical to the first** so the loop is seamless, then turn looping on when you export.
+
+Export via *File → Export → Create Animated GIF*. Keep it short, never let it flash rapidly (a seizure risk), and give it ALT text or surrounding context (see [Chapter 5: Accessibility](05-comms-accessibility)).
+
+<!-- TODO (Xenia to add): worked example GIF + step screenshots.
+<img src="{{ '/images/communication/powerpoint-gif-example.gif' | relative_url }}" alt="A short looping GIF built in PowerPoint using motion paths and the Morph transition, where the final slide matches the first for a seamless loop." class="img-fluid my-3">
+-->
+</details>
+
 ## Put it into practice
 
 A workflow you can repeat every time:
