@@ -308,9 +308,8 @@ Blurred, you still see the headline and the orange button – exactly what matte
 With templates, resist customising: every change to a good template is a chance to make it worse. Change the words and the image; leave the structure alone. And always check accessibility – contrast, ALT text and never leaving key information trapped inside an image (see [Chapter 5: Accessibility](05-comms-accessibility)).
 </details>
 
-## Cheat sheet
-{: #cheat-sheet}
-Everything from this chapter on one card.
+<details id="cheat-sheet" markdown="1">
+<summary>Cheat sheet: the whole chapter on one card</summary>
 
 <div class="cheat-sheet" markdown="1">
 <div class="cheat-sheet-block" markdown="1">
@@ -345,6 +344,8 @@ Everything from this chapter on one card.
 * One other person has looked at it
 </div>
 </div>
+
+</details>
 
 ## Put it into practice
 

@@ -38,7 +38,7 @@ Then open the address it prints. Restart the server after editing `_config.yml`.
 | `_data/sidebars/` | One file per module: chapter order – a title starting with two digits (`01 …`) makes a page a chapter |
 | `_data/pathways/` | Learning pathways per module |
 | `_data/module_types.yml` | The module tiles on the home and Modules pages |
-| `_data/tool_and_resource_list.yml` | Resources for the "Dive deeper" tables |
+| `_data/tool_and_resource_list.yml` | Resources for the "Dive deeper" panels |
 | `_data/CONTRIBUTORS.yml` | Module leads and contributors |
 | `_includes/`, `_layouts/` | Custom components and theme overrides – documented in [Site components](https://elixir-europe-training.github.io/ELIXIR-ELITMa/site-components) |
 | `_sass/` | Colours and custom styles |

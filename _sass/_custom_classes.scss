@@ -1562,3 +1562,41 @@ ul.task-list li.task-list-item:has(> label) {
   li + li { margin-top: 0.2rem; }
   code { font-size: 0.85em; }
 }
+
+/*-----Dive deeper (resources) panel-----*/
+#content details.dive-deeper {
+  margin-top: 3rem;
+}
+
+.dive-deeper-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid $grey-light;
+    line-height: 1.45;
+
+    &:last-child { border-bottom: 0; }
+  }
+
+  .dive-deeper-name { font-weight: 600; }
+
+  .dive-deeper-tag {
+    display: inline-block;
+    margin-left: 0.35rem;
+    padding: 0 0.4rem;
+    border-radius: 999px;
+    background: #E6F2F7;
+    color: $primary;
+    font-size: 0.75rem;
+    font-weight: 700;
+    vertical-align: 0.1em;
+  }
+
+  .dive-deeper-desc {
+    display: block;
+    font-size: 0.9rem;
+    color: #3d4852;
+  }
+}
