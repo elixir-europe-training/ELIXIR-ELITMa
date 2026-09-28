@@ -7,7 +7,9 @@ contributors: [Xenia Perez Sitja]
 
 ELITMa modules are written by people from the Nodes who have done the work. This page explains how a chapter is put together and gives you the building blocks to copy. For how the machinery behind them works, see [Site components](site-components).
 
-{% include callout.html type="tip" content="The fastest way to start is to copy an existing chapter from the same module and change it. Everything below is already used somewhere in the Communication module." %}
+The site is built on the [ELIXIR Toolkit Theme](https://elixir-belgium.github.io/elixir-toolkit-theme/) (ETT). This page covers what is specific to ELITMa; for general formatting – headings, tables, links, images, code – see the ETT [Markdown cheat sheet](https://elixir-belgium.github.io/elixir-toolkit-theme/markdown_cheat_sheet).
+
+{% include callout.html type="tip" content="The fastest way to start is to copy an existing chapter and change it. Everything below works in any module – if you want to see a component in context, the Communication module has an example of each." %}
 
 ## Anatomy of a chapter
 
@@ -41,6 +43,8 @@ ref_to_main_resources:
 
 {% include callout.html type="warning" content="If a description or summary contains a colon followed by a space, wrap the whole value in double quotes, or the site will not build." %}
 
+The ETT documentation lists [every front matter field the theme understands](https://elixir-belgium.github.io/elixir-toolkit-theme/page_mechanics#possible-metadata-attributes-of-a-page).
+
 Write `time` as minutes (`15 minutes`, `60 minutes`). The chapter list, the module tiles on the home page and the pathway cards all add these up, so there is no total to keep in sync by hand.
 
 ### Adding the chapter to the module
@@ -56,7 +60,7 @@ subitems:
     hr: true                                # draws a divider line above this item
 ```
 
-Renumber by editing the sidebar; nothing else needs to change.
+Renumber by editing the sidebar; nothing else needs to change. For all sidebar options, see [Sidebar](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures#sidebar) in the ETT documentation.
 
 ### The metadata box
 
@@ -72,7 +76,7 @@ Use these to give chapters structure. Each one below shows the code to copy, the
 
 ### Callouts
 
-Provided by the theme. Use `note`, `tip`, `important` or `warning`, and keep them rare – a page with one callout reads like a chapter; a page with six reads like an alarm system.
+Provided by the theme. Use `note`, `tip`, `important` or `warning`, and keep them rare – a page with one callout reads like a chapter; a page with six reads like an alarm system. The ETT documentation shows more options, such as [custom titles, longer content and nested callouts](https://elixir-belgium.github.io/elixir-toolkit-theme/markdown_cheat_sheet#callouts).
 
 ```liquid
 {% raw %}{% include callout.html type="tip" content="Start from an approved template, not a blank page." %}{% endraw %}
@@ -122,7 +126,7 @@ Start list items with `- [ ]`. Readers can tick them, and their ticks are rememb
 
 ### Expandable panel
 
-For a checklist, a worked answer or a how-to that not every reader needs. Keep the blank lines around the content.
+For a checklist, a worked answer or a how-to that not every reader needs. Keep the blank lines around the content. This is the theme's [collapsible text](https://elixir-belgium.github.io/elixir-toolkit-theme/markdown_cheat_sheet#a-collapsible-piece-of-text), styled for ELITMa.
 
 ```html
 <details markdown="1">
@@ -162,7 +166,7 @@ Optional settings: `lead` (your own sentence), `label` (a different small headin
 
 ### Figure with a caption
 
-Always write ALT text that says what the image shows, not just what it is. Put images in `images/<module>/`.
+Always write ALT text that says what the image shows, not just what it is. Put images in `images/<module>/`. For other ways to add images, see [Images](https://elixir-belgium.github.io/elixir-toolkit-theme/markdown_cheat_sheet#images) in the ETT documentation.
 
 ```html
 <figure class="figure-diagram">
@@ -224,7 +228,7 @@ Resources for the "Dive deeper" tables and the All resources page live in `_data
   module: mod_comm
 ```
 
-Mark intranet resources clearly in the description (for example "intranet – consortium login required").
+Mark intranet resources clearly in the description (for example "intranet – consortium login required"). The ETT documentation explains the [tools and resources data file](https://elixir-belgium.github.io/elixir-toolkit-theme/resource_table) in more detail.
 
 ## Learning pathways
 
@@ -262,3 +266,5 @@ contributors: [Jane Doe, Xenia Perez Sitja]
 ## Preview your changes
 
 Run the site locally with `bundle exec jekyll serve` and open the address it prints. Most edits appear on reload; changes to `_config.yml` only take effect after you stop the server (Ctrl+C) and start it again.
+
+First time? The ETT README explains how to [install Jekyll and run the site locally](https://github.com/ELIXIR-Belgium/elixir-toolkit-theme#locally-using-jekyll), or [run it with Docker](https://github.com/ELIXIR-Belgium/elixir-toolkit-theme#locally-using-docker) instead.

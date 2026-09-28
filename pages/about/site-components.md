@@ -15,40 +15,40 @@ The sidebar convention everything relies on: **a top-level sidebar item whose ti
 
 ## Custom includes
 
-These live in `_includes/` and are not part of ETT.
+These live in `_includes/` and are not part of ETT. **They are written for any module**, not for one in particular: a module picks them up as soon as it has the content they need (numbered chapters in its sidebar, a pathways file, example pages). If a module doesn't use one yet, it's because it doesn't have that content yet.
 
-| Include | What it does | Used in | Parameters |
+| Include | What it does | Where it goes | Parameters |
 | --- | --- | --- | --- |
-| `module-metadata.html` | Status, time, audience and learning-outcomes box at the top of a chapter | Every chapter | – (reads front matter) |
-| `module-chapters.html` | Chapter timeline with the chapter count and total time | Module main pages | `sidebar` |
-| `module-pathways.html` | Learning-pathway cards, plus a "full module" card | Communication main page | `sidebar` |
-| `module-pager.html` | Previous/next chapter buttons with progress; "Back to chapter" on example pages; the pathway bar and its script; the shared checklist script | Bottom of every module page (called by `related-pages.html`) | – |
-| `module-time.html` | Calculates a module's total time from its chapters | `module-navigation.html` | `url` (the module main page) |
+| `module-metadata.html` | Status, time, audience and learning-outcomes box at the top of a chapter | Top of every chapter | – (reads front matter) |
+| `module-chapters.html` | Chapter timeline with the chapter count and total time | A module's main page | `sidebar` |
+| `module-pathways.html` | Learning-pathway cards, plus a "full module" card | A module's main page, once the module has a pathways file | `sidebar` |
+| `module-pager.html` | Previous/next chapter buttons with progress; "Back to chapter" on example pages; the pathway bar and its script; the shared checklist script | Added automatically at the bottom of every module page (via `related-pages.html`) | – |
+| `module-time.html` | Calculates a module's total time from its chapters | Used by `module-navigation.html` | `url` (the module main page) |
 | `module-navigation.html` | Module tiles with icon, description, status and calculated time | Home and Modules pages | `col` |
-| `module-tiles.html` | Tiles for a list of pages | Other module main pages | `type`, `custom`, `col`, `sort` |
-| `module-resources.html` | All resources for a module, grouped by category | "All resources" pages | `module_id` |
-| `example-card.html` | Highlighted link card to another page | In text, and "See it in practice" | `page_id`, `lead`, `label`, `icon` |
+| `module-tiles.html` | Tiles for a hand-picked list of pages | Any page (currently the main pages of modules still in planning) | `type`, `custom`, `col`, `sort` |
+| `module-resources.html` | All resources for a module, grouped by category | A module's "All resources" page | `module_id` |
+| `example-card.html` | Highlighted link card to another page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id`, `lead`, `label`, `icon` |
 
 `_layouts/home.html` is also custom: the home page layout with its hero image.
 
 ## Theme overrides
 
-These files have the **same name as an ETT include**, so they replace the theme's version. When ETT is updated, compare each one with the new theme file and carry over any changes.
+These files have the **same name as an ETT include**, so they replace the theme's version. When ETT is updated, compare each one with the new theme file and carry over any changes – see the ETT guide to [upgrading the theme](https://elixir-belgium.github.io/elixir-toolkit-theme/upgrading_theme).
 
 | Override | Why | What changed |
 | --- | --- | --- |
-| `related-pages.html` | Communication module layout | Communication pages show only real-world examples ("See it in practice") and no related-pages tiles; every module page ends with the pager. Other pages use the theme's code unchanged. |
+| `related-pages.html` | Adds the pager to module pages; lets a module drop related-pages tiles | Every module page ends with the pager. The Communication module – by choice, because the pager and in-text links already connect its chapters – shows only real-world examples ("See it in practice") instead of related-pages tiles; this is switched on per module in the file (`page.sidebar == "module-communication"`). Other modules keep the theme's related pages. |
 | `breadcrumb.html` | Module permalinks are flat (`/01-comms-introduction`), so the theme's URL-based trail only gave "Home › page" | Module pages build Home › Modules › module › [chapter] › page from the sidebar. Other pages use the theme's code unchanged. |
 | `contributor-card.html` | Different badge colours for leads and contributors | The role badge gets a `contributor-role--<role>` class. |
 | `resource-table-page.html` | A simpler resources table for chapters | Replaces the theme's tools table (national resources, registry links) with a "Dive deeper" table – category, resource, description – for the ids in a page's `ref_to_main_resources`. |
 
-The breadcrumb is switched on in `_config.yml` (`theme_variables: breadcrumb: true`). It replaces the theme's grey page-type label above the title.
+The breadcrumb is switched on in `_config.yml` (`theme_variables: breadcrumb: true`). It replaces the theme's grey page-type label above the title. Other theme settings are described in [Configuring the theme](https://elixir-belgium.github.io/elixir-toolkit-theme/configuring_theme).
 
 ## Data files
 
 | File | Holds |
 | --- | --- |
-| `_data/sidebars/<module>.yml` | Chapter order and numbering (see the convention above); `title_url` points to the module main page; `hr: true` draws a divider |
+| `_data/sidebars/<module>.yml` | Chapter order and numbering (see the convention above); `title_url` points to the module main page; `hr: true` draws a divider. See the ETT [navigation structures](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures) for all options. |
 | `_data/pathways/<module>.yml` | Learning pathways: `id`, `title`, `description`, `chapters` (page_ids). File name must match the sidebar file. |
 | `_data/module_types.yml` | Module tiles: title, description, icon, status, order. Times are **not** stored here – they are calculated. |
 | `_data/tool_and_resource_list.yml` | Resources for "Dive deeper" tables and All resources pages |
@@ -56,7 +56,7 @@ The breadcrumb is switched on in `_config.yml` (`theme_variables: breadcrumb: tr
 
 ## Styles
 
-All custom styling is in `_sass/_custom_classes.scss`, in labelled sections. Theme colour and component settings are in `_sass/_bootstrap_variables.scss` and `_sass/_custom_variables.scss`. Notes that matter when changing them:
+All custom styling is in `_sass/_custom_classes.scss`, in labelled sections. Theme colour and component settings are in `_sass/_bootstrap_variables.scss` and `_sass/_custom_variables.scss` – the ETT [custom branding](https://elixir-belgium.github.io/elixir-toolkit-theme/custom_branding) page lists the variables you can set. Notes that matter when changing them:
 
 * The navigation bar is dark navy, so anything the theme draws in navy on it (the active menu item, the mobile-menu separator) needs a light colour instead – see "Top navigation" in `_custom_classes.scss` and `$topnav-break-color`.
 * Text on orange (`#f47d20`) must be dark, not white: white on orange fails contrast.
@@ -73,5 +73,5 @@ With JavaScript switched off, checklists simply can't be ticked and the normal p
 
 ## Preview and testing
 
-* Run `bundle exec jekyll serve`. Restart it after editing `_config.yml` – Jekyll only reads that file at start-up.
+* Run `bundle exec jekyll serve` (first-time setup: see the ETT README on [running the site locally](https://github.com/ELIXIR-Belgium/elixir-toolkit-theme#locally-using-jekyll)). Restart it after editing `_config.yml` – Jekyll only reads that file at start-up.
 * The build must finish without errors; a YAML error in front matter (often an unquoted colon) stops the whole site.
