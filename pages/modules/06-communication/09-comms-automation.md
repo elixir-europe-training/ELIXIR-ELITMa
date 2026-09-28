@@ -20,7 +20,6 @@ ref_to_main_resources:
   - buffer
   - google-analytics
   - svg-maps
-  - canva
   - adobe-express
 ---
 
@@ -49,7 +48,7 @@ Why it helps:
 ## Quick DIY visuals
 You don't need a designer – or paid software – for everyday visuals. (For how to make them *look good*, see [Chapter 8: Graphic design for non-designers](08-comms-design).)
 
-* **Templates** in [Canva](https://www.canva.com/) or [Adobe Express](https://www.adobe.com/express/) – build an ELIXIR-branded version once, then reuse it.
+* **Templates** in [Adobe Express](https://www.adobe.com/express/) – build an ELIXIR-branded version once, then reuse it.
 * **Free vector maps** from [amCharts SVG Maps](https://www.amcharts.com/svg-maps/) – editable maps of countries and regions, handy for showing Node locations or event geography in your own brand colours. It can also generate **pixel (dot) maps**, which work especially well for our field – for example plotting data points, samples or sites across geographies.
 
 ### Animated GIFs in PowerPoint (no AI)
@@ -80,7 +79,7 @@ Set it up to answer the questions you actually care about: which pages get visit
 You can put the essentials in place in about an hour. Tick them off as you go:
 
 - [ ] Connect **one** social scheduler (Buffer is the quickest start) and schedule a week of posts.
-- [ ] Build **one** ELIXIR-branded template in Canva or Adobe Express that you'll reuse.
+- [ ] Build **one** ELIXIR-branded template in Adobe Express that you'll reuse.
 - [ ] Set up a **Google Analytics dashboard** for your main site or pages.
 - [ ] Save all the tool logins somewhere your team can find them – automation only helps if it outlives one person.
 
@@ -89,7 +88,7 @@ You can put the essentials in place in about an hour. Tick them off as you go:
 Pick **one** tool from this page and actually set it up now – don't read on, do it.
 
 * If you chose a scheduler: write and schedule three posts for next week.
-* If you chose Canva/Adobe Express: build one reusable ELIXIR-branded template.
+* If you chose Adobe Express: build one reusable ELIXIR-branded template.
 * If you chose Analytics: create a dashboard with the three numbers you care about most.
 
 The goal is to leave this page with one thing genuinely automated, not a list of tools you mean to try later.

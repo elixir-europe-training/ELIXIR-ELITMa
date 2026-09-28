@@ -80,6 +80,11 @@ The Brand Guidelines define one simple rule of thumb: the logo follows **who the
 
 <p class="logo-gallery-note">ELIXIR UK is shown as the example Node. Always download the official files – every Node's logo, in every version – from the <a href="https://elixir-europe.org/documents/elixir-logos-and-other-visuals">intranet branding page</a>.</p>
 
+Every logo comes in three versions (Brand Guidelines, p. 8): **standard** for light backgrounds, **negative** for dark ones and **full white** for coloured ones such as orange. Two placement rules make the biggest difference:
+
+* **Give it space.** Keep a clear margin around the logo on every side, at least as wide as the "el" in "elixir" – no text, images or other logos inside it (p. 11).
+* **Keep the background calm.** Don't place the logo over busy photos; use a plain area or a solid colour behind it (p. 8).
+
 | Situation | Use | Avoid |
 | --- | --- | --- |
 | Your Node's own slides, posters, documents | Your **Node logo** (standard square version; horizontal if the country name gets too small) | Recolouring or redrawing any part of it |
@@ -106,7 +111,7 @@ For a joint activity with an external partner, your Node logo sits alongside the
 </div>
 </div>
 
-{% include callout.html type="tip" content="The fastest route to an on-brand output is not designing from scratch – it's starting from an approved template and only changing what you need to. A branded slide deck or event banner template removes most design decisions before you make them." %}
+{% include callout.html type="tip" content="The fastest route to an on-brand output is not designing from scratch – it's starting from an approved template and only changing what you need to. The ELIXIR slide and document templates are on the ELIXIR Google Drive, and the roll-up banner template is on the intranet – swap in your Node logo and you're done." %}
 
 ## When you can't use full branding
 Applying the full ELIXIR branding is the default, but it isn't always the right call. Two situations come up regularly.

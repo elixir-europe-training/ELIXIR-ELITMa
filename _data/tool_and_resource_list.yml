@@ -64,17 +64,11 @@
   category: external_resource
   module: mod_comm
 
-- id: canva
-  name: Canva
-  url: https://www.canva.com/
-  description: Free, browser-based design tool with ready-made templates for slides, social posts and flyers - the most common starting point for non-designers. Save an ELIXIR-branded template and reuse it.
-  category: external_resource
-  module: mod_comm
 
 - id: adobe-express
   name: Adobe Express
   url: https://www.adobe.com/express/
-  description: Free design tool with templates and AI-assisted features (text-to-image, background removal, resizing); can hold ELIXIR-branded templates.
+  description: Recommended design tool for non-designers - free and browser-based, with templates and AI-assisted features (text-to-image, background removal, resizing). Save an ELIXIR-branded template once and reuse it.
   category: external_resource
   module: mod_comm
 

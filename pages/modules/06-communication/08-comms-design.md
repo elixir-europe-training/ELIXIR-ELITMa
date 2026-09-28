@@ -17,7 +17,6 @@ learning_outcomes:
   - Write effective prompts for AI design tools by giving them the right constraints
   - Assess template or AI output against a simple quality and accessibility checklist
 ref_to_main_resources:
-  - canva
   - adobe-express
   - coolors
   - adobe-color
@@ -29,7 +28,7 @@ ref_to_main_resources:
 ---
 
 
-Let's be honest about who this is for. You're a researcher or a coordinator, not a designer. You make a flyer or a slide a few times a year, usually in a free tool like Canva. You might have the Adobe suite, but learning it is not a good use of your time. If you want to become a designer, take a design course – this chapter won't make you one, and doesn't try to.
+Let's be honest about who this is for. You're a researcher or a coordinator, not a designer. You make a flyer or a slide a few times a year, usually in PowerPoint or a free tool like Adobe Express. You might have the full Adobe Creative Cloud suite, but learning it is not a good use of your time. If you want to become a designer, take a design course – this chapter won't make you one, and doesn't try to.
 
 What it will do is make you **good enough to direct tools and judge the result**. Because that is what the job actually is now: templates and AI do the production, and your real skill is **knowing what good looks like** – so you can prompt for it, and tell whether what comes back is any good.
 
@@ -107,9 +106,9 @@ The specifics that fix most problems:
 **Colour – pick two, with intention**
 
 * Two colours are usually enough to create contrast. Use an **accent colour for one purpose only** (e.g. links), so it keeps its meaning.
-* Experiment with **shades of the same colour** rather than reaching for new ones.
+* Use **tints of the same colour** rather than reaching for new ones. The Brand Guidelines give official tints of each ELIXIR colour at 75%, 50% and 25%.
 * **Don't be afraid of dark backgrounds** – they can look striking and professional, not just white-on-white.
-* Test your palette for contrast and colour-blindness before you commit – [Coolors](https://coolors.co/), [Adobe Color](https://color.adobe.com/create) and [Buttonbuddy](https://buttonbuddy.dev/) all do this for free.
+* Test your palette for contrast and colour-blindness before you commit – the Brand Guidelines recommend the [WebAIM contrast checker](https://webaim.org/resources/contrastchecker/); [Coolors](https://coolors.co/), [Adobe Color](https://color.adobe.com/create) and [Buttonbuddy](https://buttonbuddy.dev/) also do this for free.
 
 <div class="compare compare--visual" markdown="1">
 <div class="compare-item compare-item--dont" markdown="1">
@@ -165,6 +164,16 @@ Navy and white do the work; orange is used once, on the number that matters.
 **Fonts – one or two, paired with purpose**
 
 * Stick to one or two. For ELIXIR that's **Open Sans** for slides, documents, posters and print, and **Lato** for websites (and wherever Open Sans isn't available).
+* Create hierarchy with **size and weight, not more fonts**. For documents and slides, the [Brand Guidelines](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf) (p. 16) recommend:
+
+| Text | Size | Style |
+| --- | --- | --- |
+| Document title | 28 pt | Bold, royal blue |
+| Headings | 14 pt and 12 pt | Bold, royal blue |
+| Body text | 10–11 pt, at least 1.15 line spacing | Regular, dark grey |
+| Smallest text (e.g. a copyright line) | Never below 8 pt | Regular |
+| Slides | At least 18 pt | – |
+
 * When you do need to pair fonts, a **sans-serif heading with a serif body (or vice versa)** is a reliable trick. [Fontjoy](https://fontjoy.com/) generates pairings for you.
 
 <div class="compare compare--visual" markdown="1">
@@ -218,11 +227,11 @@ Same content: one size, equal gaps, one left edge. That's the Align and Distribu
 A blank canvas is where non-designers come unstuck. A good template has already made the hard decisions – hierarchy, spacing, fonts, colours – so you only change the content.
 
 * Use the official ELIXIR templates and visuals from the [intranet branding page](https://elixir-europe.org/documents/elixir-logos-and-other-visuals) wherever one exists – they're on-brand by default.
-* In Canva or Adobe Express, find a clean template and **save your own ELIXIR-branded version** (correct colours, fonts, logo) once, then reuse it. The second flyer takes minutes.
+* In Adobe Express, find a clean template and **save your own ELIXIR-branded version** (correct colours, fonts, logo) once, then reuse it. The second flyer takes minutes.
 * Resist customising. Every change you make to a good template is a chance to make it worse. Change the words and the image; leave the structure alone.
 
 ## Using AI tools well
-AI design tools (Canva's AI features, Adobe Express and general image tools) are genuinely useful for first drafts, layout ideas, resizing, removing backgrounds and generating supporting imagery. But they only produce something good if **you** bring the standard.
+AI design tools (Adobe Express's AI features and general image tools) are genuinely useful for first drafts, layout ideas, resizing, removing backgrounds and generating supporting imagery. But they only produce something good if **you** bring the standard.
 
 ### The ELIXIR palette – copy these into your prompt
 From the [ELIXIR Brand Guidelines (2025)](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf). Royal blue is the primary colour and grey the neutral; orange and olive green are accents.
@@ -268,7 +277,7 @@ A vague prompt gives generic output. Tell the tool exactly what it needs:
 ## A workflow you can repeat
 - [ ] Define the **one message**, the **audience** and the **format/size** before opening any tool.
 - [ ] Start from an **ELIXIR template**, or set your brand constraints (palette hex codes, Open Sans / Lato).
-- [ ] Draft it – in Canva, Adobe Express or with an AI tool given a constraint-rich prompt.
+- [ ] Draft it – in Adobe Express or with an AI tool given a constraint-rich prompt.
 - [ ] **Judge** it against the "what good looks like" table and the squint test.
 - [ ] Fix the **one or two biggest problems** (usually: too much text, weak hierarchy).
 - [ ] Drop in the **official logo** and check **accessibility** (contrast, ALT, no text-as-image).
