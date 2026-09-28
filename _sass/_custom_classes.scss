@@ -1127,3 +1127,13 @@ body.on-pathway .module-pager--chapters {
   border-top-color: $primary;
   background: $light;
 }
+
+/*-----Sidebar divider-----*/
+// The theme adds spacing (mt-3) above any sidebar item with `hr: true` in its
+// _data/sidebars file; draw a visible line there too, e.g. between the numbered
+// chapters and extras such as "All resources".
+#side-nav ul > li.mt-3 {
+  margin-top: 0.75rem !important;
+  padding-top: 0.75rem;
+  border-top: 1px solid darken($light-background, 12%);
+}

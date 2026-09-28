@@ -25,6 +25,7 @@ subitems:
     url: /11-comms-strategy
   - title: All resources
     url: /comms-all-resources
+    hr: true   # divider: separates the numbered chapters from extras below
   
 
 

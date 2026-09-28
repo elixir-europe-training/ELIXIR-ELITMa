@@ -35,7 +35,7 @@ If the theme's version changes, re-copy it into the non-Communication branch bel
     {%- assign page_hit = site.pages | where:"type", section[0] | where:"page_id", page_id | first %}
     {%- if page_hit %}
     <div class="col">
-        {% include comms-example-card.html page_id=page_id %}
+        {% include example-card.html page_id=page_id %}
     </div>
     {%- endif %}
     {%- endfor %}

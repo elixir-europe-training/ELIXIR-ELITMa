@@ -1,0 +1,23 @@
+{%- comment -%}
+A highlighted card linking to another page - typically a Real-world example, but any page works.
+Usage (in running text, in any module):
+  {% include example-card.html page_id="comm-ex-elead" %}
+Optional:
+  lead="..."   one sentence on why to read it (defaults to the page's description)
+  label="..."  the small heading (defaults to the page's type, e.g. "Real-world example")
+  icon="..."   a Font Awesome icon name (defaults to "lightbulb")
+Also used by related-pages.html for the "See it in practice" block.
+{%- endcomment -%}
+{%- assign ex = site.pages | where: "page_id", include.page_id | first -%}
+{%- if ex %}
+{%- assign ex_label = ex.type | replace: "_", " " | replace: "Real world", "Real-world" -%}
+<div class="example-card">
+  <div class="example-card-icon" aria-hidden="true"><i class="fa-solid fa-{{ include.icon | default: 'lightbulb' }}"></i></div>
+  <div class="example-card-body">
+    <span class="example-card-label">{{ include.label | default: ex_label }}</span>
+    <a class="example-card-title stretched-link" href="{{ ex.url | relative_url }}">{{ ex.title }}</a>
+    <p class="example-card-text">{{ include.lead | default: ex.description }}</p>
+  </div>
+  <span class="example-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+</div>
+{%- endif %}
