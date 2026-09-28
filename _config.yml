@@ -45,6 +45,11 @@ defaults:
       search_exclude: false
   -
     scope:
+      path: "pages/modules"
+    values:
+      layout: "module-page"   # adds the metadata box to chapters - see _layouts/module-page.html
+  -
+    scope:
       path: "pages/about"
     values:
       sidebar: about

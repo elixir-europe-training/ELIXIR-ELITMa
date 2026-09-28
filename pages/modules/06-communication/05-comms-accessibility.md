@@ -23,7 +23,6 @@ ref_to_main_resources:
   - wcag-overview
 ---
 
-{% include module-metadata.html %}
 
 Accessibility ensures that everyone can engage with your content – including people with visual, auditory, cognitive or motor disabilities. It is not just a legal requirement across Europe; it's a core value for inclusive science communication.
 

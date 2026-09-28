@@ -21,7 +21,6 @@ ref_to_main_resources:
   - ri-comms-toolkit
 ---
 
-{% include module-metadata.html %}
 
 You may not have "communications" in your job title. But if you coordinate a project, lead a work package, manage a team, or represent your Node in any capacity – you are already communicating on behalf of ELIXIR. The question is not whether you communicate, but how intentionally you do it.
 

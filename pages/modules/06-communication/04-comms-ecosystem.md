@@ -21,7 +21,6 @@ ref_to_main_resources:
   - node-newsletter-guidelines
 ---
 
-{% include module-metadata.html %}
 
 ## Internal channels 
 

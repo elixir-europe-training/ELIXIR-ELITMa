@@ -22,7 +22,6 @@ ref_to_main_resources:
   - comms-strategy
 ---
 
-{% include module-metadata.html %}
 
 You've worked through your audiences, channels, branding, writing and impact. The final step is to connect them into one actionable plan you'll actually use – not a long document that sits in a drawer.
 

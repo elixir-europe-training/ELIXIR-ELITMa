@@ -64,11 +64,7 @@ Renumber by editing the sidebar; nothing else needs to change. For all sidebar o
 
 ### The metadata box
 
-Put this straight after the front matter. It shows status, time, audience and learning outcomes from the front matter:
-
-```liquid
-{% raw %}{% include module-metadata.html %}{% endraw %}
-```
+You don't need to add it: every chapter gets the status, time, audience and learning-outcomes box at the top automatically, from its front matter. It appears on any module page with a `time` or `status` value, so example pages and a module's main page don't get one.
 
 ## Reusable components
 

@@ -19,7 +19,7 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 
 | Include | What it does | Where it goes | Parameters |
 | --- | --- | --- | --- |
-| `module-metadata.html` | Status, time, audience and learning-outcomes box at the top of a chapter | Top of every chapter | – (reads front matter) |
+| `module-metadata.html` | Status, time, audience and learning-outcomes box at the top of a chapter | Added automatically by the `module-page` layout (see below); no need to include it by hand | – (reads front matter) |
 | `module-chapters.html` | Chapter timeline with the chapter count and total time | A module's main page | `sidebar` |
 | `module-pathways.html` | Learning-pathway cards, plus a "full module" card | A module's main page, once the module has a pathways file | `sidebar` |
 | `module-pager.html` | Previous/next chapter buttons with progress; "Back to chapter" on example pages; the pathway bar and its script; the shared checklist script | Added automatically at the bottom of every module page (via `related-pages.html`) | – |
@@ -29,7 +29,12 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `module-resources.html` | All resources for a module, grouped by category | A module's "All resources" page | `module_id` |
 | `example-card.html` | Highlighted link card to another page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id`, `lead`, `label`, `icon` |
 
-`_layouts/home.html` is also custom: the home page layout with its hero image.
+## Custom layouts
+
+| Layout | What it does |
+| --- | --- |
+| `module-page.html` | The default layout for everything under `pages/modules/` (set in `_config.yml`). It adds the metadata box to chapters – pages with a `time` or `status` value – and otherwise uses the theme's `page` layout unchanged. If a page still includes `module-metadata.html` itself, the box isn't added twice. |
+| `home.html` | The home page layout with its hero image. |
 
 ## Theme overrides
 

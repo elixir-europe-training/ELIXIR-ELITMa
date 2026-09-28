@@ -18,7 +18,6 @@ ref_to_main_resources:
   - comms-contacts-registry
   - comms-group
 ---
-{% include module-metadata.html %}
 
 You are part of a network of multiple Nodes.
 

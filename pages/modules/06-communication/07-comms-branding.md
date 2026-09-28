@@ -23,7 +23,6 @@ ref_to_main_resources:
   - elixir-style-guide
 ---
 
-{% include module-metadata.html %}
 
 Consistent branding is essential for building trust and recognition, both within ELIXIR and in the wider research community. When your Node communicates as part of ELIXIR, using the correct logos, colours and templates is more than a visual choice – it signals a cohesive voice, a recognisable brand and a professional standard.
 

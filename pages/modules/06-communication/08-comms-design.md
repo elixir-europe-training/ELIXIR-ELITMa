@@ -28,7 +28,6 @@ ref_to_main_resources:
   - converge-design
 ---
 
-{% include module-metadata.html %}
 
 Let's be honest about who this is for. You're a researcher or a coordinator, not a designer. You make a flyer or a slide a few times a year, usually in a free tool like Canva. You might have the Adobe suite, but learning it is not a good use of your time. If you want to become a designer, take a design course – this chapter won't make you one, and doesn't try to.
 

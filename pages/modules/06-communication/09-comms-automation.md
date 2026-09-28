@@ -25,7 +25,6 @@ ref_to_main_resources:
   - adobe-express
 ---
 
-{% include module-metadata.html %}
 
 Communication work expands to fill all the time you give it – and in a Node, you rarely have much to give. The point of automation is not to do *more*; it's to spend the time you have on the things that actually need a human (judgement, relationships, good content) and let tools handle the repetitive rest.
 

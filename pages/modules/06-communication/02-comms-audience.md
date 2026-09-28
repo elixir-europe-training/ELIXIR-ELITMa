@@ -22,7 +22,6 @@ ref_to_main_resources:
 ---
 
 
-{% include module-metadata.html %}
 
 ## Who are your stakeholders?
 

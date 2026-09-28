@@ -21,7 +21,6 @@ ref_to_main_resources:
   - elixir-hashtags
   - converge-comms
 ---
-{% include module-metadata.html %}
 
 ## The one rule that applies to everything
 Before you write a single word, answer two questions:

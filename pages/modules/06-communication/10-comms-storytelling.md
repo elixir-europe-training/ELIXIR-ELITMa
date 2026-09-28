@@ -22,7 +22,6 @@ ref_to_main_resources:
   - ri-paths
 ---
 
-{% include module-metadata.html %}
 
 Good work doesn't speak for itself. In a consortium where funding and recognition depend on demonstrating value, two things make the difference: a **story** that shows what your work changed, and **evidence** that your communications actually reached people.
 
