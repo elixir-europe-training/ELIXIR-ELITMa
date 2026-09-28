@@ -23,10 +23,12 @@
 
                 <!-- Bottom section: chips (time is calculated from the module's chapters) -->
                 {%- include module-time.html url=current_page.url %}
-                {%- if module_time_label != "" or current_page.status %}
+                {%- comment -%} Status: calculated from the chapters when there are any, else the typed value {%- endcomment -%}
+                {%- assign tile_status = module_status | default: current_page.status -%}
+                {%- if module_time_label != "" or tile_status %}
                 <div class="d-flex flex-wrap gap-2 mt-auto pt-3">
-                    {%- if current_page.status %}
-                    <span class="module-chip module-chip--status">{{ current_page.status }}</span>
+                    {%- if tile_status %}
+                    <span class="module-chip module-chip--status">{{ tile_status }}</span>
                     {%- endif %}
                     {%- if module_time_label != "" %}
                     <span class="module-chip module-chip--time">

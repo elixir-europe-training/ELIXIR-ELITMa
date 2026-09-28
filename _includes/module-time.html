@@ -1,10 +1,13 @@
 {%- comment -%}
-Calculates a module's total time from its chapters, so it never needs typing by hand.
+Calculates a module's total time and status from its chapters, so neither needs typing by hand.
 Usage: {% include module-time.html url=module.url %}
   url - the module main page, as in _data/module_types.yml (slashes don't matter)
 Sets (for the calling template to use):
   module_time_minutes - total minutes (0 if the module has no timed chapters yet)
   module_time_label   - e.g. "5 h 15 min", or "" when there is nothing to show
+  module_chapters     - number of chapters found
+  module_status       - "ready" when every chapter's status is ready, "in development"
+                        otherwise, or "" when the module has no chapters yet
 Finds the sidebar whose title_url matches, then adds up the `time` of every numbered
 chapter in it ("01 ...", "02 ...") - the same chapters the module page lists.
 {%- endcomment -%}
@@ -12,6 +15,8 @@ chapter in it ("01 ...", "02 ...") - the same chapters the module page lists.
 {%- assign mt_target = include.url | prepend: "/" | append: "/" | replace: "//", "/" -%}
 {%- assign mt_digits = "0123456789" | split: "" -%}
 {%- assign module_time_minutes = 0 -%}
+{%- assign module_chapters = 0 -%}
+{%- assign mt_ready = 0 -%}
 {%- for mt_entry in site.data.sidebars -%}
   {%- assign mt_nav = mt_entry[1] -%}
   {%- assign mt_url = mt_nav.title_url | default: mt_nav["title-url"] | prepend: "/" | append: "/" | replace: "//", "/" -%}
@@ -21,7 +26,12 @@ chapter in it ("01 ...", "02 ...") - the same chapters the module page lists.
     {%- assign mt_c2 = item.title | slice: 1 -%}
     {%- unless mt_digits contains mt_c1 and mt_digits contains mt_c2 -%}{%- continue -%}{%- endunless -%}
     {%- assign mt_page = site.pages | where: "url", item.url | first -%}
-    {%- if mt_page -%}{%- assign module_time_minutes = mt_page.time | plus: 0 | plus: module_time_minutes -%}{%- endif -%}
+    {%- if mt_page -%}
+      {%- assign module_time_minutes = mt_page.time | plus: 0 | plus: module_time_minutes -%}
+      {%- assign module_chapters = module_chapters | plus: 1 -%}
+      {%- assign mt_status = mt_page.status | downcase | strip -%}
+      {%- if mt_status == "ready" -%}{%- assign mt_ready = mt_ready | plus: 1 -%}{%- endif -%}
+    {%- endif -%}
   {%- endfor -%}
 {%- endfor -%}
 {%- assign mt_h = module_time_minutes | divided_by: 60 -%}
@@ -31,4 +41,8 @@ chapter in it ("01 ...", "02 ...") - the same chapters the module page lists.
 {%- if mt_m > 0 -%}
   {%- if module_time_label != "" -%}{%- assign module_time_label = module_time_label | append: " " -%}{%- endif -%}
   {%- assign module_time_label = module_time_label | append: mt_m | append: " min" -%}
+{%- endif -%}
+{%- assign module_status = "" -%}
+{%- if module_chapters > 0 -%}
+  {%- if mt_ready == module_chapters -%}{%- assign module_status = "ready" -%}{%- else -%}{%- assign module_status = "in development" -%}{%- endif -%}
 {%- endif -%}

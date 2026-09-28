@@ -23,7 +23,7 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `module-chapters.html` | Chapter timeline with the chapter count and total time | A module's main page | `sidebar` |
 | `module-pathways.html` | Learning-pathway cards, plus a "full module" card | A module's main page, once the module has a pathways file | `sidebar` |
 | `module-pager.html` | Previous/next chapter buttons with progress; "Back to chapter" on example pages; the pathway bar and its script; the shared checklist script | Added automatically at the bottom of every module page (via `related-pages.html`) | – |
-| `module-time.html` | Calculates a module's total time from its chapters | Used by `module-navigation.html` | `url` (the module main page) |
+| `module-time.html` | Calculates a module's total time and status from its chapters ("ready" when every chapter is ready, otherwise "in development") | Used by `module-navigation.html` | `url` (the module main page) |
 | `module-navigation.html` | Module tiles with icon, description, status and calculated time | Home and Modules pages | `col` |
 | `module-tiles.html` | Tiles for a hand-picked list of pages | Any page (currently the main pages of modules still in planning) | `type`, `custom`, `col`, `sort` |
 | `module-resources.html` | All resources for a module, grouped by category | A module's "All resources" page | `module_id` |
@@ -55,7 +55,7 @@ The breadcrumb is switched on in `_config.yml` (`theme_variables: breadcrumb: tr
 | --- | --- |
 | `_data/sidebars/<module>.yml` | Chapter order and numbering (see the convention above); `title_url` points to the module main page; `hr: true` draws a divider. See the ETT [navigation structures](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures) for all options. |
 | `_data/pathways/<module>.yml` | Learning pathways: `id`, `title`, `description`, `chapters` (page_ids). File name must match the sidebar file. |
-| `_data/module_types.yml` | Module tiles: title, description, icon, status, order. Times are **not** stored here – they are calculated. |
+| `_data/module_types.yml` | Module tiles: title, description, icon, order. Time is **not** stored here, and `status` is only used until a module has chapters – after that, both are calculated from the chapters. |
 | `_data/tool_and_resource_list.yml` | Resources for "Dive deeper" tables and All resources pages |
 | `_data/CONTRIBUTORS.yml` | People; `role: Lead` or `role: Contributor` sets their group and badge |
 
