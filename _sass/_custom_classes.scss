@@ -1150,3 +1150,23 @@ body.on-pathway .module-pager--chapters {
   padding-top: 0.75rem;
   border-top: 1px solid darken($light-background, 12%);
 }
+
+/*-----Contributor role badges-----*/
+// Set by `role:` in _data/CONTRIBUTORS.yml (see _includes/contributor-card.html).
+.contributor-cards .badge.contributor-role {
+  margin: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background-color: $light;
+  color: $dark;
+
+  &--lead {
+    background-color: $accent-color;
+    color: $dark;
+  }
+
+  &--contributor {
+    background-color: $primary-light;
+    color: $dark;
+  }
+}

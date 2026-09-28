@@ -1,0 +1,264 @@
+---
+title: How to contribute
+description: How to write and add a chapter to an ELITMa module, with a copy-paste kit of the page components.
+page_img: /icons/icon-info.svg
+contributors: [Xenia Perez Sitja]
+---
+
+ELITMa modules are written by people from the Nodes who have done the work. This page explains how a chapter is put together and gives you the building blocks to copy. For how the machinery behind them works, see [Site components](site-components).
+
+{% include callout.html type="tip" content="The fastest way to start is to copy an existing chapter from the same module and change it. Everything below is already used somewhere in the Communication module." %}
+
+## Anatomy of a chapter
+
+A module is a set of numbered **chapters** (`01`, `02`, …), plus optional **real-world example** pages and an **All resources** page. The module's main page is its orientation page: it introduces the module and lists the chapters, built automatically from the sidebar.
+
+### Front matter
+
+Every chapter starts with front matter like this:
+
+```yaml
+---
+title: Understanding your audience
+description: One sentence for tiles and the chapter list.   # keep it short
+summary: A longer intro shown under the title.
+page_id: mod_comm_2            # unique; used for links, pathways and examples
+type: Communication            # the module type
+sidebar: module-communication  # the module's sidebar file in _data/sidebars/
+page_img: /icons/icon-module-communication.svg
+time: 20 minutes               # used to calculate module and pathway totals
+status: ready
+status_badge: success
+audience: [Communications Officers, Project Managers]
+learning_outcomes:
+  - Identify and prioritise your Node's key stakeholder groups
+related_pages:
+  Real_world_example: [comm-ex-matrix]   # shown as "See it in practice" cards
+ref_to_main_resources:
+  - converge-comms                       # ids from _data/tool_and_resource_list.yml
+---
+```
+
+{% include callout.html type="warning" content="If a description or summary contains a colon followed by a space, wrap the whole value in double quotes, or the site will not build." %}
+
+Write `time` as minutes (`15 minutes`, `60 minutes`). The chapter list, the module tiles on the home page and the pathway cards all add these up, so there is no total to keep in sync by hand.
+
+### Adding the chapter to the module
+
+Add the chapter to the module's sidebar file in `_data/sidebars/`. **The number at the start of the title is what makes it a chapter:** it puts the page in the chapter list, the previous/next buttons and the breadcrumb.
+
+```yaml
+subitems:
+  - title: 02 Understanding your audience   # two-digit number = a chapter
+    url: /02-comms-audience
+  - title: All resources                    # no number = an extra, outside the sequence
+    url: /comms-all-resources
+    hr: true                                # draws a divider line above this item
+```
+
+Renumber by editing the sidebar; nothing else needs to change.
+
+### The metadata box
+
+Put this straight after the front matter. It shows status, time, audience and learning outcomes from the front matter:
+
+```liquid
+{% raw %}{% include module-metadata.html %}{% endraw %}
+```
+
+## Reusable components
+
+Use these to give chapters structure. Each one below shows the code to copy, then how it renders.
+
+### Callouts
+
+Provided by the theme. Use `note`, `tip`, `important` or `warning`, and keep them rare – a page with one callout reads like a chapter; a page with six reads like an alarm system.
+
+```liquid
+{% raw %}{% include callout.html type="tip" content="Start from an approved template, not a blank page." %}{% endraw %}
+```
+
+**Renders as:**
+
+{% include callout.html type="tip" content="Start from an approved template, not a blank page." %}
+
+### Exercise box
+
+Wrap every exercise in an exercise box so learners can spot it. The `markdown="1"` part lets you write normal Markdown inside.
+
+```html
+<div class="exercise-box" markdown="1">
+### Quick exercise
+Think of a recent project or result from your Node.
+
+* Build a priority matrix for that particular case.
+* For each group, write one sentence that would catch their attention.
+</div>
+```
+
+**Renders as:**
+
+<div class="exercise-box" markdown="1">
+### Quick exercise
+Think of a recent project or result from your Node.
+
+* Build a priority matrix for that particular case.
+* For each group, write one sentence that would catch their attention.
+</div>
+
+### Checklists
+
+Start list items with `- [ ]`. Readers can tick them, and their ticks are remembered in their browser.
+
+```markdown
+- [ ] Is the official logo present and correctly used?
+- [ ] Are the colours and fonts from the ELIXIR palette?
+```
+
+**Renders as:**
+
+- [ ] Is the official logo present and correctly used?
+- [ ] Are the colours and fonts from the ELIXIR palette?
+
+### Expandable panel
+
+For a checklist, a worked answer or a how-to that not every reader needs. Keep the blank lines around the content.
+
+```html
+<details markdown="1">
+<summary>News item checklist: check before you publish</summary>
+
+- [ ] Does the first sentence tell the reader what happened and why it matters?
+- [ ] Have I named the people involved?
+
+</details>
+```
+
+**Renders as:**
+
+<details markdown="1">
+<summary>News item checklist: check before you publish</summary>
+
+- [ ] Does the first sentence tell the reader what happened and why it matters?
+- [ ] Have I named the people involved?
+
+</details>
+
+### Example card
+
+A highlighted link to another page – usually a real-world example – placed where the reader needs it, rather than only at the bottom of the page. It uses the linked page's own title and description.
+
+```liquid
+{% raw %}{% include example-card.html page_id="comm-ex-elead" %}
+
+{% include example-card.html page_id="comm-ex-elead" lead="Your own sentence instead of the page description." %}{% endraw %}
+```
+
+Optional settings: `lead` (your own sentence), `label` (a different small heading) and `icon` (a Font Awesome icon name).
+
+**Renders as:**
+
+{% include example-card.html page_id="comm-ex-elead" %}
+
+### Figure with a caption
+
+Always write ALT text that says what the image shows, not just what it is. Put images in `images/<module>/`.
+
+```html
+<figure class="figure-diagram">
+  <img src="{% raw %}{{ '/images/communication/inverted-pyramid.svg' | relative_url }}{% endraw %}" alt="The inverted pyramid: most important information at the top, supporting detail in the middle, background at the tip.">
+  <figcaption>Readers who stop early still get the point.</figcaption>
+</figure>
+```
+
+**Renders as:**
+
+<figure class="figure-diagram" style="max-width: 28rem;">
+  <img src="{{ '/images/communication/inverted-pyramid.svg' | relative_url }}" alt="The inverted pyramid: most important information at the top, supporting detail in the middle, background at the tip.">
+  <figcaption>Readers who stop early still get the point.</figcaption>
+</figure>
+
+### Download button
+
+For templates and other files in `assets/downloads/`. Say what the file is and its format.
+
+```html
+<a href="{% raw %}{{ '/assets/downloads/news-item-template.docx' | relative_url }}{% endraw %}" class="btn-download" download>
+  <i class="fas fa-download"></i>Download the news item template (Word)
+</a>
+```
+
+**Renders as:**
+
+<a href="{{ '/assets/downloads/news-item-template.docx' | relative_url }}" class="btn-download" download>
+  <i class="fas fa-download"></i>Download the news item template (Word)
+</a>
+
+## Real-world example pages
+
+An example page tells how a Node actually did something. Give it `type: Real_world_example`, its own `page_id`, the module's `sidebar`, and `back_to` with the chapter it belongs to – that adds a "Back to chapter" link at the bottom:
+
+```yaml
+---
+title: "From deliverable to impact story: ELEAD"
+description: One sentence on what the example shows.
+page_id: comm-ex-elead
+type: Real_world_example
+back_to: mod_comm_10
+sidebar: module-communication
+---
+```
+
+Then link it from the chapter, either in the text with an [example card](#example-card), under "See it in practice" at the bottom of the page via `related_pages`, or both.
+
+## Resources
+
+Resources for the "Dive deeper" tables and the All resources page live in `_data/tool_and_resource_list.yml`. Add an entry once, then list its `id` under `ref_to_main_resources` in any chapter that should show it.
+
+```yaml
+- id: writing-in-sciences
+  name: Writing in the Sciences (Stanford University)
+  url: https://www.coursera.org/learn/sciwrite
+  description: Free online course on clear scientific writing.
+  category: external_resource     # template, internal_resource or external_resource
+  module: mod_comm
+```
+
+Mark intranet resources clearly in the description (for example "intranet – consortium login required").
+
+## Learning pathways
+
+A pathway is a short route through some chapters for a particular reader, shown as a card on the module's main page. Once a reader picks one, each chapter shows their step and the next chapter on the route. Pathways live in one file per module, named after the module's sidebar – for example `_data/pathways/module-communication.yml`:
+
+```yaml
+- id: new-to-elixir                 # lowercase, no spaces; appears in links as ?path=new-to-elixir
+  title: New to ELIXIR
+  description: Find the people, channels and shared resources the network already has.
+  chapters: [mod_comm_3, mod_comm_4]   # page_ids, in order
+```
+
+Chapter numbers, links and the total time are filled in automatically. A module without a pathways file simply shows no pathways.
+
+## Crediting contributions
+
+Everyone who contributes should be credited.
+
+**On the Contributors page.** Add yourself to `_data/CONTRIBUTORS.yml`. Your `role` decides which group you appear in and the colour of your badge:
+
+```yaml
+Jane Doe:
+  git: janedoe                      # GitHub username; also used for your photo
+  orcid: 0000-0000-0000-0000
+  affiliation: Example Institute / ELIXIR-XX
+  role: Contributor                 # Lead or Contributor
+```
+
+**On a chapter.** List contributors by the same name in the chapter's front matter; they appear in the credits at the bottom of the page:
+
+```yaml
+contributors: [Jane Doe, Xenia Perez Sitja]
+```
+
+## Preview your changes
+
+Run the site locally with `bundle exec jekyll serve` and open the address it prints. Most edits appear on reload; changes to `_config.yml` only take effect after you stop the server (Ctrl+C) and start it again.
