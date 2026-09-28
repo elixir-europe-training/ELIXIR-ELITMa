@@ -130,6 +130,8 @@ Navy and white do the work; orange is used once, on the number that matters.
 
 <p class="contrast-chips-intro"><b>Check the contrast of every text colour.</b> The ELIXIR palette works – in the right combinations. Normal text needs at least 4.5:1.</p>
 
+{% include callout.html type="note" content="The Brand Guidelines suggest bright orange for highlighting text. On white, use it for large or decorative elements and use bold to emphasise words in body text, because orange text on white doesn't meet contrast requirements (2.7:1)." %}
+
 <div class="contrast-chips">
   <div class="contrast-chip contrast-chip--ok">
     <div class="contrast-chip-sample" style="background:#ffffff"><svg viewBox="0 0 170 24" role="img" aria-hidden="true" focusable="false"><text x="0" y="17" fill="#023452" font-family="Lato, 'Open Sans', Arial, sans-serif" font-size="16" font-weight="700">Aa – Register now</text></svg></div>

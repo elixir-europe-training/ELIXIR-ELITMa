@@ -1456,3 +1456,27 @@ ul.task-list li.task-list-item:has(> label) {
 
   .compare-item img { max-width: 34rem; }
 }
+
+/*-----Level 3 headings-----*/
+// Were barely bigger than bold body text and the same colour, so they read as
+// a bold paragraph. Royal blue (as the Brand Guidelines ask for headings), a
+// little larger and heavier, with a short orange marker. Only headings directly
+// in the page text: those inside exercise boxes, panels and cards keep their style.
+#content > h3 {
+  position: relative;
+  padding-left: 0.85rem;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: $primary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    bottom: 0.2em;
+    width: 4px;
+    border-radius: 2px;
+    background: $accent-color;
+  }
+}
