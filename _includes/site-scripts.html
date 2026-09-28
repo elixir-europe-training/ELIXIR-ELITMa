@@ -3,8 +3,6 @@ Small accessibility fixes that run on every page (loaded from scroll-top.html):
   - Checklist boxes (from "- [ ]" in Markdown) get an accessible name - the item's text -
     and clicking the text ticks the box.
   - Code blocks that scroll sideways can be reached and scrolled with the keyboard.
-  - Level 3 headings in the page text get their words wrapped in <span class="hl"> for the
-    highlighter-style marking (see "Level 3 headings" in _custom_classes.scss).
   - The mobile sidebar button reads "Module navigation" (or "Section navigation") instead
     of the theme's label built from the sidebar file name ("Module-communication menu").
 The script that remembers checklist ticks lives in module-pager.html (module pages only).
@@ -18,14 +16,7 @@ The script that remembers checklist ticks lives in module-pager.html (module pag
         if (n.nodeType === 3 && n.textContent.trim()) n.textContent = label + ' ';
       });
     }
-    document.querySelectorAll('#content > h3').forEach(function (h) {
-      if (h.querySelector('.hl')) return;
-      var span = document.createElement('span');
-      span.className = 'hl';
-      while (h.firstChild) span.appendChild(h.firstChild);
-      h.appendChild(span);
-    });
-        document.querySelectorAll('.task-list-item').forEach(function (item, i) {
+    document.querySelectorAll('.task-list-item').forEach(function (item, i) {
       var cb = item.querySelector('input[type="checkbox"]');
       if (!cb || cb.id) return;
       cb.id = 'task-' + i;

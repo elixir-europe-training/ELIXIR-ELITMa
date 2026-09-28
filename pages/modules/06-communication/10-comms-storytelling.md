@@ -108,4 +108,4 @@ When someone asks "what did your Node achieve this year?", you should be able to
 
 If you can say that clearly, you have both a story and the evidence behind it.
 
-{% include callout.html type="note" content="Assessing the impact of the work itself – beyond communicating it – is covered by the [Impact module]({{ '/modules/impact/' | relative_url }})." %}
+Assessing the impact of the work itself – beyond communicating it – is covered by the [Impact module]({{ '/modules/impact/' | relative_url }}).

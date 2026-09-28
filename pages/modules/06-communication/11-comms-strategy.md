@@ -88,4 +88,4 @@ Report at a cadence that fits the audience: a short **annual** summary for Node 
 
 {% include callout.html type="tip" content="Like your stakeholder map, the strategy is a living document. Set a review date and revisit it when your funding, remit or partnerships change - then use what you learn to inform the next version." %}
 
-{% include callout.html type="note" content="Assessing the impact of the work itself – beyond communicating it – is covered by the [Impact module]({{ '/modules/impact/' | relative_url }})." %}
+Assessing the impact of the work itself – beyond communicating it – is covered by the [Impact module]({{ '/modules/impact/' | relative_url }}).

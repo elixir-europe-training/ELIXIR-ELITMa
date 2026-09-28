@@ -105,6 +105,8 @@ Provided by the theme. Use `note`, `tip`, `important` or `warning`, and keep the
 
 {% include callout.html type="tip" content="Start from an approved template, not a blank page." %}
 
+A callout's text can't contain Liquid (anything in `{% raw %}{{ }}{% endraw %}`) – it is printed as-is. If you need a link built with `relative_url`, put the sentence in normal text instead.
+
 ### Exercise box
 
 Wrap every exercise in an exercise box so learners can spot it. The `markdown="1"` part lets you write normal Markdown inside.
