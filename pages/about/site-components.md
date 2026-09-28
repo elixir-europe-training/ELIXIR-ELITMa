@@ -65,6 +65,8 @@ All custom styling is in `_sass/_custom_classes.scss`, in labelled sections. The
 
 * The navigation bar is dark navy, so anything the theme draws in navy on it (the active menu item, the mobile-menu separator) needs a light colour instead – see "Top navigation" in `_custom_classes.scss` and `$topnav-break-color`.
 * Text on orange (`#f47d20`) must be dark, not white: white on orange fails contrast.
+* The brand orange and blue are too light for **small text** on white or grey. Use the text-safe versions defined in `_bootstrap_variables.scss`: `$link-blue` (`#02678C`) for links and `$accent-text` (`#A84E00`) for orange text such as the time chips. Brand orange stays fine for accents, icons and backgrounds with dark text.
+* Links in running text are blue **and underlined**, so they don't rely on colour alone. Buttons, cards, tiles and menus are excluded because they already look clickable – see "Links in running text" in `_custom_classes.scss`.
 * Content cards used in running text (like the example card) must not have a fixed `height: 100%`, or they stretch to the height of the whole page.
 
 ## What runs in the reader's browser

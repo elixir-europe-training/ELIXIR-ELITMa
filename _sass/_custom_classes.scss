@@ -305,11 +305,11 @@ header .navbar {
   white-space: nowrap;
 
   &--time i {
-    color: $accent-color;
+    color: $accent-text;
   }
 
   &--time {
-    color: $accent-color;
+    color: $accent-text;   // brand orange is too light for small text
   }
 
   &--audience i {
@@ -1170,3 +1170,33 @@ body.on-pathway .module-pager--chapters {
     color: $dark;
   }
 }
+
+/*-----Links in running text-----*/
+// Underlined, so links don't rely on colour alone (WCAG 1.4.1), in a blue that
+// passes contrast on every background used here ($link-blue). Only links inside
+// text: buttons, cards, tiles, menus and the pager already look clickable.
+#content :is(p, li, td, th, dd, blockquote, figcaption),
+#content .callout,
+#intro .summary {
+  a:not([class*="btn"]):not(.stretched-link):not(.pathway-dot) {
+    color: $link-blue;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+      text-decoration-thickness: 2px;
+    }
+  }
+}
+
+// Chapter-number badges in the pathway cards are buttons in all but name.
+#content .route-card-steps a {
+  color: $white !important;
+  text-decoration: none !important;
+
+  &:hover { color: $dark !important; }
+}
+
