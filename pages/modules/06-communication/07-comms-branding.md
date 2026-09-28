@@ -37,7 +37,7 @@ Consistent branding is essential for building trust and recognition, both within
 ### Best practices
 * Always use the official ELIXIR logo and colour palette in presentations, reports and digital materials.
 * Use **Open Sans** for slides, documents, posters and print, and **Lato** for websites.
-* Follow the ELIXIR Style Guide for writing conventions. This ensures a unified voice across all Nodes.
+* Follow the [ELIXIR Style Guide](https://elixir-europe.org/sites/default/files/documents/elixir-style-guide.pdf) for writing conventions. This ensures a unified voice across all Nodes.
 * When in doubt, check the [ELIXIR Brand Guidelines](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf) for the rules, and download the latest logos and visuals from the [intranet branding page](https://elixir-europe.org/documents/elixir-logos-and-other-visuals).
 
 ### Which logo, when?
@@ -153,7 +153,7 @@ with ELIXIR in capitals and linked to the ELIXIR homepage. It's a small line tha
 Pick a recent slide deck, report or flyer from your Node and check:
 
 * Is the right logo used for the situation (Node logo, main ELIXIR logo or Node logo alongside a partner's)?
-* Are the colours and fonts from the ELIXIR palette and Style Guide?
+* Are the colours and fonts from the ELIXIR palette and Brand Guidelines?
 * Could someone outside ELIXIR tell, at a glance, that this is ELIXIR work?
 
 If you answered no to any of these, the quickest fix is usually to rebuild it from an approved template rather than to patch the existing file.

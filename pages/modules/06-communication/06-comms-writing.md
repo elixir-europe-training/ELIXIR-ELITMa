@@ -216,6 +216,7 @@ The hardest part of writing for non-writers is not the first draft – it is kn
 * **Cut the first sentence**. First drafts often warm up before they get to the point, try deleting your opening sentence and see if the piece is stronger without it.
 * **Replace verbosity**. For instance, replace "in order to" with "to", "utilise" with "use", "methodology" with "method". Research writing is full of inflated language that adds length without adding meaning.
 * **Ask: so what?** After every paragraph, ask whether you have explained why this matters to the reader. If not, add it or cut the paragraph.
+* **Check the house style.** The [ELIXIR Style Guide](https://elixir-europe.org/sites/default/files/documents/elixir-style-guide.pdf) settles the small questions – how to write dates, numbers, abbreviations and ELIXIR's own terms – so every Node spells things the same way.
 
 <div class="exercise-box" markdown="1">
 ## Quick exercise: cut it down

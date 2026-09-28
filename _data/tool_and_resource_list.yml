@@ -51,8 +51,8 @@
 
 - id: elixir-style-guide
   name: ELIXIR Style Guide
-  url:
-  description: Guidance on fonts, layouts and image use for a consistent look and feel across all Nodes (intranet).
+  url: https://elixir-europe.org/sites/default/files/documents/elixir-style-guide.pdf
+  description: ELIXIR's writing conventions - abbreviations, capitalisation, dates, numbers, ELIXIR-specific terms, spelling and writing for the web (PDF).
   category: internal_resource
   module: mod_comm
 

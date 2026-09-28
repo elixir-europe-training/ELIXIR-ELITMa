@@ -61,7 +61,7 @@ The [ELIXIR website](https://elixir-europe.org) is the primary external communic
 
 **When to use it**: For content with a long shelf life intended for external audiences. Content is submitted by consortium members but reviewed and approved by the Hub before publication. If your content needs frequent updates or is more than 1,000 words, a linked document may be more appropriate. Reach out to the Hub directly at [info@elixir-europe.org](mailto:info@elixir-europe.org).
 
-{% include callout.html type="note" content="Node websites follow the same principles — content should be externally facing, clearly branded and follow the ELIXIR Style Guide." %}
+{% include callout.html type="note" content="Node websites follow the same principles — content should be externally facing, clearly branded and follow the [ELIXIR Style Guide](https://elixir-europe.org/sites/default/files/documents/elixir-style-guide.pdf)." %}
 
 ### Social media
 ELIXIR's main social media platforms are [LinkedIn](https://www.linkedin.com/company/elixir-europe), [Bluesky](https://bsky.app/profile/elixir-europe.org) and [YouTube](https://www.youtube.com/@ELIXIREurope). LinkedIn is the primary platform for professional and policy audiences. Bluesky is growing as the preferred platform for the open science community. X remains active but is under ongoing review.
