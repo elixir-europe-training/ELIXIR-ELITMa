@@ -1,0 +1,107 @@
+{%- comment -%}
+Previous / next navigation for any module page, rendered at the very bottom of the page
+(called from related-pages.html). The order comes from the page's sidebar data file:
+only top-level sidebar items whose title starts with a two-digit number ("00 ...", "11 ...")
+are part of the sequence, so unnumbered items ("All resources") sit outside it. The count
+uses those numbers: "00" is shown as "Before you start" and the highest number is the total.
+
+Pages outside the sequence get a "Back to section" link when either:
+  - they are nested under a numbered item in the sidebar (found automatically), or
+  - they set `back_to: <page_id>` in front matter.
+A module with an empty sidebar simply renders nothing.
+{%- endcomment -%}
+{%- assign pager_nav = site.data.sidebars[page.sidebar] -%}
+{%- assign pager_items = "" | split: "" -%}
+{%- assign pager_digits = "0123456789" | split: "" -%}
+{%- for item in pager_nav.subitems -%}
+  {%- assign pager_c1 = item.title | slice: 0 -%}
+  {%- assign pager_c2 = item.title | slice: 1 -%}
+  {%- if pager_digits contains pager_c1 and pager_digits contains pager_c2 -%}
+    {%- assign pager_items = pager_items | push: item -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign pager_url = page.url | remove: ".html" -%}
+{%- assign pager_index = nil -%}
+{%- assign pager_parent_item = nil -%}
+{%- for item in pager_items -%}
+  {%- if item.url == pager_url -%}{%- assign pager_index = forloop.index0 -%}{%- endif -%}
+  {%- if pager_parent_item == nil -%}
+    {%- for sub in item.subitems -%}
+      {%- if sub.url == pager_url -%}{%- assign pager_parent_item = item -%}{%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign pager_overview = pager_nav.title_url | default: pager_nav["title-url"] -%}
+{%- assign pager_overview = pager_overview | prepend: "/" | append: "/" | replace: "//", "/" -%}
+
+{%- if pager_index != nil -%}
+{%- assign pager_count = pager_items.size -%}
+{%- assign pager_last = pager_items | last -%}
+{%- assign pager_total = pager_last.title | slice: 0, 2 | plus: 0 -%}
+{%- assign pager_current = pager_items[pager_index] -%}
+{%- assign pager_position = pager_current.title | slice: 0, 2 | plus: 0 -%}
+{%- assign pager_percent = pager_position | times: 100 | divided_by: pager_total -%}
+{%- assign pager_prev_index = pager_index | minus: 1 -%}
+{%- assign pager_next_index = pager_index | plus: 1 -%}
+<nav class="module-pager" aria-label="Module chapters">
+  <div class="module-pager-progress">
+    <span class="module-pager-count">{% if pager_position == 0 %}Before you start{% else %}Chapter {{ pager_position }} of {{ pager_total }}{% endif %}</span>
+    <div class="module-pager-bar" role="progressbar" aria-valuenow="{{ pager_position }}" aria-valuemin="0" aria-valuemax="{{ pager_total }}" aria-label="Progress through the module">
+      <span style="width: {{ pager_percent }}%"></span>
+    </div>
+  </div>
+  <div class="module-pager-links">
+    {%- if pager_index > 0 -%}
+    {%- assign pager_prev = pager_items[pager_prev_index] %}
+    <a class="module-pager-link module-pager-link--prev" href="{{ pager_prev.url | relative_url }}">
+      <span class="module-pager-label"><i class="fa-solid fa-arrow-left me-1"></i>Previous chapter</span>
+      <span class="module-pager-title">{{ pager_prev.title }}</span>
+    </a>
+    {%- endif -%}
+    {%- if pager_next_index < pager_count -%}
+    {%- assign pager_next = pager_items[pager_next_index] %}
+    <a class="module-pager-link module-pager-link--next" href="{{ pager_next.url | relative_url }}">
+      <span class="module-pager-label">Next chapter<i class="fa-solid fa-arrow-right ms-1"></i></span>
+      <span class="module-pager-title">{{ pager_next.title }}</span>
+    </a>
+    {%- else %}
+    <a class="module-pager-link module-pager-link--next" href="{{ pager_overview | relative_url }}">
+      <span class="module-pager-label">You've finished the module<i class="fa-solid fa-flag-checkered ms-1"></i></span>
+      <span class="module-pager-title">Back to the {{ pager_nav.title }} overview</span>
+    </a>
+    {%- endif %}
+  </div>
+</nav>
+{%- else -%}
+{%- assign pager_back_url = nil -%}
+{%- if page.back_to -%}
+  {%- assign pager_parent = site.pages | where: "page_id", page.back_to | first -%}
+  {%- if pager_parent -%}{%- assign pager_back_url = pager_parent.url -%}{%- assign pager_back_title = pager_parent.title -%}{%- endif -%}
+{%- elsif pager_parent_item -%}
+  {%- assign pager_back_url = pager_parent_item.url -%}{%- assign pager_back_title = pager_parent_item.title -%}
+{%- endif -%}
+{%- if pager_back_url %}
+<nav class="module-pager" aria-label="Module chapters">
+  <div class="module-pager-links">
+    <a class="module-pager-link module-pager-link--prev" href="{{ pager_back_url | relative_url }}">
+      <span class="module-pager-label"><i class="fa-solid fa-arrow-left me-1"></i>Back to chapter</span>
+      <span class="module-pager-title">{{ pager_back_title }}</span>
+    </a>
+  </div>
+</nav>
+{%- endif -%}
+{%- endif -%}
+
+{%- comment -%} Checklists on module pages remember their ticks in this browser. {%- endcomment -%}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('#content .task-list-item input[type="checkbox"]').forEach(function (cb, i) {
+      var key = 'task-' + window.location.pathname + '-' + i;
+      cb.removeAttribute('disabled');
+      try { cb.checked = localStorage.getItem(key) === 'true'; } catch (e) {}
+      cb.addEventListener('change', function () {
+        try { localStorage.setItem(key, cb.checked); } catch (e) {}
+      });
+    });
+  });
+</script>

@@ -5,9 +5,8 @@ summary: "Most comms strategies are written once and never reopened. ELIXIR-UK's
 type_img: /images/icons/icon-module-communication.svg
 page_id: comm-ex-uk-strategy
 type: Real_world_example
+back_to: mod_comm_11
 sidebar: module-communication
-related_pages:
-  Communication: [mod_comm_11, mod_comm_10]
 ---
 
 A communications strategy is only worth the effort if it changes what you do on Monday. [ELIXIR-UK's strategy](https://elixir-europe.org/intranet/communication) is a good example of one built to be *used*, not filed away – and because it's published openly in the [ELIXIR-UK handbook](https://elixir-uk.github.io/handbook/communications-strategy) and maintained on [GitHub](https://github.com/elixir-uk/handbook), you can read the whole thing, reuse it, or suggest changes.
@@ -21,6 +20,7 @@ It opens with a one-sentence vision, then **four objectives** – *Belong, Grow,
 
 ### Principles that actually make choices
 Instead of hedging, it commits:
+
 * *"Automate the routine, hand-craft the story."*
 * *"Expert voices over corporate voices"* – amplify a named member rather than issuing a Node statement.
 * *"Names go on things"* – contribution is always attributed.
@@ -42,7 +42,7 @@ This is the operational heart: every activity mapped to its **status**, **audien
 The discipline is in the rules around it: *add* an activity only if it serves an objective and reaches a defined audience; *retire* it if it's been flat for two consecutive quarterly reviews.
 
 ### Honest evaluation
-It lists what it measures (reach, engagement, action, outputs) and – more unusually – **what it deliberately doesn't**: raw follower counts, impressions on boosted content, and "engagement rate" with no action signal underneath. That's the difference between measuring impact and collecting vanity metrics (see [Section 10: Storytelling and impact measurement](10-comms-storytelling)).
+It lists what it measures (reach, engagement, action, outputs) and – more unusually – **what it deliberately doesn't**: raw follower counts, impressions on boosted content, and "engagement rate" with no action signal underneath. That's the difference between measuring impact and collecting vanity metrics (see [Chapter 10: Storytelling and impact measurement](10-comms-storytelling)).
 
 ## What any Node can borrow
 You don't need the same framework or channels to use the same thinking:
@@ -53,4 +53,4 @@ You don't need the same framework or channels to use the same thinking:
 * **Keep the strategy open and living** – version it, date it, and revisit it when things change.
 * **Pick a planning structure that fits your context.** The point is to have one, not to adopt any particular national framework.
 
-{% include callout.html type="tip" content="Use this alongside the canvas in Section 11: ELIXIR-UK's strategy is essentially a fully worked, living version of that one-page canvas." %}
+{% include callout.html type="tip" content="Use this alongside the canvas in Chapter 11: ELIXIR-UK's strategy is essentially a fully worked, living version of that one-page canvas." %}

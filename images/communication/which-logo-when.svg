@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" role="img" aria-labelledby="t d">
+  <title id="t">Which logo, when?</title>
+  <desc id="d">Three panels. Your Node's own activity: use your Node logo. Several Nodes involved: use the main ELIXIR logo, not a row of Node logos. Working with an external partner: put your Node logo next to the partner's logo, not next to the main ELIXIR logo.</desc>
+  <style>
+    text { font-family: "Open Sans", "Lato", Arial, sans-serif; }
+    .panel { fill: #ffffff; stroke: #dddddd; stroke-width: 1.5; }
+    .ph { font-size: 12px; font-weight: 700; fill: #037EAB; letter-spacing: 0.08em; }
+    .pt { font-size: 18px; font-weight: 700; fill: #023452; }
+    .node { fill: #023452; }
+    .main { fill: #f47d20; }
+    .partner { fill: #ffffff; stroke: #4d4848; stroke-width: 2; stroke-dasharray: 6 4; }
+    .lw { font-size: 13px; font-weight: 700; fill: #ffffff; }
+    .lm { font-size: 13px; font-weight: 700; fill: #001F33; }
+    .ld { font-size: 13px; font-weight: 700; fill: #4d4848; }
+    .ok { fill: #2e7d32; }
+    .no { fill: #c62828; }
+    .mark { font-size: 15px; font-weight: 700; fill: #ffffff; }
+    .cap { font-size: 13px; fill: #4d4848; }
+    .dim { opacity: 0.45; }
+  </style>
+
+  <!-- ========== Panel 1 ========== -->
+  <rect class="panel" x="10" y="10" width="300" height="420" rx="12"/>
+  <text class="ph" x="30" y="42">SITUATION 1</text>
+  <text class="pt" x="30" y="68">Your Node's own activity</text>
+
+  <circle class="ok" cx="40" cy="120" r="13"/><text class="mark" x="40" y="125" text-anchor="middle">✓</text>
+  <text class="cap" x="62" y="125">Use your Node logo</text>
+  <rect class="node" x="60" y="150" width="200" height="90" rx="8"/>
+  <text class="lw" x="160" y="190" text-anchor="middle">NODE LOGO</text>
+  <text class="lw" x="160" y="210" text-anchor="middle" style="font-weight:400">ELIXIR [Country]</text>
+
+  <text class="cap" x="30" y="300">Slides, posters and documents</text>
+  <text class="cap" x="30" y="320">from one Node. Standard (square)</text>
+  <text class="cap" x="30" y="340">version where possible; horizontal</text>
+  <text class="cap" x="30" y="360">if the country name gets too small.</text>
+
+  <!-- ========== Panel 2 ========== -->
+  <rect class="panel" x="330" y="10" width="300" height="420" rx="12"/>
+  <text class="ph" x="350" y="42">SITUATION 2</text>
+  <text class="pt" x="350" y="68">Several Nodes involved</text>
+
+  <circle class="ok" cx="360" cy="120" r="13"/><text class="mark" x="360" y="125" text-anchor="middle">✓</text>
+  <text class="cap" x="382" y="125">Use the main ELIXIR logo</text>
+  <rect class="main" x="380" y="145" width="200" height="70" rx="8"/>
+  <text class="lm" x="480" y="185" text-anchor="middle">MAIN ELIXIR LOGO</text>
+
+  <circle class="no" cx="360" cy="262" r="13"/><text class="mark" x="360" y="267" text-anchor="middle">✗</text>
+  <text class="cap" x="382" y="267">Not a row of Node logos</text>
+  <g class="dim">
+    <rect class="node" x="350" y="285" width="80" height="50" rx="6"/><text class="lw" x="390" y="315" text-anchor="middle">NODE A</text>
+    <rect class="node" x="440" y="285" width="80" height="50" rx="6"/><text class="lw" x="480" y="315" text-anchor="middle">NODE B</text>
+    <rect class="node" x="530" y="285" width="80" height="50" rx="6"/><text class="lw" x="570" y="315" text-anchor="middle">NODE C</text>
+  </g>
+  <line x1="345" y1="340" x2="615" y2="280" stroke="#c62828" stroke-width="3"/>
+  <text class="cap" x="350" y="380">One consortium, one logo.</text>
+
+  <!-- ========== Panel 3 ========== -->
+  <rect class="panel" x="650" y="10" width="300" height="420" rx="12"/>
+  <text class="ph" x="670" y="42">SITUATION 3</text>
+  <text class="pt" x="670" y="68">With an external partner</text>
+
+  <circle class="ok" cx="680" cy="120" r="13"/><text class="mark" x="680" y="125" text-anchor="middle">✓</text>
+  <text class="cap" x="702" y="125">Node logo beside the partner's</text>
+  <rect class="node" x="680" y="145" width="115" height="70" rx="8"/>
+  <text class="lw" x="737" y="185" text-anchor="middle">NODE LOGO</text>
+  <rect class="partner" x="810" y="145" width="115" height="70" rx="8"/>
+  <text class="ld" x="867" y="185" text-anchor="middle">PARTNER</text>
+
+  <circle class="no" cx="680" cy="262" r="13"/><text class="mark" x="680" y="267" text-anchor="middle">✗</text>
+  <text class="cap" x="702" y="267">Not beside the main ELIXIR logo</text>
+  <g class="dim">
+    <rect class="node" x="680" y="285" width="115" height="50" rx="6"/><text class="lw" x="737" y="315" text-anchor="middle">NODE LOGO</text>
+    <rect class="main" x="810" y="285" width="115" height="50" rx="6"/><text class="lm" x="867" y="315" text-anchor="middle">ELIXIR</text>
+  </g>
+  <line x1="675" y1="340" x2="930" y2="280" stroke="#c62828" stroke-width="3"/>
+  <text class="cap" x="670" y="380">The Node logo already contains</text>
+  <text class="cap" x="670" y="400">the ELIXIR logo – don't repeat it.</text>
+</svg>

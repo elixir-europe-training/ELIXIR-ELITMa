@@ -5,9 +5,8 @@ summary: "How ELIXIR-UK kept its identity visible on materials for a hackathon l
 type_img: /images/icons/icon-module-communication.svg
 page_id: comm-ex-cobranding
 type: Real_world_example
+back_to: mod_comm_7
 sidebar: module-communication
-related_pages:
-  Communication: [mod_comm_7, mod_comm_5]
 ---
 
 ## The situation
@@ -55,7 +54,7 @@ A single on-brand key visual is easy. The real test is keeping it consistent eve
 ## Takeaways for your Node
 * When you **organise** an event, lead with your Node / ELIXIR branding and add partners as appropriate.
 * When you **co-organise but a partner leads and funds it**, it is often right to adopt their visual identity – just make sure the correct ELIXIR logo is present and your involvement is clear.
-* When you **sponsor**, use the dedicated ELIXIR sponsorship logos.
+* When **several Nodes** are involved, use the main ELIXIR logo rather than a row of Node logos.
 * Whichever role you are in, match the branding to the real contribution, and never let ELIXIR's involvement disappear entirely.
 
-{% include callout.html type="tip" content="Accessibility still applies to co-branded materials. Note that the event name and dates here are also written in the page text, not locked inside the image – so the information reaches everyone. See Section 5: Accessibility." %}
+{% include callout.html type="tip" content="Accessibility still applies to co-branded materials. Note that the event name and dates here are also written in the page text, not locked inside the image – so the information reaches everyone. See Chapter 5: Accessibility." %}

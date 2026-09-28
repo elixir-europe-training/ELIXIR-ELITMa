@@ -5,9 +5,8 @@ summary: "ELIXIR-UK's stakeholder map exists to focus communication effort, not 
 type_img: /images/icons/icon-module-communication.svg
 page_id: comm-ex-matrix
 type: Real_world_example
+back_to: mod_comm_2
 sidebar: module-communication
-related_pages:
-  Communication: [mod_comm_2]
 ---
 
 ELIXIR-UK maps its stakeholders on a **power/interest grid** to decide where to focus communication effort. The point isn't to label people or lock in rules – it's to answer a practical question: *with limited time, who do we manage closely, and who just needs to be kept informed?*
@@ -65,7 +64,7 @@ None of this means the earlier map was "wrong." It was right for its time. The m
 {% include callout.html type="tip" content="Review your map when something shifts: a new grant, a change of remit, a new partnership, or a big external event. Treat it as a snapshot of where to focus now, not a permanent classification of people." %}
 
 ## Use it for your Node
-See [Section 2: Understanding your audience](02-comms-audience) for how to build your own priority matrix and persona, and remember: the goal is to focus effort, then revisit it as your Node evolves.
+See [Chapter 2: Understanding your audience](02-comms-audience) for how to build your own priority matrix and persona, and remember: the goal is to focus effort, then revisit it as your Node evolves.
 
 <a href="{{ '/assets/downloads/stakeholder-matrix-template.pptx' | relative_url }}" class="btn-download" download>
   <i class="fas fa-download"></i>Download the stakeholder matrix template (PowerPoint)

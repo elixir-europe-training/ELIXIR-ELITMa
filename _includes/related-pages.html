@@ -1,0 +1,72 @@
+{%- comment -%}
+Local override of the elixir-toolkit-theme include of the same name.
+Pages that are NOT in the Communication module render the theme's related pages exactly
+as the theme does; if they belong to a module (sidebar "module-..."), the previous/next
+pager (module-pager.html) is added after them.
+Communication pages instead:
+  - show only Real_world_example pages, in a highlighted "See it in practice" block
+    (links between sections are dropped - the pager and in-text links cover them);
+  - end with the same previous/next pager.
+If the theme's version changes, re-copy it into the non-Communication branch below.
+{%- endcomment -%}
+{%- assign actual_related = nil %}
+{%- for section in page.related_pages %}
+{%- unless section[1].size == 0 %}
+{%- assign actual_related = 1 %}
+{%- endunless %}
+{%- endfor %}
+
+{%- if page.sidebar == "module-communication" %}
+
+{%- assign rp_has_examples = false %}
+{%- for section in page.related_pages %}
+{%- if section[1].size > 0 %}
+{%- if section[0] == "Real_world_example" %}{%- assign rp_has_examples = true %}{%- endif %}
+{%- endif %}
+{%- endfor %}
+
+{%- if rp_has_examples %}
+<!-- Real-world examples -->
+<h2>See it in practice</h2>
+<div class="row row-cols-1 row-cols-md-2 g-4 mt-2 navigation-tiles example-tiles">
+    {%- for section in page.related_pages %}
+    {%- if section[0] == "Real_world_example" %}
+    {%- for page_id in section[1] %}
+    {%- assign page_hit = site.pages | where:"type", section[0] | where:"page_id", page_id | first %}
+    {%- if page_hit %}
+    <div class="col">
+        {% include comms-example-card.html page_id=page_id %}
+    </div>
+    {%- endif %}
+    {%- endfor %}
+    {%- endif %}
+    {%- endfor %}
+</div>
+{%- endif %}
+
+{% include module-pager.html %}
+
+{%- elsif actual_related != nil %}
+<!-- Related pages -->
+<h2>{{site.theme_variables.headings.related-pages | default: 'Related pages' }}</h2>
+<div class="row row-cols-1 row-cols-md-2 g-4 mt-2 navigation-tiles">
+    {%- if page.related_pages %}
+    {%- for section in page.related_pages %}
+    {%- unless section[1].size == 0 %}
+    {%- for page_id in section[1] %}
+    {%- assign section_pages = site.pages | where:"type", section[0] %}
+    {%- assign page_hit = section_pages | where:"page_id", page_id | first %}
+    {%- if page_hit %}
+    <div class="col">
+        {% include navigation-tile-card.html tile_page=page_hit variant="related" %}
+    </div>
+    {%- endif %}
+    {%- endfor %}
+    {%- endunless %}
+    {%- endfor %}
+    {%- endif %}
+</div>
+{%- endif %}
+{%- if page.sidebar != "module-communication" and page.sidebar contains "module-" %}
+{% include module-pager.html %}
+{%- endif %}

@@ -1,7 +1,7 @@
 ---
 title: Automation and tools for efficient outreach
 description: You don't have time to do everything by hand. A few free tools, set up once, buy back hours every week.
-summary: "Communication work expands to fill all the time you give it. This section is about buying that time back: a handful of free tools and tricks - social scheduling, quick DIY visuals, email and automated reporting - that you set up once and reuse. It's not a martech course; pick one or two and start there."
+summary: "Communication work expands to fill all the time you give it. This chapter is about buying that time back: a handful of free tools and tricks - social scheduling, quick DIY visuals, email and automated reporting - that you set up once and reuse. It's not a martech course; pick one or two and start there."
 audience: [Communications Officers, Project Managers, Node Coordinators]
 page_img: /icons/icon-module-communication.svg
 time: 10 minutes
@@ -16,8 +16,6 @@ learning_outcomes:
   - Produce simple visuals and animations without a designer or paid software
   - Choose lower-cost tools for email and reporting
   - Set up a minimal automation toolkit for your Node in about an hour
-related_pages:
-  Communication: [mod_comm_8, mod_comm_4]
 ref_to_main_resources:
   - buffer
   - email-octopus
@@ -25,6 +23,9 @@ ref_to_main_resources:
   - svg-maps
   - canva
   - adobe-express
+phase: Make it
+question: "How do you save time?"
+takeaway: "One tool set up and working"
 ---
 
 {% include module-metadata.html %}
@@ -39,16 +40,17 @@ This is not a comprehensive tools course. It's a short set of free options that 
 The single biggest time saver. Instead of logging in to post every day, write a week or a month of posts in one sitting and schedule them. [Buffer](https://buffer.com/) is simple, free and enough for most Nodes.
 
 Why it helps:
+
 * **Consistency** – your channels stay active even in busy weeks.
 * **Batching** – writing ten posts at once is far faster than ten posts on ten days.
 * **Timing** – schedule for when your audience is actually online.
 
-{% include callout.html type="warning" content="LinkedIn caveat: schedulers cannot automatically tag (@mention) other accounts on LinkedIn. Tagging is one of the most effective things you can do for reach (see Section 6: Writing for Non-Writers), so for any post where tagging collaborators or other Nodes matters, publish that one natively on LinkedIn and add the tags by hand. Don't let the convenience of scheduling cost you the reach that tagging brings." %}
+{% include callout.html type="warning" content="LinkedIn caveat: schedulers cannot automatically tag (@mention) other accounts on LinkedIn. Tagging is one of the most effective things you can do for reach (see Chapter 6: Writing for non-writers), so for any post where tagging collaborators or other Nodes matters, publish that one natively on LinkedIn and add the tags by hand. Don't let the convenience of scheduling cost you the reach that tagging brings." %}
 
-{% include callout.html type="tip" content="Coordinate with the Hub's social media calendar where you can (see Section 4: The ELIXIR Communication Ecosystem). Posting on the same day as a consortium-wide push, and tagging other Nodes, multiplies reach for the same effort." %}
+{% include callout.html type="tip" content="Coordinate with the Hub's social media calendar where you can (see Chapter 4: ELIXIR communications ecosystem). Posting on the same day as a consortium-wide push, and tagging other Nodes, multiplies reach for the same effort." %}
 
 ## Quick DIY visuals
-You don't need a designer – or paid software – for everyday visuals. (For how to make them *look good*, see [Section 8: Graphic design for non-designers](08-comms-design).)
+You don't need a designer – or paid software – for everyday visuals. (For how to make them *look good*, see [Chapter 8: Graphic design for non-designers](08-comms-design).)
 
 * **Templates** in [Canva](https://www.canva.com/) or [Adobe Express](https://www.adobe.com/express/) – build an ELIXIR-branded version once, then reuse it.
 * **Free vector maps** from [amCharts SVG Maps](https://www.amcharts.com/svg-maps/) – editable maps of countries and regions, handy for showing Node locations or event geography in your own brand colours. It can also generate **pixel (dot) maps**, which work especially well for our field – for example plotting data points, samples or sites across geographies.
@@ -66,12 +68,12 @@ Export via *File → Export → Create Animated GIF*.
 -->
 
 
-{% include callout.html type="warning" content="Keep animations accessible: GIFs should be short, must not flash rapidly (a seizure risk), and still need ALT text or surrounding context. See Section 5: Accessibility." %}
+{% include callout.html type="warning" content="Keep animations accessible: GIFs should be short, must not flash rapidly (a seizure risk), and still need ALT text or surrounding context. See Chapter 5: Accessibility." %}
 
 ## Email without the overhead
 For Node newsletters and mailing campaigns, [EmailOctopus](https://emailoctopus.com/) offers a generous free tier and is a lower-cost alternative to Mailchimp. It handles sign-up forms, templates and basic automation.
 
-{% include callout.html type="note" content="This is for your Node's own audiences. To reach the whole consortium, use the ELIXIR Weekly Brief and mailing lists (Section 4) rather than building your own list." %}
+{% include callout.html type="note" content="This is for your Node's own audiences. To reach the whole consortium, use the ELIXIR Weekly Brief and mailing lists (Chapter 4) rather than building your own list." %}
 
 ## Automated reporting
 If you measure your communications (and you should – it's how you prove impact), don't pull the numbers by hand every month. Set up a [Google Analytics](https://analytics.google.com/) dashboard **once** to track website traffic, then check or share it whenever you need to.
@@ -87,6 +89,7 @@ You can put the essentials in place in about an hour. Tick them off as you go:
 - [ ] If you run a Node newsletter, set up an **email tool** (e.g. EmailOctopus).
 - [ ] Save all the tool logins somewhere your team can find them – automation only helps if it outlives one person.
 
+<div class="exercise-box" markdown="1">
 ## Exercise
 Pick **one** tool from this page and actually set it up now – don't read on, do it.
 
@@ -95,16 +98,4 @@ Pick **one** tool from this page and actually set it up now – don't read on, d
 * If you chose Analytics: create a dashboard with the three numbers you care about most.
 
 The goal is to leave this page with one thing genuinely automated, not a list of tools you mean to try later.
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.task-list-item input[type="checkbox"]').forEach(function (cb, i) {
-      var key = 'task-' + window.location.pathname + '-' + i;
-      cb.removeAttribute('disabled');
-      cb.checked = localStorage.getItem(key) === 'true';
-      cb.addEventListener('change', function () {
-        localStorage.setItem(key, cb.checked);
-      });
-    });
-  });
-</script>
+</div>

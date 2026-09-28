@@ -30,6 +30,7 @@ theme_variables:
   fonts:
     - https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap
   back_to_top: true
+  breadcrumb: true   # trail for module pages is built from the sidebar - see _includes/breadcrumb.html
 
 # Optional: a banner message to display to users on all pages
 

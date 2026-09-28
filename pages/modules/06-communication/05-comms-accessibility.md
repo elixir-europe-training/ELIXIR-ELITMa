@@ -1,7 +1,7 @@
 ---
 title: Accessibility
 description: Accessibility is not a design add-on – it's how you make sure everyone can actually read, hear and use what you communicate, in every format.
-summary: "Accessibility is a cross-cutting principle, not a design afterthought. It applies to your writing, slides, website, social posts and printed materials alike. This section explains the basics, then focuses on the two things people get wrong most often: ALT text, and treating real text or data as if it were an image."
+summary: "Accessibility is a cross-cutting principle, not a design afterthought. It applies to your writing, slides, website, social posts and printed materials alike. This chapter explains the basics, then focuses on the two things people get wrong most often: ALT text, and treating real text or data as if it were an image."
 audience: [Communications Officers, Researchers, Node Coordinators, New ELIXIR Staff]
 page_img: /icons/icon-module-communication.svg
 time: 20 minutes
@@ -17,12 +17,13 @@ learning_outcomes:
   - Tell the difference between a genuine image and content that should be real, selectable text
   - Decide when a complex image needs a longer text description as well as ALT text
   - Audit a page or document for common accessibility issues and fix them
-related_pages:
-  Communication: [mod_comm_6, mod_comm_8]
 ref_to_main_resources:
   - wave-checker
   - axe-checker
   - wcag-overview
+phase: Make it
+question: "Can everyone use what you publish?"
+takeaway: "An accessibility check of one of your pages"
 ---
 
 {% include module-metadata.html %}
@@ -137,6 +138,7 @@ Accessibility is broader than pictures. The same principles apply to how you str
 - [ ] Provide captions or transcripts for videos.
 - [ ] Test with an accessibility checker, or by using your content with a screen reader.
 
+<div class="exercise-box" markdown="1">
 ## Exercise: audit one of your pages
 
 1. Choose a page or document your Node has published online.
@@ -144,16 +146,4 @@ Accessibility is broader than pictures. The same principles apply to how you str
 3. Run it through a free accessibility checker such as [WAVE](https://wave.webaim.org/) or [Axe](https://www.deque.com/axe/), and fix what it flags.
 
 {% include callout.html type="warning" content="Most pages fail their first accessibility check – missing ALT text, low contrast, and text-saved-as-images are by far the most common issues. That's normal. The point of the audit is to find and fix them." %}
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.task-list-item input[type="checkbox"]').forEach(function (cb, i) {
-      var key = 'task-' + window.location.pathname + '-' + i;
-      cb.removeAttribute('disabled');
-      cb.checked = localStorage.getItem(key) === 'true';
-      cb.addEventListener('change', function () {
-        localStorage.setItem(key, cb.checked);
-      });
-    });
-  });
-</script>
+</div>

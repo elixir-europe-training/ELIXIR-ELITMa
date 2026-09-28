@@ -1,14 +1,14 @@
 - id: ri-comms-toolkit
   name: Communication Toolkit for Research Infrastructures
   url: https://ri-vis.eu/network/rivis/news/launch-of-communication-toolkit-for-research-infrastructures/
-  description: 
+  description: Practical toolkit from the RI-VIS project on communicating research infrastructures to new audiences - stakeholder mapping, messaging, channels and evaluation, with templates and case studies.
   category: external_resource
   module: mod_comm
 
 - id: ec-comms-tolkit
   name: Communication Toolkit for European Projects
   url: https://eic.ec.europa.eu/communication-toolkit_en
-  description:
+  description: The European Innovation Council's communication toolkit for EU-funded projects - guidance and templates for communication and visibility, including how to acknowledge EU funding correctly.
   category: external_resource
   module: mod_comm
 
@@ -35,10 +35,17 @@
   module: mod_comm
 
 # --- Graphic design (Section 7) ---
-- id: elixir-branding-hub
-  name: ELIXIR Branding Hub
-  url:
-  description: Official ELIXIR logos, colour palette and templates (intranet - consortium login required).
+- id: elixir-brand-guidelines
+  name: ELIXIR Brand Guidelines (2025)
+  url: https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf
+  description: The official rules for using ELIXIR logos, colours and fonts, and for branding Node websites (public PDF).
+  category: internal_resource
+  module: mod_comm
+
+- id: elixir-logos
+  name: ELIXIR logos and other visuals
+  url: https://elixir-europe.org/documents/elixir-logos-and-other-visuals
+  description: Download the official ELIXIR, Node and service logos, icons and templates (intranet - consortium login required).
   category: internal_resource
   module: mod_comm
 
@@ -169,8 +176,8 @@
 # --- Collaboration (Section 3) ---
 - id: comms-contacts-registry
   name: ELIXIR communications contacts registry
-  url: https://docs.google.com/document/d/1OzY4IMhiz-_sZ54EtxPGGdqLOq8T_QJ7d6BMfejZGXk/edit?usp=sharing
-  description: Living directory of communications contacts in every Node, plus a mailing list that reaches them (consortium login required).
+  url: https://elixir-europe.org/documents/elixir-communications-useful-information
+  description: Communications contacts in every Node and useful information for communicators, on the ELIXIR intranet (consortium login required).
   category: internal_resource
   module: mod_comm
 

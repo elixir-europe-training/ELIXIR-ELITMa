@@ -1,7 +1,7 @@
 ---
 title: Branding
 description: Using ELIXIR branding well – and knowing the cases where the right call is to adapt it, or not to use it at all.
-summary: "Consistent branding builds trust and recognition across a distributed infrastructure. This section covers using ELIXIR branding correctly, and the real-world cases where you can't apply it in full - co-organised events, and Nodes that operate under an established institutional brand."
+summary: "Consistent branding builds trust and recognition across a distributed infrastructure. This chapter covers using ELIXIR branding correctly, and the real-world cases where you can't apply it in full - co-organised events, and Nodes that operate under an established institutional brand."
 audience: [Communications Officers, Researchers, Node Coordinators]
 page_img: /icons/icon-module-communication.svg
 time: 10 minutes
@@ -13,21 +13,24 @@ status_badge: success
 learning_outcomes:
   - Apply ELIXIR branding correctly across presentations, reports and digital materials
   - Explain why consistent branding matters for a distributed infrastructure like ELIXIR
-  - Adapt branding appropriately for co-organised or sponsored activities
+  - Choose the right logo for the situation – your Node's own, the main ELIXIR logo, or alongside a partner's
   - Recognise when an established Node brand should be kept rather than replaced
 related_pages:
-  Communication: [mod_comm_5, mod_comm_8]
   Real_world_example: [comm-ex-cobranding]
 ref_to_main_resources:
-  - elixir-branding-hub
+  - elixir-brand-guidelines
+  - elixir-logos
   - elixir-style-guide
+phase: Make it
+question: "Which logo, which look?"
+takeaway: "A branding sense-check of a recent deck or flyer"
 ---
 
 {% include module-metadata.html %}
 
 Consistent branding is essential for building trust and recognition, both within ELIXIR and in the wider research community. When your Node communicates as part of ELIXIR, using the correct logos, colours and templates is more than a visual choice – it signals a cohesive voice, a recognisable brand and a professional standard.
 
-{% include callout.html type="note" content="Good design is also accessible design. This section covers branding; for contrast, ALT text, readable structure and the difference between an image and text-that-should-be-text, see Section 5: Accessibility — it applies to everything you produce, including the materials you design here." %}
+{% include callout.html type="note" content="Good design is also accessible design. This chapter covers branding; for contrast, ALT text, readable structure and the difference between an image and text-that-should-be-text, see Chapter 5: Accessibility — it applies to everything you produce, including the materials you design here." %}
 
 ## Digital identity and branding
 
@@ -37,8 +40,24 @@ Consistent branding is essential for building trust and recognition, both within
 
 ### Best practices
 * Always use the official ELIXIR logo and colour palette in presentations, reports and digital materials.
-* Follow the ELIXIR Style Guide for fonts, layouts and image use. This ensures a unified look and feel across all Nodes.
-* When in doubt, check the ELIXIR Branding Hub for the latest assets and templates.
+* Use **Open Sans** for slides, documents, posters and print, and **Lato** for websites.
+* Follow the ELIXIR Style Guide for writing conventions. This ensures a unified voice across all Nodes.
+* When in doubt, check the [ELIXIR Brand Guidelines](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf) for the rules, and download the latest logos and visuals from the [intranet branding page](https://elixir-europe.org/documents/elixir-logos-and-other-visuals).
+
+### Which logo, when?
+The Brand Guidelines define one simple rule of thumb: the logo follows **who the activity belongs to**.
+
+<figure class="figure-diagram">
+  <img src="{{ '/images/communication/which-logo-when.svg' | relative_url }}" alt="Three scenarios. One Node's own activity: use that Node's logo. An activity involving several Nodes: use the main ELIXIR logo, not a row of Node logos. A Node that is co-branded with a partner: place the Node logo alongside the partner logo, never next to the main ELIXIR logo.">
+  <figcaption>Schematic only – always use the real logo files from the intranet branding page.</figcaption>
+</figure>
+
+| Situation | Use | Avoid |
+| --- | --- | --- |
+| Your Node's own slides, posters, documents | Your **Node logo** (standard square version; horizontal if the country name gets too small) | Recolouring or redrawing any part of it |
+| An activity involving **more than one Node** | The **main ELIXIR logo** | A row of several Node logos |
+| Your Node working with an external partner | Your **Node logo alongside the partner's logo** | Placing the Node logo next to the main ELIXIR logo – it already contains it |
+| Small spaces (favicons, tiny icons) | The **helix only** | Squashing the full logo |
 
 {% include callout.html type="tip" content="The fastest route to an on-brand output is not designing from scratch – it's starting from an approved template and only changing what you need to. A branded slide deck or event banner template removes most design decisions before you make them." %}
 
@@ -48,8 +67,8 @@ Applying the full ELIXIR branding is the default, but it isn't always the right 
 ### 1. Joint and co-organised activities
 Sometimes you'll prepare materials for a joint event with another organisation that has its own guidelines, so you can't apply the full ELIXIR branding. In these cases, make sure you still use the correct logo and clear messaging that shows ELIXIR's involvement.
 
-* If your Node is **organising** the activity, add your Node logo.
-* If your Node is **sponsoring** it, there are dedicated sponsorship logos – use those rather than the standard logo.
+* If your Node is **organising** or co-organising the activity, add your Node logo alongside the partner's.
+* If **several Nodes** are involved, use the main ELIXIR logo rather than listing each Node's.
 
 The key is to **adapt, not abandon**: keep the messaging clear and make sure ELIXIR's involvement is unmistakable even within someone else's visual style.
 
@@ -67,15 +86,23 @@ The goal here is **association, not substitution**:
 * The audience should understand that this trusted national entity **is part of ELIXIR**, which strengthens both brands.
 * Coordinate with the Hub on the correct way to present the ELIXIR Node relationship.
 
+The Brand Guidelines recognise three types of Node website – **ELIXIR-branded** (the preferred approach), **co-branded** and **independently branded** – and ask co-branded and independent sites to carry a footer line such as:
+
+> "[Node brand] is the [country] Node of ELIXIR – the European infrastructure for life science data"
+
+with ELIXIR in capitals and linked to the ELIXIR homepage. It's a small line that does a lot of work for the association.
+
 **Example – SIB**: The [SIB Swiss Institute of Bioinformatics](https://www.sib.swiss/) is the ELIXIR Node of Switzerland, but it communicates under its own well-established SIB brand throughout. SIB was a recognised national institute long before and beyond its ELIXIR membership, so its ELIXIR Node status is shown as an association rather than by adopting ELIXIR's visual identity. Forcing ELIXIR branding over SIB's would weaken a trusted national name without adding any reach.
 
 {% include callout.html type="note" content="Visibility comes from association, not replacement. When a national institute is already well known, linking ELIXIR to that reputation does far more for ELIXIR's profile than overwriting a trusted local brand." %}
 
+<div class="exercise-box" markdown="1">
 ## Exercise: a branding sense-check
 Pick a recent slide deck, report or flyer from your Node and check:
 
-* Is the official ELIXIR logo present and correctly used (right version for your role)?
+* Is the right logo used for the situation (Node logo, main ELIXIR logo, or Node logo alongside a partner's)?
 * Are the colours and fonts from the ELIXIR palette and Style Guide?
 * Could someone outside ELIXIR tell, at a glance, that this is ELIXIR work?
 
 If you answered no to any of these, the quickest fix is usually to rebuild it from an approved template rather than to patch the existing file.
+</div>

@@ -5,9 +5,8 @@ summary: "ELEAD's annual report text was an accurate list of activities - but it
 type_img: /images/icons/icon-module-communication.svg
 page_id: comm-ex-elead
 type: Real_world_example
+back_to: mod_comm_10
 sidebar: module-communication
-related_pages:
-  Communication: [mod_comm_10, mod_comm_2]
 ---
 
 ## The situation
@@ -39,6 +38,6 @@ Nodes have used ELEAD as a success case when justifying local investment in lead
 
 ## Why the rewrite works
 * **It leads with outcomes, not process.** Each point is a change that happened ("became a reference model"), not a task that was completed ("ran a workshop").
-* **It's skimmable.** Bold sub-headings let a busy reader get the whole story in fifteen seconds – exactly how policymakers read (see [Section 6: Writing for Non-Writers](06-comms-writing)).
+* **It's skimmable.** Bold sub-headings let a busy reader get the whole story in fifteen seconds – exactly how policymakers read (see [Chapter 6: Writing for non-writers](06-comms-writing)).
 * **It speaks to the audience's decision.** The Board and funders are looking for evidence of value and sustainability; the rewrite hands them exactly that.
 * **Same facts, different frame.** Nothing was invented. The activities are still there – they're just told as the story of what they achieved.

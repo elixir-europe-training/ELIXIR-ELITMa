@@ -1,7 +1,7 @@
 ---
 title: Storytelling and impact measurement
 description: Good work doesn't speak for itself. Tell the story of what changed, and show the evidence it landed.
-summary: "Securing recognition and future funding takes two things: a story that shows what your work changed, and evidence that your communications reached people. This section is about communicating impact - turning outputs into stories and measuring whether your comms worked. For assessing the impact of the work itself, see the Impact module."
+summary: "Securing recognition and future funding takes two things: a story that shows what your work changed, and evidence that your communications reached people. This chapter is about communicating impact - turning outputs into stories and measuring whether your comms worked. For assessing the impact of the work itself, see the Impact module."
 audience: [Node Coordinators, Communications Officers, Project Managers]
 page_img: /icons/icon-module-communication.svg
 time: 15 minutes
@@ -16,18 +16,20 @@ learning_outcomes:
   - Choose meaningful communications KPIs instead of vanity metrics
   - Link outreach activities to outcomes that matter for your Node's sustainability
 related_pages:
-  Communication: [mod_comm_2, mod_comm_6, mod_comm_9]
   Real_world_example: [comm-ex-elead]
 ref_to_main_resources:
   - google-analytics
   - ri-paths
+phase: Show the difference
+question: "How do you show what changed?"
+takeaway: "Your two-minute impact pitch"
 ---
 
 {% include module-metadata.html %}
 
 Good work doesn't speak for itself. In a consortium where funding and recognition depend on demonstrating value, two things make the difference: a **story** that shows what your work changed, and **evidence** that your communications actually reached people.
 
-This section is about communicating impact – not assessing it. For methodologies to measure the impact of the work itself (socio-economic value, organisational change), that's the job of the **Impact module**; here we focus on telling the story and tracking whether the telling worked.
+This chapter is about communicating impact – not assessing it. For methodologies to measure the impact of the work itself (socio-economic value, organisational change), that's the job of the **Impact module**; here we focus on telling the story and tracking whether the telling worked.
 
 ## Part 1 – From output to story
 
@@ -42,14 +44,14 @@ You don't need narrative theory. One repeatable arc covers most cases:
 **Challenge** (why it mattered) → **What we did** → **What changed** (the outcome) → **So what** (why it matters to *this* audience).
 
 * Lead with the change, not the process.
-* Name the people involved – impact is human, and people stories travel furthest (see [Section 6: Writing for Non-Writers](06-comms-writing)).
+* Name the people involved – impact is human, and people stories travel furthest (see [Chapter 6: Writing for non-writers](06-comms-writing)).
 * Anchor it in one piece of evidence: a number, a quote, a case study.
 
 ### See it in practice
 The clearest ELIXIR example is the [ELEAD before-and-after](comms-example-elead) – the same Annual Report content written first as a list of activities, then as an impact story for the people who shape policy and funding. Read both versions side by side; nothing was invented, only reframed.
 
 ### Same story, different audience
-Impact isn't one message. Reframe the *same* achievement for whoever you're talking to (this builds on [Section 2: Understanding your audience](02-comms-audience)):
+Impact isn't one message. Reframe the *same* achievement for whoever you're talking to (this builds on [Chapter 2: Understanding your audience](02-comms-audience)):
 
 | Audience | What they want to hear |
 | --- | --- |
@@ -57,12 +59,15 @@ Impact isn't one message. Reframe the *same* achievement for whoever you're talk
 | **Funders** | Value for investment and evidence of sustainability |
 | **Researchers** | What they can now do, use or join |
 
+<div class="exercise-box" markdown="1">
 ### Exercise
 Take a recent output from your Node. Write it twice:
+
 1. As an **activity** ("we did X").
 2. As an **impact story** using the arc above (challenge → what we did → what changed → so what).
 
 Then pick your top audience and adjust the "so what" line for them.
+</div>
 
 ## Part 2 – Measuring whether your comms worked
 
@@ -99,7 +104,7 @@ You don't need special software – a shared spreadsheet works. Track each activ
 | Policy brief | National funder | Sent + meeting held | Continued funding | Cited in funding discussion |
 | Joint social campaign | Wider community | 3 Nodes posting, 4× reach | Awareness / collaboration | 2 collaboration inquiries |
 
-Use [Google Analytics](https://analytics.google.com/) (set up once – see [Section 9: Automation and tools](09-comms-automation)) for the web numbers, and your platforms' built-in analytics for social. Gather a quote or short case study where you can – the ELEAD Impact Report's four personal case studies are a good model for turning numbers into evidence.
+Use [Google Analytics](https://analytics.google.com/) (set up once – see [Chapter 9: Automation and tools](09-comms-automation)) for the web numbers, and your platforms' built-in analytics for social. Gather a quote or short case study where you can – the ELEAD Impact Report's four personal case studies are a good model for turning numbers into evidence.
 
 ### The two-minute impact pitch
 When someone asks "what did your Node achieve this year?", you should be able to answer in two minutes:
@@ -108,5 +113,4 @@ When someone asks "what did your Node achieve this year?", you should be able to
 
 If you can say that clearly, you have both a story and the evidence behind it.
 
-## Related modules
-→ Impact module – for assessing the impact of the work itself (the "Impact First" approach), beyond communicating it.
+{% include callout.html type="note" content="Assessing the impact of the work itself – beyond communicating it – is covered by the [Impact module]({{ '/modules/impact/' | relative_url }})." %}
