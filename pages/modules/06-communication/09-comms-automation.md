@@ -95,32 +95,21 @@ The same feeds can do the legwork for your newsletter's "upcoming training" sect
 For anything without a feed – a new sign-up in your Node's registration form, a new row in a shared sheet, a new registration for an event – a small automation can post it to Slack for you:
 
 * **[Zapier](https://zapier.com/) or [Make](https://www.make.com/)** – point and click, no code: pick a trigger ("new form response", "new row", "new item in feed") and an action ("send a Slack message"). Their free plans cover a few simple workflows.
-* **[Google Apps Script](https://developers.google.com/apps-script)** – free and built into Google Forms and Sheets, if you're happy to paste a few lines of code.
+* **[Google Apps Script](https://developers.google.com/apps-script)** – free and built into Google Forms and Sheets, but it means writing code. If you're not comfortable with that, ask your Node's software engineer or research computing team to set it up with you.
 
-Slack receives these messages through an [incoming webhook](https://api.slack.com/messaging/webhooks): a private web address your workspace admin can create for a channel. Treat it like a password.
+Slack receives these messages through an [incoming webhook](https://api.slack.com/messaging/webhooks): a private web address your workspace admin can create for one channel.
 
 <details markdown="1">
-<summary>Go deeper: a Google Apps Script that posts new form sign-ups to Slack</summary>
+<summary>Go deeper: keep your automations secure</summary>
 
-In your Google Form, open **⋮ → Script editor**, paste this, add your webhook address, then add a trigger (**Triggers → Add trigger → On form submit**):
+Anything that posts to Slack for you holds a key to your workspace, so set it up with the same care as a login:
 
-```javascript
-// Posts each new form response to a Slack channel.
-const SLACK_WEBHOOK = 'https://hooks.slack.com/services/…'; // your channel's webhook – keep it private
+* **Never use your own Slack login.** Connect through a dedicated credential – a webhook or Slack app for that one channel, or an app password – so it can be revoked without touching your account.
+* **Keep keys out of the code.** Don't paste a webhook address or token into a script, sheet or document others can open. Apps Script has *Script properties* for this.
+* **Limit access.** Only the people who maintain the form, sheet or Zap should be able to edit it; if a key leaks, ask your admin to regenerate it.
+* **Forward only the data you need**, and tell people in the form that their details will be shared with your team.
 
-function onFormSubmit(e) {
-  const answers = e.response.getItemResponses()
-    .map(r => `*${r.getItem().getTitle()}*: ${r.getResponse()}`)
-    .join('\n');
-  UrlFetchApp.fetch(SLACK_WEBHOOK, {
-    method: 'post',
-    contentType: 'application/json',
-    payload: JSON.stringify({ text: `New sign-up:\n${answers}` }),
-  });
-}
-```
-
-Only collect and forward the personal data you need, and tell people in the form that their details will be shared with your team.
+If any of this is unfamiliar, that's the moment to bring in your software engineer or research computing team.
 </details>
 
 ## Quick DIY visuals

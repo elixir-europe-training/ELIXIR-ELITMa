@@ -161,7 +161,7 @@
 - id: google-apps-script
   name: Google Apps Script
   url: https://developers.google.com/apps-script
-  description: Free scripting built into Google Forms and Sheets - for example, post each new form sign-up to Slack.
+  description: Free scripting built into Google Forms and Sheets - for example, post each new form sign-up to Slack. Involves code; ask your software engineer if unsure.
   category: external_resource
   module: mod_comm
 
