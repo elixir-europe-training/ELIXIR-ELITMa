@@ -26,7 +26,7 @@ ref_to_main_resources:
 
 Accessibility ensures that everyone can engage with your content – including people with visual, auditory, cognitive or motor disabilities. It is not just a legal requirement across Europe; it's a core value for inclusive science communication.
 
-Crucially, **accessibility is not a design topic**. It applies to your writing, your slides, your website, your social posts and your printed materials alike. A jargon-heavy paragraph, a table saved as a picture, or a video with no captions are all accessibility failures – and none of them are about "design" in the visual sense.
+Crucially, **accessibility is not a design topic**. It applies to your writing, your slides, your website, your social posts and your printed materials alike. A jargon-heavy paragraph, a table saved as a picture or a video with no captions are all accessibility failures – and none of them are about "design" in the visual sense.
 
 {% include callout.html type="important" content="A beautiful image that no one can read or interpret is not a successful piece of communication. Accessibility and quality are the same goal, not competing ones." %}
 
@@ -36,7 +36,7 @@ The Web Content Accessibility Guidelines (WCAG) are the international standard. 
 
 1. **Perceivable** – content can be seen or heard by everyone (e.g. ALT text for images, captions for videos).
 2. **Operable** – all functions can be used by keyboard, mouse or assistive technology.
-3. **Understandable** – content is clear, instructions are simple, and navigation is logical.
+3. **Understandable** – content is clear, instructions are simple and navigation is logical.
 4. **Robust** – content works across different devices and assistive technologies.
 
 ## What is ALT text?
@@ -92,7 +92,7 @@ That ALT can never carry the actual numbers, so a screen-reader user gets nothin
 | Q2 2025 | 180           | 153       | 85%             |
 | Q3 2025 | 240           | 211       | 88%             |
 
-Now every reader gets the data, it can be copied and searched, and it reflows on mobile. The same logic applies to **charts** (provide the underlying figures as a small table or in the text), **quotes** (use real quoted text, not a graphic), and **infographics with key statistics** (repeat the statistics in the body text).
+Now every reader gets the data, it can be copied and searched and it reflows on mobile. The same logic applies to **charts** (provide the underlying figures as a small table or in the text), **quotes** (use real quoted text, not a graphic), and **infographics with key statistics** (repeat the statistics in the body text).
 
 ## When an image genuinely is an image – but a complex one
 
@@ -141,5 +141,5 @@ Accessibility is broader than pictures. The same principles apply to how you str
 2. Check: does every informative image have useful ALT text? Are any tables, charts or quotes actually images? Is the text easy to read? Can you navigate using only the keyboard?
 3. Run it through a free accessibility checker such as [WAVE](https://wave.webaim.org/) or [Axe](https://www.deque.com/axe/), and fix what it flags.
 
-{% include callout.html type="warning" content="Most pages fail their first accessibility check – missing ALT text, low contrast, and text-saved-as-images are by far the most common issues. That's normal. The point of the audit is to find and fix them." %}
+{% include callout.html type="warning" content="Most pages fail their first accessibility check – missing ALT text, low contrast and text-saved-as-images are by far the most common issues. That's normal. The point of the audit is to find and fix them." %}
 </div>

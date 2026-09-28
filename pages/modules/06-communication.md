@@ -8,7 +8,7 @@ summary: Practical, ELIXIR-specific communication skills for anyone who represen
 ---
 This module is for anyone who communicates on behalf of an ELIXIR Node – which, if you coordinate a project, lead a work package or represent your Node anywhere, includes you. You don't need "communications" in your job title, and you don't need any previous training.
 
-It won't turn you into a communications professional. It will help you communicate more deliberately, use what ELIXIR already provides, and know when to ask for help.
+It won't turn you into a communications professional. It will help you communicate more deliberately, use what ELIXIR already provides and know when to ask for help.
 
 ## The chapters
 {% include module-chapters.html sidebar="module-communication" %}

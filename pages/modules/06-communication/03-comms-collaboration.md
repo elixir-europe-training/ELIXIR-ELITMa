@@ -27,7 +27,7 @@ The instinct to solve communication problems in isolation is understandable — 
 
 ## The comms contact registry
 
-The contact registry is one of the most practical resources available to you. It is a living list of the communications contacts across all Nodes – the people to reach when you need to disseminate something across the consortium, coordinate a joint campaign, or simply ask for advice from someone who has done it before.
+The contact registry is one of the most practical resources available to you. It is a living list of the communications contacts across all Nodes – the people to reach when you need to disseminate something across the consortium, coordinate a joint campaign or simply ask for advice from someone who has done it before.
 
 <a href="https://elixir-europe.org/documents/elixir-communications-useful-information" class="btn btn-primary" target="_blank" rel="noopener">View the ELIXIR communications useful information page</a>
 
@@ -35,28 +35,28 @@ The contact registry is one of the most practical resources available to you. It
 
 ### When to use it
 * Your Node has completed a project or deliverable that involved other Nodes – coordinate a shared news item to amplify reach
-* You need to disseminate an opportunity, event, or resource across the entire consortium quickly
+* You need to disseminate an opportunity, event or resource across the entire consortium quickly
 * You are unsure how to approach a specific communication challenge and want peer input
 * You want to know who handles communications at a specific Node before reaching out
 
 ### How to use it
 * Find the contact for the relevant Node or Nodes.
-* Reach out directly with a clear, brief ask – what you need, by when, and what you're offering.
+* Reach out directly with a clear, brief ask – what you need, by when and what you're offering.
 
 
 ## When to coordinate across Nodes
 Not every communication effort needs cross-Node coordination — but some benefit significantly from it. Ask yourself:
 
-* Did this project, output, or event involve more than one Node?
+* Did this project, output or event involve more than one Node?
 * Would another Node's audience benefit from knowing about this?
 * Would sharing this effort reduce the workload on my Node?
 
 {% include callout.html type="note" content="If you answer yes to any of these, reach out before you publish – not after. A coordinated communication effort is always more effective than parallel ones, and much harder to coordinate retrospectively." %}
 
-**Example**: A Node completes a data management training event co-organised with two other Nodes. Instead of each Node posting separately on social media, the three communications contacts agree on shared language, post on the same day, and tag each other. The combined reach is significantly higher – and the message feels like a consortium achievement, not three separate ones.
+**Example**: A Node completes a data management training event co-organised with two other Nodes. Instead of each Node posting separately on social media, the three communications contacts agree on shared language, post on the same day and tag each other. The combined reach is significantly higher – and the message feels like a consortium achievement, not three separate ones.
 
 ## The ELIXIR Communications Group
-If you are involved in communications in any capacity — as a dedicated communications officer, a Node Coordinator who handles comms, or a researcher who occasionally writes for public audiences — the ELIXIR Communications Group is your most valuable ongoing resource.
+If you are involved in communications in any capacity — as a dedicated communications officer, a Node Coordinator who handles comms or a researcher who occasionally writes for public audiences — the ELIXIR Communications Group is your most valuable ongoing resource.
 
 This is an open, collaborative space where communicators from all Nodes:
 

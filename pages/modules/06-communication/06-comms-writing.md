@@ -1,7 +1,7 @@
 ---
 title: Writing for non-writers
 description: You don't need to be a professional writer – you need to know what you're trying to say and who you're saying it to. Improve your writing style. 
-summary: You don't need to be a professional writer to communicate your Node's work effectively. You need to know what you're trying to say, who you're saying it to, and how to get out of your own way. The rest is craft – and craft can be learned.
+summary: You don't need to be a professional writer to communicate your Node's work effectively. You need to know what you're trying to say, who you're saying it to and how to get out of your own way. The rest is craft – and craft can be learned.
 audience: [Researchers, Project Managers, Node Coordinators]
 page_img: /icons/icon-module-communication.svg
 page_id: mod_comm_6
@@ -67,7 +67,7 @@ away from your argument. As a rule:
   * A piece with one clear call to action at the end is more effective than 
     one with fifteen scattered links.
 
-If a piece needs to be longer, for example a detailed project report or a policy brief, structure it so readers can navigate without reading everything. Use clear subheadings, a short introductory summary, and bullet points for key findings. The reader should be able to skim and still understand the main points.
+If a piece needs to be longer, for example a detailed project report or a policy brief, structure it so readers can navigate without reading everything. Use clear subheadings, a short introductory summary and bullet points for key findings. The reader should be able to skim and still understand the main points.
 
 Print writing allows more narrative flow and longer paragraphs, but even then, clarity and brevity are paramount – despite we tend to forget this in scientific writing. 
 

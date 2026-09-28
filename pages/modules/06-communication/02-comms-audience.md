@@ -1,7 +1,7 @@
 ---
 title: Understanding your audience
 description: Saying the right thing to the wrong audience is as ineffective as saying nothing at all. Learn how to tailor your messages. 
-summary: Not everyone needs to hear the same thing — and saying the right thing to the wrong audience is as ineffective as saying nothing at all. This chapter helps you identify who your key stakeholders are, prioritise where to focus your effort, and choose the channels most likely to reach them.
+summary: Not everyone needs to hear the same thing — and saying the right thing to the wrong audience is as ineffective as saying nothing at all. This chapter helps you identify who your key stakeholders are, prioritise where to focus your effort and choose the channels most likely to reach them.
 audience: [Communications Officers, Project Managers, Node Coordinators]
 page_img: /icons/icon-module-communication.svg
 time: 20 minutes
@@ -25,7 +25,7 @@ ref_to_main_resources:
 
 ## Who are your stakeholders?
 
-A successful communication strategy starts with knowing your audience. In ELIXIR, your stakeholders are diverse and will vary depending on whether you're communicating at Node level, project level, or consortium level. They might include:
+A successful communication strategy starts with knowing your audience. In ELIXIR, your stakeholders are diverse and will vary depending on whether you're communicating at Node level, project level or consortium level. They might include:
 
 * **Researchers and life scientists**: interested in tools, services, training and collaboration opportunities.
 * **Policymakers and national ministries**: interested in societal impact, value for public investment and strategic priorities.
@@ -46,10 +46,10 @@ It maps two dimensions: how interested a stakeholder group is in your work, and 
 
 * List all stakeholder groups relevant to your current project or output
 * For each group, ask: how interested are they likely to be? (low / medium / high)
-* Then ask: how much influence do they have over your work — through funding, policy, or uptake? (low / medium / high)
+* Then ask: how much influence do they have over your work — through funding, policy or uptake? (low / medium / high)
 * Plot them on the matrix — your top priority groups are high interest + high influence
 
-Use this to decide who gets a tailored message, who gets a standard update, and who simply needs to be aware
+Use this to decide who gets a tailored message, who gets a standard update and who simply needs to be aware
 
 ### Example – a Node launching a new training programme
 
@@ -69,7 +69,7 @@ Use this to decide who gets a tailored message, who gets a standard update, and 
 
 
 ## The persona builder
-Once you know your priority stakeholders, the next step is understanding them well enough to communicate effectively. A persona is a brief profile of a stakeholder type – not a real individual, but a representative picture of what they care about, what they already know, and what would make them pay attention.
+Once you know your priority stakeholders, the next step is understanding them well enough to communicate effectively. A persona is a brief profile of a stakeholder type – not a real individual, but a representative picture of what they care about, what they already know and what would make them pay attention.
 
 {% include callout.html type="important" content="A persona is a nice-to-have, not a must. If you're not building a tool or service, it can be overkill. But if you are, it's the first thing to consider – and don't just imagine it. Picture your persona going through the resource you're building, or better still, get a real person who fits it to talk you through how they'd use it. Test, don't guess." %}
 
@@ -104,13 +104,13 @@ Think of a recent project or result from your Node.
 
 ## Choosing the right channel
 
-Not all communication channels are equal. The best channel depends on your audience, your message, and the resources you have available. Use the persona you've just built to guide your channel choice – where does this stakeholder actually go for information?
+Not all communication channels are equal. The best channel depends on your audience, your message and the resources you have available. Use the persona you've just built to guide your channel choice – where does this stakeholder actually go for information?
 
 **Channel comparison table:**
 
 | Channel               | Effort          | Impact           | Best for                                                  |
 | --------------------  | --------------- | ---------------- | --------------------------------------------------------- |
-| **Social media**      | Low             | Medium           | Quick updates, events, opportunities, and personal touch  |
+| **Social media**      | Low             | Medium           | Quick updates, events, opportunities and personal touch  |
 | **Newsletter/email**  | Low             | Medium           | Targeted updates, events, opportunities                   |
 | **Policy brief**      | High            | High             | Policymakers, funders                                     |
 | **Newsletter**        | Medium          | Medium           | A mix of internal and external stakeholders               |
@@ -119,7 +119,7 @@ Not all communication channels are equal. The best channel depends on your audie
 | **Direct email**      | Low             | Medium           | Targeted, personal outreach to specific individuals       |
 | **Slack**             | Low             | Medium           | Quick, informal internal coordination across Nodes and teams (consortium Slack) |
 
-{% include callout.html type="important" content="One rule that always applies: whichever channel you choose, the content needs to be reframed for it. The same information presented in a newsletter, a social media post, and a policy brief should feel like three different pieces – same facts, different narrative, different length, different tone." %}
+{% include callout.html type="important" content="One rule that always applies: whichever channel you choose, the content needs to be reframed for it. The same information presented in a newsletter, a social media post and a policy brief should feel like three different pieces – same facts, different narrative, different length, different tone." %}
 
 <div class="exercise-box" markdown="1">
 ### Exercise: putting it together

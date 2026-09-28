@@ -61,7 +61,7 @@ The 2025 map is broader and more national:
 
 None of this means the earlier map was "wrong." It was right for its time. The map changed because **the organisation changed** – which is exactly what it's supposed to do.
 
-{% include callout.html type="tip" content="Review your map when something shifts: a new grant, a change of remit, a new partnership, or a big external event. Treat it as a snapshot of where to focus now, not a permanent classification of people." %}
+{% include callout.html type="tip" content="Review your map when something shifts: a new grant, a change of remit, a new partnership or a big external event. Treat it as a snapshot of where to focus now, not a permanent classification of people." %}
 
 ## Use it for your Node
 See [Chapter 2: Understanding your audience](02-comms-audience) for how to build your own priority matrix and persona, and remember: the goal is to focus effort, then revisit it as your Node evolves.

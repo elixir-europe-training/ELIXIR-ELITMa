@@ -13,7 +13,7 @@ status_badge: success
 learning_outcomes:
   - Apply ELIXIR branding correctly across presentations, reports and digital materials
   - Explain why consistent branding matters for a distributed infrastructure like ELIXIR
-  - Choose the right logo for the situation – your Node's own, the main ELIXIR logo, or alongside a partner's
+  - Choose the right logo for the situation – your Node's own, the main ELIXIR logo or alongside a partner's
   - Recognise when an established Node brand should be kept rather than replaced
 related_pages:
   Real_world_example: [comm-ex-cobranding]
@@ -96,7 +96,7 @@ with ELIXIR in capitals and linked to the ELIXIR homepage. It's a small line tha
 ## Exercise: a branding sense-check
 Pick a recent slide deck, report or flyer from your Node and check:
 
-* Is the right logo used for the situation (Node logo, main ELIXIR logo, or Node logo alongside a partner's)?
+* Is the right logo used for the situation (Node logo, main ELIXIR logo or Node logo alongside a partner's)?
 * Are the colours and fonts from the ELIXIR palette and Style Guide?
 * Could someone outside ELIXIR tell, at a glance, that this is ELIXIR work?
 

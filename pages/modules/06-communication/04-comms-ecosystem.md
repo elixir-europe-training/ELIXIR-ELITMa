@@ -1,7 +1,7 @@
 ---
 title: ELIXIR communications ecosystem
 description: Knowing ELIXIR's channels exist is not the same as knowing when and how to use them. Test your knowledge.
-summary: ELIXIR has a range of communication channels and platforms, but knowing they exist is not the same as knowing when and how to use them. This chapter maps the ecosystem so you can navigate it confidently, avoid common mistakes, and make the most of what's already available to you.
+summary: ELIXIR has a range of communication channels and platforms, but knowing they exist is not the same as knowing when and how to use them. This chapter maps the ecosystem so you can navigate it confidently, avoid common mistakes and make the most of what's already available to you.
 audience: [Node Coordinators, Researchers, New ELIXIR Staff]
 page_img: /icons/icon-module-communication.svg
 page_id: mod_comm_4
@@ -51,13 +51,13 @@ ELIXIR mailing lists allow targeted communication to specific groups within the 
 ### Slack
 The ELIXIR Slack workspace is the consortium's informal, real-time communication channel. Access is by invitation only: ask your Node Coordinator to add you.
 
-**When to use it**: For quick questions, informal coordination, and cross-Node conversations that don't need to be on the record. Not suitable for formal announcements or content that needs to be findable later.
+**When to use it**: For quick questions, informal coordination and cross-Node conversations that don't need to be on the record. Not suitable for formal announcements or content that needs to be findable later.
 
 ## External channels
 These are the channels used to communicate with audiences outside the consortium: researchers, funders, policymakers, industry and the public.
 
 ### Website
-The [ELIXIR website](https://elixir-europe.org) is the primary external communication channel and the first point of reference for all audiences. Its three goals are to inform about what ELIXIR is, what it offers, and its objectives and strategy.
+The [ELIXIR website](https://elixir-europe.org) is the primary external communication channel and the first point of reference for all audiences. Its three goals are to inform about what ELIXIR is, what it offers and its objectives and strategy.
 
 **When to use it**: For content with a long shelf life intended for external audiences. Content is submitted by consortium members but reviewed and approved by the Hub before publication. If your content needs frequent updates or is more than 1,000 words, a linked document may be more appropriate. Reach out to the Hub directly at [info@elixir-europe.org](mailto:info@elixir-europe.org).
 

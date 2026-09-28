@@ -74,7 +74,7 @@ For Node newsletters and mailing campaigns, [EmailOctopus](https://emailoctopus.
 ## Automated reporting
 If you measure your communications (and you should – it's how you prove impact), don't pull the numbers by hand every month. Set up a [Google Analytics](https://analytics.google.com/) dashboard **once** to track website traffic, then check or share it whenever you need to.
 
-Set it up to answer the questions you actually care about: which pages get visited, where visitors come from, and what they do next – not every metric available.
+Set it up to answer the questions you actually care about: which pages get visited, where visitors come from and what they do next – not every metric available.
 
 ## The one-hour automation starter kit
 You can put the essentials in place in about an hour. Tick them off as you go:

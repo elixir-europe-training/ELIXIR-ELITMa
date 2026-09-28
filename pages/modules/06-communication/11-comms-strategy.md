@@ -27,12 +27,12 @@ You've worked through your audiences, channels, branding, writing and impact. Th
 
 The Hub's [ELIXIR Node Communications Strategy Toolkit](https://elixir-europe.org/intranet/communication) (produced by ELIXIR-STEERS) is the full reference for this. This chapter distils it into a **one-page canvas** and points back to the parts of this module that feed each box.
 
-{% include callout.html type="tip" content="A strategy's value is in how it shapes day-to-day work. The goal here is not a polished document - it's a single page you can refer to when deciding what to communicate, to whom, and how." %}
+{% include callout.html type="tip" content="A strategy's value is in how it shapes day-to-day work. The goal here is not a polished document - it's a single page you can refer to when deciding what to communicate, to whom and how." %}
 
 ## 1. Start with objectives
 Your communications objectives come from your **Node's strategy**, not the other way round. Talk to your Node management team about the Node's strategic aims, then ask which activities and outcomes are most important to communicate, and to whom.
 
-Keep it to **five or six objectives** so the strategy stays focused. An objective might be to raise awareness of Node activities, build a sense of community, or influence funding and policy.
+Keep it to **five or six objectives** so the strategy stays focused. An objective might be to raise awareness of Node activities, build a sense of community or influence funding and policy.
 
 {% include callout.html type="note" content="For reference, ELIXIR's own communications objectives are: (1) raise awareness of ELIXIR; (2) communicate the impact of ELIXIR; (3) promote ELIXIR services, resources, events and job opportunities; (4) build support for ELIXIR's objectives; (5) expand the ELIXIR network." %}
 
@@ -76,7 +76,7 @@ If you can't name the KPI, the objective is probably too vague – sharpen it be
 
 ## 5. From plan to action
 * **Write it** – outline, populate with your objectives/messages/audiences/channels, then refine. Consult key stakeholders.
-* **Promote it** – don't let it sit unread. Present it at Node meetings, make clear what's relevant to whom, and summarise any actions people need to take.
+* **Promote it** – don't let it sit unread. Present it at Node meetings, make clear what's relevant to whom and summarise any actions people need to take.
 * **Implement it** – refer to it when planning campaigns or content, and check existing material (website, newsletters) still aligns.
 
 ## 6. Measure and review

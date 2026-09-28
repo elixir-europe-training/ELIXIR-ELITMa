@@ -114,7 +114,7 @@ A blank canvas is where non-designers come unstuck. A good template has already 
 * Resist customising. Every change you make to a good template is a chance to make it worse. Change the words and the image; leave the structure alone.
 
 ## Using AI tools well
-AI design tools (Canva's AI features, Adobe Express, and general image tools) are genuinely useful for first drafts, layout ideas, resizing, removing backgrounds and generating supporting imagery. But they only produce something good if **you** bring the standard.
+AI design tools (Canva's AI features, Adobe Express and general image tools) are genuinely useful for first drafts, layout ideas, resizing, removing backgrounds and generating supporting imagery. But they only produce something good if **you** bring the standard.
 
 ### The ELIXIR palette – copy these into your prompt
 From the [ELIXIR Brand Guidelines (2025)](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf). Royal blue is the primary colour and grey the neutral; orange and olive green are accents.
@@ -139,19 +139,19 @@ A vague prompt gives generic output. Tell the tool exactly what it needs:
 
 > **Weak prompt:** "Make a nice banner for our webinar."
 >
-> **Strong prompt:** "A clean, professional square banner (1080×1080) announcing an ELIXIR webinar for researchers. Use ELIXIR royal blue #023452 as the background and bright orange #f47d20 as the only accent, Open Sans for all text, generous whitespace. One headline, the date, and space for a logo in the corner. Minimal, not busy."
+> **Strong prompt:** "A clean, professional square banner (1080×1080) announcing an ELIXIR webinar for researchers. Use ELIXIR royal blue #023452 as the background and bright orange #f47d20 as the only accent, Open Sans for all text, generous whitespace. One headline, the date and space for a logo in the corner. Minimal, not busy."
 
 ### The hard rules
 {% include callout.html type="warning" content="Never let AI generate the ELIXIR logo, and never trust text baked into an AI image. AI mangles logos and produces gibberish or misspelled text. Generate the background or layout with AI if you like, then add the official logo (from the intranet branding page) and the real text yourself." %}
 
 * **Set the colours – don't hope.** AI won't respect the ELIXIR palette unless you give it the hex codes.
-* **Check accessibility.** Contrast, ALT text, and never leave key information trapped inside the image – see [Chapter 5: Accessibility](05-comms-accessibility).
-* **If it looks off but you can't say why,** run it past the "what good looks like" table. It's almost always too much text, weak hierarchy, or not enough whitespace.
+* **Check accessibility.** Contrast, ALT text and never leave key information trapped inside the image – see [Chapter 5: Accessibility](05-comms-accessibility).
+* **If it looks off but you can't say why,** run it past the "what good looks like" table. It's almost always too much text, weak hierarchy or not enough whitespace.
 
 ## A workflow you can repeat
-- [ ] Define the **one message**, the **audience**, and the **format/size** before opening any tool.
+- [ ] Define the **one message**, the **audience** and the **format/size** before opening any tool.
 - [ ] Start from an **ELIXIR template**, or set your brand constraints (palette hex codes, Open Sans / Lato).
-- [ ] Draft it – in Canva, Adobe Express, or with an AI tool given a constraint-rich prompt.
+- [ ] Draft it – in Canva, Adobe Express or with an AI tool given a constraint-rich prompt.
 - [ ] **Judge** it against the "what good looks like" table and the squint test.
 - [ ] Fix the **one or two biggest problems** (usually: too much text, weak hierarchy).
 - [ ] Drop in the **official logo** and check **accessibility** (contrast, ALT, no text-as-image).

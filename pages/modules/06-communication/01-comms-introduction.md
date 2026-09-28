@@ -7,7 +7,7 @@ type: Communication
 audience: [Node Coordinators, Project Managers, Communications Officers]
 time: 10 minutes
 status: ready
-summary: Communication is already happening in your Node – the question is whether it's working. This chapter helps you understand the difference between internal and external communication, why both matter in a distributed infrastructure like ELIXIR, and how to take stock of where your Node currently stands.
+summary: Communication is already happening in your Node – the question is whether it's working. This chapter helps you understand the difference between internal and external communication, why both matter in a distributed infrastructure like ELIXIR and how to take stock of where your Node currently stands.
 task_list: true
 sidebar: module-communication
 learning_outcomes:
@@ -22,7 +22,7 @@ ref_to_main_resources:
 ---
 
 
-You may not have "communications" in your job title. But if you coordinate a project, lead a work package, manage a team, or represent your Node in any capacity – you are already communicating on behalf of ELIXIR. The question is not whether you communicate, but how intentionally you do it.
+You may not have "communications" in your job title. But if you coordinate a project, lead a work package, manage a team or represent your Node in any capacity – you are already communicating on behalf of ELIXIR. The question is not whether you communicate, but how intentionally you do it.
 
 In a distributed network like ELIXIR, where Nodes operate across different countries, cultures and institutional contexts, communication is the connective tissue. When it works well, it's invisible. When it doesn't, the costs are real: duplicated effort, missed opportunities, missed authority in research grants, misaligned expectations and outputs that never reach the people who needed them.
 
@@ -31,16 +31,16 @@ This module won't turn you into a communications expert. It will help you commun
 ## Internal vs external: two different jobs
 All communication in ELIXIR falls into one of two categories, and confusing them is one of the most common mistakes:
 
-* **Internal communication** is the flow of information within your Node or across the consortium — project updates, shared decisions, meeting outputs, cross-Node coordination. Its goal is alignment. When it fails, people duplicate work, miss deadlines, or pull in different directions.
-* **External communication** is how you present your work to the world – to funders, policymakers, researchers outside ELIXIR, and the public. Its goal is impact. When it fails, good work goes unnoticed and opportunities are missed.
+* **Internal communication** is the flow of information within your Node or across the consortium — project updates, shared decisions, meeting outputs, cross-Node coordination. Its goal is alignment. When it fails, people duplicate work, miss deadlines or pull in different directions.
+* **External communication** is how you present your work to the world – to funders, policymakers, researchers outside ELIXIR and the public. Its goal is impact. When it fails, good work goes unnoticed and opportunities are missed.
 
 The same output often needs both. A new service your Node launches needs internal communication so the consortium knows about it – and external communication so potential users find it or to gain visibility for funding and sustainability. 
 
-{% include callout.html type="note" content="Node Coordinators, Work Package Leads, Task Leads, and any other coordination roles within the consortium play a key role in shaping the communication culture, especially for internal communication." %}
+{% include callout.html type="note" content="Node Coordinators, Work Package Leads, Task Leads and any other coordination roles within the consortium play a key role in shaping the communication culture, especially for internal communication." %}
 
 ## A scenario you'll recognise
 
-Two Work Package leads in a multi-Node project each spent months producing what turned out to be near-identical outputs. Neither knew the other was doing it. There was no shared update mechanism, no agreed communication touchpoint, and no moment where someone asked: who else needs to know what we're doing?
+Two Work Package leads in a multi-Node project each spent months producing what turned out to be near-identical outputs. Neither knew the other was doing it. There was no shared update mechanism, no agreed communication touchpoint and no moment where someone asked: who else needs to know what we're doing?
 
 This isn't rare. It's the default when communication is treated as something that happens after the work, rather than alongside it.
 
