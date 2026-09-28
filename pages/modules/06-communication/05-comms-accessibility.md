@@ -77,20 +77,25 @@ To a sighted reader it looks fine. But for everyone else (or machines) it is a d
 
 ### Example – a table
 
-**The problem (a table saved as an image):**
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>The problem: a table saved as an image</p>
 
-> *[An image file, `q3-results.png`, showing a 4-column table of registration figures.]*
-> ALT: "Table of training registrations by quarter."
+*[An image file, `q3-results.png`, showing a 4-column table of registration figures.]*  
+ALT: "Table of training registrations by quarter."
+</div>
 
 That ALT can never carry the actual numbers, so a screen-reader user gets nothing usable – and no one can copy the figures.
 
-**The fix (the same content as real text):**
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>The fix: the same content as real text</p>
 
 | Quarter | Registrations | Completed | Completion rate |
 | ------- | ------------- | --------- | --------------- |
 | Q1 2025 | 120           | 96        | 80%             |
 | Q2 2025 | 180           | 153       | 85%             |
 | Q3 2025 | 240           | 211       | 88%             |
+
+</div>
 
 Now every reader gets the data, it can be copied and searched and it reflows on mobile. The same logic applies to **charts** (provide the underlying figures as a small table or in the text), **quotes** (use real quoted text, not a graphic), and **infographics with key statistics** (repeat the statistics in the body text).
 
@@ -113,9 +118,13 @@ To make a complex image like this accessible, do three things:
 
 Here's the division of labour for the diagram above:
 
-> **ALT**: A diagram showing how FAIRsharing feeds the Data Stewardship Wizard, surfacing standards, databases and policies as a researcher fills in a Data Management Plan.
->
-> **Description**: DSW uses FAIRsharing to provide as-you-type hints for policies. Where those policies recommend specific standards and databases, that information is surfaced to users as they choose the resources associated with their Data Management Plan.
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>ALT text and description for the diagram above</p>
+
+**ALT**: A diagram showing how FAIRsharing feeds the Data Stewardship Wizard, surfacing standards, databases and policies as a researcher fills in a Data Management Plan.
+
+**Description**: DSW uses FAIRsharing to provide as-you-type hints for policies. Where those policies recommend specific standards and databases, that information is surfaced to users as they choose the resources associated with their Data Management Plan.
+</div>
 
 {% include callout.html type="note" content="Notice the division of labour. The ALT text is short and functional – it tells a screen reader what the image is. The description is fuller and gives everyone, sighted or not, the actual information the image conveys. The image supports the text; it is never the only way to get the information." %}
 

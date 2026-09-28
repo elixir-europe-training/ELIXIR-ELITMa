@@ -99,7 +99,18 @@ A news item is a short, externally facing piece published on your Node/instituti
 
 {% include callout.html type="important" content="Impact without hype: There is a difference between communicating genuine impact and overclaiming. Stick to what actually happened. For our scientifically trained audience this is key, as they will see through hype immediately." %}
 
->"This framework helps Nodes assess their current RDM practices" is stronger and more credible than "This groundbreaking framework will transform RDM across Europe." 
+<div class="compare" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Overclaims</p>
+
+"This groundbreaking framework will transform RDM across Europe."
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>Credible – and stronger</p>
+
+"This framework helps Nodes assess their current RDM practices."
+</div>
+</div>
 
 
 <details markdown="1">
@@ -193,9 +204,8 @@ This means:
 
 * Put the link in the **first comment**, and say so in the post ("link in the comments").
 * Or publish without the link and **edit it in** once the post has started to get engagement.
-* When the content itself is the point, post it **natively** – an image carousel, a document or a LinkedIn article – and link to the full version from there.
 
-{% include callout.html type="tip" content="The same applies whoever posts: a researcher's personal post with a link in the first comment will usually reach more people than the Node's page posting the link directly." %}
+{% include callout.html type="tip" content="Do both of those – but the most useful thing is people. Ask the individuals involved – researchers, project leads, Node colleagues, collaborators – to reshare the post with their own thoughts: a line on why it matters to them. A reshare with a personal comment reaches their network and tells LinkedIn the post is worth showing; a repost without comment does much less." %}
 
 ## Editing your own writing
 The hardest part of writing for non-writers is not the first draft – it is knowing what to cut.
@@ -211,12 +221,20 @@ The hardest part of writing for non-writers is not the first draft – it is kn
 ## Quick exercise: cut it down
 Rewrite this opening so the point comes first and the reader knows why it matters. Aim for under 30 words.
 
-> In the context of the ELIXIR-STEERS project, and following extensive consultation with stakeholders across multiple Nodes, Work Package 5 has now completed the development of a methodology in order to support Nodes in the assessment of their training activities.
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>The original</p>
+
+In the context of the ELIXIR-STEERS project, and following extensive consultation with stakeholders across multiple Nodes, Work Package 5 has now completed the development of a methodology in order to support Nodes in the assessment of their training activities.
+</div>
 
 <details markdown="1">
 <summary>One possible answer</summary>
 
-> Nodes now have a simple way to check whether their training works. The new method, built with input from across ELIXIR, is free to use.
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>A better version</p>
+
+Nodes now have a simple way to check whether their training works. The new method, built with input from across ELIXIR, is free to use.
+</div>
 
 What changed: the finding leads, the project and work package names are gone (the reader doesn't need them), "in order to" became nothing at all, and the sentence says who benefits.
 

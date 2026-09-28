@@ -169,7 +169,7 @@ For a checklist, a worked answer or a how-to that not every reader needs. Keep t
 
 ### Before and after
 
-For showing a weak version next to a better one – a post, a sentence, a prompt. Change the two labels to suit; the ✗ and ✓ come with the classes.
+For showing a weak version next to a better one – a post, a sentence, a prompt. Change the two labels to suit; the ✗ and ✓ come with the classes. A single box can also stand on its own (for example a ✗ "The problem" box followed by a ✓ "The fix" box). If a box ends with a table or a list, leave a blank line before its closing `</div>`, or the table won't render.
 
 ```html
 <div class="compare" markdown="1">

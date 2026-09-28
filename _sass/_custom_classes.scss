@@ -1267,3 +1267,23 @@ body.on-pathway .module-pager--chapters {
   }
 }
 
+
+// A single before/after box on its own (not paired in .compare).
+.compare-item { margin: 1rem 0 1.25rem; }
+.compare > .compare-item { margin: 0; }
+.compare-item table { margin-bottom: 0; background: transparent; }
+
+/*-----Sample text (plain Markdown quotes)-----*/
+// Replaces the theme's grey quote box for text to copy or model wording
+// (e.g. a footer line, a formula). Before/after examples use .compare instead.
+#content blockquote:not([class]) {
+  margin: 1rem 0 1.25rem;
+  padding: 0.85rem 1.1rem;
+  background: #F6F9FB;
+  border: 1px solid #DCE6EC;
+  border-left: 4px solid $link-blue;
+  border-radius: $border-radius * 2;
+  color: $dark;
+
+  > :last-child { margin-bottom: 0; }
+}
