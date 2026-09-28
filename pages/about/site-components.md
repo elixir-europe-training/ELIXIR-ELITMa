@@ -47,7 +47,7 @@ These files have the **same name as an ETT include**, so they replace the theme'
 | `related-pages.html` | Adds the pager to module pages; lets a module drop related-pages tiles | Every module page ends with the pager. The Communication module – by choice, because the pager and in-text links already connect its chapters – shows only real-world examples ("See it in practice") instead of related-pages tiles; this is switched on per module in the file (`page.sidebar == "module-communication"`). Other modules keep the theme's related pages. |
 | `breadcrumb.html` | Module permalinks are flat (`/01-comms-introduction`), so the theme's URL-based trail only gave "Home › page" | Module pages build Home › Modules › module › [chapter] › page from the sidebar. Other pages use the theme's code unchanged. |
 | `contributor-card.html` | Different badge colours for leads and contributors | The role badge gets a `contributor-role--<role>` class. |
-| `resource-table-page.html` | A compact resources panel for chapters | Replaces the theme's tools table (national resources, registry links) with a collapsed "Dive deeper" panel: a compact list of linked names and one-line descriptions, ELIXIR's own resources marked, for the ids in a page's `ref_to_main_resources`. |
+| `resource-table-page.html` | A simpler resources table for chapters | Replaces the theme's tools table (national resources, registry links) with a compact "Dive deeper" table – category, resource, description – for the ids in a page's `ref_to_main_resources`, styled to sit quietly at the end of the page. |
 
 The breadcrumb is switched on in `_config.yml` (`theme_variables: breadcrumb: true`). It replaces the theme's grey page-type label above the title. Other theme settings are described in [Configuring the theme](https://elixir-belgium.github.io/elixir-toolkit-theme/configuring_theme).
 
@@ -58,7 +58,7 @@ The breadcrumb is switched on in `_config.yml` (`theme_variables: breadcrumb: tr
 | `_data/sidebars/<module>.yml` | Chapter order and numbering (see the convention above); `title_url` points to the module main page; `hr: true` draws a divider. See the ETT [navigation structures](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures) for all options. |
 | `_data/pathways/<module>.yml` | Learning pathways: `id`, `title`, `description`, `chapters` (page_ids). File name must match the sidebar file. |
 | `_data/module_types.yml` | Module tiles: title, description, icon, order. Time is **not** stored here, and `status` is only used until a module has chapters – after that, both are calculated from the chapters. |
-| `_data/tool_and_resource_list.yml` | Resources for "Dive deeper" panels and All resources pages |
+| `_data/tool_and_resource_list.yml` | Resources for "Dive deeper" tables and All resources pages |
 | `_data/CONTRIBUTORS.yml` | People; `role: Lead` or `role: Contributor` sets their group and badge |
 
 ## Styles

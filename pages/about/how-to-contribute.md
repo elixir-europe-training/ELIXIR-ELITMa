@@ -301,7 +301,7 @@ Then link it from the chapter, either in the text with an [example card](#exampl
 
 ## Resources
 
-Resources for the "Dive deeper" panels and the All resources page live in `_data/tool_and_resource_list.yml`. Add an entry once, then list its `id` under `ref_to_main_resources` in any chapter that should show it.
+Resources for the "Dive deeper" tables and the All resources page live in `_data/tool_and_resource_list.yml`. Add an entry once, then list its `id` under `ref_to_main_resources` in any chapter that should show it.
 
 ```yaml
 - id: writing-in-sciences

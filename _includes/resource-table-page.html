@@ -1,26 +1,41 @@
 {%- comment -%}
 Local override of the elixir-toolkit-theme include of the same name.
 Lists the resources named in a page's `ref_to_main_resources` (defined in
-_data/tool_and_resource_list.yml) as one collapsed "Dive deeper" panel: a compact list of
-linked names with a one-line description; ELIXIR's own resources are marked, because some
-need an intranet login. (The theme's version is a wide table with national-resource and
-registry columns this site doesn't use.)
+_data/tool_and_resource_list.yml) as a compact "Dive deeper" table - category, resource,
+description - styled to sit quietly at the end of the page (see "Dive deeper table" in
+_custom_classes.scss). The theme's version adds national-resource and registry columns
+this site doesn't use.
 {%- endcomment -%}
 {%- if page.ref_to_main_resources %}
 {%- assign tool_ids = page.ref_to_main_resources %}
-<details class="dive-deeper">
-  <summary>Dive deeper: {{ tool_ids.size }} further resource{% if tool_ids.size != 1 %}s{% endif %}</summary>
-  <ul class="dive-deeper-list">
-    {%- for tool_id in tool_ids %}
-    {%- assign tool = site.data.tool_and_resource_list | where:"id", tool_id | first %}
-    {%- if tool %}
-    <li>
-      {%- if tool.url %}<a href="{{ tool.url }}">{{ tool.name }}</a>{% else %}<span class="dive-deeper-name">{{ tool.name }}</span>{% endif %}
-      {%- if tool.category == "internal_resource" %} <span class="dive-deeper-tag">ELIXIR</span>{% endif %}
-      {%- if tool.description %}<span class="dive-deeper-desc">{{ tool.description | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>{% endif %}
-    </li>
-    {%- endif %}
-    {%- endfor %}
-  </ul>
-</details>
+<h2 class="dive-deeper-heading">Dive deeper</h2>
+<div class="table-responsive dive-deeper-table">
+    <table class="tooltable table display">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Resource</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%- for tool_id in tool_ids | sort %}
+            {%- assign tool = site.data.tool_and_resource_list | where:"id", tool_id | first %}
+            <tr>
+                <td class="dive-deeper-category">
+                    <span class="badge">{{ tool.category | replace: "_", " " | capitalize }}</span>
+                </td>
+                <td>
+                    {%- if tool.url %}
+                    <a href="{{ tool.url }}">{{ tool.name }}</a>
+                    {%- else %}
+                    {{ tool.name }}
+                    {%- endif %}
+                </td>
+                <td>{{ tool.description | markdownify }}</td>
+            </tr>
+            {%- endfor %}
+        </tbody>
+    </table>
+</div>
 {%- endif %}

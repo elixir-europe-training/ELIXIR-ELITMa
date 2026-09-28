@@ -28,7 +28,7 @@ Every chapter uses the same few building blocks, so you always know what you're 
 * **Checklists** – tick them as you go. Your ticks are remembered in your browser, so you can come back later.
 * **Real-world examples** – cards marked with a lightbulb link to how an ELIXIR Node actually did it. They're short, and often the most useful part.
 * **Templates** – download buttons give you editable PowerPoint and Word files to reuse.
-* **Dive deeper** – the panel at the end of each page lists further resources. Some are on the ELIXIR intranet and need your consortium login.
+* **Dive deeper** – the table at the end of each page lists further resources. Some are on the ELIXIR intranet and need your consortium login.
 
 ## Bring a real project
 The exercises are much more useful applied to something real than done in the abstract. Before you start, pick **one current or upcoming output from your Node** – a new service, an event, a project result, a training course – and keep it in mind as you go. By the end, you'll have worked out who it's for, how to say it, where to share it and how to tell whether it worked.

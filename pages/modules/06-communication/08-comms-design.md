@@ -33,19 +33,6 @@ What it will do is make you **good enough to direct tools and judge the result**
 
 {% include callout.html type="important" content="You can't prompt for, or assess, what you can't recognise. \"Make it look more professional\" is a useless instruction – to you or to an AI – unless you know that professional usually means fewer fonts, more whitespace, stronger hierarchy and tighter alignment. The eye comes first; the tools come second." %}
 
-## In this chapter
-Five short lessons. Each one gives you one idea, shows it, and asks you a quick question.
-
-<ol class="lesson-list">
-  <li><a href="#what-good-looks-like">What "good" looks like</a></li>
-  <li><a href="#colour">Colour</a></li>
-  <li><a href="#type">Type</a></li>
-  <li><a href="#layout-and-squint-test">Layout and the squint test</a></li>
-  <li><a href="#tools">Let the tools do the production</a></li>
-</ol>
-
-Then there's a [cheat sheet](#cheat-sheet) to keep, and a [short project](#put-it-into-practice) to apply it all.
-
 <details markdown="1">
 <summary>Prefer to watch? The whole chapter as a talk</summary>
 
@@ -306,45 +293,6 @@ Blurred, you still see the headline and the orange button – exactly what matte
 * **Tone** – "clean and professional, lots of whitespace, not busy"
 
 With templates, resist customising: every change to a good template is a chance to make it worse. Change the words and the image; leave the structure alone. And always check accessibility – contrast, ALT text and never leaving key information trapped inside an image (see [Chapter 5: Accessibility](05-comms-accessibility)).
-</details>
-
-<details id="cheat-sheet" markdown="1">
-<summary>Cheat sheet: the whole chapter on one card</summary>
-
-<div class="cheat-sheet" markdown="1">
-<div class="cheat-sheet-block" markdown="1">
-<p class="cheat-sheet-title">Good looks like</p>
-
-* One message
-* Clear hierarchy
-* Generous whitespace
-* Things line up
-</div>
-<div class="cheat-sheet-block" markdown="1">
-<p class="cheat-sheet-title">Colour</p>
-
-* Royal blue `#023452`, orange accent `#f47d20`
-* Two colours, one accent
-* Text contrast at least 4.5:1
-* No orange text on white
-</div>
-<div class="cheat-sheet-block" markdown="1">
-<p class="cheat-sheet-title">Type</p>
-
-* Open Sans (print, slides) · Lato (web)
-* One font, size and weight for hierarchy
-* Body 10–11 pt, slides at least 18 pt
-</div>
-<div class="cheat-sheet-block" markdown="1">
-<p class="cheat-sheet-title">Check before you publish</p>
-
-* Squint: does the message survive?
-* Official logo, never AI-made
-* ALT text, no text as image
-* One other person has looked at it
-</div>
-</div>
-
 </details>
 
 ## Put it into practice
