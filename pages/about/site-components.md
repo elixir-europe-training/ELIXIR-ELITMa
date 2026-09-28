@@ -27,6 +27,7 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `module-navigation.html` | Module tiles with icon, description, status and calculated time | Home and Modules pages | `col` |
 | `module-tiles.html` | Tiles for a hand-picked list of pages | Any page (currently the main pages of modules still in planning) | `type`, `custom`, `col`, `sort` |
 | `module-resources.html` | All resources for a module, grouped by category | A module's "All resources" page | `module_id` |
+| `quick-check.html` | One-question check with instant ✓/✗ feedback (behaviour in `site-scripts.html`; the answer is shown without JavaScript) | After teaching an idea in a chapter | `question`, `options` (separated by `\|`), `correct`, `explain` |
 | `video.html` | Embedded YouTube video (privacy-enhanced, lazy-loaded) with a direct link | Anywhere in a chapter's text | `youtube`, `title`, `caption` |
 | `example-card.html` | Highlighted link card to another page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id`, `lead`, `label`, `icon` |
 

@@ -3,12 +3,36 @@ Small accessibility fixes that run on every page (loaded from scroll-top.html):
   - Checklist boxes (from "- [ ]" in Markdown) get an accessible name - the item's text -
     and clicking the text ticks the box.
   - Code blocks that scroll sideways can be reached and scrolled with the keyboard.
+  - Quick checks (quick-check.html) become clickable, with ✓/✗ feedback.
   - The mobile sidebar button reads "Module navigation" (or "Section navigation") instead
     of the theme's label built from the sidebar file name ("Module-communication menu").
 The script that remembers checklist ticks lives in module-pager.html (module pages only).
 {%- endcomment -%}
 <script>
+  // Lets CSS hide content that only matters without JavaScript (e.g. quick-check answers).
+  document.documentElement.classList.add('js');
+
   document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.quick-check').forEach(function (box) {
+      var correct = box.getAttribute('data-correct');
+      var explain = box.getAttribute('data-explain') || '';
+      var feedback = box.querySelector('.quick-check-feedback');
+      var options = box.querySelectorAll('.quick-check-option');
+      options.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var right = btn.getAttribute('data-index') === correct;
+          options.forEach(function (b) {
+            b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+            b.classList.remove('is-chosen', 'is-right', 'is-wrong');
+          });
+          btn.classList.add('is-chosen', right ? 'is-right' : 'is-wrong');
+          if (!right) box.querySelector('.quick-check-option[data-index="' + correct + '"]').classList.add('is-right');
+          feedback.className = 'quick-check-feedback ' + (right ? 'is-right' : 'is-wrong');
+          feedback.textContent = (right ? '✓ Correct. ' : '✗ Not quite. ') + explain;
+        });
+      });
+    });
+
     var sidebarButton = document.querySelector('button.sidebar-collapse');
     if (sidebarButton) {
       var label = {{ page.sidebar | default: "" | slice: 0, 7 | jsonify }} === 'module-' ? 'Module navigation' : 'Section navigation';

@@ -136,6 +136,20 @@ Think of a recent project or result from your Node.
 * For each group, write one sentence that would catch their attention.
 </div>
 
+### Quick check
+
+A one-question check with instant feedback, right after you've taught an idea – the learner answers, sees ✓ or ✗ and a one-line explanation. Give two to four answers separated by `|`, and say which one is right (1 = first). Keep the explanation to a sentence or two; it's shown after any answer.
+
+```liquid
+{% raw %}{% include quick-check.html question="Orange text on a white background – does it pass the contrast check?" options="Yes – it's an ELIXIR colour|No – it's too pale for text" correct="2" explain="At 2.7:1 it's well below the 4.5:1 that normal text needs." %}{% endraw %}
+```
+
+**Renders as:**
+
+{% include quick-check.html question="Orange text on a white background – does it pass the contrast check?" options="Yes – it's an ELIXIR colour|No – it's too pale for text" correct="2" explain="At 2.7:1 it's well below the 4.5:1 that normal text needs." %}
+
+Chapter 8 shows a whole chapter built as short lessons: an idea, one visual, a quick check, and the detail tucked into "Go deeper" panels.
+
 ### Checklists
 
 Start list items with `- [ ]`. Readers can tick them, and their ticks are remembered in their browser.

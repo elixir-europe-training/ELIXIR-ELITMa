@@ -27,18 +27,50 @@ ref_to_main_resources:
   - converge-design
 ---
 
+Let's be honest about who this is for. You're a researcher or a coordinator, not a designer. You make a flyer or a slide a few times a year, usually in PowerPoint or a free tool like Adobe Express. This chapter won't make you a designer, and doesn't try to.
 
-Let's be honest about who this is for. You're a researcher or a coordinator, not a designer. You make a flyer or a slide a few times a year, usually in PowerPoint or a free tool like Adobe Express. You might have the full Adobe Creative Cloud suite, but learning it is not a good use of your time. If you want to become a designer, take a design course – this chapter won't make you one, and doesn't try to.
+What it will do is make you **good enough to direct tools and judge the result**: templates and AI do the production, and your job is to know what good looks like, so you can ask for it and recognise it.
 
-What it will do is make you **good enough to direct tools and judge the result**. Because that is what the job actually is now: templates and AI do the production, and your real skill is **knowing what good looks like** – so you can prompt for it, and tell whether what comes back is any good.
+{% include callout.html type="important" content="You can't prompt for, or assess, what you can't recognise. \"Make it look more professional\" is a useless instruction – to you or to an AI – unless you know that professional usually means fewer fonts, more whitespace, stronger hierarchy and tighter alignment. The eye comes first; the tools come second." %}
 
-{% include callout.html type="important" content="You can't prompt for, or assess, what you can't recognise. \"Make it look more professional\" is a useless instruction - to you or to an AI - unless you know that professional usually means fewer fonts, more whitespace, stronger hierarchy and tighter alignment. The eye comes first; the tools come second." %}
+## In this chapter
+Five short lessons. Each one gives you one idea, shows it, and asks you a quick question.
 
-## The only mindset you need
-**You direct, the tool produces, you judge.** You are not drawing anything. You are making decisions – what it should say, who it's for, what matters most – and then checking the output against a standard. Everything below serves those two jobs: setting the standard, and checking against it.
+<ol class="lesson-list">
+  <li><a href="#what-good-looks-like">What "good" looks like</a></li>
+  <li><a href="#colour">Colour</a></li>
+  <li><a href="#type">Type</a></li>
+  <li><a href="#layout-and-squint-test">Layout and the squint test</a></li>
+  <li><a href="#tools">Let the tools do the production</a></li>
+</ol>
+
+Then there's a [cheat sheet](#cheat-sheet) to keep, and a [short project](#put-it-into-practice) to apply it all.
+
+<details markdown="1">
+<summary>Prefer to watch? The whole chapter as a talk</summary>
+
+Most of this chapter comes from the CONVERGE workshop series talk *Design made easy for communicators*.
+
+{% include video.html youtube="fFAlT51EPZQ" title="Design made easy for communicators (CONVERGE workshop series)" %}
+
+</details>
+
+<p class="lesson-label">Lesson 1 of 5 · about 3 minutes</p>
 
 ## What "good" looks like
-You don't need design theory. You need a handful of tells that separate amateur from professional. Learn to spot these and you can fix 90% of bad designs:
+{: #what-good-looks-like}
+
+You don't need design theory. A handful of tells separate amateur from professional: **one message**, a clear **hierarchy**, generous **whitespace**, things that **line up**, and **colour used with intention**. Design exists to make your message land – if the content doesn't fit the format, change the format rather than cramming.
+
+<figure class="figure-diagram">
+  <img src="{{ '/images/communication/design-before-after.svg' | relative_url }}" alt="The same webinar flyer made two ways. Left, amateur: yellow background, five colours, four fonts, every line centred and the same size, a project work-package line, four speaker names and a long topic list, so nothing stands out and the date is hard to find. Right, professional: royal blue background with a single orange accent, one font, a large headline 'Data stewardship, made simple', one supporting line, the date and time, and one 'Register now' button, all aligned to the left edge with plenty of empty space.">
+  <figcaption>Left: tries to say everything, so it says nothing. Right: one message, clear hierarchy, two brand colours, one font, one call to action.</figcaption>
+</figure>
+
+{% include quick-check.html question="On which flyer can you find the date in under two seconds?" options="The yellow one|The navy one|Both" correct="2" explain="On the navy flyer the date sits on its own line, in bold, with space around it. On the yellow one it competes with five colours and four fonts." %}
+
+<details markdown="1">
+<summary>Go deeper: the full amateur vs professional checklist</summary>
 
 | Looks amateur | Looks professional |
 | --- | --- |
@@ -49,14 +81,7 @@ You don't need design theory. You need a handful of tells that separate amateur 
 | Elements floating randomly | **Alignment, spacing and distribution** – things line up on a clear grid |
 | A rainbow of colours | Colour used **with intention, not a traffic light** – one or two ELIXIR colours that mean something, with enough contrast to read |
 | Looks like no other ELIXIR material | **Consistent** with the ELIXIR brand (see [Chapter 7: Branding](07-comms-branding)) |
-
-### See the difference
-Same event, same information, two results. Look at the left one first – then try to find the date. Now do the same on the right.
-
-<figure class="figure-diagram">
-  <img src="{{ '/images/communication/design-before-after.svg' | relative_url }}" alt="The same webinar flyer made two ways. Left, amateur: yellow background, five colours, four fonts, every line centred and the same size, a project work-package line, four speaker names and a long topic list, so nothing stands out and the date is hard to find. Right, professional: royal blue background with a single orange accent, one font, a large headline 'Data stewardship, made simple', one supporting line, the date and time, and one 'Register now' button, all aligned to the left edge with plenty of empty space.">
-  <figcaption>Left: tries to say everything, so it says nothing. Right: one message, clear hierarchy, two brand colours, one font, one call to action.</figcaption>
-</figure>
+</details>
 
 <details markdown="1">
 <summary>Spot the problems: what's wrong with the left one?</summary>
@@ -70,57 +95,12 @@ Same event, same information, two results. Look at the left one first – then t
 
 </details>
 
-{% include callout.html type="important" content="Design is all about your content. The design exists to make your message land - it is never decoration for its own sake. If your content doesn't fit the format you imagined, change the format: if you need two pages, make two pages, rather than cramming or cutting vital information to force a layout." %}
+<p class="lesson-label">Lesson 2 of 5 · about 3 minutes</p>
 
-<!-- TODO (slide from CONVERGE talk): add the "Problem / Clear answer" before-and-after flyer here.
-<img src="{{ '/images/communication/design-content-before-after.png' | relative_url }}" alt="Two flyers side by side. Left: a cramped single-page flyer with tiny text forced into one page. Right: the same content given two pages, with clear sections and whitespace." class="img-fluid my-3">
--->
+## Colour
+{: #colour}
 
-
-**The squint test.** Look at your design and squint until it blurs – or step back from the screen. Whatever you can still make out is what people see first. If that isn't your key message, your hierarchy is wrong: make the important thing bigger, bolder or give it more space.
-{: #squint-test}
-
-<div class="compare compare--visual compare--stacked" markdown="1">
-<div class="compare-item compare-item--dont" markdown="1">
-<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Nothing survives</p>
-
-<img src="{{ '/images/communication/design/squint-dont.svg' | relative_url }}" alt="The busy yellow flyer, sharp and then blurred. Blurred, it turns into coloured stripes and blocks; nothing is readable and the date and the call to action disappear.">
-
-Blurred, it's just coloured stripes – the date and the sign-up link are lost.
-</div>
-<div class="compare-item compare-item--do" markdown="1">
-<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>The message survives</p>
-
-<img src="{{ '/images/communication/design/squint-do.svg' | relative_url }}" alt="The navy flyer, sharp and then blurred. Blurred, the large white headline and the orange Register now button still stand out, so the key message survives.">
-
-Blurred, you still see the headline and the orange button – exactly what matters.
-</div>
-</div>
-
-## Getting the details right
-Most of what follows comes from the CONVERGE workshop series talk *Design made easy for communicators*. It's worth watching in full – it covers colour, fonts and layout with plenty of examples.
-
-{% include video.html youtube="fFAlT51EPZQ" title="Design made easy for communicators (CONVERGE workshop series)" %}
-
-The specifics that fix most problems:
-
-### Colour – pick two, with intention
-
-**The ELIXIR palette.** From the [ELIXIR Brand Guidelines (2025)](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf). Royal blue is the primary colour and grey the neutral; orange and olive green are accents.
-
-<div class="palette-swatches">
-  <div class="swatch"><span class="swatch-chip" style="background:#023452"></span><b>Royal blue</b><code>#023452</code><small>Primary</small></div>
-  <div class="swatch"><span class="swatch-chip" style="background:#4d4848"></span><b>Neutral grey</b><code>#4d4848</code><small>Primary / text</small></div>
-  <div class="swatch"><span class="swatch-chip" style="background:#f47d20"></span><b>Bright orange</b><code>#f47d20</code><small>Accent</small></div>
-  <div class="swatch"><span class="swatch-chip" style="background:#bebf32"></span><b>Olive green</b><code>#bebf32</code><small>Accent</small></div>
-</div>
-
-Copy these hex codes into any design tool or AI prompt.
-
-* Two colours are usually enough to create contrast. Use an **accent colour for one purpose only** (e.g. links), so it keeps its meaning.
-* Use **tints of the same colour** rather than reaching for new ones. The Brand Guidelines give official tints of each ELIXIR colour at 75%, 50% and 25%.
-* **Don't be afraid of dark backgrounds** – they can look striking and professional, not just white-on-white.
-* Test your palette for contrast and colour-blindness before you commit – the Brand Guidelines recommend the [WebAIM contrast checker](https://webaim.org/resources/contrastchecker/); [Coolors](https://coolors.co/), [Adobe Color](https://color.adobe.com/create) and [Buttonbuddy](https://buttonbuddy.dev/) also do this for free.
+**Two colours and one accent.** In ELIXIR materials, royal blue and white do most of the work; orange is the accent – use it once, on the thing that matters. And every text colour has to pass a contrast check.
 
 <div class="compare compare--visual" markdown="1">
 <div class="compare-item compare-item--dont" markdown="1">
@@ -139,9 +119,26 @@ Navy and white do the work; orange is used once, on the number that matters.
 </div>
 </div>
 
-<p class="contrast-chips-intro"><b>Check the contrast of every text colour.</b> The ELIXIR palette works – in the right combinations. Normal text needs at least 4.5:1.</p>
+{% include quick-check.html question="Orange text on a white background – does it pass the contrast check?" options="Yes – it's an ELIXIR colour|No – it's too pale for text" correct="2" explain="At 2.7:1 it's well below the 4.5:1 that normal text needs. Use orange for large or decorative elements, and bold to emphasise words in body text." %}
 
-{% include callout.html type="note" content="The Brand Guidelines suggest bright orange for highlighting text. On white, use it for large or decorative elements and use bold to emphasise words in body text, because orange text on white doesn't meet contrast requirements (2.7:1)." %}
+<details markdown="1">
+<summary>Go deeper: the ELIXIR palette and which colour pairs work</summary>
+
+From the [ELIXIR Brand Guidelines (2025)](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf). Royal blue is the primary colour and grey the neutral; orange and olive green are accents. Copy these hex codes into any design tool or AI prompt.
+
+<div class="palette-swatches">
+  <div class="swatch"><span class="swatch-chip" style="background:#023452"></span><b>Royal blue</b><code>#023452</code><small>Primary</small></div>
+  <div class="swatch"><span class="swatch-chip" style="background:#4d4848"></span><b>Neutral grey</b><code>#4d4848</code><small>Primary / text</small></div>
+  <div class="swatch"><span class="swatch-chip" style="background:#f47d20"></span><b>Bright orange</b><code>#f47d20</code><small>Accent</small></div>
+  <div class="swatch"><span class="swatch-chip" style="background:#bebf32"></span><b>Olive green</b><code>#bebf32</code><small>Accent</small></div>
+</div>
+
+* Use **tints of the same colour** rather than reaching for new ones – the Brand Guidelines give official tints at 75%, 50% and 25%.
+* **Don't be afraid of dark backgrounds** – they can look striking and professional.
+* The Brand Guidelines suggest bright orange for highlighting text. On white, use it for large or decorative elements and bold for emphasis in body text, because orange text on white doesn't meet contrast requirements.
+* Test any other combination with the [WebAIM contrast checker](https://webaim.org/resources/contrastchecker/) (recommended by the Brand Guidelines); [Coolors](https://coolors.co/), [Adobe Color](https://color.adobe.com/create) and [Buttonbuddy](https://buttonbuddy.dev/) also check colour-blindness.
+
+Normal text needs at least 4.5:1:
 
 <div class="contrast-chips">
   <div class="contrast-chip contrast-chip--ok">
@@ -173,22 +170,14 @@ Navy and white do the work; orange is used once, on the number that matters.
     <p class="contrast-chip-text"><i class="fa-solid fa-xmark" aria-hidden="true"></i><b>2.0:1</b> olive on white<br><small>Decoration only</small></p>
   </div>
 </div>
+</details>
 
+<p class="lesson-label">Lesson 3 of 5 · about 3 minutes</p>
 
-### Fonts – one or two, paired with purpose
+## Type
+{: #type}
 
-* Stick to one or two. For ELIXIR that's **Open Sans** for slides, documents, posters and print, and **Lato** for websites (and wherever Open Sans isn't available).
-* Create hierarchy with **size and weight, not more fonts**. For documents and slides, the [Brand Guidelines](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf) (p. 16) recommend:
-
-| Text | Size | Style |
-| --- | --- | --- |
-| Document title | 28 pt | Bold, royal blue |
-| Headings | 14 pt and 12 pt | Bold, royal blue |
-| Body text | 10–11 pt, at least 1.15 line spacing | Regular, dark grey |
-| Smallest text (e.g. a copyright line) | Never below 8 pt | Regular |
-| Slides | At least 18 pt | – |
-
-* When you do need to pair fonts, a **sans-serif heading with a serif body (or vice versa)** is a reliable trick. [Fontjoy](https://fontjoy.com/) generates pairings for you.
+**One font; hierarchy from size and weight.** For ELIXIR that's **Open Sans** for slides, documents and print, and **Lato** for websites. Make the most important thing the biggest, and let everything else step down.
 
 <div class="compare compare--visual" markdown="1">
 <div class="compare-item compare-item--dont" markdown="1">
@@ -207,12 +196,30 @@ Size, weight and colour create the order: title, then subtitle, then detail.
 </div>
 </div>
 
+{% include quick-check.html question="Your slide needs a title, a subtitle and body text. How many fonts should it use?" options="One – vary the size and weight|Two – a different one for the title|Three – one per level" correct="1" explain="One font is enough: size, weight and colour create the order. If you ever pair two, pair a sans-serif with a serif – never three." %}
 
-### Layout – tidy beats fancy
+<details markdown="1">
+<summary>Go deeper: recommended sizes from the Brand Guidelines</summary>
 
-* The easiest win is **alignment, spacing and distribution**. Most amateur-looking designs aren't ugly, just untidy. In PowerPoint, select your objects and use the **Align** and **Distribute** tools instead of eyeballing it.
-* Align text blocks to the same edge, and give every paragraph the **same space before and after** it.
-* Use **blank space to separate sections**, and make headings and links obvious through colour and position.
+For documents and slides, the [Brand Guidelines](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf) (p. 16) recommend:
+
+| Text | Size | Style |
+| --- | --- | --- |
+| Document title | 28 pt | Bold, royal blue |
+| Headings | 14 pt and 12 pt | Bold, royal blue |
+| Body text | 10–11 pt, at least 1.15 line spacing | Regular, dark grey |
+| Smallest text (e.g. a copyright line) | Never below 8 pt | Regular |
+| Slides | At least 18 pt | – |
+
+When you do need to pair fonts, a **sans-serif heading with a serif body (or vice versa)** is a reliable trick – [Fontjoy](https://fontjoy.com/) generates pairings for you.
+</details>
+
+<p class="lesson-label">Lesson 4 of 5 · about 3 minutes</p>
+
+## Layout and the squint test
+{: #layout-and-squint-test}
+
+**Tidy beats fancy.** Most amateur-looking designs aren't ugly, just untidy: line things up, keep gaps even, use one text edge. Then check your hierarchy with the squint test.
 
 <div class="compare compare--visual" markdown="1">
 <div class="compare-item compare-item--dont" markdown="1">
@@ -231,30 +238,46 @@ Same content: one size, equal gaps, one left edge. That's the Align and Distribu
 </div>
 </div>
 
+**The squint test.** Squint at your design until it blurs – or step back from the screen. Whatever you can still make out is what people see first. If that isn't your key message, make it bigger, bolder or give it more space.
+{: #squint-test}
+
+<div class="compare compare--visual compare--stacked" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Nothing survives</p>
+
+<img src="{{ '/images/communication/design/squint-dont.svg' | relative_url }}" alt="The busy yellow flyer, sharp and then blurred. Blurred, it turns into coloured stripes and blocks; nothing is readable and the date and the call to action disappear.">
+
+Blurred, it's just coloured stripes – the date and the sign-up link are lost.
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>The message survives</p>
+
+<img src="{{ '/images/communication/design/squint-do.svg' | relative_url }}" alt="The navy flyer, sharp and then blurred. Blurred, the large white headline and the orange Register now button still stand out, so the key message survives.">
+
+Blurred, you still see the headline and the orange button – exactly what matters.
+</div>
+</div>
+
+{% include quick-check.html question="You squint at your flyer and the logo is the clearest thing on it. What does that tell you?" options="Good – the brand is visible|The hierarchy is wrong – your key message should stand out most|Nothing – squinting only tests colour" correct="2" explain="What survives the squint is what people see first. The message – the event, the date, the action – should win, not the logo." %}
+
+<details markdown="1">
+<summary>Go deeper: tidying a layout in PowerPoint</summary>
+
+* Select your objects and use the **Align** and **Distribute** tools instead of eyeballing it.
+* Align text blocks to the same edge, and give every paragraph the **same space before and after** it.
+* Use **blank space to separate sections**, and make headings and links obvious through colour and position.
+</details>
 
 <!-- Optional (slide from CONVERGE talk): the layout pair above could be swapped for the CONVERGE alignment before-and-after.
 <img src="{{ '/images/communication/design-alignment-before-after.png' | relative_url }}" alt="Before: a slide with a dense block of text and misaligned boxes. After: the same content tidied with aligned, evenly distributed boxes, clear headings and blank space between sections." class="img-fluid my-3">
 -->
 
+<p class="lesson-label">Lesson 5 of 5 · about 3 minutes</p>
 
-## Start from a template, not a blank page
-A blank canvas is where non-designers come unstuck. A good template has already made the hard decisions – hierarchy, spacing, fonts, colours – so you only change the content.
+## Let the tools do the production
+{: #tools}
 
-* Use the official ELIXIR templates and visuals from the [intranet branding page](https://elixir-europe.org/documents/elixir-logos-and-other-visuals) wherever one exists – they're on-brand by default.
-* In Adobe Express, find a clean template and **save your own ELIXIR-branded version** (correct colours, fonts, logo) once, then reuse it. The second flyer takes minutes.
-* Resist customising. Every change you make to a good template is a chance to make it worse. Change the words and the image; leave the structure alone.
-
-## Using AI tools well
-AI design tools (Adobe Express's AI features and general image tools) are genuinely useful for first drafts, layout ideas, resizing, removing backgrounds and generating supporting imagery. But they only produce something good if **you** bring the standard.
-
-### Prompt with constraints, not vibes
-A vague prompt gives generic output. Tell the tool exactly what it needs:
-
-* **Purpose and audience** – "a webinar announcement for researchers"
-* **Format and dimensions** – "LinkedIn post, square, 1080×1080"
-* **The one key message** – the single thing it must communicate
-* **Brand constraints** – the [ELIXIR palette](#colour--pick-two-with-intention) as exact hex codes and the font (Open Sans; Lato for web graphics)
-* **Tone** – "clean and professional, lots of whitespace, not busy"
+**Start from a template, and give AI constraints, not vibes.** A good template has already made the hard design decisions – use the official ELIXIR templates from the [intranet branding page](https://elixir-europe.org/documents/elixir-logos-and-other-visuals), or save your own ELIXIR-branded template in Adobe Express once and reuse it. When you use AI, tell it the purpose, the format, the one message, the brand colours and fonts, and the tone.
 
 <div class="compare" markdown="1">
 <div class="compare-item compare-item--dont" markdown="1">
@@ -269,14 +292,64 @@ A vague prompt gives generic output. Tell the tool exactly what it needs:
 </div>
 </div>
 
-### The hard rules
 {% include callout.html type="warning" content="Never let AI generate the ELIXIR logo, and never trust text baked into an AI image. AI mangles logos and produces gibberish or misspelled text. Generate the background or layout with AI if you like, then add the official logo (from the intranet branding page) and the real text yourself." %}
 
-* **Set the colours – don't hope.** AI won't respect the ELIXIR palette unless you give it the hex codes.
-* **Check accessibility.** Contrast, ALT text and never leave key information trapped inside the image – see [Chapter 5: Accessibility](05-comms-accessibility).
-* **If it looks off but you can't say why,** run it past the [What "good" looks like](#what-good-looks-like) table. It's almost always too much text, weak hierarchy or not enough whitespace.
+{% include quick-check.html question="Your AI tool keeps producing banners in random blues and greens. What's the fix?" options="Ask it to make it look more on-brand|Give it the exact ELIXIR hex codes|Try a different AI tool" correct="2" explain="AI won't respect the ELIXIR palette unless you give it the hex codes – #023452 royal blue and #f47d20 orange. Vague requests get vague results." %}
 
-## A workflow you can repeat
+<details markdown="1">
+<summary>Go deeper: what to put in a prompt, and template tips</summary>
+
+* **Purpose and audience** – "a webinar announcement for researchers"
+* **Format and dimensions** – "LinkedIn post, square, 1080×1080"
+* **The one key message** – the single thing it must communicate
+* **Brand constraints** – the [ELIXIR palette](#colour) as exact hex codes and the font (Open Sans; Lato for web graphics)
+* **Tone** – "clean and professional, lots of whitespace, not busy"
+
+With templates, resist customising: every change to a good template is a chance to make it worse. Change the words and the image; leave the structure alone. And always check accessibility – contrast, ALT text and never leaving key information trapped inside an image (see [Chapter 5: Accessibility](05-comms-accessibility)).
+</details>
+
+## Cheat sheet
+{: #cheat-sheet}
+Everything from this chapter on one card.
+
+<div class="cheat-sheet" markdown="1">
+<div class="cheat-sheet-block" markdown="1">
+<p class="cheat-sheet-title">Good looks like</p>
+
+* One message
+* Clear hierarchy
+* Generous whitespace
+* Things line up
+</div>
+<div class="cheat-sheet-block" markdown="1">
+<p class="cheat-sheet-title">Colour</p>
+
+* Royal blue `#023452`, orange accent `#f47d20`
+* Two colours, one accent
+* Text contrast at least 4.5:1
+* No orange text on white
+</div>
+<div class="cheat-sheet-block" markdown="1">
+<p class="cheat-sheet-title">Type</p>
+
+* Open Sans (print, slides) · Lato (web)
+* One font, size and weight for hierarchy
+* Body 10–11 pt, slides at least 18 pt
+</div>
+<div class="cheat-sheet-block" markdown="1">
+<p class="cheat-sheet-title">Check before you publish</p>
+
+* Squint: does the message survive?
+* Official logo, never AI-made
+* ALT text, no text as image
+* One other person has looked at it
+</div>
+</div>
+
+## Put it into practice
+
+A workflow you can repeat every time:
+
 - [ ] Define the **one message**, the **audience** and the **format/size** before opening any tool.
 - [ ] Start from an **ELIXIR template**, or set your brand constraints (palette hex codes, Open Sans / Lato).
 - [ ] Draft it – in Adobe Express or with an AI tool given a constraint-rich prompt.
@@ -286,10 +359,10 @@ A vague prompt gives generic output. Tell the tool exactly what it needs:
 - [ ] Get **one other person** to glance at it before you publish.
 
 <div class="exercise-box" markdown="1">
-## Exercise
+### Project: fix one real design
 Take a recent slide or flyer from your Node.
 
-1. Run it through the [What "good" looks like](#what-good-looks-like) table. Which two things are weakest?
+1. Run it through [What "good" looks like](#what-good-looks-like). Which two things are weakest?
 2. Either fix those two in your existing tool, **or** recreate it from an ELIXIR template (or an AI prompt with full brand constraints) and compare.
 3. Do the [squint test](#squint-test) on both versions. Does the key message survive?
 

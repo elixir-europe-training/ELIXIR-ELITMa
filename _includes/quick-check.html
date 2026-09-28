@@ -1,0 +1,30 @@
+{%- comment -%}
+A one-question check with instant feedback (inspired by Codecademy's in-lesson checks).
+Usage:
+  {% include quick-check.html
+     question="Orange text on white - does it pass the contrast check?"
+     options="Yes - it's an ELIXIR colour|No - it's too pale for text"
+     correct="2"
+     explain="At 2.7:1 it's well below the 4.5:1 normal text needs." %}
+  options - two to four answers, separated by |
+  correct - the number of the right answer (1 = first)
+  explain - one or two sentences, shown after any answer
+site-scripts.html makes the answers clickable and shows ✓/✗ feedback (announced to screen
+readers). Without JavaScript the answer and explanation are simply shown underneath.
+{%- endcomment -%}
+{%- assign quick_check_count = quick_check_count | plus: 1 -%}
+{%- assign qc_id = "quick-check-" | append: quick_check_count -%}
+{%- assign qc_options = include.options | split: "|" -%}
+{%- assign qc_correct = include.correct | plus: 0 -%}
+{%- assign qc_answer_index = qc_correct | minus: 1 -%}
+<div class="quick-check" data-correct="{{ qc_correct }}" data-explain="{{ include.explain | escape }}">
+  <p class="quick-check-label"><i class="fa-solid fa-circle-question" aria-hidden="true"></i>Quick check</p>
+  <p class="quick-check-question" id="{{ qc_id }}">{{ include.question }}</p>
+  <div class="quick-check-options" role="group" aria-labelledby="{{ qc_id }}">
+    {%- for option in qc_options %}
+    <button type="button" class="quick-check-option" data-index="{{ forloop.index }}" aria-pressed="false">{{ option | strip }}</button>
+    {%- endfor %}
+  </div>
+  <p class="quick-check-feedback" aria-live="polite"></p>
+  <p class="quick-check-answer"><b>Answer:</b> {{ qc_options[qc_answer_index] | strip }}. {{ include.explain }}</p>
+</div>
