@@ -78,6 +78,7 @@ Same event, same information, two results. Look at the left one first – then t
 
 
 **The squint test.** Look at your design and squint until it blurs – or step back from the screen. Whatever you can still make out is what people see first. If that isn't your key message, your hierarchy is wrong: make the important thing bigger, bolder or give it more space.
+{: #squint-test}
 
 <div class="compare compare--visual compare--stacked" markdown="1">
 <div class="compare-item compare-item--dont" markdown="1">
@@ -272,13 +273,13 @@ A vague prompt gives generic output. Tell the tool exactly what it needs:
 
 * **Set the colours – don't hope.** AI won't respect the ELIXIR palette unless you give it the hex codes.
 * **Check accessibility.** Contrast, ALT text and never leave key information trapped inside the image – see [Chapter 5: Accessibility](05-comms-accessibility).
-* **If it looks off but you can't say why,** run it past the "what good looks like" table. It's almost always too much text, weak hierarchy or not enough whitespace.
+* **If it looks off but you can't say why,** run it past the [What "good" looks like](#what-good-looks-like) table. It's almost always too much text, weak hierarchy or not enough whitespace.
 
 ## A workflow you can repeat
 - [ ] Define the **one message**, the **audience** and the **format/size** before opening any tool.
 - [ ] Start from an **ELIXIR template**, or set your brand constraints (palette hex codes, Open Sans / Lato).
 - [ ] Draft it – in Adobe Express or with an AI tool given a constraint-rich prompt.
-- [ ] **Judge** it against the "what good looks like" table and the squint test.
+- [ ] **Judge** it against the [What "good" looks like](#what-good-looks-like) table and the [squint test](#squint-test).
 - [ ] Fix the **one or two biggest problems** (usually: too much text, weak hierarchy).
 - [ ] Drop in the **official logo** and check **accessibility** (contrast, ALT, no text-as-image).
 - [ ] Get **one other person** to glance at it before you publish.
@@ -287,9 +288,9 @@ A vague prompt gives generic output. Tell the tool exactly what it needs:
 ## Exercise
 Take a recent slide or flyer from your Node.
 
-1. Run it through the "what good looks like" table. Which two things are weakest?
+1. Run it through the [What "good" looks like](#what-good-looks-like) table. Which two things are weakest?
 2. Either fix those two in your existing tool, **or** recreate it from an ELIXIR template (or an AI prompt with full brand constraints) and compare.
-3. Do the squint test on both versions. Does the key message survive?
+3. Do the [squint test](#squint-test) on both versions. Does the key message survive?
 
 The goal isn't a perfect design – it's to build the habit of **judging before publishing**, which is the only design skill you really need.
 </div>
