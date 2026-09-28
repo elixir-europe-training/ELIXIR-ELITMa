@@ -151,16 +151,3 @@ If only one or two perspectives are represented, important aspects of the data l
 ## What’s next
 
 You now have a clearer reason for developing or refining your Node data management strategy and a practical starting point. In Chapter 2, you will look more closely at the context in which the strategy needs to work.
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.task-list-item input[type="checkbox"]').forEach(function (cb, i) {
-      var key = 'task-' + window.location.pathname + '-' + i;
-      cb.removeAttribute('disabled');
-      cb.checked = localStorage.getItem(key) === 'true';
-      cb.addEventListener('change', function () {
-        localStorage.setItem(key, cb.checked);
-      });
-    });
-  });
-</script>
