@@ -61,7 +61,7 @@
   name: CONVERGE workshop series - Design made easy for communicators
   url: https://www.youtube.com/watch?v=fFAlT51EPZQ
   description: Practical video on design made easy for communicators - design tips for non-designers in research communications.
-  category: external_resource
+  category: internal_resource
   module: mod_comm
 
 
@@ -144,7 +144,7 @@
   name: CONVERGE workshop - communications tips for different audiences
   url: https://www.youtube.com/watch?v=th88pw_w52U
   description: Practical video on tailoring communications to different audiences.
-  category: external_resource
+  category: internal_resource
   module: mod_comm
 
 - id: writing-in-sciences

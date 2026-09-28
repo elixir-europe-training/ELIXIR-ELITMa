@@ -700,35 +700,6 @@ $reading-measure: 56rem;
   padding-top: 1.5rem;
   border-top: 1px solid $grey-light;
 
-  .module-pager-progress {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .module-pager-count {
-    flex-shrink: 0;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: $secondary;
-  }
-
-  .module-pager-bar {
-    flex: 1;
-    height: 6px;
-    border-radius: 999px;
-    background: $grey-light;
-    overflow: hidden;
-
-    span {
-      display: block;
-      height: 100%;
-      background: $accent-color;
-      border-radius: 999px;
-    }
-  }
-
   .module-pager-links {
     display: flex;
     flex-wrap: wrap;
@@ -830,57 +801,6 @@ $reading-measure: 56rem;
 }
 
 /*-----Route cards ("Before you start" pages)-----*/
-#content .route-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  gap: 1rem;
-  margin: 1.25rem 0 2rem;
-}
-
-.route-card {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 1.25rem;
-  border: 1px solid $grey-light;
-  border-top: 4px solid $secondary;
-  border-radius: $border-radius * 2;
-  background: $white;
-
-  p {
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-
-  .route-card-label {
-    margin-bottom: 0.35rem;
-    font-weight: 700;
-    color: $primary;
-  }
-
-  .route-card-steps {
-    margin: auto 0 0;
-    padding-top: 0.5rem;
-    font-weight: 700;
-    color: $link-blue;
-
-    a {
-      display: inline-block;
-      min-width: 2.2rem;
-      padding: 0.1rem 0.45rem;
-      border-radius: 999px;
-      background: $primary;
-      color: $white;
-      text-align: center;
-      text-decoration: none;
-
-      &:hover { background: $accent-color; color: $dark; }
-    }
-
-    small { font-weight: 400; color: $dark; white-space: nowrap; }
-  }
-}
-
 /*-----Chapter list ("Before you start" pages)-----*/
 #content .module-chapters {
   margin: 1rem 0 2rem;
@@ -973,44 +893,6 @@ $reading-measure: 56rem;
 }
 
 /*-----Learning pathways-----*/
-.route-card {
-  .route-card-start {
-    display: inline-flex;
-    align-items: center;
-    align-self: flex-start;
-    margin-top: 0.75rem;
-    padding: 0.4rem 0.9rem;
-    border-radius: $border-radius;
-    background: $accent-color-light;
-    border: 1px solid rgba($accent-color, 0.5);
-    color: $primary;
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-decoration: none;
-
-    &:hover { background: $accent-color; color: $dark; }
-  }
-
-  &.route-card--active {
-    border-top-color: $accent-color;
-    box-shadow: 0 0 0 2px rgba($accent-color, 0.5);
-
-    // Its own line above the title, never split across two lines.
-    .route-card-label::before {
-      content: "Your pathway";
-      display: block;
-      width: fit-content;
-      margin-bottom: 0.35rem;
-      white-space: nowrap;
-      padding: 0.05rem 0.5rem;
-      border-radius: 999px;
-      background: $accent-color;
-      color: $dark;
-      font-size: 0.85rem;
-    }
-  }
-}
-
 .pathway-bar {
   margin-top: 3.5rem;
   padding: 1.1rem 1.25rem;
@@ -1037,25 +919,6 @@ $reading-measure: 56rem;
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-  }
-
-  .pathway-dot {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 999px;
-    border: 2px solid $primary;
-    background: $white;
-    color: $primary;
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-decoration: none;
-
-    &.done { background: $primary-light; border-color: $primary-light; color: $dark; }
-    &.current { background: $primary; color: $white; }
-    &:hover { border-color: $accent-color; }
   }
 
   .pathway-bar-count {
@@ -1109,11 +972,6 @@ body.on-pathway .module-pager--chapters {
   display: none;
 }
 
-.route-card.route-card--full {
-  border-top-color: $primary;
-  background: $light;
-}
-
 /*-----Sidebar divider-----*/
 // The theme adds spacing (mt-3) above any sidebar item with `hr: true` in its
 // _data/sidebars file; draw a visible line there too, e.g. between the numbered
@@ -1151,7 +1009,7 @@ body.on-pathway .module-pager--chapters {
 #content :is(p, li, td, th, dd, blockquote, figcaption),
 #content .callout,
 #intro .summary {
-  a:not([class*="btn"]):not(.stretched-link):not(.pathway-dot) {
+  a:not([class*="btn"]):not(.stretched-link):not(.chapter-step) {
     color: $link-blue;
     text-decoration: underline;
     text-decoration-thickness: 1px;
@@ -1163,14 +1021,6 @@ body.on-pathway .module-pager--chapters {
       text-decoration-thickness: 2px;
     }
   }
-}
-
-// Chapter-number badges in the pathway cards are buttons in all but name.
-#content .route-card-steps a {
-  color: $white !important;
-  text-decoration: none !important;
-
-  &:hover { color: $dark !important; }
 }
 
 /*-----Inline code-----*/
@@ -1560,3 +1410,160 @@ ul.task-list li.task-list-item:has(> label) {
     color: $dark;
   }
 }
+
+/*-----Chapter stepper (after Codecademy's course overview)-----*/
+// Numbered circles, one per chapter, ending in a trophy. Grey ring = not yet
+// opened, orange ring = visited, filled orange = where you are now.
+.chapter-stepper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1.25rem;
+  padding: 0.6rem 1rem;
+  list-style: none;
+  border: 1px solid #DCE6EC;
+  border-radius: 999px;
+  width: fit-content;
+  max-width: 100%;
+
+  li { margin: 0 !important; }
+}
+
+.chapter-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 3px solid #E3E8EC;
+  border-radius: 999px;
+  background: $white;
+  color: $dark;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+
+  &:hover { border-color: $link-blue; transform: translateY(-1px); color: $dark; }
+  &:focus-visible { outline: 3px solid rgba($link-blue, 0.45); outline-offset: 2px; }
+
+  &.is-visited { border-color: $accent-color; }
+
+  &.is-current {
+    border-color: $accent-color;
+    background: $accent-color;
+    color: $dark;
+  }
+
+  &--finish {
+    border-color: transparent;
+    font-size: 1.15rem;
+    color: #9AA5AE;
+
+    &.is-visited { color: $accent-text; border-color: transparent; }
+  }
+}
+
+/*-----Pathway cards (after Codecademy's career-path cards)-----*/
+// Dark header strip naming the card type, bold title, short description, then
+// facts separated by dotted rules. Chapters shown as small numbered circles.
+#content .route-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0 2rem;
+  max-width: none;
+}
+
+.route-card {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid $primary;
+  border-radius: $border-radius;
+  background: $white;
+  box-shadow: 4px 4px 0 rgba($primary, 0.15);
+  overflow: hidden;
+
+  .route-card-kicker {
+    margin: 0;
+    padding: 0.35rem 0.9rem;
+    background: $primary;
+    color: $white;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .route-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0.9rem 0.9rem 1rem;
+  }
+
+  .route-card-label {
+    margin: 0 0 0.35rem;
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: $primary;
+  }
+
+  .route-card-desc {
+    margin: 0 0 0.75rem;
+    font-size: 0.93rem;
+    line-height: 1.5;
+  }
+
+  .route-card-facts {
+    list-style: none;
+    margin: auto 0 0.85rem;
+    padding: 0;
+    font-size: 0.9rem;
+
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem;
+      margin: 0 !important;
+      padding: 0.45rem 0;
+      border-top: 1px dotted #9AA5AE;
+    }
+
+    i { width: 1.1rem; color: $link-blue; }
+  }
+
+  .route-card-steps {
+    display: inline-flex;
+    gap: 0.3rem;
+    margin-left: 0.25rem;
+  }
+
+  .route-card-start {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: flex-start;
+    font-weight: 700;
+    color: $link-blue;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  &.route-card--active {
+    border-color: $accent-color;
+    box-shadow: 4px 4px 0 rgba($accent-color, 0.35);
+
+    .route-card-kicker { background: $accent-color; color: $dark; }
+  }
+}
+
+.chapter-step--sm {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-width: 2px;
+  font-size: 0.8rem;
+}
+

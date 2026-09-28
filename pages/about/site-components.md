@@ -22,7 +22,7 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `module-metadata.html` | Status, time, audience and learning-outcomes box at the top of a chapter | Added automatically by the `module-page` layout (see below); no need to include it by hand | – (reads front matter) |
 | `module-chapters.html` | Chapter timeline with the chapter count and total time | A module's main page | `sidebar` |
 | `module-pathways.html` | Learning-pathway cards, plus a "full module" card | A module's main page, once the module has a pathways file | `sidebar` |
-| `module-pager.html` | Previous/next chapter buttons with progress; "Back to chapter" on example pages; the pathway bar and its script; the shared checklist script | Added automatically at the bottom of every module page (via `related-pages.html`) | – |
+| `module-pager.html` | A row of numbered chapter circles ending in a trophy (visited chapters marked), previous/next chapter cards; "Back to chapter" on example pages; the pathway bar and its script; the shared checklist script | Added automatically at the bottom of every module page (via `related-pages.html`) | – |
 | `module-time.html` | Calculates a module's total time and status from its chapters ("ready" when every chapter is ready, otherwise "in development") | Used by `module-navigation.html` | `url` (the module main page) |
 | `module-navigation.html` | Module tiles with icon, description, status and calculated time | Home and Modules pages | `col` |
 | `module-tiles.html` | Tiles for a hand-picked list of pages | Any page (currently the main pages of modules still in planning) | `type`, `custom`, `col`, `sort` |
@@ -80,6 +80,7 @@ All custom styling is in `_sass/_custom_classes.scss`, in labelled sections. The
 Two small scripts, both in `module-pager.html`, store data only in the reader's own browser (`localStorage`); nothing is sent anywhere.
 
 * **Checklists** remember which boxes a reader ticked, per page.
+* **Chapter circles** remember which chapters a reader has opened (`visited-<sidebar>`), so those circles get a ring; the trophy lights up when all have been visited.
 * **Learning pathways** remember the chosen pathway (`pathway-<sidebar>`) and where to resume (`pathway-<sidebar>-next`). A link with `?path=<id>` starts a pathway and `?path=none` clears it. While a pathway is active, the pathway bar replaces the previous/next buttons.
 
 With JavaScript switched off, checklists simply can't be ticked and the normal previous/next buttons are shown.

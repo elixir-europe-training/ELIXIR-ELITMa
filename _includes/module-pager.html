@@ -47,12 +47,16 @@ A module with an empty sidebar simply renders nothing.
 {%- assign pager_prev_index = pager_index | minus: 1 -%}
 {%- assign pager_next_index = pager_index | plus: 1 -%}
 <nav class="module-pager module-pager--chapters" aria-label="Module chapters">
-  <div class="module-pager-progress">
-    <span class="module-pager-count">{% if pager_position == 0 %}Before you start{% else %}Chapter {{ pager_position }} of {{ pager_total }}{% endif %}</span>
-    <div class="module-pager-bar" role="progressbar" aria-valuenow="{{ pager_position }}" aria-valuemin="0" aria-valuemax="{{ pager_total }}" aria-label="Progress through the module">
-      <span style="width: {{ pager_percent }}%"></span>
-    </div>
-  </div>
+  {%- comment -%} A row of numbered circles, one per chapter, ending in a trophy (after Codecademy's course
+      overview). Current chapter filled; chapters already visited in this browser get a ring (script below). {%- endcomment %}
+  <p class="visually-hidden">Chapter {{ pager_position }} of {{ pager_total }}</p>
+  <ol class="chapter-stepper" data-sidebar="{{ page.sidebar }}">
+    {%- for item in pager_items %}
+    {%- assign step_num = item.title | slice: 0, 2 | plus: 0 %}
+    <li><a class="chapter-step{% if forloop.index0 == pager_index %} is-current{% endif %}" href="{{ item.url | relative_url }}" data-url="{{ item.url | relative_url }}" title="{{ item.title }}"{% if forloop.index0 == pager_index %} aria-current="step"{% endif %}><span class="visually-hidden">Chapter </span>{{ step_num }}<span class="visually-hidden">: {{ item.title | slice: 3, 200 }}</span></a></li>
+    {%- endfor %}
+    <li><a class="chapter-step chapter-step--finish" href="{{ pager_overview | relative_url }}" title="Module overview"><i class="fa-solid fa-trophy" aria-hidden="true"></i><span class="visually-hidden">Module overview</span></a></li>
+  </ol>
   <div class="module-pager-links">
     {%- if pager_index > 0 -%}
     {%- assign pager_prev = pager_items[pager_prev_index] %}
@@ -160,7 +164,7 @@ and the next chapter in the pathway. Without a pathway, or without JavaScript, n
     if (idx >= 0) {
       html += '<span class="pathway-bar-steps" aria-label="Step ' + (idx + 1) + ' of ' + total + '">';
       path.steps.forEach(function (s, i) {
-        html += '<a href="' + link(s) + '" class="pathway-dot' + (i < idx ? ' done' : '') + (i === idx ? ' current' : '') + '" title="' + esc(s.title) + '">' + esc(s.title.slice(0, 2)) + '</a>';
+        html += '<a href="' + link(s) + '" class="chapter-step' + (i < idx ? ' is-visited' : '') + (i === idx ? ' is-current' : '') + '" title="' + esc(s.title) + '"' + (i === idx ? ' aria-current="step"' : '') + '>' + parseInt(s.title.slice(0, 2), 10) + '</a>';
       });
       html += '</span><span class="pathway-bar-count">Step ' + (idx + 1) + ' of ' + total + '</span>';
     }
@@ -196,6 +200,28 @@ and the next chapter in the pathway. Without a pathway, or without JavaScript, n
   });
 </script>
 {%- endif %}
+
+<script>
+  // Chapter circles: remember which chapters this reader has opened (this browser only)
+  // and give those circles a ring; the trophy lights up when every chapter has been visited.
+  document.addEventListener('DOMContentLoaded', function () {
+    var stepper = document.querySelector('.chapter-stepper');
+    if (!stepper) return;
+    var key = 'visited-' + stepper.getAttribute('data-sidebar');
+    var visited = [];
+    try { visited = JSON.parse(localStorage.getItem(key) || '[]'); } catch (e) {}
+    var current = stepper.querySelector('.is-current');
+    if (current && visited.indexOf(current.getAttribute('data-url')) === -1) {
+      visited.push(current.getAttribute('data-url'));
+      try { localStorage.setItem(key, JSON.stringify(visited)); } catch (e) {}
+    }
+    var steps = stepper.querySelectorAll('.chapter-step[data-url]'), all = true;
+    steps.forEach(function (a) {
+      if (visited.indexOf(a.getAttribute('data-url')) !== -1) a.classList.add('is-visited'); else all = false;
+    });
+    if (all) stepper.querySelector('.chapter-step--finish').classList.add('is-visited');
+  });
+</script>
 
 {%- comment -%} Checklists on module pages remember their ticks in this browser. {%- endcomment -%}
 <script>
