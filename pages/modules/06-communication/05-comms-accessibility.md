@@ -21,9 +21,6 @@ ref_to_main_resources:
   - wave-checker
   - axe-checker
   - wcag-overview
-phase: Make it
-question: "Can everyone use what you publish?"
-takeaway: "An accessibility check of one of your pages"
 ---
 
 {% include module-metadata.html %}

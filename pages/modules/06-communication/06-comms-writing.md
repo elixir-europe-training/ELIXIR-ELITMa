@@ -20,9 +20,6 @@ ref_to_main_resources:
   - elixir-style-guide
   - elixir-hashtags
   - converge-comms
-phase: Make it
-question: "How do you write so people read?"
-takeaway: "A tighter opening for a real news item"
 ---
 {% include module-metadata.html %}
 

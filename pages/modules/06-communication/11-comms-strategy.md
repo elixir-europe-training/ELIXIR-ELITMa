@@ -20,9 +20,6 @@ related_pages:
 ref_to_main_resources:
   - steers-toolkit
   - comms-strategy
-phase: Show the difference
-question: "How does it all fit together?"
-takeaway: "The first row of your Node's communications strategy"
 ---
 
 {% include module-metadata.html %}

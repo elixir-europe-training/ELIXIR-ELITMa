@@ -20,9 +20,6 @@ related_pages:
 ref_to_main_resources:
   - google-analytics
   - ri-paths
-phase: Show the difference
-question: "How do you show what changed?"
-takeaway: "Your two-minute impact pitch"
 ---
 
 {% include module-metadata.html %}

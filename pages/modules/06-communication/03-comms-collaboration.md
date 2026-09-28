@@ -17,9 +17,6 @@ learning_outcomes:
 ref_to_main_resources:
   - comms-contacts-registry
   - comms-group
-phase: Get oriented
-question: "Who else in the network can help?"
-takeaway: "A drafted message proposing a joint effort with another Node"
 ---
 {% include module-metadata.html %}
 

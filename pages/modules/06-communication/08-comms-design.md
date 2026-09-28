@@ -26,9 +26,6 @@ ref_to_main_resources:
   - elixir-brand-guidelines
   - elixir-logos
   - converge-design
-phase: Make it
-question: "How do you judge a design?"
-takeaway: "One slide or flyer, improved"
 ---
 
 {% include module-metadata.html %}

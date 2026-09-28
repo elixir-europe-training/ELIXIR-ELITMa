@@ -15,13 +15,10 @@ learning_outcomes:
     - Recognise communication as a shared responsibility across all roles, not just dedicated comms staff
     - Audit your Node's current communication practices against a simple five-point framework
 related_pages:
-  Real_world_example: [comm-ex-matrix]
+  
 ref_to_main_resources:
   - ec-comms-tolkit
   - ri-comms-toolkit
-phase: Get oriented
-question: "Is communication in your Node working?"
-takeaway: "A quick audit of how your Node communicates today"
 ---
 
 {% include module-metadata.html %}

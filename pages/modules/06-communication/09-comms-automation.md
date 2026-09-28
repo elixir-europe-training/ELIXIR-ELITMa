@@ -23,9 +23,6 @@ ref_to_main_resources:
   - svg-maps
   - canva
   - adobe-express
-phase: Make it
-question: "How do you save time?"
-takeaway: "One tool set up and working"
 ---
 
 {% include module-metadata.html %}

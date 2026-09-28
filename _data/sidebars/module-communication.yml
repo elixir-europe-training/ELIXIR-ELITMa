@@ -1,8 +1,6 @@
 title: Communication Module
 title_url: modules/communication
 subitems:
-  - title: 00 Before you start
-    url: /00-comms-start
   - title: 01 Foundations of communication in RIs
     url: /01-comms-introduction
   - title: 02 Understanding your audience

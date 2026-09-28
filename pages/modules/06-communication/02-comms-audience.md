@@ -19,9 +19,6 @@ related_pages:
   Real_world_example: [comm-ex-matrix]
 ref_to_main_resources:
   - converge-comms
-phase: Get oriented
-question: "Who needs to hear from you?"
-takeaway: "A priority matrix and a persona for your top stakeholder"
 ---
 
 

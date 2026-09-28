@@ -21,9 +21,6 @@ ref_to_main_resources:
   - elixir-brand-guidelines
   - elixir-logos
   - elixir-style-guide
-phase: Make it
-question: "Which logo, which look?"
-takeaway: "A branding sense-check of a recent deck or flyer"
 ---
 
 {% include module-metadata.html %}

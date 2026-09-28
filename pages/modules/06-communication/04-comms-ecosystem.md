@@ -19,9 +19,6 @@ ref_to_main_resources:
   - sm-guidelines-nodes
   - sm-guidelines-members
   - node-newsletter-guidelines
-phase: Get oriented
-question: "Which ELIXIR channel for what?"
-takeaway: "A map of the channels you use – and the ones you are missing"
 ---
 
 {% include module-metadata.html %}
