@@ -56,21 +56,21 @@ A module with an empty sidebar simply renders nothing.
   <div class="module-pager-links">
     {%- if pager_index > 0 -%}
     {%- assign pager_prev = pager_items[pager_prev_index] %}
-    <a class="module-pager-link module-pager-link--prev" href="{{ pager_prev.url | relative_url }}">
-      <span class="module-pager-label"><i class="fa-solid fa-arrow-left me-1"></i>Previous chapter</span>
-      <span class="module-pager-title">{{ pager_prev.title }}</span>
+    <a class="module-pager-prev" href="{{ pager_prev.url | relative_url }}">
+      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+      <span><span class="module-pager-label">Previous</span> <span class="module-pager-title">{{ pager_prev.title }}</span></span>
     </a>
     {%- endif -%}
     {%- if pager_next_index < pager_count -%}
     {%- assign pager_next = pager_items[pager_next_index] %}
-    <a class="module-pager-link module-pager-link--next" href="{{ pager_next.url | relative_url }}">
-      <span class="module-pager-label">Next chapter<i class="fa-solid fa-arrow-right ms-1"></i></span>
-      <span class="module-pager-title">{{ pager_next.title }}</span>
+    <a class="next-button" href="{{ pager_next.url | relative_url }}">
+      <span class="next-button-text"><span class="next-button-label">Next chapter</span><span class="next-button-title">{{ pager_next.title }}</span></span>
+      <span class="next-button-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
     </a>
     {%- else %}
-    <a class="module-pager-link module-pager-link--next" href="{{ pager_overview | relative_url }}">
-      <span class="module-pager-label">You've finished the module<i class="fa-solid fa-flag-checkered ms-1"></i></span>
-      <span class="module-pager-title">Back to the {{ pager_nav.title }} overview</span>
+    <a class="next-button" href="{{ pager_overview | relative_url }}">
+      <span class="next-button-text"><span class="next-button-label">You've finished the module</span><span class="next-button-title">Back to the {{ pager_nav.title }} overview</span></span>
+      <span class="next-button-arrow" aria-hidden="true"><i class="fa-solid fa-flag-checkered"></i></span>
     </a>
     {%- endif %}
   </div>
@@ -86,9 +86,9 @@ A module with an empty sidebar simply renders nothing.
 {%- if pager_back_url %}
 <nav class="module-pager" aria-label="Module chapters">
   <div class="module-pager-links">
-    <a class="module-pager-link module-pager-link--prev" href="{{ pager_back_url | relative_url }}">
-      <span class="module-pager-label"><i class="fa-solid fa-arrow-left me-1"></i>Back to chapter</span>
-      <span class="module-pager-title">{{ pager_back_title }}</span>
+    <a class="module-pager-prev" href="{{ pager_back_url | relative_url }}">
+      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+      <span><span class="module-pager-label">Back to chapter</span> <span class="module-pager-title">{{ pager_back_title }}</span></span>
     </a>
   </div>
 </nav>
@@ -155,6 +155,10 @@ and the next chapter in the pathway. Without a pathway, or without JavaScript, n
     var total = path.steps.length;
     var link = function (s) { return s.url + '?path=' + id; };
     var esc = function (t) { var d = document.createElement('div'); d.textContent = t; return d.innerHTML; };
+    var nextButton = function (href, label, title, icon) {
+      return '<a class="next-button" href="' + href + '"><span class="next-button-text"><span class="next-button-label">' + esc(label) +
+        '</span><span class="next-button-title">' + esc(title) + '</span></span><span class="next-button-arrow" aria-hidden="true"><i class="fa-solid ' + icon + '"></i></span></a>';
+    };
 
     var html = '<div class="pathway-bar-head"><span class="pathway-bar-label"><i class="fa-solid fa-route me-1"></i>Your pathway: <b>' + esc(path.title) + '</b></span>';
     if (idx >= 0) {
@@ -169,14 +173,14 @@ and the next chapter in the pathway. Without a pathway, or without JavaScript, n
     var next = null;
     if (idx >= 0 && idx < total - 1) {
       next = path.steps[idx + 1];
-      html += '<a class="pathway-next" href="' + link(next) + '"><span class="pathway-next-label">Next in your pathway</span><span class="pathway-next-title">' + esc(next.title) + '</span></a>';
+      html += nextButton(link(next), 'Next in your pathway', next.title, 'fa-arrow-right');
     } else if (idx === total - 1) {
-      html += '<a class="pathway-next pathway-next--done" href="' + data.overview + '"><span class="pathway-next-label">Pathway complete <i class="fa-solid fa-flag-checkered ms-1"></i></span><span class="pathway-next-title">Back to the overview to choose another</span></a>';
+      html += nextButton(data.overview, 'Pathway complete', 'Back to the overview to choose another', 'fa-flag-checkered');
     } else {
       // Off the pathway: offer to go back to where they left off.
       var resume = store.get(data.key + '-next') || path.steps[0].url;
       var step = path.steps.filter(function (s) { return clean(s.url) === clean(resume); })[0] || path.steps[0];
-      html += '<a class="pathway-next" href="' + link(step) + '"><span class="pathway-next-label">Back to your pathway</span><span class="pathway-next-title">' + esc(step.title) + '</span></a>';
+      html += nextButton(link(step), 'Back to your pathway', step.title, 'fa-arrow-right');
     }
     html += '<button type="button" class="pathway-leave">Leave pathway</button>';
 
