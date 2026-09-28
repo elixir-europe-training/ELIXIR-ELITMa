@@ -12,6 +12,7 @@ $accent-color-light: #fdf9f6;
 // (#F47D20) and blue (#037EAB) are too light for small text on white or grey.
 $link-blue: #02678C;     // links: passes on white, grey tiles, cream boxes and callouts
 $accent-text: #A84E00;   // orange for small text, e.g. time chips
+$code-color: $dark;      // inline code (file names, fields): neutral, so it can't be mistaken for a link
 
 
 

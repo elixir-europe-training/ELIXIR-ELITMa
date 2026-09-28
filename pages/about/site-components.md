@@ -67,6 +67,7 @@ All custom styling is in `_sass/_custom_classes.scss`, in labelled sections. The
 * Text on orange (`#f47d20`) must be dark, not white: white on orange fails contrast.
 * The brand orange and blue are too light for **small text** on white or grey. Use the text-safe versions defined in `_bootstrap_variables.scss`: `$link-blue` (`#02678C`) for links and `$accent-text` (`#A84E00`) for orange text such as the time chips. Brand orange stays fine for accents, icons and backgrounds with dark text.
 * Links in running text are blue **and underlined**, so they don't rely on colour alone. Buttons, cards, tiles and menus are excluded because they already look clickable – see "Links in running text" in `_custom_classes.scss`.
+* Inline code (file names, front matter fields) is dark text on a light grey chip (`$code-color` plus "Inline code" in `_custom_classes.scss`) – neutral on purpose, so it can't be mistaken for a link.
 * Content cards used in running text (like the example card) must not have a fixed `height: 100%`, or they stretch to the height of the whole page.
 
 ## What runs in the reader's browser

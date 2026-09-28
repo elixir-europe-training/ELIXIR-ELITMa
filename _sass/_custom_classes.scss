@@ -1200,3 +1200,14 @@ body.on-pathway .module-pager--chapters {
   &:hover { color: $dark !important; }
 }
 
+/*-----Inline code-----*/
+// File names, front matter fields and similar: dark text on a light grey chip,
+// clearly different from links (blue, underlined) and from normal text.
+:not(pre) > code {
+  padding: 0.1em 0.35em;
+  border-radius: $border-radius;
+  background-color: #EEF1F4;
+  color: $dark;
+  font-size: 0.875em;
+}
+
