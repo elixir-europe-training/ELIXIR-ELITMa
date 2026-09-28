@@ -96,45 +96,47 @@ header .navbar {
 }
 
 /*-----------Button style----------*/
+// Content buttons (downloads, sign-ups, "Start with Chapter 1"...): light at rest,
+// clearly different on hover/focus. Pale blue fill + text-safe blue border and
+// navy text (11:1); solid blue with white text on hover (6.3:1).
 .btn-download {
   @extend .btn;
-
-  background-color: $secondary;
-  border: none;
-  color: $white;
-
-  border-radius: $btn-border-radius-sm;
-  font-weight: 600;
-  font-size: 0.875rem;
-  padding: 12px 28px;
-  text-decoration: $link-decoration;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba($secondary, 0.25);
-  
-  &:hover {
-    background-color: $primary;
-    color: $white;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba($primary, 0.5);
-  }
-  
-  &:active {
-    transform: translateY(0);
-  }
-  
-  .fas {
-    transition: transform 0.2s ease;
-  }
-  
-  &:hover .fas {
-    transform: translateY(-1px);
-  }
+  padding: 10px 22px;
+  font-size: 0.9rem;
 }
 
+.btn-download,
+#content .btn-primary {
+  background-color: #E6F2F7;
+  border: 1.5px solid $link-blue;
+  color: $primary;
+  font-weight: 700;
+  border-radius: $btn-border-radius-sm;
+  text-decoration: none;
+  box-shadow: none;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 
+  i { color: $link-blue; transition: color 0.15s ease; }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $link-blue;
+    border-color: $link-blue;
+    color: $white;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba($link-blue, 0.25);
+
+    i { color: $white; }
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+}
 
 // Icon sizing
 
