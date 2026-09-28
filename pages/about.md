@@ -24,11 +24,7 @@ Each online module is made of short chapters with practical exercises, checklist
 
 Experts from across the ELIXIR Nodes develop and deliver ELITMa modules for the benefit of the wider ELIXIR community. Each module has a dedicated contact person at the ELIXIR Hub to help align its development with the strategic goals of the Hub and Nodes.
 
-The programme is supported by the EU-funded [ELIXIR-STEERS](https://elixir-europe.org/about-us/how-funded/eu-projects/steers) project and [PeoplePulse](https://elixir-europe.org/internal-projects/commissioned-services/people), an internally funded ELIXIR project. Current work includes consolidating existing modules, developing online learning materials and finding collaborators for the modules that are still being planned – bringing together ELIXIR-STEERS, PeoplePulse, the ELIXIR Training Platform and contributors from across the Nodes.
-
-The portfolio is developed using Training Platform resources and good practice, and will be showcased through SPLASH – Skills, Professional development, Learning Assessment, Support and Help. The ELITMa team also coordinates with the Professionalising Careers in Research Infrastructures Focus Group.
-
-{% include callout.html type="note" content="The ELITMa programme was originally conceived with input from Ana Portugal Melo, whose early contributions were key to shaping its vision." %}
+The programme is supported by the EU-funded [ELIXIR-STEERS](https://elixir-europe.org/about-us/how-funded/eu-projects/steers) project and [PeoplePulse](https://elixir-europe.org/internal-projects/commissioned-services/people), an internally funded ELIXIR project. Current work includes consolidating existing modules, developing online learning materials and finding collaborators for the modules that are still being planned.
 
 ## Get involved
 
