@@ -137,9 +137,18 @@ A vague prompt gives generic output. Tell the tool exactly what it needs:
 * **Brand constraints** – the ELIXIR palette as exact hex codes (see the palette below) and the font (Open Sans; Lato for web graphics)
 * **Tone** – "clean and professional, lots of whitespace, not busy"
 
-> **Weak prompt:** "Make a nice banner for our webinar."
->
-> **Strong prompt:** "A clean, professional square banner (1080×1080) announcing an ELIXIR webinar for researchers. Use ELIXIR royal blue #023452 as the background and bright orange #f47d20 as the only accent, Open Sans for all text, generous whitespace. One headline, the date and space for a logo in the corner. Minimal, not busy."
+<div class="compare" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Weak prompt</p>
+
+"Make a nice banner for our webinar."
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>Strong prompt</p>
+
+"A clean, professional square banner (1080×1080) announcing an ELIXIR webinar for researchers. Use ELIXIR royal blue #023452 as the background and bright orange #f47d20 as the only accent, Open Sans for all text, generous whitespace. One headline, the date and space for a logo in the corner. Minimal, not busy."
+</div>
+</div>
 
 ### The hard rules
 {% include callout.html type="warning" content="Never let AI generate the ELIXIR logo, and never trust text baked into an AI image. AI mangles logos and produces gibberish or misspelled text. Generate the background or layout with AI if you like, then add the official logo (from the intranet branding page) and the real text yourself." %}

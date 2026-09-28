@@ -167,6 +167,40 @@ For a checklist, a worked answer or a how-to that not every reader needs. Keep t
 
 </details>
 
+### Before and after
+
+For showing a weak version next to a better one – a post, a sentence, a prompt. Change the two labels to suit; the ✗ and ✓ come with the classes.
+
+```html
+<div class="compare" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Weak prompt</p>
+
+"Make a nice banner for our webinar."
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>Strong prompt</p>
+
+"A clean square banner announcing an ELIXIR webinar. One headline, the date, lots of whitespace."
+</div>
+</div>
+```
+
+**Renders as:**
+
+<div class="compare" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Weak prompt</p>
+
+"Make a nice banner for our webinar."
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>Strong prompt</p>
+
+"A clean square banner announcing an ELIXIR webinar. One headline, the date, lots of whitespace."
+</div>
+</div>
+
 ### Example card
 
 A highlighted link to another page – usually a real-world example – placed where the reader needs it, rather than only at the bottom of the page. It uses the linked page's own title and description.

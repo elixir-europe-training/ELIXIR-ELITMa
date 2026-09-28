@@ -1226,3 +1226,44 @@ body.on-pathway .module-pager--chapters {
   cursor: pointer;
 }
 
+/*-----Before / after comparison-----*/
+// Weak vs better examples (a post, a prompt, a sentence). The label is real text
+// with an icon, so the difference never relies on colour alone.
+#content .compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1.75rem;
+  max-width: none;
+}
+
+.compare-item {
+  padding: 0.9rem 1.1rem;
+  border-radius: $border-radius * 2;
+  border-left: 5px solid;
+
+  > :last-child { margin-bottom: 0; }
+
+  .compare-label {
+    margin-bottom: 0.4rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    i { margin-right: 0.35rem; }
+  }
+
+  &--dont {
+    background: #FBF1F0;
+    border-left-color: #A5281B;
+    .compare-label { color: #A5281B; }   // 6.5:1
+  }
+
+  &--do {
+    background: #EEF6F0;
+    border-left-color: #1E6B34;
+    .compare-label { color: #1E6B34; }   // 5.9:1
+  }
+}
+

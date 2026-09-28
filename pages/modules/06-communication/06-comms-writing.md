@@ -164,13 +164,20 @@ A social media post is your short format and also your most public. It needs to 
 * Platform matters: LinkedIn allows slightly longer, more professional posts; Bluesky favours brevity and community tone; X is under review but currently still used by ELIXIR
 * Use hashtags strategically: ELIXIR has a list of standard hashtags on the intranet; do not overuse them.
 * Tag relevant accounts. Probably the most important part. Tag other Nodes, collaborators, people named in the work.
-* Always link to the full story
+* Always link to the full story – on LinkedIn, put the link in the first comment rather than the post (see below)
 
-**What not to write**
->We are pleased to announce the publication of new resources developed as part of the DATAREX project. #RDM #ELIXIR #FAIR #datastewardship #datamanagement #bioinformatics
+<div class="compare" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>What not to write</p>
 
-**What to write instead**:
->Less research data on hard drives. More data that can be found, understood and reused. ELIXIR members helped build the tools to make that happen. → [link] #RDM #FAIR #DataStewardship @ELIXIR-Europe
+We are pleased to announce the publication of new resources developed as part of the DATAREX project. #RDM #ELIXIR #FAIR #datastewardship #datamanagement #bioinformatics
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>What to write instead</p>
+
+Less research data on hard drives. More data that can be found, understood and reused. ELIXIR members helped build the tools to make that happen. → [link] #RDM #FAIR #DataStewardship @ELIXIR-Europe
+</div>
+</div>
 
 ### A note on LinkedIn
 {% include callout.html type="warning" content="LinkedIn's algorithm significantly deprioritises posts from organisational accounts compared to personal ones." %}
@@ -181,6 +188,14 @@ This means:
 * Encourage Node members to share organisational posts from their personal accounts. Amplification from individuals outperforms the original post.
 * Where appropriate, ask the people named in a story (researchers, project leads) to post about it themselves in their own voice.
 * Personal posts that tag the Node account perform better than posts from the Node account alone.
+
+**Links in LinkedIn posts.** LinkedIn favours content that keeps people on LinkedIn. For organic (non-paid) posts, an external link in the post text is widely observed to cut how many people see it – often noticeably. Paid, sponsored posts don't carry the same penalty. For organic posts:
+
+* Put the link in the **first comment**, and say so in the post ("link in the comments").
+* Or publish without the link and **edit it in** once the post has started to get engagement.
+* When the content itself is the point, post it **natively** – an image carousel, a document or a LinkedIn article – and link to the full version from there.
+
+{% include callout.html type="tip" content="The same applies whoever posts: a researcher's personal post with a link in the first comment will usually reach more people than the Node's page posting the link directly." %}
 
 ## Editing your own writing
 The hardest part of writing for non-writers is not the first draft – it is knowing what to cut.

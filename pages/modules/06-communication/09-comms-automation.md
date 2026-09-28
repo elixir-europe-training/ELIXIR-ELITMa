@@ -43,6 +43,8 @@ Why it helps:
 
 {% include callout.html type="warning" content="LinkedIn caveat: schedulers cannot automatically tag (@mention) other accounts on LinkedIn. Tagging is one of the most effective things you can do for reach (see Chapter 6: Writing for non-writers), so for any post where tagging collaborators or other Nodes matters, publish that one natively on LinkedIn and add the tags by hand. Don't let the convenience of scheduling cost you the reach that tagging brings." %}
 
+{% include callout.html type="note" content="Links cost reach on LinkedIn too: organic posts with an external link in the text are shown to fewer people (see Chapter 6: Writing for non-writers). Check whether your scheduler can add the link as a first comment; if it can't, schedule the post without the link and add the comment by hand once it's live." %}
+
 {% include callout.html type="tip" content="Coordinate with the Hub's social media calendar where you can (see Chapter 4: ELIXIR communications ecosystem). Posting on the same day as a consortium-wide push, and tagging other Nodes, multiplies reach for the same effort." %}
 
 ## Quick DIY visuals
