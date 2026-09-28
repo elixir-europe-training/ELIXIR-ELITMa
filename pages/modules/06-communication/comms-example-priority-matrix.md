@@ -19,13 +19,15 @@ Crucially, the map is **not set in stone**. ELIXIR-UK has redone it as the Node'
 
 The map was redrawn as ELIXIR-UK evolved. Compare the earlier version with the 2025 one:
 
-**Earlier version**
+<figure class="figure-diagram">
+  <img src="{{ '/images/communication/stakeholder-matrix-earlier.svg' | relative_url }}" alt="Power/interest grid, earlier ELIXIR-UK version. Manage closely: funders, active members. Keep satisfied: ELIXIR Hub and other Nodes. Keep informed: inactive members, global resource users, other UK data organisations. Monitor: potential members, other organisations, media and public." class="img-fluid my-3" style="max-width:760px;width:100%">
+  <figcaption>Earlier version</figcaption>
+</figure>
 
-<img src="{{ '/images/communication/stakeholder-matrix-earlier.svg' | relative_url }}" alt="Power/interest grid, earlier ELIXIR-UK version. Manage closely: funders, active members. Keep satisfied: ELIXIR Hub and other Nodes. Keep informed: inactive members, global resource users, other UK data organisations. Monitor: potential members, other organisations, media and public." class="img-fluid my-3" style="max-width:760px;width:100%">
-
-**2025 version**
-
-<img src="{{ '/images/communication/stakeholder-matrix-2025.svg' | relative_url }}" alt="Power/interest grid, 2025 ELIXIR-UK version. Manage closely: researchers and end-users, universities, infrastructure providers, supercomputing/HPC and AI, ELIXIR Hub and Nodes, BioFAIR, industry users. Keep satisfied: PIs, government and policy makers, funders, data and infrastructure leads, media. Keep informed: postdocs, research technical professionals, communities of practice, industry suppliers, ELIXIR-UK SIAB, EOSC UK Node, UKRI DRI programmes, strategic DRI. Monitor: allied networks, other DRIs, PhD students, other domains, publishers, other UK investments, international initiatives." class="img-fluid my-3" style="max-width:760px;width:100%">
+<figure class="figure-diagram">
+  <img src="{{ '/images/communication/stakeholder-matrix-2025.svg' | relative_url }}" alt="Power/interest grid, 2025 ELIXIR-UK version. Manage closely: researchers and end-users, universities, infrastructure providers, supercomputing/HPC and AI, ELIXIR Hub and Nodes, BioFAIR, industry users. Keep satisfied: PIs, government and policy makers, funders, data and infrastructure leads, media. Keep informed: postdocs, research technical professionals, communities of practice, industry suppliers, ELIXIR-UK SIAB, EOSC UK Node, UKRI DRI programmes, strategic DRI. Monitor: allied networks, other DRIs, PhD students, other domains, publishers, other UK investments, international initiatives." class="img-fluid my-3" style="max-width:760px;width:100%">
+  <figcaption>2025 version</figcaption>
+</figure>
 
 The full lists for each quadrant are in the tables below.
 

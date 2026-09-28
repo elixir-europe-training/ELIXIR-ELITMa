@@ -104,7 +104,7 @@ Most of what follows comes from the CONVERGE workshop series talk *Design made e
 
 The specifics that fix most problems:
 
-**Colour – pick two, with intention**
+#### Colour – pick two, with intention
 
 * Two colours are usually enough to create contrast. Use an **accent colour for one purpose only** (e.g. links), so it keeps its meaning.
 * Use **tints of the same colour** rather than reaching for new ones. The Brand Guidelines give official tints of each ELIXIR colour at 75%, 50% and 25%.
@@ -164,7 +164,7 @@ Navy and white do the work; orange is used once, on the number that matters.
 </div>
 
 
-**Fonts – one or two, paired with purpose**
+#### Fonts – one or two, paired with purpose
 
 * Stick to one or two. For ELIXIR that's **Open Sans** for slides, documents, posters and print, and **Lato** for websites (and wherever Open Sans isn't available).
 * Create hierarchy with **size and weight, not more fonts**. For documents and slides, the [Brand Guidelines](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf) (p. 16) recommend:
@@ -197,7 +197,7 @@ Size, weight and colour create the order: title, then subtitle, then detail.
 </div>
 
 
-**Layout – tidy beats fancy**
+#### Layout – tidy beats fancy
 
 * The easiest win is **alignment, spacing and distribution**. Most amateur-looking designs aren't ugly, just untidy. In PowerPoint, select your objects and use the **Align** and **Distribute** tools instead of eyeballing it.
 * Align text blocks to the same edge, and give every paragraph the **same space before and after** it.

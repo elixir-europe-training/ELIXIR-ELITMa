@@ -1459,24 +1459,21 @@ ul.task-list li.task-list-item:has(> label) {
 
 /*-----Level 3 headings-----*/
 // Were barely bigger than bold body text and the same colour, so they read as
-// a bold paragraph. Royal blue (as the Brand Guidelines ask for headings), a
-// little larger and heavier, with a short orange marker. Only headings directly
-// in the page text: those inside exercise boxes, panels and cards keep their style.
+// a bold paragraph. Now royal blue (as the Brand Guidelines ask for headings),
+// clearly below h2 in size and weight, and marked like a highlighter pen on
+// study notes: a band of the official 50% orange tint (Brand Guidelines p. 14)
+// behind the lower half of the words. site-scripts.html wraps the heading text
+// in .hl so the band follows each line when a heading wraps; without JavaScript
+// the heading is simply royal blue. Only headings directly in the page text.
 #content > h3 {
-  position: relative;
-  padding-left: 0.85rem;
-  font-size: 1.45rem;
-  font-weight: 800;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: $primary;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.2em;
-    bottom: 0.2em;
-    width: 4px;
-    border-radius: 2px;
-    background: $accent-color;
+  .hl {
+    padding: 0 0.15em;
+    background: linear-gradient(to bottom, transparent 42%, #FABE90 42%, #FABE90 82%, transparent 82%);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
 }
