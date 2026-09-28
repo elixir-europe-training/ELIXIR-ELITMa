@@ -119,7 +119,7 @@ Sometimes you'll prepare materials for a joint event with another organisation t
 
 The key is to **adapt, not abandon**: keep the messaging clear and make sure ELIXIR's involvement is unmistakable even within someone else's visual style.
 
-{% include callout.html type="tip" content="See it in practice: for the HDR UK & ELIXIR-UK Joint Hackathon (linked in the related pages below), ELIXIR-UK was the co-organising partner while HDR UK led and funded most of it - so the materials used HDR UK's branding with a clear hint of ELIXIR's. A good example of matching branding to your actual role." %}
+{% include example-card.html page_id="comm-ex-cobranding" lead="ELIXIR-UK co-organised this hackathon while HDR UK led and funded most of it – so the materials used HDR UK's branding with a clear hint of ELIXIR's. A good example of matching the branding to your actual role." %}
 
 ### 2. When the Node already has an established brand
 Some Nodes operate under the brand of an existing institute or organisation that doubles as the ELIXIR Node. That brand often predates ELIXIR membership and already carries national recognition, trust and established relationships with funders, researchers and policymakers.

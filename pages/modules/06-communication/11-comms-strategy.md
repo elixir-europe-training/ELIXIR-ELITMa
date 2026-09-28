@@ -67,6 +67,8 @@ Now connect everything. One row per objective and audience – and because KPIs 
   <i class="fas fa-download"></i>Download the strategy canvas template (Word)
 </a>
 
+{% include example-card.html page_id="comm-ex-uk-strategy" lead="ELIXIR-UK's communications strategy is an open, living version of this canvas – see how a Node turned objectives, audiences and channels into a plan it actually runs." %}
+
 <div class="exercise-box" markdown="1">
 ### Quick exercise: fill one row
 Don't try to complete the whole canvas now. Pick the **next thing your Node will announce** and fill in a single row: one objective, one key message, one audience, one channel and one KPI you could actually count.

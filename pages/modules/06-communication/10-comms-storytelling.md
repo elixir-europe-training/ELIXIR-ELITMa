@@ -43,8 +43,7 @@ You don't need narrative theory. One repeatable arc covers most cases:
 * Name the people involved – impact is human, and people stories travel furthest (see [Chapter 6: Writing for non-writers](06-comms-writing)).
 * Anchor it in one piece of evidence: a number, a quote, a case study.
 
-### See it in practice
-The clearest ELIXIR example is the [ELEAD before-and-after](comms-example-elead) – the same Annual Report content written first as a list of activities, then as an impact story for the people who shape policy and funding. Read both versions side by side; nothing was invented, only reframed.
+{% include example-card.html page_id="comm-ex-elead" lead="The same Annual Report content written first as a list of activities, then as an impact story for the people who shape policy and funding. Nothing was invented – only reframed." %}
 
 ### Same story, different audience
 Impact isn't one message. Reframe the *same* achievement for whoever you're talking to (this builds on [Chapter 2: Understanding your audience](02-comms-audience)):
