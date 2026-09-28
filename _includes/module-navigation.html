@@ -21,15 +21,16 @@
                     </div>
                 </div>
 
-                <!-- Bottom section: chips -->
-                {%- if current_page.time or current_page.status %}
+                <!-- Bottom section: chips (time is calculated from the module's chapters) -->
+                {%- include module-time.html url=current_page.url %}
+                {%- if module_time_label != "" or current_page.status %}
                 <div class="d-flex flex-wrap gap-2 mt-auto pt-3">
                     {%- if current_page.status %}
                     <span class="module-chip module-chip--status">{{ current_page.status }}</span>
                     {%- endif %}
-                    {%- if current_page.time %}
+                    {%- if module_time_label != "" %}
                     <span class="module-chip module-chip--time">
-                        <i class="fa-solid fa-clock me-1"></i>{{ current_page.time }}
+                        <i class="fa-solid fa-clock me-1"></i>{{ module_time_label }}
                     </span>
                     {%- endif %}
                 </div>
