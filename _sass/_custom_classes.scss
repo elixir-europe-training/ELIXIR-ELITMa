@@ -982,3 +982,154 @@ $reading-measure: 56rem;
     .module-chapter-time { display: none; }
   }
 }
+
+/*-----Learning pathways-----*/
+.route-card {
+  .route-card-start {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 0.75rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: $border-radius;
+    background: $accent-color-light;
+    border: 1px solid rgba($accent-color, 0.5);
+    color: $primary;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover { background: $accent-color; color: $dark; }
+  }
+
+  &.route-card--active {
+    border-top-color: $accent-color;
+    box-shadow: 0 0 0 2px rgba($accent-color, 0.5);
+
+    .route-card-label::after {
+      content: "Your pathway";
+      margin-left: 0.5rem;
+      padding: 0.05rem 0.5rem;
+      border-radius: 999px;
+      background: $accent-color;
+      color: $dark;
+      font-size: 0.68rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+  }
+}
+
+.pathway-bar {
+  margin-top: 3.5rem;
+  padding: 1.1rem 1.25rem;
+  border-radius: $border-radius * 2;
+  background: $accent-color-light;
+  border: 1px solid rgba($accent-color, 0.45);
+  border-left: 6px solid $accent-color;
+
+  .pathway-bar-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .pathway-bar-label {
+    font-size: 0.95rem;
+    color: $primary;
+    i { color: $accent-color; }
+  }
+
+  .pathway-bar-steps {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .pathway-dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    border: 2px solid $primary;
+    background: $white;
+    color: $primary;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    &.done { background: $primary-light; border-color: $primary-light; color: $dark; }
+    &.current { background: $primary; color: $white; }
+    &:hover { border-color: $accent-color; }
+  }
+
+  .pathway-bar-count {
+    margin-left: auto;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $secondary;
+  }
+
+  .pathway-next {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 0.9rem 1.1rem;
+    border-radius: $border-radius * 2;
+    background: $primary;
+    text-decoration: none;
+    transition: transform 120ms ease, box-shadow 120ms ease;
+
+    &:hover { transform: translateY(-2px); box-shadow: $box-shadow; }
+  }
+
+  .pathway-next-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+
+  .pathway-next-title {
+    font-weight: 700;
+    color: $white;
+  }
+
+  .pathway-leave {
+    margin-top: 0.6rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: $secondary;
+    font-size: 0.82rem;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover { color: $primary; }
+  }
+}
+
+// When following a pathway, the regular pager becomes the secondary option.
+body.on-pathway .module-pager {
+  margin-top: 1.5rem;
+
+  .module-pager-link--next {
+    background: $white;
+    border-color: $grey-light;
+    .module-pager-label { color: $secondary; }
+    .module-pager-title { color: $primary; }
+  }
+}
+
+.route-card.route-card--full {
+  border-top-color: $primary;
+  background: $light;
+}

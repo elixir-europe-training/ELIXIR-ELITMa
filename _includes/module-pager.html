@@ -34,6 +34,9 @@ A module with an empty sidebar simply renders nothing.
 {%- assign pager_overview = pager_nav.title_url | default: pager_nav["title-url"] -%}
 {%- assign pager_overview = pager_overview | prepend: "/" | append: "/" | replace: "//", "/" -%}
 
+{%- if site.data.pathways[page.sidebar] %}
+<nav id="pathway-bar" class="pathway-bar" aria-label="Your learning pathway" hidden></nav>
+{%- endif %}
 {%- if pager_index != nil -%}
 {%- assign pager_count = pager_items.size -%}
 {%- assign pager_last = pager_items | last -%}
@@ -91,6 +94,108 @@ A module with an empty sidebar simply renders nothing.
 </nav>
 {%- endif -%}
 {%- endif -%}
+
+{%- comment -%}
+Learning pathways (_data/pathways/<sidebar>.yml). If the reader has chosen a pathway
+(via ?path=<id> or earlier, stored in this browser), a bar above the pager shows their step
+and the next chapter in the pathway. Without a pathway, or without JavaScript, nothing changes.
+{%- endcomment -%}
+{%- assign pw_paths = site.data.pathways[page.sidebar] -%}
+{%- if pw_paths %}
+{%- assign pw_overview = pager_nav.title_url | default: pager_nav["title-url"] | prepend: "/" | append: "/" | replace: "//", "/" -%}
+<script type="application/json" id="pathway-data">
+{
+  "key": {{ page.sidebar | prepend: "pathway-" | jsonify }},
+  "overview": {{ pw_overview | relative_url | jsonify }},
+  "paths": {
+  {%- for path in pw_paths %}
+    {{ path.id | jsonify }}: {
+      "title": {{ path.title | jsonify }},
+      "steps": [
+      {%- assign pw_first = true -%}
+      {%- for chapter_id in path.chapters -%}
+        {%- assign pw_page = site.pages | where: "page_id", chapter_id | first -%}
+        {%- if pw_page == nil -%}{%- continue -%}{%- endif -%}
+        {%- assign pw_item = pager_nav.subitems | where: "url", pw_page.url | first -%}
+        {%- unless pw_first %},{% endunless -%}
+        {"url": {{ pw_page.url | relative_url | jsonify }}, "title": {{ pw_item.title | default: pw_page.title | jsonify }}}
+        {%- assign pw_first = false -%}
+      {%- endfor -%}
+      ]
+    }{% unless forloop.last %},{% endunless %}
+  {%- endfor %}
+  }
+}
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var el = document.getElementById('pathway-data');
+    if (!el) return;
+    var data = JSON.parse(el.textContent);
+    var store = {
+      get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+      set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
+      del: function (k) { try { localStorage.removeItem(k); } catch (e) {} }
+    };
+
+    // ?path=<id> starts (or switches) a pathway; ?path=none leaves it.
+    var params = new URLSearchParams(window.location.search);
+    var fromUrl = params.get('path');
+    if (fromUrl === 'none') { store.del(data.key); store.del(data.key + '-next'); }
+    else if (fromUrl && data.paths[fromUrl]) { store.set(data.key, fromUrl); }
+
+    var id = store.get(data.key);
+    var path = id && data.paths[id];
+    if (!path) return;
+
+    var clean = function (u) { return u.replace(/\.html$/, '').replace(/\/$/, ''); };
+    var here = clean(window.location.pathname);
+    var idx = -1;
+    path.steps.forEach(function (s, i) { if (clean(s.url) === here) idx = i; });
+    var total = path.steps.length;
+    var link = function (s) { return s.url + '?path=' + id; };
+    var esc = function (t) { var d = document.createElement('div'); d.textContent = t; return d.innerHTML; };
+
+    var html = '<div class="pathway-bar-head"><span class="pathway-bar-label"><i class="fa-solid fa-route me-1"></i>Your pathway: <b>' + esc(path.title) + '</b></span>';
+    if (idx >= 0) {
+      html += '<span class="pathway-bar-steps" aria-label="Step ' + (idx + 1) + ' of ' + total + '">';
+      path.steps.forEach(function (s, i) {
+        html += '<a href="' + link(s) + '" class="pathway-dot' + (i < idx ? ' done' : '') + (i === idx ? ' current' : '') + '" title="' + esc(s.title) + '">' + esc(s.title.slice(0, 2)) + '</a>';
+      });
+      html += '</span><span class="pathway-bar-count">Step ' + (idx + 1) + ' of ' + total + '</span>';
+    }
+    html += '</div>';
+
+    var next = null;
+    if (idx >= 0 && idx < total - 1) {
+      next = path.steps[idx + 1];
+      html += '<a class="pathway-next" href="' + link(next) + '"><span class="pathway-next-label">Next in your pathway</span><span class="pathway-next-title">' + esc(next.title) + '</span></a>';
+    } else if (idx === total - 1) {
+      html += '<a class="pathway-next pathway-next--done" href="' + data.overview + '"><span class="pathway-next-label">Pathway complete <i class="fa-solid fa-flag-checkered ms-1"></i></span><span class="pathway-next-title">Back to the overview to choose another</span></a>';
+    } else {
+      // Off the pathway: offer to go back to where they left off.
+      var resume = store.get(data.key + '-next') || path.steps[0].url;
+      var step = path.steps.filter(function (s) { return clean(s.url) === clean(resume); })[0] || path.steps[0];
+      html += '<a class="pathway-next" href="' + link(step) + '"><span class="pathway-next-label">Back to your pathway</span><span class="pathway-next-title">' + esc(step.title) + '</span></a>';
+    }
+    html += '<button type="button" class="pathway-leave">Leave pathway</button>';
+
+    // Remember where to resume (used by "Continue this pathway" on the main page).
+    if (idx >= 0) store.set(data.key + '-next', next ? next.url : path.steps[0].url);
+
+    var bar = document.getElementById('pathway-bar');
+    bar.innerHTML = html;
+    bar.hidden = false;
+    document.body.classList.add('on-pathway');
+    bar.querySelector('.pathway-leave').addEventListener('click', function () {
+      store.del(data.key); store.del(data.key + '-next');
+      bar.hidden = true;
+      document.body.classList.remove('on-pathway');
+      if (fromUrl) { params.delete('path'); history.replaceState(null, '', window.location.pathname + (params.toString() ? '?' + params : '') + window.location.hash); }
+    });
+  });
+</script>
+{%- endif %}
 
 {%- comment -%} Checklists on module pages remember their ticks in this browser. {%- endcomment -%}
 <script>

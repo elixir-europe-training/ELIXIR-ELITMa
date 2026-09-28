@@ -15,30 +15,11 @@ It won't turn you into a communications professional. It will help you communica
 
 {% include callout.html type="tip" content="You don't have to go in order. Every chapter stands on its own – use the buttons at the bottom of each page to move through the module, or jump straight to what you need." %}
 
-## Short on time? Pick a route
+## Short on time? Pick a pathway
 
-<div class="route-cards">
-  <div class="route-card">
-    <span class="route-card-label">New to communications</span>
-    <p>Start with the essentials: why it matters, who it's for and how to write for them.</p>
-    <p class="route-card-steps"><a href="{{ '/01-comms-introduction' | relative_url }}">01</a> → <a href="{{ '/02-comms-audience' | relative_url }}">02</a> → <a href="{{ '/06-comms-writing' | relative_url }}">06</a> <small>· about 45 min</small></p>
-  </div>
-  <div class="route-card">
-    <span class="route-card-label">New to ELIXIR</span>
-    <p>Find the people, channels and shared resources the network already has.</p>
-    <p class="route-card-steps"><a href="{{ '/03-comms-collaboration' | relative_url }}">03</a> → <a href="{{ '/04-comms-ecosystem' | relative_url }}">04</a> <small>· about 20 min</small></p>
-  </div>
-  <div class="route-card">
-    <span class="route-card-label">Making materials this week</span>
-    <p>Get a flyer, slide deck or post right – on brand and readable by everyone.</p>
-    <p class="route-card-steps"><a href="{{ '/05-comms-accessibility' | relative_url }}">05</a> → <a href="{{ '/07-comms-branding' | relative_url }}">07</a> → <a href="{{ '/08-comms-design' | relative_url }}">08</a> <small>· about 45 min</small></p>
-  </div>
-  <div class="route-card">
-    <span class="route-card-label">Planning or reporting</span>
-    <p>Set priorities, show your impact and turn it into a plan you can run.</p>
-    <p class="route-card-steps"><a href="{{ '/02-comms-audience' | relative_url }}">02</a> → <a href="{{ '/10-comms-storytelling' | relative_url }}">10</a> → <a href="{{ '/11-comms-strategy' | relative_url }}">11</a> <small>· about 50 min</small></p>
-  </div>
-</div>
+Pick a pathway and the chapter pages will guide you through it – each one shows your step and the next chapter on your route. You can leave a pathway at any time.
+
+{% include module-pathways.html sidebar="module-communication" %}
 
 ## How the pages work
 Every chapter uses the same few building blocks, so you always know what you're looking at:
