@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 202" role="img" aria-labelledby="t d">
+  <title id="t">One font, clear hierarchy</title>
+  <desc id="d">The same slide in one font: a large bold title, a medium subtitle, regular body text and a small grey detail line, so the order of reading is obvious.</desc>
+  <rect x="0.5" y="0.5" width="359" height="201" rx="6" fill="#ffffff" stroke="#d5dde2"/>
+
+  <text x="24" y="50" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="24" font-weight="800" fill="#023452">Open Data Workshop</text>
+  <text x="24" y="74" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="13" font-weight="600" fill="#02678C">Hands-on session for data stewards</text>
+  <text x="24" y="108" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="12" fill="#23303a">Learn to publish FAIR datasets in</text>
+  <text x="24" y="126" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="12" fill="#23303a">three practical steps.</text>
+  <text x="24" y="166" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="11" fill="#5f6368">14 March · Online · Free</text>
+</svg>

@@ -90,10 +90,79 @@ A few specifics, straight from the [CONVERGE "Design made easy for communicators
 * **Don't be afraid of dark backgrounds** – they can look striking and professional, not just white-on-white.
 * Test your palette for contrast and colour-blindness before you commit – [Coolors](https://coolors.co/), [Adobe Color](https://color.adobe.com/create) and [Buttonbuddy](https://buttonbuddy.dev/) all do this for free.
 
+<div class="compare compare--visual" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Five colours, no meaning</p>
+
+<img src="{{ '/images/communication/design/colour-dont.svg' | relative_url }}" alt="A slide using red, green, purple, blue and yellow for the title, text and boxes, so no colour means anything.">
+
+Every element shouts, so nothing stands out – and the yellow and orange text is hard to read.
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>Two colours and one accent</p>
+
+<img src="{{ '/images/communication/design/colour-do.svg' | relative_url }}" alt="A navy slide with white text; one orange accent marks the key number, so the eye goes straight to it.">
+
+Navy and white do the work; orange is used once, on the number that matters.
+</div>
+</div>
+
+<p class="contrast-chips-intro"><b>Check the contrast of every text colour.</b> The ELIXIR palette works – in the right combinations. Normal text needs at least 4.5:1.</p>
+
+<div class="contrast-chips">
+  <div class="contrast-chip contrast-chip--ok">
+    <div class="contrast-chip-sample" style="background:#ffffff"><svg viewBox="0 0 170 24" role="img" aria-hidden="true" focusable="false"><text x="0" y="17" fill="#023452" font-family="Lato, 'Open Sans', Arial, sans-serif" font-size="16" font-weight="700">Aa – Register now</text></svg></div>
+    <p class="contrast-chip-text"><i class="fa-solid fa-check" aria-hidden="true"></i><b>13:1</b> navy on white<br><small>Body text, headings</small></p>
+  </div>
+  <div class="contrast-chip contrast-chip--ok">
+    <div class="contrast-chip-sample" style="background:#ffffff"><svg viewBox="0 0 170 24" role="img" aria-hidden="true" focusable="false"><text x="0" y="17" fill="#4d4848" font-family="Lato, 'Open Sans', Arial, sans-serif" font-size="16" font-weight="700">Aa – Register now</text></svg></div>
+    <p class="contrast-chip-text"><i class="fa-solid fa-check" aria-hidden="true"></i><b>9:1</b> grey on white<br><small>Body text</small></p>
+  </div>
+  <div class="contrast-chip contrast-chip--ok">
+    <div class="contrast-chip-sample" style="background:#023452"><svg viewBox="0 0 170 24" role="img" aria-hidden="true" focusable="false"><text x="0" y="17" fill="#f47d20" font-family="Lato, 'Open Sans', Arial, sans-serif" font-size="16" font-weight="700">Aa – Register now</text></svg></div>
+    <p class="contrast-chip-text"><i class="fa-solid fa-check" aria-hidden="true"></i><b>4.8:1</b> orange on navy<br><small>Headings and accents</small></p>
+  </div>
+  <div class="contrast-chip contrast-chip--ok">
+    <div class="contrast-chip-sample" style="background:#f47d20"><svg viewBox="0 0 170 24" role="img" aria-hidden="true" focusable="false"><text x="0" y="17" fill="#023452" font-family="Lato, 'Open Sans', Arial, sans-serif" font-size="16" font-weight="700">Aa – Register now</text></svg></div>
+    <p class="contrast-chip-text"><i class="fa-solid fa-check" aria-hidden="true"></i><b>4.8:1</b> navy on orange<br><small>Buttons, labels</small></p>
+  </div>
+  <div class="contrast-chip contrast-chip--fail">
+    <div class="contrast-chip-sample" style="background:#ffffff"><svg viewBox="0 0 170 24" role="img" aria-hidden="true" focusable="false"><text x="0" y="17" fill="#f47d20" font-family="Lato, 'Open Sans', Arial, sans-serif" font-size="16" font-weight="700">Aa – Register now</text></svg></div>
+    <p class="contrast-chip-text"><i class="fa-solid fa-xmark" aria-hidden="true"></i><b>2.7:1</b> orange on white<br><small>Too pale for text</small></p>
+  </div>
+  <div class="contrast-chip contrast-chip--fail">
+    <div class="contrast-chip-sample" style="background:#f47d20"><svg viewBox="0 0 170 24" role="img" aria-hidden="true" focusable="false"><text x="0" y="17" fill="#ffffff" font-family="Lato, 'Open Sans', Arial, sans-serif" font-size="16" font-weight="700">Aa – Register now</text></svg></div>
+    <p class="contrast-chip-text"><i class="fa-solid fa-xmark" aria-hidden="true"></i><b>2.7:1</b> white on orange<br><small>Too pale for text</small></p>
+  </div>
+  <div class="contrast-chip contrast-chip--fail">
+    <div class="contrast-chip-sample" style="background:#ffffff"><svg viewBox="0 0 170 24" role="img" aria-hidden="true" focusable="false"><text x="0" y="17" fill="#bebf32" font-family="Lato, 'Open Sans', Arial, sans-serif" font-size="16" font-weight="700">Aa – Register now</text></svg></div>
+    <p class="contrast-chip-text"><i class="fa-solid fa-xmark" aria-hidden="true"></i><b>2.0:1</b> olive on white<br><small>Decoration only</small></p>
+  </div>
+</div>
+
+
 **Fonts – one or two, paired with purpose**
 
 * Stick to one or two. For ELIXIR that's **Open Sans** for slides, documents, posters and print, and **Lato** for websites (and wherever Open Sans isn't available).
 * When you do need to pair fonts, a **sans-serif heading with a serif body (or vice versa)** is a reliable trick. [Fontjoy](https://fontjoy.com/) generates pairings for you.
+
+<div class="compare compare--visual" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Four fonts, one size</p>
+
+<img src="{{ '/images/communication/design/fonts-dont.svg' | relative_url }}" alt="A slide mixing Impact, Comic Sans, Times and Courier, all at a similar size, so nothing stands out.">
+
+Four personalities fighting, and with everything the same size you don't know where to start reading.
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>One font, clear hierarchy</p>
+
+<img src="{{ '/images/communication/design/fonts-do.svg' | relative_url }}" alt="The same slide in one font: a large bold title, a medium subtitle, regular body text and a small grey detail line.">
+
+Size, weight and colour create the order: title, then subtitle, then detail.
+</div>
+</div>
+
 
 **Layout – tidy beats fancy**
 
@@ -101,7 +170,25 @@ A few specifics, straight from the [CONVERGE "Design made easy for communicators
 * Align text blocks to the same edge, and give every paragraph the **same space before and after** it.
 * Use **blank space to separate sections**, and make headings and links obvious through colour and position.
 
-<!-- TODO (slide from CONVERGE talk): add the alignment before-and-after here.
+<div class="compare compare--visual" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Untidy</p>
+
+<img src="{{ '/images/communication/design/layout-dont.svg' | relative_url }}" alt="Three boxes of different sizes, out of line with each other, with uneven gaps and a mix of centred and left-aligned text.">
+
+Nothing is technically wrong – it just looks careless. Boxes don't line up, gaps vary, text is centred in some boxes and not others.
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>Tidy</p>
+
+<img src="{{ '/images/communication/design/layout-do.svg' | relative_url }}" alt="The same three boxes at the same size, aligned in a row with equal gaps, all text aligned to the left edge.">
+
+Same content: one size, equal gaps, one left edge. That's the Align and Distribute tools doing the work.
+</div>
+</div>
+
+
+<!-- Optional (slide from CONVERGE talk): the layout pair above could be swapped for the CONVERGE alignment before-and-after.
 <img src="{{ '/images/communication/design-alignment-before-after.png' | relative_url }}" alt="Before: a slide with a dense block of text and misaligned boxes. After: the same content tidied with aligned, evenly distributed boxes, clear headings and blank space between sections." class="img-fluid my-3">
 -->
 

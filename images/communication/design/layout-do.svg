@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 202" role="img" aria-labelledby="t d">
+  <title id="t">Tidy layout</title>
+  <desc id="d">The same three boxes at the same size, aligned in a row with equal gaps, all text aligned to the left edge, and space around the group.</desc>
+  <rect x="0.5" y="0.5" width="359" height="201" rx="6" fill="#ffffff" stroke="#d5dde2"/>
+  <text x="24" y="40" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="16" font-weight="700" fill="#023452">Our services</text>
+  <rect x="24" y="60" width="96" height="80" rx="4" fill="#eef3f6" stroke="#c9d6de"/>
+  <text x="36" y="82" text-anchor="start" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="11" font-weight="700" fill="#023452">Training</text>
+  <rect x="36" y="92" width="60" height="4" rx="2" fill="#c9d6de"/>
+  <rect x="36" y="102" width="44" height="4" rx="2" fill="#c9d6de"/>
+  <rect x="132" y="60" width="96" height="80" rx="4" fill="#eef3f6" stroke="#c9d6de"/>
+  <text x="144" y="82" text-anchor="start" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="11" font-weight="700" fill="#023452">Data</text>
+  <rect x="144" y="92" width="60" height="4" rx="2" fill="#c9d6de"/>
+  <rect x="144" y="102" width="44" height="4" rx="2" fill="#c9d6de"/>
+  <rect x="240" y="60" width="96" height="80" rx="4" fill="#eef3f6" stroke="#c9d6de"/>
+  <text x="252" y="82" text-anchor="start" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="11" font-weight="700" fill="#023452">Tools</text>
+  <rect x="252" y="92" width="60" height="4" rx="2" fill="#c9d6de"/>
+  <rect x="252" y="102" width="44" height="4" rx="2" fill="#c9d6de"/>
+  <text x="24" y="172" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="10" fill="#5f6368">Find out more at our website</text>
+</svg>

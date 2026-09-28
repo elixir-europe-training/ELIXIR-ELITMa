@@ -1377,3 +1377,57 @@ ul.task-list li.task-list-item:has(> label) {
   font-weight: 700;
   font-size: 0.85rem;
 }
+
+// Picture examples inside before/after boxes (chapter 08).
+.compare--visual .compare-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.25rem 0 0.6rem;
+  border-radius: $border-radius;
+}
+
+.compare--visual .compare-item p:not(.compare-label) {
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/*-----Contrast swatches (chapter 08)-----*/
+// Real text, not pictures, so the samples are exactly what readers will see.
+#content .contrast-chips {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 1.75rem;
+  max-width: none;
+}
+
+.contrast-chip {
+  border: 1px solid $grey-light;
+  border-radius: $border-radius * 2;
+  overflow: hidden;
+  background: $white;
+
+  // The sample is a tiny SVG: it illustrates colour pairs (some deliberately
+  // failing), and the real-text ratio underneath carries the information.
+  .contrast-chip-sample {
+    padding: 0.85rem 0.75rem;
+    border-bottom: 1px solid $grey-light;
+
+    svg { display: block; width: 100%; max-width: 11rem; height: auto; }
+  }
+
+  .contrast-chip-text {
+    margin: 0;
+    padding: 0.5rem 0.75rem 0.6rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+
+    i { margin-right: 0.3rem; }
+    b { margin-right: 0.25rem; }
+    small { color: #5f6368; }
+  }
+
+  &--ok   .contrast-chip-text i { color: #1E6B34; }
+  &--fail .contrast-chip-text i { color: #A5281B; }
+}
