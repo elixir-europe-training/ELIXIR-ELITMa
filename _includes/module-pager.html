@@ -46,7 +46,7 @@ A module with an empty sidebar simply renders nothing.
 {%- assign pager_percent = pager_position | times: 100 | divided_by: pager_total -%}
 {%- assign pager_prev_index = pager_index | minus: 1 -%}
 {%- assign pager_next_index = pager_index | plus: 1 -%}
-<nav class="module-pager" aria-label="Module chapters">
+<nav class="module-pager module-pager--chapters" aria-label="Module chapters">
   <div class="module-pager-progress">
     <span class="module-pager-count">{% if pager_position == 0 %}Before you start{% else %}Chapter {{ pager_position }} of {{ pager_total }}{% endif %}</span>
     <div class="module-pager-bar" role="progressbar" aria-valuenow="{{ pager_position }}" aria-valuemin="0" aria-valuemax="{{ pager_total }}" aria-label="Progress through the module">

@@ -1117,16 +1117,10 @@ $reading-measure: 56rem;
   }
 }
 
-// When following a pathway, the regular pager becomes the secondary option.
-body.on-pathway .module-pager {
-  margin-top: 1.5rem;
-
-  .module-pager-link--next {
-    background: $white;
-    border-color: $grey-light;
-    .module-pager-label { color: $secondary; }
-    .module-pager-title { color: $primary; }
-  }
+// When following a pathway, the pathway bar replaces the chapter-order pager
+// (it has its own step count and next link). "Back to chapter" links stay.
+body.on-pathway .module-pager--chapters {
+  display: none;
 }
 
 .route-card.route-card--full {
