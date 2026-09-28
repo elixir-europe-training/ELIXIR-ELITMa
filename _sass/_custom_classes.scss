@@ -881,7 +881,7 @@ $reading-measure: 56rem;
     margin: auto 0 0;
     padding-top: 0.5rem;
     font-weight: 700;
-    color: $secondary;
+    color: $link-blue;
 
     a {
       display: inline-block;
@@ -1087,7 +1087,7 @@ $reading-measure: 56rem;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: $secondary;
+    color: $link-blue;
   }
 
   .pathway-next {
@@ -1121,7 +1121,7 @@ $reading-measure: 56rem;
     padding: 0;
     border: 0;
     background: none;
-    color: $secondary;
+    color: $link-blue;
     font-size: 0.82rem;
     text-decoration: underline;
     cursor: pointer;
@@ -1209,5 +1209,18 @@ body.on-pathway .module-pager--chapters {
   background-color: #EEF1F4;
   color: $dark;
   font-size: 0.875em;
+}
+
+/*-----Code comments-----*/
+// The theme's syntax colours draw comments in #999988 (2.8:1); use a grey that passes AA.
+.highlight :is(.c, .c1, .cm, .cs, .ch, .cd) {
+  color: #5f6368;
+}
+
+/*-----Checklist labels-----*/
+// site-scripts.html wraps each checklist item's text in a <label>; keep it inline.
+.task-list-item label {
+  display: inline;
+  cursor: pointer;
 }
 

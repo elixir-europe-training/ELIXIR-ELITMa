@@ -1,0 +1,34 @@
+{%- comment -%}
+Small accessibility fixes that run on every page (loaded from scroll-top.html):
+  - Checklist boxes (from "- [ ]" in Markdown) get an accessible name - the item's text -
+    and clicking the text ticks the box.
+  - Code blocks that scroll sideways can be reached and scrolled with the keyboard.
+The script that remembers checklist ticks lives in module-pager.html (module pages only).
+{%- endcomment -%}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.task-list-item').forEach(function (item, i) {
+      var cb = item.querySelector('input[type="checkbox"]');
+      if (!cb || cb.id) return;
+      cb.id = 'task-' + i;
+      var label = document.createElement('label');
+      label.setAttribute('for', cb.id);
+      while (cb.nextSibling) label.appendChild(cb.nextSibling);
+      item.appendChild(label);
+    });
+  });
+  // Once the web fonts are in, so code-block widths are final.
+  function markScrollableCode() {
+    document.querySelectorAll('#content .highlight, #content pre').forEach(function (el) {
+      if (el.scrollWidth > el.clientWidth && !el.hasAttribute('tabindex')) {
+        el.setAttribute('tabindex', '0');
+        el.setAttribute('role', 'region');
+        el.setAttribute('aria-label', 'Code example');
+      }
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(markScrollableCode); }
+    else { markScrollableCode(); }
+  });
+</script>

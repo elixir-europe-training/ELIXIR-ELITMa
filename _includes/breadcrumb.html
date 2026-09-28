@@ -4,7 +4,8 @@ The theme builds the trail from the URL, but module pages have flat permalinks
 (/01-comms-introduction), which would give just "Home > page". For pages with a module
 sidebar ("module-..."), the trail is built from the sidebar instead:
   Home > Modules > <module overview> > [parent chapter, for nested/example pages] > page
-Every other page falls through to the theme's original URL-based trail, copied verbatim.
+Every other page falls through to the theme's original URL-based trail, copied verbatim
+except for an accessible name on the home icon.
 {%- endcomment -%}
 {%- if page.sidebar contains "module-" -%}
 {%- assign bc_nav = site.data.sidebars[page.sidebar] -%}
@@ -27,7 +28,7 @@ Every other page falls through to the theme's original URL-based trail, copied v
 <nav id="breadcrumb" aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item mt-0">
-            <a href="{{ site.baseurl }}/" aria-label="Home"><i class="icon-house"></i></a>
+            <a href="{{ site.baseurl }}/" aria-label="Home"><i class="icon-house" aria-hidden="true"></i></a>
         </li>
         <li class="breadcrumb-item mt-0"><a href="{{ '/modules' | relative_url }}">Modules</a></li>
         {%- if bc_overview %}
@@ -45,7 +46,7 @@ Every other page falls through to the theme's original URL-based trail, copied v
     <ol class="breadcrumb">
         {% if crumbs.size > 0 %}
         <li class="breadcrumb-item mt-0">
-            <a href="{{ site.baseurl }}/"><i class="icon-house"></i></a>
+            <a href="{{ site.baseurl }}/" aria-label="Home"><i class="icon-house" aria-hidden="true"></i></a>
         </li>
         {% endif %}
         {% for crumb in crumbs offset: 1 %}
