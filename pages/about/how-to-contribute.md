@@ -148,7 +148,11 @@ A one-question check with instant feedback, right after you've taught an idea �
 
 {% include quick-check.html question="Orange text on a white background – does it pass the contrast check?" options="Yes – it's an ELIXIR colour|No – it's too pale for text" correct="2" explain="At 2.7:1 it's well below the 4.5:1 that normal text needs." %}
 
-Chapter 8 shows a whole chapter built as short lessons: an idea, one visual, a quick check, and the detail tucked into "Go deeper" panels.
+Chapter 8 shows a whole chapter built as short lessons: an idea, one visual, a quick check, and the detail tucked into "Go deeper" panels. To number the lessons, put a small label right above each lesson's heading:
+
+```html
+<p class="lesson-label">Lesson 1 of 5 · about 3 minutes</p>
+```
 
 ### Checklists
 
