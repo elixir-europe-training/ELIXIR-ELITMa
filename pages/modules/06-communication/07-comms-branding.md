@@ -43,10 +43,42 @@ Consistent branding is essential for building trust and recognition, both within
 ### Which logo, when?
 The Brand Guidelines define one simple rule of thumb: the logo follows **who the activity belongs to**.
 
-<figure class="figure-diagram">
-  <img src="{{ '/images/communication/which-logo-when.svg' | relative_url }}" alt="Three scenarios. One Node's own activity: use that Node's logo. An activity involving several Nodes: use the main ELIXIR logo, not a row of Node logos. A Node that is co-branded with a partner: place the Node logo alongside the partner logo, never next to the main ELIXIR logo.">
-  <figcaption>Schematic only – always use the real logo files from the intranet branding page.</figcaption>
-</figure>
+<div class="logo-gallery">
+  <div class="logo-card">
+    <div class="logo-card-previews">
+      <div class="logo-preview"><img src="{{ '/images/communication/logos/elixir-logo-standard.svg' | relative_url }}" alt="The main ELIXIR logo: grey ‘elixir’ wordmark with the orange helix forming the x"></div>
+      <div class="logo-preview logo-preview--dark"><img src="{{ '/images/communication/logos/elixir-logo-negative.svg' | relative_url }}" alt="The main ELIXIR logo in white and orange, for dark backgrounds"></div>
+    </div>
+    <p class="logo-card-title">Main ELIXIR logo</p>
+    <p class="logo-card-when">Activities involving more than one Node, and anything about ELIXIR as a whole.</p>
+  </div>
+  <div class="logo-card">
+    <div class="logo-card-previews">
+      <div class="logo-preview"><img src="{{ '/images/communication/logos/elixir-uk-logotype-default.svg' | relative_url }}" alt="The ELIXIR UK Node logo, standard version: the ELIXIR logo with ‘United Kingdom’ underneath"></div>
+      <div class="logo-preview logo-preview--dark"><img src="{{ '/images/communication/logos/elixir-uk-logotype-dark-bg.svg' | relative_url }}" alt="The ELIXIR UK Node logo, standard version, for dark backgrounds"></div>
+    </div>
+    <p class="logo-card-title">Node logo – standard</p>
+    <p class="logo-card-when">Your Node's own slides, posters and documents. The default choice.</p>
+  </div>
+  <div class="logo-card">
+    <div class="logo-card-previews">
+      <div class="logo-preview"><img src="{{ '/images/communication/logos/elixir-uk-logotype-expanded-default.svg' | relative_url }}" alt="The ELIXIR UK Node logo, horizontal version: ‘United Kingdom’ to the right of the ELIXIR logo"></div>
+      <div class="logo-preview logo-preview--dark"><img src="{{ '/images/communication/logos/elixir-uk-logotype-expanded-dark-bg.svg' | relative_url }}" alt="The ELIXIR UK Node logo, horizontal version, for dark backgrounds"></div>
+    </div>
+    <p class="logo-card-title">Node logo – horizontal</p>
+    <p class="logo-card-when">When the country name would be too small in the standard version.</p>
+  </div>
+  <div class="logo-card">
+    <div class="logo-card-previews">
+      <div class="logo-preview"><img src="{{ '/images/communication/logos/elixir-helix.svg' | relative_url }}" alt="The ELIXIR helix on its own"></div>
+      <div class="logo-preview logo-preview--dark"><img src="{{ '/images/communication/logos/elixir-helix.svg' | relative_url }}" alt="The ELIXIR helix on a dark background"></div>
+    </div>
+    <p class="logo-card-title">Helix only</p>
+    <p class="logo-card-when">Favicons and very small spaces where the full logo can't be read.</p>
+  </div>
+</div>
+
+<p class="logo-gallery-note">ELIXIR UK is shown as the example Node. Always download the official files – every Node's logo, in every version – from the <a href="https://elixir-europe.org/documents/elixir-logos-and-other-visuals">intranet branding page</a>.</p>
 
 | Situation | Use | Avoid |
 | --- | --- | --- |
@@ -54,6 +86,25 @@ The Brand Guidelines define one simple rule of thumb: the logo follows **who the
 | An activity involving **more than one Node** | The **main ELIXIR logo** | A row of several Node logos |
 | Your Node working with an external partner | Your **Node logo alongside the partner's logo** | Placing the Node logo next to the main ELIXIR logo – it already contains it |
 | Small spaces (favicons, tiny icons) | The **helix only** | Squashing the full logo |
+
+#### Getting the combination right
+
+<div class="compare" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Node logo next to the main ELIXIR logo</p>
+
+<div class="logo-pair"><img src="{{ '/images/communication/logos/elixir-uk-logotype-default.svg' | relative_url }}" alt="ELIXIR UK Node logo"><img src="{{ '/images/communication/logos/elixir-logo-standard.svg' | relative_url }}" alt="Main ELIXIR logo"></div>
+
+The Node logo already contains the ELIXIR logo, so the pair just repeats it.
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>Node logo beside the partner's</p>
+
+<div class="logo-pair"><img src="{{ '/images/communication/logos/elixir-uk-logotype-default.svg' | relative_url }}" alt="ELIXIR UK Node logo"><span class="logo-partner-placeholder">Partner logo</span></div>
+
+For a joint activity with an external partner, your Node logo sits alongside theirs.
+</div>
+</div>
 
 {% include callout.html type="tip" content="The fastest route to an on-brand output is not designing from scratch – it's starting from an approved template and only changing what you need to. A branded slide deck or event banner template removes most design decisions before you make them." %}
 
