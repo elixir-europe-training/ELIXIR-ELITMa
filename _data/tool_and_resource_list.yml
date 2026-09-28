@@ -114,12 +114,6 @@
   category: external_resource
   module: mod_comm
 
-- id: email-octopus
-  name: EmailOctopus
-  url: https://emailoctopus.com/
-  description: Email marketing tool with a generous free tier - a lower-cost alternative to Mailchimp for Node newsletters.
-  category: external_resource
-  module: mod_comm
 
 - id: google-analytics
   name: Google Analytics

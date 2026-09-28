@@ -1,7 +1,7 @@
 ---
 title: Automation and tools for efficient outreach
 description: You don't have time to do everything by hand. A few free tools, set up once, buy back hours every week.
-summary: "Communication work expands to fill all the time you give it. This chapter is about buying that time back: a handful of free tools and tricks - social scheduling, quick DIY visuals, email and automated reporting - that you set up once and reuse. It's not a martech course; pick one or two and start there."
+summary: "Communication work expands to fill all the time you give it. This chapter is about buying that time back: a handful of free tools and tricks - social scheduling, quick DIY visuals and automated reporting - that you set up once and reuse. It's not a martech course; pick one or two and start there."
 audience: [Communications Officers, Project Managers, Node Coordinators]
 page_img: /icons/icon-module-communication.svg
 time: 10 minutes
@@ -14,11 +14,10 @@ task_list: true
 learning_outcomes:
   - Batch and schedule social media instead of posting manually every day
   - Produce simple visuals and animations without a designer or paid software
-  - Choose lower-cost tools for email and reporting
+  - Automate reporting so the numbers are ready when you need them
   - Set up a minimal automation toolkit for your Node in about an hour
 ref_to_main_resources:
   - buffer
-  - email-octopus
   - google-analytics
   - svg-maps
   - canva
@@ -68,10 +67,9 @@ Export via *File → Export → Create Animated GIF*.
 
 {% include callout.html type="warning" content="Keep animations accessible: GIFs should be short, must not flash rapidly (a seizure risk), and still need ALT text or surrounding context. See Chapter 5: Accessibility." %}
 
-## Email without the overhead
-For Node newsletters and mailing campaigns, [EmailOctopus](https://emailoctopus.com/) offers a generous free tier and is a lower-cost alternative to Mailchimp. It handles sign-up forms, templates and basic automation.
-
-{% include callout.html type="note" content="This is for your Node's own audiences. To reach the whole consortium, use the ELIXIR Weekly Brief and mailing lists (Chapter 4) rather than building your own list." %}
+<!-- TODO: link a file listing recommended communication tools (e.g. email/newsletter
+tools, schedulers, design and analytics tools) with notes on cost and what each is for,
+and point to it from here. The previous EmailOctopus/Mailchimp section was removed. -->
 
 ## Automated reporting
 If you measure your communications (and you should – it's how you prove impact), don't pull the numbers by hand every month. Set up a [Google Analytics](https://analytics.google.com/) dashboard **once** to track website traffic, then check or share it whenever you need to.
@@ -84,7 +82,6 @@ You can put the essentials in place in about an hour. Tick them off as you go:
 - [ ] Connect **one** social scheduler (Buffer is the quickest start) and schedule a week of posts.
 - [ ] Build **one** ELIXIR-branded template in Canva or Adobe Express that you'll reuse.
 - [ ] Set up a **Google Analytics dashboard** for your main site or pages.
-- [ ] If you run a Node newsletter, set up an **email tool** (e.g. EmailOctopus).
 - [ ] Save all the tool logins somewhere your team can find them – automation only helps if it outlives one person.
 
 <div class="exercise-box" markdown="1">

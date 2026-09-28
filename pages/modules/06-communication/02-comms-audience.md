@@ -67,6 +67,8 @@ Use this to decide who gets a tailored message, who gets a standard update and w
   <i class="fas fa-download"></i>Download stakeholder matrix template (PowerPoint)
 </a>
 
+{% include example-card.html page_id="comm-ex-matrix" lead="See how ELIXIR-UK built its own stakeholder map – shown in two versions a few years apart – and why the matrix is a focusing tool that evolves, not a rulebook." %}
+
 
 ## The persona builder
 Once you know your priority stakeholders, the next step is understanding them well enough to communicate effectively. A persona is a brief profile of a stakeholder type – not a real individual, but a representative picture of what they care about, what they already know and what would make them pay attention.
