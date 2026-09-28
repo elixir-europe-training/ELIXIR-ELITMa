@@ -166,7 +166,7 @@ and the next chapter in the pathway. Without a pathway, or without JavaScript, n
     }
     html += '</div>';
 
-    var next = null, step = null;
+    var next = null;
     if (idx >= 0 && idx < total - 1) {
       next = path.steps[idx + 1];
       html += '<a class="pathway-next" href="' + link(next) + '"><span class="pathway-next-label">Next in your pathway</span><span class="pathway-next-title">' + esc(next.title) + '</span></a>';
@@ -175,28 +175,13 @@ and the next chapter in the pathway. Without a pathway, or without JavaScript, n
     } else {
       // Off the pathway: offer to go back to where they left off.
       var resume = store.get(data.key + '-next') || path.steps[0].url;
-      step = path.steps.filter(function (s) { return clean(s.url) === clean(resume); })[0] || path.steps[0];
+      var step = path.steps.filter(function (s) { return clean(s.url) === clean(resume); })[0] || path.steps[0];
       html += '<a class="pathway-next" href="' + link(step) + '"><span class="pathway-next-label">Back to your pathway</span><span class="pathway-next-title">' + esc(step.title) + '</span></a>';
     }
     html += '<button type="button" class="pathway-leave">Leave pathway</button>';
 
     // Remember where to resume (used by "Continue this pathway" on the main page).
     if (idx >= 0) store.set(data.key + '-next', next ? next.url : path.steps[0].url);
-
-    // Compact reminder at the top of the page, next to the breadcrumb.
-    var chip = document.getElementById('pathway-chip');
-    if (chip) {
-      var c = '<i class="fa-solid fa-route me-1" aria-hidden="true"></i>Your pathway:&nbsp;<b>' + esc(path.title) + '</b>';
-      if (idx >= 0) {
-        c += '<span class="pathway-chip-sep">·</span>Step ' + (idx + 1) + ' of ' + total;
-        if (next) c += '<span class="pathway-chip-sep">·</span><a href="' + link(next) + '">Next: ' + esc(next.title) + ' <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>';
-        else c += '<span class="pathway-chip-sep">·</span>Last step';
-      } else {
-        c += '<span class="pathway-chip-sep">·</span><a href="' + link(step) + '">Back to your pathway <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>';
-      }
-      chip.innerHTML = c;
-      chip.hidden = false;
-    }
 
     var bar = document.getElementById('pathway-bar');
     bar.innerHTML = html;
@@ -205,7 +190,6 @@ and the next chapter in the pathway. Without a pathway, or without JavaScript, n
     bar.querySelector('.pathway-leave').addEventListener('click', function () {
       store.del(data.key); store.del(data.key + '-next');
       bar.hidden = true;
-      if (chip) chip.hidden = true;
       document.body.classList.remove('on-pathway');
       if (fromUrl) { params.delete('path'); history.replaceState(null, '', window.location.pathname + (params.toString() ? '?' + params : '') + window.location.hash); }
     });

@@ -39,10 +39,6 @@ Every other page falls through to the theme's original URL-based trail, copied v
         <li class="breadcrumb-item last mt-0" aria-current="page">{{ page.title }}</li>
     </ol>
 </nav>
-{%- if site.data.pathways[page.sidebar] %}
-{%- comment -%} Filled in by the pathway script in module-pager.html when a pathway is active. {%- endcomment %}
-<div id="pathway-chip" class="pathway-chip" hidden></div>
-{%- endif %}
 {%- else -%}
 <nav id="breadcrumb" aria-label="breadcrumb">
     {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
