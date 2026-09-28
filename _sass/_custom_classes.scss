@@ -3,14 +3,21 @@
 //Example for highlighting the active page in the navigation:
 
 /*-----Top navigation-----*/
+// The navbar is dark navy, but the theme colours the active/hovered item navy too
+// ($topnav-link-color-active), which made it vanish. Top-level items only: the
+// dropdown menu is white and keeps the theme's styling.
+header .navbar .navbar-nav > .nav-item > .nav-link {
+  &:hover,
+  &:focus {
+    color: $white !important;
+    background-color: rgba($white, 0.12) !important;
+  }
 
-.navbar-nav .nav-item > a {
-    &.active {
-        // Dark text on the light-blue chip: white would be 1.75:1 on $primary-light.
-        color: $dark !important;
-        background-color: $primary-light;
-        border-radius: $border-radius;
-    }
+  &.active {
+    color: $white !important;
+    background-color: rgba($white, 0.12) !important;
+    box-shadow: inset 0 -3px 0 $accent-color;
+  }
 }
 
 /*------Footer------*/
@@ -92,7 +99,7 @@ header .navbar {
 .btn-download {
   @extend .btn;
 
-  background-color: $primary;
+  background-color: $secondary;
   border: none;
   color: $white;
 
@@ -105,10 +112,10 @@ header .navbar {
   align-items: center;
   gap: 8px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba($primary, 0.3);
+  box-shadow: 0 4px 15px rgba($secondary, 0.25);
   
   &:hover {
-    background-color: $secondary;
+    background-color: $primary;
     color: $white;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba($primary, 0.5);
@@ -623,12 +630,15 @@ $reading-measure: 56rem;
     &::after  { content: "Close"; }
   }
 
+  // Inset the panel content with margins, not padding, so lists keep their
+  // own left indent and bullets don't sit against the border.
   > :not(summary) {
-    padding: 0 1.25rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
 
-  > :not(summary):first-of-type { padding-top: 0.75rem; }
-  > :last-child { padding-bottom: 0.75rem; }
+  > :not(summary):first-of-type { margin-top: 0.75rem; }
+  > :last-child { margin-bottom: 0.75rem; }
 }
 
 /*-----Real-world example card-----*/

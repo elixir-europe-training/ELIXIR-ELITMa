@@ -4,4 +4,4 @@ permalink: modules
 sidebar: false
 ---
 
-{% include section-navigation-tiles.html type="Module" %}
+{% include module-navigation.html col=3 %}
