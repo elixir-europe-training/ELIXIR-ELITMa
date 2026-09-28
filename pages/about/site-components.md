@@ -72,6 +72,8 @@ All custom styling is in `_sass/_custom_classes.scss`, in labelled sections. The
 
 ## What runs in the reader's browser
 
+`site-scripts.html` (loaded on every page via the `scroll-top.html` override) makes small fixes: it labels checklist boxes for screen readers, makes wide code blocks keyboard-scrollable, and renames the mobile sidebar button to "Module navigation" / "Section navigation" (the theme builds that label from the sidebar file name).
+
 Two small scripts, both in `module-pager.html`, store data only in the reader's own browser (`localStorage`); nothing is sent anywhere.
 
 * **Checklists** remember which boxes a reader ticked, per page.

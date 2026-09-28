@@ -83,7 +83,7 @@ The Brand Guidelines define one simple rule of thumb: the logo follows **who the
 | Situation | Use | Avoid |
 | --- | --- | --- |
 | Your Node's own slides, posters, documents | Your **Node logo** (standard square version; horizontal if the country name gets too small) | Recolouring or redrawing any part of it |
-| An activity involving **more than one Node** | The **main ELIXIR logo** | A row of several Node logos |
+| An activity involving **more than one Node** | The **main ELIXIR logo** – the Brand Guidelines' rule. If each Node needs to be named (for a funder, say), list them in text beside it: "with ELIXIR Belgium, ELIXIR Netherlands and ELIXIR UK" | A row of Node logos – each one already contains the ELIXIR logo, so the row repeats the same helix and wordmark again and again |
 | Your Node working with an external partner | Your **Node logo alongside the partner's logo** | Placing the Node logo next to the main ELIXIR logo – it already contains it |
 | Small spaces (favicons, tiny icons) | The **helix only** | Squashing the full logo |
 
