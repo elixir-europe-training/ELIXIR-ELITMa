@@ -726,11 +726,15 @@ $reading-measure: 56rem;
   }
 
   .module-pager-link--next {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
     text-align: right;
-    align-items: flex-end;
     background: $primary;
     border-color: $primary;
 
+    .module-pager-text { display: flex; flex-direction: column; gap: 0.2rem; }
     .module-pager-label { color: $primary-light; }
     .module-pager-title { color: $white; }
   }
@@ -930,8 +934,11 @@ $reading-measure: 56rem;
 
   .pathway-next {
     display: flex;
-    flex-direction: column;
-    gap: 0.15rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .pathway-next-text { display: flex; flex-direction: column; gap: 0.15rem; }
     padding: 0.9rem 1.1rem;
     border-radius: $border-radius * 2;
     background: $primary;
@@ -1565,5 +1572,29 @@ ul.task-list li.task-list-item:has(> label) {
   height: 1.75rem;
   border-width: 2px;
   font-size: 0.8rem;
+}
+
+/*-----"Go" arrow on next links (pager and pathway bar)-----*/
+// A clear forward cue: an orange circle with a navy arrow (6.3:1) at the right
+// edge of the navy "next" card; it nudges forward on hover.
+.go-arrow {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  background: $accent-color;
+  color: $dark;
+  font-size: 1.1rem;
+  transition: transform 0.15s ease;
+}
+
+.module-pager-link--next:hover .go-arrow,
+.module-pager-link--next:focus-visible .go-arrow,
+.pathway-next:hover .go-arrow,
+.pathway-next:focus-visible .go-arrow {
+  transform: translateX(4px);
 }
 

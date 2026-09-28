@@ -68,13 +68,13 @@ A module with an empty sidebar simply renders nothing.
     {%- if pager_next_index < pager_count -%}
     {%- assign pager_next = pager_items[pager_next_index] %}
     <a class="module-pager-link module-pager-link--next" href="{{ pager_next.url | relative_url }}">
-      <span class="module-pager-label">Next chapter<i class="fa-solid fa-arrow-right ms-1"></i></span>
-      <span class="module-pager-title">{{ pager_next.title }}</span>
+      <span class="module-pager-text"><span class="module-pager-label">Next chapter</span><span class="module-pager-title">{{ pager_next.title }}</span></span>
+      <span class="go-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
     </a>
     {%- else %}
     <a class="module-pager-link module-pager-link--next" href="{{ pager_overview | relative_url }}">
-      <span class="module-pager-label">You've finished the module<i class="fa-solid fa-flag-checkered ms-1"></i></span>
-      <span class="module-pager-title">Back to the {{ pager_nav.title }} overview</span>
+      <span class="module-pager-text"><span class="module-pager-label">You've finished the module</span><span class="module-pager-title">Back to the {{ pager_nav.title }} overview</span></span>
+      <span class="go-arrow" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
     </a>
     {%- endif %}
   </div>
@@ -173,14 +173,14 @@ and the next chapter in the pathway. Without a pathway, or without JavaScript, n
     var next = null;
     if (idx >= 0 && idx < total - 1) {
       next = path.steps[idx + 1];
-      html += '<a class="pathway-next" href="' + link(next) + '"><span class="pathway-next-label">Next in your pathway</span><span class="pathway-next-title">' + esc(next.title) + '</span></a>';
+      html += '<a class="pathway-next" href="' + link(next) + '"><span class="pathway-next-text"><span class="pathway-next-label">Next in your pathway</span><span class="pathway-next-title">' + esc(next.title) + '</span></span><span class="go-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span></a>';
     } else if (idx === total - 1) {
-      html += '<a class="pathway-next pathway-next--done" href="' + data.overview + '"><span class="pathway-next-label">Pathway complete <i class="fa-solid fa-flag-checkered ms-1"></i></span><span class="pathway-next-title">Back to the overview to choose another</span></a>';
+      html += '<a class="pathway-next pathway-next--done" href="' + data.overview + '"><span class="pathway-next-text"><span class="pathway-next-label">Pathway complete</span><span class="pathway-next-title">Back to the overview to choose another</span></span><span class="go-arrow" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span></a>';
     } else {
       // Off the pathway: offer to go back to where they left off.
       var resume = store.get(data.key + '-next') || path.steps[0].url;
       var step = path.steps.filter(function (s) { return clean(s.url) === clean(resume); })[0] || path.steps[0];
-      html += '<a class="pathway-next" href="' + link(step) + '"><span class="pathway-next-label">Back to your pathway</span><span class="pathway-next-title">' + esc(step.title) + '</span></a>';
+      html += '<a class="pathway-next" href="' + link(step) + '"><span class="pathway-next-text"><span class="pathway-next-label">Back to your pathway</span><span class="pathway-next-title">' + esc(step.title) + '</span></span><span class="go-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span></a>';
     }
     html += '<button type="button" class="pathway-leave">Leave pathway</button>';
 
