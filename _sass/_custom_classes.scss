@@ -1030,6 +1030,13 @@ body.on-pathway .module-pager--chapters {
   }
 }
 
+// Callout tints (the note's grey-blue in particular) are too dark for $link-blue
+// (4.28:1), so links inside callouts use the royal blue, which passes on all of them.
+#content .callout a:not([class*="btn"]):not(.stretched-link):not(.chapter-step) {
+  color: $primary;
+  &:hover, &:focus { color: $primary; }
+}
+
 /*-----Inline code-----*/
 // File names, front matter fields and similar: dark text on a light grey chip,
 // clearly different from links (blue, underlined) and from normal text.
