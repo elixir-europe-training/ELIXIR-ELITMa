@@ -896,7 +896,7 @@ $reading-measure: 56rem;
       &:hover { background: $accent-color; color: $dark; }
     }
 
-    small { font-weight: 400; color: $dark; }
+    small { font-weight: 400; color: $dark; white-space: nowrap; }
   }
 }
 
@@ -1016,9 +1016,13 @@ $reading-measure: 56rem;
     border-top-color: $accent-color;
     box-shadow: 0 0 0 2px rgba($accent-color, 0.5);
 
-    .route-card-label::after {
+    // Its own line above the title, never split across two lines.
+    .route-card-label::before {
       content: "Your pathway";
-      margin-left: 0.5rem;
+      display: block;
+      width: fit-content;
+      margin-bottom: 0.35rem;
+      white-space: nowrap;
       padding: 0.05rem 0.5rem;
       border-radius: 999px;
       background: $accent-color;
@@ -1026,7 +1030,6 @@ $reading-measure: 56rem;
       font-size: 0.68rem;
       letter-spacing: 0.05em;
       text-transform: uppercase;
-      vertical-align: middle;
     }
   }
 }
