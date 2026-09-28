@@ -39,7 +39,7 @@ Icons: Font Awesome (fa-solid). Bootstrap Icons not loaded in this theme.
 
         {%- if page.status -%}
         <div class="border-start ps-3">
-          <div class="small text-muted text-uppercase module-meta-label">
+          <div class="small text-muted module-meta-label">
             <i class="fa-solid fa-circle-check me-1"></i>Status
           </div>
           <span class="badge bg-{{ page.status_badge | default: 'secondary' }}">
@@ -50,7 +50,7 @@ Icons: Font Awesome (fa-solid). Bootstrap Icons not loaded in this theme.
 
         {%- if page.time -%}
         <div class="border-start ps-3">
-          <div class="small text-muted text-uppercase module-meta-label">
+          <div class="small text-muted module-meta-label">
             <i class="fa-solid fa-clock me-1"></i>Time to complete
           </div>
           <span>{{ page.time }}</span>
@@ -59,7 +59,7 @@ Icons: Font Awesome (fa-solid). Bootstrap Icons not loaded in this theme.
 
         {%- if page.audience -%}
         <div class="border-start ps-3">
-          <div class="small text-muted text-uppercase module-meta-label">
+          <div class="small text-muted module-meta-label">
             <i class="fa-solid fa-users me-1"></i>Primary audience
           </div>
           <span>{{ page.audience | join: ", " }}</span>

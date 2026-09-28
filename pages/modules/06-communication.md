@@ -24,9 +24,9 @@ Pick a pathway and the chapter pages will guide you through it – each one show
 ## How the pages work
 Every chapter uses the same few building blocks, so you always know what you're looking at:
 
-* **Your turn** – exercises are in orange boxes. They take a few minutes and work best with a real project in front of you.
+* **Exercises** – in boxes with an orange edge. They take a few minutes and work best with a real project in front of you.
 * **Checklists** – tick them as you go. Your ticks are remembered in your browser, so you can come back later.
-* **Real-world examples** – dark blue cards link to how an ELIXIR Node actually did it. They're short, and often the most useful part.
+* **Real-world examples** – cards marked with a lightbulb link to how an ELIXIR Node actually did it. They're short, and often the most useful part.
 * **Templates** – download buttons give you editable PowerPoint and Word files to reuse.
 * **Dive deeper** – the table at the end of each page lists further resources. Some are on the ELIXIR intranet and need your consortium login.
 

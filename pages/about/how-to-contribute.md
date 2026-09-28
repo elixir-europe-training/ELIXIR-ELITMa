@@ -105,7 +105,12 @@ Provided by the theme. Use `note`, `tip`, `important` or `warning`, and keep the
 
 {% include callout.html type="tip" content="Start from an approved template, not a blank page." %}
 
-A callout's text can't contain Liquid (anything in `{% raw %}{{ }}{% endraw %}`) – it is printed as-is. If you need a link built with `relative_url`, put the sentence in normal text instead.
+A callout's text is printed as-is, so Liquid written straight into it (anything in `{% raw %}{{ }}{% endraw %}`) won't work. To put a link built with `relative_url` in a callout, build the text first with `capture`:
+
+```liquid
+{% raw %}{% capture impact_tip %}Assessing impact is covered by the [Impact module]({{ '/modules/impact/' | relative_url }}).{% endcapture %}
+{% include callout.html type="tip" content=impact_tip %}{% endraw %}
+```
 
 ### Exercise box
 

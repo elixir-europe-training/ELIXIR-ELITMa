@@ -106,6 +106,17 @@ The specifics that fix most problems:
 
 #### Colour – pick two, with intention
 
+**The ELIXIR palette.** From the [ELIXIR Brand Guidelines (2025)](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf). Royal blue is the primary colour and grey the neutral; orange and olive green are accents.
+
+<div class="palette-swatches">
+  <div class="swatch"><span class="swatch-chip" style="background:#023452"></span><b>Royal blue</b><code>#023452</code><small>Primary</small></div>
+  <div class="swatch"><span class="swatch-chip" style="background:#4d4848"></span><b>Neutral grey</b><code>#4d4848</code><small>Primary / text</small></div>
+  <div class="swatch"><span class="swatch-chip" style="background:#f47d20"></span><b>Bright orange</b><code>#f47d20</code><small>Accent</small></div>
+  <div class="swatch"><span class="swatch-chip" style="background:#bebf32"></span><b>Olive green</b><code>#bebf32</code><small>Accent</small></div>
+</div>
+
+Copy these hex codes into any design tool or AI prompt.
+
 * Two colours are usually enough to create contrast. Use an **accent colour for one purpose only** (e.g. links), so it keeps its meaning.
 * Use **tints of the same colour** rather than reaching for new ones. The Brand Guidelines give official tints of each ELIXIR colour at 75%, 50% and 25%.
 * **Don't be afraid of dark backgrounds** – they can look striking and professional, not just white-on-white.
@@ -236,25 +247,13 @@ A blank canvas is where non-designers come unstuck. A good template has already 
 ## Using AI tools well
 AI design tools (Adobe Express's AI features and general image tools) are genuinely useful for first drafts, layout ideas, resizing, removing backgrounds and generating supporting imagery. But they only produce something good if **you** bring the standard.
 
-### The ELIXIR palette – copy these into your prompt
-From the [ELIXIR Brand Guidelines (2025)](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf). Royal blue is the primary colour and grey the neutral; orange and olive green are accents.
-
-<div class="palette-swatches">
-  <div class="swatch"><span class="swatch-chip" style="background:#023452"></span><b>Royal blue</b><code>#023452</code><small>Primary</small></div>
-  <div class="swatch"><span class="swatch-chip" style="background:#4d4848"></span><b>Neutral grey</b><code>#4d4848</code><small>Primary / text</small></div>
-  <div class="swatch"><span class="swatch-chip" style="background:#f47d20"></span><b>Bright orange</b><code>#f47d20</code><small>Accent</small></div>
-  <div class="swatch"><span class="swatch-chip" style="background:#bebf32"></span><b>Olive green</b><code>#bebf32</code><small>Accent</small></div>
-</div>
-
-{% include callout.html type="tip" content="Orange and olive green work as text colours on dark backgrounds (e.g. on royal blue), but not as text on white – the contrast is too low. On white, keep text in royal blue or grey." %}
-
 ### Prompt with constraints, not vibes
 A vague prompt gives generic output. Tell the tool exactly what it needs:
 
 * **Purpose and audience** – "a webinar announcement for researchers"
 * **Format and dimensions** – "LinkedIn post, square, 1080×1080"
 * **The one key message** – the single thing it must communicate
-* **Brand constraints** – the ELIXIR palette as exact hex codes (see the palette below) and the font (Open Sans; Lato for web graphics)
+* **Brand constraints** – the [ELIXIR palette](#colour--pick-two-with-intention) as exact hex codes and the font (Open Sans; Lato for web graphics)
 * **Tone** – "clean and professional, lots of whitespace, not busy"
 
 <div class="compare" markdown="1">

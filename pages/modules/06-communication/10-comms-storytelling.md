@@ -108,4 +108,5 @@ When someone asks "what did your Node achieve this year?", you should be able to
 
 If you can say that clearly, you have both a story and the evidence behind it.
 
-Assessing the impact of the work itself – beyond communicating it – is covered by the [Impact module]({{ '/modules/impact/' | relative_url }}).
+{% capture impact_tip %}Assessing the impact of the work itself – beyond communicating it – is covered by the [Impact module]({{ '/modules/impact/' | relative_url }}).{% endcapture %}
+{% include callout.html type="tip" content=impact_tip %}
