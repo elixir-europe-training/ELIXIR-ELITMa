@@ -35,13 +35,15 @@ audience: [Communications Officers, Project Managers]
 learning_outcomes:
   - Identify and prioritise your Node's key stakeholder groups
 related_pages:
-  Real_world_example: [comm-ex-matrix]   # shown as "See it in practice" cards
+  Real_world_example: [comm-ex-matrix]   # example pages: shown as "See it in practice" cards
 ref_to_main_resources:
   - converge-comms                       # ids from _data/tool_and_resource_list.yml
 ---
 ```
 
 {% include callout.html type="warning" content="If a description or summary contains a colon followed by a space, wrap the whole value in double quotes, or the site will not build." %}
+
+`related_pages` can also list other pages by type (for example `Data management: [mod_dm_3]`); most modules show these as "Related pages" tiles at the bottom. The Communication module deliberately doesn't, because its chapters are already connected by the previous/next buttons and links in the text.
 
 The ETT documentation lists [every front matter field the theme understands](https://elixir-belgium.github.io/elixir-toolkit-theme/page_mechanics#possible-metadata-attributes-of-a-page).
 
@@ -69,6 +71,27 @@ You don't need to add it: every chapter gets the status, time, audience and lear
 ## Reusable components
 
 Use these to give chapters structure. Each one below shows the code to copy, then how it renders.
+
+### Links
+
+Write links in normal Markdown. They are styled automatically – blue and underlined, so they are readable and don't rely on colour alone – so don't add colours or HTML to them.
+
+* **Internal pages:** use the page's file name without `.md`, e.g. `(05-comms-accessibility)`. On a module's **main page** (which lives one folder deeper, at `/modules/<module>/`), write `({% raw %}{{ '/05-comms-accessibility' | relative_url }}{% endraw %})` instead, or the link will point to the wrong place.
+* **External sites:** use the full address. An icon marking external links is added automatically.
+* **Link text says where the link goes:** "read the ELIXIR Brand Guidelines", not "click here" or a bare URL. Screen-reader users often jump from link to link, so each one must make sense on its own.
+* **Intranet pages:** say so in the text, because readers outside the consortium can't open them.
+
+```markdown
+See [Chapter 5: Accessibility](05-comms-accessibility) before you publish.
+Download the [ELIXIR Brand Guidelines (PDF)](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf).
+```
+
+**Renders as:**
+
+See [Chapter 5: Accessibility](05-comms-accessibility) before you publish.
+Download the [ELIXIR Brand Guidelines (PDF)](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf).
+
+For more link options, see [Links](https://elixir-belgium.github.io/elixir-toolkit-theme/markdown_cheat_sheet#links) in the ETT documentation.
 
 ### Callouts
 
