@@ -305,9 +305,9 @@ You can make a smooth, looping GIF in PowerPoint alone – no AI and no video ed
 
 Export via *File → Export → Create Animated GIF*. Keep it short, never let it flash rapidly (a seizure risk), and give it ALT text or surrounding context (see [Chapter 5: Accessibility](05-comms-accessibility)).
 
-<!-- TODO (Xenia to add): worked example GIF + step screenshots.
-<img src="{{ '/images/communication/powerpoint-gif-example.gif' | relative_url }}" alt="A short looping GIF built in PowerPoint using motion paths and the Morph transition, where the final slide matches the first for a seamless loop." class="img-fluid my-3">
--->
+<img src="{{ '/images/communication/RDMkit_square_small.gif' | relative_url }}" alt="Animated square made in PowerPoint: the words 'Do you work with … data?' beside a large question mark, with the highlighted word changing from research to plant sciences, metagenomics, COVID-19 and human. It then fades to the RDMkit logo, 'data management made simple', and the ELIXIR CONVERGE logo, and loops." width="320" height="320" class="img-fluid my-3">
+
+*An RDMkit promo made in PowerPoint – five seconds, looping, under 0.5 MB.*
 </details>
 
 ## Put it into practice
