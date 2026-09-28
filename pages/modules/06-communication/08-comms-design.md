@@ -97,14 +97,14 @@ Blurred, you still see the headline and the orange button – exactly what matte
 </div>
 </div>
 
-### Getting the details right
+## Getting the details right
 Most of what follows comes from the CONVERGE workshop series talk *Design made easy for communicators*. It's worth watching in full – it covers colour, fonts and layout with plenty of examples.
 
 {% include video.html youtube="fFAlT51EPZQ" title="Design made easy for communicators (CONVERGE workshop series)" %}
 
 The specifics that fix most problems:
 
-#### Colour – pick two, with intention
+### Colour – pick two, with intention
 
 **The ELIXIR palette.** From the [ELIXIR Brand Guidelines (2025)](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf). Royal blue is the primary colour and grey the neutral; orange and olive green are accents.
 
@@ -175,7 +175,7 @@ Navy and white do the work; orange is used once, on the number that matters.
 </div>
 
 
-#### Fonts – one or two, paired with purpose
+### Fonts – one or two, paired with purpose
 
 * Stick to one or two. For ELIXIR that's **Open Sans** for slides, documents, posters and print, and **Lato** for websites (and wherever Open Sans isn't available).
 * Create hierarchy with **size and weight, not more fonts**. For documents and slides, the [Brand Guidelines](https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf) (p. 16) recommend:
@@ -208,7 +208,7 @@ Size, weight and colour create the order: title, then subtitle, then detail.
 </div>
 
 
-#### Layout – tidy beats fancy
+### Layout – tidy beats fancy
 
 * The easiest win is **alignment, spacing and distribution**. Most amateur-looking designs aren't ugly, just untidy. In PowerPoint, select your objects and use the **Align** and **Distribute** tools instead of eyeballing it.
 * Align text blocks to the same edge, and give every paragraph the **same space before and after** it.

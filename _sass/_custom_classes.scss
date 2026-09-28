@@ -1428,3 +1428,10 @@ ul.task-list li.task-list-item:has(> label) {
   font-weight: 600;
   color: $primary;
 }
+
+// Level 4: the theme draws these in the lighter link-like blue; keep all
+// headings royal blue so none can be mistaken for a link.
+#content > h4 {
+  font-weight: 700;
+  color: $primary;
+}
