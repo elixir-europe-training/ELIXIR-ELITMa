@@ -29,7 +29,9 @@ The instinct to solve communication problems in isolation is understandable — 
 
 The contact registry is one of the most practical resources available to you. It is a living list of the communications contacts across all Nodes – the people to reach when you need to disseminate something across the consortium, coordinate a joint campaign or simply ask for advice from someone who has done it before.
 
-<a href="https://elixir-europe.org/documents/elixir-communications-useful-information" class="btn btn-primary" target="_blank" rel="noopener">View the ELIXIR communications useful information page</a>
+The registry lives in the **ELIXIR communications useful information** document, together with each Node's social media accounts and the ELIXIR hashtags.
+
+<a href="https://docs.google.com/document/d/1OzY4IMhiz-_sZ54EtxPGGdqLOq8T_QJ7d6BMfejZGXk/edit?tab=t.0#heading=h.306gbb7w1q9d" class="btn btn-primary" target="_blank" rel="noopener">Open the ELIXIR communications useful information document</a>
 
 {% include callout.html type="important" content="The contact list is on the ELIXIR intranet. You must be logged in with your consortium credentials to view contact details." %}
 

@@ -219,16 +219,16 @@
 
 - id: elixir-hashtags
   name: ELIXIR social media hashtags and accounts
-  url:
-  description: The consortium's standard hashtags and account handles for social media (intranet).
+  url: https://docs.google.com/document/d/1OzY4IMhiz-_sZ54EtxPGGdqLOq8T_QJ7d6BMfejZGXk/edit?tab=t.0#heading=h.p7m0vv7tadl2
+  description: Hashtags for ELIXIR Communities, Platforms and projects, and every Node's social media accounts - in the ELIXIR communications useful information document.
   category: internal_resource
   module: mod_comm
 
 # --- Collaboration (Section 3) ---
 - id: comms-contacts-registry
-  name: ELIXIR communications contacts registry
-  url: https://elixir-europe.org/documents/elixir-communications-useful-information
-  description: Communications contacts in every Node and useful information for communicators, on the ELIXIR intranet (consortium login required).
+  name: ELIXIR communications useful information
+  url: https://docs.google.com/document/d/1OzY4IMhiz-_sZ54EtxPGGdqLOq8T_QJ7d6BMfejZGXk/edit?tab=t.0#heading=h.306gbb7w1q9d
+  description: Communications and website contacts in every Node, Node and project social media accounts, and ELIXIR hashtags (Google Doc).
   category: internal_resource
   module: mod_comm
 

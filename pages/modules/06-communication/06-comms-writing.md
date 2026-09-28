@@ -173,7 +173,7 @@ A social media post is your short format and also your most public. It needs to 
 * One idea per post, never try to communicate everything
 * Lead with the hook. Once again, inverted pyramid.
 * Platform matters: LinkedIn allows slightly longer, more professional posts; Bluesky favours brevity and community tone; X is under review but currently still used by ELIXIR
-* Use hashtags strategically: ELIXIR has a list of standard hashtags on the intranet; do not overuse them.
+* Use hashtags strategically: ELIXIR keeps a list of [standard hashtags and accounts](https://docs.google.com/document/d/1OzY4IMhiz-_sZ54EtxPGGdqLOq8T_QJ7d6BMfejZGXk/edit?tab=t.0#heading=h.p7m0vv7tadl2) for Nodes, Communities, Platforms and projects; do not overuse them.
 * Tag relevant accounts. Probably the most important part. Tag other Nodes, collaborators, people named in the work.
 * Always link to the full story – on LinkedIn, put the link in the first comment rather than the post (see below)
 
