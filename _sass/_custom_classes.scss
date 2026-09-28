@@ -1133,3 +1133,33 @@ body.on-pathway .module-pager {
   border-top-color: $primary;
   background: $light;
 }
+
+/*-----Pathway reminder under the breadcrumb-----*/
+.pathway-chip {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem 0;
+  margin: 0.35rem 0 0.25rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  background: $accent-color-light;
+  border: 1px solid rgba($accent-color, 0.45);
+  color: $primary;
+  font-size: 0.85rem;
+
+  i.fa-route { color: $accent-color; }
+
+  .pathway-chip-sep {
+    margin: 0 0.5rem;
+    color: $secondary;
+  }
+
+  a {
+    font-weight: 700;
+    color: $primary;
+    text-decoration: none;
+
+    &:hover { color: $accent-color; }
+  }
+}
