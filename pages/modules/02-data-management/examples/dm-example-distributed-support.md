@@ -3,7 +3,7 @@ title: From distributed support to coordinated RDM services
 description: How Nodes can make distributed RDM support, responsibilities and dependencies more visible
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: distributed-support-dm
+page_id: dm-ex-distributed-support
 type: Real_world_example
 back_to: mod_dm_2
 ---

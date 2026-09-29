@@ -11,7 +11,7 @@ sidebar: module-data-management
 summary: Data management activities already exist across roles, services, institutions and projects. A Node data management strategy can help create a coherent and consistent approach across these activities. This section explores why a coordinated strategy matters, how it can connect existing work, clarify scope and responsibilities and support practical first steps.
 related_pages:
   Real_world_example: 
-  - funders-dm
+  - dm-ex-funders-fairification
 learning_outcomes:
     - Explain why a Node data management strategy can support coordination, clarity and planning
     - Describe how a Node data management strategy connects existing services, roles, policies and activities
@@ -47,7 +47,7 @@ Strategy development is often triggered by external drivers such as funder requi
 
 Changes in requirements, services or research practices can also create a practical reason to improve coordination.
 
-{% include example-card.html page_ids="dm-ex-luxembourg-why-a-written-data-management-strategy, dm-ex-sweden-clarifying-the-node-remit, funders-dm" %}
+{% include example-card.html page_ids="dm-ex-luxembourg-why-a-written-data-management-strategy, dm-ex-sweden-clarifying-the-node-remit, dm-ex-funders-fairification" %}
 
 {% include callout.html type="note" content="Developing a strategy is not the responsibility of a single role. It requires input from coordination, data stewardship, technical teams and user-facing support to reflect the full data landscape." %}
 
@@ -138,7 +138,7 @@ You do not need everyone involved from the beginning. Start with the perspective
 {% include example-card.html page_ids="dm-ex-norway-bringing-infrastructures-together, dm-ex-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement" %}
 
 {% capture perspectives_warning %}
-If only one or two perspectives are represented, important aspects of the data landscape may be missed. If some perspectives are not available within your Node, consider involving relevant partners or checking your emerging strategy with them later. See <a href="{{ site.baseurl }}/roles-competences-dm">Roles, competences and your Node team</a> for examples of how relevant expertise may sit across different people and organisations.
+If only one or two perspectives are represented, important aspects of the data landscape may be missed. If some perspectives are not available within your Node, consider involving relevant partners or checking your emerging strategy with them later. See <a href="{{ site.baseurl }}/dm-example-roles-competences">Roles, competences and your Node team</a> for examples of how relevant expertise may sit across different people and organisations.
 {% endcapture %}
 
 {% include callout.html type="warning" content=perspectives_warning %}

@@ -3,7 +3,7 @@ title: From service idea to implementation
 description: Examples from ELIXIR Luxembourg on developing and implementing RDM services
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: implementation-dm
+page_id: dm-ex-implementation
 type: Real_world_example
 back_to: mod_dm_6
 ---

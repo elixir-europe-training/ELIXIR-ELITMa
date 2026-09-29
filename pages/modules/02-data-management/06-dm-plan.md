@@ -13,7 +13,7 @@ sidebar: module-data-management
 summary: Turn your selected priorities into a practical plan by defining actions, responsibilities, resources and dependencies.
 related_pages:
   Real_world_example: 
-  - implementation-dm
+  - dm-ex-implementation
 learning_outcomes:
   - Translate selected priorities into concrete actions
   - Identify responsibilities, resources and dependencies

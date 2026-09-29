@@ -3,7 +3,7 @@ title: Roles, competences and your Node team
 description: How to understand the expertise your Node needs and where it can come from
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: roles-competences-dm
+page_id: dm-ex-roles-competences
 type: Real_world_example
 back_to: mod_dm_2
 ---

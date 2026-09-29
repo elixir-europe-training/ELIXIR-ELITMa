@@ -11,9 +11,9 @@ sidebar: module-data-management
 summary: This chapter helps you build a shared understanding of your Node context by mapping governance, services, expertise, connections and gaps. It also guides you in forming an initial team and agreeing on a practical way to begin developing your data management strategy.
 related_pages:
   Real_world_example: 
-  - distributed-support-dm
-  - roles-competences-dm
-  - funders-dm
+  - dm-ex-distributed-support
+  - dm-ex-roles-competences
+  - dm-ex-funders-fairification
 learning_outcomes:
     - Describe the key elements that shape your Node context for data management
     - Identify the perspectives needed to begin developing a Node data management strategy
@@ -67,7 +67,7 @@ Use these questions to guide your first overview.
 | **Needs and gaps** | Which questions, support needs or training needs occur across the Node? Where is awareness limited or support difficult to find? | Different levels of awareness and demand for basic and advanced RDM training |
 | **Sustainability** | How are activities funded, staffed and maintained? What is stable, changing or uncertain? | Project funding, limited staff continuity or unclear long-term ownership |
 
-{% include example-card.html page_ids="dm-ex-spain-understanding-the-node-rdm-landscape-and-needs, dm-ex-sweden-mapping-the-data-service-landscape, funders-dm" %}
+{% include example-card.html page_ids="dm-ex-spain-understanding-the-node-rdm-landscape-and-needs, dm-ex-sweden-mapping-the-data-service-landscape, dm-ex-funders-fairification" %}
 
 {% include callout.html type="tip" content="Use what already exists. Strategies, Service Delivery Plans, surveys, service lists, maturity assessments and earlier mappings can all provide a starting point. The overview does not need to be created from scratch." %}
 

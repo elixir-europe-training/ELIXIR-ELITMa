@@ -13,8 +13,8 @@ sidebar: module-data-management
 summary: Use the results of your assessment to define a desired direction, clarify the Node role and identify priorities for further development.
 related_pages:
   Real_world_example: 
-  - roles-competences-dm
-  - service-scope-dm
+  - dm-ex-roles-competences
+  - dm-ex-service-scope
 learning_outcomes:
   - Interpret the results of your assessment
   - Define a desired direction for selected areas of the strategy
