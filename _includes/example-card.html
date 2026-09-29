@@ -6,9 +6,20 @@ Optional:
   lead="..."   one sentence on why to read it (defaults to the page's description)
   label="..."  the small heading (defaults to the page's type, e.g. "Real-world example")
   icon="..."   a Font Awesome icon name (defaults to "lightbulb")
+Several at once, side by side (two per row on wider screens):
+  {% include example-card.html page_ids="dm-ex-sweden-clarifying-the-node-remit, funders-dm" %}
 Also used by related-pages.html for the "See it in practice" block.
 {%- endcomment -%}
-{%- assign ex = site.pages | where: "page_id", include.page_id | first -%}
+{%- if include.page_ids -%}
+{%- assign ec_ids = include.page_ids | split: "," %}
+<div class="row row-cols-1 row-cols-md-2 g-3 example-tiles example-grid">
+  {%- for ec_id in ec_ids %}
+  <div class="col">{% include example-card.html page_id=ec_id label=include.label icon=include.icon %}</div>
+  {%- endfor %}
+</div>
+{%- else -%}
+{%- assign ec_one = include.page_id | strip -%}
+{%- assign ex = site.pages | where: "page_id", ec_one | first -%}
 {%- if ex %}
 {%- assign ex_label = ex.type | replace: "_", " " | replace: "Real world", "Real-world" -%}
 <div class="example-card">
@@ -21,3 +32,4 @@ Also used by related-pages.html for the "See it in practice" block.
   <span class="example-card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
 </div>
 {%- endif %}
+{%- endif -%}

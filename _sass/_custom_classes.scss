@@ -694,40 +694,8 @@ $reading-measure: 56rem;
   &:hover .example-card-arrow { transform: translateX(3px); }
 }
 
-// Line version (example-links.html): the examples a section refers to, as one quiet
-// line - lightbulb, label, links separated by dots - so a chapter that cites many
-// examples doesn't fill up with boxes.
-.example-card--links {
-  gap: 0.5rem;
-  margin: 1rem 0 1.25rem;
-  padding: 0;
-  background: none;
-  border: 0;
-  border-radius: 0;
-
-  &:hover, &:focus-within { border: 0; box-shadow: none; }
-
-  .example-card-icon { font-size: 0.95rem; line-height: 1.6rem; }
-
-  .example-card-body {
-    display: block;
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .example-card-label {
-    display: inline;
-    font-size: inherit;
-    font-weight: 600;
-    color: $dark;
-    margin-right: 0.35rem;
-    &::after { content: ":"; }
-  }
-
-  ul { display: inline; margin: 0; padding: 0; list-style: none; }
-  li { display: inline; margin: 0; }
-  li + li::before { content: "·"; margin: 0 0.45rem; color: #5f6368; }
-}
+// Several cards side by side in running text (example-card.html with page_ids).
+.example-grid { margin-top: 0.5rem; margin-bottom: 1.5rem; }
 
 /*-----Previous / next pager-----*/
 .module-pager {

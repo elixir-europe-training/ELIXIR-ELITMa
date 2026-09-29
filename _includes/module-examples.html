@@ -1,41 +1,41 @@
 {%- comment -%}
-Lists a module's example pages, built from its sidebar file, so a new example shows up as soon as
-it's added to the sidebar.
+Lists a module's example pages (type: Real_world_example), found by their `back_to` chapter,
+so a new example shows up as soon as it exists - nothing to add to a list or the sidebar.
   {% include module-examples.html sidebar="module-data-management" %}
-      every example page, grouped by chapter: each folder of examples (a sidebar item with its
-      own subitems, e.g. "Node examples") under its own heading, then the chapter's other
-      pages under "Case studies and background reading" (change with others_label="...")
-  {% include module-examples.html sidebar="module-data-management" folder="/examples-01-dm" %}
-      only the examples inside that folder (for the folder's own page)
-Each entry shows the page title and its description.
+      every example, grouped by chapter, then each chapter's other sidebar pages under
+      "Case studies and background reading" (change with others_label="...")
+  {% include module-examples.html sidebar="module-data-management" chapter="mod_dm_1" %}
+      only the examples that belong to that chapter (for a chapter's examples page)
+Pages whose page_id starts with "examples-" are overview pages, not examples, and are skipped.
+Each entry shows the page title and its description, sorted by title.
 {%- endcomment -%}
 {%- assign mx_nav = site.data.sidebars[include.sidebar] -%}
-{%- capture mx_item -%}{%- endcapture -%}
-{%- if include.folder -%}
-{%- for item in mx_nav.subitems -%}{%- for sub in item.subitems -%}
-{%- if sub.url == include.folder %}
+{%- assign mx_all = site.pages | where: "sidebar", include.sidebar | where: "type", "Real_world_example" | sort: "title" -%}
+{%- if include.chapter -%}
+{%- assign mx_list = mx_all | where: "back_to", include.chapter %}
 <ul class="all-examples-list">
-  {%- for leaf in sub.subitems -%}{%- include module-examples-item.html url=leaf.url title=leaf.title -%}{%- endfor %}
+  {%- for ex in mx_list -%}{%- assign mx_pre = ex.page_id | slice: 0, 9 -%}{%- unless mx_pre == "examples-" -%}{%- include module-examples-item.html url=ex.url title=ex.title -%}{%- endunless -%}{%- endfor %}
 </ul>
-{%- endif -%}
-{%- endfor -%}{%- endfor -%}
 {%- else -%}
 {%- for item in mx_nav.subitems -%}
-{%- if item.subitems.size > 0 %}
+{%- assign mx_c1 = item.title | slice: 0 -%}{%- assign mx_c2 = item.title | slice: 1 -%}
+{%- assign mx_digits = "0123456789" | split: "" -%}
+{%- unless mx_digits contains mx_c1 and mx_digits contains mx_c2 -%}{%- continue -%}{%- endunless -%}
+{%- assign mx_url = item.url | remove_first: "/" -%}
+{%- assign mx_ch = site.pages | where_exp: "p", "p.url == item.url or p.url == mx_url" | first -%}
+{%- assign mx_list = mx_all | where: "back_to", mx_ch.page_id -%}
+{%- if mx_list.size > 0 or item.subitems.size > 0 %}
 <h2 class="all-examples-chapter">{{ item.title }}</h2>
-{%- for sub in item.subitems -%}
-{%- if sub.subitems %}
-<h3 class="all-examples-group">{{ sub.title }}</h3>
+{%- if mx_list.size > 0 %}
+<h3 class="all-examples-group">Node examples</h3>
 <ul class="all-examples-list">
-  {%- for leaf in sub.subitems -%}{%- include module-examples-item.html url=leaf.url title=leaf.title -%}{%- endfor %}
+  {%- for ex in mx_list -%}{%- assign mx_pre = ex.page_id | slice: 0, 9 -%}{%- unless mx_pre == "examples-" -%}{%- include module-examples-item.html url=ex.url title=ex.title -%}{%- endunless -%}{%- endfor %}
 </ul>
 {%- endif -%}
-{%- endfor -%}
-{%- assign mx_others = item.subitems | where_exp: "s", "s.subitems == nil" -%}
-{%- if mx_others.size > 0 %}
+{%- if item.subitems.size > 0 %}
 <h3 class="all-examples-group">{{ include.others_label | default: "Case studies and background reading" }}</h3>
 <ul class="all-examples-list">
-  {%- for sub in mx_others -%}{%- include module-examples-item.html url=sub.url title=sub.title -%}{%- endfor %}
+  {%- for sub in item.subitems -%}{%- include module-examples-item.html url=sub.url title=sub.title -%}{%- endfor %}
 </ul>
 {%- endif -%}
 {%- endif -%}

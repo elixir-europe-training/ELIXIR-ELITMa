@@ -36,11 +36,7 @@ A Node strategy should complement institutional, project-level and national appr
 
 A strategy also depends on people. No single person can see the whole picture. A small group with different perspectives helps ensure that the strategy reflects both the overall direction of the Node and how data management, services and support work in practice.
 
-{% capture examples %}
-- [ELIXIR Germany on fitting the strategy to a distributed Node]({{ site.baseurl }}/dm-example-germany-fitting-the-strategy-to-a-distributed-node)
-- [ELIXIR Netherlands on bringing together Node and institutional perspectives]({{ site.baseurl }}/dm-example-netherlands-bringing-together-node-and-institutional-perspectives)
-{% endcapture %}
-{% include example-links.html content=examples %}
+{% include example-card.html page_ids="dm-ex-germany-fitting-the-strategy-to-a-distributed-node, dm-ex-netherlands-bringing-together-node-and-institutional-perspectives" %}
 
 {% include callout.html type="note" content="You do not need a complete or final overview. A simple, shared understanding is enough to get started and can be refined as roles, services and priorities change." %}
 
@@ -62,12 +58,7 @@ Use these questions to guide your first overview.
 | **Needs and gaps** | Which questions, support needs or training needs occur across the Node? Where is awareness limited or support difficult to find? | Different levels of awareness and demand for basic and advanced RDM training |
 | **Sustainability** | How are activities funded, staffed and maintained? What is stable, changing or uncertain? | Project funding, limited staff continuity or unclear long-term ownership |
 
-{% capture examples %}
-- [ELIXIR Spain on understanding the Node RDM landscape and needs]({{ site.baseurl }}/dm-example-spain-understanding-the-node-rdm-landscape-and-needs)
-- [ELIXIR Sweden on mapping the data service landscape]({{ site.baseurl }}/dm-example-sweden-mapping-the-data-service-landscape)
-- [Funders as drivers for FAIRification strategies]({{ site.baseurl }}/funders-dm) (related perspective)
-{% endcapture %}
-{% include example-links.html content=examples %}
+{% include example-card.html page_ids="dm-ex-spain-understanding-the-node-rdm-landscape-and-needs, dm-ex-sweden-mapping-the-data-service-landscape, funders-dm" %}
 
 {% include callout.html type="tip" content="Use what already exists. Strategies, Service Delivery Plans, surveys, service lists, maturity assessments and earlier mappings can all provide a starting point. The overview does not need to be created from scratch." %}
 
@@ -86,11 +77,7 @@ As a starting point, reflect on:
 
 Before describing something as a gap, check whether the activity or expertise may already exist elsewhere in the Node. Keep your notes short and practical. The goal is not completeness, but a shared understanding of what is connected, unclear or missing.
 
-{% capture examples %}
-- [ELIXIR Germany on linking Node strategy, services and activities]({{ site.baseurl }}/dm-example-germany-linking-node-strategy-services-and-activities)
-- [ELIXIR Sweden on mapping the data service landscape]({{ site.baseurl }}/dm-example-sweden-mapping-the-data-service-landscape)
-{% endcapture %}
-{% include example-links.html content=examples %}
+{% include example-card.html page_ids="dm-ex-germany-linking-node-strategy-services-and-activities, dm-ex-sweden-mapping-the-data-service-landscape" %}
 
 {% include callout.html type="warning" content="Do not assume that something is missing simply because it is not yet visible. Check whether the activity, service or expertise already exists elsewhere in the Node." %}
 
@@ -111,11 +98,7 @@ Depending on your context, useful perspectives may include:
 
 You do not need all these perspectives in the initial group. Note who is essential now, who should be consulted and who may become involved later.
 
-{% capture examples %}
-- [ELIXIR Netherlands on bringing together Node and institutional perspectives]({{ site.baseurl }}/dm-example-netherlands-bringing-together-node-and-institutional-perspectives)
-- [ELIXIR Netherlands on using an initial meeting to identify priorities]({{ site.baseurl }}/dm-example-netherlands-using-an-initial-meeting-to-identify-priorities)
-{% endcapture %}
-{% include example-links.html content=examples %}
+{% include example-card.html page_ids="dm-ex-netherlands-bringing-together-node-and-institutional-perspectives, dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities" %}
 
 {% include callout.html type="note" content="Focus on the perspectives, knowledge and connections people bring rather than formal roles. A small group can begin the work and help identify who else should contribute." %}
 
@@ -150,11 +133,7 @@ Then agree on a practical way to begin.
 4. **Offer different ways to contribute**  
    Consider how people who are not part of the initial group can provide input, for example through comments in a document, an existing meeting, a survey or a separate discussion.
 
-{% capture examples %}
-- [ELIXIR Netherlands on using an initial meeting to identify priorities]({{ site.baseurl }}/dm-example-netherlands-using-an-initial-meeting-to-identify-priorities)
-- [ELIXIR Netherlands on finding practical ways to keep people involved]({{ site.baseurl }}/dm-example-netherlands-finding-practical-ways-to-keep-people-involved)
-{% endcapture %}
-{% include example-links.html content=examples %}
+{% include example-card.html page_ids="dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities, dm-ex-netherlands-finding-practical-ways-to-keep-people-involved" %}
 
 {% include callout.html type="tip" content="Keep the first step manageable. Use existing meetings, documents and working tools where possible, and agree who will capture the discussion and keep the work moving." %}
 

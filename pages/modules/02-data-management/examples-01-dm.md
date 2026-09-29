@@ -5,6 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: examples-01-dm
 type: Real_world_example
+back_to: mod_dm_1
 ---
 
 {% include callout.html type="note" content="These examples show small, early steps taken by ELIXIR Nodes. Use them for inspiration while working through chapter 1. A full strategy is not required." %}
@@ -19,4 +20,4 @@ The examples are linked to one or two topics from chapter 1:
 
 The examples are organised alphabetically by Node. Use the topics to find examples that connect to the chapter exercises.
 
-{% include module-examples.html sidebar="module-data-management" folder="/examples-01-dm" %}
+{% include module-examples.html sidebar="module-data-management" chapter="mod_dm_1" %}

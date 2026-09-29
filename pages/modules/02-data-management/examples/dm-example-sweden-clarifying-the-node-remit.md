@@ -5,6 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-sweden-clarifying-the-node-remit
 type: Real_world_example
+back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Sweden  

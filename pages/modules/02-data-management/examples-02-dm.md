@@ -5,6 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: examples-02-dm
 type: Real_world_example
+back_to: mod_dm_2
 ---
 
 {% include callout.html type="note" content="Chapter 2 is about looking around before moving ahead. These examples show how Nodes explored their context, brought together different perspectives and organised a practical first step." %}
@@ -19,4 +20,4 @@ The examples are linked to one or two topics from chapter 2:
 
 The examples are organised alphabetically by Node. Use the topics to find examples that connect to the chapter exercises.
 
-{% include module-examples.html sidebar="module-data-management" folder="/examples-02-dm" %}
+{% include module-examples.html sidebar="module-data-management" chapter="mod_dm_2" %}

@@ -38,12 +38,7 @@ Strategy development is often triggered by external drivers such as funder requi
 
 Changes in requirements, services or research practices can also create a practical reason to improve coordination.
 
-{% capture examples %}
-- [ELIXIR Luxembourg on the why of a written data management strategy]({{ site.baseurl }}/dm-example-luxembourg-why-a-written-data-management-strategy)
-- [ELIXIR Sweden on clarifying the Node remit]({{ site.baseurl }}/dm-example-sweden-clarifying-the-node-remit)
-- [Funders as drivers for FAIRification strategies]({{ site.baseurl }}/funders-dm) (related perspective)
-{% endcapture %}
-{% include example-links.html content=examples %}
+{% include example-card.html page_ids="dm-ex-luxembourg-why-a-written-data-management-strategy, dm-ex-sweden-clarifying-the-node-remit, funders-dm" %}
 
 {% include callout.html type="note" content="Developing a strategy is not the responsibility of a single role. It requires input from coordination, data stewardship, technical teams and user-facing support to reflect the full data landscape." %}
 
@@ -62,11 +57,7 @@ A strategy has a few key characteristics:
 
 Developing the strategy can already be useful before the document is complete. Having the conversations, mapping existing data management activities and discussing the direction the Node wants to take can make existing work more visible, connect people who do not usually work together and clarify where responsibilities or decisions are still unclear.
 
-{% capture examples %}
-- [ELIXIR Germany on connecting with national initiatives]({{ site.baseurl }}/dm-example-germany-connecting-with-national-initiatives)
-- [ELIXIR Luxembourg on website as a collaboration platform]({{ site.baseurl }}/dm-example-luxembourg-website-as-a-collaboration-platform)
-{% endcapture %}
-{% include example-links.html content=examples %}
+{% include example-card.html page_ids="dm-ex-germany-connecting-with-national-initiatives, dm-ex-luxembourg-website-as-a-collaboration-platform" %}
 
 ## Quick reflection: risks without a data management strategy
 
@@ -81,11 +72,7 @@ Consider your current situation:
 
 Choose one or two risks that matter most for your Node. These can help explain why a strategy is needed and where to begin.
 
-{% capture examples %}
-- [ELIXIR Luxembourg on Node member onboarding]({{ site.baseurl }}/dm-example-luxembourg-node-member-onboarding)
-- [ELIXIR Sweden on training activity strategy]({{ site.baseurl }}/dm-example-sweden-training-activity-strategy)
-{% endcapture %}
-{% include example-links.html content=examples %}
+{% include example-card.html page_ids="dm-ex-luxembourg-node-member-onboarding, dm-ex-sweden-training-activity-strategy" %}
 
 ## Exercise: define your reason for starting
 
@@ -99,11 +86,7 @@ Bring your observations together in a few sentences.
 
 You do not need to solve these issues yet. The aim is to be clear about why you are starting and what you want the strategy process to help with. You will build on these observations in [Chapter 3: What to include]({{ site.baseurl }}/03-dm-content)
 
-{% capture examples %}
-- [ELIXIR Netherlands on identifying where the Node can add value]({{ site.baseurl }}/dm-example-netherlands-identifying-where-the-node-can-add-value)
-- [ELIXIR Italy on inclusion in the Service Delivery Plan]({{ site.baseurl }}/dm-example-italy-inclusion-in-the-service-delivery-plan)
-{% endcapture %}
-{% include example-links.html content=examples %}
+{% include example-card.html page_ids="dm-ex-netherlands-identifying-where-the-node-can-add-value, dm-ex-italy-inclusion-in-the-service-delivery-plan" %}
 
 {% include callout.html type="tip" content="Keep this lightweight. A clear reason for starting is enough for now." %}
 
@@ -126,11 +109,7 @@ Before moving on, write this down. It will help you make the next steps more con
 
 The aim is not to create a complete inventory. It is to identify where existing work can be connected and where greater clarity or coordination may be needed.
 
-{% capture examples %}
-- [ELIXIR Spain on RDM practices and challenges]({{ site.baseurl }}/dm-example-spain-rdm-practices-and-challenges)
-- [ELIXIR Germany on differences between institutes]({{ site.baseurl }}/dm-example-germany-differences-between-institutes)
-{% endcapture %}
-{% include example-links.html content=examples %}
+{% include example-card.html page_ids="dm-ex-spain-rdm-practices-and-challenges, dm-ex-germany-differences-between-institutes" %}
 
 {% include callout.html type="tip" content="Compare your notes with a colleague. Do you see the same picture, or are there differences in perspective?" %}
 
@@ -147,11 +126,7 @@ Consider whether you have the following perspectives involved:
 
 You do not need everyone involved from the beginning. Start with the perspectives that are most relevant to your current starting point and involve others as needed.
 
-{% capture examples %}
-- [ELIXIR Norway on bringing infrastructures together]({{ site.baseurl }}/dm-example-norway-bringing-infrastructures-together)
-- [ELIXIR Spain on Research Data Management training to boost capacity building and community engagement]({{ site.baseurl }}/dm-example-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement)
-{% endcapture %}
-{% include example-links.html content=examples %}
+{% include example-card.html page_ids="dm-ex-norway-bringing-infrastructures-together, dm-ex-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement" %}
 
 {% capture perspectives_warning %}
 If only one or two perspectives are represented, important aspects of the data landscape may be missed. If some perspectives are not available within your Node, consider involving relevant partners or checking your emerging strategy with them later. See <a href="{{ site.baseurl }}/roles-competences-dm">Roles, competences and your Node team</a> for examples of how relevant expertise may sit across different people and organisations.
