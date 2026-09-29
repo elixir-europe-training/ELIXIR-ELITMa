@@ -29,7 +29,7 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `module-resources.html` | All resources for a module, grouped by category | A module's "All resources" page | `module_id` |
 | `quick-check.html` | One-question check with instant ✓/✗ feedback (behaviour in `site-scripts.html`; the answer is shown without JavaScript) | After teaching an idea in a chapter | `question`, `options` (separated by `\|`), `correct`, `explain` |
 | `video.html` | Embedded YouTube video (privacy-enhanced, lazy-loaded) with a direct link | Anywhere in a chapter's text | `youtube`, `title`, `caption` |
-| `example-card.html` | Highlighted link card to another page: a lightbulb for real-world examples, a magnifying glass for Dive deeper pages, the module's icon and name for any other module page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id` (or `page_ids` for several side by side), `lead`, `label`, `icon` |
+| `example-card.html` | Highlighted link card to another page: a lightbulb for real-world examples, a magnifying glass for Dive deeper pages, the module's icon and name for any other module page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id` (or `page_ids` for several side by side), `lead`, `label`, `icon`, `compact` (title only, for in-text mentions) |
 | `module-examples.html` | One grid of example cards for every page in a module's examples folder, sorted by title | A module's All examples page | `folder` |
 
 ## Custom layouts

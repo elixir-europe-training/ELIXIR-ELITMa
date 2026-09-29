@@ -248,6 +248,16 @@ A page that isn't a real-world example â€“ such as a chapter in another module â
 
 {% include example-card.html page_id="comm-ex-elead" %}
 
+For a mention in the running text, add `compact=true`: the card then shows just the label and title, without the description, so it doesn't interrupt the reading. (Use full cards where the description helps, e.g. in lists.)
+
+```liquid
+{% raw %}{% include example-card.html page_ids="dm-ex-sweden-clarifying-the-node-remit" compact=true %}{% endraw %}
+```
+
+**Renders as:**
+
+{% include example-card.html page_ids="dm-ex-sweden-clarifying-the-node-remit" compact=true %}
+
 When a section points to **several examples**, list their `page_id`s in `page_ids`, separated by commas. The cards sit side by side, two per row on wider screens:
 
 ```liquid

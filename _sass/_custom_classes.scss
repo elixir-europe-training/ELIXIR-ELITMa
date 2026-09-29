@@ -726,6 +726,14 @@ $reading-measure: 52rem;
   margin-top: 0.1rem;
 }
 
+// Compact card (compact=true): title only, for mentions in the running text.
+.example-card--compact {
+  padding: 0.7rem 1rem;
+  align-items: center;
+  .example-card-icon { line-height: 1.4rem; }
+  .example-card-title { margin-bottom: 0; }
+}
+
 // Several cards side by side in running text (example-card.html with page_ids).
 .example-grid { margin-top: 0.5rem; margin-bottom: 1.5rem; }
 

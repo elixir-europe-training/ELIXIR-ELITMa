@@ -47,7 +47,7 @@ Strategy development is often triggered by external drivers such as funder requi
 
 Changes in requirements, services or research practices can also create a practical reason to improve coordination.
 
-{% include example-card.html page_ids="dm-ex-luxembourg-why-a-written-data-management-strategy, dm-ex-sweden-clarifying-the-node-remit, dm-ex-funders-fairification" %}
+{% include example-card.html page_ids="dm-ex-luxembourg-why-a-written-data-management-strategy, dm-ex-funders-fairification" compact=true %}
 
 {% include callout.html type="note" content="Developing a strategy is not the responsibility of a single role. It requires input from coordination, data stewardship, technical teams and user-facing support to reflect the full data landscape." %}
 
@@ -66,7 +66,7 @@ A strategy has a few key characteristics:
 
 Developing the strategy can already be useful before the document is complete. Having the conversations, mapping existing data management activities and discussing the direction the Node wants to take can make existing work more visible, connect people who do not usually work together and clarify where responsibilities or decisions are still unclear.
 
-{% include example-card.html page_ids="dm-ex-germany-connecting-with-national-initiatives, dm-ex-luxembourg-website-as-a-collaboration-platform" %}
+{% include example-card.html page_ids="dm-ex-germany-connecting-with-national-initiatives" compact=true %}
 
 <div class="exercise-box" markdown="1">
 ## Quick reflection: risks without a data management strategy
@@ -84,7 +84,7 @@ Choose one or two risks that matter most for your Node. These can help explain w
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-luxembourg-node-member-onboarding, dm-ex-sweden-training-activity-strategy" %}
+{% include example-card.html page_ids="dm-ex-luxembourg-node-member-onboarding" compact=true %}
 
 <div class="exercise-box" markdown="1">
 ## Exercise: define your reason for starting
@@ -101,7 +101,7 @@ You do not need to solve these issues yet. The aim is to be clear about why you 
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-netherlands-identifying-where-the-node-can-add-value, dm-ex-italy-inclusion-in-the-service-delivery-plan" %}
+{% include example-card.html page_ids="dm-ex-netherlands-identifying-where-the-node-can-add-value" compact=true %}
 
 {% include callout.html type="tip" content="Keep this lightweight. A clear reason for starting is enough for now." %}
 
@@ -127,7 +127,7 @@ The aim is not to create a complete inventory. It is to identify where existing 
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-spain-rdm-practices-and-challenges, dm-ex-germany-differences-between-institutes" %}
+{% include example-card.html page_ids="dm-ex-spain-rdm-practices-and-challenges" compact=true %}
 
 {% include callout.html type="tip" content="Compare your notes with a colleague. Do you see the same picture, or are there differences in perspective?" %}
 
@@ -144,7 +144,7 @@ Consider whether you have the following perspectives involved:
 
 You do not need everyone involved from the beginning. Start with the perspectives that are most relevant to your current starting point and involve others as needed.
 
-{% include example-card.html page_ids="dm-ex-norway-bringing-infrastructures-together, dm-ex-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement" %}
+{% include example-card.html page_ids="dm-ex-norway-bringing-infrastructures-together" compact=true %}
 
 {% capture perspectives_warning %}
 If only one or two perspectives are represented, important aspects of the data landscape may be missed. If some perspectives are not available within your Node, consider involving relevant partners or checking your emerging strategy with them later. See <a href="{{ site.baseurl }}/dm-example-roles-competences">Roles, competences and your Node team</a> for examples of how relevant expertise may sit across different people and organisations.

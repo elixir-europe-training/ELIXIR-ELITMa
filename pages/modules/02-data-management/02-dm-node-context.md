@@ -45,7 +45,7 @@ A Node strategy should complement institutional, project-level and national appr
 
 A strategy also depends on people. No single person can see the whole picture. A small group with different perspectives helps ensure that the strategy reflects both the overall direction of the Node and how data management, services and support work in practice.
 
-{% include example-card.html page_ids="dm-ex-germany-fitting-the-strategy-to-a-distributed-node, dm-ex-netherlands-bringing-together-node-and-institutional-perspectives" %}
+{% include example-card.html page_ids="dm-ex-germany-fitting-the-strategy-to-a-distributed-node" compact=true %}
 
 {% include callout.html type="note" content="You do not need a complete or final overview. A simple, shared understanding is enough to get started and can be refined as roles, services and priorities change." %}
 
@@ -67,7 +67,7 @@ Use these questions to guide your first overview.
 | **Needs and gaps** | Which questions, support needs or training needs occur across the Node? Where is awareness limited or support difficult to find? | Different levels of awareness and demand for basic and advanced RDM training |
 | **Sustainability** | How are activities funded, staffed and maintained? What is stable, changing or uncertain? | Project funding, limited staff continuity or unclear long-term ownership |
 
-{% include example-card.html page_ids="dm-ex-spain-understanding-the-node-rdm-landscape-and-needs, dm-ex-sweden-mapping-the-data-service-landscape, dm-ex-funders-fairification" %}
+{% include example-card.html page_ids="dm-ex-spain-understanding-the-node-rdm-landscape-and-needs, dm-ex-funders-fairification" compact=true %}
 
 {% include callout.html type="tip" content="Use what already exists. Strategies, Service Delivery Plans, surveys, service lists, maturity assessments and earlier mappings can all provide a starting point. The overview does not need to be created from scratch." %}
 
@@ -89,7 +89,7 @@ Before describing something as a gap, check whether the activity or expertise ma
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-germany-linking-node-strategy-services-and-activities, dm-ex-sweden-mapping-the-data-service-landscape" %}
+{% include example-card.html page_ids="dm-ex-germany-linking-node-strategy-services-and-activities" compact=true %}
 
 {% include callout.html type="warning" content="Do not assume that something is missing simply because it is not yet visible. Check whether the activity, service or expertise already exists elsewhere in the Node." %}
 
@@ -110,7 +110,7 @@ Depending on your context, useful perspectives may include:
 
 You do not need all these perspectives in the initial group. Note who is essential now, who should be consulted and who may become involved later.
 
-{% include example-card.html page_ids="dm-ex-netherlands-bringing-together-node-and-institutional-perspectives, dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities" %}
+{% include example-card.html page_ids="dm-ex-netherlands-bringing-together-node-and-institutional-perspectives" compact=true %}
 
 {% include callout.html type="note" content="Focus on the perspectives, knowledge and connections people bring rather than formal roles. A small group can begin the work and help identify who else should contribute." %}
 
@@ -148,7 +148,7 @@ Then agree on a practical way to begin.
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities, dm-ex-netherlands-finding-practical-ways-to-keep-people-involved" %}
+{% include example-card.html page_ids="dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities" compact=true %}
 
 {% include callout.html type="tip" content="Keep the first step manageable. Use existing meetings, documents and working tools where possible, and agree who will capture the discussion and keep the work moving." %}
 
