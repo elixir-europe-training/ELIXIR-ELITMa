@@ -6,6 +6,8 @@ Optional:
   lead="..."   one sentence on why to read it (defaults to the page's description)
   label="..."  the small heading (defaults to the page's type, e.g. "Real-world example")
   icon="..."   a Font Awesome icon name (defaults to "lightbulb")
+A page that isn't a Real-world example (e.g. a chapter from another module) gets the same card,
+labelled with its module's name and showing that module's icon instead of the lightbulb.
 Several at once, side by side (two per row on wider screens):
   {% include example-card.html page_ids="dm-ex-sweden-clarifying-the-node-remit, funders-dm" %}
 Also used by related-pages.html for the "See it in practice" block.
@@ -22,8 +24,24 @@ Also used by related-pages.html for the "See it in practice" block.
 {%- assign ex = site.pages | where: "page_id", ec_one | first -%}
 {%- if ex %}
 {%- assign ex_label = ex.type | replace: "_", " " | replace: "Real world", "Real-world" -%}
-<div class="example-card">
+{%- comment -%} Any other page (e.g. a chapter of another module): labelled with its module's
+    name and shown with that module's icon, found through the page's sidebar
+    (module-communication -> modules/communication in _data/module_types.yml). {%- endcomment -%}
+{%- assign ex_module = nil -%}
+{%- if ex.type != "Real_world_example" and ex.sidebar contains "module-" -%}
+  {%- assign ex_module_url = ex.sidebar | replace_first: "module-", "modules/" -%}
+  {%- for m in site.data.module_types -%}
+    {%- assign m_url = m.url | remove_first: "/" -%}
+    {%- if m_url == ex_module_url -%}{%- assign ex_module = m -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if ex_module -%}{%- assign ex_label = ex_module.title -%}{%- endif -%}
+{%- endif -%}
+<div class="example-card{% if ex_module %} example-card--module{% endif %}">
+  {%- if ex_module and include.icon == nil %}
+  <div class="example-card-icon" aria-hidden="true"><img src="{{ ex_module.icon | relative_url }}" alt=""></div>
+  {%- else %}
   <div class="example-card-icon" aria-hidden="true"><i class="fa-solid fa-{{ include.icon | default: 'lightbulb' }}"></i></div>
+  {%- endif %}
   <div class="example-card-body">
     <span class="example-card-label">{{ include.label | default: ex_label }}</span>
     <a class="example-card-title stretched-link" href="{{ ex.url | relative_url }}">{{ ex.title }}</a>

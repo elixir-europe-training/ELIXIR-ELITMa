@@ -26,7 +26,7 @@ In Chapter 1, you set out why your Node needs a data management strategy and ide
 
 This module uses two complementary frameworks:
 
-* **Structuring the content of your strategy** using the [Global Open Research Commons (GORC) International Model]({{ site.baseurl }}/gorc-framework-dm), developed through a Research Data Alliance (RDA) working group. The GORC model describes *what areas the strategy should cover, and how they relate to each other?*
+* **Structuring the content of your strategy** using the [Global Open Research Commons (GORC) International Model]({{ site.baseurl }}/03-1-dm-gorc-framework), developed through a Research Data Alliance (RDA) working group. The GORC model describes *what areas the strategy should cover, and how they relate to each other?*
 * **Assessing selected areas** using the [Maturity Model](https://elixir-europe.github.io/ds-handbook/maturity-model) from the Data Stewardship Handbook. The Maturity Model describes *how well is each area currently developed, and where is there room for improvement?*
 
 In this chapter, you will use the GORC model to structure the content of your strategy and identify the areas that are most relevant to your Node. In the next chapter, you will use the Maturity Model to assess how well selected areas are developed and identify possible improvements.
@@ -69,7 +69,7 @@ Using the framework helps you:
 
 {% include callout.html type="important" content="The GORC model is not prescriptive, focus on the elements that are most relevant to your Node and strategy. Read the Understanding the GORC framework page in detail before starting the exercises below, it explains the essential elements you will need." %}
 
-See <a href="{{ site.baseurl }}/gorc-framework-dm">Understanding the GORC framework</a> for the full explanation, and <a href="{{ site.baseurl }}/gorc-elixir-dm">Why use GORC in ELIXIR?</a> to see how the framework relates to ELIXIR Nodes and distributed infrastructure.
+See <a href="{{ site.baseurl }}/03-1-dm-gorc-framework">Understanding the GORC framework</a> for the full explanation, and <a href="{{ site.baseurl }}/03-2-dm-gorc-elixir">Why use GORC in ELIXIR?</a> to see how the framework relates to ELIXIR Nodes and distributed infrastructure.
 
 ## Example: mapping GORC elements
 

@@ -43,7 +43,7 @@ ref_to_main_resources:
 
 {% include callout.html type="warning" content="If a description or summary contains a colon followed by a space, wrap the whole value in double quotes, or the site will not build." %}
 
-`related_pages` can also list other pages by type (for example `Data management: [mod_dm_3]`); most modules show these as "Related pages" tiles at the bottom. The Communication module deliberately doesn't, because its chapters are already connected by the previous/next buttons and links in the text.
+At the bottom of the page, `Real_world_example` pages appear under **See it in practice**. `related_pages` can also list other pages by type, for example a chapter in another module (`Communication: [mod_comm_5]`); those appear under **Related pages**, on the same card but with that module's icon and name. Don't list chapters of your own module – previous/next and the sidebar already connect them.
 
 The ETT documentation lists [every front matter field the theme understands](https://elixir-belgium.github.io/elixir-toolkit-theme/page_mechanics#possible-metadata-attributes-of-a-page).
 
@@ -71,10 +71,10 @@ Renumber by editing the sidebar; nothing else needs to change. For all sidebar o
   url: /03-dm-content
   subitems:
   - title: 03.1 Understanding the GORC framework
-    url: /gorc-framework-dm
+    url: /03-1-dm-gorc-framework
 ```
 
-Previous/next then walk 03 → 03.1 → 04, and the chapter circles keep chapter 3 highlighted. Give a sub-page the module's `type` (like the chapter), not `Real_world_example`. Examples and case studies don't go in the sidebar – see [Real-world example pages](#real-world-example-pages).
+Previous/next then walk 03 → 03.1 → 04, and the chapter circles keep chapter 3 highlighted. Name the file after its chapter too (`03-1-dm-gorc-framework.md`, `page_id: mod_dm_3_1`) and give it the module's `type` (like the chapter), not `Real_world_example`. A page that supports several chapters isn't a sub-page – make it a case study (a real-world example) instead. Examples and case studies don't go in the sidebar – see [Real-world example pages](#real-world-example-pages).
 
 ### The metadata box
 
@@ -249,6 +249,10 @@ A highlighted link to another page – usually a real-world example – placed w
 ```
 
 Optional settings: `lead` (your own sentence), `label` (a different small heading) and `icon` (a Font Awesome icon name).
+
+A page that isn't a real-world example – such as a chapter in another module – gets the same card with its module's icon and name. This is how **Related pages** look at the bottom of a chapter:
+
+{% include example-card.html page_id="mod_comm_5" %}
 
 **Renders as:**
 

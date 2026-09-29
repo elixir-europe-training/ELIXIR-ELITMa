@@ -9,9 +9,9 @@ subitems:
     url: /03-dm-content
     subitems:
     - title: 03.1 Understanding the GORC framework
-      url: /gorc-framework-dm
+      url: /03-1-dm-gorc-framework
     - title: 03.2 Why use GORC in ELIXIR?
-      url: /gorc-elixir-dm
+      url: /03-2-dm-gorc-elixir
   - title: 04 Assessing where you are
     url: /04-dm-assess
   - title: 05 Deciding where you want to go

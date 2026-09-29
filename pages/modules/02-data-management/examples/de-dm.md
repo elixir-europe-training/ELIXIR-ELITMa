@@ -4,6 +4,7 @@ description: Connecting distributed RDM support and expertise across the ELIXIR 
 type_img: /images/icons/icon-module-data-management.svg
 page_id: de-dm
 type: Real_world_example
+back_to: mod_dm_2
 ---
 
 **Contributor**: Helena Schnitzer  

@@ -1,13 +1,13 @@
 {%- comment -%}
 Local override of the elixir-toolkit-theme include of the same name.
-Pages that are NOT in the Communication module render the theme's related pages exactly
-as the theme does; if they belong to a module (sidebar "module-..."), the previous/next
-pager (module-pager.html) is added after them.
-Communication pages instead:
-  - show only Real_world_example pages, in a highlighted "See it in practice" block
-    (links between sections are dropped - the pager and in-text links cover them);
-  - end with the same previous/next pager.
-If the theme's version changes, re-copy it into the non-Communication branch below.
+Module pages (sidebar "module-...") use one kind of box for every related page - the example card
+(example-card.html):
+  - Real_world_example pages under "See it in practice";
+  - any other related page (e.g. a chapter in another module) under "Related pages", on the same
+    card showing that page's module icon and name;
+  - then the previous/next pager (module-pager.html).
+Other pages render the theme's related pages exactly as the theme does. If the theme's version
+changes, re-copy it into the last branch below.
 {%- endcomment -%}
 {%- assign actual_related = nil %}
 {%- for section in page.related_pages %}
@@ -16,32 +16,31 @@ If the theme's version changes, re-copy it into the non-Communication branch bel
 {%- endunless %}
 {%- endfor %}
 
-{%- if page.sidebar == "module-communication" %}
+{%- if page.sidebar contains "module-" %}
 
-{%- assign rp_has_examples = false %}
+{%- comment -%} Module pages: one kind of box for everything - the example card.
+    Real_world_example pages go under "See it in practice"; any other related page (e.g. a chapter
+    in another module) goes under "Related pages", on the same card with its module's icon. {%- endcomment -%}
+{%- assign rp_examples = "" | split: "" %}
+{%- assign rp_others = "" | split: "" %}
 {%- for section in page.related_pages %}
-{%- if section[1].size > 0 %}
-{%- if section[0] == "Real_world_example" %}{%- assign rp_has_examples = true %}{%- endif %}
+{%- for rp_id in section[1] %}
+{%- assign rp_hit = site.pages | where: "page_id", rp_id | first %}
+{%- if rp_hit %}
+{%- if rp_hit.type == "Real_world_example" %}{%- assign rp_examples = rp_examples | push: rp_id %}{%- else %}{%- assign rp_others = rp_others | push: rp_id %}{%- endif %}
 {%- endif %}
 {%- endfor %}
+{%- endfor %}
 
-{%- if rp_has_examples %}
-<!-- Real-world examples -->
+{%- if rp_examples.size > 0 %}
 <h2>See it in practice</h2>
-<div class="row row-cols-1 row-cols-md-2 g-4 mt-2 navigation-tiles example-tiles">
-    {%- for section in page.related_pages %}
-    {%- if section[0] == "Real_world_example" %}
-    {%- for page_id in section[1] %}
-    {%- assign page_hit = site.pages | where:"type", section[0] | where:"page_id", page_id | first %}
-    {%- if page_hit %}
-    <div class="col">
-        {% include example-card.html page_id=page_id %}
-    </div>
-    {%- endif %}
-    {%- endfor %}
-    {%- endif %}
-    {%- endfor %}
-</div>
+{%- assign rp_examples_list = rp_examples | join: "," %}
+{% include example-card.html page_ids=rp_examples_list %}
+{%- endif %}
+{%- if rp_others.size > 0 %}
+<h2>{{ site.theme_variables.headings.related-pages | default: 'Related pages' }}</h2>
+{%- assign rp_others_list = rp_others | join: "," %}
+{% include example-card.html page_ids=rp_others_list %}
 {%- endif %}
 
 {% include module-pager.html %}
@@ -67,6 +66,4 @@ If the theme's version changes, re-copy it into the non-Communication branch bel
     {%- endif %}
 </div>
 {%- endif %}
-{%- if page.sidebar != "module-communication" and page.sidebar contains "module-" %}
-{% include module-pager.html %}
-{%- endif %}
+

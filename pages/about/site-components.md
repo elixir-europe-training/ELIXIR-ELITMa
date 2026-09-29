@@ -29,7 +29,7 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `module-resources.html` | All resources for a module, grouped by category | A module's "All resources" page | `module_id` |
 | `quick-check.html` | One-question check with instant ✓/✗ feedback (behaviour in `site-scripts.html`; the answer is shown without JavaScript) | After teaching an idea in a chapter | `question`, `options` (separated by `\|`), `correct`, `explain` |
 | `video.html` | Embedded YouTube video (privacy-enhanced, lazy-loaded) with a direct link | Anywhere in a chapter's text | `youtube`, `title`, `caption` |
-| `example-card.html` | Highlighted link card to another page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id` (or `page_ids` for several side by side), `lead`, `label`, `icon` |
+| `example-card.html` | Highlighted link card to another page: a lightbulb for real-world examples, the module's icon and name for any other module page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id` (or `page_ids` for several side by side), `lead`, `label`, `icon` |
 | `module-examples.html` | Lists every page in a module's examples folder, grouped by chapter: Node examples (by `back_to`, with the chapter's optional `examples_intro`) and case studies (from each chapter's `related_pages`); anything unplaced is listed at the end. Uses `module-examples-item.html` for each entry | The Examples and case studies page | `sidebar`, `folder` |
 
 ## Custom layouts
@@ -45,7 +45,7 @@ These files have the **same name as an ETT include**, so they replace the theme'
 
 | Override | Why | What changed |
 | --- | --- | --- |
-| `related-pages.html` | Adds the pager to module pages; lets a module drop related-pages tiles | Every module page ends with the pager. The Communication module – by choice, because the pager and in-text links already connect its chapters – shows only real-world examples ("See it in practice") instead of related-pages tiles; this is switched on per module in the file (`page.sidebar == "module-communication"`). Other modules keep the theme's related pages. |
+| `related-pages.html` | One kind of box for related pages on module pages, plus the pager | On every module page: real-world examples under "See it in practice", any other related page (e.g. another module's chapter) under "Related pages" – all as example cards, the latter with that module's icon – then the pager. Non-module pages keep the theme's tiles. |
 | `breadcrumb.html` | Module permalinks are flat (`/01-comms-introduction`), so the theme's URL-based trail only gave "Home › page" | Module pages build Home › Modules › module › [chapter] › [folder, e.g. Node examples] › page from the sidebar. Other pages use the theme's code unchanged. |
 | `contributor-card.html` | Different badge colours for leads and contributors | The role badge gets a `contributor-role--<role>` class. |
 | `resource-table-page.html` | A simpler resources table for chapters | Replaces the theme's tools table (national resources, registry links) with a compact "Dive deeper" table – category, resource, description – for the ids in a page's `ref_to_main_resources`, styled to sit quietly at the end of the page. |
