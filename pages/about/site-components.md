@@ -30,7 +30,7 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `quick-check.html` | One-question check with instant ✓/✗ feedback (behaviour in `site-scripts.html`; the answer is shown without JavaScript) | After teaching an idea in a chapter | `question`, `options` (separated by `\|`), `correct`, `explain` |
 | `video.html` | Embedded YouTube video (privacy-enhanced, lazy-loaded) with a direct link | Anywhere in a chapter's text | `youtube`, `title`, `caption` |
 | `example-card.html` | Highlighted link card to another page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id` (or `page_ids` for several side by side), `lead`, `label`, `icon` |
-| `module-examples.html` | Lists a module's example pages (found by their `back_to` chapter): all of them grouped by chapter, with each chapter's sidebar pages as "Case studies and background reading", or just one chapter's examples. Uses `module-examples-item.html` for each entry (title + description) | The Examples and case studies page, or a chapter's examples overview | `sidebar`, `chapter`, `others_label` |
+| `module-examples.html` | Lists every page in a module's examples folder, grouped by chapter: Node examples (by `back_to`, with the chapter's optional `examples_intro`) and case studies (from each chapter's `related_pages`); anything unplaced is listed at the end. Uses `module-examples-item.html` for each entry | The Examples and case studies page | `sidebar`, `folder` |
 
 ## Custom layouts
 

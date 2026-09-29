@@ -11,7 +11,6 @@ sidebar: module-data-management
 summary: This chapter helps you build a shared understanding of your Node context by mapping governance, services, expertise, connections and gaps. It also guides you in forming an initial team and agreeing on a practical way to begin developing your data management strategy.
 related_pages:
   Real_world_example: 
-  - examples-02-dm
   - distributed-support-dm
   - roles-competences-dm
   - funders-dm
@@ -19,12 +18,22 @@ learning_outcomes:
     - Describe the key elements that shape your Node context for data management
     - Identify the perspectives needed to begin developing a Node data management strategy
     - Create a simple overview of your Node context and agree on a practical way to begin
+examples_intro: |
+  Chapter 2 is about looking around before moving ahead. These examples show how Nodes explored their context, brought together different perspectives and organised a practical first step.
+
+  The examples are linked to one or two topics from chapter 2:
+
+  **Node context**: why the Node context matters  
+  **Context overview**: what to include in a first overview  
+  **Connections and gaps**: what is connected, unclear or missing  
+  **Initial team**: who should be involved at the start  
+  **Ways of working**: how to organise the work together
 ---
 {% include module-metadata.html %}
 
 In the previous chapter, you reflected on why a Node data management strategy matters and what already exists in your Node. The next step is to take a closer look at your context and organise this information.
 
-{% include example-card.html page_id="examples-02-dm" lead="Use these for inspiration while you work through this chapter. The examples show how different Nodes explored their context and organised their first steps in practice." %}
+{% include example-card.html page_id="dm-all-examples" label="Real-world examples" lead="Use these for inspiration while you work through this chapter. The examples show how different Nodes explored their context and organised their first steps in practice." %}
 
 ## Why the Node context matters
 

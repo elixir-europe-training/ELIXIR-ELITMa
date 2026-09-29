@@ -11,18 +11,27 @@ sidebar: module-data-management
 summary: Data management activities already exist across roles, services, institutions and projects. A Node data management strategy can help create a coherent and consistent approach across these activities. This section explores why a coordinated strategy matters, how it can connect existing work, clarify scope and responsibilities and support practical first steps.
 related_pages:
   Real_world_example: 
-  - examples-01-dm
   - funders-dm
 learning_outcomes:
     - Explain why a Node data management strategy can support coordination, clarity and planning
     - Describe how a Node data management strategy connects existing services, roles, policies and activities
     - Identify a practical reason and starting point for developing or refining a strategy
+examples_intro: |
+  These examples show small, early steps taken by ELIXIR Nodes. Use them for inspiration while working through chapter 1. A full strategy is not required.
+
+  The examples are linked to one or two topics from chapter 1:
+
+  **Why strategy**: why a data management strategy can be useful  
+  **Existing work**: how existing activities, services or policies can be connected  
+  **Starting point**: how to understand the current situation  
+  **Gaps to action**: how gaps or unclear areas can lead to next steps  
+  **Who to involve**: who needs to be part of the conversation
 ---
 {% include module-metadata.html %}
 
 Developing a shared approach to data management is not always straightforward in a distributed environment like ELIXIR. Responsibilities, services and expertise are often spread across roles, institutions, projects and national initiatives. A strategy helps connect this existing work, clarify responsibilities and create a shared direction.
 
-{% include example-card.html page_id="examples-01-dm" lead="Use these for inspiration while you work through this chapter. The examples show how different Nodes used practical activities, existing resources and early discussions to begin developing a more coordinated approach." %}
+{% include example-card.html page_id="dm-all-examples" label="Real-world examples" lead="Use these for inspiration while you work through this chapter. The examples show how different Nodes used practical activities, existing resources and early discussions to begin developing a more coordinated approach." %}
 
 ## Why a data management strategy matters
 
@@ -46,7 +55,7 @@ Changes in requirements, services or research practices can also create a practi
 
 {% include callout.html type="note" content="A strategy is not a complex policy document. It is a simple way to bring clarity to how data is managed across the Node or institution." %}
 
-The exact format can differ between Nodes. A strategy may be a short standalone document of around 1–3 pages, or a clearly identifiable part of a broader Node plan. See the [Node examples page]({{ site.baseurl }}/examples-01-dm) for examples of how Nodes have approached this.
+The exact format can differ between Nodes. A strategy may be a short standalone document of around 1–3 pages, or a clearly identifiable part of a broader Node plan. See the [Examples and case studies page]({{ site.baseurl }}/dm-all-examples) for examples of how Nodes have approached this.
 
 A strategy has a few key characteristics:
 - **A short, practical document**: A strategy outlines the main goals of the Node, the data landscape it serves and the principles that guide its work.

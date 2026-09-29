@@ -327,13 +327,13 @@ Then link it from the chapter, either in the text with an [example card](#exampl
 
 ### Many examples for one chapter
 
-When a chapter has several short Node examples (as in Data management), give **each example its own page**. Readers open exactly the example the chapter mentions, and the "Back to chapter" link sits right under it. Examples are not listed in the sidebar – like the Communication ones, they're reached from the chapter's cards.
+When a chapter has several short Node examples (as in Data management), give **each example its own page**. Readers open exactly the example the chapter mentions, and the "Back to chapter" link sits right under it. Examples and case studies are not listed in the sidebar – like the Communication ones, they're reached from the chapter's cards.
 
-1. Put each example in `pages/modules/<nn-module>/examples/`, one file per example, named like the Communication examples: `dm-example-sweden-clarifying-the-node-remit.md` with `page_id: dm-ex-sweden-clarifying-the-node-remit`.
+1. Put each example or case study in the module's `examples/` folder (e.g. `pages/modules/02-data-management/examples/`), one file per page, named like the Communication examples: `dm-example-sweden-clarifying-the-node-remit.md` with `page_id: dm-ex-sweden-clarifying-the-node-remit`.
 2. Use the front matter above, with `back_to` set to the chapter's `page_id` (e.g. `back_to: mod_dm_1`). Its `description` is the one-line summary shown on its card.
-3. Link it from the chapter with an [example card](#example-card).
+3. Link it from the chapter with an [example card](#example-card). A case study that supports several chapters goes in each of those chapters' `related_pages`.
 
-That's it: the example also appears on the chapter's examples overview and on the module's **Examples and case studies** page automatically. Those lists come from `{% raw %}{% include module-examples.html sidebar="module-data-management" chapter="mod_dm_1" %}{% endraw %}` (one chapter's examples) and the same include without `chapter` (everything, by chapter).
+That's it: the module's **Examples and case studies** page lists everything in the folder by chapter, via `{% raw %}{% include module-examples.html sidebar="module-data-management" folder="pages/modules/02-data-management/examples/" %}{% endraw %}`. To explain the examples' Topics labels, add an `examples_intro` (Markdown) to the chapter's front matter; it's shown above that chapter's Node examples.
 
 ## Resources
 
