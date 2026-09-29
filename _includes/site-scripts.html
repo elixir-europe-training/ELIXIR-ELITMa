@@ -50,13 +50,14 @@ The script that remembers checklist ticks lives in module-pager.html (module pag
       item.appendChild(label);
     });
   });
-  // Once the web fonts are in, so code-block widths are final.
+  // Code blocks and tables that scroll sideways get keyboard focus, so keyboard users can scroll
+  // them too. Once the web fonts are in, so widths are final.
   function markScrollableCode() {
-    document.querySelectorAll('#content .highlight, #content pre').forEach(function (el) {
+    document.querySelectorAll('#content .highlight, #content pre, #content .table-responsive').forEach(function (el) {
       if (el.scrollWidth > el.clientWidth && !el.hasAttribute('tabindex')) {
         el.setAttribute('tabindex', '0');
         el.setAttribute('role', 'region');
-        el.setAttribute('aria-label', 'Code example');
+        el.setAttribute('aria-label', el.classList.contains('table-responsive') ? 'Table' : 'Code example');
       }
     });
   }
