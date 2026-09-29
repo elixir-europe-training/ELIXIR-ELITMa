@@ -76,8 +76,35 @@ header .navbar {
 
 .visual {
   background: $light-background;
-  padding: 30px 0;
+  padding: 2.75rem 0 2.25rem;
   margin-bottom: 0px;
+
+  // Smaller than the theme's, so the first modules still show without scrolling.
+  h1 { font-size: clamp(2rem, 1.4rem + 2vw, 3rem); }
+  p { font-size: 1.1rem; max-width: 36rem; }
+  img { max-height: 18rem; width: auto; max-width: 100%; display: block; margin-left: auto; }
+}
+
+/*-----Module sections (module-sections.html)-----*/
+.module-section {
+  margin-top: 2.5rem;
+
+  > h2, > h3 { margin-bottom: 0.35rem; }
+}
+.module-section-intro {
+  max-width: 52rem;
+  margin-bottom: 1.25rem;
+  color: #3d4247;
+
+  a { color: $link-blue; text-decoration: underline; text-underline-offset: 0.18em; }
+}
+// Planned modules: same cards, but white with a dashed outline - "not here yet" - so the
+// ready and in-development ones lead.
+.landingpage .module-section--planned .card,
+.module-section--planned .card {
+  background: $white;
+  border: 1px dashed #B8C4CC;
+  box-shadow: none;
 }
 
 

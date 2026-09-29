@@ -1,0 +1,30 @@
+{%- comment -%}
+One module card (icon, title, description, total time) for module-sections.html.
+Usage: {% include module-tile.html module=m %}  (m: an entry of _data/module_types.yml)
+The time is calculated from the module's chapters (module-time.html); status isn't shown on
+the card - the section it sits in says it.
+{%- endcomment -%}
+{%- assign mt_mod = include.module -%}
+{%- include module-time.html url=mt_mod.url %}
+<div class="col">
+    <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-row gap-3 align-items-start">
+                {%- if mt_mod.icon %}
+                <img src="{{ mt_mod.icon | relative_url }}" alt="" style="height: 2.5rem; width: auto; object-fit: contain; flex-shrink: 0;" class="mt-1">
+                {%- endif %}
+                <div>
+                    <a class="stretched-link section-title" href="{{ mt_mod.url | relative_url }}"><b>{{ mt_mod.title }}</b></a>
+                    {%- if mt_mod.description %}
+                    <p class="card-text mb-0 mt-1">{{ mt_mod.description }}</p>
+                    {%- endif %}
+                </div>
+            </div>
+            {%- if module_time_label != "" %}
+            <div class="d-flex flex-wrap gap-2 mt-auto pt-3">
+                <span class="module-chip module-chip--time"><i class="fa-solid fa-clock me-1" aria-hidden="true"></i>{{ module_time_label }}</span>
+            </div>
+            {%- endif %}
+        </div>
+    </div>
+</div>

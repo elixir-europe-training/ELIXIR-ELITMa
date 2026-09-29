@@ -92,12 +92,12 @@
   type: Project management
   leads:
   url: modules/impact
-  status: to do
+  status: in development
   status_badge:
   order: 9
 
 - title: Carbon footprint
-  description: The first course is under development in collaboration with ELIXIR-STEERS and SPARKLE staff exchange projects,
+  description: The first course is under development in collaboration with ELIXIR-STEERS and SPARKLE staff exchange projects.
   icon: /images/icons/icon-module-cf.svg
   id: mod_cf
   leads:

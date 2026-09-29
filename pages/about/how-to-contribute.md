@@ -48,8 +48,7 @@ type: Communication            # the module type
 sidebar: module-communication  # the module's sidebar file in _data/sidebars/
 page_img: /icons/icon-module-communication.svg
 time: 20 minutes               # used to calculate module and pathway totals
-status: ready
-status_badge: success
+status: ready                  # ready | in development – sets the module's group on the home page
 audience: [Communications Officers, Project Managers]
 learning_outcomes:
   - Identify and prioritise your Node's key stakeholder groups
@@ -87,7 +86,7 @@ Renumber by editing the sidebar; nothing else needs to change. For all sidebar o
 
 ### The metadata box
 
-You don't need to add it: every chapter gets the status, time, audience and learning-outcomes box at the top automatically, from its front matter. It appears on any module page with a `time` or `status` value, so example pages and a module's main page don't get one.
+You don't need to add it: every chapter gets the time, audience and learning-outcomes box at the top automatically (plus its status while it isn't `ready` – a finished chapter doesn't need a label), from its front matter. It appears on any module page with a `time` or `status` value, so example pages and a module's main page don't get one.
 
 ## Reusable components
 

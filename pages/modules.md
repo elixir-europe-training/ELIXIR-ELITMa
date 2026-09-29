@@ -4,4 +4,6 @@ permalink: modules
 sidebar: false
 ---
 
-{% include module-navigation.html col=3 %}
+ELITMa has ten modules at different stages of development.
+
+{% include module-sections.html %}
