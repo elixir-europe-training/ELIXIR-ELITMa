@@ -18,6 +18,8 @@ exclude:
   - README.md
   - vendor
   - Gemfile
+  - CODEOWNERS
+  - LICENSE.md
 
 sass:
   style: compressed

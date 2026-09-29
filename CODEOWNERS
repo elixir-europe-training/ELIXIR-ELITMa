@@ -1,0 +1,31 @@
+# Who is asked to review pull requests, by path. The LAST matching line wins,
+# so specific paths come after general ones.
+# Reviews become *required* only if "Require review from Code Owners" is on
+# in the branch protection rule for main.
+
+# Default: About pages, README, images, downloads, other modules
+*                                             @MijkeJetten @sitjart
+
+# Shared site machinery: affects every module
+/_includes/                                   @sitjart
+/_layouts/                                    @sitjart
+/_sass/                                       @sitjart
+/_plugins/                                    @sitjart
+/_data/                                       @sitjart
+/_config.yml                                  @sitjart
+/.github/                                     @sitjart
+/CODEOWNERS                                   @sitjart
+
+# Data management module: Mijke Jetten
+/pages/modules/02-data-management.md          @MijkeJetten
+/pages/modules/02-data-management/            @MijkeJetten
+/_data/sidebars/module-data-management.yml    @MijkeJetten
+/_data/topics/module-data-management.yml      @MijkeJetten
+/images/data-management/                      @MijkeJetten
+
+# Communication module: Xenia Perez Sitja
+/pages/modules/06-communication.md            @sitjart
+/pages/modules/06-communication/              @sitjart
+/_data/sidebars/module-communication.yml      @sitjart
+/_data/pathways/module-communication.yml      @sitjart
+/images/communication/                        @sitjart
