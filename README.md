@@ -34,7 +34,9 @@ Then open the address it prints. Restart the server after editing `_config.yml`.
 | Path | What it holds |
 | --- | --- |
 | `pages/modules/<module>.md` | A module's main page (its orientation page) |
-| `pages/modules/<nn-module>/` | The module's chapters and real-world example pages |
+| `pages/modules/<nn-module>/` | The module's chapters; `examples/` and `dive-deeper/` hold its real-world examples and Dive deeper pages |
+| `pages/modules/_templates/` | Templates for a chapter, an example and a Dive deeper page (not published) |
+| `_data/topics/` | Example topics per module (controlled vocabulary); a page per topic is generated |
 | `_data/sidebars/` | One file per module: chapter order – a title starting with two digits (`01 …`) makes a page a chapter |
 | `_data/pathways/` | Learning pathways per module |
 | `_data/module_types.yml` | The module tiles on the home and Modules pages |

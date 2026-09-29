@@ -11,9 +11,28 @@ The site is built on the [ELIXIR Toolkit Theme](https://elixir-belgium.github.io
 
 {% include callout.html type="tip" content="The fastest way to start is to copy an existing chapter and change it. Everything below works in any module – if you want to see a component in context, the Communication module has an example of each." %}
 
-## Anatomy of a chapter
+## How a module is organised
 
-A module is a set of numbered **chapters** (`01`, `02`, …), plus optional **real-world example** pages and an **All resources** page. The module's main page is its orientation page: it introduces the module and lists the chapters, built automatically from the sidebar.
+A module has a main page (its orientation page, which lists the chapters automatically) and three kinds of page, each in its own place:
+
+```
+pages/modules/02-data-management.md          the module's main page
+pages/modules/02-data-management/
+  01-dm-intro.md  02-dm-node-context.md …    chapters – numbered, in the sidebar
+  examples/                                  real-world examples and case studies
+  dive-deeper/                               longer explanations beyond one chapter
+  dm-all-examples.md                         All examples page (in the sidebar, below the chapters)
+```
+
+| Page | `type` | In the sidebar? | How readers reach it | Template |
+| --- | --- | --- | --- | --- |
+| Chapter | the module's type (e.g. `Data Management`) | yes, numbered | sidebar, chapter circles, previous/next | `pages/modules/_templates/chapter.md` |
+| Real-world example or case study | `Real_world_example` | no | cards in the chapter; All examples; topic pages | `…/_templates/example.md` |
+| Dive deeper | `Dive_deeper` | no | "Dive deeper" cards at the end of the chapter | `…/_templates/dive-deeper.md` |
+
+Every example and Dive deeper page ends with a "Back to chapter" link. **Start from the templates** in `pages/modules/_templates/`: each has all the front matter, with comments, and a skeleton of the page. (Jekyll ignores folders that start with `_`, so the templates aren't published.)
+
+## Anatomy of a chapter
 
 ### Front matter
 
@@ -35,7 +54,9 @@ audience: [Communications Officers, Project Managers]
 learning_outcomes:
   - Identify and prioritise your Node's key stakeholder groups
 related_pages:
-  Real_world_example: [comm-ex-matrix]   # example pages: shown as "See it in practice" cards
+  Dive_deeper: [dm-dd-gorc-framework]     # "Dive deeper" cards at the end of the chapter
+  Real_world_example: [dm-ex-rdm-portfolio]   # "See it in practice" cards – only examples
+                                          # that don't already have a card in the text
 ref_to_main_resources:
   - converge-comms                       # ids from _data/tool_and_resource_list.yml
 ---
@@ -63,8 +84,6 @@ subitems:
 ```
 
 Renumber by editing the sidebar; nothing else needs to change. For all sidebar options, see [Sidebar](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures#sidebar) in the ETT documentation.
-
-**Dive deeper pages.** A longer explanation that goes beyond the chapter (such as Data management's GORC explainers) is not a chapter and isn't in the sidebar. Put it in the module's `dive-deeper/` folder, name it like `dm-deeper-gorc-framework.md` (`page_id: dm-dd-gorc-framework`), and give it `type: Dive_deeper` and `back_to: <chapter page_id>`. List it in the chapter's `related_pages` under `Dive_deeper:`; it then appears at the end of the chapter under **Dive deeper**, on the same card as examples but with a magnifying-glass icon, and ends with a "Back to chapter" link. Examples and case studies work the same way – see [Real-world example pages](#real-world-example-pages).
 
 ### The metadata box
 
@@ -314,30 +333,16 @@ For templates and other files in `assets/downloads/`. Say what the file is and i
 
 ## Real-world example pages
 
-An example page tells how a Node actually did something. Give it `type: Real_world_example`, its own `page_id`, the module's `sidebar`, and `back_to` with the chapter it belongs to – that adds a "Back to chapter" link at the bottom:
+An example page tells how a Node actually did something; a case study is a longer one, often from a workshop. Both are `type: Real_world_example` and live in the module's `examples/` folder – not in the sidebar. Copy `pages/modules/_templates/example.md`.
 
-```yaml
----
-title: "From deliverable to impact story: ELEAD"
-description: One sentence on what the example shows.
-page_id: comm-ex-elead
-type: Real_world_example
-back_to: mod_comm_10
-sidebar: module-communication
----
-```
+1. **Name it** like the others: `dm-example-sweden-clarifying-the-node-remit.md`, with `page_id: dm-ex-sweden-clarifying-the-node-remit` (`comms-example-…` / `comm-ex-…` in Communication).
+2. **Say where it belongs.** Give it [topics](#topics) if the module has them – the first topic decides which chapter and section "Back to chapter" returns to. Otherwise (e.g. a case study) set `back_to` to the chapter's `page_id`.
+3. **Write a one-line `description`** – the takeaway. It's what the card shows.
+4. **Link it from the chapter**, in one of two ways, not both:
+   - **in the text**, where the chapter mentions it: a compact [example card](#example-card) (`compact=true`) – one highlighted example per mention;
+   - **at the end**, under "See it in practice": list it in the chapter's `related_pages` under `Real_world_example`. Use this for examples the text doesn't name, e.g. a case study that supports several chapters.
 
-Then link it from the chapter, either in the text with an [example card](#example-card), under "See it in practice" at the bottom of the page via `related_pages`, or both.
-
-### Many examples for one chapter
-
-When a chapter has several short Node examples (as in Data management), give **each example its own page**. Readers open exactly the example the chapter mentions, and the "Back to chapter" link sits right under it. All examples are not listed in the sidebar – like the Communication ones, they're reached from the chapter's cards.
-
-1. Put each example or case study in the module's `examples/` folder (e.g. `pages/modules/02-data-management/examples/`), one file per page, named like the Communication examples: `dm-example-sweden-clarifying-the-node-remit.md` with `page_id: dm-ex-sweden-clarifying-the-node-remit`.
-2. Use the front matter above. If the example has [topics](#topics), its chapter comes from its first topic in the topics data file – no `back_to` needed. Otherwise (e.g. a case study) set `back_to` to the chapter's `page_id` (e.g. `back_to: mod_dm_1`). Its `description` is the one-line summary shown on its card.
-3. Link it from the chapter with an [example card](#example-card). A case study that supports several chapters goes in each of those chapters' `related_pages`.
-
-That's it: the module's **All examples** page shows every page in the folder as one grid of cards, via `{% raw %}{% include module-examples.html folder="pages/modules/02-data-management/examples/" %}{% endraw %}`.
+Every example also appears on the module's **All examples** page automatically – one grid of cards, from `{% raw %}{% include module-examples.html sidebar="module-data-management" %}{% endraw %}`. The same line, with the module's sidebar, gives any module an All examples page.
 
 ### Topics
 
@@ -347,6 +352,10 @@ Examples can be tagged with **topics** from a fixed list – a controlled vocabu
 2. Where the "Topics:" line should appear on the page (usually under Node and Authors), write `{% raw %}{% include example-topics.html %}{% endraw %}`. It shows the topics as links.
 
 Every topic gets its own page automatically (`/dm-topic-gaps-to-action`), listing all examples with that topic; the topic chips on **All examples** link to them. These pages aren't in the sidebar. Their "Back to chapter" link goes straight to the topic's section in the chapter, and so does an example's: the data file is the single place that connects an example (through its first topic) to its chapter and section. To add a topic, add it to the data file – its page appears on the next build.
+
+## Dive deeper pages
+
+A longer explanation that goes beyond one chapter – such as Data management's GORC explainers – is a **Dive deeper** page. Copy `pages/modules/_templates/dive-deeper.md` into the module's `dive-deeper/` folder, name it like `dm-deeper-gorc-framework.md` (`page_id: dm-dd-gorc-framework`), and give it `type: Dive_deeper` and `back_to` its chapter. List it in the chapter's `related_pages` under `Dive_deeper`: it appears at the end of the chapter under **Dive deeper**, on the same card as examples but with a magnifying-glass icon.
 
 ## Resources
 
