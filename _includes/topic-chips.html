@@ -1,0 +1,24 @@
+{%- comment -%}
+A row of topic links (chips) to filter a module's examples: "All examples" plus one chip per topic
+in _data/topics/<sidebar>.yml, grouped by the chapter each topic comes from. Each chip opens that
+topic's page (a filtered view); the current one is highlighted. Works without JavaScript.
+Usage: {% include topic-chips.html sidebar="module-data-management" all_url="/dm-all-examples" current="gaps-to-action" %}
+{%- endcomment -%}
+{%- assign tc_data = site.data.topics[include.sidebar] -%}
+{%- if tc_data %}
+<nav class="topic-chips" aria-label="Filter examples by topic">
+  <div class="topic-chips-row">
+    <a class="topic-chip{% unless include.current %} is-current{% endunless %}" href="{{ include.all_url | relative_url }}"{% unless include.current %} aria-current="page"{% endunless %}>All examples</a>
+  </div>
+  {%- assign tc_chapters = tc_data.topics | map: "chapter" | uniq -%}
+  {%- for ch_id in tc_chapters %}
+  {%- assign tc_ch = site.pages | where: "page_id", ch_id | first %}
+  <div class="topic-chips-row">
+    <span class="topic-chips-label">Chapter {{ tc_ch.url | remove_first: "/" | slice: 0, 2 | plus: 0 }} topics</span>
+    {%- for t in tc_data.topics %}{%- if t.chapter == ch_id %}
+    <a class="topic-chip{% if include.current == t.id %} is-current{% endif %}" href="{{ '/' | append: tc_data.prefix | append: '-topic-' | append: t.id | relative_url }}"{% if include.current == t.id %} aria-current="page"{% endif %}>{{ t.title }}</a>
+    {%- endif %}{%- endfor %}
+  </div>
+  {%- endfor %}
+</nav>
+{%- endif %}

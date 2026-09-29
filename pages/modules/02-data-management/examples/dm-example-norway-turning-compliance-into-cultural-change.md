@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-norway-turning-compliance-into-cultural-change
 type: Real_world_example
+topics: [existing-work, gaps-to-action]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Norway  
 **Authors**: Federico Bianchini, data steward and deputy training coordinator  
-**Topics**: Existing work, Gaps to action  
+{% include example-topics.html %}
 
 {% include callout.html type="tip" content="Link services to needs that researchers already recognise. This can make data management support easier to understand and use." %}
 

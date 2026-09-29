@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-sweden-clarifying-the-node-remit
 type: Real_world_example
+topics: [why-strategy, who-to-involve]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Sweden  
 **Authors**: Elin Kronander and Niclas Jareborg, heads of data management  
-**Topics**: Why strategy, Who to involve  
+{% include example-topics.html %}
 
 {% include callout.html type="important" content="Vision and mission statements can help clarify what a team works on, why it matters and who the work is for." %}
 

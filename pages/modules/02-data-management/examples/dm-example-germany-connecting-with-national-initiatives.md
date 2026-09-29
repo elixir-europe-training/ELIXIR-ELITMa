@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-connecting-with-national-initiatives
 type: Real_world_example
+topics: [existing-work, who-to-involve]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Germany  
 **Authors**: Helena Schnitzer, training platform coordinator and liaison for RDM related questions  
-**Topics**: Existing work, Who to involve  
+{% include example-topics.html %}
 
 {% include callout.html type="note" content="Node strategy work does not happen in isolation. National initiatives can help identify existing expertise, overlaps and useful connections." %}
 

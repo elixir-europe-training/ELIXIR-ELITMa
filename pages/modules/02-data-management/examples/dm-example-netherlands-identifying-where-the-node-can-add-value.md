@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-netherlands-identifying-where-the-node-can-add-value
 type: Real_world_example
+topics: [gaps-to-action, existing-work]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Netherlands  
 **Authors**: Mijke Jetten, data stewardship liaison and deputy training coordinator  
-**Topics**: Gaps to action, Existing work  
+{% include example-topics.html %}
 
 {% include callout.html type="tip" content="Use a rough first version to start the conversation. It does not need to be complete. Its main value is to make ideas concrete enough for others to react, correct and build on." %}
 

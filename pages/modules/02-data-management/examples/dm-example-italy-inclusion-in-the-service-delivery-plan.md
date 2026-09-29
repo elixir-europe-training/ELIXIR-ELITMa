@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-italy-inclusion-in-the-service-delivery-plan
 type: Real_world_example
+topics: [gaps-to-action, who-to-involve]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Italy  
 **Authors**: Flavio Licciulli, data steward  
-**Topics**: Gaps to action, Who to involve  
+{% include example-topics.html %}
 
 {% include callout.html type="important" content="A formal process can help clarify how services are classified, reviewed and included in wider Node and ELIXIR planning." %}
 

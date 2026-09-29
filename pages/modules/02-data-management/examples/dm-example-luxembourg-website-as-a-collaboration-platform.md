@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-luxembourg-website-as-a-collaboration-platform
 type: Real_world_example
+topics: [existing-work, gaps-to-action]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Luxembourg  
 **Authors**: Hana Marčetić and Vilem Ded, data steward liaisons  
-**Topics**: Existing work, Gaps to action  
+{% include example-topics.html %}
 
 {% include callout.html type="note" content="A shared website can become more than a communication channel. It can also help document services, align responsibilities and make approvals traceable." %}
 

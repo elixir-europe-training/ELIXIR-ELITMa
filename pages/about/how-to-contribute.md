@@ -339,6 +339,15 @@ When a chapter has several short Node examples (as in Data management), give **e
 
 That's it: the module's **All examples** page shows every page in the folder as one grid of cards, via `{% raw %}{% include module-examples.html folder="pages/modules/02-data-management/examples/" %}{% endraw %}`.
 
+### Topics
+
+Examples can be tagged with **topics** from a fixed list – a controlled vocabulary – kept in `_data/topics/<sidebar>.yml` (for Data management: `_data/topics/module-data-management.yml`). Each topic has an `id`, a `title`, a one-line `description`, and the chapter and section it comes from.
+
+1. Tag an example in its front matter: `topics: [gaps-to-action, who-to-involve]` (ids from the list).
+2. Where the "Topics:" line should appear on the page (usually under Node and Authors), write `{% raw %}{% include example-topics.html %}{% endraw %}`. It shows the topics as links.
+
+Every topic gets its own page automatically (`/dm-topic-gaps-to-action`), listing all examples with that topic; the topic chips on **All examples** link to them. These pages aren't in the sidebar. Their "Back to chapter" link goes straight to the topic's section in the chapter, and so does an example's (using its first topic). To add a topic, add it to the data file – its page appears on the next build.
+
 ## Resources
 
 Resources for the "Further resources" tables and the All resources page live in `_data/tool_and_resource_list.yml`. Add an entry once, then list its `id` under `ref_to_main_resources` in any chapter that should show it.

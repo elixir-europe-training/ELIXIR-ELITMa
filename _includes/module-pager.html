@@ -91,10 +91,22 @@ A module with an empty sidebar simply renders nothing.
 {%- elsif pager_parent_item -%}
   {%- assign pager_back_url = pager_parent_item.url -%}{%- assign pager_back_title = pager_parent_item.title -%}
 {%- endif -%}
+{%- comment -%} Back to a section rather than the top of the chapter: a generated topic page sets
+    back_to_section; an example with `topics` goes back to the section of its first topic
+    (_data/topics/<sidebar>.yml). {%- endcomment -%}
+{%- assign pager_back_anchor = "" -%}
+{%- if page.back_to_section -%}
+  {%- assign pager_back_anchor = page.back_to_section -%}{%- assign pager_back_title = page.back_to_section_title -%}
+{%- elsif page.topics and site.data.topics[page.sidebar] -%}
+  {%- assign pager_topic = site.data.topics[page.sidebar].topics | where: "id", page.topics[0] | first -%}
+  {%- if pager_topic and pager_topic.chapter == page.back_to -%}
+    {%- assign pager_back_anchor = pager_topic.section -%}{%- assign pager_back_title = pager_topic.section_title -%}
+  {%- endif -%}
+{%- endif -%}
 {%- if pager_back_url %}
 <nav class="module-pager" aria-label="Module chapters">
   <div class="module-pager-links">
-    <a class="module-pager-link module-pager-link--prev" href="{{ pager_back_url | relative_url }}">
+    <a class="module-pager-link module-pager-link--prev" href="{{ pager_back_url | relative_url }}{% if pager_back_anchor != "" %}#{{ pager_back_anchor }}{% endif %}">
       <span class="module-pager-label"><i class="fa-solid fa-arrow-left me-1"></i>Back to chapter</span>
       <span class="module-pager-title">{{ pager_back_title }}</span>
     </a>

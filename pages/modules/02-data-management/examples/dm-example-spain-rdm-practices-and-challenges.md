@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-spain-rdm-practices-and-challenges
 type: Real_world_example
+topics: [starting-point, who-to-involve]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Spain  
 **Authors**: Laura Portell, RDM liaison  
-**Topics**: Starting point, Who to involve  
+{% include example-topics.html %}
 
 {% include callout.html type="tip" content="A survey can provide evidence for future RDM priorities. It helps move from assumptions about needs to a clearer picture of practices, gaps and support needs across the Node." %}
 

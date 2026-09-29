@@ -18,16 +18,6 @@ learning_outcomes:
     - Describe the key elements that shape your Node context for data management
     - Identify the perspectives needed to begin developing a Node data management strategy
     - Create a simple overview of your Node context and agree on a practical way to begin
-examples_intro: |
-  Chapter 2 is about looking around before moving ahead. These examples show how Nodes explored their context, brought together different perspectives and organised a practical first step.
-
-  The examples are linked to one or two topics from chapter 2:
-
-  **Node context**: why the Node context matters  
-  **Context overview**: what to include in a first overview  
-  **Connections and gaps**: what is connected, unclear or missing  
-  **Initial team**: who should be involved at the start  
-  **Ways of working**: how to organise the work together
 ---
 {% include module-metadata.html %}
 

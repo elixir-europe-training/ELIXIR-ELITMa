@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-differences-between-institutes
 type: Real_world_example
+topics: [starting-point, why-strategy]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Germany  
 **Authors**: Helena Schnitzer, training platform coordinator and liaison for RDM related questions  
-**Topics**: Starting point, Why strategy  
+{% include example-topics.html %}
 
 {% include callout.html type="important" content="Do not assume that all institutes organise RDM in the same way. Understanding local differences helps identify where shared support or coordination can add value." %}
 

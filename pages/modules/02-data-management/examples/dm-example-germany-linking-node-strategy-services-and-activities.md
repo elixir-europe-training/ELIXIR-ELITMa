@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-linking-node-strategy-services-and-activities
 type: Real_world_example
+topics: [context-overview, connections-and-gaps]
 back_to: mod_dm_2
 ---
 
 **Node**: ELIXIR Germany  
 **Authors**: Helena Schnitzer, training platform coordinator and liaison for RDM related questions  
-**Topics**: Context overview, Connections and gaps
+{% include example-topics.html %}
 
 {% include callout.html type="tip" content="Link strategic priorities to existing services, training and expertise. This can make current contributions more visible and support the development of the Node Service Delivery Plan." %}
 

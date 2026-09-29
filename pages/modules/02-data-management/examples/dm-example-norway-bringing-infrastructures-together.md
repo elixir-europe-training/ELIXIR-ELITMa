@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-norway-bringing-infrastructures-together
 type: Real_world_example
+topics: [who-to-involve, existing-work]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Norway  
 **Authors**: Federico Bianchini, data steward and deputy training coordinator  
-**Topics**: Who to involve, Existing work  
+{% include example-topics.html %}
 
 {% include callout.html type="warning" content="Without coordination, infrastructures may duplicate work or miss useful services developed elsewhere. Shared frameworks can help connect expertise across communities." %}
 

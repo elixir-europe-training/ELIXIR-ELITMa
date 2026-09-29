@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-netherlands-mapping-strengths-and-gaps
 type: Real_world_example
+topics: [starting-point, existing-work]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Netherlands  
 **Authors**: Mijke Jetten, data stewardship liaison and deputy training coordinator  
-**Topics**: Starting point, Existing work  
+{% include example-topics.html %}
 
 {% include callout.html type="warning" content="What looks like a gap may be a visibility or coordination issue. Before defining new priorities or actions, check what already exists across the network, who is involved and where connections or responsibilities are unclear." %}
 

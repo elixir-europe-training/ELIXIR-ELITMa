@@ -1,0 +1,11 @@
+{%- comment -%}
+Body of a generated topic page (_plugins/topic_pages.rb): the topic's description, the topic
+chips, and a grid of every example tagged with the topic. The "Back to chapter" link at the end
+(module-pager.html) goes to the section the topic comes from.
+{%- endcomment -%}
+{%- assign tp_data = site.data.topics[page.sidebar] -%}
+{%- assign tp_examples = site.pages | where: "sidebar", page.sidebar | where: "type", "Real_world_example" | where_exp: "p", "p.topics contains page.topic" | sort: "title" -%}
+<p>Examples about <strong>{{ page.description | downcase }}</strong> – a topic from <a href="{{ page.back_to_url | relative_url }}#{{ page.back_to_section }}">{{ page.back_to_section_title }}</a>.</p>
+{% include topic-chips.html sidebar=page.sidebar all_url=page.all_url current=page.topic %}
+{%- assign tp_ids = tp_examples | map: "page_id" | join: "," %}
+{% include example-card.html page_ids=tp_ids %}

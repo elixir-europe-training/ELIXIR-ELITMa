@@ -31,6 +31,9 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `video.html` | Embedded YouTube video (privacy-enhanced, lazy-loaded) with a direct link | Anywhere in a chapter's text | `youtube`, `title`, `caption` |
 | `example-card.html` | Highlighted link card to another page: a lightbulb for real-world examples, a magnifying glass for Dive deeper pages, the module's icon and name for any other module page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id` (or `page_ids` for several side by side), `lead`, `label`, `icon`, `compact` (title only, for in-text mentions) |
 | `module-examples.html` | One grid of example cards for every page in a module's examples folder, sorted by title | A module's All examples page | `folder` |
+| `example-topics.html` | The "Topics:" line on an example: its `topics` as links to the topic pages | On an example page, under Node and Authors | – |
+| `topic-chips.html` | Topic links (chips) that filter a module's examples: All examples plus one per topic, grouped by chapter; the current one is filled | All examples page and topic pages | `sidebar`, `all_url`, `current` |
+| `topic-page.html` | Body of a generated topic page: description, chips and a grid of the topic's examples | Used by `_plugins/topic_pages.rb` | – |
 
 ## Custom layouts
 
@@ -60,6 +63,7 @@ The breadcrumb is switched on in `_config.yml` (`theme_variables: breadcrumb: tr
 | `_data/pathways/<module>.yml` | Learning pathways: `id`, `title`, `description`, `chapters` (page_ids). File name must match the sidebar file. |
 | `_data/module_types.yml` | Module tiles: title, description, icon, order. Time is **not** stored here, and `status` is only used until a module has chapters – after that, both are calculated from the chapters. |
 | `_data/tool_and_resource_list.yml` | Resources for "Further resources" tables and All resources pages |
+| `_data/topics/<sidebar>.yml` | Example topics (controlled vocabulary): `prefix`, then per topic `id`, `title`, `description`, `chapter`, `section`, `section_title`. `_plugins/topic_pages.rb` generates a page per topic (`/<prefix>-topic-<id>`), not in the sidebar. |
 | `_data/CONTRIBUTORS.yml` | People; `role: Lead` or `role: Contributor` sets their group and badge |
 
 ## Styles

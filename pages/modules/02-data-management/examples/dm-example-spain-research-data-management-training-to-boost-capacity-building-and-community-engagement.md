@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement
 type: Real_world_example
+topics: [gaps-to-action, who-to-involve]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Spain  
 **Authors**: Eva Alloza, deputy Node coordinator and training coordinator  
-**Topics**: Gaps to action, Who to involve  
+{% include example-topics.html %}
 
 The first experiences of the ELIXIR Spanish Node with Research Data Management (RDM) training were linked to sporadic requests to deliver short talks introducing basic RDM concepts and the FAIR principles to institutions, research networks, or individual projects. These sessions served as a rapid needs-assessment tool: they helped us gauge learners’ prior knowledge, identify the variety of roles requiring this training, and begin iterating on our training materials. As Data Management Plans (DMPs) became mandatory in the research ecosystem, the requests evolved from pure theory to include hands-on exercises and live Q&A, reflecting a growing demand for practical, applicable skills.
 

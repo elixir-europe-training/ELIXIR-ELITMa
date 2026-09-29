@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-netherlands-bringing-together-node-and-institutional-perspectives
 type: Real_world_example
+topics: [node-context, initial-team]
 back_to: mod_dm_2
 ---
 
 **Node**: ELIXIR Netherlands  
 **Authors**: Mijke Jetten, data stewardship liaison and deputy training coordinator  
-**Topics**: Node context, Initial team  
+{% include example-topics.html %}
 
 {% include callout.html type="tip" content="Start with two or three people who see the Node from different perspectives. They do not need to represent the whole Node, but they can help identify who is essential now and who can be involved later." %}
 

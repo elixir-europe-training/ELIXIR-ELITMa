@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-spain-open-science-resources-in-national-policies
 type: Real_world_example
+topics: [existing-work, starting-point]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Spain  
 **Authors**: Aída Moure, RDM liaison  
-**Topics**: Existing work, Starting point  
+{% include example-topics.html %}
 
 {% include callout.html type="important" content="Mapping policy references can make the Node’s contribution more visible and show where ELIXIR resources are already embedded in national Open Science and Data Management priorities." %}
 

@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-netherlands-finding-practical-ways-to-keep-people-involved
 type: Real_world_example
+topics: [ways-of-working]
 back_to: mod_dm_2
 ---
 
 **Node**: ELIXIR Netherlands  
 **Authors**: Mijke Jetten, data stewardship liaison and deputy training coordinator  
-**Topics**: Ways of working  
+{% include example-topics.html %}
 
 {% include callout.html type="tip" content="Do not rely on one way of involving people. Offer practical options that fit existing ways of working, such as comments in a document, discussion during a regular meeting or a separate follow-up meeting." %}
 

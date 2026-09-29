@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-sweden-training-activity-strategy
 type: Real_world_example
+topics: [gaps-to-action, why-strategy]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Sweden  
 **Authors**: Elin Kronander and Niclas Jareborg, heads of data management  
-**Topics**: Gaps to action, Why strategy  
+{% include example-topics.html %}
 
 {% include callout.html type="note" content="A strategy can help a team move from first come, first served to more deliberate choices. This is especially useful when requests grow faster than available capacity." %}
 

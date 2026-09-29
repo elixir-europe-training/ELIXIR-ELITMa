@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities
 type: Real_world_example
+topics: [initial-team, ways-of-working]
 back_to: mod_dm_2
 ---
 
 **Node**: ELIXIR Netherlands  
 **Authors**: Mijke Jetten, data stewardship liaison and deputy training coordinator  
-**Topics**: Initial team, Ways of working  
+{% include example-topics.html %}
 
 {% include callout.html type="note" content="The initial meeting does not need to produce a complete strategy. Use it to compare perspectives, identify first priorities and agree on an immediate next step." %}
 

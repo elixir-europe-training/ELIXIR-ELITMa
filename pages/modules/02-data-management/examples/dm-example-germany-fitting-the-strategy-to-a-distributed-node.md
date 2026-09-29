@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-fitting-the-strategy-to-a-distributed-node
 type: Real_world_example
+topics: [node-context]
 back_to: mod_dm_2
 ---
 
 **Node**: ELIXIR Germany  
 **Authors**: Helena Schnitzer, training platform coordinator and liaison for RDM related questions  
-**Topics**: Node context
+{% include example-topics.html %}
 
 {% include callout.html type="important" content="A Node strategy should complement existing institutional approaches rather than replace them. Shared direction does not require one uniform approach across all partner institutions." %}
 

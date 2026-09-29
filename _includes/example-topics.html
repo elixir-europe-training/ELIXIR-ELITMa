@@ -1,0 +1,13 @@
+{%- comment -%}
+The "Topics:" line on an example page: the page's `topics` (ids from _data/topics/<sidebar>.yml),
+each linking to its topic page. Use it where the line should appear, e.g. under Node and Authors:
+  {% include example-topics.html %}
+Unknown ids are shown as plain text, so a typo is visible rather than silently dropped.
+{%- endcomment -%}
+{%- assign et_data = site.data.topics[page.sidebar] -%}
+{%- if page.topics and et_data -%}
+**Topics**: {% for t_id in page.topics -%}
+{%- assign t = et_data.topics | where: "id", t_id | first -%}
+{%- if t %}[{{ t.title }}]({{ '/' | append: et_data.prefix | append: '-topic-' | append: t.id | relative_url }}){% else %}{{ t_id }}{% endif %}{% unless forloop.last %}, {% endunless %}
+{%- endfor -%}
+{%- endif -%}

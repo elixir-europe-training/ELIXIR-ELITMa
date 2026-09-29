@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-sweden-mapping-the-data-service-landscape
 type: Real_world_example
+topics: [context-overview, connections-and-gaps]
 back_to: mod_dm_2
 ---
 
 **Node**: ELIXIR Sweden  
 **Authors**: Elin Kronander and Niclas Jareborg, heads of data management  
-**Topics**: Context overview, Connections and gaps
+{% include example-topics.html %}
 
 {% include callout.html type="tip" content="Create the overview together. Mapping services in an in-person workshop can reveal connections and gaps that are difficult to identify from separate lists." %}
 

@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-luxembourg-node-member-onboarding
 type: Real_world_example
+topics: [gaps-to-action, why-strategy]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Luxembourg  
 **Authors**: Hana Marčetić and Vilem Ded, data steward liaisons  
-**Topics**: Gaps to action, Why strategy  
+{% include example-topics.html %}
 
 {% include callout.html type="important" content="Onboarding can reveal strategic gaps. Questions about membership, access, responsibilities and sign off often show where governance needs to be made explicit." %}
 

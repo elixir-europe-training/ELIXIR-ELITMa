@@ -5,12 +5,13 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-luxembourg-why-a-written-data-management-strategy
 type: Real_world_example
+topics: [why-strategy, starting-point]
 back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Luxembourg  
 **Authors**: Hana Marčetić and Vilem Ded, data steward liaisons  
-**Topics**: Why strategy, Starting point  
+{% include example-topics.html %}
 
 {% include callout.html type="tip" content="Use the data management strategy to write down boundaries that are currently handled case by case. This can make decisions about roles, resources, products and representation easier to explain and repeat." %}
 
