@@ -60,6 +60,8 @@ A few terms are used in a specific way throughout the module:
 
 * **Node data management strategy**: how a Node wants to organise, support and develop data management across its activities and partnerships.
 * **Data management policy**: formal rules or commitments for data management, for example those required by a funder or hosting institution.
+* **Node data management strategy**: how a Node wants to organise, support and develop data management across its activities and partnerships.
+* **Data management policy**: formal rules or commitments for data management, for example those required by a funder or hosting institution.
 * **Mandate**: whether the Node has the remit or authority to act.
 * **Node role**: what contribution the Node should make.
 * **Decision owner**: who can agree about the direction.
