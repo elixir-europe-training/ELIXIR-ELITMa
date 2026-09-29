@@ -242,6 +242,26 @@ Optional settings: `lead` (your own sentence), `label` (a different small headin
 
 {% include example-card.html page_id="comm-ex-elead" %}
 
+When a section points to **several examples** – for instance different Nodes' stories on one examples page – list them on one light line instead, so the page doesn't fill up with cards. Write the links as a normal Markdown list:
+
+```liquid
+{% raw %}{% capture examples %}
+- [ELIXIR Sweden on clarifying the Node remit]({{ site.baseurl }}/examples-01-dm#elixir-sweden-clarifying-the-node-remit)
+- [ELIXIR Luxembourg on Node member onboarding]({{ site.baseurl }}/examples-01-dm#elixir-luxembourg-node-member-onboarding)
+{% endcapture %}
+{% include example-links.html content=examples %}{% endraw %}
+```
+
+The line starts "Node examples:"; use `label` for a different word.
+
+**Renders as:**
+
+{% capture examples %}
+- [ELIXIR Sweden on clarifying the Node remit]({{ site.baseurl }}/examples-01-dm#elixir-sweden-clarifying-the-node-remit)
+- [ELIXIR Luxembourg on Node member onboarding]({{ site.baseurl }}/examples-01-dm#elixir-luxembourg-node-member-onboarding)
+{% endcapture %}
+{% include example-links.html content=examples %}
+
 ### Figure with a caption
 
 Always write ALT text that says what the image shows, not just what it is. Put images in `images/<module>/`. For other ways to add images, see [Images](https://elixir-belgium.github.io/elixir-toolkit-theme/markdown_cheat_sheet#images) in the ETT documentation.

@@ -1,0 +1,20 @@
+{%- comment -%}
+One quiet line listing the examples a section refers to (lightbulb, label, links separated
+by dots) - the light companion to example-card.html, for chapters that cite many examples.
+Usage:
+  {% capture examples %}
+  - [ELIXIR Sweden on clarifying the Node remit]({{ site.baseurl }}/examples-01-dm#elixir-sweden-clarifying-the-node-remit)
+  - [ELIXIR Luxembourg on onboarding]({{ site.baseurl }}/examples-01-dm#elixir-luxembourg-node-member-onboarding)
+  {% endcapture %}
+  {% include example-links.html content=examples %}
+Optional:
+  label="..."  the small heading (defaults to "Node examples")
+  icon="..."   a Font Awesome icon name (defaults to "lightbulb")
+{%- endcomment -%}
+<div class="example-card example-card--links">
+  <div class="example-card-icon" aria-hidden="true"><i class="fa-solid fa-{{ include.icon | default: 'lightbulb' }}"></i></div>
+  <div class="example-card-body">
+    <span class="example-card-label">{{ include.label | default: "Node examples" }}</span>
+    {{ include.content | markdownify }}
+  </div>
+</div>
