@@ -1731,11 +1731,3 @@ ul.task-list li.task-list-item:has(> label) {
 .module-pager-link--next:focus-visible .go-arrow {
   transform: translateX(4px);
 }
-
-/*-----Footer-----*/
-// The logo (an image column in _data/footer.yml) sits at the top, level with the tagline,
-// rather than floating in the middle of the column.
-#footer .row > div:first-child img.my-auto {
-  margin-top: 0 !important;
-  margin-bottom: auto !important;
-}

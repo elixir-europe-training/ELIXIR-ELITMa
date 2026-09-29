@@ -65,7 +65,6 @@ The breadcrumb is switched on in `_config.yml` (`theme_variables: breadcrumb: tr
 | `_data/module_types.yml` | Module tiles: title, description, icon, order. Time is **not** stored here, and `status` is only used until a module has chapters – after that, both are calculated from the chapters. |
 | `_data/tool_and_resource_list.yml` | Resources for "Further resources" tables and All resources pages |
 | `_data/topics/<sidebar>.yml` | Example topics (controlled vocabulary): `prefix`, then per topic `id`, `title`, `description`, `chapter`, `section`, `section_title`. `_plugins/topic_pages.rb` generates a page per topic (`/<prefix>-topic-<id>`), not in the sidebar. |
-| `_data/footer.yml` | The footer (the theme's own mechanism): logo, tagline, link columns and the bottom line with the licence |
 | `_data/CONTRIBUTORS.yml` | People; `role: Lead` or `role: Contributor` sets their group and badge |
 
 ## Styles
