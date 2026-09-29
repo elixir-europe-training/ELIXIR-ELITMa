@@ -1427,16 +1427,16 @@ ul.task-list li.task-list-item:has(> label) {
 
 
 
-/*-----Dive deeper table-----*/
+/*-----Further resources table-----*/
 // The resources table at the end of a chapter: present, but quieter than the
 // chapter content - smaller heading and text, light category labels.
-#content .dive-deeper-heading {
+#content .further-resources-heading {
   margin-top: 3rem;
   font-size: 1.3rem;
   color: $primary;
 }
 
-#content .dive-deeper-table {
+#content .further-resources-table {
   margin: 0.5rem 0 2rem;
   font-size: 0.88rem;
 
@@ -1455,7 +1455,7 @@ ul.task-list li.task-list-item:has(> label) {
   // Category as narrow as its label, a modest column for the name, and
   // the rest for the description.
   table { table-layout: auto; width: 100%; }
-  .dive-deeper-category { width: 1%; white-space: nowrap; }
+  .further-resources-category { width: 1%; white-space: nowrap; }
   th:nth-child(2), td:nth-child(2) { width: 24%; }
   th:nth-child(3), td:nth-child(3) { width: auto; }
 

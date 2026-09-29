@@ -1,15 +1,15 @@
 {%- comment -%}
 Local override of the elixir-toolkit-theme include of the same name.
 Lists the resources named in a page's `ref_to_main_resources` (defined in
-_data/tool_and_resource_list.yml) as a compact "Dive deeper" table - category, resource,
-description - styled to sit quietly at the end of the page (see "Dive deeper table" in
+_data/tool_and_resource_list.yml) as a compact "Further resources" table - category, resource,
+description - styled to sit quietly at the end of the page (see "Further resources table" in
 _custom_classes.scss). The theme's version adds national-resource and registry columns
 this site doesn't use.
 {%- endcomment -%}
 {%- if page.ref_to_main_resources %}
 {%- assign tool_ids = page.ref_to_main_resources %}
-<h2 class="dive-deeper-heading">Dive deeper</h2>
-<div class="table-responsive dive-deeper-table">
+<h2 class="further-resources-heading">Further resources</h2>
+<div class="table-responsive further-resources-table">
     <table class="tooltable table display">
         <thead>
             <tr>
@@ -22,8 +22,8 @@ this site doesn't use.
             {%- for tool_id in tool_ids | sort %}
             {%- assign tool = site.data.tool_and_resource_list | where:"id", tool_id | first %}
             <tr>
-                <td class="dive-deeper-category">
-                    <span class="badge">{{ tool.category | replace: "_", " " | capitalize }}</span>
+                <td class="further-resources-category">
+                    <span class="badge">{% if tool.category == "elixir_resource" %}ELIXIR resource{% else %}{{ tool.category | replace: "_", " " | capitalize }}{% endif %}</span>
                 </td>
                 <td>
                     {%- if tool.url %}

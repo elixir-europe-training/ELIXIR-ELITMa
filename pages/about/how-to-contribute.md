@@ -341,14 +341,14 @@ That's it: the module's **All examples** page shows every page in the folder as 
 
 ## Resources
 
-Resources for the "Dive deeper" tables and the All resources page live in `_data/tool_and_resource_list.yml`. Add an entry once, then list its `id` under `ref_to_main_resources` in any chapter that should show it.
+Resources for the "Further resources" tables and the All resources page live in `_data/tool_and_resource_list.yml`. Add an entry once, then list its `id` under `ref_to_main_resources` in any chapter that should show it.
 
 ```yaml
 - id: writing-in-sciences
   name: Writing in the Sciences (Stanford University)
   url: https://www.coursera.org/learn/sciwrite
   description: Free online course on clear scientific writing.
-  category: external_resource     # template, internal_resource or external_resource
+  category: external_resource     # template, elixir_resource or external_resource
   module: mod_comm
 ```
 

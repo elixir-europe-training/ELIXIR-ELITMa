@@ -39,21 +39,21 @@
   name: ELIXIR Brand Guidelines (2025)
   url: https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf
   description: The official rules for using ELIXIR logos, colours and fonts, and for branding Node websites (public PDF).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: elixir-logos
   name: ELIXIR logos and other visuals
   url: https://elixir-europe.org/documents/elixir-logos-and-other-visuals
   description: Download the official ELIXIR, Node and service logos, icons and templates (intranet - consortium login required).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: elixir-style-guide
   name: ELIXIR Style Guide
   url: https://elixir-europe.org/sites/default/files/documents/elixir-style-guide.pdf
   description: ELIXIR's writing conventions - abbreviations, capitalisation, dates, numbers, ELIXIR-specific terms, spelling and writing for the web (PDF).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 # --- Design for non-designers (Section 8) ---
@@ -61,7 +61,7 @@
   name: CONVERGE workshop series - Design made easy for communicators
   url: https://www.youtube.com/watch?v=fFAlT51EPZQ
   description: Practical video on design made easy for communicators - design tips for non-designers in research communications.
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 
@@ -141,14 +141,14 @@
   name: TeSS documentation - Subscribing to notifications
   url: https://elixirtess.github.io/docs/search/subscribe/
   description: Get new TeSS training events matching a search by email - daily, weekly or monthly. Handy for newsletters.
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: tess-feeds
   name: TeSS training events feed
   url: https://tess.elixir-europe.org/events.rss
   description: RSS feed of new training events on TeSS; filter by country (?country=) or keyword (?q=). Also available as a calendar feed (events.ics).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: zapier
@@ -169,7 +169,7 @@
   name: Communication tools used by ELIXIR Nodes
   url: https://docs.google.com/spreadsheets/d/174WtL6yeIeVR8jIfDtDxvg0SZWDPsGHq9vvEA5SiEPw/edit?gid=0#gid=0
   description: The ELIXIR Communications Group's shared spreadsheet of communication tools - cost, what each is for and which Nodes use it.
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: google-analytics
@@ -191,7 +191,7 @@
   name: ELIXIR Node Communications Strategy Toolkit (ELIXIR-STEERS)
   url:
   description: The Hub's full toolkit for building a Node communications strategy - objectives, scope, audiences, channels, messages, evaluation and a strategy template (ELIXIR-STEERS M5.3, 2025).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 # --- Storytelling and impact (Section 10) ---
@@ -207,7 +207,7 @@
   name: CONVERGE workshop - communications tips for different audiences
   url: https://www.youtube.com/watch?v=th88pw_w52U
   description: Practical video on tailoring communications to different audiences.
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: writing-in-sciences
@@ -221,7 +221,7 @@
   name: ELIXIR social media hashtags and accounts
   url: https://docs.google.com/document/d/1OzY4IMhiz-_sZ54EtxPGGdqLOq8T_QJ7d6BMfejZGXk/edit?tab=t.0#heading=h.p7m0vv7tadl2
   description: Hashtags for ELIXIR Communities, Platforms and projects, and every Node's social media accounts - in the ELIXIR communications useful information document.
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 # --- Collaboration (Section 3) ---
@@ -229,14 +229,14 @@
   name: ELIXIR communications useful information
   url: https://docs.google.com/document/d/1OzY4IMhiz-_sZ54EtxPGGdqLOq8T_QJ7d6BMfejZGXk/edit?tab=t.0#heading=h.306gbb7w1q9d
   description: Communications and website contacts in every Node, Node and project social media accounts, and ELIXIR hashtags (Google Doc).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: comms-group
   name: ELIXIR Communications Group
   url: https://elixir-europe.org/intranet/communication
   description: Open, collaborative space where communicators from all Nodes share practice and shape consortium communications (intranet).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 # --- Ecosystem (Section 4) ---
@@ -244,26 +244,26 @@
   name: ELIXIR Communications Strategy
   url:
   description: Full channel details and submission guidelines for the consortium's communications (intranet).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: sm-guidelines-nodes
   name: Social media guidelines for Node account managers
   url:
   description: Guidance for those running a Node's social media accounts (intranet).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: sm-guidelines-members
   name: Social media guidelines for ELIXIR consortium members
   url:
   description: Guidance for individual consortium members posting about ELIXIR (intranet).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: node-newsletter-guidelines
   name: ELIXIR Node internal newsletters - guidelines and recommendations
   url:
   description: Recommendations for running a Node-level internal newsletter (intranet).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm

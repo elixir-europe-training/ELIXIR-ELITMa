@@ -8,7 +8,7 @@ Displays all resources for a given module, grouped by category.
    | sort_natural: "name" %}
 
 {% assign templates = all_tools | where: "category", "template" %}
-{% assign internal = all_tools | where: "category", "internal_resource" %}
+{% assign internal = all_tools | where: "category", "elixir_resource" %}
 {% assign external = all_tools | where: "category", "external_resource" %}
 
 {% if templates.size > 0 %}
@@ -44,7 +44,7 @@ Displays all resources for a given module, grouped by category.
 {% endif %}
 
 {% if internal.size > 0 %}
-<h2>Internal resources</h2>
+<h2>ELIXIR resources</h2>
 <div class="table-responsive mt-3 mb-4">
   <table class="tooltable table display">
     <thead>
@@ -58,7 +58,7 @@ Displays all resources for a given module, grouped by category.
     {%- for tool in internal %}
       <tr>
         <td style="width: 15%">
-          <span class="badge bg-primary">Internal</span>
+          <span class="badge bg-primary">ELIXIR</span>
         </td>
         <td>
           {%- if tool.url %}

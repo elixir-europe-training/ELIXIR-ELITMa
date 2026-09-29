@@ -70,7 +70,7 @@ YouTube is used to store videos from training, webinars and any other type of vi
 **When to use it**: For quick updates, event promotion, amplifying news releases and engaging with the wider research community. Your Node may also have its own accounts – coordinate with the Hub's social media calendar where possible to amplify reach.
 
 #### Guidance for Node social media accounts
-If you run your Node's accounts, or post about ELIXIR from your own, the Hub's social media guidelines for Node account managers and for consortium members (listed under "Dive deeper" at the end of this page) cover tone, tagging and hashtags. For writing the posts themselves, see [Chapter 6: Writing for non-writers](06-comms-writing).
+If you run your Node's accounts, or post about ELIXIR from your own, the Hub's social media guidelines for Node account managers and for consortium members (listed under "Further resources" at the end of this page) cover tone, tagging and hashtags. For writing the posts themselves, see [Chapter 6: Writing for non-writers](06-comms-writing).
 
 ### TeSS
 [TeSS](https://tess.elixir-europe.org) is ELIXIR's training registry — the central place where all ELIXIR training events and materials should be listed.
