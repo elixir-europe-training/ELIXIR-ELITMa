@@ -10,9 +10,6 @@ status: ready
 sidebar: module-data-management
 summary: Data management activities often develop separately across governance, services and support structures. This chapter helps you bring these elements together, identify the areas most relevant to your Node and draft a simple strategy outline, using a shared framework called the Global Open Research Commons (GORC) model.
 related_pages:
-  Dive_deeper:
-  - dm-dd-gorc-framework
-  - dm-dd-gorc-elixir
   Real_world_example:
   - dm-ex-rdm-portfolio
 learning_outcomes:
@@ -76,7 +73,7 @@ Using the framework helps you:
 
 {% include callout.html type="important" content="The GORC model is not prescriptive, focus on the elements that are most relevant to your Node and strategy. Read the Understanding the GORC framework page in detail before starting the exercises below, it explains the essential elements you will need." %}
 
-See <a href="{{ site.baseurl }}/dm-deeper-gorc-framework">Understanding the GORC framework</a> for the full explanation, and <a href="{{ site.baseurl }}/dm-deeper-gorc-elixir">Why use GORC in ELIXIR?</a> to see how the framework relates to ELIXIR Nodes and distributed infrastructure.
+{% include example-card.html page_ids="dm-dd-gorc-framework, dm-dd-gorc-elixir" compact=true %}
 
 ## Example: mapping GORC elements
 
