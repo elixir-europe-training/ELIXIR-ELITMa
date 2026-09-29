@@ -20,6 +20,9 @@ subitems:
     url: /06-dm-plan
   - title: 07 Keeping the strategy alive
     url: /07-dm-sustain
+    subitems:
+    - title: 07.1 Approaches to sustaining RDM support
+      url: /07-1-dm-sustain-models
   - title: Examples and case studies
     url: /dm-all-examples
     hr: true   # divider: separates the numbered chapters from extras below
