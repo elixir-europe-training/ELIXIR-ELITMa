@@ -246,8 +246,8 @@ When a section points to **several examples** – for instance different Nodes' 
 
 ```liquid
 {% raw %}{% capture examples %}
-- [ELIXIR Sweden on clarifying the Node remit]({{ site.baseurl }}/examples-01-dm#elixir-sweden-clarifying-the-node-remit)
-- [ELIXIR Luxembourg on Node member onboarding]({{ site.baseurl }}/examples-01-dm#elixir-luxembourg-node-member-onboarding)
+- [ELIXIR Sweden on clarifying the Node remit]({{ site.baseurl }}/elixir-sweden-clarifying-the-node-remit)
+- [ELIXIR Luxembourg on Node member onboarding]({{ site.baseurl }}/elixir-luxembourg-node-member-onboarding)
 {% endcapture %}
 {% include example-links.html content=examples %}{% endraw %}
 ```
@@ -257,8 +257,8 @@ The line starts "Node examples:"; use `label` for a different word.
 **Renders as:**
 
 {% capture examples %}
-- [ELIXIR Sweden on clarifying the Node remit]({{ site.baseurl }}/examples-01-dm#elixir-sweden-clarifying-the-node-remit)
-- [ELIXIR Luxembourg on Node member onboarding]({{ site.baseurl }}/examples-01-dm#elixir-luxembourg-node-member-onboarding)
+- [ELIXIR Sweden on clarifying the Node remit]({{ site.baseurl }}/elixir-sweden-clarifying-the-node-remit)
+- [ELIXIR Luxembourg on Node member onboarding]({{ site.baseurl }}/elixir-luxembourg-node-member-onboarding)
 {% endcapture %}
 {% include example-links.html content=examples %}
 
@@ -322,6 +322,28 @@ sidebar: module-communication
 ```
 
 Then link it from the chapter, either in the text with an [example card](#example-card), under "See it in practice" at the bottom of the page via `related_pages`, or both.
+
+### Many examples for one chapter: a "Node examples" folder
+
+When a chapter has several short Node examples (as in Data management), give **each example its own page** and group them in a folder in the sidebar. Readers can then open exactly the example the chapter mentions, and the "Back to chapter" link sits right under it.
+
+1. Put each example in `pages/modules/<nn-module>/examples/`, one file per example, e.g. `elixir-sweden-clarifying-the-node-remit.md`. Use the same front matter as above; `back_to` isn't needed, because the chapter is found from the sidebar.
+2. Add it to the chapter's folder in the sidebar file:
+
+   ```yaml
+   - title: 01 Why a Node data management strategy
+     url: /01-dm-intro
+     subitems:
+     - title: Node examples
+       url: /examples-01-dm          # the folder's own page
+       subitems:
+       - title: "Sweden: clarifying the Node remit"
+         url: /elixir-sweden-clarifying-the-node-remit
+   ```
+
+3. That's it: the example appears on the folder's page and on the module's **All examples** page automatically. The one-line summary shown there is the page's `description`.
+
+The folder's page lists its examples with `{% raw %}{% include module-examples.html sidebar="module-data-management" folder="/examples-01-dm" %}{% endraw %}`; an All examples page uses the same include without `folder`.
 
 ## Resources
 

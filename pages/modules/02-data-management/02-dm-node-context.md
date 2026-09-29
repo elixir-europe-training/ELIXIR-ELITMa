@@ -37,8 +37,8 @@ A Node strategy should complement institutional, project-level and national appr
 A strategy also depends on people. No single person can see the whole picture. A small group with different perspectives helps ensure that the strategy reflects both the overall direction of the Node and how data management, services and support work in practice.
 
 {% capture examples %}
-- [ELIXIR Germany on fitting the strategy to a distributed Node]({{ site.baseurl }}/examples-02-dm#elixir-germany-fitting-the-strategy-to-a-distributed-node)
-- [ELIXIR Netherlands on bringing together Node and institutional perspectives]({{ site.baseurl }}/examples-02-dm#elixir-netherlands-bringing-together-node-and-institutional-perspectives)
+- [ELIXIR Germany on fitting the strategy to a distributed Node]({{ site.baseurl }}/elixir-germany-fitting-the-strategy-to-a-distributed-node)
+- [ELIXIR Netherlands on bringing together Node and institutional perspectives]({{ site.baseurl }}/elixir-netherlands-bringing-together-node-and-institutional-perspectives)
 {% endcapture %}
 {% include example-links.html content=examples %}
 
@@ -63,8 +63,8 @@ Use these questions to guide your first overview.
 | **Sustainability** | How are activities funded, staffed and maintained? What is stable, changing or uncertain? | Project funding, limited staff continuity or unclear long-term ownership |
 
 {% capture examples %}
-- [ELIXIR Spain on understanding the Node RDM landscape and needs]({{ site.baseurl }}/examples-02-dm#elixir-spain-understanding-the-node-rdm-landscape-and-needs)
-- [ELIXIR Sweden on mapping the data service landscape]({{ site.baseurl }}/examples-02-dm#elixir-sweden-mapping-the-data-service-landscape)
+- [ELIXIR Spain on understanding the Node RDM landscape and needs]({{ site.baseurl }}/elixir-spain-understanding-the-node-rdm-landscape-and-needs)
+- [ELIXIR Sweden on mapping the data service landscape]({{ site.baseurl }}/elixir-sweden-mapping-the-data-service-landscape)
 - [Funders as drivers for FAIRification strategies]({{ site.baseurl }}/funders-dm) (related perspective)
 {% endcapture %}
 {% include example-links.html content=examples %}
@@ -87,8 +87,8 @@ As a starting point, reflect on:
 Before describing something as a gap, check whether the activity or expertise may already exist elsewhere in the Node. Keep your notes short and practical. The goal is not completeness, but a shared understanding of what is connected, unclear or missing.
 
 {% capture examples %}
-- [ELIXIR Germany on linking Node strategy, services and activities]({{ site.baseurl }}/examples-02-dm#elixir-germany-linking-node-strategy-services-and-activities)
-- [ELIXIR Sweden on mapping the data service landscape]({{ site.baseurl }}/examples-02-dm#elixir-sweden-mapping-the-data-service-landscape)
+- [ELIXIR Germany on linking Node strategy, services and activities]({{ site.baseurl }}/elixir-germany-linking-node-strategy-services-and-activities)
+- [ELIXIR Sweden on mapping the data service landscape]({{ site.baseurl }}/elixir-sweden-mapping-the-data-service-landscape)
 {% endcapture %}
 {% include example-links.html content=examples %}
 
@@ -112,8 +112,8 @@ Depending on your context, useful perspectives may include:
 You do not need all these perspectives in the initial group. Note who is essential now, who should be consulted and who may become involved later.
 
 {% capture examples %}
-- [ELIXIR Netherlands on bringing together Node and institutional perspectives]({{ site.baseurl }}/examples-02-dm#elixir-netherlands-bringing-together-node-and-institutional-perspectives)
-- [ELIXIR Netherlands on using an initial meeting to identify priorities]({{ site.baseurl }}/examples-02-dm#elixir-netherlands-using-an-initial-meeting-to-identify-priorities)
+- [ELIXIR Netherlands on bringing together Node and institutional perspectives]({{ site.baseurl }}/elixir-netherlands-bringing-together-node-and-institutional-perspectives)
+- [ELIXIR Netherlands on using an initial meeting to identify priorities]({{ site.baseurl }}/elixir-netherlands-using-an-initial-meeting-to-identify-priorities)
 {% endcapture %}
 {% include example-links.html content=examples %}
 
@@ -151,8 +151,8 @@ Then agree on a practical way to begin.
    Consider how people who are not part of the initial group can provide input, for example through comments in a document, an existing meeting, a survey or a separate discussion.
 
 {% capture examples %}
-- [ELIXIR Netherlands on using an initial meeting to identify priorities]({{ site.baseurl }}/examples-02-dm#elixir-netherlands-using-an-initial-meeting-to-identify-priorities)
-- [ELIXIR Netherlands on finding practical ways to keep people involved]({{ site.baseurl }}/examples-02-dm#elixir-netherlands-finding-practical-ways-to-keep-people-involved)
+- [ELIXIR Netherlands on using an initial meeting to identify priorities]({{ site.baseurl }}/elixir-netherlands-using-an-initial-meeting-to-identify-priorities)
+- [ELIXIR Netherlands on finding practical ways to keep people involved]({{ site.baseurl }}/elixir-netherlands-finding-practical-ways-to-keep-people-involved)
 {% endcapture %}
 {% include example-links.html content=examples %}
 

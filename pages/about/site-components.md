@@ -22,7 +22,7 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `module-metadata.html` | Status, time, audience and learning-outcomes box at the top of a chapter | Added automatically by the `module-page` layout (see below); no need to include it by hand | – (reads front matter) |
 | `module-chapters.html` | Chapter timeline with the chapter count and total time | A module's main page | `sidebar` |
 | `module-pathways.html` | Learning-pathway cards, plus a "full module" card | A module's main page, once the module has a pathways file | `sidebar` |
-| `module-pager.html` | A row of numbered chapter circles ending in a trophy (visited chapters marked), previous/next chapter cards (the next card ends in an orange arrow); "Back to chapter" on example pages; the pathway bar and its script; the shared checklist script | Added automatically at the bottom of every module page (via `related-pages.html`) | – |
+| `module-pager.html` | A row of numbered chapter circles ending in a trophy (visited chapters marked), previous/next chapter cards (the next card ends in an orange arrow); "Back to chapter" on example pages (also inside a chapter's folder, e.g. Node examples); the pathway bar and its script; the shared checklist script | Added automatically at the bottom of every module page (via `related-pages.html`) | – |
 | `module-time.html` | Calculates a module's total time and status from its chapters ("ready" when every chapter is ready, otherwise "in development") | Used by `module-navigation.html` | `url` (the module main page) |
 | `module-navigation.html` | Module tiles with icon, description, status and calculated time | Home and Modules pages | `col` |
 | `module-tiles.html` | Tiles for a hand-picked list of pages | Any page (currently the main pages of modules still in planning) | `type`, `custom`, `col`, `sort` |
@@ -31,6 +31,7 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `video.html` | Embedded YouTube video (privacy-enhanced, lazy-loaded) with a direct link | Anywhere in a chapter's text | `youtube`, `title`, `caption` |
 | `example-card.html` | Highlighted link card to another page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id`, `lead`, `label`, `icon` |
 | `example-links.html` | One light line listing the examples a section refers to (no box) | Where a section points to more than one example, e.g. anchors on a Node examples page (Data management) | `content`, `label`, `icon` |
+| `module-examples.html` | Lists a module's example pages from its sidebar: all of them grouped by chapter, or just one folder's (e.g. a chapter's "Node examples"). Uses `module-examples-item.html` for each entry (title + description) | An All examples page, or a folder's own page | `sidebar`, `folder` |
 
 ## Custom layouts
 
@@ -46,7 +47,7 @@ These files have the **same name as an ETT include**, so they replace the theme'
 | Override | Why | What changed |
 | --- | --- | --- |
 | `related-pages.html` | Adds the pager to module pages; lets a module drop related-pages tiles | Every module page ends with the pager. The Communication module – by choice, because the pager and in-text links already connect its chapters – shows only real-world examples ("See it in practice") instead of related-pages tiles; this is switched on per module in the file (`page.sidebar == "module-communication"`). Other modules keep the theme's related pages. |
-| `breadcrumb.html` | Module permalinks are flat (`/01-comms-introduction`), so the theme's URL-based trail only gave "Home › page" | Module pages build Home › Modules › module › [chapter] › page from the sidebar. Other pages use the theme's code unchanged. |
+| `breadcrumb.html` | Module permalinks are flat (`/01-comms-introduction`), so the theme's URL-based trail only gave "Home › page" | Module pages build Home › Modules › module › [chapter] › [folder, e.g. Node examples] › page from the sidebar. Other pages use the theme's code unchanged. |
 | `contributor-card.html` | Different badge colours for leads and contributors | The role badge gets a `contributor-role--<role>` class. |
 | `resource-table-page.html` | A simpler resources table for chapters | Replaces the theme's tools table (national resources, registry links) with a compact "Dive deeper" table – category, resource, description – for the ids in a page's `ref_to_main_resources`, styled to sit quietly at the end of the page. |
 

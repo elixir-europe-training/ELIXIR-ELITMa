@@ -3,7 +3,8 @@ Local override of the elixir-toolkit-theme breadcrumb (enabled via theme_variabl
 The theme builds the trail from the URL, but module pages have flat permalinks
 (/01-comms-introduction), which would give just "Home > page". For pages with a module
 sidebar ("module-..."), the trail is built from the sidebar instead:
-  Home > Modules > <module overview> > [parent chapter, for nested/example pages] > page
+  Home > Modules > <module overview> > [parent chapter, for nested/example pages]
+    > [sidebar folder, e.g. "Node examples", for pages one level deeper] > page
 Every other page falls through to the theme's original URL-based trail, copied verbatim
 except for an accessible name on the home icon.
 {%- endcomment -%}
@@ -13,6 +14,7 @@ except for an accessible name on the home icon.
 {%- assign bc_overview = site.pages | where: "url", bc_overview_url | first -%}
 {%- assign bc_url = page.url | remove: ".html" -%}
 {%- assign bc_parent = nil -%}
+{%- assign bc_folder = nil -%}
 {%- if page.back_to -%}
   {%- assign bc_parent_page = site.pages | where: "page_id", page.back_to | first -%}
   {%- if bc_parent_page -%}{%- assign bc_parent = bc_parent_page -%}{%- endif -%}
@@ -22,6 +24,12 @@ except for an accessible name on the home icon.
       {%- if sub.url == bc_url and bc_parent == nil -%}
         {%- assign bc_parent = site.pages | where: "url", item.url | first -%}
       {%- endif -%}
+      {%- for leaf in sub.subitems -%}
+        {%- if leaf.url == bc_url and bc_parent == nil -%}
+          {%- assign bc_parent = site.pages | where: "url", item.url | first -%}
+          {%- assign bc_folder = sub -%}
+        {%- endif -%}
+      {%- endfor -%}
     {%- endfor -%}
   {%- endfor -%}
 {%- endif %}
@@ -36,6 +44,9 @@ except for an accessible name on the home icon.
         {%- endif %}
         {%- if bc_parent %}
         <li class="breadcrumb-item mt-0"><a href="{{ bc_parent.url | relative_url }}">{{ bc_parent.title }}</a></li>
+        {%- endif %}
+        {%- if bc_folder %}
+        <li class="breadcrumb-item mt-0"><a href="{{ bc_folder.url | relative_url }}">{{ bc_folder.title }}</a></li>
         {%- endif %}
         <li class="breadcrumb-item last mt-0" aria-current="page">{{ page.title }}</li>
     </ol>

@@ -6,7 +6,8 @@ are part of the sequence, so unnumbered items ("All resources") sit outside it. 
 uses those numbers: "00" is shown as "Before you start" and the highest number is the total.
 
 Pages outside the sequence get a "Back to section" link when either:
-  - they are nested under a numbered item in the sidebar (found automatically), or
+  - they are nested under a numbered item in the sidebar, directly or one folder deeper
+    (e.g. a single Node example inside a chapter's "Node examples" folder), or
   - they set `back_to: <page_id>` in front matter.
 A module with an empty sidebar simply renders nothing.
 {%- endcomment -%}
@@ -28,6 +29,9 @@ A module with an empty sidebar simply renders nothing.
   {%- if pager_parent_item == nil -%}
     {%- for sub in item.subitems -%}
       {%- if sub.url == pager_url -%}{%- assign pager_parent_item = item -%}{%- endif -%}
+      {%- for subsub in sub.subitems -%}
+        {%- if subsub.url == pager_url -%}{%- assign pager_parent_item = item -%}{%- endif -%}
+      {%- endfor -%}
     {%- endfor -%}
   {%- endif -%}
 {%- endfor -%}
