@@ -58,8 +58,7 @@ The exact format can differ between Nodes. A strategy may be a short standalone 
 
 A strategy has a few key characteristics:
 - **A short, practical document**: A strategy outlines the main goals of the Node, the data landscape it serves and the principles that guide its work.
-- **A way to connect existing information**: It brings together content that often exists in many places. It does not replace policies, service descriptions or Data Management Plans. It connects them.
-- **Selective and connected**: A strategy does not need to describe every activity in detail. It identifies what matters at Node level and links to more detailed institutional policies, service descriptions, strategies, plans and other supporting documents.
+- **Selective and connected**: A strategy brings together information that is often distributed across multiple sources. It does not replace policies, service descriptions or Data Management Plans. Instead, it identifies what matters at Node level and links to the relevant institutional policies, services, strategies, plans and other supporting documents.
 - **Services and roles**: A strategy shows how the Node supports good data management and FAIR practices. It describes the main services, roles and communities involved.
 - **A shared reference point**: It gives staff a common view of the current situation and future direction.
 - **A living document**: The strategy is light and easy to update. It can begin as a rough outline, a collection of existing materials or another simple working format and develop as the Node grows, new roles appear or priorities shift.
@@ -134,7 +133,7 @@ Consider whether you have the following perspectives involved:
 
 - [ ] A **Node coordinator or other coordination role** to connect the work with Node priorities and decision-making  
 - [ ] A **data steward, data manager or technical staff member** with knowledge of standards, tools, services and workflows  
-- [ ] A **support or training staff member** who understands recurring questions and user needs  
+- [ ] A **support or training staff member** who knows what researchers most often ask for help with
 - [ ] An **institutional, infrastructure or community representative** who can bring a perspective from where activities happen in practice  
 
 You do not need everyone involved from the beginning. Start with the perspectives that are most relevant to your current starting point and involve others as needed.
