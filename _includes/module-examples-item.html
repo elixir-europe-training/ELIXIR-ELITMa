@@ -1,4 +1,0 @@
-{%- comment -%} One entry for module-examples.html: the page's own title and description. {%- endcomment -%}
-{%- assign mxi_url = include.url | remove_first: "/" -%}
-{%- assign mxi_page = site.pages | where_exp: "p", "p.url == include.url or p.url == mxi_url" | first %}
-  <li><a href="{{ include.url | relative_url }}">{{ mxi_page.title | default: include.title }}</a>{% if mxi_page.description %} <span class="all-examples-desc">– {{ mxi_page.description }}</span>{% endif %}</li>

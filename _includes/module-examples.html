@@ -10,7 +10,8 @@ Within each chapter (chapters come from the sidebar, in order):
   - Case studies: the pages in the folder that the chapter lists in its related_pages
     (Real_world_example), so a case study used by several chapters appears under each.
 Pages that fit nowhere (no back_to, not related) are listed at the end, so none is missed.
-Each entry shows the page title and its description, sorted by title.
+Each group is a grid of example cards (example-card.html), sorted by title - the same cards as
+"See it in practice".
 {%- endcomment -%}
 {%- assign mx_nav = site.data.sidebars[include.sidebar] -%}
 {%- assign mx_all = site.pages | where_exp: "p", "p.path contains include.folder" | sort: "title" -%}
@@ -38,15 +39,13 @@ Each entry shows the page title and its description, sorted by title.
 {%- if mx_ch.examples_intro %}
 <div class="all-examples-intro">{{ mx_ch.examples_intro | markdownify }}</div>
 {%- endif %}
-<ul class="all-examples-list">
-  {%- for ex in mx_examples -%}{%- include module-examples-item.html url=ex.url title=ex.title -%}{%- endfor %}
-</ul>
+{%- assign mx_ids = mx_examples | map: "page_id" | join: "," %}
+{% include example-card.html page_ids=mx_ids %}
 {%- endif -%}
 {%- if mx_cases.size > 0 %}
 <h3 class="all-examples-group">Case studies</h3>
-<ul class="all-examples-list">
-  {%- for ex in mx_cases -%}{%- include module-examples-item.html url=ex.url title=ex.title -%}{%- endfor %}
-</ul>
+{%- assign mx_ids = mx_cases | map: "page_id" | join: "," %}
+{% include example-card.html page_ids=mx_ids %}
 {%- endif -%}
 {%- endif -%}
 {%- endfor -%}
@@ -57,7 +56,6 @@ Each entry shows the page title and its description, sorted by title.
 {%- endfor -%}
 {%- if mx_rest.size > 0 %}
 <h2 class="all-examples-chapter">Other examples</h2>
-<ul class="all-examples-list">
-  {%- for ex in mx_rest -%}{%- include module-examples-item.html url=ex.url title=ex.title -%}{%- endfor %}
-</ul>
+{%- assign mx_ids = mx_rest | map: "page_id" | join: "," %}
+{% include example-card.html page_ids=mx_ids %}
 {%- endif -%}
