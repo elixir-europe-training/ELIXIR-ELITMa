@@ -420,15 +420,22 @@ ul.task-list {
 // that are set at different font sizes (summary, callouts, body copy).
 // ~113 characters at the content font size. Above the classic 45-75 band, but
 // the full-width layout makes a strict measure look stranded. Tune here.
-$reading-measure: 56rem;
+// (52rem since body text went from 17px to 16px, to keep the same line length.)
+$reading-measure: 52rem;
 
 #content {
-  // 16px/1.5 is Bootstrap's UI default; long-form reading wants more of both.
-  font-size: 1.0625rem;
-  line-height: 1.7;
+  // 16px body text (17px felt too big next to the theme's large headings);
+  // a little more leading than Bootstrap's 1.5 for long-form reading.
+  font-size: 1rem;
+  line-height: 1.65;
 
   h2, h3, h4, h5, h6 {
     line-height: 1.3;
+  }
+
+  // The theme's section headings (2.1rem) shouted; scale down on small screens.
+  h2 {
+    font-size: clamp(1.45rem, 1.2rem + 0.8vw, 1.75rem);
   }
 
   // Proximity: a heading belongs to the text *below* it, so the space above
@@ -560,6 +567,10 @@ $reading-measure: 56rem;
 
   > h2, > h3 {
     margin-top: 0;
+  }
+
+  > h2 {
+    font-size: clamp(1.3rem, 1.15rem + 0.5vw, 1.5rem);
   }
 
   // A small pencil before the exercise's heading, so exercises are recognisable at a glance.
@@ -1314,6 +1325,13 @@ ul.task-list li.task-list-item:has(> label) {
   grid-template-columns: 1fr;
 
   .compare-item img { max-width: 34rem; }
+}
+
+/*-----Page titles-----*/
+// The theme's page title is 3.5rem, so long titles ran to three lines. Smaller,
+// and scaling down on phones. Only content pages (#intro); the home hero is separate.
+#intro h1 {
+  font-size: clamp(1.9rem, 1.4rem + 1.6vw, 2.6rem);
 }
 
 /*-----Level 3 headings-----*/
