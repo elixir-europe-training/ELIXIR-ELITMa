@@ -86,7 +86,7 @@ Two small scripts, both in `module-pager.html`, store data only in the reader's 
 
 * **Checklists** remember which boxes a reader ticked, per page.
 * **Chapter circles** remember which chapters a reader has opened (`visited-<sidebar>`), so those circles get a ring; the trophy lights up when all have been visited.
-* **Learning pathways** remember the chosen pathway (`pathway-<sidebar>`) and where to resume (`pathway-<sidebar>-next`). A link with `?path=<id>` starts a pathway and `?path=none` clears it. While a pathway is active, the pathway bar replaces the previous/next buttons.
+* **Learning pathways** remember the chosen pathway (`pathway-<sidebar>`) and where to resume (`pathway-<sidebar>-next`). A link with `?path=<id>` starts a pathway and `?path=none` clears it. While a pathway is active, the pathway navigation replaces the chapter navigation: the same row of circles (the pathway's steps only) and previous/next cards, on an orange "Your pathway" panel.
 
 With JavaScript switched off, checklists simply can't be ticked and the normal previous/next buttons are shown.
 

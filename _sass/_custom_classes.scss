@@ -979,70 +979,33 @@ $reading-measure: 52rem;
 }
 
 /*-----Learning pathways-----*/
+// The pathway navigation: the same circles and previous/next cards as the chapter
+// navigation, on a light orange panel so it's clear the reader is on a pathway.
 .pathway-bar {
   margin-top: 3.5rem;
-  padding: 1.1rem 1.25rem;
+  padding: 1rem 1.25rem 1.25rem;
   border-radius: $border-radius * 2;
   background: $accent-color-light;
   border: 1px solid rgba($accent-color, 0.45);
-  border-left: 6px solid $accent-color;
-
-  .pathway-bar-head {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.75rem 1rem;
-    margin-bottom: 0.85rem;
-  }
 
   .pathway-bar-label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.5rem;
+    margin: 0 0 0.85rem;
     font-size: 0.95rem;
     color: $primary;
-    i { color: $accent-color; }
-  }
 
-  .pathway-bar-steps {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
+    > i { color: $accent-text; }
   }
 
   .pathway-bar-count {
-    margin-left: auto;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: $link-blue;
-  }
-
-  .pathway-next {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-
-    .pathway-next-text { display: flex; flex-direction: column; gap: 0.15rem; }
-    padding: 0.9rem 1.1rem;
-    border-radius: $border-radius * 2;
-    background: $primary;
-    text-decoration: none;
-    transition: transform 120ms ease, box-shadow 120ms ease;
-
-    &:hover { transform: translateY(-2px); box-shadow: $box-shadow; }
-  }
-
-  .pathway-next-label {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: $accent-color;
-  }
-
-  .pathway-next-title {
-    font-weight: 700;
-    color: $white;
+    color: #5f6368;
   }
 
   .pathway-leave {
-    margin-top: 0.6rem;
+    margin-left: auto;
     padding: 0;
     border: 0;
     background: none;
@@ -1053,6 +1016,16 @@ $reading-measure: 52rem;
 
     &:hover { color: $primary; }
   }
+
+  .module-pager-links { margin-top: 0; }
+}
+
+// The pathway's row of circles: white on the orange panel, with an orange outline and line.
+.chapter-stepper--pathway {
+  background: $white;
+  border-color: rgba($accent-color, 0.55);
+
+  &::before { background: rgba($accent-color, 0.35); }
 }
 
 // When following a pathway, the pathway bar replaces the chapter-order pager
@@ -1720,9 +1693,7 @@ ul.task-list li.task-list-item:has(> label) {
 }
 
 .module-pager-link--next:hover .go-arrow,
-.module-pager-link--next:focus-visible .go-arrow,
-.pathway-next:hover .go-arrow,
-.pathway-next:focus-visible .go-arrow {
+.module-pager-link--next:focus-visible .go-arrow {
   transform: translateX(4px);
 }
 
