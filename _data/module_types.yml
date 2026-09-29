@@ -18,7 +18,7 @@
   type: Data management
   leads:
   url: modules/data-management
-  status: in development
+  status: ready
   order: 2
 
 - title: Strategic management
@@ -88,7 +88,7 @@
   type: Project management
   leads:
   url: modules/impact
-  status: planned
+  status: in development
   order: 9
 
 - title: Carbon footprint
@@ -98,5 +98,5 @@
   leads:
   type: Carbon footprint
   url: modules/carbon-footprint
-  status: planned
+  status: in development
   order: 10

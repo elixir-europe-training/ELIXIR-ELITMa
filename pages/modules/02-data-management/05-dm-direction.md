@@ -8,7 +8,7 @@ audience:
   - Node Coordinators
   - Data Stewards
 time: 45 minutes
-status: in development
+status: ready
 sidebar: module-data-management
 summary: Use the results of your assessment to define a desired direction, clarify the Node role and identify priorities for further development.
 related_pages:
