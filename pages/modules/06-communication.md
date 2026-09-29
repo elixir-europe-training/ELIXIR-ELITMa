@@ -10,21 +10,22 @@ This module is for anyone who communicates on behalf of an ELIXIR Node – which
 
 It won't turn you into a communications professional. It will help you communicate more deliberately, use what ELIXIR already provides and know when to ask for help.
 
+## Where do you want to start?
+
+Take the whole module, or a shorter pathway for your role. On a pathway, the chapter pages guide you through it – each one shows your step and the next chapter on your route – and you can leave it at any time.
+
+{% include module-pathways.html sidebar="module-communication" %}
+
 ## The chapters
 {% include module-chapters.html sidebar="module-communication" %}
 
 {% include callout.html type="tip" content="You don't have to go in order. Every chapter stands on its own – use the buttons at the bottom of each page to move through the module, or jump straight to what you need." %}
 
-## Short on time? Pick a pathway
-
-Pick a pathway and the chapter pages will guide you through it – each one shows your step and the next chapter on your route. You can leave a pathway at any time.
-
-{% include module-pathways.html sidebar="module-communication" %}
 
 ## How the pages work
 Every chapter uses the same few building blocks, so you always know what you're looking at:
 
-* **Exercises** – in boxes with an orange edge. They take a few minutes and work best with a real project in front of you.
+* **Exercises** – in boxes with an orange edge and a pencil. They take a few minutes and work best with a real project in front of you.
 * **Checklists** – tick them as you go. Your ticks are remembered in your browser, so you can come back later.
 * **Real-world examples** – cards marked with a lightbulb link to how an ELIXIR Node actually did it. They're short, and often the most useful part.
 * **Templates** – download buttons give you editable PowerPoint and Word files to reuse.

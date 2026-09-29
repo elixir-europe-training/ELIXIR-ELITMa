@@ -354,7 +354,12 @@ Every topic gets its own page automatically (`/dm-topic-gaps-to-action`), listin
 
 ## Dive deeper pages
 
-A longer explanation that goes beyond one chapter – such as Data management's GORC explainers – is a **Dive deeper** page. Copy `pages/modules/_templates/dive-deeper.md` into the module's `dive-deeper/` folder, name it like `dm-deeper-gorc-framework.md` (`page_id: dm-dd-gorc-framework`), and give it `type: Dive_deeper` and `back_to` its chapter. List it in the chapter's `related_pages` under `Dive_deeper`: it appears at the end of the chapter under **Dive deeper**, on the same card as examples but with a magnifying-glass icon.
+A longer explanation that goes beyond one chapter – such as Data management's GORC explainers – is a **Dive deeper** page. Copy `pages/modules/_templates/dive-deeper.md` into the module's `dive-deeper/` folder, name it like `dm-deeper-gorc-framework.md` (`page_id: dm-dd-gorc-framework`), and give it `type: Dive_deeper` and `back_to` its chapter. It uses the same card as examples, with a magnifying-glass icon. Where it goes depends on whether readers need it:
+
+- **The chapter needs it at a certain point** (e.g. "read this before the exercises"): put a compact card in the text there – `{% raw %}{% include example-card.html page_ids="dm-dd-gorc-framework" compact=true %}{% endraw %}`.
+- **It's optional further reading**: list it in the chapter's `related_pages` under `Dive_deeper`, and it appears at the end of the chapter under **Dive deeper**.
+
+Use one or the other, not both.
 
 ## Resources
 
