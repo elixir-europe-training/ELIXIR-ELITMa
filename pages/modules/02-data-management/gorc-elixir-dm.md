@@ -4,7 +4,7 @@ description: How the GORC framework can support coordination and strategy develo
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: gorc-elixir-dm
-type: Real_world_example
+type: Data Management
 ---
 
 ELIXIR is a distributed research infrastructure. Its Nodes bring together services, resources, expertise and communities across national and European contexts. 

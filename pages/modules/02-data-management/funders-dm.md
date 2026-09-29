@@ -5,6 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: funders-dm
 type: Real_world_example
+back_to: mod_dm_1
 ---
 
 This case study is based on a presentation by Margreet Bloemers from [ZonMw](https://www.zonmw.nl/en/everything-about-fair-data-management), the Dutch national funding agency for health research and innovation, during the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials and shared notes are available through the [ELITMa Espoo workshop materials](https://doi.org/10.5281/zenodo.10895079).

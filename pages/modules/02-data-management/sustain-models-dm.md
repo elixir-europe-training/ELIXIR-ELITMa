@@ -5,6 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: sustain-models-dm
 type: Real_world_example
+back_to: mod_dm_7
 ---
 
 This page draws on presentations and portfolio discussions from the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials are available through the [ELITMa Espoo workshop materials](https://doi.org/10.5281/zenodo.10895079).

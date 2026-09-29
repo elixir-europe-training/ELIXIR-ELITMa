@@ -1,43 +1,54 @@
 {%- comment -%}
-Lists a module's example pages (type: Real_world_example), found by their `back_to` chapter,
-so a new example shows up as soon as it exists - nothing to add to a list or the sidebar.
-  {% include module-examples.html sidebar="module-data-management" %}
-      every example, grouped by chapter, then each chapter's other sidebar pages under
-      "Case studies and background reading" (change with others_label="...")
-  {% include module-examples.html sidebar="module-data-management" chapter="mod_dm_1" %}
-      only the examples that belong to that chapter (for a chapter's examples page)
+Lists a module's real-world example pages (type: Real_world_example) - nothing to maintain by hand:
+  - Node examples: pages whose `back_to` is the chapter and that the chapter doesn't list itself
+  - Case studies: the Real_world_example pages in the chapter's own `related_pages`
+    (so a case study used by several chapters appears under each of them)
 Pages whose page_id starts with "examples-" are overview pages, not examples, and are skipped.
+  {% include module-examples.html sidebar="module-data-management" %}
+      everything, grouped by chapter (the Examples and case studies page)
+  {% include module-examples.html sidebar="module-data-management" chapter="mod_dm_1" %}
+      only that chapter's Node examples (a chapter's examples overview)
 Each entry shows the page title and its description, sorted by title.
 {%- endcomment -%}
 {%- assign mx_nav = site.data.sidebars[include.sidebar] -%}
 {%- assign mx_all = site.pages | where: "sidebar", include.sidebar | where: "type", "Real_world_example" | sort: "title" -%}
-{%- if include.chapter -%}
-{%- assign mx_list = mx_all | where: "back_to", include.chapter %}
-<ul class="all-examples-list">
-  {%- for ex in mx_list -%}{%- assign mx_pre = ex.page_id | slice: 0, 9 -%}{%- unless mx_pre == "examples-" -%}{%- include module-examples-item.html url=ex.url title=ex.title -%}{%- endunless -%}{%- endfor %}
-</ul>
-{%- else -%}
+{%- assign mx_digits = "0123456789" | split: "" -%}
 {%- for item in mx_nav.subitems -%}
 {%- assign mx_c1 = item.title | slice: 0 -%}{%- assign mx_c2 = item.title | slice: 1 -%}
-{%- assign mx_digits = "0123456789" | split: "" -%}
 {%- unless mx_digits contains mx_c1 and mx_digits contains mx_c2 -%}{%- continue -%}{%- endunless -%}
 {%- assign mx_url = item.url | remove_first: "/" -%}
 {%- assign mx_ch = site.pages | where_exp: "p", "p.url == item.url or p.url == mx_url" | first -%}
-{%- assign mx_list = mx_all | where: "back_to", mx_ch.page_id -%}
-{%- if mx_list.size > 0 or item.subitems.size > 0 %}
+{%- if include.chapter and mx_ch.page_id != include.chapter -%}{%- continue -%}{%- endif -%}
+{%- assign mx_related = mx_ch.related_pages.Real_world_example | default: "" -%}
+{%- assign mx_examples = "" | split: "" -%}
+{%- for ex in mx_all -%}
+  {%- assign mx_pre = ex.page_id | slice: 0, 9 -%}
+  {%- if ex.back_to == mx_ch.page_id and mx_pre != "examples-" -%}
+    {%- unless mx_related contains ex.page_id -%}{%- assign mx_examples = mx_examples | push: ex -%}{%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign mx_cases = "" | split: "" -%}
+{%- for ex in mx_all -%}
+  {%- assign mx_pre = ex.page_id | slice: 0, 9 -%}
+  {%- if mx_related contains ex.page_id and mx_pre != "examples-" -%}{%- assign mx_cases = mx_cases | push: ex -%}{%- endif -%}
+{%- endfor -%}
+{%- if include.chapter %}
+<ul class="all-examples-list">
+  {%- for ex in mx_examples -%}{%- include module-examples-item.html url=ex.url title=ex.title -%}{%- endfor %}
+</ul>
+{%- elsif mx_examples.size > 0 or mx_cases.size > 0 %}
 <h2 class="all-examples-chapter">{{ item.title }}</h2>
-{%- if mx_list.size > 0 %}
+{%- if mx_examples.size > 0 %}
 <h3 class="all-examples-group">Node examples</h3>
 <ul class="all-examples-list">
-  {%- for ex in mx_list -%}{%- assign mx_pre = ex.page_id | slice: 0, 9 -%}{%- unless mx_pre == "examples-" -%}{%- include module-examples-item.html url=ex.url title=ex.title -%}{%- endunless -%}{%- endfor %}
+  {%- for ex in mx_examples -%}{%- include module-examples-item.html url=ex.url title=ex.title -%}{%- endfor %}
 </ul>
 {%- endif -%}
-{%- if item.subitems.size > 0 %}
-<h3 class="all-examples-group">{{ include.others_label | default: "Case studies and background reading" }}</h3>
+{%- if mx_cases.size > 0 %}
+<h3 class="all-examples-group">Case studies</h3>
 <ul class="all-examples-list">
-  {%- for sub in item.subitems -%}{%- include module-examples-item.html url=sub.url title=sub.title -%}{%- endfor %}
+  {%- for ex in mx_cases -%}{%- include module-examples-item.html url=ex.url title=ex.title -%}{%- endfor %}
 </ul>
 {%- endif -%}
 {%- endif -%}
 {%- endfor -%}
-{%- endif -%}

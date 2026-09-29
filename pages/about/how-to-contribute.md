@@ -64,6 +64,18 @@ subitems:
 
 Renumber by editing the sidebar; nothing else needs to change. For all sidebar options, see [Sidebar](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures#sidebar) in the ETT documentation.
 
+**Sub-pages.** If a chapter needs a second page that readers should go through in order (as Chapter 3 of Data management does with its two GORC explainers), list it under the chapter in the sidebar with a number like `03.1`:
+
+```yaml
+- title: 03 What to include
+  url: /03-dm-content
+  subitems:
+  - title: 03.1 Understanding the GORC framework
+    url: /gorc-framework-dm
+```
+
+Previous/next then walk 03 → 03.1 → 04, and the chapter circles keep chapter 3 highlighted. Give a sub-page the module's `type` (like the chapter), not `Real_world_example`. Examples and case studies don't go in the sidebar – see [Real-world example pages](#real-world-example-pages).
+
 ### The metadata box
 
 You don't need to add it: every chapter gets the status, time, audience and learning-outcomes box at the top automatically, from its front matter. It appears on any module page with a `time` or `status` value, so example pages and a module's main page don't get one.

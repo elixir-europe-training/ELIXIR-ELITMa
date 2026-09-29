@@ -5,6 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: rdm-portfolio-dm
 type: Real_world_example
+back_to: mod_dm_3
 ---
 
 This case study draws on the portfolio exercise, presentations and shared notes from the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials and Node portfolios are available through the [ELITMa Espoo workshop materials](https://doi.org/10.5281/zenodo.10895079).

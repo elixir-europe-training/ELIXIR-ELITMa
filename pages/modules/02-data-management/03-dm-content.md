@@ -11,8 +11,6 @@ sidebar: module-data-management
 summary: Data management activities often develop separately across governance, services and support structures. This chapter helps you bring these elements together, identify the areas most relevant to your Node and draft a simple strategy outline, using a shared framework called the Global Open Research Commons (GORC) model.
 related_pages:
   Real_world_example:
-  - gorc-framework-dm
-  - gorc-elixir-dm
   - rdm-portfolio-dm
 learning_outcomes:
     - Identify the main elements to include in a Node data management strategy
