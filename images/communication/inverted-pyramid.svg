@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-labelledby="t d">
+  <title id="t">The inverted pyramid</title>
+  <desc id="d">Three stacked bands narrowing downwards: most important information at the top, supporting detail in the middle, background and further reading at the tip.</desc>
+  <style>
+    text { font-family: "Open Sans", "Lato", Arial, sans-serif; }
+    .h { font-size: 21px; font-weight: 700; fill: #ffffff; }
+    .s { font-size: 15px; fill: #ffffff; }
+    .hd { font-size: 17px; font-weight: 700; fill: #023452; }
+    .sd { font-size: 14px; fill: #023452; }
+  </style>
+  <!-- Band 1 -->
+  <polygon points="20,20 620,20 548,140 92,140" fill="#023452"/>
+  <text x="320" y="72" text-anchor="middle" class="h">Most important</text>
+  <text x="320" y="100" text-anchor="middle" class="s">Who, what, when, where, why – the whole point</text>
+  <!-- Band 2 -->
+  <polygon points="98,150 542,150 470,262 170,262" fill="#037EAB"/>
+  <text x="320" y="200" text-anchor="middle" class="h">Supporting detail</text>
+  <text x="320" y="226" text-anchor="middle" class="s">Context, quotes, evidence</text>
+  <!-- Band 3 -->
+  <polygon points="176,272 464,272 336,362 304,362" fill="#9bcbdd"/>
+  <text x="320" y="302" text-anchor="middle" class="hd">Background</text>
+  <text x="320" y="324" text-anchor="middle" class="sd">Links, further reading</text>
+</svg>

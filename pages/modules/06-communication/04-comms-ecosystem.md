@@ -1,7 +1,7 @@
 ---
-title: The ELIXIR Communication Ecosystem
+title: ELIXIR communications ecosystem
 description: Knowing ELIXIR's channels exist is not the same as knowing when and how to use them. Test your knowledge.
-summary: ELIXIR has a range of communication channels and platforms, but knowing they exist is not the same as knowing when and how to use them. This sections maps the ecosystem so you can navigate it confidently, avoid common mistakes, and make the most of what's already available to you.
+summary: ELIXIR has a range of communication channels and platforms, but knowing they exist is not the same as knowing when and how to use them. This chapter maps the ecosystem so you can navigate it confidently, avoid common mistakes and make the most of what's already available to you.
 audience: [Node Coordinators, Researchers, New ELIXIR Staff]
 page_img: /icons/icon-module-communication.svg
 page_id: mod_comm_4
@@ -14,8 +14,6 @@ learning_outcomes:
   - Identify the main communication channels available within ELIXIR and their intended purpose
   - Select the right channel for a specific communication need within the consortium
   - Navigate the ELIXIR communication ecosystem confidently as part of your day-to-day role
-related_pages:
-  Communication: [mod_comm_7]
 ref_to_main_resources:
   - comms-strategy
   - sm-guidelines-nodes
@@ -23,7 +21,6 @@ ref_to_main_resources:
   - node-newsletter-guidelines
 ---
 
-{% include module-metadata.html %}
 
 ## Internal channels 
 
@@ -32,17 +29,17 @@ These are the channels used to communicate within the ELIXIR consortium — acro
 ### Weekly Brief
 The ELIXIR Weekly Brief is the consortium's primary internal newsletter, sent every Monday morning to over 820 subscribers across all Nodes. It covers recent activities from the Hub, Nodes, Platforms and Communities.
 
+<a href="https://elixir-europe.us4.list-manage.com/subscribe?u=751beffce2e491f94d6f66918&id=7aa58b4521" class="btn btn-primary" target="_blank" rel="noopener"><i class="fa-solid fa-envelope me-1"></i>Sign up to the Weekly Brief</a>
+
 **When to use it**: when your Node has a news item, opportunity, event or output that the wider consortium should know about.
 <details>
-    <summary>How to submit to the Weekly Brief</summary>
-        <ol>
-            <p>Email info@elixir-europe.org with a short text ready to be included directly in the newsletter, plus a link to a document with further information (a webpage, PDF or slides). Keep the text brief – one to three sentences with a clear link.</p>
-            <p>For job offers use the job vacancy page of ELIXIR. Job positions are automatically pulled into the Weekly Brief</p>
-        </ol>
+  <summary>How to submit to the Weekly Brief</summary>
+  <p>Email <a href="mailto:info@elixir-europe.org">info@elixir-europe.org</a> with a short text ready to be included directly in the newsletter, plus a link to a document with further information (a webpage, PDF or slides). Keep the text brief – one to three sentences with a clear link.</p>
+  <p>For job offers, use the <a href="https://elixir-europe.org/about-us/vacancies/form" target="_blank" rel="noopener">ELIXIR job vacancy form</a>. Job positions are automatically pulled into the Weekly Brief.</p>
 </details>
 
 ### Intranet
-The ELIXIR intranet is a collection of private webpages for internal communication, file sharing and collaboration. It is structured around groups — each group has a homepage, a document collection and an optional mailing list.
+The [ELIXIR intranet](https://elixir-europe.org/intranet) is a collection of private webpages for internal communication, file sharing and collaboration. It is structured around groups — each group has a homepage, a document collection and an optional mailing list.
 
 **When to use it**: For sharing resources, accessing templates, joining working groups and finding information intended for consortium members only.
 
@@ -52,49 +49,55 @@ ELIXIR mailing lists allow targeted communication to specific groups within the 
 **When to use it**: For direct, targeted outreach to a specific group within the consortium. More formal and deliberate than Slack — use it when your message needs to reach everyone in a group reliably. To find a mailing list, you will need to be part of the group you're intending to reach out to, or contact the Hub directly. 
 
 ### Slack
-The ELIXIR Slack workspace is the consortium's informal, real-time communication channel. Access is by invitation only. Request any member of your Node Coordinator to add you.
+The ELIXIR Slack workspace is the consortium's informal, real-time communication channel. Access is by invitation only: ask your Node Coordinator to add you.
 
-**When to use it**: For quick questions, informal coordination, and cross-Node conversations that don't need to be on the record. Not suitable for formal announcements or content that needs to be findable later.
+**When to use it**: For quick questions, informal coordination and cross-Node conversations that don't need to be on the record. Not suitable for formal announcements or content that needs to be findable later.
 
 ## External channels
 These are the channels used to communicate with audiences outside the consortium: researchers, funders, policymakers, industry and the public.
 
 ### Website
-The ELIXIR website (elixir-europe.org) is the primary external communication channel and the first point of reference for all audiences. Its three goals are to inform about what ELIXIR is, what it offers, and its objectives and strategy.
+The [ELIXIR website](https://elixir-europe.org) is the primary external communication channel and the first point of reference for all audiences. Its three goals are to inform about what ELIXIR is, what it offers and its objectives and strategy.
 
-**When to use it**: For content with a long shelf life intended for external audiences. Content is submitted by consortium members but reviewed and approved by the Hub before publication. If your content needs frequent updates or is more than 1,000 words, a linked document may be more appropriate. Reach out to the Hub directly using info@elixir-europe.org.
+**When to use it**: For content with a long shelf life intended for external audiences. Content is submitted by consortium members but reviewed and approved by the Hub before publication. If your content needs frequent updates or is more than 1,000 words, a linked document may be more appropriate. Reach out to the Hub directly at [info@elixir-europe.org](mailto:info@elixir-europe.org).
 
-{% include callout.html type="note" content="Node websites follow the same principles — content should be externally facing, clearly branded, and follow the ELIXIR Style Guide." %}
+{% include callout.html type="note" content="Node websites follow the same principles — content should be externally facing, clearly branded and follow the [ELIXIR Style Guide](https://elixir-europe.org/sites/default/files/documents/elixir-style-guide.pdf)." %}
 
 ### Social media
-ELIXIR's main social media platforms are LinkedIn, Bluesky and YouTube. LinkedIn is the primary platform for professional and policy audiences. Bluesky is growing as the preferred platform for the open science community. X remains active but is under ongoing review.
+ELIXIR's main social media platforms are [LinkedIn](https://www.linkedin.com/company/elixir-europe), [Bluesky](https://bsky.app/profile/elixir-europe.org) and [YouTube](https://www.youtube.com/@ELIXIREurope). LinkedIn is the primary platform for professional and policy audiences. Bluesky is growing as the preferred platform for the open science community. X remains active but is under ongoing review.
 YouTube is used to store videos from training, webinars and any other type of video content. 
 
 **When to use it**: For quick updates, event promotion, amplifying news releases and engaging with the wider research community. Your Node may also have its own accounts – coordinate with the Hub's social media calendar where possible to amplify reach.
 
 #### Guidance for Node social media accounts
+If you run your Node's accounts, or post about ELIXIR from your own, the Hub's social media guidelines for Node account managers and for consortium members (listed under "Further resources" at the end of this page) cover tone, tagging and hashtags. For writing the posts themselves, see [Chapter 6: Writing for non-writers](06-comms-writing).
 
 ### TeSS
-TeSS is ELIXIR's training registry — the central place where all ELIXIR training events and materials should be listed.
+[TeSS](https://tess.elixir-europe.org) is ELIXIR's training registry — the central place where all ELIXIR training events and materials should be listed.
 
 **When to use it**: Whenever your Node organises or co-organises a training event or developed training materials. Listing on TeSS ensures your event reaches the widest possible audience within the ELIXIR community and beyond. Many Node sites and newsletters pull content directly from TeSS – potentially amplifying the reach of your events and training materials. 
 
 ### Industry newsletter
 In addition to the internal Weekly Brief, ELIXIR publishes a quarterly industry newsletter for life science industry organisations, with over 1,140 subscribers.
 
-**When to use it**: If your Node has news, services or events relevant to industry partners, submit to info@elixir-europe.org for consideration.
+**When to use it**: If your Node has news, services or events relevant to industry partners, submit to [info@elixir-europe.org](mailto:info@elixir-europe.org) for consideration.
+
+<a href="https://mailchi.mp/elixir-europe/welcome-to-the-elixir-industry-newsletter" class="btn btn-primary" target="_blank" rel="noopener"><i class="fa-solid fa-envelope me-1"></i>Sign up to the industry newsletter</a>
 
 ### Publications and print materials
-ELIXIR's primary publications are the five-year Scientific Programme and Annual Reports. Additional formats include brochures, the ELIXIR F1000Research Gateway and the Zenodo community for research outputs.
+ELIXIR's primary [publications](https://elixir-europe.org/about-us/publications) are the five-year Scientific Programme and Annual Reports. Additional formats include brochures, the [ELIXIR F1000Research Gateway](https://f1000research.com/gateways/elixir) and the [ELIXIR Zenodo community](https://zenodo.org/communities/elixir) for research outputs.
 
 **When to use it**: Scientific or technical outputs from ELIXIR-funded work should be published open access where possible. The F1000 Gateway covers article processing fees for accepted articles.
 
 ### Job vacancy page
 ELIXIR job vacancies are automatically promoted through the ELIXIR website and Weekly Brief.
 
-**When to use it**: When your Node or collaborators (including industry) are recruiting and wants to reach the ELIXIR community as a talent pool. 
+**When to use it**: When your Node or collaborators (including industry) are recruiting and want to reach the ELIXIR community as a talent pool.
+
+<a href="https://elixir-europe.org/about-us/vacancies/form" class="btn btn-primary" target="_blank" rel="noopener"><i class="fa-solid fa-briefcase me-1"></i>Submit a job vacancy</a>
 
 ## Quick reference: which channel for what?
+
 | Need                                 | Channel                |
 | ------------------------------------ | ---------------------- |
 | Share news with the whole consortium | Weekly Brief           |
@@ -107,12 +110,11 @@ ELIXIR job vacancies are automatically promoted through the ELIXIR website and W
 | Publish a research output            | F1000 ELIXIR Gateway / ELIXIR Zenodo Community |
 | Promote a job                        | Job vacancy page       |
 
+<div class="exercise-box" markdown="1">
 ## Exercise
-Think of your most recent Node output — a project result, event, resource or opportunity.
+Think of your most recent Node output – a project result, event, resource or opportunity.
 
-Was it communicated internally to the consortium? If yes, which channel did you use? If no, which channel should you have used?
-
-Was it communicated externally? If yes, which channel? If no, was it worth communicating externally and through which channel?
-
-Use the quick reference table above to check your choices — and note any channels you weren't previously aware of or haven't used before.
-
+* **Internally:** was it communicated to the consortium? If yes, which channel did you use? If no, which channel should you have used?
+* **Externally:** was it communicated outside ELIXIR? If yes, which channel? If no, was it worth communicating externally, and through which channel?
+* **Check:** use the quick reference table above to check your choices – and note any channels you weren't previously aware of or haven't used before.
+</div>

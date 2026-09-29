@@ -1,0 +1,99 @@
+{%- comment -%}
+Route cards for a module's main page, one per learning pathway.
+Usage: {% include module-pathways.html sidebar="module-communication" %}
+Pathways are defined in _data/pathways/<sidebar>.yml. Chapter numbers come from the
+sidebar, titles/links/times from each chapter page; nothing else to maintain here.
+"Start this pathway" opens the first chapter with ?path=<id>; module-pager.html then
+remembers the choice and shows the pathway bar on each chapter.
+{%- endcomment -%}
+{%- assign mp_sidebar = include.sidebar | default: page.sidebar -%}
+{%- assign mp_paths = site.data.pathways[mp_sidebar] -%}
+{%- assign mp_nav = site.data.sidebars[mp_sidebar] -%}
+{%- if mp_paths %}
+<div class="route-cards">
+  {%- comment -%} The full module: every numbered chapter, from the sidebar. Choosing it clears any pathway. {%- endcomment -%}
+  {%- assign mp_digits = "0123456789" | split: "" -%}
+  {%- assign mp_minutes = 0 -%}
+  {%- assign mp_first = nil -%}
+  {%- assign mp_count = 0 -%}
+  {%- for item in mp_nav.subitems -%}
+    {%- assign mp_c1 = item.title | slice: 0 -%}
+    {%- assign mp_c2 = item.title | slice: 1 -%}
+    {%- unless mp_digits contains mp_c1 and mp_digits contains mp_c2 -%}{%- continue -%}{%- endunless -%}
+    {%- assign mp_page = site.pages | where: "url", item.url | first -%}
+    {%- if mp_page == nil -%}{%- continue -%}{%- endif -%}
+    {%- if mp_first == nil -%}{%- assign mp_first = mp_page -%}{%- endif -%}
+    {%- assign mp_count = mp_count | plus: 1 -%}
+    {%- assign mp_minutes = mp_page.time | plus: 0 | plus: mp_minutes -%}
+  {%- endfor %}
+  {%- if mp_first %}
+  {%- assign mp_h = mp_minutes | divided_by: 60 %}{% assign mp_m = mp_minutes | modulo: 60 %}
+  <div class="route-card route-card--full" data-pathway="none">
+    <p class="route-card-kicker">Full module</p>
+    <div class="route-card-body">
+      <p class="route-card-label">Every chapter, in order</p>
+      <p class="route-card-desc">The complete picture. Choosing this clears any shorter pathway.</p>
+      <ul class="route-card-facts">
+        <li><i class="fa-solid fa-layer-group" aria-hidden="true"></i>Includes <b>{{ mp_count }} chapters</b></li>
+        {%- assign mp_time = "" -%}
+        {%- if mp_h > 0 -%}{%- assign mp_time = mp_h | append: " h" -%}{%- endif -%}
+        {%- if mp_m > 0 -%}{%- if mp_time != "" -%}{%- assign mp_time = mp_time | append: " " -%}{%- endif -%}{%- assign mp_time = mp_time | append: mp_m | append: " min" -%}{%- endif %}
+        <li><i class="fa-solid fa-clock" aria-hidden="true"></i>About <b>{{ mp_time }}</b></li>
+      </ul>
+      <a class="route-card-start" href="{{ mp_first.url | relative_url }}?path=none"><span class="route-card-start-label">Start from Chapter 1</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+  {%- endif %}
+  {%- for path in mp_paths %}
+  {%- assign mp_minutes = 0 -%}
+  {%- assign mp_first = nil -%}
+  {%- capture mp_steps -%}
+      {%- for chapter_id in path.chapters -%}
+      {%- assign mp_page = site.pages | where: "page_id", chapter_id | first -%}
+      {%- if mp_page == nil -%}{%- continue -%}{%- endif -%}
+      {%- if mp_first == nil -%}{%- assign mp_first = mp_page -%}{%- endif -%}
+      {%- assign mp_item = mp_nav.subitems | where: "url", mp_page.url | first -%}
+      {%- assign mp_num = mp_item.title | slice: 0, 2 | plus: 0 -%}
+      {%- assign mp_minutes = mp_page.time | plus: 0 | plus: mp_minutes -%}
+      <a class="chapter-step chapter-step--sm" href="{{ mp_page.url | relative_url }}?path={{ path.id }}" title="{{ mp_page.title }}"><span class="visually-hidden">Chapter </span>{{ mp_num }}</a>
+      {%- endfor -%}
+  {%- endcapture %}
+  <div class="route-card" data-pathway="{{ path.id }}">
+    <p class="route-card-kicker">Pathway</p>
+    <div class="route-card-body">
+      <p class="route-card-label">{{ path.title }}</p>
+      <p class="route-card-desc">{{ path.description }}</p>
+      <ul class="route-card-facts">
+        <li><i class="fa-solid fa-layer-group" aria-hidden="true"></i>Includes <b>{{ path.chapters.size }} chapters</b> <span class="route-card-steps">{{ mp_steps }}</span></li>
+        <li><i class="fa-solid fa-clock" aria-hidden="true"></i>About <b>{{ mp_minutes }} min</b></li>
+      </ul>
+      {%- if mp_first %}
+      <a class="route-card-start" href="{{ mp_first.url | relative_url }}?path={{ path.id }}"><span class="route-card-start-label">Start this pathway</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      {%- endif %}
+    </div>
+  </div>
+  {%- endfor %}
+</div>
+<script>
+  // Highlight the pathway this reader is following, if any.
+  (function () {
+    var active = null;
+    try { active = localStorage.getItem('pathway-{{ mp_sidebar }}'); } catch (e) {}
+    if (!active) return;
+    var full = document.querySelector('.route-card--full .route-card-start-label');
+    if (full) full.textContent = 'Switch to the full module';
+    var card = document.querySelector('.route-card[data-pathway="' + active + '"]');
+    if (!card) return;
+    card.classList.add('route-card--active');
+    var kicker = card.querySelector('.route-card-kicker');
+    if (kicker) kicker.textContent = 'Your pathway';
+    var label = card.querySelector('.route-card-start-label');
+    if (label) label.textContent = 'Continue this pathway';
+    // Resume at the next unfinished step, recorded by the pathway bar on chapter pages.
+    var next = null;
+    try { next = localStorage.getItem('pathway-{{ mp_sidebar }}-next'); } catch (e) {}
+    var start = card.querySelector('.route-card-start');
+    if (next && start) start.href = next + '?path=' + active;
+  })();
+</script>
+{%- endif %}

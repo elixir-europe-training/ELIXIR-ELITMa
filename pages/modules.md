@@ -2,6 +2,9 @@
 title: Modules
 permalink: modules
 sidebar: false
+toc: false
 ---
 
-{% include section-navigation-tiles.html type="Module" %}
+ELITMa has ten modules at different stages of development.
+
+{% include module-sections.html %}

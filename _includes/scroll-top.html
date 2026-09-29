@@ -1,0 +1,12 @@
+{%- comment -%}
+Local override of the elixir-toolkit-theme include of the same name.
+Changes: the button is no longer aria-hidden (it is focusable, so hiding it from
+screen readers was an accessibility error) and has an accessible name. It is also
+the one include on every page, so it loads site-scripts.html.
+{%- endcomment -%}
+{%- if site.theme_variables.back_to_top or site.theme_variables.back_to_top == nil %}
+<button id="back-to-top" class="btn btn-primary btn-sm rounded-pill" type="button" aria-label="Back to top" onclick="topFunction()">
+    <i class="icon-arrow-up" aria-hidden="true"></i><span class="visually-hidden">Back to top</span>
+</button>
+{%- endif %}
+{% include site-scripts.html %}

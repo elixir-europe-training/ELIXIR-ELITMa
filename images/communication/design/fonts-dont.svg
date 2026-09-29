@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 202" role="img" aria-labelledby="t d">
+  <title id="t">Four fonts, one size</title>
+  <desc id="d">A slide mixing Impact, Comic Sans, Times and Courier, all at a similar size, so nothing stands out.</desc>
+  <rect x="0.5" y="0.5" width="359" height="201" rx="6" fill="#ffffff" stroke="#d5dde2"/>
+
+  <text x="24" y="46" font-family="Impact, 'Arial Black', sans-serif" font-size="17" fill="#023452">Open Data Workshop</text>
+  <text x="24" y="76" font-family="'Comic Sans MS', 'Comic Neue', cursive" font-size="15" fill="#023452">Hands-on session for data stewards</text>
+  <text x="24" y="106" font-family="'Times New Roman', Times, serif" font-size="15" fill="#023452">Learn to publish FAIR datasets in</text>
+  <text x="24" y="126" font-family="'Times New Roman', Times, serif" font-size="15" fill="#023452">three practical steps.</text>
+  <text x="24" y="160" font-family="'Courier New', monospace" font-size="14" fill="#023452">14 March · Online · Free</text>
+</svg>

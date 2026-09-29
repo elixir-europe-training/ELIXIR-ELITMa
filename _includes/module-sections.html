@@ -1,0 +1,41 @@
+{%- comment -%}
+The modules, grouped by how far along they are - one heading, a line of explanation and a
+grid of cards per group, instead of a status label on every card. The group comes from each
+module's `status` in _data/module_types.yml:
+  ready          -> Ready to use
+  in development -> In development
+  planned        -> Planned (also anything else, e.g. an old "to do")
+Empty groups are left out.
+Usage: {% include module-sections.html %}   (optional: heading_level=3)
+{%- endcomment -%}
+{%- assign ms_modules = site.data.module_types | sort: "order" -%}
+{%- assign ms_h = include.heading_level | default: 2 -%}
+{%- assign ms_groups = "ready|in development|planned" | split: "|" -%}
+{%- for ms_group in ms_groups -%}
+  {%- capture ms_cards -%}
+  {%- for m in ms_modules -%}
+    {%- assign ms_status = m.status | default: "planned" | downcase | strip -%}
+    {%- if ms_status == "ready" -%}{%- assign ms_bucket = "ready" -%}
+    {%- elsif ms_status == "in development" -%}{%- assign ms_bucket = "in development" -%}
+    {%- else -%}{%- assign ms_bucket = "planned" -%}{%- endif -%}
+    {%- if ms_bucket == ms_group -%}{%- include module-tile.html module=m -%}{%- endif -%}
+  {%- endfor -%}
+  {%- endcapture -%}
+  {%- if ms_cards contains 'class="col"' %}
+<section class="module-section module-section--{{ ms_group | replace: ' ', '-' }}">
+  {%- if ms_group == "ready" %}
+  <h{{ ms_h }}>Ready to use</h{{ ms_h }}>
+  <p class="module-section-intro">Complete online modules. Work through one from start to finish, follow a shorter pathway for your role, or go straight to the chapter you need.</p>
+  {%- elsif ms_group == "in development" %}
+  <h{{ ms_h }}>In development</h{{ ms_h }}>
+  <p class="module-section-intro">Online materials are being written. You can already explore them, but chapters may still change.</p>
+  {%- else %}
+  <h{{ ms_h }}>Planned</h{{ ms_h }}>
+  <p class="module-section-intro">Modules that have run as workshops or are planned for the future, without online materials yet. Want to help develop one? See <a href="{{ '/about' | relative_url }}#get-involved">Get involved</a>.</p>
+  {%- endif %}
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5 navigation-tiles">
+    {{ ms_cards }}
+  </div>
+</section>
+  {%- endif -%}
+{%- endfor -%}

@@ -3,14 +3,21 @@
 //Example for highlighting the active page in the navigation:
 
 /*-----Top navigation-----*/
+// The navbar is dark navy, but the theme colours the active/hovered item navy too
+// ($topnav-link-color-active), which made it vanish. Top-level items only: the
+// dropdown menu is white and keeps the theme's styling.
+header .navbar .navbar-nav > .nav-item > .nav-link {
+  &:hover,
+  &:focus {
+    color: $white !important;
+    background-color: rgba($white, 0.12) !important;
+  }
 
-.navbar-nav .nav-item > a {
-    &.active {
-        // Dark text on the light-blue chip: white would be 1.75:1 on $primary-light.
-        color: $dark !important;
-        background-color: $primary-light;
-        border-radius: $border-radius;
-    }
+  &.active {
+    color: $white !important;
+    background-color: rgba($white, 0.12) !important;
+    box-shadow: inset 0 -3px 0 $accent-color;
+  }
 }
 
 /*------Footer------*/
@@ -69,8 +76,42 @@ header .navbar {
 
 .visual {
   background: $light-background;
-  padding: 30px 0;
+  padding: 2.75rem 0 2.25rem;
   margin-bottom: 0px;
+
+  // Smaller than the theme's, so the first modules still show without scrolling.
+  h1 { font-size: clamp(2rem, 1.4rem + 2vw, 3rem); }
+  p { font-size: 1.1rem; max-width: 36rem; }
+  img { max-height: 18rem; width: auto; max-width: 100%; display: block; margin-left: auto; }
+
+  // Zoomed in: the illustration drawn 30% larger than its box, anchored to the right, so it
+  // fills more of the hero without making it taller (the hero's padding absorbs the overlap).
+  @include media-breakpoint-up(md) {
+    overflow: hidden;
+    img { transform: scale(1.3); transform-origin: right center; }
+  }
+}
+
+/*-----Module sections (module-sections.html)-----*/
+.module-section {
+  margin-top: 2.5rem;
+
+  > h2, > h3 { margin-bottom: 0.35rem; }
+}
+.module-section-intro {
+  max-width: 52rem;
+  margin-bottom: 1.25rem;
+  color: #3d4247;
+
+  a { color: $link-blue; text-decoration: underline; text-underline-offset: 0.18em; }
+}
+// Planned modules: same cards, but white with a dashed outline - "not here yet" - so the
+// ready and in-development ones lead.
+.landingpage .module-section--planned .card,
+.module-section--planned .card {
+  background: $white;
+  border: 1px dashed #B8C4CC;
+  box-shadow: none;
 }
 
 
@@ -89,45 +130,47 @@ header .navbar {
 }
 
 /*-----------Button style----------*/
+// Content buttons (downloads, sign-ups, "Start with Chapter 1"...): light at rest,
+// clearly different on hover/focus. Pale blue fill + text-safe blue border and
+// navy text (11:1); solid blue with white text on hover (6.3:1).
 .btn-download {
   @extend .btn;
-
-  background-color: $primary;
-  border: none;
-  color: $white;
-
-  border-radius: $btn-border-radius-sm;
-  font-weight: 600;
-  font-size: 0.875rem;
-  padding: 12px 28px;
-  text-decoration: $link-decoration;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba($primary, 0.3);
-  
-  &:hover {
-    background-color: $secondary;
-    color: $white;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba($primary, 0.5);
-  }
-  
-  &:active {
-    transform: translateY(0);
-  }
-  
-  .fas {
-    transition: transform 0.2s ease;
-  }
-  
-  &:hover .fas {
-    transform: translateY(-1px);
-  }
+  padding: 10px 22px;
+  font-size: 0.9rem;
 }
 
+.btn-download,
+#content .btn-primary {
+  background-color: #E6F2F7;
+  border: 1.5px solid $link-blue;
+  color: $primary;
+  font-weight: 700;
+  border-radius: $btn-border-radius-sm;
+  text-decoration: none;
+  box-shadow: none;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 
+  i { color: $link-blue; transition: color 0.15s ease; }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $link-blue;
+    border-color: $link-blue;
+    color: $white;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba($link-blue, 0.25);
+
+    i { color: $white; }
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+}
 
 // Icon sizing
 
@@ -269,7 +312,6 @@ header .navbar {
   .module-meta-label {
     font-family: $font-family-sans-serif;
     font-size: 0.7rem;
-    letter-spacing: 0.05em;
     margin-bottom: 0.25rem;
 
     i {
@@ -298,11 +340,11 @@ header .navbar {
   white-space: nowrap;
 
   &--time i {
-    color: $accent-color;
+    color: $accent-text;
   }
 
   &--time {
-    color: $accent-color;
+    color: $accent-text;   // brand orange is too light for small text
   }
 
   &--audience i {
@@ -412,15 +454,22 @@ ul.task-list {
 // that are set at different font sizes (summary, callouts, body copy).
 // ~113 characters at the content font size. Above the classic 45-75 band, but
 // the full-width layout makes a strict measure look stranded. Tune here.
-$reading-measure: 56rem;
+// (52rem since body text went from 17px to 16px, to keep the same line length.)
+$reading-measure: 52rem;
 
 #content {
-  // 16px/1.5 is Bootstrap's UI default; long-form reading wants more of both.
-  font-size: 1.0625rem;
-  line-height: 1.7;
+  // 16px body text (17px felt too big next to the theme's large headings);
+  // a little more leading than Bootstrap's 1.5 for long-form reading.
+  font-size: 1rem;
+  line-height: 1.65;
 
   h2, h3, h4, h5, h6 {
     line-height: 1.3;
+  }
+
+  // The theme's section headings (2.1rem) shouted; scale down on small screens.
+  h2 {
+    font-size: clamp(1.45rem, 1.2rem + 0.8vw, 1.75rem);
   }
 
   // Proximity: a heading belongs to the text *below* it, so the space above
@@ -474,13 +523,27 @@ $reading-measure: 56rem;
 
   #content > table,
   #content > .table-responsive,
-  #content > .row {
-    max-width: none;
+  #content > .module-section {   // module groups (Modules page): cards use the full width;
+    max-width: none;             // their intro line keeps its own measure
   }
 
-  // The page summary sits in #intro, outside #content.
-  #intro .summary {
+  // The page summary sits in #intro, outside #content. The title too: without an
+  // "On this page" column it would otherwise run the full width.
+  #intro .summary,
+  #intro h1 {
     max-width: $reading-measure;
+  }
+
+  // Size the text column to the text (not all the spare width), so "On this page"
+  // sits a fixed gap after it instead of floating far to the right.
+  main.add-grid {
+    grid-template-columns: minmax(0, $reading-measure) minmax(12rem, 16rem);
+    column-gap: 3rem;
+    justify-content: start;
+
+    #toc {
+      margin-left: 0;
+    }
   }
 }
 
@@ -492,15 +555,7 @@ $reading-measure: 56rem;
     grid-template-columns: minmax(0, 18rem) minmax(0, 1fr);
   }
 
-  main.add-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 16rem);
-    column-gap: 5rem;
 
-    // Spacing now comes from column-gap, so the TOC keeps its full width.
-    #toc {
-      margin-left: 0;
-    }
-  }
 }
 
 /*-----Event cards-----*/
@@ -529,4 +584,1150 @@ $reading-measure: 56rem;
     max-height: 4.5em;
     opacity: 0.7;
   }
+}
+
+/*=====================================================================
+  Module learning components (used by the Communication module)
+  - .exercise-box   : wrap an exercise with <div class="exercise-box" markdown="1">
+  - details         : expandable checklists / "how to" panels
+  - .example-card   : highlighted link to a Real-world example page
+  - .module-pager   : previous / next section navigation at the page end
+  - .figure-diagram : captioned illustrations
+=====================================================================*/
+
+/*-----Exercise box-----*/
+// One signal: an orange edge on a quiet cream background. The box's own
+// heading ("Quick exercise: ...") says what it is.
+#content .exercise-box {
+  margin: 2.5rem 0;
+  padding: 1.1rem 1.4rem 1rem;
+  background: $accent-color-light;
+  border-left: 4px solid $accent-color;
+  border-radius: $border-radius;
+
+  > h2, > h3 {
+    margin-top: 0;
+  }
+
+  > h2 {
+    font-size: clamp(1.3rem, 1.15rem + 0.5vw, 1.5rem);
+  }
+
+  // A small pencil before the exercise's heading, so exercises are recognisable at a glance.
+  // Decorative: the empty alternative text after "/" keeps screen readers from announcing it.
+  > h2:first-child::before,
+  > h3:first-child::before {
+    content: "\f303" / "";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 0.8em;
+    margin-right: 0.55em;
+    color: $accent-text;
+    vertical-align: 0.08em;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*-----Expandable panels (details / summary)-----*/
+// Made to look clickable (they were easy to miss): a tinted header bar with a
+// firm border and the chevron in a solid blue circle - no "click to open" text.
+#content details {
+  margin: 1rem 0 1.5rem;
+  border: 1px solid #C9D6DE;
+  border-radius: $border-radius * 2;
+  background: $white;
+  overflow: hidden;
+
+  > summary {
+    display: flex;
+    align-items: flex-start;             // chevron stays on the first line of a long heading
+    gap: 0.7rem;
+    padding: 0.7rem 1rem;
+    background: #F1F6F9;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: $primary;
+    list-style: none;
+    transition: background-color 0.15s ease;
+
+    &::-webkit-details-marker { display: none; }
+
+    // Chevron in a solid circle - rotates to point down when open.
+    &::before {
+      content: "\f054";                        // fa-chevron-right
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 999px;
+      background: $link-blue;
+      color: $white;
+      font-family: "Font Awesome 6 Free", "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 0.7rem;
+      line-height: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover { background: #E4EEF4; }
+    &:focus-visible { outline: 3px solid rgba($link-blue, 0.4); outline-offset: -3px; }
+  }
+
+  &:hover { border-color: $link-blue; }
+
+  &[open] > summary {
+    border-bottom: 1px solid #C9D6DE;
+    &::before { transform: rotate(90deg); }
+  }
+
+  // Inset the panel content with margins, not padding, so lists keep their
+  // own left indent and bullets don't sit against the border.
+  > :not(summary) {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  > :not(summary):first-of-type { margin-top: 0.85rem; }
+  > :last-child { margin-bottom: 0.85rem; }
+}
+
+/*-----Real-world example card-----*/
+// A light card: thin border, small icon and label, navy title. Hover
+// highlights the border rather than lifting the card.
+.example-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  background: $white;
+  border: 1px solid #DCE6EC;
+  border-radius: $border-radius * 2;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+
+  // Equal-height cards only inside the grid at the page end, never in running text.
+  .example-tiles & { margin: 0; height: 100%; }
+
+  &:hover,
+  &:focus-within {
+    border-color: $link-blue;
+    box-shadow: 0 4px 14px rgba($primary, 0.08);
+  }
+
+  // A fixed-width slot, so the text lines up whatever the icon: lightbulb, magnifying
+  // glass or a module's icon.
+  .example-card-icon {
+    flex-shrink: 0;
+    width: 1.75rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+    color: $accent-text;
+  }
+
+  .example-card-body { flex: 1; }
+
+  .example-card-label {
+    display: block;
+    font-size: 0.85rem;
+    color: #5f6368;
+  }
+
+  .example-card-title {
+    display: block;
+    margin: 0.1rem 0 0.25rem;
+    font-weight: 700;
+    color: $primary;
+    line-height: 1.3;
+  }
+
+  .example-card-text {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: $dark;
+  }
+
+  .example-card-arrow {
+    align-self: center;
+    color: $link-blue;
+    transition: transform 120ms ease;
+  }
+
+  &:hover .example-card-arrow { transform: translateX(3px); }
+}
+
+// Card for a page from a module (related pages): the module's icon instead of the lightbulb.
+.example-card--module .example-card-icon img {
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+/*-----Topic chips (topic-chips.html)-----*/
+// Links that filter a module's examples by topic; the current one is filled.
+.topic-chips {
+  margin: 1.25rem 0 1.75rem;
+}
+.topic-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.6rem;
+}
+.topic-chips-label {
+  margin-right: 0.25rem;
+  font-size: 0.85rem;
+  color: #5f6368;
+}
+#content a.topic-chip {
+  display: inline-block;
+  padding: 0.2rem 0.75rem;
+  border: 1px solid #DCE6EC;
+  border-radius: 2rem;
+  background: $white;
+  font-size: 0.9rem;
+  color: $primary;
+  text-decoration: none;
+
+  &:hover, &:focus { border-color: $link-blue; text-decoration: underline; }
+  &.is-current { background: $primary; border-color: $primary; color: $white; }
+}
+
+// Compact card (compact=true): title only, for mentions in the running text.
+.example-card--compact {
+  padding: 0.7rem 1.2rem;
+  align-items: center;
+  .example-card-title { margin-bottom: 0; }
+}
+
+// Several cards side by side in running text (example-card.html with page_ids).
+.example-grid { margin-top: 0.5rem; margin-bottom: 1.5rem; }
+
+/*-----Previous / next pager-----*/
+.module-pager {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $grey-light;
+
+  .module-pager-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .module-pager-link {
+    flex: 1 1 16rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid $grey-light;
+    border-radius: $border-radius * 2;
+    background: $white;
+    text-decoration: none;
+    transition: border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
+
+    &:hover {
+      border-color: $accent-color;
+      box-shadow: $box-shadow;
+      transform: translateY(-2px);
+    }
+  }
+
+  .module-pager-link--next {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    text-align: right;
+    background: $primary;
+    border-color: $primary;
+
+    .module-pager-text { display: flex; flex-direction: column; gap: 0.2rem; }
+    .module-pager-label { color: $primary-light; }
+    .module-pager-title { color: $white; }
+  }
+
+  .module-pager-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: $secondary;
+  }
+
+  .module-pager-title {
+    font-weight: 700;
+    color: $primary;
+    line-height: 1.3;
+  }
+}
+
+/*-----Captioned diagrams / illustrations-----*/
+#content .figure-diagram {
+  margin: 2rem 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+  }
+
+  figcaption {
+    margin-top: 0.6rem;
+    font-size: 0.88rem;
+    color: $secondary;
+  }
+}
+
+// Download buttons that follow a panel or text need breathing room.
+#content .btn-download {
+  margin: 0.5rem 0 1.5rem;
+}
+
+/*-----Colour palette swatches-----*/
+.palette-swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1.5rem;
+
+  .swatch {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 0.75rem;
+    border: 1px solid $grey-light;
+    border-radius: $border-radius * 2;
+    font-size: 0.9rem;
+    line-height: 1.35;
+
+    code { font-size: 0.85rem; color: $dark; user-select: all; }
+    small { color: $secondary; }
+  }
+
+  .swatch-chip {
+    display: block;
+    height: 3.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: $border-radius;
+  }
+}
+
+/*-----Route cards ("Before you start" pages)-----*/
+/*-----Chapter list ("Before you start" pages)-----*/
+#content .module-chapters {
+  margin: 1rem 0 2rem;
+
+  .module-chapters-phase {
+    margin: 1.75rem 0 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: $secondary;
+  }
+
+  .module-chapters-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 3px solid $grey-light;
+    margin-left: 1.2rem;
+
+    > li + li { margin-top: 0.6rem; }
+  }
+
+  .module-chapter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: -1.35rem;
+    padding: 0.7rem 1rem 0.7rem 0;
+    border-radius: $border-radius * 2;
+    transition: background-color 120ms ease;
+
+    &:hover {
+      background: $accent-color-light;
+
+      .module-chapter-num { background: $accent-color; color: $dark; }
+      .module-chapter-title { color: $secondary; }
+    }
+  }
+
+  .module-chapter-num {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 999px;
+    background: $primary;
+    color: $white;
+    font-weight: 700;
+    font-size: 0.95rem;
+    box-shadow: 0 0 0 4px $white;
+    transition: background-color 120ms ease;
+  }
+
+  .module-chapter-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.35;
+  }
+
+  .module-chapter-title {
+    font-weight: 700;
+    color: $primary;
+    text-decoration: none;
+  }
+
+  .module-chapter-question {
+    font-size: 0.92rem;
+    color: $dark;
+  }
+
+  .module-chapter-takeaway {
+    margin-top: 0.15rem;
+    font-size: 0.85rem;
+    color: $secondary;
+
+    i { color: $accent-color; }
+  }
+
+  .module-chapter-time {
+    flex-shrink: 0;
+    align-self: center;
+  }
+
+  @include media-breakpoint-down(sm) {
+    .module-chapter-time { display: none; }
+  }
+}
+
+/*-----Learning pathways-----*/
+// The pathway navigation: the same circles and previous/next cards as the chapter
+// navigation, on a light orange panel so it's clear the reader is on a pathway.
+.pathway-bar {
+  margin-top: 3.5rem;
+  padding: 1rem 1.25rem 1.25rem;
+  border-radius: $border-radius * 2;
+  background: $accent-color-light;
+  border: 1px solid rgba($accent-color, 0.45);
+
+  .pathway-bar-label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.5rem;
+    margin: 0 0 0.85rem;
+    font-size: 0.95rem;
+    color: $primary;
+
+    > i { color: $accent-text; }
+  }
+
+  .pathway-bar-count {
+    color: #5f6368;
+  }
+
+  .pathway-leave {
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: $link-blue;
+    font-size: 0.82rem;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover { color: $primary; }
+  }
+
+  .module-pager-links { margin-top: 0; }
+}
+
+// The pathway's row of circles: white on the orange panel, with an orange outline and line.
+.chapter-stepper--pathway {
+  background: $white;
+  border-color: rgba($accent-color, 0.55);
+
+  &::before { background: rgba($accent-color, 0.35); }
+}
+
+// When following a pathway, the pathway bar replaces the chapter-order pager
+// (it has its own step count and next link). "Back to chapter" links stay.
+body.on-pathway .module-pager--chapters {
+  display: none;
+}
+
+/*-----Sidebar divider-----*/
+// The theme adds spacing (mt-3) above any sidebar item with `hr: true` in its
+// _data/sidebars file; draw a visible line there too, e.g. between the numbered
+// chapters and extras such as "All resources".
+#side-nav ul > li.mt-3 {
+  margin-top: 0.75rem !important;
+  padding-top: 0.75rem;
+  border-top: 1px solid darken($light-background, 12%);
+}
+
+/*-----Contributor role badges-----*/
+// Set by `role:` in _data/CONTRIBUTORS.yml (see _includes/contributor-card.html).
+.contributor-cards .badge.contributor-role {
+  margin: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  background-color: $light;
+  color: $dark;
+
+  &--lead {
+    background-color: $accent-color;
+    color: $dark;
+  }
+
+  &--contributor {
+    background-color: $primary-light;
+    color: $dark;
+  }
+}
+
+/*-----Links in running text-----*/
+// Underlined, so links don't rely on colour alone (WCAG 1.4.1), in a blue that
+// passes contrast on every background used here ($link-blue). Only links inside
+// text: buttons, cards, tiles, menus and the pager already look clickable.
+#content :is(p, li, td, th, dd, blockquote, figcaption),
+#content .callout,
+#intro .summary {
+  a:not([class*="btn"]):not(.stretched-link):not(.chapter-step) {
+    color: $link-blue;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+      text-decoration-thickness: 2px;
+    }
+  }
+}
+
+// Callout tints (the note's grey-blue in particular) are too dark for $link-blue
+// (4.28:1), so links inside callouts use the royal blue, which passes on all of them.
+#content .callout a:not([class*="btn"]):not(.stretched-link):not(.chapter-step) {
+  color: $primary;
+  &:hover, &:focus { color: $primary; }
+}
+
+/*-----Inline code-----*/
+// File names, front matter fields and similar: dark text on a light grey chip,
+// clearly different from links (blue, underlined) and from normal text.
+:not(pre) > code {
+  padding: 0.1em 0.35em;
+  border-radius: $border-radius;
+  background-color: #EEF1F4;
+  color: $dark;
+  font-size: 0.875em;
+}
+
+/*-----Code comments-----*/
+// The theme's syntax colours draw comments in #999988 (2.8:1); use a grey that passes AA.
+.highlight :is(.c, .c1, .cm, .cs, .ch, .cd) {
+  color: #5f6368;
+}
+
+/*-----Checklist labels-----*/
+// site-scripts.html wraps each checklist item's text in a <label>; keep it inline.
+// Checkbox and text side by side, so wrapped lines align with the text (hanging indent).
+ul.task-list li.task-list-item:has(> label) {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+
+  input[type="checkbox"] {
+    flex-shrink: 0;
+    margin: 0.3em 0 0;
+  }
+}
+
+.task-list-item label {
+  cursor: pointer;
+}
+
+/*-----Before / after comparison-----*/
+// Weak vs better examples (a post, a prompt, a sentence). The label is real text
+// with an icon, so the difference never relies on colour alone.
+#content .compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1.75rem;
+  max-width: none;
+}
+
+.compare-item {
+  padding: 0.85rem 1.1rem;
+  background: $white;
+  border: 1px solid #E3E8EC;
+  border-left: 4px solid;
+  border-radius: $border-radius * 2;
+
+  > :last-child { margin-bottom: 0; }
+
+  .compare-label {
+    margin-bottom: 0.35rem;
+    font-size: 0.92rem;
+    font-weight: 700;
+
+    i { margin-right: 0.35rem; }
+  }
+
+  &--dont {
+    border-left-color: #A5281B;
+    .compare-label { color: #A5281B; }   // 6.5:1
+  }
+
+  &--do {
+    border-left-color: #1E6B34;
+    .compare-label { color: #1E6B34; }   // 5.9:1
+  }
+}
+.compare-item { margin: 1rem 0 1.25rem; }
+.compare > .compare-item { margin: 0; }
+.compare-item table { margin-bottom: 0; background: transparent; }
+
+/*-----Sample text (plain Markdown quotes)-----*/
+// Replaces the theme's grey quote box for text to copy or model wording
+// (e.g. a footer line, a formula). Before/after examples use .compare instead.
+#content blockquote:not([class]) {
+  margin: 1rem 0 1.25rem;
+  padding: 0.85rem 1.1rem;
+  background: #F6F9FB;
+  border: 1px solid #DCE6EC;
+  border-left: 4px solid $link-blue;
+  border-radius: $border-radius * 2;
+  color: $dark;
+
+  > :last-child { margin-bottom: 0; }
+}
+
+/*-----Logo gallery (chapter 07)-----*/
+#content .logo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 0.5rem;
+  max-width: none;
+}
+
+.logo-card {
+  padding: 0.75rem;
+  border: 1px solid $grey-light;
+  border-radius: $border-radius * 2;
+  background: $white;
+
+  .logo-card-previews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .logo-card-title {
+    margin: 0 0 0.2rem;
+    font-weight: 700;
+    color: $primary;
+    line-height: 1.3;
+  }
+
+  .logo-card-when {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+}
+
+.logo-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  padding: 0.6rem;
+  border: 1px solid $grey-light;
+  border-radius: $border-radius;
+  background: $white;
+
+  img { max-width: 100%; max-height: 100%; }
+
+  &--dark {
+    background: $primary;
+    border-color: $primary;
+  }
+}
+
+#content .logo-gallery-note {
+  font-size: 0.9rem;
+  color: $secondary;
+}
+
+.logo-pair {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0.25rem 0 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: $border-radius;
+  background: $white;
+
+  img { height: 4.5rem; width: auto; }
+}
+
+.logo-partner-placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.5rem;
+  padding: 0 1.25rem;
+  border: 2px dashed $secondary;
+  border-radius: $border-radius;
+  color: $dark;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+// Picture examples inside before/after boxes (chapter 08).
+.compare--visual .compare-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.25rem 0 0.6rem;
+  border-radius: $border-radius;
+}
+
+.compare--visual .compare-item p:not(.compare-label) {
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/*-----Contrast swatches (chapter 08)-----*/
+// Real text, not pictures, so the samples are exactly what readers will see.
+#content .contrast-chips {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 1.75rem;
+  max-width: none;
+}
+
+.contrast-chip {
+  border: 1px solid $grey-light;
+  border-radius: $border-radius * 2;
+  overflow: hidden;
+  background: $white;
+
+  // The sample is a tiny SVG: it illustrates colour pairs (some deliberately
+  // failing), and the real-text ratio underneath carries the information.
+  .contrast-chip-sample {
+    padding: 0.85rem 0.75rem;
+    border-bottom: 1px solid $grey-light;
+
+    svg { display: block; width: 100%; max-width: 11rem; height: auto; }
+  }
+
+  .contrast-chip-text {
+    margin: 0;
+    padding: 0.5rem 0.75rem 0.6rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+
+    i { margin-right: 0.3rem; }
+    b { margin-right: 0.25rem; }
+    small { color: #5f6368; }
+  }
+
+  &--ok   .contrast-chip-text i { color: #1E6B34; }
+  &--fail .contrast-chip-text i { color: #A5281B; }
+}
+
+/*-----Embedded video-----*/
+#content .video-embed {
+  margin: 1.25rem 0 1.75rem;
+
+  .ratio {
+    overflow: hidden;
+    border-radius: $border-radius * 2;
+    background: $dark;
+  }
+
+  iframe { border: 0; }
+
+  figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+// Wide examples (e.g. the squint test's sharp + blurred pairs): one box per row.
+#content .compare--stacked {
+  grid-template-columns: 1fr;
+
+  .compare-item img { max-width: 34rem; }
+}
+
+/*-----Page titles-----*/
+// The theme's page title is 3.5rem, so long titles ran to three lines. Smaller,
+// and scaling down on phones. Only content pages (#intro); the home hero is separate.
+#intro h1 {
+  font-size: clamp(1.9rem, 1.4rem + 1.6vw, 2.6rem);
+}
+
+/*-----Level 3 headings-----*/
+// Were barely bigger than bold body text and the same colour, so they read as
+// a bold paragraph. Now royal blue (as the Brand Guidelines ask for headings)
+// and clearly below h2 in size - no decoration. Only headings in the page text.
+#content > h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $primary;
+}
+
+// Level 4: the theme draws these in the lighter link-like blue; keep all
+// headings royal blue so none can be mistaken for a link.
+#content > h4 {
+  font-weight: 700;
+  color: $primary;
+}
+
+/*-----Quick check (one-question quiz)-----*/
+// Feedback is text (✓ Correct / ✗ Not quite) plus colour, never colour alone.
+#content .quick-check {
+  margin: 1.5rem 0 1.75rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid #DCE6EC;
+  border-radius: $border-radius * 2;
+  background: #F6F9FB;
+
+  .quick-check-label {
+    margin-bottom: 0.2rem;
+    font-size: 0.85rem;
+    color: #5f6368;
+
+    i { margin-right: 0.35rem; color: $link-blue; }
+  }
+
+  .quick-check-question {
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+    color: $primary;
+  }
+
+  .quick-check-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .quick-check-option {
+    padding: 0.45rem 0.9rem;
+    border: 1.5px solid #C9D6DE;
+    border-radius: $border-radius;
+    background: $white;
+    color: $dark;
+    font-size: 0.95rem;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+
+    &:hover { border-color: $link-blue; }
+    &:focus-visible { outline: 3px solid rgba($link-blue, 0.4); outline-offset: 2px; }
+
+    &.is-right { border-color: #1E6B34; background: #EEF6F0; }
+    &.is-wrong { border-color: #A5281B; background: #FBF1F0; }
+  }
+
+  .quick-check-feedback {
+    margin: 0.75rem 0 0;
+    font-size: 0.95rem;
+
+    &:empty { display: none; }
+    &.is-right { color: #1E6B34; }
+    &.is-wrong { color: #A5281B; }
+  }
+
+  .quick-check-answer {
+    margin: 0.75rem 0 0;
+    font-size: 0.95rem;
+  }
+}
+
+// With JavaScript, the answer is revealed by clicking instead.
+.js #content .quick-check .quick-check-answer { display: none; }
+
+/*-----Lesson structure (chapter 08)-----*/
+#content .lesson-label {
+  margin: 3.5rem 0 0.1rem;
+  font-size: 0.9rem;
+  color: #5f6368;
+}
+
+#content .lesson-label + h2 { margin-top: 0; }
+
+
+
+/*-----Further resources table-----*/
+// The resources table at the end of a chapter: present, but quieter than the
+// chapter content - smaller heading and text, light category labels.
+#content .further-resources-heading {
+  margin-top: 3rem;
+  font-size: 1.3rem;
+  color: $primary;
+}
+
+#content .further-resources-table {
+  margin: 0.5rem 0 2rem;
+  font-size: 0.88rem;
+
+  table { margin-bottom: 0; }
+
+  th {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #5f6368;
+    border-bottom-width: 1px;
+  }
+
+  td { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+  td p { margin: 0; }
+
+  // Category as narrow as its label, a modest column for the name, and
+  // the rest for the description.
+  table { table-layout: auto; width: 100%; }
+  // (The theme gives the first header cell 25%, so narrow the header as well.)
+  th:first-child,
+  .further-resources-category { width: 1%; white-space: nowrap; }
+  th:nth-child(2), td:nth-child(2) { width: 24%; }
+  th:nth-child(3), td:nth-child(3) { width: auto; }
+
+  .badge {
+    font-weight: 600;
+    font-size: 0.75rem;
+    background: #EEF1F4;
+    color: $dark;
+  }
+}
+
+// All resources pages (module-resources.html): the same narrow category column.
+#content .resources-category-table {
+  th:first-child, td:first-child { width: 1%; white-space: nowrap; }
+}
+
+/*-----Chapter stepper (after Codecademy's course overview)-----*/
+// Numbered circles, one per chapter, ending in a trophy. Grey ring = not yet
+// opened, orange ring = visited, filled orange = where you are now.
+// The chapters spread evenly across the full width, joined by a thin line, so the row
+// is the same size whatever the number of chapters. On phones they wrap (no line).
+.chapter-stepper {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0 0 1.25rem;
+  padding: 0.6rem 1rem;
+  list-style: none;
+  border: 1px solid #DCE6EC;
+  border-radius: 999px;
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    right: 2rem;
+    height: 2px;
+    background: #E3E8EC;
+    transform: translateY(-50%);
+  }
+
+  li {
+    position: relative;
+    margin: 0 !important;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.4rem;
+    border-radius: 1.5rem;
+    &::before { display: none; }
+  }
+}
+
+.chapter-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 3px solid #E3E8EC;
+  border-radius: 999px;
+  background: $white;
+  color: $dark;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+
+  &:hover { border-color: $link-blue; transform: translateY(-1px); color: $dark; }
+  &:focus-visible { outline: 3px solid rgba($link-blue, 0.45); outline-offset: 2px; }
+
+  &.is-visited { border-color: $accent-color; }
+
+  &.is-current {
+    border-color: $accent-color;
+    background: $accent-color;
+    color: $dark;
+  }
+
+  &--finish {
+    border-color: transparent;
+    font-size: 1.15rem;
+    color: #9AA5AE;
+
+    &.is-visited { color: $accent-text; border-color: transparent; }
+  }
+}
+
+/*-----Pathway cards (after Codecademy's career-path cards)-----*/
+// Dark header strip naming the card type, bold title, short description, then
+// facts separated by dotted rules. Chapters shown as small numbered circles.
+#content .route-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0 2rem;
+  max-width: none;
+}
+
+.route-card {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid $primary;
+  border-radius: $border-radius;
+  background: $white;
+  box-shadow: 4px 4px 0 rgba($primary, 0.15);
+  overflow: hidden;
+
+  .route-card-kicker {
+    margin: 0;
+    padding: 0.35rem 0.9rem;
+    background: $primary;
+    color: $white;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .route-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0.9rem 0.9rem 1rem;
+  }
+
+  .route-card-label {
+    margin: 0 0 0.35rem;
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: $primary;
+  }
+
+  .route-card-desc {
+    margin: 0 0 0.75rem;
+    font-size: 0.93rem;
+    line-height: 1.5;
+  }
+
+  .route-card-facts {
+    list-style: none;
+    margin: auto 0 0.85rem;
+    padding: 0;
+    font-size: 0.9rem;
+
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem;
+      margin: 0 !important;
+      padding: 0.45rem 0;
+      border-top: 1px dotted #9AA5AE;
+    }
+
+    i { width: 1.1rem; color: $link-blue; }
+  }
+
+  .route-card-steps {
+    display: inline-flex;
+    gap: 0.3rem;
+    margin-left: 0.25rem;
+  }
+
+  .route-card-start {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: flex-start;
+    font-weight: 700;
+    color: $link-blue;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  &.route-card--active {
+    border-color: $accent-color;
+    box-shadow: 4px 4px 0 rgba($accent-color, 0.35);
+
+    .route-card-kicker { background: $accent-color; color: $dark; }
+  }
+}
+
+.chapter-step--sm {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-width: 2px;
+  font-size: 0.8rem;
+}
+
+/*-----"Go" arrow on next links (pager and pathway bar)-----*/
+// A clear forward cue: an orange circle with a navy arrow (6.3:1) at the right
+// edge of the navy "next" card; it nudges forward on hover.
+.go-arrow {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  background: $accent-color;
+  color: $dark;
+  font-size: 1.1rem;
+  transition: transform 0.15s ease;
+}
+
+.module-pager-link--next:hover .go-arrow,
+.module-pager-link--next:focus-visible .go-arrow {
+  transform: translateX(4px);
 }

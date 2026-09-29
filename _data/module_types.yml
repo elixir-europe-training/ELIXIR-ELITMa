@@ -1,3 +1,6 @@
+# The modules shown on the home page and the Modules page.
+# status sets which group a module appears in: ready (Ready to use),
+# in development (In development) or planned (Planned).
 - title: ELIXIR introduction and governance
   description: Introduces European and global research infrastructures, including regulatory bodies like ESFRI
   icon: /images/icons/icon-module-governance.svg
@@ -5,7 +8,7 @@
   id: mod_gov
   description:
   url: modules/governance
-  status: to do
+  status: planned
   order: 1
 
 - title: Node data management strategy
@@ -16,8 +19,6 @@
   leads:
   url: modules/data-management
   status: in development
-  time: 5 hours 25 minutes
-  status_badge:
   order: 2
 
 - title: Strategic management
@@ -27,9 +28,7 @@
   type: Strategic Management
   leads:
   url: modules/strategic-management
-  status: to do
-  time: 
-  status_badge:
+  status: planned
   order: 3
 
 - title: Leading teams in ELIXIR
@@ -39,9 +38,7 @@
   type: Leading teams
   leads:
   url: modules/leading-teams
-  status: to do
-  time: 
-  status_badge:
+  status: planned
   order: 4
 
 - title: Legal and ethical issues
@@ -51,9 +48,7 @@
   leads:
   type: ELSI
   url: modules/elsi
-  status: to do
-  time: 
-  status_badge:
+  status: planned
   order: 5
 
 - title: Communication
@@ -63,9 +58,7 @@
   id: mod_comm
   leads:
   type: Communication
-  status: in development
-  status_badge: 
-  time: 2 hours
+  status: ready
   order: 6
 
 - title: Financial management
@@ -75,9 +68,7 @@
   type: Finance
   leads:
   url: modules/finance
-  status: to do
-  time: 
-  status_badge:
+  status: planned
   order: 7
 
 - title: Project management
@@ -87,9 +78,7 @@
   leads:
   type: Project Management
   url: modules/project-management
-  status: to do
-  time: 
-  status_badge:
+  status: planned
   order: 8
 
 - title: Impact
@@ -99,19 +88,15 @@
   type: Project management
   leads:
   url: modules/impact
-  status: to do
-  time: 
-  status_badge:
+  status: planned
   order: 9
 
 - title: Carbon footprint
-  description: The first course is under development in collaboration with ELIXIR-STEERS and SPARKLE staff exchange projects,
+  description: The first course is under development in collaboration with ELIXIR-STEERS and SPARKLE staff exchange projects.
   icon: /images/icons/icon-module-cf.svg
   id: mod_cf
   leads:
   type: Carbon footprint
   url: modules/carbon-footprint
-  status: in development
-  time: 
-  status_badge:
+  status: planned
   order: 10

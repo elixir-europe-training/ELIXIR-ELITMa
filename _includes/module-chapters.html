@@ -1,0 +1,54 @@
+{%- comment -%}
+Chapter timeline for a module's main (orientation) page.
+Usage: {% include module-chapters.html sidebar="module-communication" %}
+(sidebar defaults to the current page's sidebar)
+Everything is taken from existing data - nothing to maintain here:
+  - order and numbers: the page's sidebar (items titled "01 ..." upwards; "00" is skipped)
+  - title, description and time: each chapter page's own front matter
+  - the summary line (chapter count and total time) is calculated from the above
+{%- endcomment -%}
+{%- assign mc_sidebar = include.sidebar | default: page.sidebar -%}
+{%- assign mc_nav = site.data.sidebars[mc_sidebar] -%}
+{%- assign mc_digits = "0123456789" | split: "" -%}
+{%- assign mc_pages = "" | split: "" -%}
+{%- assign mc_nums = "" | split: "" -%}
+{%- assign mc_minutes = 0 -%}
+{%- for item in mc_nav.subitems -%}
+  {%- assign mc_c1 = item.title | slice: 0 -%}
+  {%- assign mc_c2 = item.title | slice: 1 -%}
+  {%- unless mc_digits contains mc_c1 and mc_digits contains mc_c2 -%}{%- continue -%}{%- endunless -%}
+  {%- assign mc_num = item.title | slice: 0, 2 -%}
+  {%- if mc_num == "00" -%}{%- continue -%}{%- endif -%}
+  {%- assign mc_page = site.pages | where: "url", item.url | first -%}
+  {%- if mc_page == nil -%}{%- continue -%}{%- endif -%}
+  {%- assign mc_pages = mc_pages | push: mc_page -%}
+  {%- assign mc_nums = mc_nums | push: mc_num -%}
+  {%- comment -%} "15 minutes" -> 15 {%- endcomment -%}
+  {%- assign mc_minutes = mc_page.time | plus: 0 | plus: mc_minutes -%}
+{%- endfor -%}
+{%- assign mc_hours = mc_minutes | divided_by: 60 -%}
+{%- assign mc_rest = mc_minutes | modulo: 60 -%}
+<div class="module-chapters">
+  <p class="module-chapters-summary">
+    <span><i class="fa-solid fa-layer-group me-1"></i>{{ mc_pages.size }} chapters</span>
+    {%- if mc_minutes > 0 %}
+    <span><i class="fa-solid fa-clock me-1"></i>about {% if mc_hours > 0 %}{{ mc_hours }} h {% endif %}{% if mc_rest > 0 %}{{ mc_rest }} min{% endif %} in total</span>
+    {%- endif %}
+  </p>
+  <ol class="module-chapters-list">
+    {%- for mc_page in mc_pages %}
+    <li class="module-chapter">
+      <span class="module-chapter-num" aria-hidden="true">{{ mc_nums[forloop.index0] }}</span>
+      <div class="module-chapter-body">
+        <a class="module-chapter-title stretched-link" href="{{ mc_page.url | relative_url }}">{{ mc_page.title }}</a>
+        {%- if mc_page.description %}
+        <span class="module-chapter-question">{{ mc_page.description }}</span>
+        {%- endif %}
+      </div>
+      {%- if mc_page.time %}
+      <span class="module-chip module-chip--time module-chapter-time"><i class="fa-solid fa-clock me-1"></i>{{ mc_page.time }}</span>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ol>
+</div>

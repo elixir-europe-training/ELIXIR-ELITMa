@@ -7,11 +7,11 @@ subitems:
     url: /02-comms-audience
   - title: 03 Collaboration and sharing
     url: /03-comms-collaboration
-  - title: 04 ELIXIR's Comms Ecosystem
+  - title: 04 ELIXIR communications ecosystem
     url: /04-comms-ecosystem
   - title: 05 Accessibility
     url: /05-comms-accessibility
-  - title: 06 Writing for Non-Writers
+  - title: 06 Writing for non-writers
     url: /06-comms-writing
   - title: 07 Branding
     url: /07-comms-branding
@@ -25,6 +25,7 @@ subitems:
     url: /11-comms-strategy
   - title: All resources
     url: /comms-all-resources
+    hr: true   # divider: separates the numbered chapters from extras below
   
 
 

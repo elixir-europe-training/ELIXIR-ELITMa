@@ -1,7 +1,7 @@
 ---
 title: Storytelling and impact measurement
 description: Good work doesn't speak for itself. Tell the story of what changed, and show the evidence it landed.
-summary: "Securing recognition and future funding takes two things: a story that shows what your work changed, and evidence that your communications reached people. This section is about communicating impact - turning outputs into stories and measuring whether your comms worked. For assessing the impact of the work itself, see the Impact module."
+summary: "Securing recognition and future funding takes two things: a story that shows what your work changed, and evidence that your communications reached people. This chapter is about communicating impact - turning outputs into stories and measuring whether your comms worked. For assessing the impact of the work itself, see the Impact module."
 audience: [Node Coordinators, Communications Officers, Project Managers]
 page_img: /icons/icon-module-communication.svg
 time: 15 minutes
@@ -15,19 +15,17 @@ learning_outcomes:
   - Frame the same achievement differently for policymakers, funders and researchers
   - Choose meaningful communications KPIs instead of vanity metrics
   - Link outreach activities to outcomes that matter for your Node's sustainability
-related_pages:
-  Communication: [mod_comm_2, mod_comm_6, mod_comm_9]
-  Real_world_example: [comm-ex-elead]
 ref_to_main_resources:
   - google-analytics
+  - campaign-url-builder
+  - linkedin-page-analytics
   - ri-paths
 ---
 
-{% include module-metadata.html %}
 
 Good work doesn't speak for itself. In a consortium where funding and recognition depend on demonstrating value, two things make the difference: a **story** that shows what your work changed, and **evidence** that your communications actually reached people.
 
-This section is about communicating impact – not assessing it. For methodologies to measure the impact of the work itself (socio-economic value, organisational change), that's the job of the **Impact module**; here we focus on telling the story and tracking whether the telling worked.
+This chapter is about communicating impact – not assessing it. For methodologies to measure the impact of the work itself (socio-economic value, organisational change), that's the job of the **Impact module**; here we focus on telling the story and tracking whether the telling worked.
 
 ## Part 1 – From output to story
 
@@ -42,14 +40,13 @@ You don't need narrative theory. One repeatable arc covers most cases:
 **Challenge** (why it mattered) → **What we did** → **What changed** (the outcome) → **So what** (why it matters to *this* audience).
 
 * Lead with the change, not the process.
-* Name the people involved – impact is human, and people stories travel furthest (see [Section 6: Writing for Non-Writers](06-comms-writing)).
+* Name the people involved – impact is human, and people stories travel furthest (see [Chapter 6: Writing for non-writers](06-comms-writing)).
 * Anchor it in one piece of evidence: a number, a quote, a case study.
 
-### See it in practice
-The clearest ELIXIR example is the [ELEAD before-and-after](comms-example-elead) – the same Annual Report content written first as a list of activities, then as an impact story for the people who shape policy and funding. Read both versions side by side; nothing was invented, only reframed.
+{% include example-card.html page_id="comm-ex-elead" lead="The same Annual Report content written first as a list of activities, then as an impact story for the people who shape policy and funding. Nothing was invented – only reframed." %}
 
 ### Same story, different audience
-Impact isn't one message. Reframe the *same* achievement for whoever you're talking to (this builds on [Section 2: Understanding your audience](02-comms-audience)):
+Impact isn't one message. Reframe the *same* achievement for whoever you're talking to (this builds on [Chapter 2: Understanding your audience](02-comms-audience)):
 
 | Audience | What they want to hear |
 | --- | --- |
@@ -57,12 +54,15 @@ Impact isn't one message. Reframe the *same* achievement for whoever you're talk
 | **Funders** | Value for investment and evidence of sustainability |
 | **Researchers** | What they can now do, use or join |
 
+<div class="exercise-box" markdown="1">
 ### Exercise
 Take a recent output from your Node. Write it twice:
+
 1. As an **activity** ("we did X").
 2. As an **impact story** using the arc above (challenge → what we did → what changed → so what).
 
 Then pick your top audience and adjust the "so what" line for them.
+</div>
 
 ## Part 2 – Measuring whether your comms worked
 
@@ -99,7 +99,39 @@ You don't need special software – a shared spreadsheet works. Track each activ
 | Policy brief | National funder | Sent + meeting held | Continued funding | Cited in funding discussion |
 | Joint social campaign | Wider community | 3 Nodes posting, 4× reach | Awareness / collaboration | 2 collaboration inquiries |
 
-Use [Google Analytics](https://analytics.google.com/) (set up once – see [Section 9: Automation and tools](09-comms-automation)) for the web numbers, and your platforms' built-in analytics for social. Gather a quote or short case study where you can – the ELEAD Impact Report's four personal case studies are a good model for turning numbers into evidence.
+Use [Google Analytics](https://analytics.google.com/) (set up once – see [Chapter 9: Automation and tools](09-comms-automation)) for the web numbers, and your platforms' built-in analytics for social – the [worked examples below](#reading-your-numbers) show what to look at. Gather a quote or short case study where you can – the ELEAD Impact Report's four personal case studies are a good model for turning numbers into evidence.
+
+### Reading your numbers: two worked examples
+{: #reading-your-numbers}
+Numbers only help if you know where to look and what they're telling you. Here's one campaign read two ways. **Scenario:** your Node promotes a two-day training course with a news item on your website, an item in the Weekly Brief and two LinkedIn posts – one from the Node's page, and one reshared by the course lead. *The figures are illustrative.*
+
+#### Google Analytics: where did the registrations come from?
+
+1. **Before you share, tag each link** so Analytics knows where visitors came from. Google's [Campaign URL Builder](https://ga-dev-tools.google/campaign-url-builder/) adds a source (`linkedin`, `weeklybrief`) and a campaign name (`rdm-course-2026`) to the link.
+2. In Google Analytics, open **Reports → Acquisition → Traffic acquisition** and look at visits by source.
+3. Add registrations: if a click on "Register" is set up as a **key event**, add it as a column; otherwise count the registrations in your form by the same sources.
+
+| Source | Visits | Registrations | Conversion |
+| --- | --- | --- | --- |
+| LinkedIn | 420 | 18 | 4% |
+| Weekly Brief | 160 | 24 | 15% |
+| Website news item | 210 | 9 | 4% |
+| Bluesky | 70 | 2 | 3% |
+
+**What it tells you:** LinkedIn brought the most visitors, but the Weekly Brief brought the most registrations – its readers are already part of the network and ready to act. **The story:** "Nearly half our registrations came from the ELIXIR Weekly Brief." For the course page itself, **Reports → Engagement → Pages and screens** shows whether people stayed long enough to read it.
+
+#### LinkedIn: which post actually worked?
+
+On your Node's page, open **Analytics → Content**, or **View analytics** under a single post. Look at impressions, clicks, reactions, comments and reposts. The engagement rate is roughly all of those interactions divided by impressions – the share of people who saw the post and did something.
+
+| Post | Impressions | Clicks | Engagement rate |
+| --- | --- | --- | --- |
+| Node page post, link in the text | 1,100 | 14 | 2.1% |
+| Course lead's reshare with a personal note, link in the first comment | 3,400 | 61 | 4.8% |
+
+**What it tells you:** the personal reshare reached three times as many people and got four times the clicks – the advice in [Chapter 6](06-comms-writing) in numbers. **Analytics → Followers** and **Visitors** also show job functions and industries: check you're reaching researchers, not just other communicators. **The story:** "When our course lead shared the post in their own words, it reached three times as many people."
+
+{% include quick-check.html question="Your funder asks whether the course promotion worked. Which number makes the best case?" options="LinkedIn impressions|Registrations, and where they came from|Your follower count" correct="2" explain="Registrations are the outcome the campaign was for, and knowing their source tells you what to do next time. Impressions and followers are outputs – useful context, not proof." %}
 
 ### The two-minute impact pitch
 When someone asks "what did your Node achieve this year?", you should be able to answer in two minutes:
@@ -108,5 +140,5 @@ When someone asks "what did your Node achieve this year?", you should be able to
 
 If you can say that clearly, you have both a story and the evidence behind it.
 
-## Related modules
-→ Impact module – for assessing the impact of the work itself (the "Impact First" approach), beyond communicating it.
+{% capture impact_tip %}Assessing the impact of the work itself – beyond communicating it – is covered by the [Impact module]({{ '/modules/impact/' | relative_url }}).{% endcapture %}
+{% include callout.html type="tip" content=impact_tip %}

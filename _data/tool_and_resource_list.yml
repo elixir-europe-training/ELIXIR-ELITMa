@@ -1,14 +1,14 @@
 - id: ri-comms-toolkit
   name: Communication Toolkit for Research Infrastructures
   url: https://ri-vis.eu/network/rivis/news/launch-of-communication-toolkit-for-research-infrastructures/
-  description: 
+  description: Practical toolkit from the RI-VIS project on communicating research infrastructures to new audiences - stakeholder mapping, messaging, channels and evaluation, with templates and case studies.
   category: external_resource
   module: mod_comm
 
 - id: ec-comms-tolkit
   name: Communication Toolkit for European Projects
   url: https://eic.ec.europa.eu/communication-toolkit_en
-  description:
+  description: The European Innovation Council's communication toolkit for EU-funded projects - guidance and templates for communication and visibility, including how to acknowledge EU funding correctly.
   category: external_resource
   module: mod_comm
 
@@ -35,18 +35,25 @@
   module: mod_comm
 
 # --- Graphic design (Section 7) ---
-- id: elixir-branding-hub
-  name: ELIXIR Branding Hub
-  url:
-  description: Official ELIXIR logos, colour palette and templates (intranet - consortium login required).
-  category: internal_resource
+- id: elixir-brand-guidelines
+  name: ELIXIR Brand Guidelines (2025)
+  url: https://elixir-europe.org/sites/default/files/documents/elixir-brand-guidelines-2025.pdf
+  description: The official rules for using ELIXIR logos, colours and fonts, and for branding Node websites (public PDF).
+  category: elixir_resource
+  module: mod_comm
+
+- id: elixir-logos
+  name: ELIXIR logos and other visuals
+  url: https://elixir-europe.org/documents/elixir-logos-and-other-visuals
+  description: Download the official ELIXIR, Node and service logos, icons and templates (intranet - consortium login required).
+  category: elixir_resource
   module: mod_comm
 
 - id: elixir-style-guide
   name: ELIXIR Style Guide
-  url:
-  description: Guidance on fonts, layouts and image use for a consistent look and feel across all Nodes (intranet).
-  category: internal_resource
+  url: https://elixir-europe.org/sites/default/files/documents/elixir-style-guide.pdf
+  description: ELIXIR's writing conventions - abbreviations, capitalisation, dates, numbers, ELIXIR-specific terms, spelling and writing for the web (PDF).
+  category: elixir_resource
   module: mod_comm
 
 # --- Design for non-designers (Section 8) ---
@@ -54,20 +61,14 @@
   name: CONVERGE workshop series - Design made easy for communicators
   url: https://www.youtube.com/watch?v=fFAlT51EPZQ
   description: Practical video on design made easy for communicators - design tips for non-designers in research communications.
-  category: external_resource
+  category: elixir_resource
   module: mod_comm
 
-- id: canva
-  name: Canva
-  url: https://www.canva.com/
-  description: Free, browser-based design tool with ready-made templates for slides, social posts and flyers - the most common starting point for non-designers. Save an ELIXIR-branded template and reuse it.
-  category: external_resource
-  module: mod_comm
 
 - id: adobe-express
   name: Adobe Express
   url: https://www.adobe.com/express/
-  description: Free design tool with templates and AI-assisted features (text-to-image, background removal, resizing); can hold ELIXIR-branded templates.
+  description: Recommended design tool for non-designers - free and browser-based, with templates and AI-assisted features (text-to-image, background removal, resizing). Save an ELIXIR-branded template once and reuse it.
   category: external_resource
   module: mod_comm
 
@@ -107,11 +108,68 @@
   category: external_resource
   module: mod_comm
 
-- id: email-octopus
-  name: EmailOctopus
-  url: https://emailoctopus.com/
-  description: Email marketing tool with a generous free tier - a lower-cost alternative to Mailchimp for Node newsletters.
+
+- id: campaign-url-builder
+  name: Google Campaign URL Builder
+  url: https://ga-dev-tools.google/campaign-url-builder/
+  description: Adds tracking tags to the links you share, so Google Analytics can tell you which channel each visitor came from.
   category: external_resource
+  module: mod_comm
+
+- id: linkedin-page-analytics
+  name: LinkedIn Page analytics (help)
+  url: https://www.linkedin.com/help/linkedin/answer/a547077
+  description: What LinkedIn's Page analytics show - content, followers and visitors - and where to find them.
+  category: external_resource
+  module: mod_comm
+
+- id: slack-rss
+  name: Slack RSS app
+  url: https://slack.com/help/articles/218688467-Add-RSS-feeds-to-Slack
+  description: Posts new items from any RSS feed - TeSS training, ELIXIR news or jobs - into a Slack channel with one command.
+  category: external_resource
+  module: mod_comm
+
+- id: ga-setup
+  name: Set up Google Analytics for a website
+  url: https://support.google.com/analytics/answer/9304153
+  description: Google's step-by-step guide - create an account and property, then add the tracking code to your site.
+  category: external_resource
+  module: mod_comm
+
+- id: tess-subscribe
+  name: TeSS documentation - Subscribing to notifications
+  url: https://elixirtess.github.io/docs/search/subscribe/
+  description: Get new TeSS training events matching a search by email - daily, weekly or monthly. Handy for newsletters.
+  category: elixir_resource
+  module: mod_comm
+
+- id: tess-feeds
+  name: TeSS training events feed
+  url: https://tess.elixir-europe.org/events.rss
+  description: RSS feed of new training events on TeSS; filter by country (?country=) or keyword (?q=). Also available as a calendar feed (events.ics).
+  category: elixir_resource
+  module: mod_comm
+
+- id: zapier
+  name: Zapier
+  url: https://zapier.com/
+  description: No-code automation - connect a trigger (new form response, new row, new feed item) to an action such as a Slack message. Make (make.com) is a similar alternative.
+  category: external_resource
+  module: mod_comm
+
+- id: google-apps-script
+  name: Google Apps Script
+  url: https://developers.google.com/apps-script
+  description: Free scripting built into Google Forms and Sheets - for example, post each new form sign-up to Slack. Involves code; ask your software engineer if unsure.
+  category: external_resource
+  module: mod_comm
+
+- id: comms-tools-sheet
+  name: Communication tools used by ELIXIR Nodes
+  url: https://docs.google.com/spreadsheets/d/174WtL6yeIeVR8jIfDtDxvg0SZWDPsGHq9vvEA5SiEPw/edit?gid=0#gid=0
+  description: The ELIXIR Communications Group's shared spreadsheet of communication tools - cost, what each is for and which Nodes use it.
+  category: elixir_resource
   module: mod_comm
 
 - id: google-analytics
@@ -133,7 +191,7 @@
   name: ELIXIR Node Communications Strategy Toolkit (ELIXIR-STEERS)
   url:
   description: The Hub's full toolkit for building a Node communications strategy - objectives, scope, audiences, channels, messages, evaluation and a strategy template (ELIXIR-STEERS M5.3, 2025).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 # --- Storytelling and impact (Section 10) ---
@@ -149,7 +207,7 @@
   name: CONVERGE workshop - communications tips for different audiences
   url: https://www.youtube.com/watch?v=th88pw_w52U
   description: Practical video on tailoring communications to different audiences.
-  category: external_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: writing-in-sciences
@@ -161,24 +219,24 @@
 
 - id: elixir-hashtags
   name: ELIXIR social media hashtags and accounts
-  url:
-  description: The consortium's standard hashtags and account handles for social media (intranet).
-  category: internal_resource
+  url: https://docs.google.com/document/d/1OzY4IMhiz-_sZ54EtxPGGdqLOq8T_QJ7d6BMfejZGXk/edit?tab=t.0#heading=h.p7m0vv7tadl2
+  description: Hashtags for ELIXIR Communities, Platforms and projects, and every Node's social media accounts - in the ELIXIR communications useful information document.
+  category: elixir_resource
   module: mod_comm
 
 # --- Collaboration (Section 3) ---
 - id: comms-contacts-registry
-  name: ELIXIR communications contacts registry
-  url: https://docs.google.com/document/d/1OzY4IMhiz-_sZ54EtxPGGdqLOq8T_QJ7d6BMfejZGXk/edit?usp=sharing
-  description: Living directory of communications contacts in every Node, plus a mailing list that reaches them (consortium login required).
-  category: internal_resource
+  name: ELIXIR communications useful information
+  url: https://docs.google.com/document/d/1OzY4IMhiz-_sZ54EtxPGGdqLOq8T_QJ7d6BMfejZGXk/edit?tab=t.0#heading=h.306gbb7w1q9d
+  description: Communications and website contacts in every Node, Node and project social media accounts, and ELIXIR hashtags (Google Doc).
+  category: elixir_resource
   module: mod_comm
 
 - id: comms-group
   name: ELIXIR Communications Group
   url: https://elixir-europe.org/intranet/communication
   description: Open, collaborative space where communicators from all Nodes share practice and shape consortium communications (intranet).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 # --- Ecosystem (Section 4) ---
@@ -186,26 +244,89 @@
   name: ELIXIR Communications Strategy
   url:
   description: Full channel details and submission guidelines for the consortium's communications (intranet).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: sm-guidelines-nodes
   name: Social media guidelines for Node account managers
   url:
   description: Guidance for those running a Node's social media accounts (intranet).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: sm-guidelines-members
   name: Social media guidelines for ELIXIR consortium members
   url:
   description: Guidance for individual consortium members posting about ELIXIR (intranet).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
 
 - id: node-newsletter-guidelines
   name: ELIXIR Node internal newsletters - guidelines and recommendations
   url:
   description: Recommendations for running a Node-level internal newsletter (intranet).
-  category: internal_resource
+  category: elixir_resource
   module: mod_comm
+# --- Data management ---
+- id: ds-handbook-maturity-model
+  name: Data Stewardship Handbook - Maturity Model
+  url: https://elixir-europe.github.io/ds-handbook/maturity-model
+  description: A self-assessment tool for exploring how research data management is organised and supported, area by area - used to assess where your Node is.
+  category: elixir_resource
+  module: mod_dm
+
+- id: gorc-typology
+  name: GORC Typology and Definitions (RDA)
+  url: https://www.rd-alliance.org/groups/global-open-research-commons-ig/outputs/
+  description: The Global Open Research Commons essential elements and their definitions, from the RDA GORC Interest Group, including the typology diagram (CC BY 4.0).
+  category: external_resource
+  module: mod_dm
+
+- id: gorc-model-1-1
+  name: GORC International Model, version 1.1 (RDA)
+  url: https://www.rd-alliance.org/groups/gorc-international-model-wg/outputs/the-global-open-research-commons-international-model-version-1-1/
+  description: The full GORC International Model from the RDA working group - the framework this module uses to structure a Node strategy.
+  category: external_resource
+  module: mod_dm
+
+- id: gorc-model-report
+  name: GORC International Model Report, version 1 (RDA)
+  url: https://www.rd-alliance.org/groups/gorc-international-model-wg/outputs/the-global-open-research-commons-international-model-report-version-1/
+  description: The working group's report on the GORC International Model - its elements and how it was developed.
+  category: external_resource
+  module: mod_dm
+
+- id: gorc-dsj-article
+  name: The Global Open Research Commons International Model (Data Science Journal)
+  url: https://datascience.codata.org/articles/10.5334/dsj-2024-056
+  description: Peer-reviewed article describing the GORC International Model.
+  category: external_resource
+  module: mod_dm
+
+- id: elitma-espoo-materials
+  name: ELITMa Espoo workshop materials (2023)
+  url: https://doi.org/10.5281/zenodo.10895079
+  description: Training materials, shared notes and Node portfolios from the 2023 Espoo edition of the Node data management strategy module - the source of this module's case studies.
+  category: elixir_resource
+  module: mod_dm
+
+- id: rdmkit
+  name: RDMkit
+  url: https://rdmkit.elixir-europe.org/
+  description: ELIXIR's research data management toolkit for the life sciences - practical guidance, tool overviews and national pages.
+  category: elixir_resource
+  module: mod_dm
+
+- id: rems
+  name: REMS - Resource Entitlement Management System
+  url: https://github.com/CSCfi/rems
+  description: Open-source tool from CSC (ELIXIR Finland) for managing access to controlled-access datasets.
+  category: elixir_resource
+  module: mod_dm
+
+- id: rda-dmp-common-standard
+  name: RDA DMP Common Standard
+  url: https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard
+  description: A common, machine-actionable data model for Data Management Plans, from the Research Data Alliance.
+  category: external_resource
+  module: mod_dm

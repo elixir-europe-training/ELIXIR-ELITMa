@@ -1,0 +1,16 @@
+---
+layout: page
+---
+{%- comment -%}
+Layout for every page under pages/modules/ (set in _config.yml defaults).
+Adds the module metadata box (status, time, audience, learning outcomes) at the top
+of the content for chapters - pages whose front matter has a `time` or `status` - so
+authors don't have to include it by hand. Everything else is the theme's page layout.
+If a page still includes module-metadata.html itself, the box is not added twice.
+{%- endcomment -%}
+{%- if page.time or page.status -%}
+{%- unless content contains 'class="module-metadata' %}
+{% include module-metadata.html %}
+{%- endunless -%}
+{%- endif %}
+{{ content }}

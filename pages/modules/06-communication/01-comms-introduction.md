@@ -7,7 +7,7 @@ type: Communication
 audience: [Node Coordinators, Project Managers, Communications Officers]
 time: 10 minutes
 status: ready
-summary: Communication is already happening in your Node – the question is whether it's working. This section helps you understand the difference between internal and external communication, why both matter in a distributed infrastructure like ELIXIR, and how to take stock of where your Node currently stands.
+summary: Communication is already happening in your Node – the question is whether it's working. This chapter helps you understand the difference between internal and external communication, why both matter in a distributed infrastructure like ELIXIR and how to take stock of where your Node currently stands.
 task_list: true
 sidebar: module-communication
 learning_outcomes:
@@ -15,70 +15,57 @@ learning_outcomes:
     - Recognise communication as a shared responsibility across all roles, not just dedicated comms staff
     - Audit your Node's current communication practices against a simple five-point framework
 related_pages:
-  Real_world_example: [comm-ex-matrix]
+  
 ref_to_main_resources:
   - ec-comms-tolkit
   - ri-comms-toolkit
 ---
 
-{% include module-metadata.html %}
 
-You may not have "communications" in your job title. But if you coordinate a project, lead a work package, manage a team, or represent your Node in any capacity – you are already communicating on behalf of ELIXIR. The question is not whether you communicate, but how intentionally you do it.
+You may not have "communications" in your job title. But if you coordinate a project, lead a work package, manage a team or represent your Node in any capacity – you are already communicating on behalf of ELIXIR. The question is not whether you communicate, but how intentionally you do it.
 
-In a distributed network like ELIXIR, where 22 Nodes operate across different countries, cultures, and institutional contexts, communication is the connective tissue. When it works well, it's invisible. When it doesn't, the costs are real: duplicated effort, missed opportunities, missed authority in research grants, misaligned expectations and outputs that never reach the people who needed them.
+In a distributed network like ELIXIR, where Nodes operate across different countries, cultures and institutional contexts, communication is the connective tissue. When it works well, it's invisible. When it doesn't, the costs are real: duplicated effort, missed opportunities, missed authority in research grants, misaligned expectations and outputs that never reach the people who needed them.
 
 This module won't turn you into a communications expert. It will help you communicate more deliberately – and know when to ask for help.
 
 ## Internal vs external: two different jobs
 All communication in ELIXIR falls into one of two categories, and confusing them is one of the most common mistakes:
 
-* **Internal communication** is the flow of information within your Node or across the consortium — project updates, shared decisions, meeting outputs, cross-Node coordination. Its goal is alignment. When it fails, people duplicate work, miss deadlines, or pull in different directions.
-* **External communication** is how you present your work to the world – to funders, policymakers, researchers outside ELIXIR, and the public. Its goal is impact. When it fails, good work goes unnoticed and opportunities are missed.
+* **Internal communication** is the flow of information within your Node or across the consortium — project updates, shared decisions, meeting outputs, cross-Node coordination. Its goal is alignment. When it fails, people duplicate work, miss deadlines or pull in different directions.
+* **External communication** is how you present your work to the world – to funders, policymakers, researchers outside ELIXIR and the public. Its goal is impact. When it fails, good work goes unnoticed and opportunities are missed.
 
 The same output often needs both. A new service your Node launches needs internal communication so the consortium knows about it – and external communication so potential users find it or to gain visibility for funding and sustainability. 
 
-{% include callout.html type="note" content="Node Coordinators, Work Package Leads, Task Leads, and any other coordination roles within the consortium play a key role in shaping the communication culture, especially for internal communication." %}
+{% include callout.html type="note" content="Node Coordinators, Work Package Leads, Task Leads and any other coordination roles within the consortium play a key role in shaping the communication culture, especially for internal communication." %}
 
 ## A scenario you'll recognise
 
-Two Work Package leads in a multi-Node project each spent months producing what turned out to be near-identical outputs. Neither knew the other was doing it. There was no shared update mechanism, no agreed communication touchpoint, and no moment where someone asked: who else needs to know what we're doing?
+Two Work Package leads in a multi-Node project each spent months producing what turned out to be near-identical outputs. Neither knew the other was doing it. There was no shared update mechanism, no agreed communication touchpoint and no moment where someone asked: who else needs to know what we're doing?
 
 This isn't rare. It's the default when communication is treated as something that happens after the work, rather than alongside it.
 
 {% include callout.html type="tip" content="Considering communication strategies before a project begins is the first step towards avoiding duplicated efforts and team misalignment. Considering which outputs will be relevant to people outside the project will also position your work as a success for future funding avenues for your Node and the consortium at large." %}
 
 
+<div class="exercise-box" markdown="1">
 ## Quick exercise: your communication audit
 
-Reflect on a current or recent project.
+Reflect on a current or recent project and tick what's true today.
 
-- [ ]  Do all active members know where to find the latest updates?
+- [ ] Do all active members know where to find the latest updates?
+- [ ] Do we regularly share who is doing what?
 - [ ] Have I identified which outputs are worth communicating beyond the project team?
 - [ ] Is there a clear process for sharing successes and lessons learned?
 - [ ] Are our members aware of current objectives?
 - [ ] Are the channels I'm using actually working?
 
-{% include callout.html type="warning" content="If you didn't tick three or more, this module is definetely for you – keep going." %}
-
+{% include callout.html type="warning" content="If you didn't tick four or more, this module is definitely for you – keep going." %}
+</div>
 
 ## What's next
 
-Communicating research and, in particular, inside Research Infrastructures, is complex, but the end communications piece should not reflect that complexity.
+Communicating research and, in particular, inside research infrastructures, is complex, but the end communications piece should not reflect that complexity.
 
 This short module will help you understand how to take action on some of the easy steps and give you cues for ELIXIR-specific applications. 
 
 {% include callout.html type="tip" content="If you want to delve deeper than this module, there are numerous resources you can use to communicate more clearly. Use the tools and resources tables provided at the end of each page." %}
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.task-list-item input[type="checkbox"]').forEach(function (cb, i) {
-      var key = 'task-' + window.location.pathname + '-' + i;
-      cb.removeAttribute('disabled');
-      cb.checked = localStorage.getItem(key) === 'true';
-      cb.addEventListener('change', function () {
-        localStorage.setItem(key, cb.checked);
-      });
-    });
-  });
-</script>

@@ -1,52 +1,22 @@
 title: Data Management Module
-title-url: modules/data-management
+title_url: modules/data-management
 subitems:
-  - title: Before you start
-    url: /00-dm-start
   - title: 01 Why a Node data management strategy
     url: /01-dm-intro
-    subitems:
-    - title: Node examples to learn from
-      url: /examples-01-dm
-    - title: Funders as drivers for FAIRification strategies
-      url: /funders-dm
   - title: 02 Understanding your Node context
     url: /02-dm-node-context
-    subitems:
-    - title: Node examples to learn from
-      url: /examples-02-dm
-    - title: From distributed support to coordinated RDM services
-      url: /distributed-support-dm
-    - title: Roles, competences and your Node team
-      url: /roles-competences-dm
   - title: 03 What to include
     url: /03-dm-content
-    subitems:
-    - title: Understanding the GORC framework
-      url: /gorc-framework-dm
-    - title: Why use GORC in ELIXIR?
-      url: /gorc-elixir-dm
-    - title: Building a Node RDM portfolio
-      url: /rdm-portfolio-dm
   - title: 04 Assessing where you are
     url: /04-dm-assess
-    subitems:
-     - title: Self-assessment as a strategy tool
-       url: /self-assessment-dm
   - title: 05 Deciding where you want to go
     url: /05-dm-direction
-    subitems:
-    - title: Roles, competences and your Node team
-      url: /roles-competences-dm
-    - title: From mandate to service scope
-      url: /service-scope-dm
   - title: 06 Turning direction into a plan
     url: /06-dm-plan
-    subitems:
-    - title: From service idea to implementation
-      url: /implementation-dm
   - title: 07 Keeping the strategy alive
     url: /07-dm-sustain
-    subitems:
-    - title: Approaches to sustaining RDM support
-      url: /sustain-models-dm
+  - title: All examples
+    url: /dm-all-examples
+    hr: true   # divider: separates the numbered chapters from extras below
+  - title: All resources
+    url: /dm-all-resources

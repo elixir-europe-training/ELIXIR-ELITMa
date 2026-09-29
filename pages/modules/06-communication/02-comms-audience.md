@@ -1,7 +1,7 @@
 ---
 title: Understanding your audience
 description: Saying the right thing to the wrong audience is as ineffective as saying nothing at all. Learn how to tailor your messages. 
-summary: Not everyone needs to hear the same thing — and saying the right thing to the wrong audience is as ineffective as saying nothing at all. This module helps you identify who your key stakeholders are, prioritise where to focus your effort, and choose the channels most likely to reach them.
+summary: Not everyone needs to hear the same thing — and saying the right thing to the wrong audience is as ineffective as saying nothing at all. This chapter helps you identify who your key stakeholders are, prioritise where to focus your effort and choose the channels most likely to reach them.
 audience: [Communications Officers, Project Managers, Node Coordinators]
 page_img: /icons/icon-module-communication.svg
 time: 20 minutes
@@ -15,19 +15,15 @@ learning_outcomes:
   - Build a simple priority matrix to guide where you focus communication effort
   - Select the most appropriate channel for a given audience and message
   - Tailor your key message for different audiences from the same starting point
-related_pages:
-  Communication: [mod_comm_4]
-  Real_world_example: [comm-ex-matrix]
 ref_to_main_resources:
   - converge-comms
 ---
 
 
-{% include module-metadata.html %}
 
 ## Who are your stakeholders?
 
-A successful communication strategy starts with knowing your audience. In ELIXIR, your stakeholders are diverse and will vary depending on whether you're communicating at Node level, project level, or consortium level. They might include:
+A successful communication strategy starts with knowing your audience. In ELIXIR, your stakeholders are diverse and will vary depending on whether you're communicating at Node level, project level or consortium level. They might include:
 
 * **Researchers and life scientists**: interested in tools, services, training and collaboration opportunities.
 * **Policymakers and national ministries**: interested in societal impact, value for public investment and strategic priorities.
@@ -36,7 +32,7 @@ A successful communication strategy starts with knowing your audience. In ELIXIR
 * **Industry partners**: interested in applied outputs, partnerships and talent.
 * **The general public**: interested in accessible explanations of why this work matters.
 
-{% include callout.html type="important" content="Each Node will  have a different priority matrix for each of these stakeholders. Not all of these will be relevant to every project or output. The priority matrix below helps you decide where to focus." %}
+{% include callout.html type="important" content="Each Node will have a different priority matrix for each of these stakeholders. Not all of these will be relevant to every project or output. The priority matrix below helps you decide where to focus." %}
 
 
 ## The priority matrix
@@ -48,10 +44,10 @@ It maps two dimensions: how interested a stakeholder group is in your work, and 
 
 * List all stakeholder groups relevant to your current project or output
 * For each group, ask: how interested are they likely to be? (low / medium / high)
-* Then ask: how much influence do they have over your work — through funding, policy, or uptake? (low / medium / high)
+* Then ask: how much influence do they have over your work — through funding, policy or uptake? (low / medium / high)
 * Plot them on the matrix — your top priority groups are high interest + high influence
 
-Use this to decide who gets a tailored message, who gets a standard update, and who simply needs to be aware
+Use this to decide who gets a tailored message, who gets a standard update and who simply needs to be aware
 
 ### Example – a Node launching a new training programme
 
@@ -69,9 +65,11 @@ Use this to decide who gets a tailored message, who gets a standard update, and 
   <i class="fas fa-download"></i>Download stakeholder matrix template (PowerPoint)
 </a>
 
+{% include example-card.html page_id="comm-ex-matrix" lead="See how ELIXIR-UK built its own stakeholder map – shown in two versions a few years apart – and why the matrix is a focusing tool that evolves, not a rulebook." %}
+
 
 ## The persona builder
-Once you know your priority stakeholders, the next step is understanding them well enough to communicate effectively. A persona is a brief profile of a stakeholder type – not a real individual, but a representative picture of what they care about, what they already know, and what would make them pay attention.
+Once you know your priority stakeholders, the next step is understanding them well enough to communicate effectively. A persona is a brief profile of a stakeholder type – not a real individual, but a representative picture of what they care about, what they already know and what would make them pay attention.
 
 {% include callout.html type="important" content="A persona is a nice-to-have, not a must. If you're not building a tool or service, it can be overkill. But if you are, it's the first thing to consider – and don't just imagine it. Picture your persona going through the resource you're building, or better still, get a real person who fits it to talk you through how they'd use it. Test, don't guess." %}
 
@@ -96,20 +94,24 @@ Once you know your priority stakeholders, the next step is understanding them we
   <i class="fas fa-download"></i>Download persona builder template (PowerPoint)
 </a>
 
-### Exercise
-Think of a recent project or result from your Node. Build a priority matrix for that particular case.
-Now, for each group in the priority matrix, write one sentence that would catch their attention.
+<div class="exercise-box" markdown="1">
+### Quick exercise
+Think of a recent project or result from your Node.
+
+* Build a priority matrix for that particular case.
+* For each group in the matrix, write one sentence that would catch their attention.
+</div>
 
 ## Choosing the right channel
 
-Not all communication channels are equal. The best channel depends on your audience, your message, and the resources you have available. Use the persona you've just built to guide your channel choice – where does this stakeholder actually go for information?
+Not all communication channels are equal. The best channel depends on your audience, your message and the resources you have available. Use the persona you've just built to guide your channel choice – where does this stakeholder actually go for information?
 
 **Channel comparison table:**
 
 | Channel               | Effort          | Impact           | Best for                                                  |
 | --------------------  | --------------- | ---------------- | --------------------------------------------------------- |
-| **Social media**      | Low             | Medium           | Quick updates, events, opportunities, and personal touch  |
-| **Newsleetter/email** | Low             | Medium           | Targetted updates, events, opportunities                  |
+| **Social media**      | Low             | Medium           | Quick updates, events, opportunities and personal touch  |
+| **Newsletter/email**  | Low             | Medium           | Targeted updates, events, opportunities                   |
 | **Policy brief**      | High            | High             | Policymakers, funders                                     |
 | **Newsletter**        | Medium          | Medium           | A mix of internal and external stakeholders               |
 | **Scientific paper**  | High            | High (long-term) | Reaching other researchers                                |
@@ -117,13 +119,16 @@ Not all communication channels are equal. The best channel depends on your audie
 | **Direct email**      | Low             | Medium           | Targeted, personal outreach to specific individuals       |
 | **Slack**             | Low             | Medium           | Quick, informal internal coordination across Nodes and teams (consortium Slack) |
 
-{% include callout.html type="important" content="One rule that always applies: whichever channel you choose, the content needs to be reframed for it. The same information presented in a newsletter, a social media post, and a policy brief should feel like three different pieces – same facts, different narrative, different length, different tone." %}
+{% include callout.html type="important" content="One rule that always applies: whichever channel you choose, the content needs to be reframed for it. The same information presented in a newsletter, a social media post and a policy brief should feel like three different pieces – same facts, different narrative, different length, different tone." %}
 
+<div class="exercise-box" markdown="1">
 ### Exercise: putting it together
 Think of a current or upcoming output from your Node – a new service, a project result, a training opportunity.
+
 * Use the Priority Matrix template to rank your stakeholders for this specific output
 * Build a persona for your top priority stakeholder
 * Using the channel table above, identify the two channels most likely to reach them
 * Write one sentence tailored to that persona that would make them want to know more
 
 There is no single correct answer, but there is always a better and a worse one. This exercise is to simply build the habit of asking "who is this for?" before you communicate anything.
+</div>

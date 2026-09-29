@@ -11,13 +11,15 @@ sidebar: module-data-management
 summary: Data management activities often develop separately across governance, services and support structures. This chapter helps you bring these elements together, identify the areas most relevant to your Node and draft a simple strategy outline, using a shared framework called the Global Open Research Commons (GORC) model.
 related_pages:
   Real_world_example:
-  - gorc-framework-dm
-  - gorc-elixir-dm
-  - rdm-portfolio-dm
+  - dm-ex-rdm-portfolio
 learning_outcomes:
     - Identify the main elements to include in a Node data management strategy
     - Use the Global Open Research Commons model to structure the content of your strategy
     - Select relevant areas and draft a simple outline for your strategy
+ref_to_main_resources:
+  - ds-handbook-maturity-model
+  - gorc-model-1-1
+  - gorc-typology
 ---
 
 {% include module-metadata.html %}
@@ -28,7 +30,7 @@ In Chapter 1, you set out why your Node needs a data management strategy and ide
 
 This module uses two complementary frameworks:
 
-* **Structuring the content of your strategy** using the [Global Open Research Commons (GORC) International Model]({{ site.baseurl }}/gorc-framework-dm), developed through a Research Data Alliance (RDA) working group. The GORC model describes *what areas the strategy should cover, and how they relate to each other?*
+* **Structuring the content of your strategy** using the [Global Open Research Commons (GORC) International Model]({{ site.baseurl }}/dm-deeper-gorc-framework), developed through a Research Data Alliance (RDA) working group. The GORC model describes *what areas the strategy should cover, and how they relate to each other?*
 * **Assessing selected areas** using the [Maturity Model](https://elixir-europe.github.io/ds-handbook/maturity-model) from the Data Stewardship Handbook. The Maturity Model describes *how well is each area currently developed, and where is there room for improvement?*
 
 In this chapter, you will use the GORC model to structure the content of your strategy and identify the areas that are most relevant to your Node. In the next chapter, you will use the Maturity Model to assess how well selected areas are developed and identify possible improvements.
@@ -71,7 +73,7 @@ Using the framework helps you:
 
 {% include callout.html type="important" content="The GORC model is not prescriptive, focus on the elements that are most relevant to your Node and strategy. Read the Understanding the GORC framework page in detail before starting the exercises below, it explains the essential elements you will need." %}
 
-See <a href="{{ site.baseurl }}/gorc-framework-dm">Understanding the GORC framework</a> for the full explanation, and <a href="{{ site.baseurl }}/gorc-elixir-dm">Why use GORC in ELIXIR?</a> to see how the framework relates to ELIXIR Nodes and distributed infrastructure.
+{% include example-card.html page_ids="dm-dd-gorc-framework, dm-dd-gorc-elixir" compact=true %}
 
 ## Example: mapping GORC elements
 
@@ -92,6 +94,7 @@ The example below shows how the GORC elements could be mapped. It is illustrativ
 
 {% include callout.html type="note" content="This is an illustrative example. You do not need to map every element. Select the elements that are most relevant to your Node and strategy." %}
 
+<div class="exercise-box" markdown="1">
 ## Reflection: recognise the GORC elements
 
 Review the Node context overview you developed in Chapter 2.
@@ -105,8 +108,11 @@ Consider the following questions:
 
 Record your initial observations. You will use them in the next exercise.
 
+</div>
+
 {% include callout.html type="tip" content="Not sure what counts as a GORC element? Use the examples in the table above as a starting point. Focus on how the different parts of your Node connect, you do not need to describe every activity in detail." %}
 
+<div class="exercise-box" markdown="1">
 ## Exercise: map selected GORC elements
 
 Select two or three GORC elements that seem relevant to your strategy.
@@ -117,8 +123,11 @@ For each element, describe what is already in place and how it connects to other
 | --- | --- | --- |
 | Select an element | Add relevant roles, services, activities or resources | Note links with other GORC elements |
 
+</div>
+
 {% include callout.html type="tip" content="Keep your descriptions short and focused. The purpose is to understand the structure, not to assess how well each area is developed." %}
 
+<div class="exercise-box" markdown="1">
 ## Exercise: draft your strategy outline
 
 Use your mapping to identify the areas that should be included in your strategy.
@@ -130,6 +139,8 @@ For each selected area, record why it matters, what the strategy should address 
 | Add a selected area | Explain its relevance at Node level | Note the main topic or question to address | Add relevant roles or groups |
 
 Use the completed table as a first outline for your strategy. You can add more detail as the strategy develops.
+
+</div>
 
 {% include callout.html type="note" content="Aim for a focused outline rather than a complete strategy. Include the areas that are relevant to your Node and useful to address in the strategy." %}
 

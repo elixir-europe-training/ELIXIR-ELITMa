@@ -1,0 +1,29 @@
+# Learning pathways for the Communication module.
+# The file name must match the module's sidebar file (_data/sidebars/module-communication.yml).
+#
+# Each pathway is a short route through some chapters, in the order listed.
+#   id          - short, lowercase, no spaces; appears in links as ?path=<id>
+#   title       - shown on the route card and in the pathway bar on each chapter
+#   description - one sentence on who it's for
+#   chapters    - page_ids of the chapter pages, in order
+# Chapter numbers, titles, links and the total time are filled in automatically.
+
+- id: new-to-comms
+  title: New to communications
+  description: Start with the essentials – why it matters, who it's for and how to write for them.
+  chapters: [mod_comm_1, mod_comm_2, mod_comm_6]
+
+- id: new-to-elixir
+  title: New to ELIXIR
+  description: Find the people, channels and shared resources the network already has.
+  chapters: [mod_comm_3, mod_comm_4]
+
+- id: making-materials
+  title: Making materials this week
+  description: Get a flyer, slide deck or post right – on brand and readable by everyone.
+  chapters: [mod_comm_5, mod_comm_7, mod_comm_8]
+
+- id: planning-reporting
+  title: Planning or reporting
+  description: Set priorities, show your impact and turn it into a plan you can run.
+  chapters: [mod_comm_2, mod_comm_10, mod_comm_11]

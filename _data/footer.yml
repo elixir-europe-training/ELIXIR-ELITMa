@@ -28,14 +28,22 @@ columns:
         url: modules/project-management/
       - url_text: Impact
         url: modules/impact/
-      - url_text: Carbon Footprint
+      - url_text: Carbon footprint
         url: modules/carbon-footprint/  
   - type: links
     width: 2
     title: ABOUT
     children: 
-      - url_text: Find out about the programme
-        url: https://elixir-europe.org/platforms/training/elitma
+      - url_text: About ELITMa
+        url: /about
+      - url_text: How to use ELITMa
+        url: /how-to-use
+      - url_text: How to contribute
+        url: /how-to-contribute
+      - url_text: Site components
+        url: /site-components
       - url_text: See the people behind ELITMa
         url: /contributors
+      - url_text: Find out about the programme
+        url: https://elixir-europe.org/platforms/training/elitma
 

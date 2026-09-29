@@ -5,3 +5,7 @@ subitems:
     url: /contributors
   - title: How to use ELITMa
     url: /how-to-use
+  - title: How to contribute
+    url: /how-to-contribute
+  - title: Site components
+    url: /site-components

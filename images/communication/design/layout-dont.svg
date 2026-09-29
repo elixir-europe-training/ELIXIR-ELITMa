@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 202" role="img" aria-labelledby="t d">
+  <title id="t">Untidy layout</title>
+  <desc id="d">Three boxes of different sizes, out of line with each other, with uneven gaps and a mix of centred and left-aligned text.</desc>
+  <rect x="0.5" y="0.5" width="359" height="201" rx="6" fill="#ffffff" stroke="#d5dde2"/>
+  <text x="180.0" y="38" text-anchor="middle" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="16" font-weight="700" fill="#023452">Our services</text>
+  <rect x="18" y="58" width="92" height="78" rx="4" fill="#eef3f6" stroke="#c9d6de"/>
+  <text x="64.0" y="80" text-anchor="middle" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="11" font-weight="700" fill="#023452">Training</text>
+  <rect x="34.0" y="90" width="60" height="4" rx="2" fill="#c9d6de"/>
+  <rect x="42.0" y="100" width="44" height="4" rx="2" fill="#c9d6de"/>
+  <rect x="128" y="72" width="110" height="66" rx="4" fill="#eef3f6" stroke="#c9d6de"/>
+  <text x="140" y="94" text-anchor="start" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="11" font-weight="700" fill="#023452">Data</text>
+  <rect x="140" y="104" width="60" height="4" rx="2" fill="#c9d6de"/>
+  <rect x="140" y="114" width="44" height="4" rx="2" fill="#c9d6de"/>
+  <rect x="252" y="52" width="92" height="104" rx="4" fill="#eef3f6" stroke="#c9d6de"/>
+  <text x="298.0" y="74" text-anchor="middle" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="11" font-weight="700" fill="#023452">Tools</text>
+  <rect x="268.0" y="84" width="60" height="4" rx="2" fill="#c9d6de"/>
+  <rect x="276.0" y="94" width="44" height="4" rx="2" fill="#c9d6de"/>
+  <text x="40" y="178" font-family="'Open Sans', Lato, Arial, sans-serif" font-size="10" fill="#5f6368">Find out more at our website</text>
+</svg>

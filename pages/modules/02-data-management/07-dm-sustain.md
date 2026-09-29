@@ -12,8 +12,8 @@ status: in development
 sidebar: module-data-management
 summary: Define how your Node will monitor progress, review the strategy and keep it relevant as priorities, needs and circumstances change.
 related_pages:
-  Real_world_example: 
-  - sustain-models-dm
+  Dive_deeper:
+  - dm-dd-sustain-models
 learning_outcomes:
   - Define how progress on the strategy will be monitored
   - Identify when and how the strategy should be reviewed
@@ -36,6 +36,7 @@ Keep it simple. You only need enough information to see whether you are making p
 
 {% include callout.html type="tip" content="Use information and meetings you already have. Keeping track of the strategy should not become a new reporting system." %}
 
+<div class="exercise-box" markdown="1">
 ## Exercise: add a review point
 
 Add a simple review point to the actions and priorities in your plan.
@@ -45,6 +46,8 @@ Add a simple review point to the actions and priorities in your plan.
 | Add a priority or action | Note what would show progress or signal a need to adjust | Add the person or group checking progress | Add a useful moment to look again |
 
 You do not need the same rhythm for everything. A new activity may need attention after a few months, while a stable area may only need checking once a year.
+
+</div>
 
 ## Know when to revisit the strategy
 

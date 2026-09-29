@@ -13,11 +13,13 @@ sidebar: module-data-management
 summary: Use the Data Stewardship Handbook Maturity Model to assess how well selected areas of your Node data management strategy are developed and identify possible areas for improvement.
 related_pages:
   Real_world_example:
-  - self-assessment-dm
+  - dm-ex-self-assessment
 learning_outcomes:
   - Explain how the Data Stewardship Handbook Maturity Model can support strategy development
   - Assess the current situation and level of development of selected areas of the strategy
   - Identify strengths, gaps and possible areas for improvement
+ref_to_main_resources:
+  - ds-handbook-maturity-model
 ---
 
 {% include module-metadata.html %}
@@ -78,6 +80,7 @@ You do not need to create a complete mapping between the two frameworks. Use the
 
 {% include callout.html type="tip" content="Start small. Select one or two strategy areas and look for the Maturity Model indicators that are most useful for understanding them." %}
 
+<div class="exercise-box" markdown="1">
 ## Reflection: choose what to assess
 
 Return to the strategy outline you created in Chapter 3.
@@ -100,6 +103,9 @@ For each selected area, look through the Maturity Model and identify one or more
 
 Do not worry if there is no exact match. Select the indicators that help you ask useful questions about the current situation.
 
+</div>
+
+<div class="exercise-box" markdown="1">
 ## Exercise: assess selected areas
 
 Now use the Maturity Model descriptions to assess the indicators you selected.
@@ -126,6 +132,8 @@ Use a simple table to capture the discussion.
 | Strategy area | Maturity Model indicator | Current situation | What is working | What could improve |
 | --- | --- | --- | --- | --- |
 | Add your selected area | Add the indicator | Note the maturity description that best fits and why | Record strengths or existing practice | Note gaps, uncertainties or possible improvements |
+
+</div>
 
 {% include callout.html type="tip" content="Write down why you selected a maturity level. The discussion and evidence are usually more useful than the level itself." %}
 
@@ -163,6 +171,7 @@ You might select two Maturity Model indicators:
 
 The result does not yet tell you what the Node should do next. It gives you a clearer picture of the current situation and possible areas to discuss further.
 
+<div class="exercise-box" markdown="1">
 ## Reflection: what did you learn?
 
 Look across the indicators you assessed.
@@ -180,6 +189,8 @@ Consider:
 Keep these observations with your strategy outline.
 
 You will use them in the next chapter to decide which areas should be developed further and what a realistic future direction could look like.
+
+</div>
 
 {% include callout.html type="note" content="Return to other areas of the Maturity Model when they become relevant." %}
 

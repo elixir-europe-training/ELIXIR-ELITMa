@@ -6,12 +6,15 @@ $font-family-theme: "Lato", sans-serif;
 
 /*-----Buttons hover style-----*/
 $btn-primary-bg-hover: $secondary;
-$btn-primary-color-hover: $accent-color;
+$btn-primary-color-hover: $white;   // white text on hover too (orange on blue was hard to read)
 
 /*-----Top navigation-----*/
 $topnav-bg: $grey-light;
 $topnav-brand-height: 4rem;
 $topnav-title-color: $primary;
+// The navbar is dark navy (see _custom_classes.scss), so the separator between the
+// menu entries and GitHub/search must be light, or it disappears (esp. in the mobile menu).
+$topnav-break-color: rgba($white, 0.35);
 
 /*-----More information tiles-----*/
 $info-card-bg: $light;

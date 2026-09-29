@@ -1,0 +1,272 @@
+{%- comment -%}
+Previous / next navigation for any module page, rendered at the very bottom of the page
+(called from related-pages.html). The order comes from the page's sidebar data file:
+only top-level sidebar items whose title starts with a two-digit number ("00 ...", "11 ...")
+are part of the sequence, so unnumbered items ("All resources") sit outside it. The count
+uses those numbers: "00" is shown as "Before you start" and the highest number is the total.
+
+Pages outside the sequence get a "Back to section" link when either:
+  - they are nested under a numbered item in the sidebar, directly or one folder deeper
+    (e.g. a single Node example inside a chapter's "Node examples" folder), or
+  - they set `back_to: <page_id>` in front matter.
+A module with an empty sidebar simply renders nothing.
+{%- endcomment -%}
+{%- assign pager_nav = site.data.sidebars[page.sidebar] -%}
+{%- assign pager_items = "" | split: "" -%}
+{%- assign pager_digits = "0123456789" | split: "" -%}
+{%- for item in pager_nav.subitems -%}
+  {%- assign pager_c1 = item.title | slice: 0 -%}
+  {%- assign pager_c2 = item.title | slice: 1 -%}
+  {%- if pager_digits contains pager_c1 and pager_digits contains pager_c2 -%}
+    {%- assign pager_items = pager_items | push: item -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign pager_url = page.url | remove: ".html" -%}
+{%- assign pager_index = nil -%}
+{%- assign pager_parent_item = nil -%}
+{%- for item in pager_items -%}
+  {%- if item.url == pager_url -%}{%- assign pager_index = forloop.index0 -%}{%- endif -%}
+  {%- if pager_parent_item == nil -%}
+    {%- for sub in item.subitems -%}
+      {%- if sub.url == pager_url -%}{%- assign pager_parent_item = item -%}{%- endif -%}
+      {%- for subsub in sub.subitems -%}
+        {%- if subsub.url == pager_url -%}{%- assign pager_parent_item = item -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign pager_overview = pager_nav.title_url | default: pager_nav["title-url"] -%}
+{%- assign pager_overview = pager_overview | prepend: "/" | append: "/" | replace: "//", "/" -%}
+
+{%- if site.data.pathways[page.sidebar] %}
+<nav id="pathway-bar" class="module-pager pathway-bar" aria-label="Your learning pathway" hidden></nav>
+{%- endif %}
+{%- if pager_index != nil -%}
+{%- assign pager_count = pager_items.size -%}
+{%- assign pager_last = pager_items | last -%}
+{%- assign pager_total = pager_last.title | slice: 0, 2 | plus: 0 -%}
+{%- assign pager_current = pager_items[pager_index] -%}
+{%- assign pager_position = pager_current.title | slice: 0, 2 | plus: 0 -%}
+{%- assign pager_percent = pager_position | times: 100 | divided_by: pager_total -%}
+{%- assign pager_prev_index = pager_index | minus: 1 -%}
+{%- assign pager_next_index = pager_index | plus: 1 -%}
+<nav class="module-pager module-pager--chapters" aria-label="Module chapters">
+  {%- comment -%} A row of numbered circles, one per chapter, ending in a trophy (after Codecademy's course
+      overview). Current chapter filled; chapters already visited in this browser get a ring (script below). {%- endcomment %}
+  <p class="visually-hidden">Chapter {{ pager_position }} of {{ pager_total }}</p>
+  <ol class="chapter-stepper" data-sidebar="{{ page.sidebar }}">
+    {%- for item in pager_items %}
+    {%- assign step_num = item.title | slice: 0, 2 | plus: 0 %}
+    <li><a class="chapter-step{% if forloop.index0 == pager_index %} is-current{% endif %}" href="{{ item.url | relative_url }}" data-url="{{ item.url | relative_url }}" title="{{ item.title }}"{% if forloop.index0 == pager_index %} aria-current="step"{% endif %}><span class="visually-hidden">Chapter </span>{{ step_num }}<span class="visually-hidden">: {{ item.title | slice: 3, 200 }}</span></a></li>
+    {%- endfor %}
+    <li><a class="chapter-step chapter-step--finish" href="{{ pager_overview | relative_url }}" title="Module overview"><i class="fa-solid fa-trophy" aria-hidden="true"></i><span class="visually-hidden">Module overview</span></a></li>
+  </ol>
+  <div class="module-pager-links">
+    {%- if pager_index > 0 -%}
+    {%- assign pager_prev = pager_items[pager_prev_index] %}
+    <a class="module-pager-link module-pager-link--prev" href="{{ pager_prev.url | relative_url }}">
+      <span class="module-pager-label"><i class="fa-solid fa-arrow-left me-1"></i>Previous chapter</span>
+      <span class="module-pager-title">{{ pager_prev.title }}</span>
+    </a>
+    {%- endif -%}
+    {%- if pager_next_index < pager_count -%}
+    {%- assign pager_next = pager_items[pager_next_index] %}
+    <a class="module-pager-link module-pager-link--next" href="{{ pager_next.url | relative_url }}">
+      <span class="module-pager-text"><span class="module-pager-label">Next chapter</span><span class="module-pager-title">{{ pager_next.title }}</span></span>
+      <span class="go-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+    {%- else %}
+    <a class="module-pager-link module-pager-link--next" href="{{ pager_overview | relative_url }}">
+      <span class="module-pager-text"><span class="module-pager-label">You've finished the module</span><span class="module-pager-title">Back to the {{ pager_nav.title }} overview</span></span>
+      <span class="go-arrow" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
+    </a>
+    {%- endif %}
+  </div>
+</nav>
+{%- else -%}
+{%- assign pager_back_url = nil -%}
+{%- comment -%} Where "Back to chapter" goes, in this order:
+    - an example with `topics`: the chapter and section of its first topic, from
+      _data/topics/<sidebar>.yml (the data file is the single source - no back_to needed);
+    - a generated topic page: back_to + back_to_section (set by _plugins/topic_pages.rb);
+    - any other page: back_to, or the numbered sidebar item it's nested under. {%- endcomment -%}
+{%- assign pager_back_anchor = "" -%}
+{%- assign pager_back_id = page.back_to -%}
+{%- assign pager_topic = nil -%}
+{%- if page.topics and site.data.topics[page.sidebar] -%}
+  {%- assign pager_topic = site.data.topics[page.sidebar].topics | where: "id", page.topics[0] | first -%}
+  {%- if pager_topic -%}{%- assign pager_back_id = pager_topic.chapter -%}{%- endif -%}
+{%- endif -%}
+{%- if pager_back_id -%}
+  {%- assign pager_parent = site.pages | where: "page_id", pager_back_id | first -%}
+  {%- if pager_parent -%}{%- assign pager_back_url = pager_parent.url -%}{%- assign pager_back_title = pager_parent.title -%}{%- endif -%}
+{%- elsif pager_parent_item -%}
+  {%- assign pager_back_url = pager_parent_item.url -%}{%- assign pager_back_title = pager_parent_item.title -%}
+{%- endif -%}
+{%- if pager_topic -%}
+  {%- assign pager_back_anchor = pager_topic.section -%}{%- assign pager_back_title = pager_topic.section_title -%}
+{%- elsif page.back_to_section -%}
+  {%- assign pager_back_anchor = page.back_to_section -%}{%- assign pager_back_title = page.back_to_section_title -%}
+{%- endif -%}
+{%- if pager_back_url %}
+<nav class="module-pager" aria-label="Module chapters">
+  <div class="module-pager-links">
+    <a class="module-pager-link module-pager-link--prev" href="{{ pager_back_url | relative_url }}{% if pager_back_anchor != "" %}#{{ pager_back_anchor }}{% endif %}">
+      <span class="module-pager-label"><i class="fa-solid fa-arrow-left me-1"></i>Back to chapter</span>
+      <span class="module-pager-title">{{ pager_back_title }}</span>
+    </a>
+  </div>
+</nav>
+{%- endif -%}
+{%- endif -%}
+
+{%- comment -%}
+Learning pathways (_data/pathways/<sidebar>.yml). If the reader has chosen a pathway
+(via ?path=<id> or earlier, stored in this browser), the pathway navigation replaces the chapter
+navigation: the same row of circles (the pathway's steps only) and previous/next cards, on an
+orange panel labelled "Your pathway". Without a pathway, or without JavaScript, nothing changes.
+{%- endcomment -%}
+{%- assign pw_paths = site.data.pathways[page.sidebar] -%}
+{%- if pw_paths %}
+{%- assign pw_overview = pager_nav.title_url | default: pager_nav["title-url"] | prepend: "/" | append: "/" | replace: "//", "/" -%}
+<script type="application/json" id="pathway-data">
+{
+  "key": {{ page.sidebar | prepend: "pathway-" | jsonify }},
+  "overview": {{ pw_overview | relative_url | jsonify }},
+  "paths": {
+  {%- for path in pw_paths %}
+    {{ path.id | jsonify }}: {
+      "title": {{ path.title | jsonify }},
+      "steps": [
+      {%- assign pw_first = true -%}
+      {%- for chapter_id in path.chapters -%}
+        {%- assign pw_page = site.pages | where: "page_id", chapter_id | first -%}
+        {%- if pw_page == nil -%}{%- continue -%}{%- endif -%}
+        {%- assign pw_item = pager_nav.subitems | where: "url", pw_page.url | first -%}
+        {%- unless pw_first %},{% endunless -%}
+        {"url": {{ pw_page.url | relative_url | jsonify }}, "title": {{ pw_item.title | default: pw_page.title | jsonify }}}
+        {%- assign pw_first = false -%}
+      {%- endfor -%}
+      ]
+    }{% unless forloop.last %},{% endunless %}
+  {%- endfor %}
+  }
+}
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var el = document.getElementById('pathway-data');
+    if (!el) return;
+    var data = JSON.parse(el.textContent);
+    var store = {
+      get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+      set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
+      del: function (k) { try { localStorage.removeItem(k); } catch (e) {} }
+    };
+
+    // ?path=<id> starts (or switches) a pathway; ?path=none leaves it.
+    var params = new URLSearchParams(window.location.search);
+    var fromUrl = params.get('path');
+    if (fromUrl === 'none') { store.del(data.key); store.del(data.key + '-next'); }
+    else if (fromUrl && data.paths[fromUrl]) { store.set(data.key, fromUrl); }
+
+    var id = store.get(data.key);
+    var path = id && data.paths[id];
+    if (!path) return;
+
+    var clean = function (u) { return u.replace(/\.html$/, '').replace(/\/$/, ''); };
+    var here = clean(window.location.pathname);
+    var idx = -1;
+    path.steps.forEach(function (s, i) { if (clean(s.url) === here) idx = i; });
+    var total = path.steps.length;
+    var link = function (s) { return s.url + '?path=' + id; };
+    var esc = function (t) { var d = document.createElement('div'); d.textContent = t; return d.innerHTML; };
+
+    // Same parts as the normal navigation - the row of circles, then previous/next cards -
+    // for the pathway's steps only, on a highlighted (orange) panel.
+    var arrowL = '<i class="fa-solid fa-arrow-left me-1" aria-hidden="true"></i>';
+    var nextCard = function (href, label, title, icon) {
+      return '<a class="module-pager-link module-pager-link--next" href="' + href + '"><span class="module-pager-text"><span class="module-pager-label">' + label + '</span><span class="module-pager-title">' + esc(title) + '</span></span><span class="go-arrow" aria-hidden="true"><i class="fa-solid fa-' + icon + '"></i></span></a>';
+    };
+    var html = '<p class="pathway-bar-label"><i class="fa-solid fa-route" aria-hidden="true"></i><span>Your pathway: <b>' + esc(path.title) + '</b>' +
+      (idx >= 0 ? ' <span class="pathway-bar-count">· step ' + (idx + 1) + ' of ' + total + '</span>' : '') +
+      '</span><button type="button" class="pathway-leave">Leave pathway</button></p>';
+    if (idx >= 0) {
+      html += '<ol class="chapter-stepper chapter-stepper--pathway">';
+      path.steps.forEach(function (s, i) {
+        html += '<li><a href="' + link(s) + '" class="chapter-step' + (i < idx ? ' is-visited' : '') + (i === idx ? ' is-current' : '') + '" title="' + esc(s.title) + '"' + (i === idx ? ' aria-current="step"' : '') + '><span class="visually-hidden">Step ' + (i + 1) + ': </span>' + parseInt(s.title.slice(0, 2), 10) + '</a></li>';
+      });
+      html += '<li><a class="chapter-step chapter-step--finish' + (idx === total - 1 ? ' is-visited' : '') + '" href="' + data.overview + '" title="Module overview"><i class="fa-solid fa-trophy" aria-hidden="true"></i><span class="visually-hidden">Module overview</span></a></li></ol>';
+    }
+
+    var next = null;
+    html += '<div class="module-pager-links">';
+    if (idx > 0) {
+      var prev = path.steps[idx - 1];
+      html += '<a class="module-pager-link module-pager-link--prev" href="' + link(prev) + '"><span class="module-pager-label">' + arrowL + 'Previous in your pathway</span><span class="module-pager-title">' + esc(prev.title) + '</span></a>';
+    }
+    if (idx >= 0 && idx < total - 1) {
+      next = path.steps[idx + 1];
+      html += nextCard(link(next), 'Next in your pathway', next.title, 'arrow-right');
+    } else if (idx === total - 1) {
+      html += nextCard(data.overview, 'Pathway complete', 'Back to the overview to choose another', 'trophy');
+    } else {
+      // Off the pathway: offer to go back to where they left off.
+      var resume = store.get(data.key + '-next') || path.steps[0].url;
+      var step = path.steps.filter(function (s) { return clean(s.url) === clean(resume); })[0] || path.steps[0];
+      html += nextCard(link(step), 'Back to your pathway', step.title, 'arrow-right');
+    }
+    html += '</div>';
+
+    // Remember where to resume (used by "Continue this pathway" on the main page).
+    if (idx >= 0) store.set(data.key + '-next', next ? next.url : path.steps[0].url);
+
+    var bar = document.getElementById('pathway-bar');
+    bar.innerHTML = html;
+    bar.hidden = false;
+    document.body.classList.add('on-pathway');
+    bar.querySelector('.pathway-leave').addEventListener('click', function () {
+      store.del(data.key); store.del(data.key + '-next');
+      bar.hidden = true;
+      document.body.classList.remove('on-pathway');
+      if (fromUrl) { params.delete('path'); history.replaceState(null, '', window.location.pathname + (params.toString() ? '?' + params : '') + window.location.hash); }
+    });
+  });
+</script>
+{%- endif %}
+
+<script>
+  // Chapter circles: remember which chapters this reader has opened (this browser only)
+  // and give those circles a ring; the trophy lights up when every chapter has been visited.
+  document.addEventListener('DOMContentLoaded', function () {
+    var stepper = document.querySelector('.chapter-stepper[data-sidebar]');
+    if (!stepper) return;
+    var key = 'visited-' + stepper.getAttribute('data-sidebar');
+    var visited = [];
+    try { visited = JSON.parse(localStorage.getItem(key) || '[]'); } catch (e) {}
+    var current = stepper.querySelector('.is-current');
+    if (current && visited.indexOf(current.getAttribute('data-url')) === -1) {
+      visited.push(current.getAttribute('data-url'));
+      try { localStorage.setItem(key, JSON.stringify(visited)); } catch (e) {}
+    }
+    var steps = stepper.querySelectorAll('.chapter-step[data-url]'), all = true;
+    steps.forEach(function (a) {
+      if (visited.indexOf(a.getAttribute('data-url')) !== -1) a.classList.add('is-visited'); else all = false;
+    });
+    if (all) stepper.querySelector('.chapter-step--finish').classList.add('is-visited');
+  });
+</script>
+
+{%- comment -%} Checklists on module pages remember their ticks in this browser. {%- endcomment -%}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('#content .task-list-item input[type="checkbox"]').forEach(function (cb, i) {
+      var key = 'task-' + window.location.pathname + '-' + i;
+      cb.removeAttribute('disabled');
+      try { cb.checked = localStorage.getItem(key) === 'true'; } catch (e) {}
+      cb.addEventListener('change', function () {
+        try { localStorage.setItem(key, cb.checked); } catch (e) {}
+      });
+    });
+  });
+</script>

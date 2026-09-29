@@ -1,7 +1,7 @@
 ---
-title: Writing for Non-Writers
+title: Writing for non-writers
 description: You don't need to be a professional writer – you need to know what you're trying to say and who you're saying it to. Improve your writing style. 
-summary: You don't need to be a professional writer to communicate your Node's work effectively. You need to know what you're trying to say, who you're saying it to, and how to get out of your own way. The rest is craft – and craft can be learned.
+summary: You don't need to be a professional writer to communicate your Node's work effectively. You need to know what you're trying to say, who you're saying it to and how to get out of your own way. The rest is craft – and craft can be learned.
 audience: [Researchers, Project Managers, Node Coordinators]
 page_img: /icons/icon-module-communication.svg
 page_id: mod_comm_6
@@ -15,18 +15,16 @@ learning_outcomes:
   - Adapt the same content for different formats and lengths
   - Edit your own writing to remove jargon/acronyms and improve clarity
   - Recognise when a piece of writing is not working and why
-related_pages:
-  Communication: [mod_comm_2, mod_comm_5]
 ref_to_main_resources:
   - writing-in-sciences
   - elixir-style-guide
   - elixir-hashtags
   - converge-comms
 ---
-{% include module-metadata.html %}
 
 ## The one rule that applies to everything
 Before you write a single word, answer two questions:
+
 * Who is this for?
 * What do I want them to do or understand after reading it?
 
@@ -36,18 +34,22 @@ If you cannot answer both clearly, you are not ready to write yet. Every problem
 Online readers do not read, they scan. Data show that users read only around 28% of content on a page, and on mobile devices 80% do not scroll past the first quarter ([ONS Service Manual — How people read online](https://service-manual.ons.gov.uk/content/writing-for-users/how-people-read-online)).
 
 Research has identified three common scanning patterns:
-- **F pattern**:readers scan the first few lines fully, then progressively 
+
+- **F pattern**: readers scan the first few lines fully, then progressively 
 shorter horizontal sweeps down the left side. This means your first two 
 sentences carry most of the weight, and the left edge of your text matters 
 more than you think.
+
 - **Layer cake pattern**: readers scan headings and subheadings, skipping 
 body text entirely until something catches their attention. This is why 
 subheadings are not decoration, they are navigation.
+
 - **Spotted pattern**: readers jump to specific words, numbers or links that 
 stand out. Bold text, figures and descriptive hyperlinks act as anchors that 
 pull the eye.
 
 This changes how you should write:
+
 * Lead with the most important point – do not build up to it.
 * Use short paragraphs – two to three sentences maximum.
 * Use subheadings to allow skimming when the piece becomes long.
@@ -65,19 +67,20 @@ away from your argument. As a rule:
   * A piece with one clear call to action at the end is more effective than 
     one with fifteen scattered links.
 
-If a piece needs to be longer, for example a detailed project report or a policy brief, structure it so readers can navigate without reading everything. Use clear subheadings, a short introductory summary, and bullet points for key findings. The reader should be able to skim and still understand the main points.
+If a piece needs to be longer, for example a detailed project report or a policy brief, structure it so readers can navigate without reading everything. Use clear subheadings, a short introductory summary and bullet points for key findings. The reader should be able to skim and still understand the main points.
 
 Print writing allows more narrative flow and longer paragraphs, but even then, clarity and brevity are paramount – despite we tend to forget this in scientific writing. 
 
 ## The inverted pyramid
 The inverted pyramid is the standard structure for all news writing — whether a news item on your website or a formal press release. The principle: most important information first, supporting detail second, background and context last.
-Most important — who, what, when, where, why
-       ↓
-Supporting detail and context
-       ↓
-Background, links, further reading
+
+<figure class="figure-diagram" style="max-width: 36rem;">
+  <img src="{{ '/images/communication/inverted-pyramid.svg' | relative_url }}" alt="The inverted pyramid: a wide top band for the most important information (who, what, when, where, why), a narrower middle band for supporting detail and context, and a narrow tip for background, links and further reading.">
+  <figcaption>Readers who stop early still get the point – and you can cut from the bottom.</figcaption>
+</figure>
 
 This serves two purposes:
+
 1. Readers who stop after the first paragraph still get the essential point.
 2. You can cut from the bottom without losing anything critical.
 
@@ -87,6 +90,7 @@ This serves two purposes:
 A news item is a short, externally facing piece published on your Node/institution site or ELIXIR Europe website. It informs your stakeholders about a project output, event, new resource or significant update.
 
 **Key principles**:
+
 * 300–500 words for most news items online
 * No jargon. If you need a technical term, define it briefly, but ask yourself if your target audience, actually, needs to know it. For instance, "Does my audience need to know the name of a Commission Service?".
 * Name the people involved: this humanises the work and gives credit. People stories are the most impactful ones. 
@@ -95,21 +99,34 @@ A news item is a short, externally facing piece published on your Node/instituti
 
 {% include callout.html type="important" content="Impact without hype: There is a difference between communicating genuine impact and overclaiming. Stick to what actually happened. For our scientifically trained audience this is key, as they will see through hype immediately." %}
 
->"This framework helps Nodes assess their current RDM practices" is stronger and more credible than "This groundbreaking framework will transform RDM across Europe." 
+<div class="compare" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Overclaims</p>
+
+"This groundbreaking framework will transform RDM across Europe."
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>Credible – and stronger</p>
+
+"This framework helps Nodes assess their current RDM practices."
+</div>
+</div>
 
 
-**News item checklist**:
-<details>
-  <summary>Check before you publish...</summary>
-    <ol>Does the first sentence tell the reader what happened and why it matters?
-    Have I answered: who is this for, and what do I want them to do after reading?Is there any jargon that a non-specialist would not understand?
-    Have I named the people involved where appropriate?
-    Does the piece focus on impact rather than process?
-    Is it 500 words or under? If not, does it need to be longer – and if so, is it structured for skimming?
-    Do all links have descriptive text?
-    Have I had one other person read it before publishing?
-  </ol>
+<details markdown="1">
+<summary>News item checklist: check before you publish</summary>
+
+- [ ] Does the first sentence tell the reader what happened and why it matters?
+- [ ] Have I answered: who is this for, and what do I want them to do after reading?
+- [ ] Is there any jargon that a non-specialist would not understand?
+- [ ] Have I named the people involved where appropriate?
+- [ ] Does the piece focus on impact rather than process?
+- [ ] Is it 500 words or under? If not, does it need to be longer – and if so, is it structured for skimming?
+- [ ] Do all links have descriptive text?
+- [ ] Have I had one other person read it before publishing?
+
 </details>
+
 <a href="{{ '/assets/downloads/news-item-template.docx' | relative_url }}" class="btn-download" download>
   <i class="fas fa-download"></i>Download the news item template (Word – includes social media & SEO tips)
 </a>
@@ -131,56 +148,96 @@ Both use the inverted pyramid structure — but they serve different purposes an
 A newsletter blurb is a short entry – typically 50–100 words – for an internal or external newsletter such as the ELIXIR Weekly Brief. Its job is not to tell the whole story but to give the reader enough to decide whether to click through.
 
 **Key principles**:
+
 * One idea per blurb, do not try to cover everything.
 * Lead with the most important point (same inverted pyramid logic).
 * End with a clear, descriptive link. Not "Click here" but "read more".
 * Write it last. For example, after you have written a full news item, distil it down.
 
-**Newsletter blurb checklist**:
-<details>
-  <summary>Check before you submit</summary>
-    <ol>
-    Is it 50–100 words?
-    Does the first sentence carry the main point?
-    Is there one clear call to action with a descriptive link?
-    Could someone who knows nothing about this project understand it?
-    Have I removed all acronyms or defined them on first use?
-    </ol>
+<details markdown="1">
+<summary>Newsletter blurb checklist: check before you submit</summary>
+
+- [ ] Is it 50–100 words?
+- [ ] Does the first sentence carry the main point?
+- [ ] Is there one clear call to action with a descriptive link?
+- [ ] Could someone who knows nothing about this project understand it?
+- [ ] Have I removed all acronyms or defined them on first use?
+
 </details>
 
 ## Format 3: The social media post
 A social media post is your short format and also your most public. It needs to work in three seconds, the time it takes someone to decide whether to stop scrolling.
 
 **Key principles**:
+
 * One idea per post, never try to communicate everything
 * Lead with the hook. Once again, inverted pyramid.
 * Platform matters: LinkedIn allows slightly longer, more professional posts; Bluesky favours brevity and community tone; X is under review but currently still used by ELIXIR
-* Use hashtags strategically ELIXIR has a list of standard hashtags on the intranet; do not overuse them.
+* Use hashtags strategically: ELIXIR keeps a list of [standard hashtags and accounts](https://docs.google.com/document/d/1OzY4IMhiz-_sZ54EtxPGGdqLOq8T_QJ7d6BMfejZGXk/edit?tab=t.0#heading=h.p7m0vv7tadl2) for Nodes, Communities, Platforms and projects; do not overuse them.
 * Tag relevant accounts. Probably the most important part. Tag other Nodes, collaborators, people named in the work.
-* Always link to the full story
+* Always link to the full story – on LinkedIn, put the link in the first comment rather than the post (see below)
 
-**What not to write**
->We are pleased to announce the publication of new resources developed as part of the DATAREX project. #RDM #ELIXIR #FAIR #datastewardship #datamanagement #bioinformatics
+<div class="compare" markdown="1">
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>What not to write</p>
 
-**What to write instead**:
->Less research data on hard drives. More data that can be found, understood and reused. ELIXIR members helped build the tools to make that happen. → [link] #RDM #FAIR #DataStewardship @ELIXIR-Europe
+We are pleased to announce the publication of new resources developed as part of the DATAREX project. #RDM #ELIXIR #FAIR #datastewardship #datamanagement #bioinformatics
+</div>
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>What to write instead</p>
+
+Less research data on hard drives. More data that can be found, understood and reused. ELIXIR members helped build the tools to make that happen. → [link] #RDM #FAIR #DataStewardship @ELIXIR-Europe
+</div>
+</div>
 
 ### A note on LinkedIn
 {% include callout.html type="warning" content="LinkedIn's algorithm significantly deprioritises posts from organisational accounts compared to personal ones." %}
 A post from your Node's official LinkedIn page will reach far fewer people than the same content shared or posted by an individual member of your team from their personal account.
 
 This means:
+
 * Encourage Node members to share organisational posts from their personal accounts. Amplification from individuals outperforms the original post.
 * Where appropriate, ask the people named in a story (researchers, project leads) to post about it themselves in their own voice.
 * Personal posts that tag the Node account perform better than posts from the Node account alone.
+
+**Links in LinkedIn posts.** LinkedIn favours content that keeps people on LinkedIn. For organic (non-paid) posts, an external link in the post text is widely observed to cut how many people see it – often noticeably. Paid, sponsored posts don't carry the same penalty. For organic posts:
+
+* Put the link in the **first comment**, and say so in the post ("link in the comments").
+* Or publish without the link and **edit it in** once the post has started to get engagement.
+
+{% include callout.html type="tip" content="Do both of those – but the most useful thing is people. Ask the individuals involved – researchers, project leads, Node colleagues, collaborators – to reshare the post with their own thoughts: a line on why it matters to them. A reshare with a personal comment reaches their network and tells LinkedIn the post is worth showing; a repost without comment does much less." %}
 
 ## Editing your own writing
 The hardest part of writing for non-writers is not the first draft – it is knowing what to cut.
 
 **A few practical steps**:
+
 * **Read it out loud** (as silly as it sounds). If you stumble, the sentence is too long or awkward.
 * **Cut the first sentence**. First drafts often warm up before they get to the point, try deleting your opening sentence and see if the piece is stronger without it.
 * **Replace verbosity**. For instance, replace "in order to" with "to", "utilise" with "use", "methodology" with "method". Research writing is full of inflated language that adds length without adding meaning.
 * **Ask: so what?** After every paragraph, ask whether you have explained why this matters to the reader. If not, add it or cut the paragraph.
+* **Check the house style.** The [ELIXIR Style Guide](https://elixir-europe.org/sites/default/files/documents/elixir-style-guide.pdf) settles the small questions – how to write dates, numbers, abbreviations and ELIXIR's own terms – so every Node spells things the same way.
 
+<div class="exercise-box" markdown="1">
+## Quick exercise: cut it down
+Rewrite this opening so the point comes first and the reader knows why it matters. Aim for under 30 words.
 
+<div class="compare-item compare-item--dont" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-xmark" aria-hidden="true"></i>The original</p>
+
+In the context of the ELIXIR-STEERS project, and following extensive consultation with stakeholders across multiple Nodes, Work Package 5 has now completed the development of a methodology in order to support Nodes in the assessment of their training activities.
+</div>
+
+<details markdown="1">
+<summary>One possible answer</summary>
+
+<div class="compare-item compare-item--do" markdown="1">
+<p class="compare-label"><i class="fa-solid fa-check" aria-hidden="true"></i>A better version</p>
+
+Nodes now have a simple way to check whether their training works. The new method, built with input from across ELIXIR, is free to use.
+</div>
+
+What changed: the finding leads, the project and work package names are gone (the reader doesn't need them), "in order to" became nothing at all, and the sentence says who benefits.
+
+</details>
+</div>

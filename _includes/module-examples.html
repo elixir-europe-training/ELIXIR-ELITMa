@@ -1,0 +1,10 @@
+{%- comment -%}
+One grid of every real-world example in a module (type: Real_world_example, same sidebar),
+sorted by title, on the same example cards as "See it in practice" - nothing to maintain by hand:
+a new example appears as soon as its page exists. Works for any module:
+  {% include module-examples.html sidebar="module-data-management" %}
+  {% include module-examples.html sidebar="module-communication" %}
+{%- endcomment -%}
+{%- assign mx_all = site.pages | where: "sidebar", include.sidebar | where: "type", "Real_world_example" | sort: "title" -%}
+{%- assign mx_ids = mx_all | map: "page_id" | join: "," -%}
+{% include example-card.html page_ids=mx_ids %}

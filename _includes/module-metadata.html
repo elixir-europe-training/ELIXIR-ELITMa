@@ -37,9 +37,11 @@ Icons: Font Awesome (fa-solid). Bootstrap Icons not loaded in this theme.
     <div class="tab-pane show active" id="module-meta-general" role="tabpanel">
       <div class="d-flex flex-wrap gap-4 py-2">
 
-        {%- if page.status -%}
+        {%- comment -%} Only shown while a chapter isn't ready - "ready" is what readers expect. {%- endcomment -%}
+        {%- assign mm_status = page.status | downcase | strip -%}
+        {%- if page.status and mm_status != "ready" -%}
         <div class="border-start ps-3">
-          <div class="small text-muted text-uppercase module-meta-label">
+          <div class="small text-muted module-meta-label">
             <i class="fa-solid fa-circle-check me-1"></i>Status
           </div>
           <span class="badge bg-{{ page.status_badge | default: 'secondary' }}">
@@ -50,7 +52,7 @@ Icons: Font Awesome (fa-solid). Bootstrap Icons not loaded in this theme.
 
         {%- if page.time -%}
         <div class="border-start ps-3">
-          <div class="small text-muted text-uppercase module-meta-label">
+          <div class="small text-muted module-meta-label">
             <i class="fa-solid fa-clock me-1"></i>Time to complete
           </div>
           <span>{{ page.time }}</span>
@@ -59,7 +61,7 @@ Icons: Font Awesome (fa-solid). Bootstrap Icons not loaded in this theme.
 
         {%- if page.audience -%}
         <div class="border-start ps-3">
-          <div class="small text-muted text-uppercase module-meta-label">
+          <div class="small text-muted module-meta-label">
             <i class="fa-solid fa-users me-1"></i>Primary audience
           </div>
           <span>{{ page.audience | join: ", " }}</span>

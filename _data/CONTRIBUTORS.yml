@@ -6,7 +6,8 @@
 #    git: github id
 #    email: email adress
 #    orcid: ocrid id
-#    role: the role of the contributor
+#    role: Lead or Contributor - decides which group the person appears in on the
+#          Contributors page and the colour of their badge (Lead = orange, Contributor = blue)
 #    affiliation: affiliation
 #    image_url: absolute path to image (default image from github)
 Mijke Jetten:
@@ -22,3 +23,14 @@ Xenia Perez Sitja:
     role: Lead
     affiliation: Earlham Institute / ELIXIR-UK
 
+Heleri Inno:
+    git: heleriinno
+    role: Contributor
+    affiliation: University of Tartu / ELIXIR-EE
+Eva Alloza:
+    role: Contributor
+    affiliation: Barcelona Supercomputing Center / ELIXIR-ES
+Elaine Harrison:
+    git: eharrie
+    role: Contributor
+    affiliation: ELIXIR Hub

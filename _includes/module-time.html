@@ -1,0 +1,39 @@
+{%- comment -%}
+Calculates a module's total time from its chapters, so it doesn't need typing by hand.
+Usage: {% include module-time.html url=module.url %}
+  url - the module main page, as in _data/module_types.yml (slashes don't matter)
+Sets (for the calling template to use):
+  module_time_minutes - total minutes (0 if the module has no timed chapters yet)
+  module_time_label   - e.g. "5 h 15 min", or "" when there is nothing to show
+  module_chapters     - number of chapters found
+Finds the sidebar whose title_url matches, then adds up the `time` of every numbered
+chapter in it ("01 ...", "02 ...") - the same chapters the module page lists.
+{%- endcomment -%}
+{%- comment -%} Normalise to "/modules/x/" so leading/trailing slashes don't matter. {%- endcomment -%}
+{%- assign mt_target = include.url | prepend: "/" | append: "/" | replace: "//", "/" -%}
+{%- assign mt_digits = "0123456789" | split: "" -%}
+{%- assign module_time_minutes = 0 -%}
+{%- assign module_chapters = 0 -%}
+{%- for mt_entry in site.data.sidebars -%}
+  {%- assign mt_nav = mt_entry[1] -%}
+  {%- assign mt_url = mt_nav.title_url | default: mt_nav["title-url"] | prepend: "/" | append: "/" | replace: "//", "/" -%}
+  {%- if mt_url != mt_target -%}{%- continue -%}{%- endif -%}
+  {%- for item in mt_nav.subitems -%}
+    {%- assign mt_c1 = item.title | slice: 0 -%}
+    {%- assign mt_c2 = item.title | slice: 1 -%}
+    {%- unless mt_digits contains mt_c1 and mt_digits contains mt_c2 -%}{%- continue -%}{%- endunless -%}
+    {%- assign mt_page = site.pages | where: "url", item.url | first -%}
+    {%- if mt_page -%}
+      {%- assign module_time_minutes = mt_page.time | plus: 0 | plus: module_time_minutes -%}
+      {%- assign module_chapters = module_chapters | plus: 1 -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- assign mt_h = module_time_minutes | divided_by: 60 -%}
+{%- assign mt_m = module_time_minutes | modulo: 60 -%}
+{%- assign module_time_label = "" -%}
+{%- if mt_h > 0 -%}{%- assign module_time_label = mt_h | append: " h" -%}{%- endif -%}
+{%- if mt_m > 0 -%}
+  {%- if module_time_label != "" -%}{%- assign module_time_label = module_time_label | append: " " -%}{%- endif -%}
+  {%- assign module_time_label = module_time_label | append: mt_m | append: " min" -%}
+{%- endif -%}

@@ -1,7 +1,19 @@
-{%- if page.ref_to_main_resources %}
+{%- comment -%}
+Local override of the elixir-toolkit-theme include of the same name.
+Lists the resources named in a page's `ref_to_main_resources` (defined in
+_data/tool_and_resource_list.yml) as a compact "Further resources" table - category, resource,
+description - styled to sit quietly at the end of the page (see "Further resources table" in
+_custom_classes.scss). The theme's version adds national-resource and registry columns
+this site doesn't use.
+{%- endcomment -%}
+{%- comment -%} On module pages related-pages.html places this table itself (here=true), after the
+    Dive deeper and See it in practice cards; the theme's own call is skipped. {%- endcomment -%}
+{%- assign rt_skip = false %}
+{%- if page.sidebar contains "module-" and include.here != true %}{%- assign rt_skip = true %}{%- endif %}
+{%- if page.ref_to_main_resources and rt_skip == false %}
 {%- assign tool_ids = page.ref_to_main_resources %}
-<h2>Dive deeper</h2>
-<div class="table-responsive mt-4 mb-5">
+<h2 class="further-resources-heading">Further resources</h2>
+<div class="table-responsive further-resources-table">
     <table class="tooltable table display">
         <thead>
             <tr>
@@ -14,11 +26,8 @@
             {%- for tool_id in tool_ids | sort %}
             {%- assign tool = site.data.tool_and_resource_list | where:"id", tool_id | first %}
             <tr>
-                <td style="width: 10%">
-                    <span class="badge bg-secondary">
-                        {{ tool.category | replace: "_", " " | capitalize }}
-                    </span>
-                </td>
+                <td class="further-resources-category">
+                    <span class="badge">{% if tool.category == "elixir_resource" %}ELIXIR resource{% else %}{{ tool.category | replace: "_", " " | capitalize }}{% endif %}</span>
                 </td>
                 <td>
                     {%- if tool.url %}

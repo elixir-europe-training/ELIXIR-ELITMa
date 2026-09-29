@@ -8,6 +8,11 @@ $white: #ffffff;
 $grey-light: #EEEEEE;
 $accent-color: #F47D20;
 $accent-color-light: #fdf9f6;
+// Text-safe versions of the brand colours (WCAG AA, 4.5:1). The brand orange
+// (#F47D20) and blue (#037EAB) are too light for small text on white or grey.
+$link-blue: #02678C;     // links: passes on white, grey tiles, cream boxes and callouts
+$accent-text: #A84E00;   // orange for small text, e.g. time chips
+$code-color: $dark;      // inline code (file names, fields): neutral, so it can't be mistaken for a link
 
 
 
@@ -25,7 +30,7 @@ $btn-border-radius-sm: $border-radius;
 $card-border-width: 0;
 $card-bg: transparent;
 $card-cap-bg: $dark;
-$link-color: $accent-color;
+$link-color: $link-blue;   // was orange, which failed contrast (2.7:1)
 $info: $primary-light;
 $link-decoration: none;
 $body-bg: $white;

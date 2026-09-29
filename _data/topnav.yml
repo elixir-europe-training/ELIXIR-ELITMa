@@ -24,7 +24,7 @@ subitems:
         url: modules/project-management/
       - title: Impact
         url: modules/impact/
-      - title: Carbon Footprint
+      - title: Carbon footprint
         url: modules/carbon-footprint/   
   - title: Events
     url: /events

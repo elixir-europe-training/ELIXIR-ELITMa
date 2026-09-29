@@ -18,20 +18,3 @@ ref_to_main_resources:  # use dash and id. this information needs to live in the
 ---
 
 ## Start with heading 2
-
-
-
-
-<!-- do not remove – this creates checklists in the page -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.task-list-item input[type="checkbox"]').forEach(function (cb, i) {
-      var key = 'task-' + window.location.pathname + '-' + i;
-      cb.removeAttribute('disabled');
-      cb.checked = localStorage.getItem(key) === 'true';
-      cb.addEventListener('change', function () {
-        localStorage.setItem(key, cb.checked);
-      });
-    });
-  });
-</script>
