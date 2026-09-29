@@ -391,16 +391,13 @@ Chapter numbers, links and the total time are filled in automatically. A module 
 
 ## Module status
 
-The home page and the Modules page group the modules into **Ready to use**, **In development** and **Planned** – there's no status label on the cards themselves. You don't set the group directly:
+The home page and the Modules page group the modules into **Ready to use**, **In development** and **Planned** – there's no status label on the cards themselves. Each module's group is its `status` in `_data/module_types.yml`: `ready`, `in development` or `planned`. Change it there when a module moves on.
 
-- A module **with chapters** is *Ready to use* when every chapter has `status: ready`, and *In development* otherwise. So a module moves up on its own when its last chapter is marked ready.
-- A module **without chapters yet** uses the `status` in `_data/module_types.yml`: `to do` (Planned) or `in development`.
-
-On a chapter, the status only shows in the box at the top while the chapter isn't ready.
+Chapters have their own `status` too (`ready` or `in development`); it only shows in the box at the top of a chapter while the chapter isn't ready.
 
 ## Starting a new module's online materials
 
-1. Its entry already exists in `_data/module_types.yml` (title, description, icon, `url`); set `status: in development`.
+1. Its entry already exists in `_data/module_types.yml` (title, description, icon, `url`); change its `status` from `planned` to `in development`.
 2. Create the module's main page, `pages/modules/<nn-module>.md` (see an existing one), and its sidebar file `_data/sidebars/module-<name>.yml` with `title_url` pointing to that page.
 3. Write chapters from `pages/modules/_templates/chapter.md` and add them to the sidebar with two-digit numbers.
 4. Optional extras, each one line in the sidebar under a divider (`hr: true`): an **All examples** page (`{% raw %}{% include module-examples.html sidebar="module-<name>" %}{% endraw %}`) and an **All resources** page (`{% raw %}{% include module-resources.html module_id="mod_<id>" %}{% endraw %}`), plus a pathways file and a topics file if you need them.

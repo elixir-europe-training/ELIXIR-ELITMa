@@ -1,3 +1,6 @@
+# The modules shown on the home page and the Modules page.
+# status sets which group a module appears in: ready (Ready to use),
+# in development (In development) or planned (Planned).
 - title: ELIXIR introduction and governance
   description: Introduces European and global research infrastructures, including regulatory bodies like ESFRI
   icon: /images/icons/icon-module-governance.svg
@@ -5,7 +8,7 @@
   id: mod_gov
   description:
   url: modules/governance
-  status: to do
+  status: planned
   order: 1
 
 - title: Node data management strategy
@@ -16,7 +19,6 @@
   leads:
   url: modules/data-management
   status: in development
-  status_badge:
   order: 2
 
 - title: Strategic management
@@ -26,8 +28,7 @@
   type: Strategic Management
   leads:
   url: modules/strategic-management
-  status: to do
-  status_badge:
+  status: planned
   order: 3
 
 - title: Leading teams in ELIXIR
@@ -37,8 +38,7 @@
   type: Leading teams
   leads:
   url: modules/leading-teams
-  status: to do
-  status_badge:
+  status: planned
   order: 4
 
 - title: Legal and ethical issues
@@ -48,8 +48,7 @@
   leads:
   type: ELSI
   url: modules/elsi
-  status: to do
-  status_badge:
+  status: planned
   order: 5
 
 - title: Communication
@@ -59,8 +58,7 @@
   id: mod_comm
   leads:
   type: Communication
-  status: in development
-  status_badge: 
+  status: ready
   order: 6
 
 - title: Financial management
@@ -70,8 +68,7 @@
   type: Finance
   leads:
   url: modules/finance
-  status: to do
-  status_badge:
+  status: planned
   order: 7
 
 - title: Project management
@@ -81,8 +78,7 @@
   leads:
   type: Project Management
   url: modules/project-management
-  status: to do
-  status_badge:
+  status: planned
   order: 8
 
 - title: Impact
@@ -92,8 +88,7 @@
   type: Project management
   leads:
   url: modules/impact
-  status: in development
-  status_badge:
+  status: planned
   order: 9
 
 - title: Carbon footprint
@@ -103,6 +98,5 @@
   leads:
   type: Carbon footprint
   url: modules/carbon-footprint
-  status: in development
-  status_badge:
+  status: planned
   order: 10
