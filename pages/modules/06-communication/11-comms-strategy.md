@@ -15,8 +15,6 @@ learning_outcomes:
   - Write a Node boilerplate and tailor key messages to audiences
   - Connect objectives, messages, audiences, channels and KPIs on a single page
   - Plan how to write, promote, implement and review your strategy
-related_pages:
-  Real_world_example: [comm-ex-uk-strategy]
 ref_to_main_resources:
   - steers-toolkit
   - comms-strategy

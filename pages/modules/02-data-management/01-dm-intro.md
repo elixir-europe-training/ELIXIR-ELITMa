@@ -9,9 +9,6 @@ time: 60 minutes
 status: ready
 sidebar: module-data-management
 summary: Data management activities already exist across roles, services, institutions and projects. A Node data management strategy can help create a coherent and consistent approach across these activities. This section explores why a coordinated strategy matters, how it can connect existing work, clarify scope and responsibilities and support practical first steps.
-related_pages:
-  Real_world_example: 
-  - dm-ex-funders-fairification
 learning_outcomes:
     - Explain why a Node data management strategy can support coordination, clarity and planning
     - Describe how a Node data management strategy connects existing services, roles, policies and activities

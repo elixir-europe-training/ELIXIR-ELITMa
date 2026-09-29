@@ -15,8 +15,6 @@ learning_outcomes:
   - Explain why consistent branding matters for a distributed infrastructure like ELIXIR
   - Choose the right logo for the situation – your Node's own, the main ELIXIR logo or alongside a partner's
   - Recognise when an established Node brand should be kept rather than replaced
-related_pages:
-  Real_world_example: [comm-ex-cobranding]
 ref_to_main_resources:
   - elixir-brand-guidelines
   - elixir-logos

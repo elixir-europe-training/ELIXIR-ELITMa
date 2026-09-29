@@ -15,8 +15,6 @@ learning_outcomes:
   - Build a simple priority matrix to guide where you focus communication effort
   - Select the most appropriate channel for a given audience and message
   - Tailor your key message for different audiences from the same starting point
-related_pages:
-  Real_world_example: [comm-ex-matrix]
 ref_to_main_resources:
   - converge-comms
 ---

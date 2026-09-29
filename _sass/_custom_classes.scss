@@ -684,10 +684,15 @@ $reading-measure: 52rem;
     box-shadow: 0 4px 14px rgba($primary, 0.08);
   }
 
+  // A fixed-width slot, so the text lines up whatever the icon: lightbulb, magnifying
+  // glass or a module's icon.
   .example-card-icon {
     flex-shrink: 0;
-    font-size: 1.05rem;
-    line-height: 1.6rem;
+    width: 1.75rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    line-height: 1.75rem;
     color: $accent-text;
   }
 
@@ -728,7 +733,6 @@ $reading-measure: 52rem;
   display: block;
   width: 1.75rem;
   height: 1.75rem;
-  margin-top: 0.1rem;
 }
 
 /*-----Topic chips (topic-chips.html)-----*/
@@ -764,9 +768,8 @@ $reading-measure: 52rem;
 
 // Compact card (compact=true): title only, for mentions in the running text.
 .example-card--compact {
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 1.2rem;
   align-items: center;
-  .example-card-icon { line-height: 1.4rem; }
   .example-card-title { margin-bottom: 0; }
 }
 

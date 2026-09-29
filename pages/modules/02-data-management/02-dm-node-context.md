@@ -13,7 +13,6 @@ related_pages:
   Real_world_example: 
   - dm-ex-distributed-support
   - dm-ex-roles-competences
-  - dm-ex-funders-fairification
 learning_outcomes:
     - Describe the key elements that shape your Node context for data management
     - Identify the perspectives needed to begin developing a Node data management strategy

@@ -15,8 +15,6 @@ learning_outcomes:
   - Frame the same achievement differently for policymakers, funders and researchers
   - Choose meaningful communications KPIs instead of vanity metrics
   - Link outreach activities to outcomes that matter for your Node's sustainability
-related_pages:
-  Real_world_example: [comm-ex-elead]
 ref_to_main_resources:
   - google-analytics
   - campaign-url-builder
