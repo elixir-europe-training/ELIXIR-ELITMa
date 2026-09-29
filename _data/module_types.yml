@@ -86,7 +86,7 @@
   icon: /images/icons/icon-module-impact.svg
   id: mod_impact
   type: Project management
-  leads:
+  leads: [Ingeborg Winge]
   url: modules/impact
   status: in development
   order: 9
@@ -95,7 +95,7 @@
   description: The first course is under development in collaboration with ELIXIR-STEERS and SPARKLE staff exchange projects.
   icon: /images/icons/icon-module-cf.svg
   id: mod_cf
-  leads:
+  leads: [Luciana Peixoto]
   type: Carbon footprint
   url: modules/carbon-footprint
   status: in development
