@@ -334,7 +334,7 @@ Then link it from the chapter, either in the text with an [example card](#exampl
 When a chapter has several short Node examples (as in Data management), give **each example its own page**. Readers open exactly the example the chapter mentions, and the "Back to chapter" link sits right under it. All examples are not listed in the sidebar – like the Communication ones, they're reached from the chapter's cards.
 
 1. Put each example or case study in the module's `examples/` folder (e.g. `pages/modules/02-data-management/examples/`), one file per page, named like the Communication examples: `dm-example-sweden-clarifying-the-node-remit.md` with `page_id: dm-ex-sweden-clarifying-the-node-remit`.
-2. Use the front matter above, with `back_to` set to the chapter's `page_id` (e.g. `back_to: mod_dm_1`). Its `description` is the one-line summary shown on its card.
+2. Use the front matter above. If the example has [topics](#topics), its chapter comes from its first topic in the topics data file – no `back_to` needed. Otherwise (e.g. a case study) set `back_to` to the chapter's `page_id` (e.g. `back_to: mod_dm_1`). Its `description` is the one-line summary shown on its card.
 3. Link it from the chapter with an [example card](#example-card). A case study that supports several chapters goes in each of those chapters' `related_pages`.
 
 That's it: the module's **All examples** page shows every page in the folder as one grid of cards, via `{% raw %}{% include module-examples.html folder="pages/modules/02-data-management/examples/" %}{% endraw %}`.
@@ -346,7 +346,7 @@ Examples can be tagged with **topics** from a fixed list – a controlled vocabu
 1. Tag an example in its front matter: `topics: [gaps-to-action, who-to-involve]` (ids from the list).
 2. Where the "Topics:" line should appear on the page (usually under Node and Authors), write `{% raw %}{% include example-topics.html %}{% endraw %}`. It shows the topics as links.
 
-Every topic gets its own page automatically (`/dm-topic-gaps-to-action`), listing all examples with that topic; the topic chips on **All examples** link to them. These pages aren't in the sidebar. Their "Back to chapter" link goes straight to the topic's section in the chapter, and so does an example's (using its first topic). To add a topic, add it to the data file – its page appears on the next build.
+Every topic gets its own page automatically (`/dm-topic-gaps-to-action`), listing all examples with that topic; the topic chips on **All examples** link to them. These pages aren't in the sidebar. Their "Back to chapter" link goes straight to the topic's section in the chapter, and so does an example's: the data file is the single place that connects an example (through its first topic) to its chapter and section. To add a topic, add it to the data file – its page appears on the next build.
 
 ## Resources
 

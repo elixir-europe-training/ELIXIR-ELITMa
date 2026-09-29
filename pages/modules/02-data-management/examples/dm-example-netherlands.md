@@ -2,6 +2,7 @@
 title: ELIXIR Netherlands
 description: Coordinating RDM support across a distributed national network
 type_img: /images/icons/icon-module-data-management.svg
+sidebar: module-data-management
 page_id: dm-ex-netherlands
 type: Real_world_example
 back_to: mod_dm_2

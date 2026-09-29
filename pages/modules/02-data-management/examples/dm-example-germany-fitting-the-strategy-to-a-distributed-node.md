@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-germany-fitting-the-strategy-to-a-distributed-node
 type: Real_world_example
 topics: [node-context]
-back_to: mod_dm_2
 ---
 
 **Node**: ELIXIR Germany  

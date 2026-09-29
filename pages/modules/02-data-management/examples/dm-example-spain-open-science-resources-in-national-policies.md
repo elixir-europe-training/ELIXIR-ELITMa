@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-spain-open-science-resources-in-national-policies
 type: Real_world_example
 topics: [existing-work, starting-point]
-back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Spain  

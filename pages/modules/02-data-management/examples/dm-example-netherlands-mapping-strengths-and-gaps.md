@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-netherlands-mapping-strengths-and-gaps
 type: Real_world_example
 topics: [starting-point, existing-work]
-back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Netherlands  

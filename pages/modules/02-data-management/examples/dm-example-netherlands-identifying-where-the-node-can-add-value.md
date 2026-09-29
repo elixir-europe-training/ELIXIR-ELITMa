@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-netherlands-identifying-where-the-node-can-add-value
 type: Real_world_example
 topics: [gaps-to-action, existing-work]
-back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Netherlands  

@@ -2,6 +2,7 @@
 title: ELIXIR Germany
 description: Connecting distributed RDM support and expertise across the ELIXIR Germany network
 type_img: /images/icons/icon-module-data-management.svg
+sidebar: module-data-management
 page_id: dm-ex-germany
 type: Real_world_example
 back_to: mod_dm_2

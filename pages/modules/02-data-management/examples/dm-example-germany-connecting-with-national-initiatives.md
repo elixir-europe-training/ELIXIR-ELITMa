@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-germany-connecting-with-national-initiatives
 type: Real_world_example
 topics: [existing-work, who-to-involve]
-back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Germany  

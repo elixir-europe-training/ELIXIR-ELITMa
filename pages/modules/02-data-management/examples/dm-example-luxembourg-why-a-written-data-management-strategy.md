@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-luxembourg-why-a-written-data-management-strategy
 type: Real_world_example
 topics: [why-strategy, starting-point]
-back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Luxembourg  

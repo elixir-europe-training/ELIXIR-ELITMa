@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-norway-bringing-infrastructures-together
 type: Real_world_example
 topics: [who-to-involve, existing-work]
-back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Norway  

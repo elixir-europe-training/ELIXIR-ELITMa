@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-spain-rdm-practices-and-challenges
 type: Real_world_example
 topics: [starting-point, who-to-involve]
-back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Spain  

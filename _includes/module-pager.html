@@ -85,23 +85,28 @@ A module with an empty sidebar simply renders nothing.
 </nav>
 {%- else -%}
 {%- assign pager_back_url = nil -%}
-{%- if page.back_to -%}
-  {%- assign pager_parent = site.pages | where: "page_id", page.back_to | first -%}
+{%- comment -%} Where "Back to chapter" goes, in this order:
+    - an example with `topics`: the chapter and section of its first topic, from
+      _data/topics/<sidebar>.yml (the data file is the single source - no back_to needed);
+    - a generated topic page: back_to + back_to_section (set by _plugins/topic_pages.rb);
+    - any other page: back_to, or the numbered sidebar item it's nested under. {%- endcomment -%}
+{%- assign pager_back_anchor = "" -%}
+{%- assign pager_back_id = page.back_to -%}
+{%- assign pager_topic = nil -%}
+{%- if page.topics and site.data.topics[page.sidebar] -%}
+  {%- assign pager_topic = site.data.topics[page.sidebar].topics | where: "id", page.topics[0] | first -%}
+  {%- if pager_topic -%}{%- assign pager_back_id = pager_topic.chapter -%}{%- endif -%}
+{%- endif -%}
+{%- if pager_back_id -%}
+  {%- assign pager_parent = site.pages | where: "page_id", pager_back_id | first -%}
   {%- if pager_parent -%}{%- assign pager_back_url = pager_parent.url -%}{%- assign pager_back_title = pager_parent.title -%}{%- endif -%}
 {%- elsif pager_parent_item -%}
   {%- assign pager_back_url = pager_parent_item.url -%}{%- assign pager_back_title = pager_parent_item.title -%}
 {%- endif -%}
-{%- comment -%} Back to a section rather than the top of the chapter: a generated topic page sets
-    back_to_section; an example with `topics` goes back to the section of its first topic
-    (_data/topics/<sidebar>.yml). {%- endcomment -%}
-{%- assign pager_back_anchor = "" -%}
-{%- if page.back_to_section -%}
+{%- if pager_topic -%}
+  {%- assign pager_back_anchor = pager_topic.section -%}{%- assign pager_back_title = pager_topic.section_title -%}
+{%- elsif page.back_to_section -%}
   {%- assign pager_back_anchor = page.back_to_section -%}{%- assign pager_back_title = page.back_to_section_title -%}
-{%- elsif page.topics and site.data.topics[page.sidebar] -%}
-  {%- assign pager_topic = site.data.topics[page.sidebar].topics | where: "id", page.topics[0] | first -%}
-  {%- if pager_topic and pager_topic.chapter == page.back_to -%}
-    {%- assign pager_back_anchor = pager_topic.section -%}{%- assign pager_back_title = pager_topic.section_title -%}
-  {%- endif -%}
 {%- endif -%}
 {%- if pager_back_url %}
 <nav class="module-pager" aria-label="Module chapters">

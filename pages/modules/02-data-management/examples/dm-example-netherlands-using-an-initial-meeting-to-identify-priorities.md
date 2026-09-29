@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities
 type: Real_world_example
 topics: [initial-team, ways-of-working]
-back_to: mod_dm_2
 ---
 
 **Node**: ELIXIR Netherlands  

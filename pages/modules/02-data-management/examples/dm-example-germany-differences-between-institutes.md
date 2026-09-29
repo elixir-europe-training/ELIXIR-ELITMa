@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-germany-differences-between-institutes
 type: Real_world_example
 topics: [starting-point, why-strategy]
-back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Germany  

@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-netherlands-finding-practical-ways-to-keep-people-involved
 type: Real_world_example
 topics: [ways-of-working]
-back_to: mod_dm_2
 ---
 
 **Node**: ELIXIR Netherlands  

@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-sweden-clarifying-the-node-remit
 type: Real_world_example
 topics: [why-strategy, who-to-involve]
-back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Sweden  

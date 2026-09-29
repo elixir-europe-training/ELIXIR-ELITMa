@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-sweden-mapping-the-data-service-landscape
 type: Real_world_example
 topics: [context-overview, connections-and-gaps]
-back_to: mod_dm_2
 ---
 
 **Node**: ELIXIR Sweden  

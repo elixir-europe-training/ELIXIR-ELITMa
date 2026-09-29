@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-luxembourg-website-as-a-collaboration-platform
 type: Real_world_example
 topics: [existing-work, gaps-to-action]
-back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Luxembourg  

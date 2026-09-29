@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-netherlands-bringing-together-node-and-institutional-perspectives
 type: Real_world_example
 topics: [node-context, initial-team]
-back_to: mod_dm_2
 ---
 
 **Node**: ELIXIR Netherlands  

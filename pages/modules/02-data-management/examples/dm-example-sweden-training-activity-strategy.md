@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-sweden-training-activity-strategy
 type: Real_world_example
 topics: [gaps-to-action, why-strategy]
-back_to: mod_dm_1
 ---
 
 **Node**: ELIXIR Sweden  

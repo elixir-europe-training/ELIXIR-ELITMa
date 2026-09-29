@@ -3,7 +3,8 @@ Local override of the elixir-toolkit-theme breadcrumb (enabled via theme_variabl
 The theme builds the trail from the URL, but module pages have flat permalinks
 (/01-comms-introduction), which would give just "Home > page". For pages with a module
 sidebar ("module-..."), the trail is built from the sidebar instead:
-  Home > Modules > <module overview> > [parent chapter, for nested/example pages]
+  Home > Modules > <module overview> > [parent chapter: back_to, the chapter of an example's
+    first topic (_data/topics), or the numbered sidebar item a page is nested under]
     > [sidebar folder, e.g. "Node examples", for pages one level deeper] > page
 Every other page falls through to the theme's original URL-based trail, copied verbatim
 except for an accessible name on the home icon.
@@ -15,8 +16,13 @@ except for an accessible name on the home icon.
 {%- assign bc_url = page.url | remove: ".html" -%}
 {%- assign bc_parent = nil -%}
 {%- assign bc_folder = nil -%}
-{%- if page.back_to -%}
-  {%- assign bc_parent_page = site.pages | where: "page_id", page.back_to | first -%}
+{%- assign bc_back_id = page.back_to -%}
+{%- if page.topics and site.data.topics[page.sidebar] -%}
+  {%- assign bc_topic = site.data.topics[page.sidebar].topics | where: "id", page.topics[0] | first -%}
+  {%- if bc_topic -%}{%- assign bc_back_id = bc_topic.chapter -%}{%- endif -%}
+{%- endif -%}
+{%- if bc_back_id -%}
+  {%- assign bc_parent_page = site.pages | where: "page_id", bc_back_id | first -%}
   {%- if bc_parent_page -%}{%- assign bc_parent = bc_parent_page -%}{%- endif -%}
 {%- else -%}
   {%- for item in bc_nav.subitems -%}
