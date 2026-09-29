@@ -48,3 +48,7 @@ Then open the address it prints. Restart the server after editing `_config.yml`.
 | `images/` | Images, one folder per module |
 
 Chapter lists, times, previous/next links and breadcrumbs are generated from the sidebar files and each chapter's front matter, so there are no totals or lists to update by hand.
+
+## License
+
+Content is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) and code under the MIT license, except logos and third-party material – see [LICENSE.md](LICENSE.md).

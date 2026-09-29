@@ -1,8 +1,13 @@
-copyright: Copyright notice
+copyright: "ELITMa – ELIXIR Training Programme in Management · Content [CC BY 4.0](https://github.com/elixir-europe-training/ELIXIR-ELITMa/blob/main/LICENSE.md), code MIT"
 extra_line: 
 columns:
+  - type: image
+    width: 3
+    src: assets/img/logos/main-logo-horizontal-light.svg
+    image_width: 190
+    alt: ELIXIR ELITMa
   - type: text
-    width: 6
+    width: 3
     content: |
       By the Nodes, for the Nodes.\
       Building ELIXIR management capacity.
@@ -35,7 +40,11 @@ columns:
     title: ABOUT
     children: 
       - url_text: Find out about the programme
-        url: https://elixir-europe.org/platforms/training/elitma
+        external_url: https://elixir-europe.org/platforms/training/elitma
       - url_text: See the people behind ELITMa
         url: /contributors
+      - url_text: How to contribute
+        url: /how-to-contribute
+      - url_text: GitHub repository
+        external_url: https://github.com/elixir-europe-training/ELIXIR-ELITMa
 
