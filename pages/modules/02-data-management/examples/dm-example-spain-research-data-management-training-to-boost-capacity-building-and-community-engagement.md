@@ -3,7 +3,7 @@ title: "ELIXIR Spain: Research Data Management training to boost capacity buildi
 description: "How RDM training in ELIXIR Spain grew from one-off talks into shared, hands-on courses that build capacity and community."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement
+page_id: dm-ex-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement
 type: Real_world_example
 ---
 

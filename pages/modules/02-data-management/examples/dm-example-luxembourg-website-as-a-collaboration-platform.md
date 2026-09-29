@@ -3,7 +3,7 @@ title: "ELIXIR Luxembourg: website as a collaboration platform"
 description: "A shared website can become more than a communication channel."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-luxembourg-website-as-a-collaboration-platform
+page_id: dm-ex-luxembourg-website-as-a-collaboration-platform
 type: Real_world_example
 ---
 

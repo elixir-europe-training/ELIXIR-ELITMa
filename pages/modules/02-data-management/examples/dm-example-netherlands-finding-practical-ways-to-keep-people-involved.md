@@ -3,7 +3,7 @@ title: "ELIXIR Netherlands: finding practical ways to keep people involved"
 description: "Do not rely on one way of involving people."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-netherlands-finding-practical-ways-to-keep-people-involved
+page_id: dm-ex-netherlands-finding-practical-ways-to-keep-people-involved
 type: Real_world_example
 ---
 

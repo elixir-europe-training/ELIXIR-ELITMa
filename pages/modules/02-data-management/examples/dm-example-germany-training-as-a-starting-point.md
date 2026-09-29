@@ -3,7 +3,7 @@ title: "ELIXIR Germany: training as a starting point"
 description: "Start with an activity that people already recognise and need."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-germany-training-as-a-starting-point
+page_id: dm-ex-germany-training-as-a-starting-point
 type: Real_world_example
 ---
 

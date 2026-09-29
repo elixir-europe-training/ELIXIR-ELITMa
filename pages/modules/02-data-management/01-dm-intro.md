@@ -39,8 +39,8 @@ Strategy development is often triggered by external drivers such as funder requi
 Changes in requirements, services or research practices can also create a practical reason to improve coordination.
 
 {% capture examples %}
-- [ELIXIR Luxembourg on the why of a written data management strategy]({{ site.baseurl }}/elixir-luxembourg-why-a-written-data-management-strategy)
-- [ELIXIR Sweden on clarifying the Node remit]({{ site.baseurl }}/elixir-sweden-clarifying-the-node-remit)
+- [ELIXIR Luxembourg on the why of a written data management strategy]({{ site.baseurl }}/dm-example-luxembourg-why-a-written-data-management-strategy)
+- [ELIXIR Sweden on clarifying the Node remit]({{ site.baseurl }}/dm-example-sweden-clarifying-the-node-remit)
 - [Funders as drivers for FAIRification strategies]({{ site.baseurl }}/funders-dm) (related perspective)
 {% endcapture %}
 {% include example-links.html content=examples %}
@@ -63,8 +63,8 @@ A strategy has a few key characteristics:
 Developing the strategy can already be useful before the document is complete. Having the conversations, mapping existing data management activities and discussing the direction the Node wants to take can make existing work more visible, connect people who do not usually work together and clarify where responsibilities or decisions are still unclear.
 
 {% capture examples %}
-- [ELIXIR Germany on connecting with national initiatives]({{ site.baseurl }}/elixir-germany-connecting-with-national-initiatives)
-- [ELIXIR Luxembourg on website as a collaboration platform]({{ site.baseurl }}/elixir-luxembourg-website-as-a-collaboration-platform)
+- [ELIXIR Germany on connecting with national initiatives]({{ site.baseurl }}/dm-example-germany-connecting-with-national-initiatives)
+- [ELIXIR Luxembourg on website as a collaboration platform]({{ site.baseurl }}/dm-example-luxembourg-website-as-a-collaboration-platform)
 {% endcapture %}
 {% include example-links.html content=examples %}
 
@@ -82,8 +82,8 @@ Consider your current situation:
 Choose one or two risks that matter most for your Node. These can help explain why a strategy is needed and where to begin.
 
 {% capture examples %}
-- [ELIXIR Luxembourg on Node member onboarding]({{ site.baseurl }}/elixir-luxembourg-node-member-onboarding)
-- [ELIXIR Sweden on training activity strategy]({{ site.baseurl }}/elixir-sweden-training-activity-strategy)
+- [ELIXIR Luxembourg on Node member onboarding]({{ site.baseurl }}/dm-example-luxembourg-node-member-onboarding)
+- [ELIXIR Sweden on training activity strategy]({{ site.baseurl }}/dm-example-sweden-training-activity-strategy)
 {% endcapture %}
 {% include example-links.html content=examples %}
 
@@ -100,8 +100,8 @@ Bring your observations together in a few sentences.
 You do not need to solve these issues yet. The aim is to be clear about why you are starting and what you want the strategy process to help with. You will build on these observations in [Chapter 3: What to include]({{ site.baseurl }}/03-dm-content)
 
 {% capture examples %}
-- [ELIXIR Netherlands on identifying where the Node can add value]({{ site.baseurl }}/elixir-netherlands-identifying-where-the-node-can-add-value)
-- [ELIXIR Italy on inclusion in the Service Delivery Plan]({{ site.baseurl }}/elixir-italy-inclusion-in-the-service-delivery-plan)
+- [ELIXIR Netherlands on identifying where the Node can add value]({{ site.baseurl }}/dm-example-netherlands-identifying-where-the-node-can-add-value)
+- [ELIXIR Italy on inclusion in the Service Delivery Plan]({{ site.baseurl }}/dm-example-italy-inclusion-in-the-service-delivery-plan)
 {% endcapture %}
 {% include example-links.html content=examples %}
 
@@ -127,8 +127,8 @@ Before moving on, write this down. It will help you make the next steps more con
 The aim is not to create a complete inventory. It is to identify where existing work can be connected and where greater clarity or coordination may be needed.
 
 {% capture examples %}
-- [ELIXIR Spain on RDM practices and challenges]({{ site.baseurl }}/elixir-spain-rdm-practices-and-challenges)
-- [ELIXIR Germany on differences between institutes]({{ site.baseurl }}/elixir-germany-differences-between-institutes)
+- [ELIXIR Spain on RDM practices and challenges]({{ site.baseurl }}/dm-example-spain-rdm-practices-and-challenges)
+- [ELIXIR Germany on differences between institutes]({{ site.baseurl }}/dm-example-germany-differences-between-institutes)
 {% endcapture %}
 {% include example-links.html content=examples %}
 
@@ -148,8 +148,8 @@ Consider whether you have the following perspectives involved:
 You do not need everyone involved from the beginning. Start with the perspectives that are most relevant to your current starting point and involve others as needed.
 
 {% capture examples %}
-- [ELIXIR Norway on bringing infrastructures together]({{ site.baseurl }}/elixir-norway-bringing-infrastructures-together)
-- [ELIXIR Spain on Research Data Management training to boost capacity building and community engagement]({{ site.baseurl }}/elixir-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement)
+- [ELIXIR Norway on bringing infrastructures together]({{ site.baseurl }}/dm-example-norway-bringing-infrastructures-together)
+- [ELIXIR Spain on Research Data Management training to boost capacity building and community engagement]({{ site.baseurl }}/dm-example-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement)
 {% endcapture %}
 {% include example-links.html content=examples %}
 

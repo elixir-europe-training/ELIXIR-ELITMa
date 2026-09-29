@@ -3,7 +3,7 @@ title: "ELIXIR Germany: differences between institutes"
 description: "Do not assume that all institutes organise RDM in the same way."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-germany-differences-between-institutes
+page_id: dm-ex-germany-differences-between-institutes
 type: Real_world_example
 ---
 

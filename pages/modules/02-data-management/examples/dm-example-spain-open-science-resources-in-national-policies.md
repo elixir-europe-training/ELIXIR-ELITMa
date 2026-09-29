@@ -3,7 +3,7 @@ title: "ELIXIR Spain: Open Science resources in national policies"
 description: "Mapping policy references can make the Node’s contribution more visible and show where ELIXIR resources are already embedded in national Open Science and Data Management priorities."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-spain-open-science-resources-in-national-policies
+page_id: dm-ex-spain-open-science-resources-in-national-policies
 type: Real_world_example
 ---
 

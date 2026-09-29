@@ -3,7 +3,7 @@ title: "ELIXIR Italy: inclusion in the Service Delivery Plan"
 description: "A formal process can help clarify how services are classified, reviewed and included in wider Node and ELIXIR planning."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-italy-inclusion-in-the-service-delivery-plan
+page_id: dm-ex-italy-inclusion-in-the-service-delivery-plan
 type: Real_world_example
 ---
 

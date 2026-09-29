@@ -3,7 +3,7 @@ title: "ELIXIR Norway: turning compliance into cultural change"
 description: "Link services to needs that researchers already recognise."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-norway-turning-compliance-into-cultural-change
+page_id: dm-ex-norway-turning-compliance-into-cultural-change
 type: Real_world_example
 ---
 

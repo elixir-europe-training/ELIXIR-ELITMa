@@ -3,7 +3,7 @@ title: "ELIXIR Netherlands: identifying where the Node can add value"
 description: "Use a rough first version to start the conversation."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-netherlands-identifying-where-the-node-can-add-value
+page_id: dm-ex-netherlands-identifying-where-the-node-can-add-value
 type: Real_world_example
 ---
 

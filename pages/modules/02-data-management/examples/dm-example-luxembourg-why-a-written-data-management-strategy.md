@@ -3,7 +3,7 @@ title: "ELIXIR Luxembourg: why a written data management strategy"
 description: "Use the data management strategy to write down boundaries that are currently handled case by case."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-luxembourg-why-a-written-data-management-strategy
+page_id: dm-ex-luxembourg-why-a-written-data-management-strategy
 type: Real_world_example
 ---
 

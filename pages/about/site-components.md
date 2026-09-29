@@ -31,7 +31,7 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `video.html` | Embedded YouTube video (privacy-enhanced, lazy-loaded) with a direct link | Anywhere in a chapter's text | `youtube`, `title`, `caption` |
 | `example-card.html` | Highlighted link card to another page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id`, `lead`, `label`, `icon` |
 | `example-links.html` | One light line listing the examples a section refers to (no box) | Where a section points to more than one example, e.g. anchors on a Node examples page (Data management) | `content`, `label`, `icon` |
-| `module-examples.html` | Lists a module's example pages from its sidebar: all of them grouped by chapter, or just one folder's (e.g. a chapter's "Node examples"). Uses `module-examples-item.html` for each entry (title + description) | An All examples page, or a folder's own page | `sidebar`, `folder` |
+| `module-examples.html` | Lists a module's example pages from its sidebar: all of them grouped by chapter, or just one folder's (e.g. a chapter's "Node examples"). Uses `module-examples-item.html` for each entry (title + description) | The Examples and case studies page, or a folder's own page | `sidebar`, `folder` |
 
 ## Custom layouts
 

@@ -8,37 +8,37 @@ subitems:
       url: /examples-01-dm
       subitems:
       - title: "Germany: training as a starting point"
-        url: /elixir-germany-training-as-a-starting-point
+        url: /dm-example-germany-training-as-a-starting-point
       - title: "Germany: connecting with national initiatives"
-        url: /elixir-germany-connecting-with-national-initiatives
+        url: /dm-example-germany-connecting-with-national-initiatives
       - title: "Germany: differences between institutes"
-        url: /elixir-germany-differences-between-institutes
+        url: /dm-example-germany-differences-between-institutes
       - title: "Italy: inclusion in the Service Delivery Plan"
-        url: /elixir-italy-inclusion-in-the-service-delivery-plan
+        url: /dm-example-italy-inclusion-in-the-service-delivery-plan
       - title: "Luxembourg: why a written data management strategy"
-        url: /elixir-luxembourg-why-a-written-data-management-strategy
+        url: /dm-example-luxembourg-why-a-written-data-management-strategy
       - title: "Luxembourg: website as a collaboration platform"
-        url: /elixir-luxembourg-website-as-a-collaboration-platform
+        url: /dm-example-luxembourg-website-as-a-collaboration-platform
       - title: "Luxembourg: Node member onboarding"
-        url: /elixir-luxembourg-node-member-onboarding
+        url: /dm-example-luxembourg-node-member-onboarding
       - title: "Netherlands: identifying where the Node can add value"
-        url: /elixir-netherlands-identifying-where-the-node-can-add-value
+        url: /dm-example-netherlands-identifying-where-the-node-can-add-value
       - title: "Netherlands: mapping strengths and gaps"
-        url: /elixir-netherlands-mapping-strengths-and-gaps
+        url: /dm-example-netherlands-mapping-strengths-and-gaps
       - title: "Norway: turning compliance into cultural change"
-        url: /elixir-norway-turning-compliance-into-cultural-change
+        url: /dm-example-norway-turning-compliance-into-cultural-change
       - title: "Norway: bringing infrastructures together"
-        url: /elixir-norway-bringing-infrastructures-together
+        url: /dm-example-norway-bringing-infrastructures-together
       - title: "Spain: Open Science resources in national policies"
-        url: /elixir-spain-open-science-resources-in-national-policies
+        url: /dm-example-spain-open-science-resources-in-national-policies
       - title: "Spain: RDM practices and challenges"
-        url: /elixir-spain-rdm-practices-and-challenges
+        url: /dm-example-spain-rdm-practices-and-challenges
       - title: "Spain: Research Data Management training to boost capacity building and community engagement"
-        url: /elixir-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement
+        url: /dm-example-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement
       - title: "Sweden: clarifying the Node remit"
-        url: /elixir-sweden-clarifying-the-node-remit
+        url: /dm-example-sweden-clarifying-the-node-remit
       - title: "Sweden: training activity strategy"
-        url: /elixir-sweden-training-activity-strategy
+        url: /dm-example-sweden-training-activity-strategy
     - title: Funders as drivers for FAIRification strategies
       url: /funders-dm
   - title: 02 Understanding your Node context
@@ -48,19 +48,19 @@ subitems:
       url: /examples-02-dm
       subitems:
       - title: "Germany: fitting the strategy to a distributed Node"
-        url: /elixir-germany-fitting-the-strategy-to-a-distributed-node
+        url: /dm-example-germany-fitting-the-strategy-to-a-distributed-node
       - title: "Germany: linking Node strategy, services and activities"
-        url: /elixir-germany-linking-node-strategy-services-and-activities
+        url: /dm-example-germany-linking-node-strategy-services-and-activities
       - title: "Netherlands: bringing together Node and institutional perspectives"
-        url: /elixir-netherlands-bringing-together-node-and-institutional-perspectives
+        url: /dm-example-netherlands-bringing-together-node-and-institutional-perspectives
       - title: "Netherlands: using an initial meeting to identify priorities"
-        url: /elixir-netherlands-using-an-initial-meeting-to-identify-priorities
+        url: /dm-example-netherlands-using-an-initial-meeting-to-identify-priorities
       - title: "Netherlands: finding practical ways to keep people involved"
-        url: /elixir-netherlands-finding-practical-ways-to-keep-people-involved
+        url: /dm-example-netherlands-finding-practical-ways-to-keep-people-involved
       - title: "Spain: understanding the Node RDM landscape and needs"
-        url: /elixir-spain-understanding-the-node-rdm-landscape-and-needs
+        url: /dm-example-spain-understanding-the-node-rdm-landscape-and-needs
       - title: "Sweden: mapping the data service landscape"
-        url: /elixir-sweden-mapping-the-data-service-landscape
+        url: /dm-example-sweden-mapping-the-data-service-landscape
     - title: From distributed support to coordinated RDM services
       url: /distributed-support-dm
     - title: Roles, competences and your Node team
@@ -96,6 +96,6 @@ subitems:
     subitems:
     - title: Approaches to sustaining RDM support
       url: /sustain-models-dm
-  - title: All examples
+  - title: Examples and case studies
     url: /dm-all-examples
     hr: true   # divider: separates the numbered chapters from extras below

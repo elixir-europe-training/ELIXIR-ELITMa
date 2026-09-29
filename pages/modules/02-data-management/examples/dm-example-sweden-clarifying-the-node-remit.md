@@ -3,7 +3,7 @@ title: "ELIXIR Sweden: clarifying the Node remit"
 description: "Vision and mission statements can help clarify what a team works on, why it matters and who the work is for."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-sweden-clarifying-the-node-remit
+page_id: dm-ex-sweden-clarifying-the-node-remit
 type: Real_world_example
 ---
 

@@ -3,7 +3,7 @@ title: "ELIXIR Germany: linking Node strategy, services and activities"
 description: "Link strategic priorities to existing services, training and expertise."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-germany-linking-node-strategy-services-and-activities
+page_id: dm-ex-germany-linking-node-strategy-services-and-activities
 type: Real_world_example
 ---
 

@@ -3,7 +3,7 @@ title: "ELIXIR Sweden: mapping the data service landscape"
 description: "Create the overview together."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-sweden-mapping-the-data-service-landscape
+page_id: dm-ex-sweden-mapping-the-data-service-landscape
 type: Real_world_example
 ---
 

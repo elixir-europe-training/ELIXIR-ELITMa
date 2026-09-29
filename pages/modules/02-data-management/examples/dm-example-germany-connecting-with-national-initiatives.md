@@ -3,7 +3,7 @@ title: "ELIXIR Germany: connecting with national initiatives"
 description: "Node strategy work does not happen in isolation."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-germany-connecting-with-national-initiatives
+page_id: dm-ex-germany-connecting-with-national-initiatives
 type: Real_world_example
 ---
 

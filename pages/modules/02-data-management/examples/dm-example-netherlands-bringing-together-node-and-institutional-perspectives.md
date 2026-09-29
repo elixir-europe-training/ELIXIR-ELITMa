@@ -3,7 +3,7 @@ title: "ELIXIR Netherlands: bringing together Node and institutional perspective
 description: "Start with two or three people who see the Node from different perspectives."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-netherlands-bringing-together-node-and-institutional-perspectives
+page_id: dm-ex-netherlands-bringing-together-node-and-institutional-perspectives
 type: Real_world_example
 ---
 

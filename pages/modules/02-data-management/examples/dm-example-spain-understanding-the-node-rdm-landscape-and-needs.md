@@ -3,7 +3,7 @@ title: "ELIXIR Spain: understanding the Node RDM landscape and needs"
 description: "Use a survey to gather input across the Node."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-spain-understanding-the-node-rdm-landscape-and-needs
+page_id: dm-ex-spain-understanding-the-node-rdm-landscape-and-needs
 type: Real_world_example
 ---
 

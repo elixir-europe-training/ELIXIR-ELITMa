@@ -3,7 +3,7 @@ title: "ELIXIR Luxembourg: Node member onboarding"
 description: "Onboarding can reveal strategic gaps."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-luxembourg-node-member-onboarding
+page_id: dm-ex-luxembourg-node-member-onboarding
 type: Real_world_example
 ---
 

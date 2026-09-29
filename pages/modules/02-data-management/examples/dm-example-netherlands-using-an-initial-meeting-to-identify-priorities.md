@@ -3,7 +3,7 @@ title: "ELIXIR Netherlands: using an initial meeting to identify priorities"
 description: "The initial meeting does not need to produce a complete strategy."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-netherlands-using-an-initial-meeting-to-identify-priorities
+page_id: dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities
 type: Real_world_example
 ---
 

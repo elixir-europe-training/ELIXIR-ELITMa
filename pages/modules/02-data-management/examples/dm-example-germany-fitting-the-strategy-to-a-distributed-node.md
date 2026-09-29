@@ -3,7 +3,7 @@ title: "ELIXIR Germany: fitting the strategy to a distributed Node"
 description: "A Node strategy should complement existing institutional approaches rather than replace them."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-germany-fitting-the-strategy-to-a-distributed-node
+page_id: dm-ex-germany-fitting-the-strategy-to-a-distributed-node
 type: Real_world_example
 ---
 

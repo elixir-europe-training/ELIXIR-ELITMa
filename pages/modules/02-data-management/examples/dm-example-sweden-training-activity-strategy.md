@@ -3,7 +3,7 @@ title: "ELIXIR Sweden: training activity strategy"
 description: "A strategy can help a team move from first come, first served to more deliberate choices."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-sweden-training-activity-strategy
+page_id: dm-ex-sweden-training-activity-strategy
 type: Real_world_example
 ---
 

@@ -3,7 +3,7 @@ title: "ELIXIR Norway: bringing infrastructures together"
 description: "Without coordination, infrastructures may duplicate work or miss useful services developed elsewhere."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-norway-bringing-infrastructures-together
+page_id: dm-ex-norway-bringing-infrastructures-together
 type: Real_world_example
 ---
 

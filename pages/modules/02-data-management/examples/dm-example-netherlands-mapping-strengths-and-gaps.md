@@ -3,7 +3,7 @@ title: "ELIXIR Netherlands: mapping strengths and gaps"
 description: "What looks like a gap may be a visibility or coordination issue."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: elixir-netherlands-mapping-strengths-and-gaps
+page_id: dm-ex-netherlands-mapping-strengths-and-gaps
 type: Real_world_example
 ---
 

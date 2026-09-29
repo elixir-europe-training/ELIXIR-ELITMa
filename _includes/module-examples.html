@@ -2,8 +2,9 @@
 Lists a module's example pages, built from its sidebar file, so a new example shows up as soon as
 it's added to the sidebar.
   {% include module-examples.html sidebar="module-data-management" %}
-      every example, grouped by chapter (for an "All examples" page); a folder of examples
-      (a sidebar item with its own subitems, e.g. "Node examples") is listed item by item
+      every example page, grouped by chapter: each folder of examples (a sidebar item with its
+      own subitems, e.g. "Node examples") under its own heading, then the chapter's other
+      pages under "Case studies and background reading" (change with others_label="...")
   {% include module-examples.html sidebar="module-data-management" folder="/examples-01-dm" %}
       only the examples inside that folder (for the folder's own page)
 Each entry shows the page title and its description.
@@ -22,15 +23,21 @@ Each entry shows the page title and its description.
 {%- for item in mx_nav.subitems -%}
 {%- if item.subitems.size > 0 %}
 <h2 class="all-examples-chapter">{{ item.title }}</h2>
+{%- for sub in item.subitems -%}
+{%- if sub.subitems %}
+<h3 class="all-examples-group">{{ sub.title }}</h3>
 <ul class="all-examples-list">
-  {%- for sub in item.subitems -%}
-  {%- if sub.subitems -%}
-  {%- for leaf in sub.subitems -%}{%- include module-examples-item.html url=leaf.url title=leaf.title -%}{%- endfor -%}
-  {%- else -%}
-  {%- include module-examples-item.html url=sub.url title=sub.title -%}
-  {%- endif -%}
-  {%- endfor %}
+  {%- for leaf in sub.subitems -%}{%- include module-examples-item.html url=leaf.url title=leaf.title -%}{%- endfor %}
 </ul>
+{%- endif -%}
+{%- endfor -%}
+{%- assign mx_others = item.subitems | where_exp: "s", "s.subitems == nil" -%}
+{%- if mx_others.size > 0 %}
+<h3 class="all-examples-group">{{ include.others_label | default: "Case studies and background reading" }}</h3>
+<ul class="all-examples-list">
+  {%- for sub in mx_others -%}{%- include module-examples-item.html url=sub.url title=sub.title -%}{%- endfor %}
+</ul>
+{%- endif -%}
 {%- endif -%}
 {%- endfor -%}
 {%- endif -%}
