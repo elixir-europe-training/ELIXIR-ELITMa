@@ -55,7 +55,7 @@ Changes in requirements, services or research practices can also create a practi
 
 {% include callout.html type="note" content="A strategy is not a complex policy document. It is a simple way to bring clarity to how data is managed across the Node or institution." %}
 
-The exact format can differ between Nodes. A strategy may be a short standalone document of around 1–3 pages, or a clearly identifiable part of a broader Node plan. See the [Examples and case studies page]({{ site.baseurl }}/dm-all-examples) for examples of how Nodes have approached this.
+The exact format can differ between Nodes. A strategy may be a short standalone document of around 1–3 pages, or a clearly identifiable part of a broader Node plan. See [All examples]({{ site.baseurl }}/dm-all-examples) for examples of how Nodes have approached this.
 
 A strategy has a few key characteristics:
 - **A short, practical document**: A strategy outlines the main goals of the Node, the data landscape it serves and the principles that guide its work.

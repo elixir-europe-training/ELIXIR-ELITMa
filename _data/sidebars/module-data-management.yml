@@ -23,6 +23,6 @@ subitems:
     subitems:
     - title: 07.1 Approaches to sustaining RDM support
       url: /07-1-dm-sustain-models
-  - title: Examples and case studies
+  - title: All examples
     url: /dm-all-examples
     hr: true   # divider: separates the numbered chapters from extras below

@@ -74,7 +74,7 @@ Renumber by editing the sidebar; nothing else needs to change. For all sidebar o
     url: /03-1-dm-gorc-framework
 ```
 
-Previous/next then walk 03 → 03.1 → 04, and the chapter circles keep chapter 3 highlighted. Name the file after its chapter too (`03-1-dm-gorc-framework.md`, `page_id: mod_dm_3_1`) and give it the module's `type` (like the chapter), not `Real_world_example`. A page that supports several chapters isn't a sub-page – make it a case study (a real-world example) instead. Examples and case studies don't go in the sidebar – see [Real-world example pages](#real-world-example-pages).
+Previous/next then walk 03 → 03.1 → 04, and the chapter circles keep chapter 3 highlighted. Name the file after its chapter too (`03-1-dm-gorc-framework.md`, `page_id: mod_dm_3_1`) and give it the module's `type` (like the chapter), not `Real_world_example`. A page that supports several chapters isn't a sub-page – make it a case study (a real-world example) instead. All examples don't go in the sidebar – see [Real-world example pages](#real-world-example-pages).
 
 ### The metadata box
 
@@ -331,13 +331,13 @@ Then link it from the chapter, either in the text with an [example card](#exampl
 
 ### Many examples for one chapter
 
-When a chapter has several short Node examples (as in Data management), give **each example its own page**. Readers open exactly the example the chapter mentions, and the "Back to chapter" link sits right under it. Examples and case studies are not listed in the sidebar – like the Communication ones, they're reached from the chapter's cards.
+When a chapter has several short Node examples (as in Data management), give **each example its own page**. Readers open exactly the example the chapter mentions, and the "Back to chapter" link sits right under it. All examples are not listed in the sidebar – like the Communication ones, they're reached from the chapter's cards.
 
 1. Put each example or case study in the module's `examples/` folder (e.g. `pages/modules/02-data-management/examples/`), one file per page, named like the Communication examples: `dm-example-sweden-clarifying-the-node-remit.md` with `page_id: dm-ex-sweden-clarifying-the-node-remit`.
 2. Use the front matter above, with `back_to` set to the chapter's `page_id` (e.g. `back_to: mod_dm_1`). Its `description` is the one-line summary shown on its card.
 3. Link it from the chapter with an [example card](#example-card). A case study that supports several chapters goes in each of those chapters' `related_pages`.
 
-That's it: the module's **Examples and case studies** page lists everything in the folder by chapter, via `{% raw %}{% include module-examples.html sidebar="module-data-management" folder="pages/modules/02-data-management/examples/" %}{% endraw %}`. To explain the examples' Topics labels, add an `examples_intro` (Markdown) to the chapter's front matter; it's shown above that chapter's Node examples.
+That's it: the module's **All examples** page shows every page in the folder as one grid of cards, via `{% raw %}{% include module-examples.html folder="pages/modules/02-data-management/examples/" %}{% endraw %}`.
 
 ## Resources
 
