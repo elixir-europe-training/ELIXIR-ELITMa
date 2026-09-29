@@ -2,10 +2,8 @@
 Previous / next navigation for any module page, rendered at the very bottom of the page
 (called from related-pages.html). The order comes from the page's sidebar data file:
 only top-level sidebar items whose title starts with a two-digit number ("00 ...", "11 ...")
-are chapters, so unnumbered items ("All resources") sit outside the sequence. The count
+are part of the sequence, so unnumbered items ("All resources") sit outside it. The count
 uses those numbers: "00" is shown as "Before you start" and the highest number is the total.
-A chapter's own sidebar subitems numbered like "03.1 ..." are sub-pages: previous/next walk
-through them (03 > 03.1 > 03.2 > 04) and the chapter circles show their chapter as current.
 
 Pages outside the sequence get a "Back to section" link when either:
   - they are nested under a numbered item in the sidebar, directly or one folder deeper
@@ -23,27 +21,7 @@ A module with an empty sidebar simply renders nothing.
     {%- assign pager_items = pager_items | push: item -%}
   {%- endif -%}
 {%- endfor -%}
-{%- comment -%} The reading sequence: each chapter followed by its numbered sub-pages.
-    pager_seq_ch holds, for each step, the index of its chapter in pager_items. {%- endcomment -%}
-{%- assign pager_seq = "" | split: "" -%}
-{%- assign pager_seq_ch = "" | split: "" -%}
-{%- for item in pager_items -%}
-  {%- assign pager_ci = forloop.index0 | append: "" -%}
-  {%- assign pager_seq = pager_seq | push: item -%}
-  {%- assign pager_seq_ch = pager_seq_ch | push: pager_ci -%}
-  {%- for sub in item.subitems -%}
-    {%- assign pager_s1 = sub.title | slice: 0 -%}{%- assign pager_s3 = sub.title | slice: 2 -%}
-    {%- if pager_digits contains pager_s1 and pager_s3 == "." -%}
-      {%- assign pager_seq = pager_seq | push: sub -%}
-      {%- assign pager_seq_ch = pager_seq_ch | push: pager_ci -%}
-    {%- endif -%}
-  {%- endfor -%}
-{%- endfor -%}
 {%- assign pager_url = page.url | remove: ".html" -%}
-{%- assign pager_step = nil -%}
-{%- for step in pager_seq -%}
-  {%- if step.url == pager_url -%}{%- assign pager_step = forloop.index0 -%}{%- endif -%}
-{%- endfor -%}
 {%- assign pager_index = nil -%}
 {%- assign pager_parent_item = nil -%}
 {%- for item in pager_items -%}
@@ -63,16 +41,15 @@ A module with an empty sidebar simply renders nothing.
 {%- if site.data.pathways[page.sidebar] %}
 <nav id="pathway-bar" class="pathway-bar" aria-label="Your learning pathway" hidden></nav>
 {%- endif %}
-{%- if pager_step != nil -%}{%- assign pager_index = pager_seq_ch[pager_step] | plus: 0 -%}{%- endif -%}
 {%- if pager_index != nil -%}
-{%- assign pager_count = pager_seq.size -%}
+{%- assign pager_count = pager_items.size -%}
 {%- assign pager_last = pager_items | last -%}
 {%- assign pager_total = pager_last.title | slice: 0, 2 | plus: 0 -%}
 {%- assign pager_current = pager_items[pager_index] -%}
 {%- assign pager_position = pager_current.title | slice: 0, 2 | plus: 0 -%}
 {%- assign pager_percent = pager_position | times: 100 | divided_by: pager_total -%}
-{%- assign pager_prev_index = pager_step | minus: 1 -%}
-{%- assign pager_next_index = pager_step | plus: 1 -%}
+{%- assign pager_prev_index = pager_index | minus: 1 -%}
+{%- assign pager_next_index = pager_index | plus: 1 -%}
 <nav class="module-pager module-pager--chapters" aria-label="Module chapters">
   {%- comment -%} A row of numbered circles, one per chapter, ending in a trophy (after Codecademy's course
       overview). Current chapter filled; chapters already visited in this browser get a ring (script below). {%- endcomment %}
@@ -85,19 +62,17 @@ A module with an empty sidebar simply renders nothing.
     <li><a class="chapter-step chapter-step--finish" href="{{ pager_overview | relative_url }}" title="Module overview"><i class="fa-solid fa-trophy" aria-hidden="true"></i><span class="visually-hidden">Module overview</span></a></li>
   </ol>
   <div class="module-pager-links">
-    {%- if pager_step > 0 -%}
-    {%- assign pager_prev = pager_seq[pager_prev_index] %}
-    {%- assign pager_prev_sub = pager_prev.title | slice: 2 %}
+    {%- if pager_index > 0 -%}
+    {%- assign pager_prev = pager_items[pager_prev_index] %}
     <a class="module-pager-link module-pager-link--prev" href="{{ pager_prev.url | relative_url }}">
-      <span class="module-pager-label"><i class="fa-solid fa-arrow-left me-1"></i>{% if pager_prev_sub == "." %}Previous{% else %}Previous chapter{% endif %}</span>
+      <span class="module-pager-label"><i class="fa-solid fa-arrow-left me-1"></i>Previous chapter</span>
       <span class="module-pager-title">{{ pager_prev.title }}</span>
     </a>
     {%- endif -%}
     {%- if pager_next_index < pager_count -%}
-    {%- assign pager_next = pager_seq[pager_next_index] %}
-    {%- assign pager_next_sub = pager_next.title | slice: 2 %}
+    {%- assign pager_next = pager_items[pager_next_index] %}
     <a class="module-pager-link module-pager-link--next" href="{{ pager_next.url | relative_url }}">
-      <span class="module-pager-text"><span class="module-pager-label">{% if pager_next_sub == "." %}Next in this chapter{% else %}Next chapter{% endif %}</span><span class="module-pager-title">{{ pager_next.title }}</span></span>
+      <span class="module-pager-text"><span class="module-pager-label">Next chapter</span><span class="module-pager-title">{{ pager_next.title }}</span></span>
       <span class="go-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
     </a>
     {%- else %}

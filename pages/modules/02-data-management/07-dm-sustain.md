@@ -11,6 +11,9 @@ time: 30 minutes
 status: in development
 sidebar: module-data-management
 summary: Define how your Node will monitor progress, review the strategy and keep it relevant as priorities, needs and circumstances change.
+related_pages:
+  Dive_deeper:
+  - dm-dd-sustain-models
 learning_outcomes:
   - Define how progress on the strategy will be monitored
   - Identify when and how the strategy should be reviewed

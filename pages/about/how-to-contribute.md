@@ -43,7 +43,7 @@ ref_to_main_resources:
 
 {% include callout.html type="warning" content="If a description or summary contains a colon followed by a space, wrap the whole value in double quotes, or the site will not build." %}
 
-At the bottom of the page, `Real_world_example` pages appear under **See it in practice**. `related_pages` can also list other pages by type, for example a chapter in another module (`Communication: [mod_comm_5]`); those appear under **Related pages**, on the same card but with that module's icon and name. Don't list chapters of your own module – previous/next and the sidebar already connect them.
+At the bottom of the page, `Dive_deeper` pages appear under **Dive deeper** and `Real_world_example` pages under **See it in practice**, followed by the **Further resources** table. `related_pages` can also list other pages by type, for example a chapter in another module (`Communication: [mod_comm_5]`); those appear under **Related pages**, on the same card but with that module's icon and name. Don't list chapters of your own module – previous/next and the sidebar already connect them.
 
 The ETT documentation lists [every front matter field the theme understands](https://elixir-belgium.github.io/elixir-toolkit-theme/page_mechanics#possible-metadata-attributes-of-a-page).
 
@@ -64,17 +64,7 @@ subitems:
 
 Renumber by editing the sidebar; nothing else needs to change. For all sidebar options, see [Sidebar](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures#sidebar) in the ETT documentation.
 
-**Sub-pages.** If a chapter needs a second page that readers should go through in order (as Chapter 3 of Data management does with its two GORC explainers), list it under the chapter in the sidebar with a number like `03.1`:
-
-```yaml
-- title: 03 What to include
-  url: /03-dm-content
-  subitems:
-  - title: 03.1 Understanding the GORC framework
-    url: /03-1-dm-gorc-framework
-```
-
-Previous/next then walk 03 → 03.1 → 04, and the chapter circles keep chapter 3 highlighted. Name the file after its chapter too (`03-1-dm-gorc-framework.md`, `page_id: mod_dm_3_1`) and give it the module's `type` (like the chapter), not `Real_world_example`. A page that supports several chapters isn't a sub-page – make it a case study (a real-world example) instead. All examples don't go in the sidebar – see [Real-world example pages](#real-world-example-pages).
+**Dive deeper pages.** A longer explanation that goes beyond the chapter (such as Data management's GORC explainers) is not a chapter and isn't in the sidebar. Put it in the module's `dive-deeper/` folder, name it like `dm-deeper-gorc-framework.md` (`page_id: dm-dd-gorc-framework`), and give it `type: Dive_deeper` and `back_to: <chapter page_id>`. List it in the chapter's `related_pages` under `Dive_deeper:`; it then appears at the end of the chapter under **Dive deeper**, on the same card as examples but with a magnifying-glass icon, and ends with a "Back to chapter" link. Examples and case studies work the same way – see [Real-world example pages](#real-world-example-pages).
 
 ### The metadata box
 

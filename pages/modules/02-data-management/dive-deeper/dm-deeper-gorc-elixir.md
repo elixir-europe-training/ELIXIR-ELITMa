@@ -3,8 +3,9 @@ title: Why use GORC in ELIXIR?
 description: How the GORC framework can support coordination and strategy development across ELIXIR Nodes
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: mod_dm_3_2
-type: Data Management
+page_id: dm-dd-gorc-elixir
+type: Dive_deeper
+back_to: mod_dm_3
 ---
 
 ELIXIR is a distributed research infrastructure. Its Nodes bring together services, resources, expertise and communities across national and European contexts. 

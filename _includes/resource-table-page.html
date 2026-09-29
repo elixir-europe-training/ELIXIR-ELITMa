@@ -6,7 +6,11 @@ description - styled to sit quietly at the end of the page (see "Further resourc
 _custom_classes.scss). The theme's version adds national-resource and registry columns
 this site doesn't use.
 {%- endcomment -%}
-{%- if page.ref_to_main_resources %}
+{%- comment -%} On module pages related-pages.html places this table itself (here=true), after the
+    Dive deeper and See it in practice cards; the theme's own call is skipped. {%- endcomment -%}
+{%- assign rt_skip = false %}
+{%- if page.sidebar contains "module-" and include.here != true %}{%- assign rt_skip = true %}{%- endif %}
+{%- if page.ref_to_main_resources and rt_skip == false %}
 {%- assign tool_ids = page.ref_to_main_resources %}
 <h2 class="further-resources-heading">Further resources</h2>
 <div class="table-responsive further-resources-table">

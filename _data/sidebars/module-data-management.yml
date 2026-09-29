@@ -7,11 +7,6 @@ subitems:
     url: /02-dm-node-context
   - title: 03 What to include
     url: /03-dm-content
-    subitems:
-    - title: 03.1 Understanding the GORC framework
-      url: /03-1-dm-gorc-framework
-    - title: 03.2 Why use GORC in ELIXIR?
-      url: /03-2-dm-gorc-elixir
   - title: 04 Assessing where you are
     url: /04-dm-assess
   - title: 05 Deciding where you want to go
@@ -20,9 +15,6 @@ subitems:
     url: /06-dm-plan
   - title: 07 Keeping the strategy alive
     url: /07-dm-sustain
-    subitems:
-    - title: 07.1 Approaches to sustaining RDM support
-      url: /07-1-dm-sustain-models
   - title: All examples
     url: /dm-all-examples
     hr: true   # divider: separates the numbered chapters from extras below

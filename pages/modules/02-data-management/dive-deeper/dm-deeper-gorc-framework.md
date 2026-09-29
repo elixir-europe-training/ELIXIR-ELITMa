@@ -3,8 +3,9 @@ title: Understanding the GORC framework
 description: An accessible introduction to the Global Open Research Commons framework
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: mod_dm_3_1
-type: Data Management
+page_id: dm-dd-gorc-framework
+type: Dive_deeper
+back_to: mod_dm_3
 ---
 
 The Global Open Research Commons (GORC) framework provides a shared way to describe the different parts of a research commons.

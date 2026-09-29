@@ -22,14 +22,14 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `module-metadata.html` | Status, time, audience and learning-outcomes box at the top of a chapter | Added automatically by the `module-page` layout (see below); no need to include it by hand | – (reads front matter) |
 | `module-chapters.html` | Chapter timeline with the chapter count and total time | A module's main page | `sidebar` |
 | `module-pathways.html` | Learning-pathway cards, plus a "full module" card | A module's main page, once the module has a pathways file | `sidebar` |
-| `module-pager.html` | A row of numbered chapter circles ending in a trophy (visited chapters marked), previous/next cards that also walk through numbered sub-pages (03 → 03.1 → 04) (the next card ends in an orange arrow); "Back to chapter" on example pages (also inside a chapter's folder, e.g. Node examples); the pathway bar and its script; the shared checklist script | Added automatically at the bottom of every module page (via `related-pages.html`) | – |
+| `module-pager.html` | A row of numbered chapter circles ending in a trophy (visited chapters marked), previous/next chapter cards (the next card ends in an orange arrow); "Back to chapter" on example pages (also inside a chapter's folder, e.g. Node examples); the pathway bar and its script; the shared checklist script | Added automatically at the bottom of every module page (via `related-pages.html`) | – |
 | `module-time.html` | Calculates a module's total time and status from its chapters ("ready" when every chapter is ready, otherwise "in development") | Used by `module-navigation.html` | `url` (the module main page) |
 | `module-navigation.html` | Module tiles with icon, description, status and calculated time | Home and Modules pages | `col` |
 | `module-tiles.html` | Tiles for a hand-picked list of pages | Any page (currently the main pages of modules still in planning) | `type`, `custom`, `col`, `sort` |
 | `module-resources.html` | All resources for a module, grouped by category | A module's "All resources" page | `module_id` |
 | `quick-check.html` | One-question check with instant ✓/✗ feedback (behaviour in `site-scripts.html`; the answer is shown without JavaScript) | After teaching an idea in a chapter | `question`, `options` (separated by `\|`), `correct`, `explain` |
 | `video.html` | Embedded YouTube video (privacy-enhanced, lazy-loaded) with a direct link | Anywhere in a chapter's text | `youtube`, `title`, `caption` |
-| `example-card.html` | Highlighted link card to another page: a lightbulb for real-world examples, the module's icon and name for any other module page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id` (or `page_ids` for several side by side), `lead`, `label`, `icon` |
+| `example-card.html` | Highlighted link card to another page: a lightbulb for real-world examples, a magnifying glass for Dive deeper pages, the module's icon and name for any other module page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id` (or `page_ids` for several side by side), `lead`, `label`, `icon` |
 | `module-examples.html` | One grid of example cards for every page in a module's examples folder, sorted by title | A module's All examples page | `folder` |
 
 ## Custom layouts
@@ -45,7 +45,7 @@ These files have the **same name as an ETT include**, so they replace the theme'
 
 | Override | Why | What changed |
 | --- | --- | --- |
-| `related-pages.html` | One kind of box for related pages on module pages, plus the pager | On every module page: real-world examples under "See it in practice", any other related page (e.g. another module's chapter) under "Related pages" – all as example cards, the latter with that module's icon – then the pager. Non-module pages keep the theme's tiles. |
+| `related-pages.html` | One kind of box for related pages on module pages, plus the pager | On every module page, in this order: Dive deeper pages under "Dive deeper", real-world examples under "See it in practice", the Further resources table, then any other related page (e.g. another module's chapter) under "Related pages" – all as example cards, the latter with that module's icon – then the pager. Non-module pages keep the theme's tiles. |
 | `breadcrumb.html` | Module permalinks are flat (`/01-comms-introduction`), so the theme's URL-based trail only gave "Home › page" | Module pages build Home › Modules › module › [chapter] › [folder, e.g. Node examples] › page from the sidebar. Other pages use the theme's code unchanged. |
 | `contributor-card.html` | Different badge colours for leads and contributors | The role badge gets a `contributor-role--<role>` class. |
 | `resource-table-page.html` | A simpler resources table for chapters | Replaces the theme's tools table (national resources, registry links) with a compact "Further resources" table – category, resource, description – for the ids in a page's `ref_to_main_resources`, styled to sit quietly at the end of the page. |

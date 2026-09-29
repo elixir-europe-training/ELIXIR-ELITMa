@@ -1,8 +1,10 @@
 {%- comment -%}
 Local override of the elixir-toolkit-theme include of the same name.
 Module pages (sidebar "module-...") use one kind of box for every related page - the example card
-(example-card.html):
-  - Real_world_example pages under "See it in practice";
+(example-card.html) - in this order:
+  - Dive_deeper pages under "Dive deeper" (magnifying-glass icon);
+  - Real_world_example pages under "See it in practice" (lightbulb);
+  - the "Further resources" table (resource-table-page.html, placed here rather than by the theme);
   - any other related page (e.g. a chapter in another module) under "Related pages", on the same
     card showing that page's module icon and name;
   - then the previous/next pager (module-pager.html).
@@ -21,22 +23,29 @@ changes, re-copy it into the last branch below.
 {%- comment -%} Module pages: one kind of box for everything - the example card.
     Real_world_example pages go under "See it in practice"; any other related page (e.g. a chapter
     in another module) goes under "Related pages", on the same card with its module's icon. {%- endcomment -%}
+{%- assign rp_deeper = "" | split: "" %}
 {%- assign rp_examples = "" | split: "" %}
 {%- assign rp_others = "" | split: "" %}
 {%- for section in page.related_pages %}
 {%- for rp_id in section[1] %}
 {%- assign rp_hit = site.pages | where: "page_id", rp_id | first %}
 {%- if rp_hit %}
-{%- if rp_hit.type == "Real_world_example" %}{%- assign rp_examples = rp_examples | push: rp_id %}{%- else %}{%- assign rp_others = rp_others | push: rp_id %}{%- endif %}
+{%- if rp_hit.type == "Real_world_example" %}{%- assign rp_examples = rp_examples | push: rp_id %}{%- elsif rp_hit.type == "Dive_deeper" %}{%- assign rp_deeper = rp_deeper | push: rp_id %}{%- else %}{%- assign rp_others = rp_others | push: rp_id %}{%- endif %}
 {%- endif %}
 {%- endfor %}
 {%- endfor %}
 
+{%- if rp_deeper.size > 0 %}
+<h2>Dive deeper</h2>
+{%- assign rp_deeper_list = rp_deeper | join: "," %}
+{% include example-card.html page_ids=rp_deeper_list %}
+{%- endif %}
 {%- if rp_examples.size > 0 %}
 <h2>See it in practice</h2>
 {%- assign rp_examples_list = rp_examples | join: "," %}
 {% include example-card.html page_ids=rp_examples_list %}
 {%- endif %}
+{% include resource-table-page.html here=true %}
 {%- if rp_others.size > 0 %}
 <h2>{{ site.theme_variables.headings.related-pages | default: 'Related pages' }}</h2>
 {%- assign rp_others_list = rp_others | join: "," %}

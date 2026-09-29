@@ -3,8 +3,9 @@ title: Approaches to sustaining RDM support
 description: Different ways Nodes can support the longer-term sustainability of RDM services
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: mod_dm_7_1
-type: Data Management
+page_id: dm-dd-sustain-models
+type: Dive_deeper
+back_to: mod_dm_7
 ---
 
 This page draws on presentations and portfolio discussions from the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials are available through the [ELITMa Espoo workshop materials](https://doi.org/10.5281/zenodo.10895079).
