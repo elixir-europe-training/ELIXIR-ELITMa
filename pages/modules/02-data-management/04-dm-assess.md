@@ -22,7 +22,6 @@ ref_to_main_resources:
   - ds-handbook-maturity-model
 ---
 
-{% include module-metadata.html %}
 
 In the previous chapter, you identified the main areas to include in your Node data management strategy and created a first strategy outline.
 

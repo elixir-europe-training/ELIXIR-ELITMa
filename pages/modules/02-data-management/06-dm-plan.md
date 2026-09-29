@@ -8,7 +8,7 @@ audience:
   - Node Coordinators
   - Data Stewards
 time: 45 minutes
-status: in development
+status: ready
 sidebar: module-data-management
 summary: Turn your selected priorities into a practical plan by defining actions, responsibilities, resources and dependencies.
 related_pages:
@@ -20,7 +20,6 @@ learning_outcomes:
   - Outline a practical plan for further developing the strategy
 ---
 
-{% include module-metadata.html %}
 
 In the previous chapter, you decided where your Node wants to go and which priorities to take forward.
 

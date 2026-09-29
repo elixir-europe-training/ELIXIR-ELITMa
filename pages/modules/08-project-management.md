@@ -10,7 +10,7 @@ This module promotes project management best practices and provides a flexible, 
 
 
 ## Module Chapters
-{% include module-tiles.html type="Project management" %}
+{% include section-navigation-tiles.html type="Project management" %}
 
 
 <!-- ## Related events

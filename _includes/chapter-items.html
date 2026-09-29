@@ -1,0 +1,16 @@
+{%- comment -%}
+The chapters of a module: the top-level items of its sidebar whose title starts with a
+two-digit number ("00 ...", "01 ..."). One rule, used by module-chapters.html,
+module-time.html and module-pager.html.
+Usage: {% include chapter-items.html nav=some_sidebar %}  (nav: a sidebar from site.data.sidebars)
+Sets chapter_items: an array of those sidebar items (each has .title and .url), in order.
+{%- endcomment -%}
+{%- assign chapter_items = "" | split: "" -%}
+{%- assign ci_digits = "0123456789" | split: "" -%}
+{%- for ci_item in include.nav.subitems -%}
+  {%- assign ci_c1 = ci_item.title | slice: 0 -%}
+  {%- assign ci_c2 = ci_item.title | slice: 1 -%}
+  {%- if ci_digits contains ci_c1 and ci_digits contains ci_c2 -%}
+    {%- assign chapter_items = chapter_items | push: ci_item -%}
+  {%- endif -%}
+{%- endfor -%}

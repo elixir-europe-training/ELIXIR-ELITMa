@@ -8,7 +8,7 @@ audience:
   - Node Coordinators
   - Data Stewards
 time: 45 minutes
-status: in development
+status: ready
 sidebar: module-data-management
 summary: Use the results of your assessment to define a desired direction, clarify the Node role and identify priorities for further development.
 related_pages:
@@ -22,7 +22,6 @@ learning_outcomes:
   - Identify priorities for further development
 ---
 
-{% include module-metadata.html %}
 
 In the previous chapter, you assessed how well selected areas of your Node data management strategy are currently developed and identified possible areas for improvement.
 

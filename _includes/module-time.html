@@ -11,17 +11,14 @@ chapter in it ("01 ...", "02 ...") - the same chapters the module page lists.
 {%- endcomment -%}
 {%- comment -%} Normalise to "/modules/x/" so leading/trailing slashes don't matter. {%- endcomment -%}
 {%- assign mt_target = include.url | prepend: "/" | append: "/" | replace: "//", "/" -%}
-{%- assign mt_digits = "0123456789" | split: "" -%}
 {%- assign module_time_minutes = 0 -%}
 {%- assign module_chapters = 0 -%}
 {%- for mt_entry in site.data.sidebars -%}
   {%- assign mt_nav = mt_entry[1] -%}
   {%- assign mt_url = mt_nav.title_url | default: mt_nav["title-url"] | prepend: "/" | append: "/" | replace: "//", "/" -%}
   {%- if mt_url != mt_target -%}{%- continue -%}{%- endif -%}
-  {%- for item in mt_nav.subitems -%}
-    {%- assign mt_c1 = item.title | slice: 0 -%}
-    {%- assign mt_c2 = item.title | slice: 1 -%}
-    {%- unless mt_digits contains mt_c1 and mt_digits contains mt_c2 -%}{%- continue -%}{%- endunless -%}
+  {%- include chapter-items.html nav=mt_nav -%}
+  {%- for item in chapter_items -%}
     {%- assign mt_page = site.pages | where: "url", item.url | first -%}
     {%- if mt_page -%}
       {%- assign module_time_minutes = mt_page.time | plus: 0 | plus: module_time_minutes -%}

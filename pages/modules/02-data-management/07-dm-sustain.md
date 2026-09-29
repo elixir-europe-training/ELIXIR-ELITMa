@@ -8,7 +8,7 @@ audience:
   - Node Coordinators
   - Data Stewards
 time: 30 minutes
-status: in development
+status: ready
 sidebar: module-data-management
 summary: Define how your Node will monitor progress, review the strategy and keep it relevant as priorities, needs and circumstances change.
 related_pages:
@@ -20,7 +20,6 @@ learning_outcomes:
   - Consider how ownership, continuity and review can be sustained over time
 ---
 
-{% include module-metadata.html %}
 
 In the previous chapter, you turned your priorities into a practical plan.
 

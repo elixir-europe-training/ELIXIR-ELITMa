@@ -18,7 +18,7 @@
   type: Data management
   leads:
   url: modules/data-management
-  status: in development
+  status: ready
   order: 2
 
 - title: Strategic management
@@ -86,17 +86,17 @@
   icon: /images/icons/icon-module-impact.svg
   id: mod_impact
   type: Project management
-  leads:
+  leads: [Ingeborg Winge]
   url: modules/impact
-  status: planned
+  status: in development
   order: 9
 
 - title: Carbon footprint
   description: The first course is under development in collaboration with ELIXIR-STEERS and SPARKLE staff exchange projects.
   icon: /images/icons/icon-module-cf.svg
   id: mod_cf
-  leads:
+  leads: [Luciana Peixoto]
   type: Carbon footprint
   url: modules/carbon-footprint
-  status: planned
+  status: in development
   order: 10

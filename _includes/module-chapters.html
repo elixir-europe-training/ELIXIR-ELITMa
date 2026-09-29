@@ -9,14 +9,11 @@ Everything is taken from existing data - nothing to maintain here:
 {%- endcomment -%}
 {%- assign mc_sidebar = include.sidebar | default: page.sidebar -%}
 {%- assign mc_nav = site.data.sidebars[mc_sidebar] -%}
-{%- assign mc_digits = "0123456789" | split: "" -%}
+{%- include chapter-items.html nav=mc_nav -%}
 {%- assign mc_pages = "" | split: "" -%}
 {%- assign mc_nums = "" | split: "" -%}
 {%- assign mc_minutes = 0 -%}
-{%- for item in mc_nav.subitems -%}
-  {%- assign mc_c1 = item.title | slice: 0 -%}
-  {%- assign mc_c2 = item.title | slice: 1 -%}
-  {%- unless mc_digits contains mc_c1 and mc_digits contains mc_c2 -%}{%- continue -%}{%- endunless -%}
+{%- for item in chapter_items -%}
   {%- assign mc_num = item.title | slice: 0, 2 -%}
   {%- if mc_num == "00" -%}{%- continue -%}{%- endif -%}
   {%- assign mc_page = site.pages | where: "url", item.url | first -%}

@@ -12,15 +12,8 @@ Pages outside the sequence get a "Back to section" link when either:
 A module with an empty sidebar simply renders nothing.
 {%- endcomment -%}
 {%- assign pager_nav = site.data.sidebars[page.sidebar] -%}
-{%- assign pager_items = "" | split: "" -%}
-{%- assign pager_digits = "0123456789" | split: "" -%}
-{%- for item in pager_nav.subitems -%}
-  {%- assign pager_c1 = item.title | slice: 0 -%}
-  {%- assign pager_c2 = item.title | slice: 1 -%}
-  {%- if pager_digits contains pager_c1 and pager_digits contains pager_c2 -%}
-    {%- assign pager_items = pager_items | push: item -%}
-  {%- endif -%}
-{%- endfor -%}
+{%- include chapter-items.html nav=pager_nav -%}
+{%- assign pager_items = chapter_items -%}
 {%- assign pager_url = page.url | remove: ".html" -%}
 {%- assign pager_index = nil -%}
 {%- assign pager_parent_item = nil -%}

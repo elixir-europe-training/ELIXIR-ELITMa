@@ -23,12 +23,12 @@ These live in `_includes/` and are not part of ETT. **They are written for any m
 | `module-chapters.html` | Chapter timeline with the chapter count and total time | A module's main page | `sidebar` |
 | `module-pathways.html` | Learning-pathway cards, plus a "full module" card | A module's main page, once the module has a pathways file | `sidebar` |
 | `module-pager.html` | A row of numbered chapter circles ending in a trophy (visited chapters marked), previous/next chapter cards (the next card ends in an orange arrow); "Back to chapter" on example pages (also inside a chapter's folder, e.g. Node examples); the pathway bar and its script; the shared checklist script | Added automatically at the bottom of every module page (via `related-pages.html`) | – |
+| `chapter-items.html` | The one rule for which sidebar items are chapters (title starts with two digits); sets `chapter_items` | Used by `module-chapters.html`, `module-time.html` and `module-pager.html` | `nav` (a sidebar from `site.data.sidebars`) |
 | `module-time.html` | Calculates a module's total time from its chapters | Used by `module-tile.html` and the module main pages | `url` (the module main page) |
 | `module-sections.html` | The modules in three groups – Ready to use, In development, Planned – each with a heading, a line of explanation and a grid of cards (no status label on the cards). The group is each module's `status` in `_data/module_types.yml` (ready, in development, planned) | Home page and Modules page | `heading_level` |
 | `module-tile.html` | One module card: icon, title, description and total time | Used by `module-sections.html` | `module` |
-| `module-tiles.html` | Tiles for a hand-picked list of pages | Any page (currently the main pages of modules still in planning) | `type`, `custom`, `col`, `sort` |
 | `module-resources.html` | All resources for a module, grouped by category | A module's "All resources" page | `module_id` |
-| `quick-check.html` | One-question check with instant ✓/✗ feedback (behaviour in `site-scripts.html`; the answer is shown without JavaScript) | After teaching an idea in a chapter | `question`, `options` (separated by `\|`), `correct`, `explain` |
+| `quick-check.html` | One-question check with instant ✓/✗ feedback (behaviour in `assets/js/custom.js`; the answer is shown without JavaScript) | After teaching an idea in a chapter | `question`, `options` (separated by `\|`), `correct`, `explain` |
 | `video.html` | Embedded YouTube video (privacy-enhanced, lazy-loaded) with a direct link | Anywhere in a chapter's text | `youtube`, `title`, `caption` |
 | `example-card.html` | Highlighted link card to another page: a lightbulb for real-world examples, a magnifying glass for Dive deeper pages, the module's icon and name for any other module page | Anywhere in a chapter's text; also used for "See it in practice" | `page_id` (or `page_ids` for several side by side), `lead`, `label`, `icon`, `compact` (title only, for in-text mentions) |
 | `module-examples.html` | One grid of example cards for every page in a module's examples folder, sorted by title | A module's All examples page | `folder` |
@@ -53,6 +53,8 @@ These files have the **same name as an ETT include**, so they replace the theme'
 | `breadcrumb.html` | Module permalinks are flat (`/01-comms-introduction`), so the theme's URL-based trail only gave "Home › page" | Module pages build Home › Modules › module › [chapter] › [folder, e.g. Node examples] › page from the sidebar. Other pages use the theme's code unchanged. |
 | `contributor-card.html` | Different badge colours for leads and contributors | The role badge gets a `contributor-role--<role>` class. |
 | `resource-table-page.html` | A simpler resources table for chapters | Replaces the theme's tools table (national resources, registry links) with a compact "Further resources" table – category, resource, description – for the ids in a page's `ref_to_main_resources`, styled to sit quietly at the end of the page. |
+| `scroll-top.html` | Accessibility | The back-to-top button is no longer hidden from screen readers (it's focusable) and has an accessible name. |
+| `assets/js/custom.js` | The theme's hook for site scripts (its own file is empty) | Our site-wide scripts – see below. |
 
 The breadcrumb is switched on in `_config.yml` (`theme_variables: breadcrumb: true`). It replaces the theme's grey page-type label above the title. Other theme settings are described in [Configuring the theme](https://elixir-belgium.github.io/elixir-toolkit-theme/configuring_theme).
 
@@ -81,7 +83,7 @@ All custom styling is in `_sass/_custom_classes.scss`, in labelled sections. The
 
 ## What runs in the reader's browser
 
-`site-scripts.html` (loaded on every page via the `scroll-top.html` override) makes small fixes: it labels checklist boxes for screen readers, makes wide code blocks keyboard-scrollable, and renames the mobile sidebar button to "Module navigation" / "Section navigation" (the theme builds that label from the sidebar file name).
+`assets/js/custom.js` (the theme loads it on every page) makes small fixes: it labels checklist boxes for screen readers, makes wide code blocks keyboard-scrollable, and renames the mobile sidebar button to "Module navigation" / "Section navigation" (the theme builds that label from the sidebar file name).
 
 Two small scripts, both in `module-pager.html`, store data only in the reader's own browser (`localStorage`); nothing is sent anywhere.
 
