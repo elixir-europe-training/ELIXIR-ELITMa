@@ -83,6 +83,13 @@ header .navbar {
   h1 { font-size: clamp(2rem, 1.4rem + 2vw, 3rem); }
   p { font-size: 1.1rem; max-width: 36rem; }
   img { max-height: 18rem; width: auto; max-width: 100%; display: block; margin-left: auto; }
+
+  // Zoomed in: the illustration drawn 30% larger than its box, anchored to the right, so it
+  // fills more of the hero without making it taller (the hero's padding absorbs the overlap).
+  @include media-breakpoint-up(md) {
+    overflow: hidden;
+    img { transform: scale(1.3); transform-origin: right center; }
+  }
 }
 
 /*-----Module sections (module-sections.html)-----*/
