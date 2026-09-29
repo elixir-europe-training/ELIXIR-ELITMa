@@ -71,6 +71,7 @@ Use these questions to guide your first overview.
 
 {% include callout.html type="tip" content="Use what already exists. Strategies, Service Delivery Plans, surveys, service lists, maturity assessments and earlier mappings can all provide a starting point. The overview does not need to be created from scratch." %}
 
+<div class="exercise-box" markdown="1">
 ## Quick reflection: connections and gaps
 
 Using the areas above, make a rough overview of your current Node context.
@@ -85,6 +86,8 @@ As a starting point, reflect on:
 - Are there important differences between institutions, communities or user groups?
 
 Before describing something as a gap, check whether the activity or expertise may already exist elsewhere in the Node. Keep your notes short and practical. The goal is not completeness, but a shared understanding of what is connected, unclear or missing.
+
+</div>
 
 {% include example-card.html page_ids="dm-ex-germany-linking-node-strategy-services-and-activities, dm-ex-sweden-mapping-the-data-service-landscape" %}
 
@@ -111,6 +114,7 @@ You do not need all these perspectives in the initial group. Note who is essenti
 
 {% include callout.html type="note" content="Focus on the perspectives, knowledge and connections people bring rather than formal roles. A small group can begin the work and help identify who else should contribute." %}
 
+<div class="exercise-box" markdown="1">
 ## Quick exercise: planning how to work together
 
 List the people who may contribute to developing your Node data management strategy.
@@ -141,6 +145,8 @@ Then agree on a practical way to begin.
 
 4. **Offer different ways to contribute**  
    Consider how people who are not part of the initial group can provide input, for example through comments in a document, an existing meeting, a survey or a separate discussion.
+
+</div>
 
 {% include example-card.html page_ids="dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities, dm-ex-netherlands-finding-practical-ways-to-keep-people-involved" %}
 

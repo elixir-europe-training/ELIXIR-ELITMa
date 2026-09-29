@@ -126,7 +126,7 @@ A callout's text is printed as-is, so Liquid written straight into it (anything 
 
 ### Exercise box
 
-Wrap every exercise in an exercise box so learners can spot it. The `markdown="1"` part lets you write normal Markdown inside.
+Wrap every exercise – and every reflection – in an exercise box so learners can spot it. Start the box with its heading ("Exercise: …", "Quick exercise: …", "Reflection: …"); a small pencil is added in front of it automatically. The `markdown="1"` part lets you write normal Markdown inside. Keep example cards and tips that follow the exercise outside the box.
 
 ```html
 <div class="exercise-box" markdown="1">

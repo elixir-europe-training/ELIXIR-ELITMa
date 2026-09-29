@@ -38,6 +38,7 @@ Sometimes you may want to develop something new. In other cases, it may be enoug
 
 {% include callout.html type="important" content="Use the maturity model to inform your choices, not to set them. The aim is to decide what makes sense for your Node." %}
 
+<div class="exercise-box" markdown="1">
 ## Exercise: define a desired direction
 
 Return to the assessment you completed in Chapter 4.
@@ -47,6 +48,8 @@ For each selected area, describe what you would like to be different and why. Ke
 | Strategy area | Current situation | Desired direction | Why does this matter? |
 | --- | --- | --- | --- |
 | Add an area from your assessment | Summarise where you are now | Describe what you would like to be different | Explain why this would help |
+
+</div>
 
 {% include callout.html type="tip" content="Focus on what you want to achieve. Actions and deadlines come in the next chapter." %}
 
@@ -82,6 +85,7 @@ If the decision route is unclear, record that too. You may need to resolve this 
 
 Being clear about the Node role also helps manage expectations. A useful strategy should make visible not only what the Node will contribute, but also what will remain with institutions, partners or other organisations.
 
+<div class="exercise-box" markdown="1">
 ## Exercise: choose your priorities
 
 You may now have several useful directions. Choose a small number to take forward.
@@ -91,6 +95,8 @@ Focus on areas where there is a clear need, where the Node can add value and whe
 | Priority | Desired direction | Node role | Why now? |
 | --- | --- | --- | --- |
 | Add a priority | Describe what you want to achieve | Describe the Node contribution | Explain why this matters now |
+
+</div>
 
 {% include callout.html type="tip" content="A short list of realistic priorities is more useful than a long list that cannot be acted on." %}
 

@@ -90,6 +90,7 @@ The example below shows how the GORC elements could be mapped. It is illustrativ
 
 {% include callout.html type="note" content="This is an illustrative example. You do not need to map every element. Select the elements that are most relevant to your Node and strategy." %}
 
+<div class="exercise-box" markdown="1">
 ## Reflection: recognise the GORC elements
 
 Review the Node context overview you developed in Chapter 2.
@@ -103,8 +104,11 @@ Consider the following questions:
 
 Record your initial observations. You will use them in the next exercise.
 
+</div>
+
 {% include callout.html type="tip" content="Not sure what counts as a GORC element? Use the examples in the table above as a starting point. Focus on how the different parts of your Node connect, you do not need to describe every activity in detail." %}
 
+<div class="exercise-box" markdown="1">
 ## Exercise: map selected GORC elements
 
 Select two or three GORC elements that seem relevant to your strategy.
@@ -115,8 +119,11 @@ For each element, describe what is already in place and how it connects to other
 | --- | --- | --- |
 | Select an element | Add relevant roles, services, activities or resources | Note links with other GORC elements |
 
+</div>
+
 {% include callout.html type="tip" content="Keep your descriptions short and focused. The purpose is to understand the structure, not to assess how well each area is developed." %}
 
+<div class="exercise-box" markdown="1">
 ## Exercise: draft your strategy outline
 
 Use your mapping to identify the areas that should be included in your strategy.
@@ -128,6 +135,8 @@ For each selected area, record why it matters, what the strategy should address 
 | Add a selected area | Explain its relevance at Node level | Note the main topic or question to address | Add relevant roles or groups |
 
 Use the completed table as a first outline for your strategy. You can add more detail as the strategy develops.
+
+</div>
 
 {% include callout.html type="note" content="Aim for a focused outline rather than a complete strategy. Include the areas that are relevant to your Node and useful to address in the strategy." %}
 

@@ -562,6 +562,19 @@ $reading-measure: 56rem;
     margin-top: 0;
   }
 
+  // A small pencil before the exercise's heading, so exercises are recognisable at a glance.
+  // Decorative: the empty alternative text after "/" keeps screen readers from announcing it.
+  > h2:first-child::before,
+  > h3:first-child::before {
+    content: "\f303" / "";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 0.8em;
+    margin-right: 0.55em;
+    color: $accent-text;
+    vertical-align: 0.08em;
+  }
+
   > :last-child {
     margin-bottom: 0;
   }

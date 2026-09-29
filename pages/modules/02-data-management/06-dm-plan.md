@@ -36,6 +36,7 @@ Start with an action that is useful and manageable. You can build from there.
 
 {% include callout.html type="tip" content="Choose a first action that creates progress or gives you information you need for the next decision." %}
 
+<div class="exercise-box" markdown="1">
 ## Exercise: build your action plan
 
 Take the priorities you selected in Chapter 5 and turn them into practical actions.
@@ -45,6 +46,8 @@ Take the priorities you selected in Chapter 5 and turn them into practical actio
 | Add a priority | Describe what needs to happen | Add the person or group taking the lead | Note relevant people, resources, information, decisions or other dependencies | Add a realistic timeframe |
 
 Use existing structures where you can. A current working group, meeting, service or document may already provide a good place to start.
+
+</div>
 
 ## Check what the action depends on
 

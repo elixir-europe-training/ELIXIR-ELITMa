@@ -68,6 +68,7 @@ Developing the strategy can already be useful before the document is complete. H
 
 {% include example-card.html page_ids="dm-ex-germany-connecting-with-national-initiatives, dm-ex-luxembourg-website-as-a-collaboration-platform" %}
 
+<div class="exercise-box" markdown="1">
 ## Quick reflection: risks without a data management strategy
 
 Consider your current situation:
@@ -81,8 +82,11 @@ Consider your current situation:
 
 Choose one or two risks that matter most for your Node. These can help explain why a strategy is needed and where to begin.
 
+</div>
+
 {% include example-card.html page_ids="dm-ex-luxembourg-node-member-onboarding, dm-ex-sweden-training-activity-strategy" %}
 
+<div class="exercise-box" markdown="1">
 ## Exercise: define your reason for starting
 
 Bring your observations together in a few sentences.
@@ -95,10 +99,13 @@ Bring your observations together in a few sentences.
 
 You do not need to solve these issues yet. The aim is to be clear about why you are starting and what you want the strategy process to help with. You will build on these observations in [Chapter 3: What to include]({{ site.baseurl }}/03-dm-content)
 
+</div>
+
 {% include example-card.html page_ids="dm-ex-netherlands-identifying-where-the-node-can-add-value, dm-ex-italy-inclusion-in-the-service-delivery-plan" %}
 
 {% include callout.html type="tip" content="Keep this lightweight. A clear reason for starting is enough for now." %}
 
+<div class="exercise-box" markdown="1">
 ## Quick exercise: starting your strategy
 
 Now look at what you can already build on. A strategy links existing work. Nodes often have policies, maturity assessments, training plans and service descriptions. The strategy brings these together and shows how each element contributes to the wider picture.
@@ -117,6 +124,8 @@ Before moving on, write this down. It will help you make the next steps more con
    What feels clear and well connected? What feels fragmented, difficult to find or unclear in ownership? Before identifying a gap, check whether the activity or expertise may already exist elsewhere in the Node.
 
 The aim is not to create a complete inventory. It is to identify where existing work can be connected and where greater clarity or coordination may be needed.
+
+</div>
 
 {% include example-card.html page_ids="dm-ex-spain-rdm-practices-and-challenges, dm-ex-germany-differences-between-institutes" %}
 
