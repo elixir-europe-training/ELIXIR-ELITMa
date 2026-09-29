@@ -267,3 +267,66 @@
   description: Recommendations for running a Node-level internal newsletter (intranet).
   category: elixir_resource
   module: mod_comm
+# --- Data management ---
+- id: ds-handbook-maturity-model
+  name: Data Stewardship Handbook - Maturity Model
+  url: https://elixir-europe.github.io/ds-handbook/maturity-model
+  description: A self-assessment tool for exploring how research data management is organised and supported, area by area - used to assess where your Node is.
+  category: elixir_resource
+  module: mod_dm
+
+- id: gorc-typology
+  name: GORC Typology and Definitions (RDA)
+  url: https://www.rd-alliance.org/groups/global-open-research-commons-ig/outputs/
+  description: The Global Open Research Commons essential elements and their definitions, from the RDA GORC Interest Group, including the typology diagram (CC BY 4.0).
+  category: external_resource
+  module: mod_dm
+
+- id: gorc-model-1-1
+  name: GORC International Model, version 1.1 (RDA)
+  url: https://www.rd-alliance.org/groups/gorc-international-model-wg/outputs/the-global-open-research-commons-international-model-version-1-1/
+  description: The full GORC International Model from the RDA working group - the framework this module uses to structure a Node strategy.
+  category: external_resource
+  module: mod_dm
+
+- id: gorc-model-report
+  name: GORC International Model Report, version 1 (RDA)
+  url: https://www.rd-alliance.org/groups/gorc-international-model-wg/outputs/the-global-open-research-commons-international-model-report-version-1/
+  description: The working group's report on the GORC International Model - its elements and how it was developed.
+  category: external_resource
+  module: mod_dm
+
+- id: gorc-dsj-article
+  name: The Global Open Research Commons International Model (Data Science Journal)
+  url: https://datascience.codata.org/articles/10.5334/dsj-2024-056
+  description: Peer-reviewed article describing the GORC International Model.
+  category: external_resource
+  module: mod_dm
+
+- id: elitma-espoo-materials
+  name: ELITMa Espoo workshop materials (2023)
+  url: https://doi.org/10.5281/zenodo.10895079
+  description: Training materials, shared notes and Node portfolios from the 2023 Espoo edition of the Node data management strategy module - the source of this module's case studies.
+  category: elixir_resource
+  module: mod_dm
+
+- id: rdmkit
+  name: RDMkit
+  url: https://rdmkit.elixir-europe.org/
+  description: ELIXIR's research data management toolkit for the life sciences - practical guidance, tool overviews and national pages.
+  category: elixir_resource
+  module: mod_dm
+
+- id: rems
+  name: REMS - Resource Entitlement Management System
+  url: https://github.com/CSCfi/rems
+  description: Open-source tool from CSC (ELIXIR Finland) for managing access to controlled-access datasets.
+  category: elixir_resource
+  module: mod_dm
+
+- id: rda-dmp-common-standard
+  name: RDA DMP Common Standard
+  url: https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard
+  description: A common, machine-actionable data model for Data Management Plans, from the Research Data Alliance.
+  category: external_resource
+  module: mod_dm

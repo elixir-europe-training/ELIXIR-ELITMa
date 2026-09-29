@@ -18,3 +18,5 @@ subitems:
   - title: All examples
     url: /dm-all-examples
     hr: true   # divider: separates the numbered chapters from extras below
+  - title: All resources
+    url: /dm-all-resources

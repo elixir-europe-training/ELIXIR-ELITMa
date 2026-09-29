@@ -18,6 +18,8 @@ learning_outcomes:
   - Explain how the Data Stewardship Handbook Maturity Model can support strategy development
   - Assess the current situation and level of development of selected areas of the strategy
   - Identify strengths, gaps and possible areas for improvement
+ref_to_main_resources:
+  - ds-handbook-maturity-model
 ---
 
 {% include module-metadata.html %}

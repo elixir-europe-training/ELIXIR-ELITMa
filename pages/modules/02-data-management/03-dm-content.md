@@ -19,6 +19,10 @@ learning_outcomes:
     - Identify the main elements to include in a Node data management strategy
     - Use the Global Open Research Commons model to structure the content of your strategy
     - Select relevant areas and draft a simple outline for your strategy
+ref_to_main_resources:
+  - ds-handbook-maturity-model
+  - gorc-model-1-1
+  - gorc-typology
 ---
 
 {% include module-metadata.html %}

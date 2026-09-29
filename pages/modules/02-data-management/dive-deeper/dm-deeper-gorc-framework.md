@@ -6,6 +6,11 @@ sidebar: module-data-management
 page_id: dm-dd-gorc-framework
 type: Dive_deeper
 back_to: mod_dm_3
+ref_to_main_resources:
+  - gorc-typology
+  - gorc-model-1-1
+  - gorc-model-report
+  - gorc-dsj-article
 ---
 
 The Global Open Research Commons (GORC) framework provides a shared way to describe the different parts of a research commons.

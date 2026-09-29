@@ -6,6 +6,9 @@ sidebar: module-data-management
 page_id: dm-ex-implementation
 type: Real_world_example
 back_to: mod_dm_6
+ref_to_main_resources:
+  - rdmkit
+  - rems
 ---
 
 This case study is based on presentations by Pinar Alper from ELIXIR Luxembourg during the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials and shared notes are available through the [ELITMa Epoo workshop materials](https://doi.org/10.5281/zenodo.10895079).

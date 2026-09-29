@@ -1502,6 +1502,8 @@ ul.task-list li.task-list-item:has(> label) {
   // Category as narrow as its label, a modest column for the name, and
   // the rest for the description.
   table { table-layout: auto; width: 100%; }
+  // (The theme gives the first header cell 25%, so narrow the header as well.)
+  th:first-child,
   .further-resources-category { width: 1%; white-space: nowrap; }
   th:nth-child(2), td:nth-child(2) { width: 24%; }
   th:nth-child(3), td:nth-child(3) { width: auto; }
@@ -1512,6 +1514,11 @@ ul.task-list li.task-list-item:has(> label) {
     background: #EEF1F4;
     color: $dark;
   }
+}
+
+// All resources pages (module-resources.html): the same narrow category column.
+#content .resources-category-table {
+  th:first-child, td:first-child { width: 1%; white-space: nowrap; }
 }
 
 /*-----Chapter stepper (after Codecademy's course overview)-----*/
