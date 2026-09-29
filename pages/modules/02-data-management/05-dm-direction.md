@@ -22,7 +22,6 @@ learning_outcomes:
   - Identify priorities for further development
 ---
 
-{% include module-metadata.html %}
 
 In the previous chapter, you assessed how well selected areas of your Node data management strategy are currently developed and identified possible areas for improvement.
 

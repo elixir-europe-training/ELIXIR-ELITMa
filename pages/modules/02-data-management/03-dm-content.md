@@ -22,7 +22,6 @@ ref_to_main_resources:
   - gorc-typology
 ---
 
-{% include module-metadata.html %}
 
 In Chapter 1, you set out why your Node needs a data management strategy and identified a starting point. In Chapter 2, you developed a first overview of your Node context and identified the people who can help move the work forward. In this chapter, you will use that overview to identify and organise the main areas to include in your strategy.
 

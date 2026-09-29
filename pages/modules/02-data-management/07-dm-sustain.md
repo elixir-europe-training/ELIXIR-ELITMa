@@ -20,7 +20,6 @@ learning_outcomes:
   - Consider how ownership, continuity and review can be sustained over time
 ---
 
-{% include module-metadata.html %}
 
 In the previous chapter, you turned your priorities into a practical plan.
 

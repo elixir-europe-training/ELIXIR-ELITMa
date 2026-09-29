@@ -9,7 +9,7 @@ This workshop addresses ethical, legal and social issues (ELSI) faced by ELIXIR 
 
 
 ## Module Chapters
-{% include module-tiles.html type="ELSI" %}
+{% include section-navigation-tiles.html type="ELSI" %}
 
 
 <!-- ## Related events

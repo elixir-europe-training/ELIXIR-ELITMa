@@ -8,7 +8,7 @@ page_img: /icons/icon-module-cf.svg
 
 The first course is under development in collaboration with ELIXIR-STEERS and SPARKLE staff exchange projects, involving Nodes from Portugal, Italy, Norway and the Hub.
 ## Module Chapters
-{% include module-tiles.html type="Carbon footprint" %}
+{% include section-navigation-tiles.html type="Carbon footprint" %}
 
 ## Related events
 ### Upcoming events

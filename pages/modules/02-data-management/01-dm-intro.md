@@ -14,7 +14,6 @@ learning_outcomes:
     - Describe how a Node data management strategy connects existing services, roles, policies and activities
     - Identify a practical reason and starting point for developing or refining a strategy
 ---
-{% include module-metadata.html %}
 
 Developing a shared approach to data management is not always straightforward in a distributed environment like ELIXIR. Responsibilities, services and expertise are often spread across roles, institutions, projects and national initiatives. A strategy helps connect this existing work, clarify responsibilities and create a shared direction.
 

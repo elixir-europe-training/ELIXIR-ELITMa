@@ -20,7 +20,6 @@ learning_outcomes:
   - Outline a practical plan for further developing the strategy
 ---
 
-{% include module-metadata.html %}
 
 In the previous chapter, you decided where your Node wants to go and which priorities to take forward.
 
