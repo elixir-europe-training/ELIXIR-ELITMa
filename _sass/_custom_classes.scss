@@ -488,14 +488,27 @@ $reading-measure: 52rem;
   }
 
   #content > table,
-  #content > .table-responsive,
-  #content > .row {
+  #content > .table-responsive {
     max-width: none;
   }
 
-  // The page summary sits in #intro, outside #content.
-  #intro .summary {
+  // The page summary sits in #intro, outside #content. The title too: without an
+  // "On this page" column it would otherwise run the full width.
+  #intro .summary,
+  #intro h1 {
     max-width: $reading-measure;
+  }
+
+  // Size the text column to the text (not all the spare width), so "On this page"
+  // sits a fixed gap after it instead of floating far to the right.
+  main.add-grid {
+    grid-template-columns: minmax(0, $reading-measure) minmax(12rem, 16rem);
+    column-gap: 3rem;
+    justify-content: start;
+
+    #toc {
+      margin-left: 0;
+    }
   }
 }
 
@@ -507,15 +520,7 @@ $reading-measure: 52rem;
     grid-template-columns: minmax(0, 18rem) minmax(0, 1fr);
   }
 
-  main.add-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 16rem);
-    column-gap: 5rem;
 
-    // Spacing now comes from column-gap, so the TOC keeps its full width.
-    #toc {
-      margin-left: 0;
-    }
-  }
 }
 
 /*-----Event cards-----*/
@@ -1509,20 +1514,45 @@ ul.task-list li.task-list-item:has(> label) {
 /*-----Chapter stepper (after Codecademy's course overview)-----*/
 // Numbered circles, one per chapter, ending in a trophy. Grey ring = not yet
 // opened, orange ring = visited, filled orange = where you are now.
+// The chapters spread evenly across the full width, joined by a thin line, so the row
+// is the same size whatever the number of chapters. On phones they wrap (no line).
 .chapter-stepper {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
   margin: 0 0 1.25rem;
   padding: 0.6rem 1rem;
   list-style: none;
   border: 1px solid #DCE6EC;
   border-radius: 999px;
-  width: fit-content;
-  max-width: 100%;
+  width: 100%;
 
-  li { margin: 0 !important; }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    right: 2rem;
+    height: 2px;
+    background: #E3E8EC;
+    transform: translateY(-50%);
+  }
+
+  li {
+    position: relative;
+    margin: 0 !important;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.4rem;
+    border-radius: 1.5rem;
+    &::before { display: none; }
+  }
 }
 
 .chapter-step {
