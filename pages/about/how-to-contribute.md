@@ -382,11 +382,27 @@ A pathway is a short route through some chapters for a particular reader, shown 
   chapters: [mod_comm_3, mod_comm_4]   # page_ids, in order
 ```
 
-Chapter numbers, links and the total time are filled in automatically. A module without a pathways file simply shows no pathways.
+Chapter numbers, links and the total time are filled in automatically. A module without a pathways file simply shows no pathways. While a reader follows a pathway, the chapter navigation at the bottom of each page switches to the pathway's steps – the same circles and previous/next cards, on an orange "Your pathway" panel.
+
+## Module status
+
+The home page and the Modules page group the modules into **Ready to use**, **In development** and **Planned** – there's no status label on the cards themselves. You don't set the group directly:
+
+- A module **with chapters** is *Ready to use* when every chapter has `status: ready`, and *In development* otherwise. So a module moves up on its own when its last chapter is marked ready.
+- A module **without chapters yet** uses the `status` in `_data/module_types.yml`: `to do` (Planned) or `in development`.
+
+On a chapter, the status only shows in the box at the top while the chapter isn't ready.
+
+## Starting a new module's online materials
+
+1. Its entry already exists in `_data/module_types.yml` (title, description, icon, `url`); set `status: in development`.
+2. Create the module's main page, `pages/modules/<nn-module>.md` (see an existing one), and its sidebar file `_data/sidebars/module-<name>.yml` with `title_url` pointing to that page.
+3. Write chapters from `pages/modules/_templates/chapter.md` and add them to the sidebar with two-digit numbers.
+4. Optional extras, each one line in the sidebar under a divider (`hr: true`): an **All examples** page (`{% raw %}{% include module-examples.html sidebar="module-<name>" %}{% endraw %}`) and an **All resources** page (`{% raw %}{% include module-resources.html module_id="mod_<id>" %}{% endraw %}`), plus a pathways file and a topics file if you need them.
 
 ## Crediting contributions
 
-Everyone who contributes should be credited.
+Everyone who contributes should be credited. By contributing, you agree that your content is shared under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (code under MIT) – see the [licence](https://github.com/elixir-europe-training/ELIXIR-ELITMa/blob/main/LICENSE.md). Only add logos or images from elsewhere if you may reuse them, and credit their source.
 
 **On the Contributors page.** Add yourself to `_data/CONTRIBUTORS.yml`. Your `role` decides which group you appear in and the colour of your badge:
 
