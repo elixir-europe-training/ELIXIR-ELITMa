@@ -4,7 +4,7 @@ description: How Nodes can make distributed RDM support, responsibilities and de
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-distributed-support
-type: Real_world_example
+type: Dive_deeper
 back_to: mod_dm_2
 ---
 
