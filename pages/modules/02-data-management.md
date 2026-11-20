@@ -52,14 +52,12 @@ Take a minute to think about your starting point.
 
 This self-paced module builds on several editions of the ELITMa Node Data Management Strategy training. It draws on presentations, exercises, shared notes, Node portfolios, discussions and examples by participating ELIXIR Nodes.
 
-The first edition was held in [Espoo in 2023](https://doi.org/10.5281/zenodo.10895079), followed by a [second edition in Tartu in 2025](https://elixir-europe.org/events/elitma-module2-eip-meeting). These sessions helped shape the topics and practical approach used throughout the module. The material will continue to develop through the [2026 Barcelona edition](https://elixir-europe.org/events/rdm-meeting-2026) and other future Node discussions and training events.
+The first edition was held in [Espoo in 2023](https://doi.org/10.5281/zenodo.10895080), followed by a [second edition in Tartu in 2025](https://elixir-europe.org/events/elitma-module2-eip-meeting) and a [third edition in Barcelona in 2026](https://doi.org/10.5281/zenodo.23575007). These sessions helped shape the topics and practical approach used throughout the module. The material will continue to develop through future Node discussions and training events.
 
 ## Key terms used in this module
 
 A few terms are used in a specific way throughout the module:
 
-* **Node data management strategy**: how a Node wants to organise, support and develop data management across its activities and partnerships.
-* **Data management policy**: formal rules or commitments for data management, for example those required by a funder or hosting institution.
 * **Node data management strategy**: how a Node wants to organise, support and develop data management across its activities and partnerships.
 * **Data management policy**: formal rules or commitments for data management, for example those required by a funder or hosting institution.
 * **Mandate**: whether the Node has the remit or authority to act.
