@@ -4,7 +4,7 @@ description: How to understand the expertise your Node needs and where it can co
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-roles-competences
-type: Real_world_example
+type: Dive_deeper
 back_to: mod_dm_2
 ---
 
