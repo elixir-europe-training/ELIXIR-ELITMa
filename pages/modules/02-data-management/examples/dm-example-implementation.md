@@ -4,7 +4,7 @@ description: Examples from ELIXIR Luxembourg on developing and implementing RDM 
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-implementation
-type: Real_world_example
+type: Dive_deeper
 back_to: mod_dm_6
 ref_to_main_resources:
   - rdmkit
