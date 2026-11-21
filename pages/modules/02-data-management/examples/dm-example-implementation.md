@@ -11,7 +11,7 @@ ref_to_main_resources:
   - rems
 ---
 
-This case study is based on presentations by Pinar Alper from ELIXIR Luxembourg during the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials and shared notes are available through the [ELITMa Epoo workshop materials](https://doi.org/10.5281/zenodo.10895079).
+This case study is based on presentations by Pinar Alper from ELIXIR Luxembourg during the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials and shared notes are available through the [ELITMa Espoo workshop materials](https://doi.org/10.5281/zenodo.10895080).
 
 ELIXIR Luxembourg presented two examples of developing Research Data Management (RDM) services: an [RDMkit](https://rdmkit.elixir-europe.org/)-based Node service and an end-to-end support service for controlled-access data sharing.
 

@@ -8,7 +8,7 @@ type: Dive_deeper
 back_to: mod_dm_1
 ---
 
-This case study is based on a presentation by Margreet Bloemers from [ZonMw](https://www.zonmw.nl/en/everything-about-fair-data-management), the Dutch national funding agency for health research and innovation, during the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials and shared notes are available through the [ELITMa Espoo workshop materials](https://doi.org/10.5281/zenodo.10895079).
+This case study is based on a presentation by Margreet Bloemers from [ZonMw](https://www.zonmw.nl/en/everything-about-fair-data-management), the Dutch national funding agency for health research and innovation, during the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials and shared notes are available through the [ELITMa Espoo workshop materials](https://doi.org/10.5281/zenodo.10895080).
 
 The presentation explored how funder requirements can influence the way research data management and FAIRification are organised. For Nodes developing a data management strategy, such external developments can provide an important reason to review existing support and consider where broader coordination is needed.
 
