@@ -8,7 +8,7 @@ type: Dive_deeper
 back_to: mod_dm_2
 ---
 
-This case study draws on presentations, discussions and Node portfolios from the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials, shared notes and Node portfolios are available through the [ELITMa Espoo workshop materials](https://doi.org/10.5281/zenodo.10895079).
+This case study draws on presentations, discussions and Node portfolios from the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials, shared notes and Node portfolios are available through the [ELITMa Espoo workshop materials](https://doi.org/10.5281/zenodo.10895080).
 
 Several Nodes described RDM support that was already spread across universities, infrastructures, projects and support teams. The issue was therefore not simply whether support existed, but how visible and connected it was, who was responsible for what and which activities depended on others.
 

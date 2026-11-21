@@ -305,7 +305,7 @@
 
 - id: elitma-espoo-materials
   name: ELITMa Espoo workshop materials (2023)
-  url: https://doi.org/10.5281/zenodo.10895079
+  url: https://doi.org/10.5281/zenodo.10895080
   description: Training materials, shared notes and Node portfolios from the 2023 Espoo edition of the Node data management strategy module - the source of this module's case studies.
   category: elixir_resource
   module: mod_dm
