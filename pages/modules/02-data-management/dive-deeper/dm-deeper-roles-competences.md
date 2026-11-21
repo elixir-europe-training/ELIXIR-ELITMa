@@ -3,9 +3,10 @@ title: Roles, competences and your Node team
 description: How to understand the expertise your Node needs and where it can come from
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: dm-ex-roles-competences
+page_id: dm-dd-roles-competences
+redirect_from: /dm-example-roles-competences
 type: Dive_deeper
-back_to: mod_dm_2
+back_to: mod_dm_1
 ---
 
 This case study draws on presentations, exercises and discussions from the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials and shared notes are available through the [ELITMa Espoo workshop materials](https://doi.org/10.5281/zenodo.10895080).
