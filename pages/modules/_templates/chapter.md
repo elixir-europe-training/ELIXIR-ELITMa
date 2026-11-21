@@ -19,7 +19,7 @@ related_pages:                                 # shown at the end of the chapter
   Dive_deeper:                                 #   "Dive deeper" cards (magnifying glass)
   - dm-dd-gorc-framework
   Real_world_example:                          #   "See it in practice" cards (lightbulb) -
-  - dm-ex-rdm-portfolio                        #   only examples not already carded in the text
+  - dm-ex-sweden-clarifying-the-node-remit     #   only examples not already carded in the text
 ref_to_main_resources:                         #   then the "Further resources" table
   - google-analytics                           #   ids from _data/tool_and_resource_list.yml
 ---

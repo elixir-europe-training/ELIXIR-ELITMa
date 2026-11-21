@@ -3,7 +3,8 @@ title: Self-assessment as a strategy tool
 description: How Nodes used self-assessment to discuss their current RDM situation and possible improvements
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: dm-ex-self-assessment
+page_id: dm-dd-self-assessment
+redirect_from: /dm-example-self-assessment
 type: Dive_deeper
 back_to: mod_dm_4
 ---

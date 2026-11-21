@@ -3,7 +3,8 @@ title: Funders as drivers for FAIRification strategies
 description: How funder requirements can influence FAIR support and coordination
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: dm-ex-funders-fairification
+page_id: dm-dd-funders-fairification
+redirect_from: /dm-example-funders-fairification
 type: Dive_deeper
 back_to: mod_dm_1
 ---

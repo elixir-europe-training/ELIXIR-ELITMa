@@ -3,7 +3,8 @@ title: From mandate to service scope
 description: How Nodes can decide where they should take a role in RDM support
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: dm-ex-service-scope
+page_id: dm-dd-service-scope
+redirect_from: /dm-example-service-scope
 type: Dive_deeper
 back_to: mod_dm_5
 ---

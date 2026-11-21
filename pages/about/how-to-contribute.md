@@ -54,7 +54,7 @@ learning_outcomes:
   - Identify and prioritise your Node's key stakeholder groups
 related_pages:
   Dive_deeper: [dm-dd-gorc-framework]     # "Dive deeper" cards at the end of the chapter
-  Real_world_example: [dm-ex-rdm-portfolio]   # "See it in practice" cards – only examples
+  Real_world_example: [dm-ex-sweden-clarifying-the-node-remit]   # "See it in practice" cards – only examples
                                           # that don't already have a card in the text
 ref_to_main_resources:
   - converge-comms                       # ids from _data/tool_and_resource_list.yml
