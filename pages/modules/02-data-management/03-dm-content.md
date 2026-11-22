@@ -42,6 +42,8 @@ In this chapter, you will use the GORC model to structure the content of your st
 
 - Without a clear scope, important areas may be overlooked or too many topics may be addressed at once. A defined scope helps you connect existing work and identify where greater clarity or coordination may be needed.
 
+- Scope is also about who the strategy is for: the people who work in the Node, or also the institutions and researchers it supports. Decide this early. A strategy written only for the Node team can end up with different rules than the rest of an institution.
+
 - It also makes the strategy easier to discuss with the people involved. They can see which areas are included, why they matter and where their input is needed.
 
 {% include callout.html type="note" content="You do not need to cover everything. A focused strategy that reflects your Node context is more useful than a complete but unrealistic overview." %}
@@ -96,7 +98,22 @@ The example below shows how the GORC elements could be mapped. It is illustrativ
 <div class="exercise-box" markdown="1">
 ## Reflection: recognise the GORC elements
 
-Review the Node context overview you developed in Chapter 2.
+Take your notes from Chapter 2 and sort them under the GORC elements. Using these shared elements gives your strategy a structure others recognise, and helps you spot areas you missed.
+
+The table shows where most of your notes belong:
+
+| Area in Chapter 2 | Look under these GORC elements |
+| --- | --- |
+| Policies, standards and wider initiatives | Rules of participation and access; Standards & Conventions; Engagement |
+| Governance and responsibilities | Governance structures |
+| Data and research landscape | Research objects |
+| Services, tools and expertise | Services and tools; Compute, storage, network and AAI; Human capacity |
+| Sustainability | Sustainability |
+
+Two areas from Chapter 2 have no GORC element of their own, but you still need them:
+
+1. Connections and dependencies show how the elements depend on each other. Keep these notes for the Connections column in the next exercise.
+2. Needs and gaps show where your Node most needs attention. In the next exercise you select two or three elements to work on. Start with the ones where your needs and gaps are. For example, if researchers ask for more RDM training, Human capacity is a good place to start.
 
 Consider the following questions:
 
@@ -137,7 +154,7 @@ For each selected area, record why it matters, what the strategy should address 
 | --- | --- | --- | --- |
 | Add a selected area | Explain its relevance at Node level | Note the main topic or question to address | Add relevant roles or groups |
 
-Use the completed table as a first outline for your strategy. You can add more detail as the strategy develops.
+Use the completed table as a first outline for your strategy. You can add more detail as the strategy develops. There is no single correct outline. When Nodes built their portfolios during the [first edition of this training in Espoo in 2023](https://doi.org/10.5281/zenodo.10895080), each one looked different.
 
 </div>
 

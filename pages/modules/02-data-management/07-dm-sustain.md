@@ -70,7 +70,7 @@ If ownership or decision making has become unclear, agree where it should sit be
 
 ## Make sure it survives a handover
 
-A strategy is fragile if only one person knows where it is, why choices were made or what should happen next.
+A strategy is fragile if only one person knows where it is, why choices were made or what should happen next. This matters even more when much of the work depends on fixed-term contracts or project funding. When people leave, their knowledge can leave with them.
 
 Keep the latest version somewhere people can find it. Record important decisions and changes briefly, including why they were made.
 

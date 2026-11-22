@@ -31,6 +31,8 @@ Much of the relevant work may already exist, but it can be spread across organis
 
 A Node strategy should complement institutional, project-level and national approaches rather than replace them. The aim is not to make every organisation work in the same way, but to identify shared goals, useful connections, dependencies and areas where greater clarity or coordination is needed.
 
+Nodes also differ in how much they can steer. Some can bring partners together and set a shared direction. Others, especially federated Nodes, mainly support institutions that make their own choices. In that case, the strategy focuses on what the Node can offer.
+
 A strategy also depends on people. No single person can see the whole picture. A small group with different perspectives helps ensure that the strategy reflects both the overall direction of the Node and how data management, services and support work in practice.
 
 {% include example-card.html page_ids="dm-ex-germany-fitting-the-strategy-to-a-distributed-node, dm-ex-netherlands-bringing-together-node-and-institutional-perspectives" compact=true %}
@@ -41,7 +43,7 @@ A strategy also depends on people. No single person can see the whole picture. A
 
 Start by building a simple overview of your Node context. You do not need great detail at this stage. Focus on the elements that shape how data is managed in practice and on what may be relevant for coordination at Node level.
 
-Use these questions to guide your first overview.
+Use these questions to guide your first overview. You do not need to fill in all seven areas at once. Start with the three that matter most for your Node and add the others later.
 
 {% include callout.html type="note" content="This chapter takes about 45 minutes to read and get started. Finishing the full exercise usually takes longer. That's fine, pick it back up later." %}
 
