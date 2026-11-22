@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-luxembourg-node-member-onboarding
 type: Real_world_example
-topics: [gaps-to-action, why-strategy]
+topics: [risks, why-strategy]
 ---
 
 **Node**: ELIXIR Luxembourg  
