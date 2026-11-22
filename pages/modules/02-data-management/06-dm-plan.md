@@ -7,7 +7,7 @@ type: Data Management
 audience:
   - Node Coordinators
   - Data Stewards
-time: 45 minutes
+time: 30 minutes
 status: ready
 sidebar: module-data-management
 summary: Turn your selected priorities into a practical plan by defining actions, responsibilities, resources and dependencies.

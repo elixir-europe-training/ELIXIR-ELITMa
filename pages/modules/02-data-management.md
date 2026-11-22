@@ -19,6 +19,8 @@ As you work through the module, you will build the main elements of such a strat
 
 {% include module-chapters.html sidebar="module-data-management" %}
 
+Times are for reading a chapter and doing its exercises on your own. Discussing them with colleagues takes extra time.
+
 Together, these chapters take you from defining the scope of the strategy to putting it into action and keeping it alive as a living document, revisited and updated as your Node's situation changes.
 
 {% include callout.html type="tip" content="You can work through the full module or return to individual chapters when your Node needs to revisit a particular question." %}

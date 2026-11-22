@@ -5,7 +5,7 @@ page_id: mod_dm_3
 page_img: /icons/icon-module-data-management.svg
 type: Data Management
 audience: [Node Coordinators, Data Stewards]
-time: 45 minutes
+time: 60 minutes
 status: ready
 sidebar: module-data-management
 summary: Data management activities often develop separately across governance, services and support structures. This chapter helps you bring these elements together, identify the areas most relevant to your Node and draft a simple strategy outline, using a shared framework called the Global Open Research Commons (GORC) model.
