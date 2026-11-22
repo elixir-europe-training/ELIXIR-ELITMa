@@ -132,7 +132,7 @@ Consider whether you have the following perspectives involved:
 - [ ] A **support or training staff member** who knows what researchers most often ask for help with
 - [ ] An **institutional, infrastructure or community representative** who can bring a perspective from where activities happen in practice  
 
-You do not need everyone involved from the beginning. Start with the perspectives that are most relevant to your current starting point and involve others as needed.
+You do not need everyone involved from the beginning. Start with the perspectives that are most relevant to your current starting point and involve others as needed. Write down names rather than roles. It is easier to ask a person than a role.
 
 {% include example-card.html page_ids="dm-ex-norway-bringing-infrastructures-together, dm-ex-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement" compact=true %}
 
