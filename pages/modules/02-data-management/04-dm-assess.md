@@ -7,7 +7,7 @@ type: Data Management
 audience:
   - Node Coordinators
   - Data Stewards
-time: 45 minutes
+time: 60 minutes
 status: ready
 sidebar: module-data-management
 summary: Use the Data Stewardship Handbook Maturity Model to assess how well selected areas of your Node data management strategy are developed and identify possible areas for improvement.
