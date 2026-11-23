@@ -60,9 +60,12 @@ Ask where Node involvement would add value. The Node might lead, coordinate, con
 
 For example, partner institutions may already provide RDM training. The Node could help make that training easier to find instead of creating a new programme.
 
+Being clear about the Node role also helps manage expectations. A useful strategy should make visible not only what the Node will contribute, but also what will remain with institutions, partners or other organisations.
+
 {% include callout.html type="note" content="Room for improvement does not automatically mean that the Node should take on a new responsibility. Check who is best placed to act." %}
 
-## Clarify the Node role and decision making
+<div class="exercise-box" markdown="1">
+## Exercise: clarify the Node role
 
 Connect each direction to the governance and responsibilities you mapped in Chapter 2.
 
@@ -82,7 +85,7 @@ The level shows where responsibility for this direction currently sits or should
 
 If the decision route is unclear, record that too. You may need to resolve this before moving forward.
 
-Being clear about the Node role also helps manage expectations. A useful strategy should make visible not only what the Node will contribute, but also what will remain with institutions, partners or other organisations.
+</div>
 
 <div class="exercise-box" markdown="1">
 ## Exercise: choose your priorities

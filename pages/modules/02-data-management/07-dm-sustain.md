@@ -27,11 +27,11 @@ A good strategy is not something you finish and file away. It should help you no
 
 ## Keep an eye on progress
 
-Start with the actions in your plan. Decide what would tell you that things are moving.
+Look at the actions in your plan and decide what would show that you are making progress. For example, a decision that has been made, or a service that people can now find. You only need enough information to notice when something needs attention.
 
-That might be a decision that has been made, a responsibility that is now clear, a service that is easier to find or an action that has been completed.
+Put the strategy on the agenda of a meeting you already have, such as the Node coordination meeting or an annual planning session. Ten or fifteen minutes is usually enough. Put it on the agenda sooner when funding or people change.
 
-Keep it simple. You only need enough information to see whether you are making progress or whether something needs attention.
+In that meeting, ask: does our direction still make sense, and do the right people still have the time and responsibility to take it forward? If yes, carry on. If not, update the part that no longer fits.
 
 {% include callout.html type="tip" content="Use information and meetings you already have. Keeping track of the strategy should not become a new reporting system." %}
 
@@ -48,25 +48,13 @@ You do not need the same rhythm for everything. A new activity may need attentio
 
 </div>
 
-## Know when to revisit the strategy
+## When to revisit the strategy
 
-Your Node will not stay the same.
+Your strategy will need updates when things around it change. Funding ends and people move to other roles. New partners or initiatives may also change what is possible. When that happens, go back only to the part of the strategy that is affected. You might reassess one of the areas from Chapter 4, or adjust an action from your plan. You do not need to start again from Chapter 1.
 
-Funding changes. Projects start and finish. People join, move roles or leave. Services develop and new partners or national and ELIXIR initiatives may change what is useful or possible.
-
-These changes do not always mean that the strategy itself is wrong. They may mean that a priority, responsibility or earlier decision needs another look.
-
-Return to the part of the strategy that helps you answer the new question. You might reassess one area, reconsider the Node role or adjust an action. You do not need to start again from Chapter 1.
+A change can also shift who makes decisions or who has time for the work. Check whether it is still clear who is responsible for what. If it is not, agree on this before the work continues.
 
 {% include callout.html type="note" content="A living strategy changes when the context changes. Update what needs attention and leave the rest alone." %}
-
-## Check whether governance still fits
-
-Changes around the Node can also affect who can make decisions and who has the capacity to take work forward.
-
-When you revisit the strategy, check whether the right people are still involved, whether ownership is clear and whether activities still sit at the right level. A project ending, a new funding arrangement or a change in partner organisations may shift responsibilities even when the overall priority stays the same.
-
-If ownership or decision making has become unclear, agree where it should sit before work continues.
 
 ## Make sure it survives a handover
 
@@ -77,20 +65,6 @@ Keep the latest version somewhere people can find it. Record important decisions
 This makes handovers easier too. A new colleague can quickly see what the Node is working towards, what has already been agreed and where they may need to contribute.
 
 {% include callout.html type="tip" content="Make ownership and the review routine visible to more than one person. Continuity should not depend on one colleague remembering what happens next." %}
-
-## Build the review into something you already do
-
-You do not need a separate governance process just to keep the strategy alive.
-
-Use a meeting where Node priorities, resources or responsibilities are already discussed. This might be a Node coordination meeting, steering group meeting, RDM community meeting or annual planning session.
-
-Once or twice a year, give the strategy ten or fifteen minutes on the agenda. Bring it back sooner when there is a major change in funding, projects, people, services or the wider landscape.
-
-Ask one question:
-
-> **Does our direction still make sense, and do the right people still have the responsibility and capacity to take it forward?**
-
-If the answer is yes, carry on. If not, update the part that no longer fits.
 
 ## What you have built
 

@@ -50,13 +50,9 @@ In this chapter, you will use the GORC model to structure the content of your st
 
 ## Using the GORC framework
 
-The Global Open Research Commons (GORC) model provides a common language and structure for describing the technical, organisational and human elements of a research commons.
+The Global Open Research Commons (GORC) model provides a common language for describing the technical, organisational and human elements of a research commons. GORC calls its main building blocks essential elements. Since version 1.1 there are ten.
 
-You will use its essential elements to review your Node context overview, identify relevant areas and organise them within your strategy.
-
-{% include callout.html type="note" content="GORC's own top-level building block is the essential element, ten in total since version 1.1 split Interoperability and Standards & Conventions into two separate elements. Each element is broken down further into (sub)categories, attributes and features. Below, we group the ten elements into three broader clusters for this module; these clusters are our own simplification, not official GORC terminology." %}
-
-The essential elements can be grouped as follows:
+You will use these elements to review your Node context overview, identify relevant areas and organise them within your strategy. To make this easier, this module groups the ten elements into three clusters. The clusters are our own simplification, not official GORC terminology:
 
 | Cluster | Elements | Example |
 | --- | --- | --- |
@@ -72,9 +68,9 @@ Using the framework helps you:
 * see connections between different areas
 * identify which areas are relevant to your strategy
 
-{% include callout.html type="important" content="The GORC model is not prescriptive, focus on the elements that are most relevant to your Node and strategy. Read the Understanding the GORC framework page in detail before starting the exercises below, it explains the essential elements you will need." %}
-
 {% include example-card.html page_ids="dm-dd-gorc-framework, dm-dd-gorc-elixir" compact=true %}
+
+{% include callout.html type="important" content="The GORC model is not prescriptive, focus on the elements that are most relevant to your Node and strategy. Read the Understanding the GORC framework page in detail before starting the exercises below, it explains the essential elements you will need." %}
 
 ## What your GORC mapping could look like
 

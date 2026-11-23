@@ -48,25 +48,11 @@ Use existing structures where you can. A current working group, meeting, service
 
 </div>
 
-## Check what the action depends on
+## Dependencies and action leads
 
-Some actions can begin straight away. Others depend on staff time, expertise, funding, agreement from another organisation or an earlier decision. Be realistic about what is actually available and make these dependencies visible in your plan.
+Some actions can start straight away. Others depend on staff time or on a decision that has not been made yet. Make these dependencies visible in your plan. If something needs to happen first, add it as a step instead of setting a deadline you cannot meet. For example, a shared overview of data stewardship expertise may first need a contact person in each partner institution.
 
-If something needs to happen first, add that to your plan rather than setting an unrealistic deadline.
-
-For example, creating a shared overview of data stewardship expertise may first require contacts in each partner institution who can provide the information.
-
-{% include callout.html type="note" content="A useful plan shows both what you can do and what needs to be resolved before you can move forward." %}
-
-## Keep ownership clear
-
-Someone needs to keep each action moving, but that person does not need to do everything.
-
-The action lead is not necessarily the same as the decision owner you identified in Chapter 5. The decision owner can agree the direction, while the lead keeps the practical work moving.
-
-The lead can bring together contributions from different institutions, follow up on decisions and make sure the next step does not disappear between meetings.
-
-If no one has the time or mandate to lead an action, revisit the plan. The priority may need to wait, become smaller or be taken forward elsewhere.
+Each action also needs someone who keeps it moving. That person does not have to do everything. The action lead is not always the decision owner from Chapter 5: the decision owner agrees the direction, and the lead follows up between meetings. If no one has the time or mandate to lead an action, the priority may need to wait, become smaller or be taken forward elsewhere.
 
 ## What your action plan could look like
 
@@ -76,13 +62,16 @@ If no one has the time or mandate to lead an action, revisit the plan. The prior
 
 The next action can follow from what you learn. You do not need to plan every step in advance.
 
-## Review the plan
+<div class="exercise-box" markdown="1">
+## Reflection: is your plan realistic?
 
 Before moving on, check whether the plan is realistic.
 
 Can the actions start with the people, expertise and resources available? Is the necessary funding or decision making in place? Are important dependencies visible? Is someone clearly taking each action forward?
 
 Adjust the plan if an action is too large or depends on something that has not yet been agreed.
+
+</div>
 
 {% include callout.html type="tip" content="A short plan that people can actually use is more valuable than a detailed plan that quickly becomes outdated." %}
 
