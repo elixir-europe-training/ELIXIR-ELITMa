@@ -277,7 +277,7 @@
 
 - id: gorc-typology
   name: GORC Typology and Definitions (RDA)
-  url: https://www.rd-alliance.org/groups/global-open-research-commons-ig/outputs/
+  url: https://doi.org/10.15497/RDA00087
   description: The Global Open Research Commons essential elements and their definitions, from the RDA GORC Interest Group, including the typology diagram (CC BY 4.0).
   category: external_resource
   module: mod_dm
@@ -291,14 +291,14 @@
 
 - id: gorc-model-report
   name: GORC International Model Report, version 1 (RDA)
-  url: https://www.rd-alliance.org/groups/gorc-international-model-wg/outputs/the-global-open-research-commons-international-model-report-version-1/
+  url: https://doi.org/10.15497/RDA00097
   description: The working group's report on the GORC International Model - its elements and how it was developed.
   category: external_resource
   module: mod_dm
 
 - id: gorc-dsj-article
   name: The Global Open Research Commons International Model (Data Science Journal)
-  url: https://datascience.codata.org/articles/10.5334/dsj-2024-056
+  url: https://doi.org/10.5334/dsj-2024-056
   description: Peer-reviewed article describing the GORC International Model.
   category: external_resource
   module: mod_dm
@@ -306,7 +306,14 @@
 - id: elitma-espoo-materials
   name: ELITMa Espoo workshop materials (2023)
   url: https://doi.org/10.5281/zenodo.10895080
-  description: Training materials, shared notes and Node portfolios from the 2023 Espoo edition of the Node data management strategy module - the source of this module's case studies.
+  description: Training materials, shared notes and Node portfolios from the 2023 Espoo edition of the Node data management strategy module.
+  category: elixir_resource
+  module: mod_dm
+
+- id: elitma-barcelona-materials
+  name: ELITMa Barcelona workshop slides (2026)
+  url: https://doi.org/10.5281/zenodo.23575007
+  description: Slides from the 2026 Barcelona edition of the Node data management strategy module.
   category: elixir_resource
   module: mod_dm
 
@@ -324,9 +331,37 @@
   category: elixir_resource
   module: mod_dm
 
-- id: rda-dmp-common-standard
-  name: RDA DMP Common Standard
-  url: https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard
-  description: A common, machine-actionable data model for Data Management Plans, from the Research Data Alliance.
+- id: openid-connect
+  name: OpenID Connect (OIDC)
+  url: https://openid.net/developers/how-connect-works/
+  description: How the OpenID Connect standard for authentication works.
   category: external_resource
+  module: mod_dm
+
+- id: rdmkit-policy-maker
+  name: "RDMkit - Your role: Policy maker"
+  url: https://rdmkit.elixir-europe.org/policy_maker
+  description: What it takes to set up and align a data management framework for an organisation or project, with links to related RDMkit guidance.
+  category: elixir_resource
+  module: mod_dm
+
+- id: science-europe-rdm-guide
+  name: Science Europe - Practical Guide to the International Alignment of Research Data Management
+  url: https://www.scienceeurope.org/our-resources/practical-guide-to-the-international-alignment-of-research-data-management/
+  description: Core requirements for research data management, useful to check what a strategy or policy usually covers.
+  category: external_resource
+  module: mod_dm
+
+- id: rdmkit-national-resources
+  name: RDMkit - National resources
+  url: https://rdmkit.elixir-europe.org/national_resources
+  description: Country pages with national funders, policies, infrastructure and support for research data management.
+  category: elixir_resource
+  module: mod_dm
+
+- id: rdmkit-costs
+  name: RDMkit - Costs of data management
+  url: https://rdmkit.elixir-europe.org/costs_data_management
+  description: What data management costs and how to plan for them, useful when you list resources and dependencies for actions.
+  category: elixir_resource
   module: mod_dm

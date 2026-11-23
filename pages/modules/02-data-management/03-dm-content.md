@@ -19,9 +19,8 @@ learning_outcomes:
     - Use the Global Open Research Commons model to structure the content of your strategy
     - Select relevant areas and draft a simple outline for your strategy
 ref_to_main_resources:
-  - ds-handbook-maturity-model
-  - gorc-model-1-1
   - gorc-typology
+  - gorc-model-1-1
 ---
 
 

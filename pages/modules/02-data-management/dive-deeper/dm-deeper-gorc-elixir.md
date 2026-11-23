@@ -62,5 +62,3 @@ Select one priority area from your Node context and consider:
 * where further coordination may be needed
 
 Use the result to refine the outline of your Node data management strategy.
-
-Return to <a href="{{ site.baseurl }}/03-dm-content">What to include in your Node data management strategy</a> to apply the framework.

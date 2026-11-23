@@ -6,8 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-norway-turning-compliance-into-cultural-change
 type: Real_world_example
 topics: [priorities]
-ref_to_main_resources:
-  - rda-dmp-common-standard
 ---
 
 **Node**: ELIXIR Norway  
