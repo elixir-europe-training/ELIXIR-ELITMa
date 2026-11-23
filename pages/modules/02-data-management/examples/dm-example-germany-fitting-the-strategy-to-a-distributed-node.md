@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-fitting-the-strategy-to-a-distributed-node
 type: Real_world_example
-topics: [node-context]
+topics: [node-role]
 ---
 
 **Node**: ELIXIR Germany  

@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-training-as-a-starting-point
 type: Real_world_example
-topics: [gaps-to-action, who-to-involve]
+topics: [starting-point]
 ---
 
 **Node**: ELIXIR Germany  

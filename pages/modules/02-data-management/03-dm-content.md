@@ -137,6 +137,8 @@ For each element, describe what is already in place and how it connects to other
 
 </div>
 
+{% include example-card.html page_ids="dm-ex-netherlands-mapping-strengths-and-gaps" compact=true %}
+
 {% include callout.html type="tip" content="Keep your descriptions short and focused. The purpose is to understand the structure, not to assess how well each area is developed." %}
 
 <div class="exercise-box" markdown="1">
@@ -153,6 +155,8 @@ For each selected area, record why it matters, what the strategy should address 
 Use the completed table as a first outline for your strategy. You can add more detail as the strategy develops. There is no single correct outline. When Nodes built their portfolios during the [first edition of this training in Espoo in 2023](https://doi.org/10.5281/zenodo.10895080), each one looked different.
 
 </div>
+
+{% include example-card.html page_ids="dm-ex-netherlands-identifying-where-the-node-can-add-value" compact=true %}
 
 {% include callout.html type="note" content="Aim for a focused outline rather than a complete strategy. Include the areas that are relevant to your Node and useful to address in the strategy." %}
 

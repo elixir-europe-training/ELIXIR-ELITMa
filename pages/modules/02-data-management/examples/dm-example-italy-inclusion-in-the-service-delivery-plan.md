@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-italy-inclusion-in-the-service-delivery-plan
 type: Real_world_example
-topics: [gaps-to-action, who-to-involve]
+topics: [review-point]
 ---
 
 **Node**: ELIXIR Italy  

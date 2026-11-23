@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-building-a-shared-overview
 type: Real_world_example
-topics: [context-overview, initial-team]
+topics: [realistic-plan]
 redirect_from: /dm-example-germany
 ---
 
