@@ -59,7 +59,7 @@ Developing the strategy can already be useful before the document is complete. H
 {% include example-card.html page_ids="dm-ex-germany-connecting-with-national-initiatives, dm-ex-luxembourg-website-as-a-collaboration-platform" compact=true %}
 
 <div class="exercise-box" markdown="1">
-## Quick reflection: risks without a data management strategy
+## Reflection: risks without a data management strategy
 
 Consider your current situation:
 
@@ -96,7 +96,7 @@ You do not need to solve these issues yet. The aim is to be clear about why you 
 {% include callout.html type="tip" content="Keep this lightweight. A clear reason for starting is enough for now." %}
 
 <div class="exercise-box" markdown="1">
-## Quick exercise: starting your strategy
+## Exercise: starting your strategy
 
 Now look at what you can already build on. A strategy links existing work. Nodes often have policies, maturity assessments, training plans and service descriptions. The strategy brings these together and shows how each element contributes to the wider picture.
 
@@ -121,7 +121,8 @@ The aim is not to create a complete inventory. It is to identify where existing 
 
 {% include callout.html type="tip" content="Compare your notes with a colleague. Do you see the same picture, or are there differences in perspective?" %}
 
-## Who to involve
+<div class="exercise-box" markdown="1">
+## Reflection: who to involve
 
 Developing a strategy is not the responsibility of a single role. A small group with different perspectives can help make sure the strategy reflects both the overall direction of the Node and how data management, services and support work in practice.
 
@@ -133,6 +134,8 @@ Consider whether you have the following perspectives involved:
 - [ ] An **institutional, infrastructure or community representative** who can bring a perspective from where activities happen in practice  
 
 You do not need everyone involved from the beginning. Start with the perspectives that are most relevant to your current starting point and involve others as needed. Write down names rather than roles. It is easier to ask a person than a role.
+
+</div>
 
 {% include example-card.html page_ids="dm-ex-norway-bringing-infrastructures-together, dm-ex-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement" compact=true %}
 
