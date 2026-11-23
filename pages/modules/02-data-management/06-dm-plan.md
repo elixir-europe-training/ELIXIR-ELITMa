@@ -73,6 +73,8 @@ Adjust the plan if an action is too large or depends on something that has not y
 
 </div>
 
+{% include example-card.html page_ids="dm-ex-germany-building-a-shared-overview" compact=true %}
+
 {% include callout.html type="tip" content="A short plan that people can actually use is more valuable than a detailed plan that quickly becomes outdated." %}
 
 ## What’s next

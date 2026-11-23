@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-netherlands-identifying-where-the-node-can-add-value
 type: Real_world_example
-topics: [gaps-to-action, existing-work]
+topics: [strategy-outline]
 ---
 
 **Node**: ELIXIR Netherlands  

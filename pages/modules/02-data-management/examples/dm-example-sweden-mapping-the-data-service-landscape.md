@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-sweden-mapping-the-data-service-landscape
 type: Real_world_example
-topics: [context-overview, connections-and-gaps]
+topics: [context-overview]
 ---
 
 **Node**: ELIXIR Sweden  

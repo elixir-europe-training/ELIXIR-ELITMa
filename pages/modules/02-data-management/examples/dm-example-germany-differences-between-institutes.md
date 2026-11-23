@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-differences-between-institutes
 type: Real_world_example
-topics: [starting-point, why-strategy]
+topics: [assessment-findings]
 ---
 
 **Node**: ELIXIR Germany  

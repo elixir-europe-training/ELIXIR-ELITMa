@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-netherlands-mapping-strengths-and-gaps
 type: Real_world_example
-topics: [starting-point, existing-work]
+topics: [gorc-mapping]
 ---
 
 **Node**: ELIXIR Netherlands  

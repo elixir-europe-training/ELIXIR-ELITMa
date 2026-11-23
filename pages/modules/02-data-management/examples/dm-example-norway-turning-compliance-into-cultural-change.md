@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-norway-turning-compliance-into-cultural-change
 type: Real_world_example
-topics: [existing-work, gaps-to-action]
+topics: [priorities]
 ref_to_main_resources:
   - rda-dmp-common-standard
 ---

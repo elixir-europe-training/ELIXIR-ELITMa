@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-norway-bringing-infrastructures-together
 type: Real_world_example
-topics: [who-to-involve, existing-work]
+topics: [connections-and-gaps]
 ---
 
 **Node**: ELIXIR Norway  

@@ -35,8 +35,6 @@ Nodes also differ in how much they can steer. Some can bring partners together a
 
 A strategy also depends on people. No single person can see the whole picture. A small group with different perspectives helps ensure that the strategy reflects both the overall direction of the Node and how data management, services and support work in practice.
 
-{% include example-card.html page_ids="dm-ex-germany-fitting-the-strategy-to-a-distributed-node, dm-ex-netherlands-bringing-together-node-and-institutional-perspectives" compact=true %}
-
 {% include callout.html type="note" content="You do not need a complete or final overview. A simple, shared understanding is enough to get started and can be refined as roles, services and priorities change." %}
 
 <div class="exercise-box" markdown="1">
@@ -58,7 +56,7 @@ Use these questions to guide your first overview. You do not need to fill in all
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-spain-understanding-the-node-rdm-landscape-and-needs, dm-ex-sweden-mapping-the-data-service-landscape, dm-dd-funders-fairification" compact=true %}
+{% include example-card.html page_ids="dm-ex-spain-understanding-the-node-rdm-landscape-and-needs, dm-ex-spain-open-science-resources-in-national-policies, dm-ex-sweden-mapping-the-data-service-landscape, dm-dd-funders-fairification" compact=true %}
 
 {% include callout.html type="tip" content="Use what already exists. Strategies, Service Delivery Plans, surveys, service lists, maturity assessments and earlier mappings can all provide a starting point. The overview does not need to be created from scratch." %}
 
@@ -80,7 +78,7 @@ Before describing something as a gap, check whether the activity or expertise ma
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-germany-linking-node-strategy-services-and-activities, dm-ex-sweden-mapping-the-data-service-landscape" compact=true %}
+{% include example-card.html page_ids="dm-ex-germany-connecting-with-national-initiatives, dm-ex-norway-bringing-infrastructures-together" compact=true %}
 
 {% include callout.html type="warning" content="Do not assume that something is missing simply because it is not yet visible. Check whether the activity, service or expertise already exists elsewhere in the Node." %}
 
@@ -100,8 +98,6 @@ Depending on your context, useful perspectives may include:
 - **National or ELIXIR initiatives**, where wider connections affect the strategy
 
 You do not need all these perspectives in the initial group.
-
-{% include example-card.html page_ids="dm-ex-netherlands-bringing-together-node-and-institutional-perspectives, dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities" compact=true %}
 
 {% include callout.html type="note" content="Focus on the perspectives, knowledge and connections people bring rather than formal roles. A small group can begin the work and help identify who else should contribute." %}
 
@@ -139,7 +135,7 @@ Then agree on a practical way to begin.
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities, dm-ex-netherlands-finding-practical-ways-to-keep-people-involved" compact=true %}
+{% include example-card.html page_ids="dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities, dm-ex-netherlands-finding-practical-ways-to-keep-people-involved, dm-ex-luxembourg-website-as-a-collaboration-platform" compact=true %}
 
 {% include callout.html type="tip" content="Keep the first step manageable. Use existing meetings, documents and working tools where possible, and agree who will capture the discussion and keep the work moving." %}
 

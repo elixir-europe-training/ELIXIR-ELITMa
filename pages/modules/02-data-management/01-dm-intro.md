@@ -37,7 +37,7 @@ Strategy development is often triggered by external drivers such as funder requi
 
 Changes in requirements, services or research practices can also create a practical reason to improve coordination.
 
-{% include example-card.html page_ids="dm-ex-luxembourg-why-a-written-data-management-strategy, dm-ex-sweden-clarifying-the-node-remit, dm-dd-funders-fairification" compact=true %}
+{% include example-card.html page_ids="dm-dd-funders-fairification" compact=true %}
 
 {% include callout.html type="note" content="Developing a strategy is not the responsibility of a single role. It requires input from coordination, data stewardship, technical teams and user-facing support to reflect the full data landscape." %}
 
@@ -53,8 +53,6 @@ A strategy has a few key characteristics:
 - **A living document**: The strategy is light and easy to update. It can begin as a rough outline, a collection of existing materials or another simple working format and develop as the Node grows, new roles appear or priorities shift.
 
 Developing the strategy can already be useful before the document is complete. Having the conversations, mapping existing data management activities and discussing the direction the Node wants to take can make existing work more visible, connect people who do not usually work together and clarify where responsibilities or decisions are still unclear.
-
-{% include example-card.html page_ids="dm-ex-germany-connecting-with-national-initiatives, dm-ex-luxembourg-website-as-a-collaboration-platform" compact=true %}
 
 {% include callout.html type="note" content="A strategy is not a complex policy document. It is a simple way to bring clarity to how data is managed across the Node or institution." %}
 
@@ -74,7 +72,7 @@ Choose one or two risks that matter most for your Node. These can help explain w
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-luxembourg-node-member-onboarding, dm-ex-sweden-training-activity-strategy" compact=true %}
+{% include example-card.html page_ids="dm-ex-luxembourg-why-a-written-data-management-strategy" compact=true %}
 
 <div class="exercise-box" markdown="1">
 ## Exercise: define your reason for starting
@@ -91,7 +89,7 @@ You do not need to solve these issues yet. The aim is to be clear about why you 
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-netherlands-identifying-where-the-node-can-add-value, dm-ex-italy-inclusion-in-the-service-delivery-plan" compact=true %}
+{% include example-card.html page_ids="dm-ex-luxembourg-node-member-onboarding" compact=true %}
 
 {% include callout.html type="tip" content="Keep this lightweight. A clear reason for starting is enough for now." %}
 
@@ -117,7 +115,7 @@ The aim is not to create a complete inventory. It is to identify where existing 
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-spain-rdm-practices-and-challenges, dm-ex-germany-differences-between-institutes" compact=true %}
+{% include example-card.html page_ids="dm-ex-germany-training-as-a-starting-point, dm-ex-germany-linking-node-strategy-services-and-activities, dm-ex-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement" compact=true %}
 
 {% include callout.html type="tip" content="Compare your notes with a colleague. Do you see the same picture, or are there differences in perspective?" %}
 
@@ -137,7 +135,7 @@ You do not need everyone involved from the beginning. Start with the perspective
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-norway-bringing-infrastructures-together, dm-ex-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement" compact=true %}
+{% include example-card.html page_ids="dm-ex-netherlands-bringing-together-node-and-institutional-perspectives" compact=true %}
 
 {% capture perspectives_warning %}
 If only one or two perspectives are represented, important aspects of the data landscape may be missed. If some perspectives are not available within your Node, consider involving relevant partners or checking your emerging strategy with them later. See <a href="{{ site.baseurl }}/dm-deeper-roles-competences">Roles, competences and your Node team</a> for examples of how relevant expertise may sit across different people and organisations.

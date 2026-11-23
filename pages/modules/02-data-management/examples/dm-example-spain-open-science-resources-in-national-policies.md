@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-spain-open-science-resources-in-national-policies
 type: Real_world_example
-topics: [existing-work, starting-point]
+topics: [context-overview]
 ---
 
 **Node**: ELIXIR Spain  

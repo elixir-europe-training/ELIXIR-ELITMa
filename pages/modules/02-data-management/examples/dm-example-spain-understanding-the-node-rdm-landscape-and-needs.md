@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-spain-understanding-the-node-rdm-landscape-and-needs
 type: Real_world_example
-topics: [context-overview, connections-and-gaps]
+topics: [context-overview]
 ---
 
 **Node**: ELIXIR Spain  
@@ -14,7 +14,7 @@ topics: [context-overview, connections-and-gaps]
 
 {% include callout.html type="tip" content="Use a survey to gather input across the Node. Responses can show what is already working, where awareness is limited and which training needs differ between groups." %}
 
-In order to capture Research Data Management (RDM) practices and challenges within the ELIXIR-ES we created and distributed an RDM survey to all Research Groups and Institutions involved in the Service Delivery Plan (SDP) across the Spanish Node, as stated in the examples of Chapter 1. So far we have 12 responses, which represent about 44% of the Node’s Research Groups. The survey considered aspects such as the link between Services from the SDP and the RDM data life cycle, the use and knowledge of RDM practices, resources and tools as well as possible specific training needs across institutions and research groups.
+In order to capture Research Data Management (RDM) practices and challenges within the ELIXIR-ES we created and distributed an RDM survey to all Research Groups and Institutions involved in the Service Delivery Plan (SDP) across the Spanish Node, as described in [ELIXIR Spain: RDM practices and challenges]({{ site.baseurl }}/dm-example-spain-rdm-practices-and-challenges). So far we have 12 responses, which represent about 44% of the Node’s Research Groups. The survey considered aspects such as the link between Services from the SDP and the RDM data life cycle, the use and knowledge of RDM practices, resources and tools as well as possible specific training needs across institutions and research groups.
 
 In terms of findings, the SDP services covered in the survey relate to most stages of the RDM data lifecycle. All respondents confirmed that their Research Group uses RDM practices - mainly trusted repositories, regular data backups and data management plans (DMP). For DMP, there is a mix between the use of project-specific and institution/group-specific templates. RDMkit is the most commonly used ELIXIR tool among respondents, although there seems to be limited awareness or use of other ELIXIR tools. Some respondents were not aware of the RDM community, while others knew about it and expressed interest in participating. Training needs were highlighted by all respondents, mainly focusing on DMPs, RDM and the data lifecycle, and FAIR practices. A few also mentioned interest in training on ethical aspects of RDM and more advanced interoperability concepts. Some Research Groups expressed interest in beginner-level while others requested more advanced training. 
 

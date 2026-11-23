@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-luxembourg-website-as-a-collaboration-platform
 type: Real_world_example
-topics: [existing-work, gaps-to-action]
+topics: [ways-of-working]
 ---
 
 **Node**: ELIXIR Luxembourg  

@@ -48,6 +48,8 @@ You do not need the same rhythm for everything. A new activity may need attentio
 
 </div>
 
+{% include example-card.html page_ids="dm-ex-italy-inclusion-in-the-service-delivery-plan" compact=true %}
+
 ## When to revisit the strategy
 
 Your strategy will need updates when things around it change. Funding ends and people move to other roles. New partners or initiatives may also change what is possible. When that happens, go back only to the part of the strategy that is affected. You might reassess one of the areas from Chapter 4, or adjust an action from your plan. You do not need to start again from Chapter 1.

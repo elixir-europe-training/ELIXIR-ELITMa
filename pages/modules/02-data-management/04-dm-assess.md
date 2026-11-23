@@ -134,6 +134,8 @@ Use a simple table to capture the discussion.
 
 </div>
 
+{% include example-card.html page_ids="dm-ex-spain-rdm-practices-and-challenges" compact=true %}
+
 {% include callout.html type="tip" content="Write down why you selected a maturity level. The discussion and evidence are usually more useful than the level itself." %}
 
 ## Assessing a distributed Node
@@ -190,6 +192,8 @@ Keep these observations with your strategy outline.
 You will use them in the next chapter to decide which areas should be developed further and what a realistic future direction could look like.
 
 </div>
+
+{% include example-card.html page_ids="dm-ex-germany-differences-between-institutes" compact=true %}
 
 {% include callout.html type="note" content="Return to other areas of the Maturity Model when they become relevant." %}
 

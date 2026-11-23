@@ -7,8 +7,7 @@ description: The one-line takeaway, shown on its cards.
 sidebar: module-data-management
 page_id: dm-ex-sweden-clarifying-the-node-remit    # <prefix>-ex-<node>-<topic>
 type: Real_world_example
-topics: [why-strategy, who-to-involve]             # ids from _data/topics/<sidebar>.yml; the first topic
-                                                   # decides where "Back to chapter" goes
+topics: [desired-direction]                        # one id from _data/topics/<sidebar>.yml; it decides where "Back to chapter" goes
 # back_to: mod_dm_1                                # only if the page has no topics (e.g. a case study)
 type_img: /images/icons/icon-module-data-management.svg
 ---

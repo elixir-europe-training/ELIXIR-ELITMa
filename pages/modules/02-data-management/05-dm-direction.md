@@ -50,6 +50,8 @@ For each selected area, describe what you would like to be different and why. Ke
 
 </div>
 
+{% include example-card.html page_ids="dm-ex-sweden-clarifying-the-node-remit" compact=true %}
+
 {% include callout.html type="tip" content="Focus on what you want to achieve. Actions and deadlines come in the next chapter." %}
 
 ## Decide where the Node should act
@@ -87,6 +89,8 @@ If the decision route is unclear, record that too. You may need to resolve this 
 
 </div>
 
+{% include example-card.html page_ids="dm-ex-germany-fitting-the-strategy-to-a-distributed-node, dm-ex-netherlands-deciding-who-the-strategy-is-for" compact=true %}
+
 <div class="exercise-box" markdown="1">
 ## Exercise: choose your priorities
 
@@ -99,6 +103,8 @@ Focus on areas where there is a clear need, where the Node can add value and whe
 | Add a priority | Describe what you want to achieve | Describe the Node contribution | Explain why this matters now |
 
 </div>
+
+{% include example-card.html page_ids="dm-ex-sweden-training-activity-strategy, dm-ex-norway-turning-compliance-into-cultural-change" compact=true %}
 
 {% include callout.html type="tip" content="A short list of realistic priorities is more useful than a long list that cannot be acted on." %}
 
