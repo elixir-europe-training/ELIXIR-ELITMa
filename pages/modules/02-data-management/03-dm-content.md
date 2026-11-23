@@ -11,6 +11,8 @@ sidebar: module-data-management
 summary: Data management activities often develop separately across governance, services and support structures. This chapter helps you bring these elements together, identify the areas most relevant to your Node and draft a simple strategy outline, using a shared framework called the Global Open Research Commons (GORC) model.
 related_pages:
   Dive_deeper:
+  - dm-dd-gorc-framework
+  - dm-dd-gorc-elixir
   - dm-dd-rdm-portfolio
 learning_outcomes:
     - Identify the main elements to include in a Node data management strategy
@@ -29,14 +31,14 @@ In Chapter 1, you set out why your Node needs a data management strategy and ide
 
 This module uses two complementary frameworks:
 
-* **Structuring the content of your strategy** using the [Global Open Research Commons (GORC) International Model]({{ site.baseurl }}/dm-deeper-gorc-framework), developed through a Research Data Alliance (RDA) working group. The GORC model describes *what areas the strategy should cover, and how they relate to each other?*
-* **Assessing selected areas** using the [Maturity Model](https://elixir-europe.github.io/ds-handbook/maturity-model) from the Data Stewardship Handbook. The Maturity Model describes *how well is each area currently developed, and where is there room for improvement?*
+* **Structuring the content of your strategy** using the [Global Open Research Commons (GORC) International Model]({{ site.baseurl }}/dm-deeper-gorc-framework), developed through a Research Data Alliance (RDA) working group. The GORC model describes *what areas the strategy should cover and how they relate to each other*.
+* **Assessing selected areas** using the [Maturity Model](https://elixir-europe.github.io/ds-handbook/maturity-model) from the Data Stewardship Handbook. The Maturity Model describes *how well each area is developed now and where there is room for improvement*.
 
 In this chapter, you will use the GORC model to structure the content of your strategy and identify the areas that are most relevant to your Node. In the next chapter, you will use the Maturity Model to assess how well selected areas are developed and identify possible improvements.
 
 ## Why defining the content matters
 
-- A Node data management strategy works best when it focuses on the areas that are relevant to the Node. It does not need to cover everything, but it should make clear what belongs in the strategy and how the different areas connect.
+- A Node data management strategy works best when it focuses on the areas that are relevant to the Node. It should make clear what belongs in the strategy and how the different areas connect.
 
 - Defining the content means deciding which topics belong in the strategy and how they relate to each other. This helps turn a broad overview of services, roles and activities into a manageable set of strategic areas.
 
@@ -68,9 +70,7 @@ Using the framework helps you:
 * see connections between different areas
 * identify which areas are relevant to your strategy
 
-{% include example-card.html page_ids="dm-dd-gorc-framework, dm-dd-gorc-elixir" compact=true %}
-
-{% include callout.html type="important" content="The GORC model is not prescriptive, focus on the elements that are most relevant to your Node and strategy. Read the Understanding the GORC framework page in detail before starting the exercises below, it explains the essential elements you will need." %}
+{% include callout.html type="important" content="The GORC model is not prescriptive. Focus on the elements that are most relevant to your Node and strategy. Before you start the exercises, read [Understanding the GORC framework](dm-deeper-gorc-framework). It explains the essential elements you will need." %}
 
 ## What your GORC mapping could look like
 
@@ -152,7 +152,7 @@ For each selected area, record why it matters, what the strategy should address 
 | --- | --- | --- | --- |
 | Add a selected area | Explain its relevance at Node level | Note the main topic or question to address | Add relevant roles or groups |
 
-Use the completed table as a first outline for your strategy. You can add more detail as the strategy develops. There is no single correct outline. When Nodes built their portfolios during the [first edition of this training in Espoo in 2023](https://doi.org/10.5281/zenodo.10895080), each one looked different.
+Use the completed table as a first outline for your strategy. You can add more detail as the strategy develops. There is no single correct outline. When Nodes built their [portfolios]({{ site.baseurl }}/dm-deeper-rdm-portfolio) during the [first edition of this training in Espoo in 2023](https://doi.org/10.5281/zenodo.10895080), each one looked different.
 
 </div>
 

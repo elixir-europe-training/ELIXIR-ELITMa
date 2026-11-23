@@ -62,7 +62,7 @@ Ask where Node involvement would add value. The Node might lead, coordinate, con
 
 For example, partner institutions may already provide RDM training. The Node could help make that training easier to find instead of creating a new programme.
 
-Being clear about the Node role also helps manage expectations. A useful strategy should make visible not only what the Node will contribute, but also what will remain with institutions, partners or other organisations.
+Being clear about the Node role also helps manage expectations. A useful strategy shows what the Node will contribute. It also shows what stays with institutions, partners or other organisations.
 
 {% include callout.html type="note" content="Room for improvement does not automatically mean that the Node should take on a new responsibility. Check who is best placed to act." %}
 

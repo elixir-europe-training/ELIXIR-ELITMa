@@ -334,8 +334,8 @@ For templates and other files in `assets/downloads/`. Say what the file is and i
 
 An example page tells how a Node actually did something; a case study is a longer one, often from a workshop. Both are `type: Real_world_example` and live in the module's `examples/` folder – not in the sidebar. Copy `pages/modules/_templates/example.md`.
 
-1. **Name it** like the others: `dm-example-sweden-clarifying-the-node-remit.md`, with `page_id: dm-ex-sweden-clarifying-the-node-remit` (`comms-example-…` / `comm-ex-…` in Communication).
-2. **Say where it belongs.** Give it [topics](#topics) if the module has them – the first topic decides which chapter and section "Back to chapter" returns to. Otherwise (e.g. a case study) set `back_to` to the chapter's `page_id`.
+1. **Name it** like the others: `dm-example-sweden-clarifying-the-node-remit.md`, with `page_id: dm-ex-sweden-clarifying-the-node-remit` (`comms-example-…` / `comm-ex-…` in Communication). The file name is the page's web address, so renaming the file changes its address.
+2. **Say where it belongs.** Give it a [topic](#topics) if the module has topics – the topic decides which chapter and section "Back to chapter" returns to. Otherwise (e.g. a case study) set `back_to` to the chapter's `page_id`.
 3. **Write a one-line `description`** – the takeaway. It's what the card shows.
 4. **Link it from the chapter**, in one of two ways, not both:
    - **in the text**, where the chapter mentions it: a compact [example card](#example-card) (`compact=true`) – one highlighted example per mention;
@@ -347,19 +347,14 @@ Every example also appears on the module's **All examples** page automatically �
 
 Examples can be tagged with **topics** from a fixed list – a controlled vocabulary – kept in `_data/topics/<sidebar>.yml` (for Data management: `_data/topics/module-data-management.yml`). Each topic has an `id`, a `title`, a one-line `description`, and the chapter and section it comes from.
 
-1. Tag an example in its front matter: `topics: [gaps-to-action, who-to-involve]` (ids from the list).
+1. Tag an example with one topic: `topics: [gaps-to-action]` (an id from the list). Use the topic of the orange box (Reflection or Exercise) the example sits under.
 2. Where the "Topics:" line should appear on the page (usually under Node and Authors), write `{% raw %}{% include example-topics.html %}{% endraw %}`. It shows the topics as links.
 
-Every topic gets its own page automatically (`/dm-topic-gaps-to-action`), listing all examples with that topic; the topic chips on **All examples** link to them. These pages aren't in the sidebar. Their "Back to chapter" link goes straight to the topic's section in the chapter, and so does an example's: the data file is the single place that connects an example (through its first topic) to its chapter and section. To add a topic, add it to the data file – its page appears on the next build.
+Every topic gets its own page automatically (`/dm-topic-gaps-to-action`), listing all examples with that topic; the topic chips on **All examples** link to them. These pages aren't in the sidebar. Their "Back to chapter" link goes straight to the topic's section in the chapter, and so does an example's: the data file is the single place that connects an example (through its topic) to its chapter and section. To add a topic, add it to the data file – its page appears on the next build.
 
 ## Dive deeper pages
 
-A longer explanation that goes beyond one chapter – such as Data management's GORC explainers – is a **Dive deeper** page. Copy `pages/modules/_templates/dive-deeper.md` into the module's `dive-deeper/` folder, name it like `dm-deeper-gorc-framework.md` (`page_id: dm-dd-gorc-framework`), and give it `type: Dive_deeper` and `back_to` its chapter. It uses the same card as examples, with a magnifying-glass icon. Where it goes depends on whether readers need it:
-
-- **The chapter needs it at a certain point** (e.g. "read this before the exercises"): put a compact card in the text there – `{% raw %}{% include example-card.html page_ids="dm-dd-gorc-framework" compact=true %}{% endraw %}`.
-- **It's optional further reading**: list it in the chapter's `related_pages` under `Dive_deeper`, and it appears at the end of the chapter under **Dive deeper**.
-
-Use one or the other, not both.
+A longer explanation that goes beyond one chapter – such as Data management's GORC explainers – is a **Dive deeper** page. Copy `pages/modules/_templates/dive-deeper.md` into the module's `dive-deeper/` folder, name it like `dm-deeper-gorc-framework.md` (`page_id: dm-dd-gorc-framework`), and give it `type: Dive_deeper` and `back_to` its chapter. It uses the same card as examples, with a magnifying-glass icon. List it in the chapter's `related_pages` under `Dive_deeper`, so it appears as a card at the end of the chapter under **Dive deeper**. Don't put Dive deeper cards in the text. Where the text really needs the page, link to it in the sentence or callout.
 
 ## Resources
 
