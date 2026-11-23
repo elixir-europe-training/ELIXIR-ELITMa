@@ -59,12 +59,3 @@ Consider:
 * which elements are most relevant to your strategy
 
 Start with the essential elements. Use the detailed International Model only when you need to explore a particular area more closely.
-
-Return to <a href="{{ site.baseurl }}/03-dm-content">What to include in your Node data management strategy</a> to apply the framework.
-
-## Further reading
-
-* [GORC Typology and Definitions](https://www.rd-alliance.org/groups/global-open-research-commons-ig/outputs/)
-* [GORC International Model, version 1.1](https://www.rd-alliance.org/groups/gorc-international-model-wg/outputs/the-global-open-research-commons-international-model-version-1-1/)
-* [GORC International Model Report, version 1](https://www.rd-alliance.org/groups/gorc-international-model-wg/outputs/the-global-open-research-commons-international-model-report-version-1/)
-* [The Global Open Research Commons International Model](https://datascience.codata.org/articles/10.5334/dsj-2024-056)

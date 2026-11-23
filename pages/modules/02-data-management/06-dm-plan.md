@@ -18,6 +18,8 @@ learning_outcomes:
   - Translate selected priorities into concrete actions
   - Identify responsibilities, resources and dependencies
   - Outline a practical plan for further developing the strategy
+ref_to_main_resources:
+  - rdmkit-costs
 ---
 
 

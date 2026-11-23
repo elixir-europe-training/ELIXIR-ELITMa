@@ -9,6 +9,7 @@ back_to: mod_dm_6
 ref_to_main_resources:
   - rdmkit
   - rems
+  - openid-connect
 ---
 
 This case study is based on presentations by Pinar Alper from ELIXIR Luxembourg during the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials and shared notes are available through the [ELITMa Espoo workshop materials](https://doi.org/10.5281/zenodo.10895080).

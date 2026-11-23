@@ -18,6 +18,8 @@ learning_outcomes:
     - Describe the key elements that shape your Node context for data management
     - Identify the perspectives needed to begin developing a Node data management strategy
     - Create a simple overview of your Node context and agree on a practical way to begin
+ref_to_main_resources:
+  - rdmkit-national-resources
 ---
 
 In the previous chapter, you reflected on why a Node data management strategy matters and what already exists in your Node. The next step is to take a closer look at your context and organise this information.

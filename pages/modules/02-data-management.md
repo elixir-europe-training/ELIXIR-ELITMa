@@ -33,7 +33,7 @@ Every chapter uses the same building blocks:
 * **What your ... could look like**: a sample result after an exercise, so you can see what you are aiming for.
 * **Node stories**: cards with a lightbulb, under the reflections and exercises. Each one shows how an ELIXIR Node approached that step in practice.
 * **Dive deeper**: cards with a magnifying glass at the end of a chapter, with more background on a topic.
-* **Further resources**: some chapters end with a table of tools and documents to read and use.
+* **Further resources**: some chapters end with a table of tools and documents to read and use. [All resources]({{ site.baseurl }}/dm-all-resources) shows them together, with materials from the workshop editions of the module.
 
 {% include example-card.html page_id="dm-all-examples" label="Real-world examples" lead="See all Node stories together, grouped by topic." %}
 
