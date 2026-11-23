@@ -37,13 +37,11 @@ Strategy development is often triggered by external drivers such as funder requi
 
 Changes in requirements, services or research practices can also create a practical reason to improve coordination.
 
-{% include example-card.html page_ids="dm-dd-funders-fairification" compact=true %}
-
 {% include callout.html type="note" content="Developing a strategy is not the responsibility of a single role. It requires input from coordination, data stewardship, technical teams and user-facing support to reflect the full data landscape." %}
 
 ## What a data management strategy is and does
 
-The exact format can differ between Nodes. A strategy may be a short standalone document of around 1–3 pages, or a clearly identifiable part of a broader Node plan. See [All examples]({{ site.baseurl }}/dm-all-examples) for examples of how Nodes have approached this.
+The exact format can differ between Nodes. A strategy may be a short standalone document of around 1–3 pages, or a clearly identifiable part of a broader Node plan.
 
 A strategy has a few key characteristics:
 - **A short, practical document**: A strategy outlines the main goals of the Node, the data landscape it serves and the principles that guide its work.
@@ -54,7 +52,7 @@ A strategy has a few key characteristics:
 
 Developing the strategy can already be useful before the document is complete. Having the conversations, mapping existing data management activities and discussing the direction the Node wants to take can make existing work more visible, connect people who do not usually work together and clarify where responsibilities or decisions are still unclear.
 
-{% include callout.html type="note" content="A strategy is not a complex policy document. It is a simple way to bring clarity to how data is managed across the Node or institution." %}
+{% include callout.html type="note" content="A strategy brings clarity to how data is managed across the Node or institution. It can stay short and simple." %}
 
 <div class="exercise-box" markdown="1">
 ## Reflection: risks without a data management strategy

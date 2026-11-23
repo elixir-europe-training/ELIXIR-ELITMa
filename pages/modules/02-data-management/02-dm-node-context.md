@@ -11,6 +11,7 @@ sidebar: module-data-management
 summary: This chapter helps you build a shared understanding of your Node context by mapping governance, services, expertise, connections and gaps. It also guides you in forming an initial team and agreeing on a practical way to begin developing your data management strategy.
 related_pages:
   Dive_deeper: 
+  - dm-dd-funders-fairification
   - dm-dd-distributed-support
   - dm-dd-roles-competences
 learning_outcomes:
@@ -56,7 +57,7 @@ Use these questions to guide your first overview. You do not need to fill in all
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-spain-understanding-the-node-rdm-landscape-and-needs, dm-ex-spain-open-science-resources-in-national-policies, dm-ex-sweden-mapping-the-data-service-landscape, dm-dd-funders-fairification" compact=true %}
+{% include example-card.html page_ids="dm-ex-spain-understanding-the-node-rdm-landscape-and-needs, dm-ex-spain-open-science-resources-in-national-policies, dm-ex-sweden-mapping-the-data-service-landscape" compact=true %}
 
 {% include callout.html type="tip" content="Use what already exists. Strategies, Service Delivery Plans, surveys, service lists, maturity assessments and earlier mappings can all provide a starting point. The overview does not need to be created from scratch." %}
 
