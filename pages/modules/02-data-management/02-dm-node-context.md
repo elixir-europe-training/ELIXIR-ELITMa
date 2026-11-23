@@ -46,8 +46,6 @@ Start by building a simple overview of your Node context. You do not need great 
 
 Use these questions to guide your first overview. You do not need to fill in all seven areas at once. Start with the three that matter most for your Node and add the others later.
 
-{% include callout.html type="note" content="Filling in all seven areas usually takes longer than this chapter's time. That's fine, pick it back up later." %}
-
 | Area | Questions to guide you | Example |
 | --- | --- | --- |
 | **Policies, standards and wider initiatives** | Which institutional, national, funder or ELIXIR policies, standards, strategies and initiatives are relevant? | FAIR principles, national guidelines and the Node Service Delivery Plan |

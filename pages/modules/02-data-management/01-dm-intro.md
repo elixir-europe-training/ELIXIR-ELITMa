@@ -43,8 +43,6 @@ Changes in requirements, services or research practices can also create a practi
 
 ## What a data management strategy is and does
 
-{% include callout.html type="note" content="A strategy is not a complex policy document. It is a simple way to bring clarity to how data is managed across the Node or institution." %}
-
 The exact format can differ between Nodes. A strategy may be a short standalone document of around 1–3 pages, or a clearly identifiable part of a broader Node plan. See [All examples]({{ site.baseurl }}/dm-all-examples) for examples of how Nodes have approached this.
 
 A strategy has a few key characteristics:
@@ -57,6 +55,8 @@ A strategy has a few key characteristics:
 Developing the strategy can already be useful before the document is complete. Having the conversations, mapping existing data management activities and discussing the direction the Node wants to take can make existing work more visible, connect people who do not usually work together and clarify where responsibilities or decisions are still unclear.
 
 {% include example-card.html page_ids="dm-ex-germany-connecting-with-national-initiatives, dm-ex-luxembourg-website-as-a-collaboration-platform" compact=true %}
+
+{% include callout.html type="note" content="A strategy is not a complex policy document. It is a simple way to bring clarity to how data is managed across the Node or institution." %}
 
 <div class="exercise-box" markdown="1">
 ## Reflection: risks without a data management strategy
