@@ -4,7 +4,6 @@ description: How Nodes used a portfolio exercise to explore the scope of their d
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-dd-rdm-portfolio
-redirect_from: /dm-example-rdm-portfolio
 type: Dive_deeper
 back_to: mod_dm_3
 ---

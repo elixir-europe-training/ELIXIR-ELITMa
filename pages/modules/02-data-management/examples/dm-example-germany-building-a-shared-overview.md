@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-germany-building-a-shared-overview
 type: Real_world_example
 topics: [realistic-plan]
-redirect_from: /dm-example-germany
 ---
 
 **Node**: ELIXIR Germany  
