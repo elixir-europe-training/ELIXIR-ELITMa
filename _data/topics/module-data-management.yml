@@ -24,8 +24,8 @@ topics:
     title: Risks
     description: What goes wrong when decisions are made case by case
     chapter: mod_dm_1
-    section: quick-reflection-risks-without-a-data-management-strategy
-    section_title: "Quick reflection: risks without a data management strategy"
+    section: reflection-risks-without-a-data-management-strategy
+    section_title: "Reflection: risks without a data management strategy"
   - id: gaps-to-action
     title: Reason for starting
     description: What made the timing right, and what the strategy had to clarify
@@ -36,14 +36,14 @@ topics:
     title: Starting point
     description: Taking stock of what is already there
     chapter: mod_dm_1
-    section: quick-exercise-starting-your-strategy
-    section_title: "Quick exercise: starting your strategy"
+    section: exercise-starting-your-strategy
+    section_title: "Exercise: starting your strategy"
   - id: who-to-involve
     title: Who to involve
     description: Bringing different perspectives into a small group
     chapter: mod_dm_1
-    section: who-to-involve
-    section_title: Who to involve
+    section: reflection-who-to-involve
+    section_title: "Reflection: who to involve"
   - id: node-context
     title: Node context
     description: Working in a network of partners with their own priorities
@@ -54,14 +54,14 @@ topics:
     title: Context overview
     description: Mapping what partners offer and where support is missing
     chapter: mod_dm_2
-    section: building-a-context-overview
-    section_title: Building a context overview
+    section: exercise-build-a-context-overview
+    section_title: "Exercise: build a context overview"
   - id: connections-and-gaps
     title: Connections and gaps
     description: Telling real gaps apart from things that are hard to find
     chapter: mod_dm_2
-    section: quick-reflection-connections-and-gaps
-    section_title: "Quick reflection: connections and gaps"
+    section: reflection-connections-and-gaps
+    section_title: "Reflection: connections and gaps"
   - id: initial-team
     title: Initial team
     description: Starting with two or three people who see the work differently
@@ -72,5 +72,5 @@ topics:
     title: Ways of working
     description: Agreeing on a first meeting and keeping others involved
     chapter: mod_dm_2
-    section: quick-exercise-planning-how-to-work-together
-    section_title: "Quick exercise: planning how to work together"
+    section: exercise-planning-how-to-work-together
+    section_title: "Exercise: planning how to work together"

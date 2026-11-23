@@ -68,7 +68,7 @@ The lead can bring together contributions from different institutions, follow up
 
 If no one has the time or mandate to lead an action, revisit the plan. The priority may need to wait, become smaller or be taken forward elsewhere.
 
-## What your result could look like
+## What your action plan could look like
 
 | Priority | Action | Lead | Resources and dependencies | Timing |
 | --- | --- | --- | --- | --- |

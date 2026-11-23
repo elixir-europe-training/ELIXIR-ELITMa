@@ -76,7 +76,7 @@ Using the framework helps you:
 
 {% include example-card.html page_ids="dm-dd-gorc-framework, dm-dd-gorc-elixir" compact=true %}
 
-## Example: mapping GORC elements
+## What your GORC mapping could look like
 
 The example below shows how the GORC elements could be mapped. It is illustrative and is not based on a specific ELIXIR Node.
 

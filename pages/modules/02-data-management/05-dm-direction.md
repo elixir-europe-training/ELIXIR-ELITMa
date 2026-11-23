@@ -99,7 +99,7 @@ Focus on areas where there is a clear need, where the Node can add value and whe
 
 {% include callout.html type="tip" content="A short list of realistic priorities is more useful than a long list that cannot be acted on." %}
 
-## What your result could look like
+## What your direction and priorities could look like
 
 Imagine that your assessment showed that data stewardship expertise exists across the Node, but roles and capacity are difficult to find.
 

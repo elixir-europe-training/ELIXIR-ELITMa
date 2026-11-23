@@ -39,7 +39,8 @@ A strategy also depends on people. No single person can see the whole picture. A
 
 {% include callout.html type="note" content="You do not need a complete or final overview. A simple, shared understanding is enough to get started and can be refined as roles, services and priorities change." %}
 
-## Building a context overview
+<div class="exercise-box" markdown="1">
+## Exercise: build a context overview
 
 Start by building a simple overview of your Node context. You do not need great detail at this stage. Focus on the elements that shape how data is managed in practice and on what may be relevant for coordination at Node level.
 
@@ -57,12 +58,14 @@ Use these questions to guide your first overview. You do not need to fill in all
 | **Needs and gaps** | Which questions, support needs or training needs occur across the Node? Where is awareness limited or support difficult to find? | Different levels of awareness and demand for basic and advanced RDM training |
 | **Sustainability** | How are activities funded, staffed and maintained? What is stable, changing or uncertain? | Project funding, limited staff continuity or unclear long-term ownership |
 
+</div>
+
 {% include example-card.html page_ids="dm-ex-spain-understanding-the-node-rdm-landscape-and-needs, dm-ex-sweden-mapping-the-data-service-landscape, dm-dd-funders-fairification" compact=true %}
 
 {% include callout.html type="tip" content="Use what already exists. Strategies, Service Delivery Plans, surveys, service lists, maturity assessments and earlier mappings can all provide a starting point. The overview does not need to be created from scratch." %}
 
 <div class="exercise-box" markdown="1">
-## Quick reflection: connections and gaps
+## Reflection: connections and gaps
 
 Using the areas above, make a rough overview of your current Node context.
 
@@ -98,14 +101,14 @@ Depending on your context, useful perspectives may include:
 - **Institutions or research communities**, to understand how Node activities are experienced in practice
 - **National or ELIXIR initiatives**, where wider connections affect the strategy
 
-You do not need all these perspectives in the initial group. Note who is essential now, who should be consulted and who may become involved later.
+You do not need all these perspectives in the initial group.
 
 {% include example-card.html page_ids="dm-ex-netherlands-bringing-together-node-and-institutional-perspectives, dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities" compact=true %}
 
 {% include callout.html type="note" content="Focus on the perspectives, knowledge and connections people bring rather than formal roles. A small group can begin the work and help identify who else should contribute." %}
 
 <div class="exercise-box" markdown="1">
-## Quick exercise: planning how to work together
+## Exercise: planning how to work together
 
 List the people who may contribute to developing your Node data management strategy.
 
