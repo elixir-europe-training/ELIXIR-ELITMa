@@ -48,6 +48,8 @@ Use existing structures where you can. A current working group, meeting, service
 
 </div>
 
+{% include example-card.html page_ids="dm-ex-netherlands-an-action-plan-for-a-new-role" compact=true %}
+
 ## Dependencies and action leads
 
 Some actions can start straight away. Others depend on staff time or on a decision that has not been made yet. Make these dependencies visible in your plan. If something needs to happen first, add it as a step instead of setting a deadline you cannot meet. For example, a shared overview of data stewardship expertise may first need a contact person in each partner institution.

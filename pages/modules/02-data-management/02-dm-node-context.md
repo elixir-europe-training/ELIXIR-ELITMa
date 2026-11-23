@@ -135,7 +135,7 @@ Then agree on a practical way to begin.
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities, dm-ex-netherlands-finding-practical-ways-to-keep-people-involved, dm-ex-luxembourg-website-as-a-collaboration-platform" compact=true %}
+{% include example-card.html page_ids="dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities, dm-ex-luxembourg-website-as-a-collaboration-platform" compact=true %}
 
 {% include callout.html type="tip" content="Keep the first step manageable. Use existing meetings, documents and working tools where possible, and agree who will capture the discussion and keep the work moving." %}
 

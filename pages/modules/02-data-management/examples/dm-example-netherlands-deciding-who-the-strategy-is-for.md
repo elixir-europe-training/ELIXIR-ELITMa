@@ -6,7 +6,6 @@ sidebar: module-data-management
 page_id: dm-ex-netherlands-deciding-who-the-strategy-is-for
 type: Real_world_example
 topics: [node-role]
-redirect_from: /dm-example-netherlands
 ---
 
 **Node**: ELIXIR Netherlands  
