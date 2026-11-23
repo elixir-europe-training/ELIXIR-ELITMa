@@ -22,8 +22,6 @@ learning_outcomes:
 
 In the previous chapter, you reflected on why a Node data management strategy matters and what already exists in your Node. The next step is to take a closer look at your context and organise this information.
 
-{% include example-card.html page_id="dm-all-examples" label="Real-world examples" lead="Use these for inspiration while you work through this chapter. The examples show how different Nodes explored their context and organised their first steps in practice." %}
-
 ## Why the Node context matters
 
 A data management strategy must reflect the real situation of the Node. Each Node brings together different institutions, services, research communities, projects and national initiatives. These may have their own priorities, responsibilities, resources, ways of working and users that they serve. Without a basic understanding of this landscape, it becomes difficult to define a realistic scope, understand responsibilities or identify where coordination at Node level can add value.

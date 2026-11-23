@@ -25,6 +25,18 @@ Together, these chapters take you from defining the scope of the strategy to put
 
 {% include callout.html type="tip" content="You can work through the full module or return to individual chapters when your Node needs to revisit a particular question." %}
 
+## How the pages work
+
+Every chapter uses the same building blocks:
+
+* **Reflections and exercises**: boxes with an orange edge. A reflection asks you to think about your Node. An exercise asks you to write something down, often in a table.
+* **What your ... could look like**: a sample result after an exercise, so you can see what you are aiming for.
+* **Node stories**: cards with a lightbulb, under the reflections and exercises. Each one shows how an ELIXIR Node approached that step in practice.
+* **Dive deeper**: cards with a magnifying glass at the end of a chapter, with more background on a topic.
+* **Further resources**: some chapters end with a table of tools and documents to read and use.
+
+{% include example-card.html page_id="dm-all-examples" label="Real-world examples" lead="See all Node stories together, grouped by topic." %}
+
 ## What makes this challenging in practice
 
 Developing a Node data management strategy is rarely just about writing a document. Questions may arise about mandate, what belongs at Node level and what sits with institutions or other organisations, differences between partners, coordination, expertise, staff time, funding and realistic expectations.
