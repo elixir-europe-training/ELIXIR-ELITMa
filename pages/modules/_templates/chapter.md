@@ -26,14 +26,11 @@ ref_to_main_resources:                         #   then the "Further resources" 
 
 Open with two or three sentences: what this chapter helps the reader do, and why it matters for a Node.
 
-{% include example-card.html page_id="dm-all-examples" label="Real-world examples" lead="Use these for inspiration while you work through this chapter." %}
-
 ## First section
 
 Teach one idea. Keep paragraphs short.
 
-{% include example-card.html page_ids="dm-ex-sweden-clarifying-the-node-remit" compact=true %}
-
+<!-- Data management: an orange box has a header starting with "Reflection:" or "Exercise:". Node stories go directly after the box, never under a white section. -->
 <div class="exercise-box" markdown="1">
 ## Exercise: a short, active title
 
@@ -43,6 +40,8 @@ Teach one idea. Keep paragraphs short.
    ...
 
 </div>
+
+{% include example-card.html page_ids="dm-ex-sweden-clarifying-the-node-remit" compact=true %}
 
 {% include quick-check.html question="A question about the idea you just taught?" options="Answer one|Answer two|Answer three" correct="2" explain="One or two sentences on why." %}
 
