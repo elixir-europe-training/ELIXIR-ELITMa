@@ -1,0 +1,22 @@
+# Learning pathways for the Data management module. File name matches _data/sidebars/module-data-management.yml.
+# id (used as ?path=<id>), title, description (who it's for), chapters (page_ids in order).
+
+- id: no-strategy-yet
+  title: No strategy yet
+  description: For Nodes that do data management without a shared direction. Find your reason to start, map your context and draft a first outline.
+  chapters: [mod_dm_1, mod_dm_2, mod_dm_3]
+
+- id: ideas-not-written
+  title: Ideas, nothing written down
+  description: For Nodes where people have ideas but nothing is on paper yet. Turn them into an outline and choose your priorities.
+  chapters: [mod_dm_1, mod_dm_3, mod_dm_5]
+
+- id: parts-in-other-plans
+  title: Parts in other plans
+  description: For Nodes whose strategy sits in pieces, for example in the Service Delivery Plan. Collect them, sort them and find the gaps.
+  chapters: [mod_dm_2, mod_dm_3, mod_dm_4]
+
+- id: strategy-in-use
+  title: Written and in use
+  description: For Nodes that already have a strategy and priorities. Check how it works, whether the plan is realistic and when to review it.
+  chapters: [mod_dm_4, mod_dm_6, mod_dm_7]

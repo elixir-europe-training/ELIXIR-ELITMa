@@ -85,4 +85,4 @@ Adjust the plan if an action is too large or depends on something that has not y
 
 You now have a practical plan for moving your selected priorities forward.
 
-In the next chapter, you will consider how to monitor progress, review the strategy and keep it useful over time.
+[Chapter 7]({{ site.baseurl }}/07-dm-sustain) helps you decide how to check progress and when to review the strategy.

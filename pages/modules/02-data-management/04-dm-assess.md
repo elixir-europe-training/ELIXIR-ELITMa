@@ -201,4 +201,4 @@ You will use them in the next chapter to decide which areas should be developed 
 
 You have used the Maturity Model to look more closely at selected areas of your strategy. You now have a clearer picture of what is already working, where practices differ and where there may be room for improvement.
 
-In the next chapter, you will use this assessment to decide where your Node wants to go and which areas should be developed further.
+These findings are the input for choosing a direction and priorities in [Chapter 5]({{ site.baseurl }}/05-dm-direction).

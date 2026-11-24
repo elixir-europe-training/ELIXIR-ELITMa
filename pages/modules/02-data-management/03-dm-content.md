@@ -161,4 +161,4 @@ Use the completed table as a first outline for your strategy. You can add more d
 
 ## What’s next
 
-You have identified the main areas to include in your strategy and created a first outline. In the next chapter, you will use the Maturity Model from the Data Stewardship Handbook to assess how well selected areas are developed and identify possible improvements.
+You have identified the main areas to include in your strategy and created a first outline. [Chapter 4]({{ site.baseurl }}/04-dm-assess) helps you look at how well some of these areas work now, and [Chapter 5]({{ site.baseurl }}/05-dm-direction) helps you choose a direction for them.

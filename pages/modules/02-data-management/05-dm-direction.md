@@ -120,4 +120,4 @@ This does not require a new data stewardship service. The Node can add value by 
 
 ## What’s next
 
-You have defined a desired direction, clarified the Node role and chosen the priorities you want to take forward. In the next chapter, you will turn these priorities into a practical plan.
+You have defined a desired direction, clarified the Node role and chosen the priorities you want to take forward. [Chapter 6]({{ site.baseurl }}/06-dm-plan) helps you turn them into actions with a lead and a timeframe.
