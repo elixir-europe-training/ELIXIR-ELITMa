@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Netherlands: using an initial meeting to identify priorities"
-description: "The initial meeting does not need to produce a complete strategy."
+description: "A first meeting on a new role looked for quick wins and priorities."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities
@@ -12,7 +12,7 @@ topics: [ways-of-working]
 **Authors**: Mijke Jetten, data stewardship liaison and deputy training coordinator  
 {% include example-topics.html %}
 
-{% include callout.html type="note" content="The initial meeting does not need to produce a complete strategy. Use it to compare perspectives, identify first priorities and agree on an immediate next step." %}
+{% include callout.html type="note" content="The initial meeting does not need to produce a complete strategy. Comparing views and agreeing on one next step is enough." %}
 
 The first meeting was organised to discuss the responsibilities and initial priorities of the newly appointed data stewardship liaison, rather than to write a Node data management strategy. The meeting brought together the Head of Node, the data stewardship liaison and a data management expert from one university medical centre.
 

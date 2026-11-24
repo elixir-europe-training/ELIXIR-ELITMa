@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Netherlands: identifying where the Node can add value"
-description: "Use a rough first version to start the conversation."
+description: "Ideas stayed in conversations until someone wrote them down."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-netherlands-identifying-where-the-node-can-add-value
@@ -12,7 +12,7 @@ topics: [strategy-outline]
 **Authors**: Mijke Jetten, data stewardship liaison and deputy training coordinator  
 {% include example-topics.html %}
 
-{% include callout.html type="tip" content="Use a rough first version to start the conversation. It does not need to be complete. Its main value is to make ideas concrete enough for others to react, correct and build on." %}
+{% include callout.html type="tip" content="Use a rough first version to start the conversation. It does not need to be complete. People react more easily to something on paper." %}
 
 One thing we noticed quickly was that everyone in the Node already had ideas about coordination, support and data management, but most of these ideas stayed in conversations. We talked about visibility, training, tools and governance, but it was difficult to move from general discussions to concrete next steps.
 

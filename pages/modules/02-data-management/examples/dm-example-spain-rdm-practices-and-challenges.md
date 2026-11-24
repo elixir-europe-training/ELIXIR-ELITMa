@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Spain: RDM practices and challenges"
-description: "A survey can provide evidence for future RDM priorities."
+description: "Setting up a survey on how research groups across the Node manage data."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-spain-rdm-practices-and-challenges
@@ -12,7 +12,7 @@ topics: [assessment]
 **Authors**: Laura Portell, RDM liaison  
 {% include example-topics.html %}
 
-{% include callout.html type="tip" content="A survey can provide evidence for future RDM priorities. It helps move from assumptions about needs to a clearer picture of practices, gaps and support needs across the Node." %}
+{% include callout.html type="tip" content="A survey gives evidence for future RDM priorities, instead of assumptions about what groups need." %}
 
 The methodology to capture Research Data Management (RDM) practices and challenges within the ELIXIR Spain Node is based on a structured survey distributed to all Node members and groups involved in the Service Delivery Plan (SDP). The survey aims to identify current strengths, gaps, challenges and opportunities related to RDM across the Node. It can be completed either by Principal Investigators (PIs) or by group members who are most familiar with the group’s RDM practices and SDP-related resources.
 

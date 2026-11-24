@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Germany: differences between institutes"
-description: "Do not assume that all institutes organise RDM in the same way."
+description: "A look across partner institutes at who does RDM support, and how."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-differences-between-institutes
@@ -12,7 +12,7 @@ topics: [assessment-findings]
 **Authors**: Helena Schnitzer, training platform coordinator and liaison for RDM related questions  
 {% include example-topics.html %}
 
-{% include callout.html type="important" content="Do not assume that all institutes organise RDM in the same way. Understanding local differences helps identify where shared support or coordination can add value." %}
+{% include callout.html type="warning" content="Do not assume that all institutes organise RDM in the same way. Knowing the differences shows where shared support would actually help." %}
 
 When looking across partner institutes, it became clear that RDM is organised in different ways. Institutes differ in their available support structures, distribution of responsibilities and level of established RDM activities.
 

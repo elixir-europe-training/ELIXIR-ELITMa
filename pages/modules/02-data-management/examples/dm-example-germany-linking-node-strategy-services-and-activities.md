@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Germany: linking Node strategy, services and activities"
-description: "Link strategic priorities to existing services, training and expertise."
+description: "How the Service Delivery Plan connects Node services to strategic goals."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-linking-node-strategy-services-and-activities

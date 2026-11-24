@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Sweden: clarifying the Node remit"
-description: "Vision and mission statements can help clarify what a team works on, why it matters and who the work is for."
+description: "When the team grew from two to five people, roles were unclear."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-sweden-clarifying-the-node-remit
@@ -12,7 +12,7 @@ topics: [desired-direction]
 **Authors**: Elin Kronander and Niclas Jareborg, heads of data management  
 {% include example-topics.html %}
 
-{% include callout.html type="important" content="Vision and mission statements can help clarify what a team works on, why it matters and who the work is for." %}
+{% include callout.html type="tip" content="A vision and mission statement can help a growing team agree what it works on and for whom." %}
 
 During 2020 the Data management staff of the Swedish Node went from two to five persons; from a pair of persons having unspoken and not well-defined remits and roles, to a team that needed more clarity on what to work with and why. Our approach to bring more clarity was to organise a workshop around Vision and Mission statements for the team. The Vision statement defined a desired future position and Mission defined overall objectives to work towards the Vision, and approaches to reaching them. 
 

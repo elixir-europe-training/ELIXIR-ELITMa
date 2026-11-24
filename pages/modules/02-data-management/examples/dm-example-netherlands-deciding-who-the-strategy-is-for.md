@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Netherlands: deciding who the strategy is for"
-description: "Decide early who the strategy should support."
+description: "What should the Node add when institutions already have RDM support?"
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-netherlands-deciding-who-the-strategy-is-for

@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Netherlands: an action plan for a new role"
-description: "An action plan only moves if someone has time to carry it out."
+description: "What happened to an action plan in the first months of a new role."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-netherlands-an-action-plan-for-a-new-role
@@ -12,7 +12,7 @@ topics: [action-plan]
 **Authors**: Mijke Jetten, data stewardship liaison and deputy training coordinator  
 {% include example-topics.html %}
 
-{% include callout.html type="tip" content="An action plan only moves if someone has time to carry it out. Check whether the lead has dedicated hours before you set deadlines." %}
+{% include callout.html type="warning" content="An action plan only moves if someone has time to carry it out. Check whether the lead has dedicated hours before you set deadlines." %}
 
 I started as data stewardship liaison for ELIXIR Netherlands in the second quarter of 2026. My role is to connect people who work on data stewardship in the partner organisations. After a first meeting with one of our Heads of Node and a data management expert, I wrote an action plan for my role. One priority comes from the ELIXIR Netherlands strategy: make data stewardship expertise and resources easier to find.
 
