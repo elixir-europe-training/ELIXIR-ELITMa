@@ -59,7 +59,11 @@ The elements are connected. Services depend on infrastructure, standards support
 
 The framework helps you group related activities and responsibilities, see how different areas connect and decide which areas are relevant to your strategy.
 
-{% include callout.html type="important" content="The GORC model is not prescriptive. Focus on the elements that are most relevant to your Node and strategy. Before you start the exercises, read [Understanding the GORC framework]({{ site.baseurl }}/dm-deeper-gorc-framework). It explains the essential elements you will need." %}
+{% capture gorc_note %}
+The GORC model is not prescriptive. Focus on the elements that are most relevant to your Node and strategy. Before you start the exercises, read <a href="{{ site.baseurl }}/dm-deeper-gorc-framework">Understanding the GORC framework</a>. It explains the essential elements you will need.
+{% endcapture %}
+
+{% include callout.html type="important" content=gorc_note %}
 
 ## What your GORC mapping could look like
 
