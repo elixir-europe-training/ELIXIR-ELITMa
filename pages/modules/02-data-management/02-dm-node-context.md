@@ -142,6 +142,6 @@ Then agree on a practical way to begin.
 
 ## What’s next
 
-You now have a first overview of your Node context, the main connections and gaps, and the people who can help shape the strategy. In the next chapter, you will use this overview to decide what the strategy should cover and begin structuring its content.
+You now have a first overview of your Node context, the main connections and gaps, and the people who can help shape the strategy. You will use this overview when you decide what the strategy should cover, in [Chapter 3]({{ site.baseurl }}/03-dm-content).
 
-{% include callout.html type="important" content="Keep your context overview and first working arrangements available for the next chapter. They are working documents that can be refined as you make choices about the strategy and involve more people." %}
+{% include callout.html type="important" content="Keep your context overview and first working arrangements at hand. They are working documents that can be refined as you make choices about the strategy and involve more people." %}

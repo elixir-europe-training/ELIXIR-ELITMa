@@ -15,6 +15,12 @@ It is also different from a **data management policy**, which typically sets out
 
 As you work through the module, you will build the main elements of such a strategy. You can start from scratch, build on existing strategies, policies or plans, or return to individual chapters when a particular question needs attention.
 
+## Where do you want to start?
+
+Work through the whole module, or pick the pathway closest to where your Node is today. On a pathway, each chapter shows your step and the next chapter on your route, and you can leave it at any time.
+
+{% include module-pathways.html sidebar="module-data-management" %}
+
 ## What to expect
 
 {% include module-chapters.html sidebar="module-data-management" %}
@@ -22,8 +28,6 @@ As you work through the module, you will build the main elements of such a strat
 Times are for reading a chapter and doing its exercises on your own. Discussing them with colleagues takes extra time.
 
 Together, these chapters take you from defining the scope of the strategy to putting it into action and keeping it alive as a living document, revisited and updated as your Node's situation changes.
-
-{% include callout.html type="tip" content="You can work through the full module or return to individual chapters when your Node needs to revisit a particular question." %}
 
 ## How the pages work
 
