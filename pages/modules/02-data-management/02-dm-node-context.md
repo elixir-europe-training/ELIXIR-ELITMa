@@ -8,7 +8,7 @@ audience: [Node Coordinators, Data Stewards]
 time: 60 minutes 
 status: ready
 sidebar: module-data-management
-summary: This chapter helps you build a shared understanding of your Node context by mapping governance, services, expertise, connections and gaps. It also guides you in forming an initial team and agreeing on a practical way to begin developing your data management strategy.
+summary: A strategy has to fit the Node as it really is. In this chapter you map your Node context and look at where things connect and where the gaps are. You then turn the names from Chapter 1 into a small team that agrees how to begin.
 related_pages:
   Dive_deeper: 
   - dm-dd-funders-fairification
@@ -16,13 +16,13 @@ related_pages:
   - dm-dd-roles-competences
 learning_outcomes:
     - Describe the key elements that shape your Node context for data management
-    - Identify the perspectives needed to begin developing a Node data management strategy
-    - Create a simple overview of your Node context and agree on a practical way to begin
+    - Make a first overview of your Node context, with its connections and gaps
+    - Choose two or three people to start with and agree how you will work together
 ref_to_main_resources:
   - rdmkit-national-resources
 ---
 
-In the previous chapter, you reflected on why a Node data management strategy matters and what already exists in your Node. The next step is to take a closer look at your context and organise this information.
+In [Chapter 1]({{ site.baseurl }}/01-dm-intro), you reflected on why a Node data management strategy matters and what already exists in your Node. The next step is to take a closer look at your context and organise this information.
 
 ## Why the Node context matters
 
@@ -30,7 +30,7 @@ A data management strategy must reflect the real situation of the Node. Each Nod
 
 Much of the relevant work may already exist, but it can be spread across organisations, projects or teams and may not be visible to everyone. Understanding the Node context helps identify existing expertise, services and connections before deciding that something new is needed.
 
-A Node strategy should complement institutional, project-level and national approaches rather than replace them. The aim is not to make every organisation work in the same way, but to identify shared goals, useful connections, dependencies and areas where greater clarity or coordination is needed.
+A Node strategy should complement institutional, project-level and national approaches rather than replace them. Partners can keep their own ways of working. The strategy looks for shared goals and for places where more coordination would help.
 
 Nodes also differ in how much they can steer. Some can bring partners together and set a shared direction. Others, especially federated Nodes, mainly support institutions that make their own choices. In that case, the strategy focuses on what the Node can offer.
 
@@ -41,19 +41,19 @@ A strategy also depends on people. No single person can see the whole picture. A
 <div class="exercise-box" markdown="1">
 ## Exercise: build a context overview
 
-Start by building a simple overview of your Node context. You do not need great detail at this stage. Focus on the elements that shape how data is managed in practice and on what may be relevant for coordination at Node level.
+Start with the items you listed in [Chapter 1]({{ site.baseurl }}/01-dm-intro) and place them in the table. Build a simple overview of your Node context. You do not need great detail at this stage. Focus on the elements that shape how data is managed in practice and on what may be relevant for coordination at Node level.
 
 Use these questions to guide your first overview. You do not need to fill in all seven areas at once. Start with the three that matter most for your Node and add the others later.
 
-| Area | Questions to guide you | Example |
+| Area | Questions to guide you | This could be |
 | --- | --- | --- |
 | **Policies, standards and wider initiatives** | Which institutional, national, funder or ELIXIR policies, standards, strategies and initiatives are relevant? | FAIR principles, national guidelines and the Node Service Delivery Plan |
-| **Governance and responsibilities** | Who makes decisions about data management? Where are these discussed or approved? Which responsibilities sit at Node, institutional, project or service level? | Decisions made by the Node coordinator and steering group, with services managed by partner institutions |
+| **Governance and responsibilities** | Who makes decisions about data management? Where are these discussed or approved? Which responsibilities sit at Node, institutional, project or service level? | Decisions made by the Node Coordinator and steering group, with services managed by partner institutions |
 | **Data and research landscape** | Which research domains, communities, data types and workflows are present? Are there important differences between institutions or groups? | Life sciences and clinical data managed through different institutional workflows |
 | **Services, tools and expertise** | Which services, tools, training activities and areas of expertise already exist or are being developed? Who provides, uses and maintains them? | Repository, helpdesk, training programme and expertise in Data Management Plans |
 | **Connections and dependencies** | How do services, teams and activities relate to each other? Where do they depend on one another or contribute to shared goals? | Two teams with different remits jointly supporting parts of the research data lifecycle |
 | **Needs and gaps** | Which questions, support needs or training needs occur across the Node? Where is awareness limited or support difficult to find? | Different levels of awareness and demand for basic and advanced RDM training |
-| **Sustainability** | How are activities funded, staffed and maintained? What is stable, changing or uncertain? | Project funding, limited staff continuity or unclear long-term ownership |
+| **Sustainability** | How are activities funded, staffed and maintained? What is stable, changing or uncertain? | Project funding, limited staff continuity or no one responsible in the long term |
 
 </div>
 
@@ -71,11 +71,11 @@ As a starting point, reflect on:
 - What already seems strong or well organised?
 - Which activities, services or people are already connected?
 - Where do activities overlap, and is this overlap useful or unnecessary?
-- What exists but is difficult to find, insufficiently connected or unclear in ownership?
+- What exists but is difficult to find, poorly connected or without a clear person responsible?
 - Where are there genuine gaps in expertise, services, support or coordination?
 - Are there important differences between institutions, communities or user groups?
 
-Before describing something as a gap, check whether the activity or expertise may already exist elsewhere in the Node. Keep your notes short and practical. The goal is not completeness, but a shared understanding of what is connected, unclear or missing.
+Keep your notes short and practical. A shared picture of what works and what is missing is enough.
 
 </div>
 
@@ -85,7 +85,7 @@ Before describing something as a gap, check whether the activity or expertise ma
 
 ## Building the initial team
 
-Once you have a basic understanding of your Node context, bring together a small group to take the work forward. Use the context overview you built earlier in this chapter to identify which perspectives are needed at the start.
+Once you have a basic understanding of your Node context, bring together a small group to take the work forward. Start from the names you wrote down in [Chapter 1]({{ site.baseurl }}/01-dm-intro). Use the context overview you built earlier in this chapter to identify which perspectives are needed at the start.
 
 Begin with two or three people. They do not need to represent the whole Node or form the final working group. They should be able to compare different views of the Node, identify important questions or areas to explore and recognise who else needs to be involved.
 
@@ -100,7 +100,7 @@ Depending on your context, useful perspectives may include:
 
 You do not need all these perspectives in the initial group.
 
-{% include callout.html type="note" content="Focus on the perspectives, knowledge and connections people bring rather than formal roles. A small group can begin the work and help identify who else should contribute." %}
+{% include callout.html type="note" content="Look at the knowledge and connections people bring, not at their formal role." %}
 
 <div class="exercise-box" markdown="1">
 ## Exercise: planning how to work together

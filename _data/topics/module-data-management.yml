@@ -23,7 +23,7 @@ topics:
     section: exercise-define-your-reason-for-starting
     section_title: "Exercise: define your reason for starting"
   - id: starting-point
-    title: Starting point
+    title: Starting your strategy
     description: Taking stock of what is already there
     chapter: mod_dm_1
     section: exercise-starting-your-strategy
@@ -47,7 +47,7 @@ topics:
     section: reflection-connections-and-gaps
     section_title: "Reflection: connections and gaps"
   - id: ways-of-working
-    title: Ways of working
+    title: Working together
     description: Agreeing on a first meeting and keeping others involved
     chapter: mod_dm_2
     section: exercise-planning-how-to-work-together
