@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Sweden: mapping the data service landscape"
-description: "Create the overview together."
+description: "Two teams mapped their RDM services together on one wall."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-sweden-mapping-the-data-service-landscape
@@ -12,9 +12,9 @@ topics: [context-overview]
 **Authors**: Elin Kronander and Niclas Jareborg, heads of data management  
 {% include example-topics.html %}
 
-{% include callout.html type="tip" content="Create the overview together. Mapping services in an in-person workshop can reveal connections and gaps that are difficult to identify from separate lists." %}
+{% include callout.html type="tip" content="Create the overview together. In one room, people spot connections that separate lists hide." %}
 
-The Swedish node in ELIXIR is constituted by NBIS (National Bioinformatics Infrastructure Sweden) which is a national research infrastructure providing bioinformatics and data science support to the Swedish life science research community. NBIS is also the bioinformatics platform for SciLifeLab, the distributed national research infrastructure for molecular biosciences in Sweden. 
+The Swedish Node in ELIXIR is constituted by NBIS (National Bioinformatics Infrastructure Sweden) which is a national research infrastructure providing bioinformatics and data science support to the Swedish life science research community. NBIS is also the bioinformatics platform for SciLifeLab, the distributed national research infrastructure for molecular biosciences in Sweden. 
 
 Within SciLifeLab, RDM services are offered by both a Data management unit in NBIS and by SciLifeLab Data Centre, which is a central function within SciLifeLab. The two functions are separate organisational entities but collaborate quite a lot to provide RDM support to Swedish life science researchers. They have different remits, but are to some extent dependent on each other for delivering these services. And even though communication works well, there were gaps in understanding the teams of what relevant services were operated or being developed by one or the other. 
 
@@ -24,4 +24,4 @@ To tackle this, we organised a workshop to visualise the landscape of existing a
 
 *Figure: Swedish research data services mapped across the research data life cycle. Source: ELIXIR Sweden.*
 
-Creating this joint visual map in an in-person group setting helped establishing a shared understanding of the landscape of the available service across the two groups that we operate to be able to provide our joint support functionality.
+Creating this joint visual map in an in-person group setting helped establish a shared understanding of the landscape of the available services across the two groups that we operate to be able to provide our joint support functionality.

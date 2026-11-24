@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Italy: inclusion in the Service Delivery Plan"
-description: "A formal process can help clarify how services are classified, reviewed and included in wider Node and ELIXIR planning."
+description: "Clear rules for which services go into the Service Delivery Plan."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-italy-inclusion-in-the-service-delivery-plan
@@ -12,7 +12,7 @@ topics: [review-point]
 **Authors**: Flavio Licciulli, data steward  
 {% include example-topics.html %}
 
-{% include callout.html type="important" content="A formal process can help clarify how services are classified, reviewed and included in wider Node and ELIXIR planning." %}
+{% include callout.html type="tip" content="A formal process with quality checks makes decisions about services easier to explain." %}
 
 As ELIXIR Italy, we offer data resources, tools, courses and services to the Italian life sciences community, providing stable and sustainable access to biological data. The ELIXIR Italy General Assembly decided to establish a formal process for classifying the services provided by the Node members and for their inclusion in the Service Delivery Plan (SDP). To support this process, the local Technical Coordinators Group and Platform leaders developed a document defining a set of Quality Management (QM) parameters. These QM parameters are applied to ensure that the services offered by the six ELIXIR Italy Platforms (Compute, Data, Interoperability, Tools, Omics, and Training) meet the standards required for service validation and labelling. Services are classified into three levels: 
 1. ELIXIR Italy resources: registered in bio.tools/FAIRSharing;

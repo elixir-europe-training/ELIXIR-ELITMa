@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Germany: connecting with national initiatives"
-description: "Node strategy work does not happen in isolation."
+description: "The Node compared notes with national research data initiatives."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-connecting-with-national-initiatives
@@ -12,7 +12,7 @@ topics: [connections-and-gaps]
 **Authors**: Helena Schnitzer, training platform coordinator and liaison for RDM related questions  
 {% include example-topics.html %}
 
-{% include callout.html type="note" content="Node strategy work does not happen in isolation. National initiatives can help identify existing expertise, overlaps and useful connections." %}
+{% include callout.html type="tip" content="Look beyond the Node. National initiatives can show where expertise already exists and where work overlaps." %}
 
 The research data management landscape in Germany is shaped by several initiatives, including the National Research Data Infrastructure (NFDI) and its domain-specific consortia. To better understand the wider landscape, we started exploring connections with these initiatives and exchanging information about ongoing activities, services and approaches.
 

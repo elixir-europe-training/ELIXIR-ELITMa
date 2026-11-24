@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Norway: turning compliance into cultural change"
-description: "Link services to needs that researchers already recognise."
+description: "A funder requirement got researchers to use a new service."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-norway-turning-compliance-into-cultural-change
@@ -12,7 +12,7 @@ topics: [priorities]
 **Authors**: Federico Bianchini, data steward and deputy training coordinator  
 {% include example-topics.html %}
 
-{% include callout.html type="tip" content="Link services to needs that researchers already recognise. This can make data management support easier to understand and use." %}
+{% include callout.html type="tip" content="Link services to needs that researchers already recognise. Then the service solves a problem instead of adding a task." %}
 
 It is oftentimes extremely challenging to push for cultural changes in the way research is conducted, especially when the research community does not see an immediate value in using the services offered. One way to address this is to offer a service as a direct solution to one of the obligations researchers have to fulfil as part of their job. 
 

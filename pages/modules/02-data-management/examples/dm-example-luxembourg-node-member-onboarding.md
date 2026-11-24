@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Luxembourg: Node member onboarding"
-description: "Onboarding can reveal strategic gaps."
+description: "An onboarding document showed what the Node never agreed on."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-luxembourg-node-member-onboarding
@@ -12,11 +12,11 @@ topics: [gaps-to-action]
 **Authors**: Hana Marčetić and Vilem Ded, data steward liaisons  
 {% include example-topics.html %}
 
-{% include callout.html type="important" content="Onboarding can reveal strategic gaps. Questions about membership, access, responsibilities and sign off often show where governance needs to be made explicit." %}
+{% include callout.html type="tip" content="Use onboarding as a test of your governance. If you cannot say who counts as a member or who grants access, write it down." %}
 
 One concrete example of where the gap shows up came from a recent exercise. We set out to put together an onboarding document for new Node members. Something that should, in principle, be straightforward. In practice, it surfaced a number of questions we did not have clear answers to.
 
-One example of these question is: 'who actually counts as a Node member?' With two organisations involved, the boundaries are less obvious than they used to be. Then there were the practical questions around formalities like 'is there anything a new member is expected to sign, and if so, what?' Access rights raised a similar set of questions: 'which systems and resources should a new member get access to, and at what point in the onboarding process?' And around all of that, the governance questions of 'who can request access on someone's behalf, who actually grants it, and who signs it off?'
+One example of these questions is: 'who actually counts as a Node member?' With two organisations involved, the boundaries are less obvious than they used to be. Then there were the practical questions around formalities like 'is there anything a new member is expected to sign, and if so, what?' Access rights raised a similar set of questions: 'which systems and resources should a new member get access to, and at what point in the onboarding process?' And around all of that, the governance questions of 'who can request access on someone's behalf, who actually grants it, and who signs it off?'
 
 The onboarding document begins to answer some of the questions above by defining the membership criteria, integration expectations, required accounts and access to resources, and newcomer's responsibilities.
 

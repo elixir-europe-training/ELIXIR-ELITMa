@@ -1,9 +1,9 @@
 ---
-title: "ELIXIR Netherlands: bringing together Node and institutional perspectives"
-description: "Start with two or three people who see the Node from different perspectives."
+title: "ELIXIR Netherlands: combining Node and institutional views"
+description: "A first small group combined the Node and institutional views."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
-page_id: dm-ex-netherlands-bringing-together-node-and-institutional-perspectives
+page_id: dm-ex-netherlands-combining-node-and-institutional-views
 type: Real_world_example
 topics: [who-to-involve]
 ---

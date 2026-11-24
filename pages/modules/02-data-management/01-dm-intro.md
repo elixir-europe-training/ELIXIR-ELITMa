@@ -109,7 +109,7 @@ You do not need a complete inventory. Look for where existing work can be connec
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-germany-training-as-a-starting-point, dm-ex-germany-linking-node-strategy-services-and-activities, dm-ex-spain-research-data-management-training-to-boost-capacity-building-and-community-engagement" compact=true %}
+{% include example-card.html page_ids="dm-ex-germany-training-as-a-starting-point, dm-ex-germany-linking-node-strategy-services-and-activities, dm-ex-spain-rdm-training-to-build-capacity-and-community" compact=true %}
 
 {% include callout.html type="tip" content="Compare your notes with a colleague. Do you see the same picture, or are there differences in perspective?" %}
 
@@ -129,7 +129,7 @@ You do not need everyone involved from the beginning. Start with the perspective
 
 </div>
 
-{% include example-card.html page_ids="dm-ex-netherlands-bringing-together-node-and-institutional-perspectives" compact=true %}
+{% include example-card.html page_ids="dm-ex-netherlands-combining-node-and-institutional-views" compact=true %}
 
 {% capture perspectives_warning %}
 If only one or two perspectives are represented, important aspects of the data landscape may be missed. If some perspectives are not available within your Node, consider involving relevant partners or checking your emerging strategy with them later. See <a href="{{ site.baseurl }}/dm-deeper-roles-competences">Roles, competences and your Node team</a> for examples of how relevant expertise may sit across different people and organisations.

@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Germany: building a shared overview"
-description: "Expect that keeping an overview up to date is harder than building it."
+description: "A small group set out to map who does what in RDM across institutes."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-building-a-shared-overview
@@ -12,7 +12,7 @@ topics: [realistic-plan]
 **Authors**: Helena Schnitzer, training platform coordinator and liaison for RDM related questions  
 {% include example-topics.html %}
 
-{% include callout.html type="tip" content="Start small and share early, but expect that keeping an overview up to date is harder than building it. People who know the local structures, such as principal investigators, can help you move forward." %}
+{% include callout.html type="tip" content="Start small and share early. Collecting tools and contacts can take longer than you expect. People who know the local structures, such as principal investigators, can help." %}
 
 In ELIXIR Germany, a lot of research data management work was already happening, but we did not have a clear overview of who was doing what. Different institutes had their own tools, websites and local solutions, and the information was often difficult to find. We wanted to create a shared overview with links, contacts and existing RDM resources in one place, and use it to start conversations between teams.
 

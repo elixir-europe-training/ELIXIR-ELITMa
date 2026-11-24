@@ -1,6 +1,6 @@
 ---
 title: "ELIXIR Germany: fitting the strategy to a distributed Node"
-description: "A Node strategy should complement existing institutional approaches rather than replace them."
+description: "One Node strategy for many different partner institutions."
 type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-germany-fitting-the-strategy-to-a-distributed-node
@@ -12,7 +12,7 @@ topics: [node-role]
 **Authors**: Helena Schnitzer, training platform coordinator and liaison for RDM related questions  
 {% include example-topics.html %}
 
-{% include callout.html type="important" content="A Node strategy should complement existing institutional approaches rather than replace them. Shared direction does not require one uniform approach across all partner institutions." %}
+{% include callout.html type="important" content="A Node strategy should add to what institutions already do. Partners can share a direction and still work in their own way." %}
 
 ELIXIR Germany is a distributed Node with several partner institutions contributing expertise, services and activities. This structure is an important factor when considering a Node Data Management Strategy. 
 
