@@ -8,7 +8,7 @@ audience: [Node Coordinators, Data Stewards]
 time: 60 minutes
 status: ready
 sidebar: module-data-management
-summary: Data management activities often develop separately across governance, services and support structures. This chapter helps you bring these elements together, identify the areas most relevant to your Node and draft a simple strategy outline, using a shared framework called the Global Open Research Commons (GORC) model.
+summary: Data management work in a Node often grows in separate places. In this chapter you sort what you found in Chapter 2 with the GORC model, a framework from the Research Data Alliance. You end with a first outline of what your strategy should cover.
 related_pages:
   Dive_deeper:
   - dm-dd-gorc-framework
@@ -24,7 +24,7 @@ ref_to_main_resources:
 ---
 
 
-In Chapter 1, you set out why your Node needs a data management strategy and identified a starting point. In Chapter 2, you developed a first overview of your Node context and identified the people who can help move the work forward. In this chapter, you will use that overview to identify and organise the main areas to include in your strategy.
+In [Chapter 1]({{ site.baseurl }}/01-dm-intro), you set out why your Node needs a data management strategy and identified a starting point. In [Chapter 2]({{ site.baseurl }}/02-dm-node-context), you developed a first overview of your Node context and identified the people who can help move the work forward. In this chapter, you will use that overview to identify and organise the main areas to include in your strategy.
 
 ## Two complementary frameworks
 
@@ -33,29 +33,23 @@ This module uses two complementary frameworks:
 * **Structuring the content of your strategy** using the [Global Open Research Commons (GORC) International Model]({{ site.baseurl }}/dm-deeper-gorc-framework), developed through a Research Data Alliance (RDA) working group. The GORC model describes *what areas the strategy should cover and how they relate to each other*.
 * **Assessing selected areas** using the [Maturity Model](https://elixir-europe.github.io/ds-handbook/maturity-model) from the Data Stewardship Handbook. The Maturity Model describes *how well each area is developed now and where there is room for improvement*.
 
-In this chapter, you will use the GORC model to structure the content of your strategy and identify the areas that are most relevant to your Node. In the next chapter, you will use the Maturity Model to assess how well selected areas are developed and identify possible improvements.
+In this chapter, you will use the GORC model to structure the content of your strategy and identify the areas that are most relevant to your Node. In [Chapter 4]({{ site.baseurl }}/04-dm-assess), you use the Maturity Model to assess how well selected areas are developed.
 
 ## Why defining the content matters
 
-- A Node data management strategy works best when it focuses on the areas that are relevant to the Node. It should make clear what belongs in the strategy and how the different areas connect.
+A Node data management strategy works best when it focuses on the areas that matter for your Node and shows how they connect. Defining the content means deciding which topics belong in the strategy. That turns a broad overview of services and activities into a manageable set of strategic areas. Without a clear scope, you may overlook important areas or take on too much at once. A clear scope also helps you connect existing work and see where more coordination is needed.
 
-- Defining the content means deciding which topics belong in the strategy and how they relate to each other. This helps turn a broad overview of services, roles and activities into a manageable set of strategic areas.
-
-- Without a clear scope, important areas may be overlooked or too many topics may be addressed at once. A defined scope helps you connect existing work and identify where greater clarity or coordination may be needed.
-
-- Scope is also about who the strategy is for: the people who work in the Node, or also the institutions and researchers it supports. Decide this early. A strategy written only for the Node team can end up with different rules than the rest of an institution.
-
-- It also makes the strategy easier to discuss with the people involved. They can see which areas are included, why they matter and where their input is needed.
+Scope is also about who the strategy is for: only the people who work in the Node, or also the institutions and researchers it supports. Decide this early. A strategy written only for the Node team can end up with different rules than the rest of an institution. Scope also makes the strategy easier to discuss. People can see which areas are included, why they matter and where their input is needed.
 
 {% include callout.html type="note" content="You do not need to cover everything. A focused strategy that reflects your Node context is more useful than a complete but unrealistic overview." %}
 
 ## Using the GORC framework
 
-The Global Open Research Commons (GORC) model provides a common language for describing the technical, organisational and human elements of a research commons. GORC calls its main building blocks essential elements. Since version 1.1 there are ten.
+The Global Open Research Commons (GORC) model provides a common language for describing the technical, organisational and human elements of a research commons. GORC calls its main building blocks essential elements. The International Model has ten.
 
 You will use these elements to review your Node context overview, identify relevant areas and organise them within your strategy. To make this easier, this module groups the ten elements into three clusters. The clusters are our own simplification, not official GORC terminology:
 
-| Cluster | Elements | Example |
+| Cluster | Elements | This could be |
 | --- | --- | --- |
 | Technical elements | Compute, storage, network and authentication and authorisation infrastructure (AAI); services and tools; research objects | A national compute cluster, a metadata catalogue, a shared data platform |
 | Interoperability and standards | Interoperability; Standards & Conventions | Common metadata schemas, persistent identifiers, shared vocabularies |
@@ -63,17 +57,13 @@ You will use these elements to review your Node context overview, identify relev
 
 The elements are connected. Services depend on infrastructure, standards support interoperability and governance and human capacity shape how the commons works in practice.
 
-Using the framework helps you:
+The framework helps you group related activities and responsibilities, see how different areas connect and decide which areas are relevant to your strategy.
 
-* group related activities and responsibilities
-* see connections between different areas
-* identify which areas are relevant to your strategy
-
-{% include callout.html type="important" content="The GORC model is not prescriptive. Focus on the elements that are most relevant to your Node and strategy. Before you start the exercises, read [Understanding the GORC framework](dm-deeper-gorc-framework). It explains the essential elements you will need." %}
+{% include callout.html type="important" content="The GORC model is not prescriptive. Focus on the elements that are most relevant to your Node and strategy. Before you start the exercises, read [Understanding the GORC framework]({{ site.baseurl }}/dm-deeper-gorc-framework). It explains the essential elements you will need." %}
 
 ## What your GORC mapping could look like
 
-The example below shows how the GORC elements could be mapped. It is illustrative and is not based on a specific ELIXIR Node.
+This is how the GORC elements could be mapped. The table is illustrative and not based on a specific ELIXIR Node.
 
 | GORC element | Current situation | Connections |
 | --- | --- | --- |
@@ -88,12 +78,10 @@ The example below shows how the GORC elements could be mapped. It is illustrativ
 | Engagement | Collaboration with research communities, participation in ELIXIR Platforms and other European networks, and community driven initiatives | Engagement connects community needs and feedback with services, training, governance and strategic priorities |
 | Sustainability | Institutional, national and project based funding, with activities embedded in national and European infrastructures | Sustainability supports the continuity of services, infrastructure, expertise and coordination |
 
-{% include callout.html type="note" content="This is an illustrative example. You do not need to map every element. Select the elements that are most relevant to your Node and strategy." %}
-
 <div class="exercise-box" markdown="1">
 ## Reflection: recognise the GORC elements
 
-Take your notes from Chapter 2 and sort them under the GORC elements. Using these shared elements gives your strategy a structure others recognise, and helps you spot areas you missed.
+Take your notes from [Chapter 2]({{ site.baseurl }}/02-dm-node-context) and sort them under the GORC elements. Using these shared elements gives your strategy a structure others recognise, and helps you spot areas you missed.
 
 The table shows where most of your notes belong:
 
@@ -105,7 +93,7 @@ The table shows where most of your notes belong:
 | Services, tools and expertise | Services and tools; Compute, storage, network and AAI; Human capacity |
 | Sustainability | Sustainability |
 
-Two areas from Chapter 2 have no GORC element of their own, but you still need them:
+Two areas from [Chapter 2]({{ site.baseurl }}/02-dm-node-context) have no GORC element of their own, but you still need them:
 
 1. Connections and dependencies show how the elements depend on each other. Keep these notes for the Connections column in the next exercise.
 2. Needs and gaps show where your Node most needs attention. In the next exercise you select two or three elements to work on. Start with the ones where your needs and gaps are. For example, if researchers ask for more RDM training, Human capacity is a good place to start.
@@ -121,7 +109,7 @@ Record your initial observations. You will use them in the next exercise.
 
 </div>
 
-{% include callout.html type="tip" content="Not sure what counts as a GORC element? Use the examples in the table above as a starting point. Focus on how the different parts of your Node connect, you do not need to describe every activity in detail." %}
+{% include callout.html type="tip" content="Not sure what counts as a GORC element? Use the examples in the table above as a starting point. Focus on how the different parts of your Node connect. You do not need to describe every activity in detail." %}
 
 <div class="exercise-box" markdown="1">
 ## Exercise: map selected GORC elements
@@ -151,13 +139,17 @@ For each selected area, record why it matters, what the strategy should address 
 | --- | --- | --- | --- |
 | Add a selected area | Explain its relevance at Node level | Note the main topic or question to address | Add relevant roles or groups |
 
-Use the completed table as a first outline for your strategy. You can add more detail as the strategy develops. There is no single correct outline. When Nodes built their [portfolios]({{ site.baseurl }}/dm-deeper-rdm-portfolio) during the [first edition of this training in Espoo in 2023](https://doi.org/10.5281/zenodo.10895080), each one looked different.
+Use the completed table as a first outline for your strategy. You can add more detail as the strategy develops.
 
 </div>
 
 {% include example-card.html page_ids="dm-ex-netherlands-identifying-where-the-node-can-add-value" compact=true %}
 
-{% include callout.html type="note" content="Aim for a focused outline rather than a complete strategy. Include the areas that are relevant to your Node and useful to address in the strategy." %}
+{% capture outline_note %}
+There is no single correct outline. When Nodes built their <a href="{{ site.baseurl }}/dm-deeper-rdm-portfolio">portfolios</a> during the <a href="https://doi.org/10.5281/zenodo.10895080">first edition of this training in Espoo in 2023</a>, each one looked different.
+{% endcapture %}
+
+{% include callout.html type="note" content=outline_note %}
 
 ## What’s next
 
