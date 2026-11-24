@@ -303,6 +303,27 @@
   category: external_resource
   module: mod_dm
 
+- id: elixir-core-data-resources
+  name: ELIXIR Core Data Resources
+  url: https://elixir-europe.org/platforms/data/core-data-resources
+  description: Data resources of fundamental importance to the life sciences, selected through an ELIXIR-wide process with independent reviewers.
+  category: elixir_resource
+  module: mod_dm
+
+- id: elixir-fair-enabling-resources
+  name: ELIXIR FAIR-Enabling Resources (formerly Recommended Interoperability Resources)
+  url: https://elixir-europe.org/platforms/interoperability/rirs
+  description: Tools and registries that support FAIR data, selected by external reviewers.
+  category: elixir_resource
+  module: mod_dm
+
+- id: ls-login
+  name: Life Science Login
+  url: https://lifescience-ri.eu/ls-login/
+  description: Shared login service for life science research infrastructures. It replaced the ELIXIR AAI in 2022.
+  category: elixir_resource
+  module: mod_dm
+
 - id: elitma-espoo-materials
   name: ELITMa Espoo workshop materials (2023)
   url: https://doi.org/10.5281/zenodo.10895080

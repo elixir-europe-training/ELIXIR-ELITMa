@@ -33,7 +33,7 @@ For a Node data management strategy, this broader view is useful. It helps you l
 
 * **The essential elements form one connected system.** The original GORC typology presents nine broad elements covering technical, organisational and human aspects.
 
-* **The nine elements provide a practical structure.** These are compute, storage, network and authentication and authorisation infrastructure (AAI), services and tools, research objects, interoperability and standards, governance structures, rules of participation and access, engagement, human capacity and sustainability.
+* **The nine elements of the typology provide a practical structure.** These are compute, storage, network and authentication and authorisation infrastructure (AAI), services and tools, research objects, interoperability and standards, governance structures, rules of participation and access, engagement, human capacity and sustainability.
 
 <img src="{{ '/images/data-management/GORC-model-essential-elements.png' | relative_url }}" alt="Diagram showing the nine GORC essential elements as connected technical, organisational and human components." class="img-fluid my-3">
 
@@ -43,7 +43,7 @@ For a Node data management strategy, this broader view is useful. It helps you l
 
 * **Technical and organisational elements are interdependent.** Services depend on infrastructure, standards, expertise and sustainable resources. Research objects depend on standards, tools and clear access arrangements. Governance influences priorities and responsibilities, while engagement helps ensure that services respond to community needs.
 
-* **The detailed International Model goes further.** Version 1.1 separates interoperability from standards and conventions, resulting in ten main sections. It also adds detailed categories, attributes, features and possible indicators.
+* **The detailed International Model goes further.** It separates interoperability from standards and conventions, which gives ten essential elements. This module uses those ten. It also adds detailed categories, attributes, features and possible indicators.
 
 * **GORC is descriptive, not prescriptive.** It is not a certification or ranking system and does not require every element to be addressed in the same way. It provides a structure for discussion, reflection and priority setting.
 
