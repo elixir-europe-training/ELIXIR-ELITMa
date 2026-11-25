@@ -10,7 +10,7 @@ audience:
 time: 30 minutes
 status: ready
 sidebar: module-data-management
-summary: Define how your Node will monitor progress, review the strategy and keep it relevant as priorities, needs and circumstances change.
+summary: What happens to the strategy when people leave or funding ends? In this last chapter you add a review point to your plan, decide when to revisit the strategy and make sure the work carries on.
 related_pages:
   Dive_deeper:
   - dm-dd-sustain-models

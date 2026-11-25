@@ -10,7 +10,7 @@ audience:
 time: 45 minutes
 status: ready
 sidebar: module-data-management
-summary: Use the results of your assessment to define a desired direction, clarify the Node role and identify priorities for further development.
+summary: A higher maturity level is not always the goal. This chapter helps you decide what you want to change, what role the Node should play and which areas to take forward. The result is a short list of priorities, each with someone who can agree it.
 related_pages:
   Dive_deeper: 
   - dm-dd-roles-competences
