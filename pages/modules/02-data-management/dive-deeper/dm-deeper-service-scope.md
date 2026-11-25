@@ -10,21 +10,15 @@ back_to: mod_dm_5
 
 This case study draws on presentations and discussions from the Espoo edition of the ELIXIR Node Data Management Strategy (NDMS) module in 2023. The original training materials and shared notes are available through the [ELITMa Espoo workshop materials](https://doi.org/10.5281/zenodo.10895080).
 
-A recurring question during the workshop was simple: if researchers need better RDM support, does that mean the Node should provide it?
+One question came back often during the workshop: if researchers need better RDM support, should the Node provide it? When ELIXIR Sweden started to define its RDM support, the Node asked who it served, what its mandate was, what researchers needed, which services already existed elsewhere, and what it could offer with its staff and funding.
 
-One example came from ELIXIR Sweden, where the Node had started to define its RDM support by asking practical questions: who do we serve, what is our mandate, what do researchers need, which services already exist elsewhere and what can we realistically offer with the staff and funding available?
-
-Here, **mandate** means the authority and remit a Node has to act. These questions helped participants distinguish between identifying a need and deciding what the Node should actually take responsibility for.
+A Node's **mandate** is the authority and remit it has to act. These questions helped participants separate two things: seeing a need, and deciding what the Node should take responsibility for.
 
 ## Why is this relevant?
 
-Finding a gap does not automatically mean creating a new Node service.
+Finding a gap does not automatically mean creating a new Node service. Researchers may, for example, need better support with data management planning, metadata or data deposition. That support might already exist within universities, national infrastructures or ELIXIR. The problem may instead be that researchers cannot find it, that responsibilities are unclear or that support is fragmented.
 
-Researchers may, for example, need better support with data management planning, metadata or data deposition. That support might already exist within universities, national infrastructures or ELIXIR. The problem may instead be that researchers cannot find it, that responsibilities are unclear or that support is fragmented.
-
-This changes the question from *what is missing?* to *what should the Node contribute?*
-
-The answer will differ between Nodes. Their mandate, national context, expertise, capacity and relationships with other organisations are different.
+This changes the question from *what is missing?* to *what should the Node contribute?* The answer will differ between Nodes, because their mandate, national context, expertise, capacity and relationships with other organisations differ.
 
 ## What can Nodes learn from this?
 
@@ -40,12 +34,8 @@ Participants also stressed that not every Node needs the same set of functions. 
 
 ## What can you do?
 
-Take one of the areas for improvement you have identified and work through the questions above.
+Take one of the areas for improvement you have identified and work through the steps above.
 
-Suppose researchers have difficulty finding suitable data deposition support. Before adding a new deposition service to your strategy, check what is already available. You may find that repositories already exist and that the real problem is choosing between them or finding the right expertise.
+Suppose researchers have difficulty finding suitable data deposition support. Before adding a new deposition service to your strategy, check what is already available. You may find that repositories already exist and that the real problem is choosing between them or finding the right expertise. In that case, the Node might add more value by connecting researchers to existing support than by creating another service.
 
-In that case, the Node might add more value by connecting researchers to existing support than by creating another service.
-
-Use the same reasoning for your other areas for improvement. This should help you decide where the Node should take a stronger role, where coordination is enough and where responsibility is better left elsewhere.
-
-Together, these choices define the **service scope** of your strategy: the areas where the Node intends to contribute and the type of role it wants to take.
+Use the same reasoning for your other areas for improvement. This should help you decide where the Node should take a stronger role, where coordination is enough and where responsibility is better left elsewhere. Together, these choices define the **service scope** of your strategy: the areas where the Node intends to contribute and the type of role it wants to take.

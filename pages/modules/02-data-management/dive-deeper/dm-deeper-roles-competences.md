@@ -22,13 +22,10 @@ This also helps avoid assuming that every gap needs to be solved by creating a n
 
 ## What can Nodes learn from this?
 
-Looking at competences rather than only job titles can give a more useful picture of what a Node can already do.
-
-During the Espoo workshop, participants considered areas such as policy and strategy, compliance, FAIR data, services, infrastructure, knowledge management, networking and archiving. Different Nodes had different strengths, and some competences were clearly available outside the formal Node team.
-
-A missing competence can therefore lead to different responses. It might be developed through training, accessed through another partner, covered through collaboration or shared across organisations. In some cases, additional capacity may indeed be needed, but this is only one option.
-
-The important question is whether the Node can access the expertise needed to support its intended activities.
+- **Competences say more than job titles.** Looking at competences gives a more useful picture of what a Node can already do.
+- **Different Nodes have different strengths.** In Espoo, participants looked at areas such as policy and strategy, compliance, FAIR data, services, infrastructure, knowledge management, networking and archiving. Some competences were clearly available outside the formal Node team.
+- **A missing competence has more than one answer.** It might be developed through training, accessed through another partner, covered through collaboration or shared across organisations. Sometimes extra capacity is needed, but that is only one option.
+- **The key question is access.** Can the Node reach the expertise it needs for its intended activities?
 
 ## What can you do?
 
