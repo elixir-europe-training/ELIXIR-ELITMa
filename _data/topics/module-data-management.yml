@@ -86,8 +86,8 @@ topics:
     title: Assessment findings
     description: Differences between institutions, and what they mean for coordination
     chapter: mod_dm_4
-    section: reflection-what-did-you-learn
-    section_title: "Reflection: what did you learn?"
+    section: reflection-what-did-the-assessment-show
+    section_title: "Reflection: what did the assessment show?"
   - id: desired-direction
     title: Desired direction
     description: Describing what should be different, and why
