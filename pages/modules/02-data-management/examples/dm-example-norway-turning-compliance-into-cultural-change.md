@@ -20,4 +20,4 @@ We present here the case of ELIXIR Norway and the Data Stewardship Wizard as an 
 
 Shortly after these requirements were introduced, ELIXIR Norway started advertising for practical workshops to create DMPs that conform to the aforementioned standard. These workshops were very successful among life scientists and contributed to spreading the usage of the Data Stewardship Wizard (DSW) across the country. Our national instance now has more than 750 active users and over 1000 projects (DMPs). 
 
-The workshop also helped to push more generally various crucial concepts of data management, including the usage of standards and controlled terminology, and the importance of data submission to relevant domain repositories.
+The workshops also helped to spread key data management concepts more widely, such as the use of standards and controlled terminology, and the importance of submitting data to relevant domain repositories.

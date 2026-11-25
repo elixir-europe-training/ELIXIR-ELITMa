@@ -359,6 +359,13 @@
   category: external_resource
   module: mod_dm
 
+- id: ds-pack-article
+  name: "DS-PACK: Tool assembly for controlled access human data sharing (Scientific Data)"
+  url: https://doi.org/10.1038/s41597-024-03326-9
+  description: Article by ELIXIR Luxembourg on the tools and processes behind its controlled-access data sharing service.
+  category: elixir_resource
+  module: mod_dm
+
 - id: rdmkit-policy-maker
   name: "RDMkit - Your role: Policy maker"
   url: https://rdmkit.elixir-europe.org/policy_maker

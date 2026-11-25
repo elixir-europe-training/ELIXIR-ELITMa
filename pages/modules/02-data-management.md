@@ -7,11 +7,9 @@ summary: This module introduces the key steps for developing a simple and practi
 permalink: /modules/data-management/
 ---
 
-This module takes you through the main steps for developing or refining a Node data management strategy.
+A **Node data management strategy** describes how a Node wants to organise, support and develop data management across its activities and partnerships. It is broader than a **Data Management Plan** (DMP), which usually focuses on how data will be managed within a specific research project. A Node strategy looks across projects and institutions and considers priorities, responsibilities, services, expertise, resources and longer-term development.
 
-A **Node data management strategy** describes how a Node wants to organise, support and develop data management across its activities and partnerships. It is broader than a **Data Management Plan** (DMP), which usually focuses on how data will be managed within a specific research project. A Node strategy looks across projects and institutions and considers priorities, responsibilities, services, expertise, resources and longer term development.
-
-It is also different from a **data management policy**, which typically sets out formal rules or commitments, for example those required by a funder or hosting institution. A Node may already have one or more such policies in place through its hosting institution or partner organisations. A strategy works alongside these policies rather than replacing them, helping to coordinate priorities, activities and responsibilities for data management across the Node.
+It is also different from a **data management policy**, which typically sets out formal rules or commitments, for example those required by a funder or hosting institution. A Node may already have one or more such policies in place through its hosting institution or partner organisations. A strategy works alongside these policies and does not replace them. It helps to coordinate priorities, activities and responsibilities for data management across the Node.
 
 As you work through the module, you will build the main elements of such a strategy. You can start from scratch, build on existing strategies, policies or plans, or return to individual chapters when a particular question needs attention.
 
@@ -27,7 +25,7 @@ Work through the whole module, or pick the pathway closest to where your Node is
 
 Times are for reading a chapter and doing its exercises on your own. Discussing them with colleagues takes extra time.
 
-Together, these chapters take you from defining the scope of the strategy to putting it into action and keeping it alive as a living document, revisited and updated as your Node's situation changes.
+Together, the chapters take you from defining the scope of the strategy to putting it into action and keeping it up to date as your Node changes.
 
 ## How the pages work
 
@@ -62,7 +60,7 @@ A Node data management strategy usually touches more than one role, institution 
 Take a minute to think about your starting point.
 
 * Do you already have a strategy or related documents? Check with your Node Coordinator, or look for a Service Delivery Plan, an institutional RDM policy or notes from an earlier survey.
-* Who else should be involved? Think of specific people rather than just roles, for example whoever manages your repository, your institution's data protection contact or a researcher who has struggled with data management support.
+* Who else should be involved? Think of specific people, not just roles, for example whoever manages your repository, your institution's data protection contact or a researcher who has struggled with data management support.
 * Which responsibilities sit with the Node, and which sit elsewhere?
 * Is there a current challenge or opportunity that makes this work timely?
 
@@ -89,7 +87,7 @@ A few terms are used in a specific way throughout the module:
 
 ## Ready?
 
-In Chapter 1, you will look at why a Node data management strategy can be useful and what you want it to help your Node achieve.
+In [Chapter 1]({{ site.baseurl }}/01-dm-intro), you will look at why a Node data management strategy can be useful and what you want it to help your Node achieve.
 
 <a href="{{ '/01-dm-intro' | relative_url }}" class="btn-download"><i class="fa-solid fa-arrow-right"></i>Start with Chapter 1</a>
 
