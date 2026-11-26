@@ -393,3 +393,31 @@
   description: What data management costs and how to plan for them, useful when you list resources and dependencies for actions.
   category: elixir_resource
   module: mod_dm
+
+- id: elixir-services-list
+  name: ELIXIR Services
+  url: https://elixir-europe.org/services
+  description: The services that ELIXIR Nodes list in their Service Delivery Plans, searchable by Node and topic.
+  category: elixir_resource
+  module: mod_dm
+
+- id: elixir-node-service-selection
+  name: ELIXIR Node Service Selection Process
+  url: https://elixir-europe.org/platforms/interoperability/guides/node-service-selection-process
+  description: How a Node can select services for its Service Delivery Plan, and what ELIXIR expects of them.
+  category: elixir_resource
+  module: mod_dm
+
+- id: elixir-infrastructure-services
+  name: ELIXIR Infrastructure Services
+  url: https://elixir-europe.org/how-we-work/scientific-programme/technology
+  description: How ELIXIR funds the running and maintenance of key services that many ELIXIR activities depend on.
+  category: elixir_resource
+  module: mod_dm
+
+- id: elixir-nodes
+  name: ELIXIR Nodes
+  url: https://elixir-europe.org/about-us/who-we-are/nodes
+  description: All ELIXIR Nodes, with links to each Node's page, if you want to read more about a specific Node.
+  category: elixir_resource
+  module: mod_dm
