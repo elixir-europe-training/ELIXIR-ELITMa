@@ -7,7 +7,7 @@
 # chapter / section: the chapter (page_id) and the header in it (heading id) the topic comes from.
 # section_title is the exact header text. "Back to chapter" goes straight to that header.
 # When a header is renamed, update section and section_title too.
-# gaps-to-action is older than its title: keep the id, so addresses keep working.
+# id is the title in lowercase with hyphens. When a title changes, change the id too, here and in every story that uses it.
 prefix: dm
 topics:
   - id: risks
@@ -16,13 +16,13 @@ topics:
     chapter: mod_dm_1
     section: reflection-risks-without-a-data-management-strategy
     section_title: "Reflection: risks without a data management strategy"
-  - id: gaps-to-action
+  - id: reason-for-starting
     title: Reason for starting
     description: What made the timing right, and what the strategy had to clarify
     chapter: mod_dm_1
     section: exercise-define-your-reason-for-starting
     section_title: "Exercise: define your reason for starting"
-  - id: starting-point
+  - id: starting-your-strategy
     title: Starting your strategy
     description: Taking stock of what is already there
     chapter: mod_dm_1
@@ -46,7 +46,7 @@ topics:
     chapter: mod_dm_2
     section: reflection-connections-and-gaps
     section_title: "Reflection: connections and gaps"
-  - id: ways-of-working
+  - id: working-together
     title: Working together
     description: Agreeing on a first meeting and keeping others involved
     chapter: mod_dm_2
@@ -70,13 +70,13 @@ topics:
     chapter: mod_dm_3
     section: exercise-draft-your-strategy-outline
     section_title: "Exercise: draft your strategy outline"
-  - id: assessment-choice
+  - id: choosing-what-to-assess
     title: Choosing what to assess
     description: Deciding which areas to look at more closely, and why
     chapter: mod_dm_4
     section: reflection-choose-what-to-assess
     section_title: "Reflection: choose what to assess"
-  - id: assessment
+  - id: assessing-areas
     title: Assessing areas
     description: Gathering evidence on how things work in practice now
     chapter: mod_dm_4
@@ -86,8 +86,8 @@ topics:
     title: Assessment findings
     description: Differences between institutions, and what they mean for coordination
     chapter: mod_dm_4
-    section: reflection-what-did-the-assessment-show
-    section_title: "Reflection: what did the assessment show?"
+    section: reflection-what-are-your-assessment-findings
+    section_title: "Reflection: what are your assessment findings?"
   - id: desired-direction
     title: Desired direction
     description: Describing what should be different, and why

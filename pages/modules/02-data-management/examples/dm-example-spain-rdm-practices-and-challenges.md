@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-spain-rdm-practices-and-challenges
 type: Real_world_example
-topics: [assessment]
+topics: [assessing-areas]
 ---
 
 **Node**: ELIXIR Spain  

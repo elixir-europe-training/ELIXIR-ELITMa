@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-netherlands-using-an-initial-meeting-to-identify-priorities
 type: Real_world_example
-topics: [ways-of-working]
+topics: [working-together]
 ---
 
 **Node**: ELIXIR Netherlands  

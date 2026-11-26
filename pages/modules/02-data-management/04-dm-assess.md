@@ -134,7 +134,7 @@ Imagine that **human capacity** is one of the areas you selected. You might asse
 The result does not yet tell you what the Node should do next. It gives you a clearer picture of the current situation and possible areas to discuss further.
 
 <div class="exercise-box" markdown="1">
-## Reflection: what did the assessment show?
+## Reflection: what are your assessment findings?
 
 Look back at the indicators you assessed and the notes you made, and consider:
 
