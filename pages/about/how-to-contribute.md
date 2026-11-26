@@ -347,10 +347,10 @@ Every example also appears on the module's **All examples** page automatically �
 
 Examples can be tagged with **topics** from a fixed list – a controlled vocabulary – kept in `_data/topics/<sidebar>.yml` (for Data management: `_data/topics/module-data-management.yml`). Each topic has an `id`, a `title`, a one-line `description`, and the chapter and section it comes from.
 
-1. Tag an example with one topic: `topics: [gaps-to-action]` (an id from the list). Use the topic of the orange box (Reflection or Exercise) the example sits under.
+1. Tag an example with one topic: `topics: [reason-for-starting]` (an id from the list). Use the topic of the orange box (Reflection or Exercise) the example sits under.
 2. Where the "Topics:" line should appear on the page (usually under Node and Authors), write `{% raw %}{% include example-topics.html %}{% endraw %}`. It shows the topics as links.
 
-Every topic gets its own page automatically (`/dm-topic-gaps-to-action`), listing all examples with that topic; the topic chips on **All examples** link to them. These pages aren't in the sidebar. Their "Back to chapter" link goes straight to the topic's section in the chapter, and so does an example's: the data file is the single place that connects an example (through its topic) to its chapter and section. To add a topic, add it to the data file – its page appears on the next build.
+Every topic gets its own page automatically (`/dm-topic-reason-for-starting`), listing all examples with that topic; the topic chips on **All examples** link to them. These pages aren't in the sidebar. Their "Back to chapter" link goes straight to the topic's section in the chapter, and so does an example's: the data file is the single place that connects an example (through its topic) to its chapter and section. To add a topic, add it to the data file – its page appears on the next build.
 
 ## Dive deeper pages
 

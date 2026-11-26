@@ -2,7 +2,7 @@
 A row of topic links (chips) to filter a module's examples: "All examples" plus one chip per topic
 in _data/topics/<sidebar>.yml, grouped by the chapter each topic comes from. Each chip opens that
 topic's page (a filtered view); the current one is highlighted. Works without JavaScript.
-Usage: {% include topic-chips.html sidebar="module-data-management" all_url="/dm-all-examples" current="gaps-to-action" %}
+Usage: {% include topic-chips.html sidebar="module-data-management" all_url="/dm-all-examples" current="reason-for-starting" %}
 {%- endcomment -%}
 {%- assign tc_data = site.data.topics[include.sidebar] -%}
 {%- if tc_data %}

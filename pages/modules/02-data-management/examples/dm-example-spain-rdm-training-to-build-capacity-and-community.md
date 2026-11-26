@@ -5,7 +5,7 @@ type_img: /images/icons/icon-module-data-management.svg
 sidebar: module-data-management
 page_id: dm-ex-spain-rdm-training-to-build-capacity-and-community
 type: Real_world_example
-topics: [starting-point]
+topics: [starting-your-strategy]
 ---
 
 **Node**: ELIXIR Spain  
